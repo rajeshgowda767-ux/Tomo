@@ -1,0 +1,857 @@
+[
+  {
+    "ingredient_name": "Onion",
+    "ingredient_key": "onion",
+    "used_by_recipe_count": 52,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Tomato",
+    "ingredient_key": "tomato",
+    "used_by_recipe_count": 22,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Potato",
+    "ingredient_key": "potato",
+    "used_by_recipe_count": 9,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Carrot",
+    "ingredient_key": "carrot",
+    "used_by_recipe_count": 6,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Vegetables",
+    "ingredient_key": "vegetables",
+    "used_by_recipe_count": 5,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Capsicum",
+    "ingredient_key": "capsicum",
+    "used_by_recipe_count": 3,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Corn",
+    "ingredient_key": "corn",
+    "used_by_recipe_count": 3,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Cabbage",
+    "ingredient_key": "cabbage",
+    "used_by_recipe_count": 2,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Methi",
+    "ingredient_key": "methi",
+    "used_by_recipe_count": 2,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Mushroom",
+    "ingredient_key": "mushroom",
+    "used_by_recipe_count": 2,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Drumstick",
+    "ingredient_key": "drumstick",
+    "used_by_recipe_count": 1,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Gongura",
+    "ingredient_key": "gongura",
+    "used_by_recipe_count": 1,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Palak",
+    "ingredient_key": "palak",
+    "used_by_recipe_count": 1,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Shallots",
+    "ingredient_key": "shallots",
+    "used_by_recipe_count": 1,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Spring Onion",
+    "ingredient_key": "spring onion",
+    "used_by_recipe_count": 1,
+    "category": "Vegetables",
+    "category_order": 1,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Banana",
+    "ingredient_key": "banana",
+    "used_by_recipe_count": 2,
+    "category": "Fruits",
+    "category_order": 2,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Apple",
+    "ingredient_key": "apple",
+    "used_by_recipe_count": 1,
+    "category": "Fruits",
+    "category_order": 2,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Rice",
+    "ingredient_key": "rice",
+    "used_by_recipe_count": 25,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Wheat",
+    "ingredient_key": "wheat",
+    "used_by_recipe_count": 11,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Besan",
+    "ingredient_key": "besan",
+    "used_by_recipe_count": 10,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Peanut",
+    "ingredient_key": "peanut",
+    "used_by_recipe_count": 8,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Urad Dal",
+    "ingredient_key": "urad dal",
+    "used_by_recipe_count": 7,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Bread",
+    "ingredient_key": "bread",
+    "used_by_recipe_count": 6,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Moong Dal",
+    "ingredient_key": "moong dal",
+    "used_by_recipe_count": 5,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Idli Rice",
+    "ingredient_key": "idli rice",
+    "used_by_recipe_count": 4,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Maida",
+    "ingredient_key": "maida",
+    "used_by_recipe_count": 4,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Toor Dal",
+    "ingredient_key": "toor dal",
+    "used_by_recipe_count": 4,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Dosa Rice",
+    "ingredient_key": "dosa rice",
+    "used_by_recipe_count": 3,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Rice Flour",
+    "ingredient_key": "rice flour",
+    "used_by_recipe_count": 3,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Pav",
+    "ingredient_key": "pav",
+    "used_by_recipe_count": 2,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Poha",
+    "ingredient_key": "poha",
+    "used_by_recipe_count": 2,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Rajma",
+    "ingredient_key": "rajma",
+    "used_by_recipe_count": 2,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Rava",
+    "ingredient_key": "rava",
+    "used_by_recipe_count": 2,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Black Urad Dal",
+    "ingredient_key": "black urad dal",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Chana",
+    "ingredient_key": "chana",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Chole",
+    "ingredient_key": "chole",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection. Kept in database and aliases; users select Chana."
+  },
+  {
+    "ingredient_name": "Dal",
+    "ingredient_key": "dal",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Matki",
+    "ingredient_key": "matki",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Noodles",
+    "ingredient_key": "noodles",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Oats",
+    "ingredient_key": "oats",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Ragi",
+    "ingredient_key": "ragi",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Sabudana",
+    "ingredient_key": "sabudana",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Sesame",
+    "ingredient_key": "sesame",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Sevai",
+    "ingredient_key": "sevai",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Wheat Flour",
+    "ingredient_key": "wheat flour",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Whole Wheat",
+    "ingredient_key": "whole wheat",
+    "used_by_recipe_count": 1,
+    "category": "Grains & Dals",
+    "category_order": 3,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Chicken",
+    "ingredient_key": "chicken",
+    "used_by_recipe_count": 20,
+    "category": "Proteins",
+    "category_order": 4,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Egg",
+    "ingredient_key": "egg",
+    "used_by_recipe_count": 8,
+    "category": "Proteins",
+    "category_order": 4,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Paneer",
+    "ingredient_key": "paneer",
+    "used_by_recipe_count": 8,
+    "category": "Proteins",
+    "category_order": 4,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Fish",
+    "ingredient_key": "fish",
+    "used_by_recipe_count": 5,
+    "category": "Proteins",
+    "category_order": 4,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Keema",
+    "ingredient_key": "keema",
+    "used_by_recipe_count": 2,
+    "category": "Proteins",
+    "category_order": 4,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Mutton",
+    "ingredient_key": "mutton",
+    "used_by_recipe_count": 2,
+    "category": "Proteins",
+    "category_order": 4,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Pork",
+    "ingredient_key": "pork",
+    "used_by_recipe_count": 2,
+    "category": "Proteins",
+    "category_order": 4,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Country Chicken",
+    "ingredient_key": "country chicken",
+    "used_by_recipe_count": 1,
+    "category": "Proteins",
+    "category_order": 4,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Prawn",
+    "ingredient_key": "prawn",
+    "used_by_recipe_count": 1,
+    "category": "Proteins",
+    "category_order": 4,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Milk",
+    "ingredient_key": "milk",
+    "used_by_recipe_count": 8,
+    "category": "Dairy",
+    "category_order": 5,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Curd",
+    "ingredient_key": "curd",
+    "used_by_recipe_count": 7,
+    "category": "Dairy",
+    "category_order": 5,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Butter",
+    "ingredient_key": "butter",
+    "used_by_recipe_count": 4,
+    "category": "Dairy",
+    "category_order": 5,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Coconut Milk",
+    "ingredient_key": "coconut milk",
+    "used_by_recipe_count": 2,
+    "category": "Dairy",
+    "category_order": 5,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Khoya",
+    "ingredient_key": "khoya",
+    "used_by_recipe_count": 1,
+    "category": "Dairy",
+    "category_order": 5,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Curry Leaves",
+    "ingredient_key": "curry leaves",
+    "used_by_recipe_count": 27,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Garlic",
+    "ingredient_key": "garlic",
+    "used_by_recipe_count": 12,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Ginger",
+    "ingredient_key": "ginger",
+    "used_by_recipe_count": 11,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Black Pepper",
+    "ingredient_key": "black pepper",
+    "used_by_recipe_count": 10,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Coriander",
+    "ingredient_key": "coriander",
+    "used_by_recipe_count": 10,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Mustard Seeds",
+    "ingredient_key": "mustard seeds",
+    "used_by_recipe_count": 10,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Coconut",
+    "ingredient_key": "coconut",
+    "used_by_recipe_count": 6,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Tamarind",
+    "ingredient_key": "tamarind",
+    "used_by_recipe_count": 4,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Lemon",
+    "ingredient_key": "lemon",
+    "used_by_recipe_count": 3,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Garam Masala",
+    "ingredient_key": "garam masala",
+    "used_by_recipe_count": 2,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Podi",
+    "ingredient_key": "podi",
+    "used_by_recipe_count": 2,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Ajwain",
+    "ingredient_key": "ajwain",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Chaat Masala",
+    "ingredient_key": "chaat masala",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Cumin",
+    "ingredient_key": "cumin",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Dry Coconut",
+    "ingredient_key": "dry coconut",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Dry Fruits",
+    "ingredient_key": "dry fruits",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Jaggery",
+    "ingredient_key": "jaggery",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Kokum",
+    "ingredient_key": "kokum",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Kolhapuri Masala",
+    "ingredient_key": "kolhapuri masala",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Madras Curry Powder",
+    "ingredient_key": "madras curry powder",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Mint",
+    "ingredient_key": "mint",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Misal Masala",
+    "ingredient_key": "misal masala",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Tea",
+    "ingredient_key": "tea",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Turmeric",
+    "ingredient_key": "turmeric",
+    "used_by_recipe_count": 1,
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Green Chilli",
+    "ingredient_key": "green chilli",
+    "used_by_recipe_count": 15,
+    "category": "Chillies",
+    "category_order": 7,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Red Chilli",
+    "ingredient_key": "red chilli",
+    "used_by_recipe_count": 13,
+    "category": "Chillies",
+    "category_order": 7,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Chilli",
+    "ingredient_key": "chilli",
+    "used_by_recipe_count": 6,
+    "category": "Chillies",
+    "category_order": 7,
+    "display_status": "hidden",
+    "review_note": "Hidden generic chilli. Mapped to Red Chilli for visible pantry selection."
+  },
+  {
+    "ingredient_name": "Guntur Chilli",
+    "ingredient_key": "guntur chilli",
+    "used_by_recipe_count": 2,
+    "category": "Chillies",
+    "category_order": 7,
+    "display_status": "visible",
+    "review_note": ""
+  },
+  {
+    "ingredient_name": "Byadgi Chilli",
+    "ingredient_key": "byadgi chilli",
+    "used_by_recipe_count": 1,
+    "category": "Chillies",
+    "category_order": 7,
+    "display_status": "hidden",
+    "review_note": "Hidden regional chilli. Mapped to Red Chilli for visible pantry selection."
+  },
+  {
+    "ingredient_name": "Mathania Chilli",
+    "ingredient_key": "mathania chilli",
+    "used_by_recipe_count": 1,
+    "category": "Chillies",
+    "category_order": 7,
+    "display_status": "hidden",
+    "review_note": "Hidden regional chilli. Mapped to Red Chilli for visible pantry selection."
+  },
+  {
+    "ingredient_name": "Oil",
+    "ingredient_key": "oil",
+    "used_by_recipe_count": 17,
+    "category": "Oils & Fats",
+    "category_order": 8,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Ghee",
+    "ingredient_key": "ghee",
+    "used_by_recipe_count": 12,
+    "category": "Oils & Fats",
+    "category_order": 8,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Sesame Oil",
+    "ingredient_key": "sesame oil",
+    "used_by_recipe_count": 2,
+    "category": "Oils & Fats",
+    "category_order": 8,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Schezwan Sauce",
+    "ingredient_key": "schezwan sauce",
+    "used_by_recipe_count": 1,
+    "category": "Sauces & Condiments",
+    "category_order": 9,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  },
+  {
+    "ingredient_name": "Soy Sauce",
+    "ingredient_key": "soy sauce",
+    "used_by_recipe_count": 1,
+    "category": "Sauces & Condiments",
+    "category_order": 9,
+    "display_status": "hidden",
+    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+  }
+]
