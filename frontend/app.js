@@ -480,6 +480,19 @@ function localPath(path) {
 }
 
 async function api(path, options = {}) {
+  if (path === '/api/recipes' && Array.isArray(window.COOKBUDDY_LOCAL_RECIPES)) {
+    return { recipes: window.COOKBUDDY_LOCAL_RECIPES, source: 'local-file' };
+  }
+  if (path === '/api/collections' && window.COOKBUDDY_LOCAL_COLLECTIONS) {
+    return window.COOKBUDDY_LOCAL_COLLECTIONS;
+  }
+  const localCollectionMatch = path.match(/^\/api\/collections\/([^/]+)$/);
+  if (localCollectionMatch && window.COOKBUDDY_LOCAL_COLLECTIONS) {
+    const key = decodeURIComponent(localCollectionMatch[1]);
+    const collection = (window.COOKBUDDY_LOCAL_COLLECTIONS.collections || []).find((item) => item.key === key || item.id === key);
+    if (!collection) throw new Error('Collection not found.');
+    return buildCollectionDetailFromSummary(collection);
+  }
   if (window.location.protocol === 'file:') {
     if (path === '/api/recipes') return { recipes: window.COOKBUDDY_LOCAL_RECIPES || [], source: 'local-file' };
     if (path === '/api/collections') return window.COOKBUDDY_LOCAL_COLLECTIONS || { collections: [] };
