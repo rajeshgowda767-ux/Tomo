@@ -2688,7 +2688,7 @@ function matchSection(title, matches) {
 
 function curatedPantryMatches(matches) {
   return matches
-    .filter((item) => item.overallMatchPercent >= 50 || item.primaryMatchPercent >= 50)
+    .filter((item) => item.matchedPrimaryCount >= item.requiredPrimaryCount && item.overallMatchPercent >= 50)
     .slice(0, 4);
 }
 
