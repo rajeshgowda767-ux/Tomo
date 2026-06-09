@@ -1,6 +1,6 @@
-# CookBuddy
+# Tomo
 
-CookBuddy is a web application with a mobile-ready backend API. The current implementation uses:
+Tomo is a web application with a mobile-ready backend API. The current implementation uses:
 
 - Static responsive frontend in `frontend/`
 - Node.js API in `backend/`
