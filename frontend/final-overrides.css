@@ -2385,33 +2385,147 @@
   }
 }
 
-/* Phone layout: keep navigation readable and collection dishes food-first. */
-@media (max-width: 430px) {
+/* Tester-release mobile density: one consistent responsive layout. */
+@media (max-width: 768px) {
+  .app-shell {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: 12px !important;
+    padding-bottom: calc(112px + env(safe-area-inset-bottom)) !important;
+    padding-left: 12px !important;
+    overflow-x: clip !important;
+  }
+
+  .mood-panel,
+  .section-title,
+  .meal-tabs,
+  .special-section,
+  .facts-section {
+    max-width: 100% !important;
+  }
+
+  .section-title {
+    margin-top: 18px !important;
+  }
+
   .meal-tabs {
     margin-right: 0 !important;
     margin-left: 0 !important;
     padding: 6px !important;
-    overflow: hidden !important;
+    overflow: visible !important;
   }
 
   .meal-tab-scroll {
     display: grid !important;
-    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    grid-auto-flow: column !important;
+    grid-auto-columns: calc((100% - 10px) / 3) !important;
+    grid-template-columns: none !important;
     gap: 5px !important;
-    overflow: visible !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overscroll-behavior-inline: contain !important;
+    scroll-snap-type: x proximity !important;
+    scroll-padding-inline: 0 !important;
   }
 
   .meal-tab {
     width: 100% !important;
     min-width: 0 !important;
     min-height: 42px !important;
-    padding: 0 5px !important;
-    font-size: 0.72rem !important;
+    padding: 0 6px !important;
+    overflow: hidden !important;
+    font-size: 0.76rem !important;
+    text-overflow: ellipsis !important;
+    scroll-snap-align: start !important;
+  }
+
+  #todayPicks.meal-card-grid {
+    display: grid !important;
+    grid-auto-flow: column !important;
+    grid-auto-columns: min(82vw, 340px) !important;
+    grid-template-columns: none !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 12px !important;
+    padding: 2px 2px 10px !important;
+    overflow-x: auto !important;
+    overscroll-behavior-inline: contain !important;
+    scroll-snap-type: x mandatory !important;
+    scrollbar-width: none !important;
+  }
+
+  #todayPicks.meal-card-grid::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  #todayPicks .today-card {
+    grid-template-rows: 180px auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-height: 310px !important;
+    padding: 7px !important;
+    overflow: hidden !important;
+    border-radius: 20px !important;
+    scroll-snap-align: start !important;
+  }
+
+  #todayPicks .today-card .recipe-icon {
+    height: 180px !important;
+    min-height: 180px !important;
+    border-radius: 17px !important;
+  }
+
+  #todayPicks .today-card .recipe-content {
+    grid-template-rows: auto auto auto 34px !important;
+    gap: 3px !important;
+    padding: 7px 5px 1px !important;
+  }
+
+  #todayPicks .today-card strong {
+    display: -webkit-box !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    font-size: 0.94rem !important;
+    line-height: 1.12 !important;
+    white-space: normal !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+  }
+
+  #todayPicks .today-card .recommendation-context {
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    white-space: normal !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 1 !important;
+  }
+
+  #todayPicks .today-card .card-actions {
+    grid-template-columns: 32px 32px minmax(0, 1fr) !important;
+    gap: 5px !important;
+    margin-top: 1px !important;
+  }
+
+  #todayPicks .today-card .mini-action,
+  #todayPicks .today-card .cook-action {
+    min-height: 32px !important;
+  }
+
+  .special-section {
+    margin-top: 22px !important;
+  }
+
+  .special-heading,
+  .collection-pop {
+    padding: 12px !important;
   }
 
   .collection-pop {
     min-width: 0 !important;
-    padding: 12px !important;
+    gap: 12px !important;
   }
 
   .collection-pop-copy,
@@ -2423,19 +2537,130 @@
     max-width: 100% !important;
   }
 
+  .collection-pop-copy > p {
+    margin-bottom: 8px !important;
+  }
+
+  .collection-sidebar-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-flow: row !important;
+    gap: 12px !important;
+    overflow: visible !important;
+  }
+
+  .collection-sidebar-tile {
+    width: 100% !important;
+    height: 170px !important;
+    min-height: 170px !important;
+    max-height: 170px !important;
+    padding: 12px !important;
+    align-content: center !important;
+    border-radius: 18px !important;
+  }
+
+  .collection-sidebar-tile > span,
+  .collection-sidebar-tile span:first-child {
+    width: 56px !important;
+    height: 56px !important;
+    margin-bottom: 10px !important;
+    border-radius: 16px !important;
+    font-size: 1.45rem !important;
+  }
+
+  .collection-sidebar-tile strong {
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    font-size: 0.92rem !important;
+    line-height: 1.08 !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+  }
+
+  .collection-sidebar-tile small {
+    margin-top: 6px !important;
+    font-size: 0.7rem !important;
+  }
+
+  .collection-subcategory-section {
+    padding: 10px !important;
+    border-radius: 20px !important;
+  }
+
   .single-subcategory-list .collection-subcategory-row {
-    grid-auto-columns: 84% !important;
+    grid-auto-columns: min(80vw, 330px) !important;
+    gap: 12px !important;
     width: 100% !important;
     max-width: 100% !important;
-    padding-right: 10px !important;
+    padding: 2px 10px 8px 2px !important;
     overflow-x: auto !important;
     overscroll-behavior-inline: contain !important;
     scroll-snap-type: x mandatory !important;
+    scrollbar-width: none !important;
+  }
+
+  .single-subcategory-list .collection-subcategory-row::-webkit-scrollbar {
+    display: none !important;
   }
 
   .single-subcategory-list .collection-subcategory-row > * {
     min-width: 0 !important;
     max-width: 100% !important;
     scroll-snap-align: start !important;
+  }
+
+  .collection-dishes .drink-card,
+  .collection-reveal .drink-card,
+  .collection-subcategory-row .drink-card {
+    grid-template-rows: 180px auto !important;
+    min-height: 0 !important;
+    max-height: 292px !important;
+    padding: 7px !important;
+    overflow: hidden !important;
+    border-radius: 20px !important;
+  }
+
+  .collection-dishes .drink-card .recipe-icon,
+  .collection-reveal .drink-card .recipe-icon,
+  .collection-subcategory-row .drink-card .recipe-icon,
+  .collection-subcategory-row .curated-collection-card .recipe-icon {
+    height: 180px !important;
+    min-height: 180px !important;
+    border-radius: 17px !important;
+  }
+
+  .collection-dishes .drink-card > div,
+  .collection-reveal .drink-card > div,
+  .collection-subcategory-row .drink-card > div {
+    gap: 3px !important;
+    padding: 7px 5px 1px !important;
+  }
+
+  .collection-dishes .drink-card strong,
+  .collection-reveal .drink-card strong,
+  .collection-subcategory-row .drink-card strong {
+    display: -webkit-box !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    font-size: 0.94rem !important;
+    line-height: 1.1 !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+  }
+
+  .collection-dishes .drink-card .collection-card-meta small,
+  .collection-reveal .drink-card .collection-card-meta small,
+  .collection-subcategory-row .drink-card .collection-card-meta small {
+    display: -webkit-box !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    font-size: 0.7rem !important;
+    line-height: 1.18 !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 1 !important;
+  }
+
+  .bottom-nav {
+    padding-bottom: env(safe-area-inset-bottom) !important;
   }
 }
