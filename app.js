@@ -2435,6 +2435,7 @@ function renderSpecialRows() {
           <button class="collection-segment collection-${collection.key} ${collection.tone} ${state.activeCollection === collection.key ? 'active' : ''}" data-collection-key="${collection.key}">
             <strong>${collection.title}</strong>
             <em>${collectionSegmentCopy(collection)}</em>
+            <span class="collection-tap-hint">Tap to explore →</span>
           </button>
         `).join('')}
       </div>
@@ -2497,6 +2498,7 @@ function collectionSidebar(detail) {
       <span>${subcategoryIcon(subcategory.name)}</span>
       <strong>${subcategory.name}</strong>
       <small>${subcategory.recipes.length} Ideas</small>
+      <span class="collection-tap-hint">Tap →</span>
     </button>
   `).join('');
   return `
