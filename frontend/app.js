@@ -243,7 +243,7 @@ function getTomoMessage(options = {}) {
 
   if (context === 'ingredient_selected') {
     const count = selectedIngredients.length;
-    if (count === 1) return formatTomoMessage(cachedPantryUnlockMessage(selectedIngredients) || 'Checking real recipe paths...');
+    if (count === 1) return formatTomoMessage(pantryUnlockMessage(selectedIngredients));
     if (count === 2) return formatTomoMessage('Good combo. I found a few dishes you can make with this.');
     if (count >= 3) return formatTomoMessage('Now we’re cooking. These matches look stronger.');
     return getTomoMessage({ context: 'pantry_open' });
@@ -2651,6 +2651,7 @@ function normalizeIngredientName(name) {
     omelet: 'egg',
     'egg omelette': 'egg',
     'egg omelet': 'egg',
+    prawns: 'prawn',
     'cooked rice': 'rice',
     'leftover rice': 'rice',
     'steamed rice': 'rice',
@@ -3279,6 +3280,57 @@ function eggFriedRiceRecipe() {
   return state.recipes.find((recipe) => normalizeIngredientName(recipe.title) === 'egg fried rice') || null;
 }
 
+function ensurePantrySpecialRecipes() {
+  if (state.recipes.some((recipe) => normalizeIngredientName(recipe.title) === 'butter garlic prawns')) return;
+  const source = state.recipes.find((recipe) => normalizeIngredientName(recipe.title) === 'prawn ghee roast');
+  if (!source) return;
+  state.recipes.push({
+    ...source,
+    id: 'pantry-butter-garlic-prawns',
+    sourceId: 'pantry-butter-garlic-prawns',
+    title: 'Butter Garlic Prawns',
+    name: 'Butter Garlic Prawns',
+    description: 'Juicy prawns tossed with butter and garlic for a quick, savory pan-fried dish.',
+    prepTimeMinutes: 10,
+    cookTimeMinutes: 15,
+    tags: ['lunch', 'dinner', 'high-protein', 'quick'],
+    instructions: [
+      'Pat the prawns dry and season lightly with salt and pepper.',
+      'Melt butter in a hot pan and gently cook the chopped garlic until fragrant.',
+      'Add the prawns and cook until pink, curled, and just cooked through.',
+      'Toss once more in the garlic butter and serve warm.'
+    ],
+    primaryIngredient1: 'Prawn',
+    primaryIngredient2: 'Butter',
+    primary_ingredient_1: 'Prawn',
+    primary_ingredient_2: 'Butter',
+    secondaryIngredient1: 'Garlic',
+    secondaryIngredient2: null,
+    secondaryIngredient3: null,
+    secondary_ingredient_1: 'Garlic',
+    secondary_ingredient_2: null,
+    secondary_ingredient_3: null,
+    ingredients: [
+      { name: 'Prawn', quantity: 250, unit: 'g', role: 'required', isMain: true },
+      { name: 'Butter', quantity: 2, unit: 'tbsp', role: 'required', isMain: true },
+      { name: 'Garlic', quantity: 4, unit: 'cloves', role: 'flavor-base', isMain: false }
+    ],
+    baseIngredient: 'prawn',
+    base_ingredient: 'prawn',
+    coreIngredients: ['prawn', 'butter'],
+    core_ingredients: ['prawn', 'butter'],
+    requiredIngredients: ['prawn', 'butter'],
+    required_ingredients: ['prawn', 'butter'],
+    optionalIngredients: ['garlic', 'salt', 'pepper'],
+    optional_ingredients: ['garlic', 'salt', 'pepper'],
+    dishFamily: 'prawn',
+    dish_family: 'prawn',
+    excludeFromDefaultFeeds: true,
+    exclude_from_default_feeds: true,
+    excludeFromRecommendations: false
+  });
+}
+
 function pantryCoverageDetails(pantryBreakdown) {
   const core = pantryBreakdown.coreIngredients || [];
   const required = pantryBreakdown.requiredIngredients || core;
@@ -3813,15 +3865,13 @@ function databaseBackedPantryUnlocks(selected, limit = 3) {
       names.forEach((name) => {
         if (selectedNames.some((selectedName) => pantryIngredientEquals(selectedName, name))) return;
         if (!isSmartPantrySuggestionAllowed(name)) return;
-        const unlocks = pantryPairUnlocks(selectedNames, name);
-        if (!unlocks.length) return;
         const key = normalizeIngredientName(name);
         const existing = candidates.get(key) || { ingredient: formatIngredientName(name), dishes: new Set(), bestScore: 0, strongCount: 0 };
-        unlocks.slice(0, 4).forEach((unlock) => {
-          existing.dishes.add(unlock.recipe.title);
-          existing.bestScore = Math.max(existing.bestScore, unlock.coverage.confidence);
-          if (unlock.stateName === 'STRONG_MATCH') existing.strongCount += 1;
-        });
+        const isCore = configuredCoreIngredients(recipe).some((ingredient) => pantryIngredientEquals(ingredient, name));
+        const isRequired = configuredRequiredIngredients(recipe).some((ingredient) => pantryIngredientEquals(ingredient, name));
+        existing.dishes.add(recipe.title);
+        existing.bestScore = Math.max(existing.bestScore, isCore || isRequired ? 90 : 60);
+        if (isCore || isRequired) existing.strongCount += 1;
         candidates.set(key, existing);
       });
     });
@@ -4224,21 +4274,10 @@ function renderIngredientResults() {
   }
 
   if (selected.length === 1) {
-    const cachedSuggestion = cachedPantryUnlockMessage(selected);
-    const suggestionLine = cachedSuggestion || 'Checking real recipe paths...';
+    const suggestionLine = pantryUnlockMessage(selected);
     renderPantryInstantPreview(selected, [], suggestionLine);
     if (els.pantryTomoMessage) els.pantryTomoMessage.textContent = formatTomoMessage(suggestionLine);
     renderPantrySuggestionsContent(`<p class="preview-empty dish-match-empty">${escapeHtml(suggestionLine)}</p>`);
-    if (!cachedSuggestion) {
-      setTimeout(() => {
-        const current = [...state.selectedIngredients];
-        if (current.length !== 1 || !pantryIngredientEquals(current[0], selected[0])) return;
-        const message = pantryUnlockMessage(selected);
-        renderPantryInstantPreview(selected, [], message);
-        if (els.pantryTomoMessage) els.pantryTomoMessage.textContent = formatTomoMessage(message);
-        renderPantrySuggestionsContent(`<p class="preview-empty dish-match-empty">${escapeHtml(message)}</p>`);
-      }, 0);
-    }
     return;
   }
 
@@ -4266,7 +4305,6 @@ function schedulePantrySelectionRefresh() {
   pantrySelectionRenderFrame = requestAnimationFrame(() => {
     pantrySelectionRenderFrame = null;
     renderIngredientResults();
-    setTimeout(renderTomoPick, 80);
   });
 }
 
@@ -4866,6 +4904,7 @@ async function loadRecipes() {
     els.recipeNotice.textContent = error.message;
     els.recipeNotice.classList.remove('hidden');
   }
+  ensurePantrySpecialRecipes();
   renderAll();
 }
 

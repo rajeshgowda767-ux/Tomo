@@ -1116,6 +1116,19 @@
   overflow: hidden !important;
 }
 
+#searchDialog {
+  width: min(480px, calc(100vw - 28px)) !important;
+  max-width: min(480px, calc(100vw - 28px)) !important;
+  overflow: hidden !important;
+}
+
+#searchDialog .search-card {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 .journal-coming-soon-card {
   box-sizing: border-box !important;
   width: 100% !important;
