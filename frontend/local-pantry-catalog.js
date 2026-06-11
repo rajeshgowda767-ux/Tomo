@@ -567,13 +567,13 @@ window.COOKBUDDY_PANTRY_CATALOG = [
     "review_note": ""
   },
   {
-    "ingredient_name": "Black Pepper",
-    "ingredient_key": "black pepper",
+    "ingredient_name": "Pepper",
+    "ingredient_key": "pepper",
     "used_by_recipe_count": 10,
     "category": "Spices & Seasonings",
     "category_order": 6,
-    "display_status": "hidden",
-    "review_note": "Hidden from visible pantry selection for V1. Kept in database for matching/reference."
+    "display_status": "visible",
+    "review_note": ""
   },
   {
     "ingredient_name": "Coriander",
@@ -1496,6 +1496,18 @@ window.COOKBUDDY_USER_INGREDIENTS = [
     "global_display_order": 56
   },
   {
+    "ingredient_name": "Pepper",
+    "ingredient_key": "pepper",
+    "aliases": [
+      "Pepper",
+      "Black Pepper"
+    ],
+    "category": "Spices & Seasonings",
+    "category_order": 6,
+    "display_order": 608,
+    "global_display_order": 57
+  },
+  {
     "ingredient_name": "Podi",
     "ingredient_key": "podi",
     "aliases": [
@@ -1505,7 +1517,7 @@ window.COOKBUDDY_USER_INGREDIENTS = [
     ],
     "category": "Spices & Seasonings",
     "category_order": 6,
-    "display_order": 608,
+    "display_order": 609,
     "global_display_order": 57
   },
   {

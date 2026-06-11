@@ -1709,6 +1709,13 @@
   border: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.ingredient-search-bar input:focus,
+.ingredient-search-bar input:focus-visible {
+  outline: 0 !important;
   box-shadow: none !important;
 }
 

@@ -2714,6 +2714,7 @@ function ingredientGroup(name) {
   if (['chicken', 'country chicken', 'fish', 'egg', 'paneer', 'mutton', 'prawn', 'keema', 'kheema', 'minced meat'].includes(value)) return 'Proteins';
   if (['curd', 'yogurt', 'milk', 'khoya', 'coconut milk'].includes(value)) return 'Dairy';
   if (['green chilli', 'red chilli', 'chilli', 'guntur chilli', 'mathania chilli', 'byadgi chilli'].includes(value)) return 'Chillies';
+  if (['pepper', 'cumin', 'coriander', 'turmeric', 'mustard seed', 'cardamom', 'clove', 'cinnamon', 'garam masala', 'spices', 'salt'].includes(value)) return 'Spices & Seasonings';
   if (['oil', 'ghee', 'butter', 'sesame oil'].includes(value)) return 'Oils & Fats';
   if (['schezwan sauce', 'soy sauce'].includes(value)) return 'Sauces & Condiments';
   return 'Vegetables';
