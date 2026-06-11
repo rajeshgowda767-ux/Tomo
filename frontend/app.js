@@ -1754,8 +1754,10 @@ function renderTomoPick() {
         </span>
       </div>`
     : `<img src="${localPath('/tomo.png')}" alt="" /><span>Tap to reveal</span>`;
-  if (els.heroMessage) els.heroMessage.textContent = '';
-  if (els.heroPickTitle) els.heroPickTitle.textContent = 'Looks like comfort is calling today. I’ll find something warm, familiar, and easy to love.';
+  if (els.heroMessage) els.heroMessage.textContent = revealedPick ? 'Tomo found a gentle pick for you.' : 'Tomo has a pick waiting.';
+  if (els.heroPickTitle) els.heroPickTitle.textContent = revealedPick
+    ? 'Looks like comfort is calling today.'
+    : 'Not sure what to cook today? Let’s make today’s food decision easier.';
   if (els.heroPickReasons) {
     els.heroPickReasons.classList.add('hidden');
     els.heroPickReasons.innerHTML = '';
@@ -2435,6 +2437,7 @@ function renderSpecialRows() {
           <button class="collection-segment collection-${collection.key} ${collection.tone} ${state.activeCollection === collection.key ? 'active' : ''}" data-collection-key="${collection.key}">
             <strong>${collection.title}</strong>
             <em>${collectionSegmentCopy(collection)}</em>
+            <span class="collection-affordance">Explore →</span>
           </button>
         `).join('')}
       </div>

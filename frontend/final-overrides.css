@@ -2968,3 +2968,436 @@
     padding: 12px !important;
   }
 }
+
+/* Final beta homepage hero + explicit desktop/mobile Collections split. */
+.cb-dashboard-hero,
+.cb-dashboard-hero.revealed {
+  display: grid !important;
+  grid-template-columns: 180px minmax(0, 1fr) 210px !important;
+  align-items: center !important;
+  width: min(100%, 980px) !important;
+  height: auto !important;
+  min-height: 172px !important;
+  max-height: none !important;
+  margin: 0 auto 30px !important;
+  padding: 22px 28px !important;
+  gap: 24px !important;
+  overflow: hidden !important;
+}
+
+.cb-dashboard-main,
+.cb-dashboard-hero.revealed .cb-dashboard-main {
+  display: contents !important;
+}
+
+.cb-dashboard-mascot,
+.cb-dashboard-hero.revealed .cb-dashboard-mascot {
+  justify-self: start !important;
+  display: grid !important;
+  grid-template-rows: 84px auto !important;
+  place-items: center !important;
+  width: 148px !important;
+  max-width: 148px !important;
+  height: 132px !important;
+  min-height: 132px !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+.cb-dashboard-mascot > img {
+  width: 82px !important;
+  height: 82px !important;
+  object-fit: contain !important;
+}
+
+.cb-dashboard-mascot > span {
+  max-width: 124px !important;
+  min-height: 36px !important;
+  padding: 0 14px !important;
+  font-size: 0.78rem !important;
+}
+
+.cb-dashboard-copy {
+  justify-self: stretch !important;
+  display: grid !important;
+  align-content: center !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+  text-align: left !important;
+}
+
+.cb-dashboard-copy p {
+  display: block !important;
+  margin: 0 !important;
+  color: rgba(143, 63, 42, 0.78) !important;
+  font-size: 0.78rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.04em !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+.cb-dashboard-copy > strong {
+  max-width: 34em !important;
+  font-size: clamp(1.14rem, 1.34vw, 1.38rem) !important;
+  line-height: 1.15 !important;
+}
+
+.cb-dashboard-hero.revealed .cb-dashboard-reveal {
+  width: 148px !important;
+  height: 132px !important;
+}
+
+.cb-dashboard-mini-image {
+  width: 90px !important;
+  height: 68px !important;
+}
+
+.cb-dashboard-weather {
+  justify-self: end !important;
+  align-self: center !important;
+  width: 210px !important;
+  max-width: 210px !important;
+  min-width: 0 !important;
+  text-align: left !important;
+}
+
+.cb-dashboard-weather time,
+.cb-dashboard-weather p,
+.cb-dashboard-weather span {
+  max-width: 100% !important;
+}
+
+.collection-segment {
+  flex: 0 0 auto !important;
+  width: 310px !important;
+  min-width: 310px !important;
+  max-width: 310px !important;
+  flex-shrink: 0 !important;
+}
+
+.collection-baby,
+.collection-lunchbox,
+.collection-drinks,
+.collection-salads,
+.collection-desserts,
+.collection-soups,
+.collection-festival {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.collection-affordance {
+  position: relative !important;
+  z-index: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  width: max-content !important;
+  height: auto !important;
+  margin-top: 9px !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: rgba(255, 250, 240, 0.9) !important;
+  font-size: 0.72rem !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  text-shadow: 0 1px 12px rgba(44, 32, 24, 0.3) !important;
+}
+
+.collection-sidebar-tile::after {
+  content: "›";
+  justify-self: start;
+  color: rgba(143, 63, 42, 0.56);
+  font-size: 0.92rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .cb-dashboard-hero,
+  .cb-dashboard-hero.revealed {
+    order: 2 !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    margin: 0 0 16px !important;
+    padding: 12px !important;
+    gap: 10px !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+  }
+
+  .cb-dashboard-mascot,
+  .cb-dashboard-hero.revealed .cb-dashboard-mascot {
+    justify-self: stretch !important;
+    display: grid !important;
+    grid-template-columns: 72px minmax(0, 1fr) !important;
+    grid-template-rows: none !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 88px !important;
+    min-height: 88px !important;
+    padding: 10px 12px !important;
+    border-radius: 20px !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+    box-shadow: 0 10px 22px rgba(119, 104, 93, 0.08) !important;
+  }
+
+  .cb-dashboard-mascot > img {
+    width: 62px !important;
+    height: 62px !important;
+  }
+
+  .cb-dashboard-mascot > span {
+    justify-self: start !important;
+    max-width: 100% !important;
+    min-height: 34px !important;
+    padding: 0 14px !important;
+    font-size: 0.76rem !important;
+  }
+
+  .cb-dashboard-copy {
+    width: 100% !important;
+    padding: 2px 4px !important;
+    text-align: left !important;
+  }
+
+  .cb-dashboard-copy p {
+    font-size: 0.68rem !important;
+  }
+
+  .cb-dashboard-copy > strong {
+    max-width: 100% !important;
+    font-size: 1rem !important;
+    line-height: 1.16 !important;
+  }
+
+  .cb-dashboard-hero.revealed .cb-dashboard-reveal {
+    grid-template-columns: 62px minmax(0, 1fr) !important;
+    grid-template-rows: 1fr auto !important;
+    align-items: center !important;
+    justify-items: stretch !important;
+    gap: 8px !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .cb-dashboard-mini-image {
+    grid-row: 1 / 3 !important;
+    width: 62px !important;
+    height: 62px !important;
+    border-radius: 15px !important;
+  }
+
+  .cb-dashboard-reveal-copy {
+    align-self: end !important;
+    text-align: left !important;
+  }
+
+  .cb-dashboard-reveal-copy strong {
+    font-size: 0.8rem !important;
+  }
+
+  .cb-dashboard-hero.revealed .cb-dashboard-actions {
+    align-self: start !important;
+    grid-template-columns: max-content max-content !important;
+    justify-content: start !important;
+    width: auto !important;
+  }
+
+  .cb-dashboard-primary,
+  .cb-dashboard-secondary {
+    min-height: 28px !important;
+    padding: 0 10px !important;
+    font-size: 0.64rem !important;
+  }
+
+  .cb-dashboard-weather {
+    justify-self: stretch !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px 12px !important;
+    border-radius: 18px !important;
+    background: rgba(255, 248, 238, 0.74) !important;
+    text-align: left !important;
+  }
+
+  .cb-dashboard-weather time {
+    font-size: 1.25rem !important;
+  }
+
+  .cb-dashboard-weather p,
+  .cb-dashboard-weather span {
+    font-size: 0.68rem !important;
+  }
+
+  .mood-panel {
+    order: 3 !important;
+  }
+
+  .collection-scroll {
+    gap: 8px !important;
+    padding: 0 2px 8px !important;
+    scroll-snap-type: x proximity !important;
+  }
+
+  .collection-segment {
+    display: inline-grid !important;
+    grid-template-rows: none !important;
+    align-content: center !important;
+    gap: 3px !important;
+    flex: 0 0 auto !important;
+    width: min(58vw, 210px) !important;
+    min-width: min(58vw, 210px) !important;
+    max-width: min(58vw, 210px) !important;
+    min-height: 74px !important;
+    height: 74px !important;
+    max-height: 74px !important;
+    padding: 10px 12px !important;
+    border-radius: 18px !important;
+    background-image: none !important;
+    background:
+      radial-gradient(circle at 84% 16%, rgba(255, 221, 174, 0.38), transparent 34%),
+      rgba(255, 250, 242, 0.9) !important;
+    color: var(--ink) !important;
+    text-shadow: none !important;
+  }
+
+  .collection-segment::before {
+    display: none !important;
+  }
+
+  .collection-baby,
+  .collection-lunchbox,
+  .collection-drinks,
+  .collection-salads,
+  .collection-desserts,
+  .collection-soups,
+  .collection-festival {
+    min-height: 74px !important;
+    background-size: auto !important;
+  }
+
+  .collection-segment strong {
+    padding: 0 !important;
+    color: var(--ink) !important;
+    font-size: 0.86rem !important;
+    line-height: 1.05 !important;
+    text-shadow: none !important;
+    -webkit-line-clamp: 2 !important;
+  }
+
+  .collection-segment em {
+    display: none !important;
+  }
+
+  .collection-affordance {
+    margin-top: 0 !important;
+    color: rgba(143, 63, 42, 0.76) !important;
+    font-size: 0.64rem !important;
+    text-shadow: none !important;
+  }
+
+  .collection-pop {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    padding: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .collection-pop-copy > p {
+    margin-bottom: 8px !important;
+    font-size: 0.78rem !important;
+  }
+
+  .collection-sidebar-grid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 2px 6px 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    overscroll-behavior-inline: contain !important;
+    scroll-snap-type: x proximity !important;
+    scrollbar-width: none !important;
+  }
+
+  .collection-sidebar-grid::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .collection-sidebar-tile {
+    display: inline-grid !important;
+    grid-template-columns: auto minmax(0, 1fr) auto !important;
+    grid-template-rows: auto auto !important;
+    align-items: center !important;
+    align-content: center !important;
+    gap: 3px 6px !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: 132px !important;
+    max-width: 190px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+    padding: 7px 10px !important;
+    border-radius: 999px !important;
+  }
+
+  .collection-sidebar-tile > span,
+  .collection-sidebar-tile span:first-child {
+    grid-row: 1 / 3 !important;
+    width: 24px !important;
+    height: 24px !important;
+    margin: 0 !important;
+    border-radius: 999px !important;
+    font-size: 0.78rem !important;
+  }
+
+  .collection-sidebar-tile strong {
+    font-size: 0.72rem !important;
+    line-height: 1 !important;
+    -webkit-line-clamp: 1 !important;
+  }
+
+  .collection-sidebar-tile small {
+    font-size: 0.62rem !important;
+    line-height: 1 !important;
+  }
+
+  .collection-sidebar-tile::after {
+    grid-row: 1 / 3 !important;
+    align-self: center !important;
+  }
+
+  .collection-subcategory-section {
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .single-subcategory-list .collection-subcategory-row {
+    grid-auto-columns: min(82vw, 330px) !important;
+    gap: 12px !important;
+    padding: 2px 8px 8px 2px !important;
+  }
+
+  .collection-subcategory-row .drink-card {
+    grid-template-rows: 182px auto !important;
+    max-height: 294px !important;
+  }
+
+  .collection-subcategory-row .drink-card .recipe-icon,
+  .collection-subcategory-row .curated-collection-card .recipe-icon {
+    height: 182px !important;
+    min-height: 182px !important;
+  }
+}
