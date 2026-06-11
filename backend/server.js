@@ -81,7 +81,7 @@ function filterFallbackRecipes(url) {
   const q = (url.searchParams.get('q') || '').trim().toLowerCase();
   const diet = (url.searchParams.get('diet') || '').trim().toLowerCase();
   return loadFallbackRecipes().filter((recipe) => {
-    const haystack = `${recipe.title} ${recipe.description} ${recipe.cuisine} ${recipe.dietType} ${(recipe.tags || []).join(' ')}`.toLowerCase();
+    const haystack = `${recipe.title} ${(recipe.aliases || []).join(' ')} ${recipe.description} ${recipe.cuisine} ${recipe.dietType} ${(recipe.tags || []).join(' ')}`.toLowerCase();
     const matchesQuery = !q || haystack.includes(q);
     const matchesDiet = !diet || String(recipe.dietType).toLowerCase() === diet;
     const isCore = String(recipe.recipeType || recipe.recipe_type || 'core').toLowerCase() === 'core';

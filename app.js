@@ -85,12 +85,20 @@ const state = {
   laterIds: new Set(safeJsonParse(localStorage.getItem('cookbuddy_later'), [])),
   expandedCollections: new Set(),
   activeCollection: 'baby',
+  collectionScrollLeft: 0,
   collectionsOpen: false,
   ingredientsExpanded: false,
-  ingredientSearch: ''
+  ingredientSearch: '',
+  pantryView: 'dashboard',
+  recipeReturnContext: null,
+  liveWeather: null,
+  weatherLoading: false
 };
 
 let picksTransitionTimer = null;
+let pantryResultsTransitionTimer = null;
+let pantrySelectionRenderFrame = null;
+const pantryUnlockCache = new Map();
 
 const moodCopy = {
   comfort: {
@@ -179,12 +187,12 @@ const moodLabels = {
 };
 
 const tomoMoodBanter = {
-  comfort: 'Looks like comfort is calling today. I’ll find something warm, familiar, and easy to love.',
-  soul: 'Feels like home is on the menu. Let’s bring back something familiar.',
-  protein: 'Need some fuel today? I’ll look for dishes that feel satisfying and protein-rich.',
-  quick: 'Short on time? I’ll keep it simple and quick.',
-  spicy: 'Craving a kick? Let’s turn up the heat.',
-  rainy: 'Rainy mood? Perfect. Let’s find something warm, crispy, or cozy.'
+  comfort: 'Comfort is calling today 🍅',
+  rainy: 'Rainy weather needs something warm 🌧️',
+  quick: "Let's keep it easy today ⚡",
+  protein: 'Something filling sounds right 💪',
+  soul: 'Food that feels like home today 💗',
+  spicy: 'Something spicy might hit the spot 🔥'
 };
 
 function activeMood() {
@@ -201,11 +209,16 @@ function labelForMood(mood) {
 
 function hasWeirdPantryCombo(selectedIngredients = []) {
   const selected = selectedIngredients.map(normalizeIngredientName);
-  return selected.includes('apple') && selected.includes('fish');
+  return (selected.includes('apple') && selected.includes('fish'))
+    || (selected.includes('milk') && selected.includes('tamarind'));
 }
 
 function formatTomoMessage(message) {
   return String(message || '').trim().startsWith('🍅') ? message : `🍅 ${message}`;
+}
+
+function noStrongPantryPrompt() {
+  return 'No strong match yet. Try adding onion, chilli, garlic, or curry leaves.';
 }
 
 function getTomoMessage(options = {}) {
@@ -225,20 +238,20 @@ function getTomoMessage(options = {}) {
   }
 
   if (context === 'pantry_open') {
-    return formatTomoMessage('What’s in your kitchen today? Pick 2–4 ingredients and I’ll connect the dots.');
+    return formatTomoMessage('What’s in your kitchen today? Pick your ingredients and I’ll suggest real dishes.');
   }
 
   if (context === 'ingredient_selected') {
     const count = selectedIngredients.length;
-    if (count === 1) return formatTomoMessage('Nice start. Add one more ingredient and I can suggest better dishes.');
+    if (count === 1) return formatTomoMessage(cachedPantryUnlockMessage(selectedIngredients) || 'Checking real recipe paths...');
     if (count === 2) return formatTomoMessage('Good combo. I found a few dishes you can make with this.');
     if (count >= 3) return formatTomoMessage('Now we’re cooking. These matches look stronger.');
     return getTomoMessage({ context: 'pantry_open' });
   }
 
   if (context === 'results_found') {
-    if (resultType === 'top') return formatTomoMessage('Best match from your kitchen.');
-    if (resultType === 'close') return formatTomoMessage('Almost there — you may need one more ingredient.');
+    if (resultType === 'top') return formatTomoMessage('Strong match. You have the key ingredients.');
+    if (resultType === 'close') return formatTomoMessage('Almost there. Add one more ingredient for a better match.');
     if (results.length) return formatTomoMessage(`I found ${results.length} good ${results.length === 1 ? 'idea' : 'ideas'} from your kitchen.`);
     return formatTomoMessage('Best match from your kitchen.');
   }
@@ -250,9 +263,9 @@ function getTomoMessage(options = {}) {
   }
 
   if (context === 'empty_state') {
-    if (reason === 'mood_fewer') return formatTomoMessage('I found fewer dishes here, but they fit the mood better.');
-    if (hasWeirdPantryCombo(selectedIngredients)) return formatTomoMessage('That combo is interesting, but I don’t want to force a bad suggestion.');
-    return formatTomoMessage('I couldn’t find a clean match yet. Try adding one more main ingredient.');
+    if (reason === 'mood_fewer') return '';
+    if (hasWeirdPantryCombo(selectedIngredients)) return formatTomoMessage(noStrongPantryPrompt());
+    return formatTomoMessage(noStrongPantryPrompt());
   }
 
   return formatTomoMessage('I’m here. Tell me the mood or what’s in your kitchen.');
@@ -267,6 +280,22 @@ const mealTitles = {
   lunch: 'Lunch ideas',
   dinner: 'Dinner ideas',
   snack: 'Snacky comfort'
+};
+
+const mealLabels = {
+  breakfast: 'Breakfast',
+  lunch: 'Lunch',
+  dinner: 'Dinner',
+  snack: 'Snacks'
+};
+
+const moodMealSubtitles = {
+  comfort: '3 dishes Tomo picked for your mood',
+  rainy: 'Warm bites for slow weather',
+  quick: 'Fast meals that still feel good',
+  protein: 'Filling picks for your day',
+  soul: 'Food that feels like home',
+  spicy: 'Bold flavors for today'
 };
 
 const ingredientFamilies = {
@@ -428,20 +457,22 @@ const els = {
   nudgeText: document.querySelector('#nudgeText'),
   recipeCount: document.querySelector('#recipeCount'),
   mealTitle: document.querySelector('#mealTitle'),
+  clearMoodButton: document.querySelector('#clearMoodButton'),
   todayPicks: document.querySelector('#todayPicks'),
   kitchenJournal: document.querySelector('#kitchenJournal'),
   selectedCount: document.querySelector('#selectedCount'),
   surpriseButton: document.querySelector('#surpriseButton'),
-  tomoHero: document.querySelector('.tomo-hero'),
+  tomoHero: document.querySelector('.cb-dashboard-hero'),
   specialRows: document.querySelector('#specialRows'),
   factBanter: document.querySelector('#factBanter'),
   recipeNotice: document.querySelector('#recipeNotice'),
   ingredientChips: document.querySelector('#ingredientChips'),
   ingredientResults: document.querySelector('#ingredientResults'),
   ingredientSearch: document.querySelector('#ingredientSearch'),
+  pantryInsightBanner: document.querySelector('#pantryInsightBanner'),
+  pantryBestMatch: document.querySelector('#pantryBestMatch'),
   pantryTomoMessage: document.querySelector('#pantryTomoMessage'),
   selectedIngredientTray: document.querySelector('#selectedIngredientTray'),
-  findDishes: document.querySelector('#findDishes'),
   clearIngredients: document.querySelector('#clearIngredients'),
   recipeDialog: document.querySelector('#recipeDialog'),
   recipeDetail: document.querySelector('#recipeDetail'),
@@ -455,9 +486,14 @@ const els = {
   globalSearchResults: document.querySelector('#globalSearchResults'),
   pantryDialog: document.querySelector('#pantryDialog'),
   pantryNavButton: document.querySelector('#pantryNavButton'),
+  pantryModalTitle: document.querySelector('#pantryModalTitle'),
+  pantryModalSubtitle: document.querySelector('#pantryModalSubtitle'),
+  pantrySuggestions: document.querySelector('#pantrySuggestions'),
+  journalNavButton: document.querySelector('#journalNavButton'),
   journalDialog: document.querySelector('#journalDialog'),
   journalDetail: document.querySelector('#journalDetail'),
   closeJournal: document.querySelector('#closeJournal'),
+  journalGotIt: document.querySelector('#journalGotIt'),
   closePantry: document.querySelector('#closePantry'),
   closeGrocery: document.querySelector('#closeGrocery'),
   clearPurchased: document.querySelector('#clearPurchased'),
@@ -586,7 +622,7 @@ function recipeEmoji(recipe) {
 }
 
 const visualMatchers = [
-  ['andhra podi idli', 'dishes/idli', 'andhra podi idli'],
+  ['andhra podi idli', 'dishes/andhra-podi-idli-homestyle', 'andhra podi idli'],
   ['spicy masala dosa', 'dishes/dosa', 'spicy masala dosa'],
   ['spicy aloo paratha', 'dishes/aloo-paratha', 'spicy aloo paratha'],
   ['dosa', 'dosa', 'dosa'],
@@ -670,12 +706,13 @@ function recipeImagePath(recipe) {
   const exactImageMap = {
     'aloo paratha': 'dishes/aloo-paratha-homestyle',
     'spicy aloo paratha': 'dishes/aloo-paratha-homestyle',
-    'andhra podi idli': 'dishes/idli-homestyle',
+    'andhra podi idli': 'dishes/andhra-podi-idli-homestyle',
     avalakki: 'dishes/avalakki-homestyle',
     'besan chilla': 'dishes/besan-chilla-homestyle',
     'bread omelette': 'dishes/bread-omelette-homestyle',
     dosa: 'dishes/dosa-homestyle',
     'spicy masala dosa': 'dishes/dosa-homestyle',
+    'gunpowder idli': 'dishes/gunpowder-idli',
     idli: 'dishes/idli-homestyle',
     'paneer paratha': 'dishes/paneer-paratha-homestyle',
     poha: 'dishes/poha-homestyle',
@@ -877,6 +914,7 @@ const moodFeedRules = {
   largeDatabaseThreshold: 300,
   contentGapThreshold: 10
 };
+const pantryStrongMatchThreshold = 80;
 
 const moodSignatureTerms = {
   comfort: [
@@ -897,62 +935,78 @@ const moodSignatureTerms = {
     'curd rice',
     'dal rice',
     'rasam rice',
-    'idli',
-    'soft idli',
-    'pongal',
-    'khichdi',
     'rice porridge',
+    'soft idli',
+    'idli',
+    'khichdi',
+    'pongal',
+    'aloo paratha',
+    'dosa',
+    'masala dosa',
+    'coconut rice',
+    'puliyogare',
+    'sambar rice',
+    'chole chawal',
+    'rajma chawal',
   ],
   rainy: [
+    'khichdi',
+    'pepper rasam',
+    'rasam rice',
+    'sambar rice',
+    'pongal',
+    'upma',
+    'masala dosa',
+    'vegetable soup',
+    'mushroom soup',
+    'corn soup',
     'masala chai',
     'pakora',
     'bread pakora',
-    'fish pakora',
-    'paneer pakora',
     'mirchi bajji',
-    'mirapakaya bajji',
     'bonda',
-    'pepper rasam',
-    'mushroom soup',
-    'corn soup',
-    'khichdi',
   ],
   spicy: [
-    'guntur chicken fry',
     'andhra chicken curry',
+    'pepper rasam',
+    'gunpowder idli',
+    'kaaram dosa',
+    'mirchi bajji',
     'andhra kodi vepudu',
+    'guntur chicken fry',
+    'chicken 65',
+    'chilli chicken',
+    'chilli paneer',
     'chicken chettinad',
     'chicken 555',
     'chicken majestic',
     'dragon chicken',
     'andhra egg fry',
     'mirapakaya bajji',
-    'mirchi bajji',
-    'gunpowder idli',
-    'kaaram dosa',
     'spicy aloo paratha',
-    'pepper rasam'
   ],
   protein: [
-    'chicken curry',
-    'andhra chicken curry',
-    'chicken chettinad',
-    'chicken sukka',
     'egg curry',
     'egg bhurji',
     'egg toast',
+    'egg fried rice',
+    'chicken curry',
+    'chicken fried rice',
+    'chilli chicken',
+    'chicken stew',
+    'chicken chettinad',
     'fish curry',
     'fish fry',
     'paneer bhurji',
     'palak paneer',
+    'kadai paneer',
+    'matar paneer',
     'paneer paratha',
-    'paneer sandwich',
+    'paneer dosa',
+    'egg dosa',
     'rajma chawal',
     'chole chawal',
-    'dal makhani',
-    'butter chicken',
-    'chicken stew',
-    'pork curry'
+    'dal makhani'
   ],
   quick: [
     'egg toast',
@@ -974,6 +1028,23 @@ const moodSignatureTerms = {
 const moodCoreTitles = Object.fromEntries(
   Object.entries(moodSignatureTerms).map(([mood, titles]) => [mood, new Set(titles)])
 );
+
+const moodHardExcludes = {
+  soul: new Set([
+    'spicy aloo paratha',
+    'spicy masala dosa',
+    'gunpowder idli',
+    'kaaram dosa'
+  ]),
+  protein: new Set([
+    'ladoo',
+    'bonda',
+    'pakora',
+    'bread pakora',
+    'mirchi bajji',
+    'mirapakaya bajji'
+  ])
+};
 
 const moodSupportTitles = {
   comfort: new Set([
@@ -1020,6 +1091,13 @@ function moodKeyFromLabel(label) {
   return Object.entries(moodLabels).find(([, value]) => String(value).toLowerCase() === normalized)?.[0] || '';
 }
 
+function explicitMoodKeys(recipe, field) {
+  return new Set((recipe[field] || [])
+    .map((value) => moodKeyFromLabel(value) || normalizeIngredientName(value))
+    .map((value) => value === 'rainy day' ? 'rainy' : value)
+    .filter(Boolean));
+}
+
 function normalizedRecipeTags(recipe) {
   return (recipe.tags || []).map((tag) => String(tag).toLowerCase().trim());
 }
@@ -1033,6 +1111,7 @@ function normalizedRecipeText(recipe) {
     recipe.spiceLevel,
     recipe.primaryMood,
     recipe.secondaryMood,
+    ...(recipe.aliases || []),
     ...(recipe.tags || []),
     recipe.primaryIngredient1,
     recipe.primaryIngredient2,
@@ -1082,9 +1161,14 @@ function recipeTotalTime(recipe) {
 
 function recipeMoodTier(recipe, mood = activeMood()) {
   if (!mood) return MoodTier.SUPPORT;
+  const title = titleText(recipe);
+  if (moodHardExcludes[mood]?.has(title)) return MoodTier.EXCLUDE;
+  if (Array.isArray(recipe.moodTags) && recipe.moodTags.length === 0) return MoodTier.EXCLUDE;
+  if (explicitMoodKeys(recipe, 'moodExcludes').has(mood)) return MoodTier.EXCLUDE;
+  if (moodCoreTitles[mood]?.has(title)) return MoodTier.CORE;
+  if (explicitMoodKeys(recipe, 'moodIncludes').has(mood)) return MoodTier.SUPPORT;
   const tags = normalizedRecipeTags(recipe);
   const text = normalizedRecipeText(recipe);
-  const title = titleText(recipe);
   const time = recipeTotalTime(recipe);
   const comfort = Number(recipe.comfortScore || 0);
   const protein = Number(recipe.proteinScore || 0);
@@ -1094,7 +1178,6 @@ function recipeMoodTier(recipe, mood = activeMood()) {
   const effort = Number(recipe.effortScore || 5);
   const inMood = recipeHasMoodMembership(recipe, mood);
   const signature = signatureIndex(recipe, mood) >= 0;
-  if (moodCoreTitles[mood]?.has(title)) return MoodTier.CORE;
   if (moodSupportTitles[mood]?.has(title)) return MoodTier.SUPPORT;
   const support = textHasAny(title, moodSupportTerms[mood] || []) || textHasAny(text, moodSupportTerms[mood] || []);
 
@@ -1298,10 +1381,36 @@ function diversityBalancedTop(sorted) {
   return picked;
 }
 
+function rainyDayVarietyTop(sorted) {
+  if (activeMood() !== 'rainy') return sorted;
+  const rotatingSnackTitles = new Set([
+    'pakora',
+    'bread pakora',
+    'mirchi bajji',
+    'mirapakaya bajji',
+    'fish pakora',
+    'paneer pakora'
+  ]);
+  const picked = [];
+  let rotatingSnackCount = 0;
+  for (const recipe of sorted) {
+    if (!rotatingSnackTitles.has(titleText(recipe))) {
+      picked.push(recipe);
+      continue;
+    }
+    if (rotatingSnackCount < 2) {
+      picked.push(recipe);
+      rotatingSnackCount += 1;
+    }
+  }
+  return picked;
+}
+
 function sortForMood(recipes) {
   const mood = activeMood();
-  if (!mood) return [...recipes];
-  const candidates = moodCandidatePool(recipes, mood);
+  const feedRecipes = recipes.filter((recipe) => !recipeExcludedFromDefaultFeeds(recipe));
+  if (!mood) return familyCappedVisibleList(feedRecipes);
+  const candidates = moodCandidatePool(feedRecipes, mood);
   const sorted = [...candidates].sort((a, b) => {
     const aScore = moodRankingBreakdown(a, mood);
     const bScore = moodRankingBreakdown(b, mood);
@@ -1314,7 +1423,7 @@ function sortForMood(recipes) {
       || userPreferenceScore(b) - userPreferenceScore(a)
       || a.title.localeCompare(b.title);
   });
-  const balanced = uniqueRecipeFamilies(diversityBalancedTop(sorted));
+  const balanced = uniqueRecipeFamilies(familyCappedVisibleList(rainyDayVarietyTop(diversityBalancedTop(sorted))));
   warnMoodContentGap(mood, balanced.length);
   return balanced.slice(0, moodFeedRules.maxResults);
 }
@@ -1365,15 +1474,13 @@ function recipeTrustContext(recipe) {
 }
 
 function renderTodayPicks() {
-  const mealPool = state.recipes.filter((recipe) => recipeMatchesMealForMoodView(recipe, state.meal));
+  const mealPool = state.recipes
+    .filter((recipe) => !recipeExcludedFromDefaultFeeds(recipe))
+    .filter((recipe) => recipeMatchesMealForMoodView(recipe, state.meal));
   const mealMatches = sortForMood(mealPool);
-  if (els.recipeNotice && activeMood()) {
-    const qualityCount = uniqueRecipeFamilies(moodCandidatePool(state.recipes, activeMood())).length;
-    const shouldShowMoodGap = qualityCount > 0 && qualityCount < moodFeedRules.maxResults;
-    els.recipeNotice.textContent = shouldShowMoodGap ? getTomoMessage({ context: 'empty_state', reason: 'mood_fewer' }) : '';
-    els.recipeNotice.classList.toggle('hidden', !shouldShowMoodGap);
-  } else if (els.recipeNotice) {
+  if (els.recipeNotice) {
     els.recipeNotice.textContent = '';
+    els.recipeNotice.classList.remove('mood-helper');
     els.recipeNotice.classList.add('hidden');
   }
   const freshPicks = mealMatches.filter((recipe) => !state.laterIds.has(recipe.id));
@@ -1499,15 +1606,12 @@ function journalGroup(entry) {
   return 'Earlier';
 }
 
-function openJournalRoute(push = true) {
-  renderJournalPage();
+function openJournalRoute() {
   els.journalDialog?.showModal();
-  if (push && window.location.pathname !== '/journal') window.history.pushState({ journal: true }, '', '/journal');
 }
 
 function closeJournalRoute() {
   els.journalDialog?.close();
-  if (window.location.pathname === '/journal') window.history.pushState({}, '', '/');
 }
 
 function renderJournalPage() {
@@ -1546,18 +1650,44 @@ function uniqueRecipeFamilies(recipes) {
   });
 }
 
+function refreshTodayPicks() {
+  renderMood();
+  renderMeal();
+  renderTomoPick();
+  transitionTodayPicks();
+  renderIngredientResults();
+}
+
+function resetMoodSelection() {
+  state.activeMood = null;
+  state.mood = 'comfort';
+  state.featuredRecipeId = null;
+  state.revealedPickId = null;
+  refreshTodayPicks();
+}
+
 function transitionTodayPicks() {
   clearTimeout(picksTransitionTimer);
-  els.todayPicks.classList.remove('is-swapping');
-  requestAnimationFrame(() => els.todayPicks.classList.add('is-swapping'));
+  if (!els.todayPicks || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    renderTodayPicks();
+    return;
+  }
+  const scrollX = window.scrollX;
+  const scrollY = window.scrollY;
+  els.todayPicks.classList.add('is-swapping');
   picksTransitionTimer = setTimeout(() => {
     renderTodayPicks();
-    requestAnimationFrame(() => els.todayPicks.classList.remove('is-swapping'));
-  }, 160);
+    window.scrollTo(scrollX, scrollY);
+    requestAnimationFrame(() => {
+      els.todayPicks.classList.remove('is-swapping');
+    });
+  }, 120);
 }
 
 function featuredCandidates() {
-  const pool = state.recipes.filter((recipe) => recipeMatchesMealForMoodView(recipe, state.meal));
+  const pool = state.recipes
+    .filter((recipe) => !recipeExcludedFromDefaultFeeds(recipe))
+    .filter((recipe) => recipeMatchesMealForMoodView(recipe, state.meal));
   return sortForMood(pool);
 }
 
@@ -1580,7 +1710,7 @@ function heroRecommendationReasons(recipe) {
   if (state.selectedIngredients.size) reasons.push('✓ Pantry ingredients available');
   if (userPreferenceScore(recipe) > 0) reasons.push('✓ Frequently cooked by you');
   if (!reasons.some((reason) => /Quick|Frequently|Pantry/.test(reason))) reasons.push('✓ Popular recipe');
-  return reasons.slice(0, 3);
+  return reasons.slice(0, 2);
 }
 
 function revealTomoPick(findAnother = false) {
@@ -1605,51 +1735,38 @@ function surpriseMe() {
 
 function renderTomoPick() {
   if (!els.surpriseButton) return;
-  const pick = state.recipes.find((recipe) => recipe.id === state.revealedPickId);
-  els.tomoHero?.classList.toggle('revealed', Boolean(pick));
-  els.surpriseButton.classList.toggle('revealed', Boolean(pick));
+  const revealedPick = state.recipes.find((recipe) => recipe.id === state.revealedPickId);
+  const paneerSandwich = state.recipes.find((recipe) => /paneer sandwich/i.test(recipe.title || ''));
+  const featuredPick = state.recipes.find((recipe) => recipe.id === state.featuredRecipeId);
+  const pick = revealedPick || paneerSandwich || featuredPick || featuredCandidates()[0];
+  els.tomoHero?.classList.toggle('revealed', Boolean(revealedPick));
+  els.surpriseButton.classList.toggle('revealed', Boolean(revealedPick));
   els.surpriseButton.dataset.recipeId = '';
-  els.surpriseButton.setAttribute('aria-label', pick ? "Tomo's revealed pick" : "Reveal Tomo's pick");
-  els.surpriseButton.innerHTML = pick
-    ? `
-      <img src="${localPath('/tomo.png')}" alt="" />
-      <span class="pick-revealed">
-        <span>Tomo</span>
-        <small>Picked</small>
-      </span>
-    `
-    : `
-      <img src="${localPath('/tomo.png')}" alt="" />
-      <span class="pick-flip">
-        <span class="pick-face pick-front">Tap to reveal</span>
-        <span class="pick-face pick-back">Tomo’s pick</span>
-      </span>
-    `;
-  if (els.heroMessage) els.heroMessage.textContent = '🍅 Tomo';
-  if (els.heroPickTitle) els.heroPickTitle.textContent = tomoPromptMessage();
-  if (els.heroRevealDish) {
-    els.heroRevealDish.classList.toggle('hidden', !pick);
-    els.heroRevealDish.innerHTML = pick
-      ? `
-        <span class="recipe-icon">${recipeVisual(pick)}</span>
-        <span class="hero-reveal-copy">
-          <small>✨ Tomo's Pick</small>
-          <strong>${escapeHtml(pick.title)}</strong>
+  els.surpriseButton.setAttribute('aria-label', revealedPick ? `${pick?.title || "Tomo's pick"} revealed` : "Reveal Tomo's pick");
+  els.surpriseButton.innerHTML = revealedPick
+    ? `<div id="heroRevealDish" class="cb-dashboard-reveal">
+        <span class="cb-dashboard-mini-image">${recipeVisual(pick)}</span>
+        <span class="cb-dashboard-reveal-copy"><strong>${escapeHtml(pick.title)}</strong><small>${recipeTotalTime(pick)} mins • ${escapeHtml(moodPill(pick))}</small></span>
+        <span class="cb-dashboard-actions">
+          <button id="heroCookNow" class="cb-dashboard-primary" type="button" data-recipe-id="${escapeHtml(pick.id)}">Cook Now</button>
+          <button id="heroFindAnother" class="cb-dashboard-secondary" type="button">Another Pick</button>
         </span>
-      `
-      : '';
-  }
+      </div>`
+    : `<img src="${localPath('/tomo.png')}" alt="" /><span>Tap to reveal</span>`;
+  if (els.heroMessage) els.heroMessage.textContent = '';
+  if (els.heroPickTitle) els.heroPickTitle.textContent = 'Looks like comfort is calling today. I’ll find something warm, familiar, and easy to love.';
   if (els.heroPickReasons) {
-    els.heroPickReasons.classList.toggle('hidden', !pick);
-    els.heroPickReasons.innerHTML = pick ? heroRecommendationReasons(pick).map((reason) => `<li>${escapeHtml(reason)}</li>`).join('') : '';
+    els.heroPickReasons.classList.add('hidden');
+    els.heroPickReasons.innerHTML = '';
   }
   if (els.heroCookNow) {
     els.heroCookNow.dataset.recipeId = pick ? pick.id : '';
     els.heroCookNow.dataset.recipeAction = 'cook';
-    els.heroCookNow.classList.toggle('hidden', !pick);
+    els.heroCookNow.classList.toggle('hidden', !revealedPick);
   }
   if (els.heroFindAnother) {
-    els.heroFindAnother.classList.toggle('hidden', !pick);
+    els.heroFindAnother.classList.toggle('hidden', !revealedPick);
+    els.heroFindAnother.textContent = 'Another Pick';
   }
 }
 
@@ -1657,6 +1774,23 @@ function ambientContext() {
   const now = new Date();
   const hour = now.getHours();
   const mood = moodForCopy();
+  if (state.liveWeather) {
+    const weather = state.liveWeather;
+    let hint = 'A good day for something comforting 🍲';
+    if (weather.code >= 51 && weather.code <= 82) hint = 'Rainy weather calls for something warm 🌧️';
+    else if (weather.code >= 95) hint = 'Stormy weather calls for a cozy kitchen ⛈️';
+    else if (weather.temperature >= 30) hint = 'Maybe something light and cooling 🥛';
+    else if (weather.temperature <= 16) hint = 'A warm bowl would feel good today 🍲';
+    else if (hour >= 5 && hour < 11) hint = 'Fresh morning for an easy breakfast ☀️';
+    else if (hour >= 22 || hour < 4) hint = 'Late-night cravings activated 🌙';
+
+    return {
+      time: now.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }),
+      datetime: now.toISOString(),
+      weather: `${Math.round(weather.temperature)}°C • ${weather.condition} ${weather.icon}`,
+      hint
+    };
+  }
   const mockWeather = {
     temperature: 24,
     condition: hour >= 18 || hour < 6 ? 'Soft evening' : 'Warm daylight',
@@ -1691,6 +1825,78 @@ function renderAmbientCard() {
   els.ambientTime.setAttribute('datetime', context.datetime);
   els.ambientWeather.textContent = context.weather;
   els.ambientHint.textContent = context.hint;
+}
+
+function weatherCondition(code, isDay) {
+  const night = Number(isDay) === 0;
+  if (code === 0) return { condition: night ? 'Clear night' : 'Clear sky', icon: night ? '🌙' : '☀️' };
+  if (code === 1) return { condition: 'Mostly clear', icon: night ? '🌙' : '🌤️' };
+  if (code === 2) return { condition: 'Partly cloudy', icon: '⛅' };
+  if (code === 3) return { condition: 'Cloudy', icon: '☁️' };
+  if (code === 45 || code === 48) return { condition: 'Foggy', icon: '🌫️' };
+  if (code >= 51 && code <= 57) return { condition: 'Drizzle', icon: '🌦️' };
+  if (code >= 61 && code <= 67) return { condition: 'Rain', icon: '🌧️' };
+  if (code >= 71 && code <= 77) return { condition: 'Snow', icon: '🌨️' };
+  if (code >= 80 && code <= 82) return { condition: 'Rain showers', icon: '🌦️' };
+  if (code === 85 || code === 86) return { condition: 'Snow showers', icon: '🌨️' };
+  if (code >= 95) return { condition: 'Thunderstorm', icon: '⛈️' };
+  return { condition: 'Current weather', icon: night ? '🌙' : '🌤️' };
+}
+
+function currentPosition() {
+  return new Promise((resolve, reject) => {
+    if (!navigator.geolocation) {
+      reject(new Error('Location is unavailable.'));
+      return;
+    }
+    navigator.geolocation.getCurrentPosition(resolve, reject, {
+      enableHighAccuracy: false,
+      maximumAge: 10 * 60 * 1000,
+      timeout: 8000
+    });
+  });
+}
+
+async function loadLiveWeather() {
+  if (state.weatherLoading) return;
+  const cached = safeJsonParse(sessionStorage.getItem('tomo_live_weather'), null);
+  if (cached?.fetchedAt && Date.now() - cached.fetchedAt < 15 * 60 * 1000) {
+    state.liveWeather = cached;
+    renderAmbientCard();
+    return;
+  }
+  state.weatherLoading = true;
+  try {
+    const position = await currentPosition();
+    const params = new URLSearchParams({
+      latitude: String(position.coords.latitude),
+      longitude: String(position.coords.longitude),
+      current: 'temperature_2m,apparent_temperature,weather_code,is_day',
+      timezone: 'auto'
+    });
+    const response = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`);
+    if (!response.ok) throw new Error('Weather service unavailable.');
+    const data = await response.json();
+    const current = data.current;
+    if (!current) throw new Error('Weather data unavailable.');
+    const presentation = weatherCondition(Number(current.weather_code), Number(current.is_day));
+    state.liveWeather = {
+      temperature: Number(current.temperature_2m),
+      apparentTemperature: Number(current.apparent_temperature),
+      code: Number(current.weather_code),
+      isDay: Number(current.is_day),
+      condition: presentation.condition,
+      icon: presentation.icon,
+      fetchedAt: Date.now()
+    };
+    sessionStorage.setItem('tomo_live_weather', JSON.stringify(state.liveWeather));
+    renderAmbientCard();
+    document.querySelector('.cb-dashboard-weather')?.setAttribute('title', 'Live local weather');
+  } catch {
+    document.querySelector('.cb-dashboard-weather')?.setAttribute('title', 'Live weather needs location permission and an internet connection');
+  } finally {
+    state.weatherLoading = false;
+  }
 }
 
 function specialMatches(type) {
@@ -1855,41 +2061,297 @@ function collectionUseLabel(item, collectionKey = '') {
 
 function collectionBrowseMetadata(item, collectionKey = '') {
   const lowerKey = String(collectionKey || '').toLowerCase();
-  const useLabel = collectionUseLabel(item, lowerKey);
   const ageLabel = collectionAgeLabel(item.region);
   const text = `${item.title || ''} ${item.subcategory || item.subCategory || ''} ${(item.tags || []).join(' ')}`.toLowerCase();
+  const title = String(item.title || '').toLowerCase();
+  const time = Number(item.time || item.timeMinutes || item.prep_time_mins || 0);
+  const quickTime = time && time <= 20 ? `${time} mins` : '';
+  const result = (attribute, reason) => ({
+    attribute,
+    reason: collectionReasonLine(item, collectionKey, reason)
+  });
 
   if (lowerKey === 'baby') {
-    const babyLabel = /puree|mash/.test(text) ? 'Easy Food' : /little|bite|plate/.test(text) ? 'Soft Food' : 'Comfort Food';
-    return [ageLabel || '6+ Months', babyLabel].filter(Boolean);
+    if (/banana|apple|pear|puree|mash/.test(text)) return result(ageLabel || '6+ Months', 'Soft texture for easy feeding days.');
+    if (/ragi|oats|suji|porridge/.test(text)) return result(ageLabel || '8+ Months', 'Gentle bowl that keeps tiny tummies full.');
+    if (/khichdi|moong|curd|kheer/.test(text)) return result(ageLabel || '8+ Months', 'Mild, familiar and simple to digest.');
+    if (/idli|dosa|finger|little|plate/.test(text)) return result(ageLabel || '1 Year+', 'Small bites for confident little eaters.');
+    return result(ageLabel || '6+ Months', 'A gentle option for early meal routines.');
   }
   if (lowerKey === 'lunchbox') {
-    if (/protein/.test(text)) return ['Protein Food', 'Kid Friendly'];
-    if (/tiffin|mess|travel/.test(text)) return ['School Food', 'Mess Free'];
-    return ['Easy Food', 'Kid Friendly'];
+    if (/paneer|egg|besan/.test(text)) return result('High Protein', 'Keeps kids full through a busy school day.');
+    if (/roll|wrap|sandwich/.test(title)) return result('Lunch Box', 'Neat to pack and easy to eat on the go.');
+    if (/rice|idli|paratha|uttapam/.test(title)) return result('School Lunch', 'Travels well without needing extra fuss.');
+    if (/chaat|cutlet|pancake/.test(title)) return result('After School', 'A quick bite for hungry evenings.');
+    return result(quickTime || 'Busy Day', 'Keeps school lunch simple without extra fuss.');
   }
   if (lowerKey === 'drinks') {
-    if (/summer|cooler|lassi|coconut|panna|sherbet/.test(text)) return ['Cooling Drink', 'Easy Sip'];
-    if (/remed|kashaya|ajwain|jeera|tulsi|ginger/.test(text)) return ['Herbal Drink', 'Comfort Sip'];
-    return ['Comfort Sip', 'Easy Drink'];
+    if (/tender coconut|kokum|panna|sherbet|lassi|rose|buttermilk/.test(text)) return result('Best Cold', 'Cooling and light for warm afternoons.');
+    if (/kashaya|ajwain|jeera|tulsi|ginger|remed/.test(text)) return result('Immunity', 'A soothing sip when the body needs care.');
+    if (/badam|ragi|milk|nourishing/.test(text)) return result('Filling', 'Comforting enough to feel like a small meal.');
+    if (/chai|coffee/.test(text)) return result('Best Hot', 'A cozy cup for slow evening breaks.');
+    return result('Soothing', 'Easy to sip when you want something gentle.');
   }
   if (lowerKey === 'salads') {
-    if (/protein|chickpea|rajma|sprout|paneer|lentil/.test(text)) return ['Protein Food', 'Fresh Food'];
-    if (/summer|cucumber|fruit|watermelon/.test(text)) return ['Light Food', 'Cooling Food'];
-    return ['Light Food', 'Fresh Food'];
+    if (/sprout|chickpea|rajma|paneer|lentil|protein/.test(text)) return result('Meal Prep', 'Stays filling without feeling too heavy.');
+    if (/cucumber|watermelon|fruit|summer/.test(text)) return result('Best Cold', 'Naturally cooling and refreshing.');
+    if (/kosambari|kachumber|regional/.test(text)) return result('No Cook', 'Fresh side that comes together quickly.');
+    if (/carrot|corn|green gram|millet/.test(text)) return result('Light Dinner', 'Useful when you want something easy and fresh.');
+    return result('Fresh Pick', 'Adds crunch and brightness to the plate.');
   }
   if (lowerKey === 'desserts') {
-    if (/festival|modak|ladoo|katli|jalebi|mysore/.test(text)) return ['Sweet Food', 'Festival Food'];
-    return ['Sweet Food', 'Comfort Food'];
+    if (/modak|ladoo|katli|jalebi|mysore|festival/.test(text)) return result('Family Favorite', 'Made for sharing during happy gatherings.');
+    if (/kheer|payasam|rasmalai|basundi|shrikhand|milk/.test(text)) return result('Best Cold', 'A slow, nostalgic sweet after meals.');
+    if (/sheera|kesari|burfi|quick/.test(text)) return result(quickTime || 'Beginner', 'Simple sweet fix for sudden cravings.');
+    return result('Weekend', 'A small homemade ending to the day.');
   }
   if (lowerKey === 'soups') {
-    if (/protein|chicken|dal|lentil|egg/.test(text)) return ['Protein Food', 'Comfort Food'];
-    return ['Comfort Food', 'Easy Food'];
+    if (/tomato/.test(title)) return result(quickTime || 'Best Hot', 'Perfect for chilly evenings.');
+    if (/sweet corn|corn/.test(title)) return result('Kid Friendly', 'A comforting bowl kids usually enjoy.');
+    if (/pepper|rasam|ginger|rainy/.test(text)) return result('Immunity', 'Warm, peppery and good for dull days.');
+    if (/chicken|dal|lentil|egg|protein/.test(text)) return result('High Protein', 'Filling enough for a light dinner.');
+    if (/mushroom|vegetable|regional/.test(text)) return result('One Pot', 'Light, warm and quick to make.');
+    return result('Best Hot', 'A cozy bowl for slower evenings.');
   }
   if (lowerKey === 'festival') {
-    return ['Festival Food', 'Comfort Food'];
+    if (/diwali|ladoo|katli|mysore|sweet/.test(text)) return result('Festival', 'A familiar sweet for celebration plates.');
+    if (/onam|sadya|payasam|avial/.test(text)) return result('Traditional', 'Brings a proper festive table feeling.');
+    if (/eid|biryani|sheer/.test(text)) return result('Weekend', 'Best when the meal can feel special.');
+    if (/ugadi|mango|pachadi/.test(text)) return result('Seasonal', 'Tastes right when the festival mood arrives.');
+    return result('Family Style', 'Good for cooking and sharing together.');
   }
-  return [useLabel || 'Comfort Food', 'Easy Food'].filter(Boolean).slice(0, 2);
+  if (/paneer sandwich/.test(title)) return result('High Protein', 'Keeps you full without feeling heavy.');
+  if (/quick|15|min/.test(text)) return result(quickTime || 'Quick 15', 'Helpful when you want food without waiting.');
+  if (/protein|paneer|egg|chicken|dal|sprout/.test(text)) return result('High Protein', 'Adds substance without complicating dinner.');
+  if (/rainy|pakora|bajji|soup|chai/.test(text)) return result('Rainy Day', 'Feels right when the weather slows down.');
+  if (/rice|khichdi|porridge|dal/.test(text)) return result('One Pot', 'Simple to make and easy to settle into.');
+  if (/sandwich|roll|wrap/.test(text)) return result('Lunch Box', 'Easy to hold, pack and finish.');
+  return result('Beginner', 'Straightforward enough for a low-effort day.');
+}
+
+function collectionReasonLine(item, collectionKey = '', fallback = '') {
+  const title = String(item.title || '').toLowerCase();
+  const titleKey = normalizeIngredientName(item.title || '');
+  const lowerKey = String(collectionKey || '').toLowerCase();
+  const exact = {
+    'rice moong khichdi': 'Soft dal-rice comfort for tiny appetites.',
+    'ragi porridge': 'Earthy, filling and gentle for mornings.',
+    'suji porridge': 'Mild, familiar and made for easy feeding.',
+    'oats porridge': 'Creamy and calm for a soft breakfast.',
+    'mashed banana': 'Naturally sweet and soft for early bites.',
+    'apple puree': 'A smooth little spoonful of soft fruit.',
+    'pear puree': 'Gentle fruit sweetness for first tastes.',
+    'carrot puree': 'Mild vegetable sweetness in an easy spoon.',
+    'sweet potato mash': 'Naturally creamy and filling for little bowls.',
+    'pumpkin mash': 'Soft, mellow and easy to swallow slowly.',
+    'dal rice mash': 'Dal and rice settle into a gentle meal.',
+    'beetroot mash': 'A colorful spoonful for curious little eaters.',
+    'avocado mash': 'Creamy texture without much cooking work.',
+    'egg yolk mash': 'A small protein boost for growing appetites.',
+    'soft idli mash': 'Turns idli into a soft, familiar meal.',
+    'vegetable dal mash': 'Dal makes vegetables feel smoother and fuller.',
+    'soft chapati milk mash': 'Softens chapati into a comforting little bowl.',
+    'vegetable khichdi': 'One soft pot with rice, dal and vegetables.',
+    'curd rice': 'Cooling, familiar and easy on the stomach.',
+    'moong dal soup': 'Light dal warmth for quieter meal times.',
+    'rice kheer baby': 'A mild sweet bowl for tiny celebrations.',
+    'mini idli sambar': 'Small idlis make lunch feel easy to finish.',
+    'soft dosa': 'Soft edges make dosa easier for little bites.',
+    'vegetable upma': 'Warm and steady when breakfast needs speed.',
+    'paneer bhurji': 'Soft paneer adds protein without much fuss.',
+    'egg bhurji': 'Quick eggs make a small plate more filling.',
+    'soft veg pulao': 'Gentle rice with vegetables in every spoon.',
+    'dalia porridge': 'Broken wheat keeps breakfast soft and filling.',
+    'vegetable seviyan': 'Fine noodles make vegetables easier to enjoy.',
+    'baby pongal': 'Soft rice and dal comfort for slow feeding.',
+    'poha': 'Stays light but still feels like breakfast.',
+    'mini uttapam': 'Small rounds fit neatly into tiffin boxes.',
+    'veg seviyan': 'Mild noodles are easy to pack and eat.',
+    'bread upma': 'Turns leftover bread into a warm morning win.',
+    'rava idli': 'Steams quickly and stays soft in the box.',
+    'dosa roll': 'Easy to hold without spilling the filling.',
+    'avalakki': 'Soft poha-style flakes work for rushed mornings.',
+    'mini idli': 'Tiny bites that rarely come back home.',
+    'lemon rice': 'Bright, cheerful and easy to pack for lunch.',
+    'tomato rice': 'Tastes good even after a few hours.',
+    'aloo paratha': 'Filling enough for a long school day.',
+    'peanut rice': 'Nutty rice keeps lunch simple and satisfying.',
+    'veg pulao': 'Colorful rice makes lunch feel complete.',
+    'chapati jam roll': 'Sweet roll-up treat for small lunch breaks.',
+    'paneer roll': 'Protein packed and lunchbox approved.',
+    'egg roll': 'A sturdy roll for a longer school day.',
+    'paneer bhurji wrap': 'Soft paneer filling stays neat inside a wrap.',
+    'besan chilla': 'Besan keeps breakfast light but satisfying.',
+    'egg fried rice': 'A quick protein lunch from leftover rice.',
+    'chana sundal': 'Small chickpea bites hold up well in boxes.',
+    'moong dal cheela': 'Soft cheela brings dal into breakfast easily.',
+    'cheese veg sandwich': 'Easy to pack and easy to eat between classes.',
+    'corn chaat': 'Quick crunch for hungry after-school moods.',
+    'veg cutlet': 'Crisp outside, soft inside and kid friendly.',
+    'banana pancake': 'Sweet enough without feeling like dessert.',
+    'masala makhana': 'Light crunch for after-school nibbling.',
+    'sweet potato chaat': 'Naturally sweet with a gentle chaat kick.',
+    'mini dhokla': 'Soft squares travel well without getting messy.',
+    'ginger chai': 'Ginger warmth helps slow the evening down.',
+    'tulsi tea': 'A calming sip for tired, heavy days.',
+    'kashaya': 'Peppery warmth when the weather feels dull.',
+    'jeera water': 'A light sip after a heavy homemade meal.',
+    'ajwain water': 'Gentle kitchen remedy for uneasy days.',
+    'buttermilk': 'Cooling and salty enough to revive the day.',
+    'sweet lassi': 'Sweet, creamy and good after spicy food.',
+    'salted lassi': 'A cooling sip when lunch feels heavy.',
+    'mango lassi': 'Fruity and filling for warm afternoons.',
+    'rose milk': 'Chilled, gentle and nostalgic after meals.',
+    'nannari sherbet': 'Rooty sweetness that cools the afternoon.',
+    'watermelon juice': 'Fresh, light and made for hot days.',
+    'sugarcane juice': 'A quick energy lift when the day drags.',
+    'dates milkshake': 'Naturally sweet and filling between meals.',
+    'carrot beet juice': 'Bright juice when you want something fresh.',
+    'masala chai': 'Spiced warmth for slow evening breaks.',
+    'elaichi chai': 'Cardamom makes chai feel softer and calmer.',
+    'filter coffee': 'Strong, familiar and perfect for slow mornings.',
+    'lemon honey water': 'Gentle citrus warmth for quiet starts.',
+    'masala chaas': 'Spiced buttermilk that cools the plate.',
+    'panakam': 'Jaggery and spice make summer feel festive.',
+    'tender coconut water': 'Fresh coconut water for hot afternoons.',
+    'aam panna': 'Tangy mango cooler for peak summer days.',
+    'banana shake': 'Creamy fruit drink for quick fullness.',
+    'sattu drink': 'Filling enough for a light afternoon sip.',
+    'green moong drink': 'Moong gives the drink a gentle protein lift.',
+    'turmeric milk': 'Warm turmeric milk for slow night routines.',
+    'badam milk': 'Nutty milk that feels rich without cooking much.',
+    'saffron milk': 'A fragrant sip for a quieter evening.',
+    'ragi malt': 'Ragi makes this drink filling and earthy.',
+    'beetroot salad': 'Naturally cooling and refreshing beside lunch.',
+    'cabbage salad': 'Crunchy side that lightens everyday meals.',
+    'lentil salad': 'Lentils make the bowl more filling.',
+    'avocado salad': 'Creamy bites balance sharper salad flavors.',
+    'green gram salad': 'Crunchy sprouts that make lunch feel lighter.',
+    'onion tomato salad': 'Simple freshness beside dal or rice.',
+    'mixed veg salad': 'Adds color and crunch without cooking.',
+    'apple walnut salad': 'Sweet crunch that keeps the plate lighter.',
+    'pomegranate salad': 'Juicy, bright and good beside heavy meals.',
+    'broccoli salad': 'A crisp green bowl with a clean bite.',
+    'sweet corn salad': 'Sweet corn keeps the salad easy to enjoy.',
+    'spinach salad': 'Leafy and light when dinner needs balance.',
+    'millet salad': 'Filling grains without a heavy finish.',
+    'sprouts salad': 'Sprouts bring crunch and steady energy.',
+    'chana chaat': 'Chana makes snack time feel more complete.',
+    'peanut kosambari': 'Peanuts add crunch to a fresh side.',
+    'paneer salad': 'Paneer turns salad into a fuller plate.',
+    'moong salad': 'Moong keeps the bowl fresh and filling.',
+    'kachumber salad': 'Fresh chopped crunch for any Indian meal.',
+    'kosambari': 'A classic fresh side for festival plates.',
+    'rajma salad': 'Rajma adds a hearty bite to fresh bowls.',
+    'pineapple salad': 'Sweet pineapple lifts simple salad flavors.',
+    'tomato onion chaat': 'Sharp, juicy and ready in just a few minutes.',
+    'carrot cucumber salad': 'Cool crunch for everyday lunch plates.',
+    'watermelon mint salad': 'Mint makes watermelon feel extra cooling.',
+    'fruit chaat': 'Fruit turns snack time bright and playful.',
+    'cucumber raita salad': 'Cucumber and curd calm spicy meals.',
+    'mango salad': 'Mango adds sweet freshness to the plate.',
+    'coconut cucumber salad': 'Coconut softens the cucumber crunch.',
+    'rasmalai': 'Chilled sweetness for slower evenings.',
+    'kheer': 'Sweet memories in every slow spoonful.',
+    'payasam': 'A festive spoonful that still feels homely.',
+    'shrikhand': 'Cool, creamy and ready for a sweet pause.',
+    'basundi': 'Slow milk sweetness for unhurried evenings.',
+    'rice kheer': 'Soft rice sweetness after a simple meal.',
+    'kaju katli': 'A neat sweet for gifting and sharing.',
+    'besan ladoo': 'Nutty sweetness that tastes like home.',
+    'motichoor ladoo': 'Tiny pearls of sweetness for celebrations.',
+    'coconut barfi': 'Coconut keeps this sweet soft and simple.',
+    'dry fruit ladoo': 'A small sweet bite with extra richness.',
+    'modak': 'A festive bite that feels handmade and special.',
+    'chocolate burfi': 'A playful sweet for modern cravings.',
+    'gulab jamun': 'Soft, warm and impossible to stop at one.',
+    'rasgulla': 'Light syrupy sweetness for a cool finish.',
+    'mysore pak': 'Ghee-rich sweetness for special days.',
+    'jalebi': 'Crispy, syrupy and celebration-ready.',
+    'phirni': 'Smooth rice dessert for slow spoonfuls.',
+    'peda': 'Small milk sweet that feels festive fast.',
+    'sandesh': 'Soft chenna sweet with a gentle finish.',
+    'kalakand': 'Grainy milk sweetness for family plates.',
+    'malpua': 'Syrupy pancakes for weekend indulgence.',
+    'carrot halwa': 'Warm carrot sweetness for winter moods.',
+    'moong dal halwa': 'Rich dal halwa for slow celebrations.',
+    'obbattu': 'Sweet flatbread that tastes like festivals.',
+    'puran poli': 'A warm sweet roti made for sharing.',
+    'kulfi': 'Cold, creamy and perfect after spicy food.',
+    'falooda': 'Layered sweetness for a playful treat.',
+    'rava kesari': 'Quick semolina sweet for sudden cravings.',
+    'sheera': 'Simple ghee sweetness for everyday comfort.',
+    'vegetable soup': 'A cozy bowl when dinner should stay light.',
+    'hot and sour soup': 'Sharp warmth for evenings that need a kick.',
+    'manchow soup': 'Crunchy, spicy comfort in a single bowl.',
+    'spinach soup': 'Leafy warmth when you want something gentle.',
+    'carrot soup': 'Sweet carrot makes the bowl feel mellow.',
+    'pumpkin soup': 'Creamy warmth without feeling too heavy.',
+    'beetroot soup': 'Earthy color and warmth in every spoon.',
+    'broccoli soup': 'A green bowl that feels clean and filling.',
+    'mushroom soup': 'Mushrooms make the bowl deep and cozy.',
+    'mixed veg soup': 'An easy way to use everyday vegetables.',
+    'lemon coriander soup': 'Citrus and coriander keep it bright.',
+    'noodle soup': 'Noodles make soup feel like a quick meal.',
+    'cabbage soup': 'Light broth for a simple dinner mood.',
+    'peas soup': 'Sweet peas make the bowl smooth and filling.',
+    'millet soup': 'Millet gives soup a gentle grainy body.',
+    'drumstick soup': 'Drumstick brings a homely regional warmth.',
+    'garlic soup': 'Garlic warmth feels good on tired evenings.',
+    'bottle gourd soup': 'Bottle gourd keeps the bowl calm and light.',
+    'oats soup': 'Oats make soup creamy without much effort.',
+    'tomato soup': 'Perfect for chilly evenings at home.',
+    'sweet corn soup': 'A comforting bowl kids usually enjoy.',
+    'corn soup': 'Light, warm and quick to make after work.',
+    'lentil soup': 'Lentils make the bowl filling but simple.',
+    'chicken soup': 'Chicken broth feels steady and restorative.',
+    'paneer soup': 'Paneer adds soft protein to a warm bowl.',
+    'pepper rasam': 'Peppery broth for rainy-day comfort.',
+    'tomato rasam': 'Tangy rasam wakes up a simple rice meal.',
+    'mysore rasam': 'Spiced rasam with a deeper homely flavor.',
+    'kollu rasam': 'Horse gram rasam feels earthy and warming.',
+    'chakli': 'Crisp spirals made for festive snacking.',
+    'shankarpali': 'Sweet crunch that stores well for guests.',
+    'tilgul': 'Sesame sweetness for winter celebrations.',
+    'ellu bella': 'A festive mix made for sharing handfuls.',
+    'sakkarai pongal': 'Sweet pongal brings harvest warmth home.',
+    'ven pongal': 'Soft pongal balances festive sweet plates.',
+    'holige': 'A warm sweet flatbread for family meals.',
+    'ugadi pachadi': 'Every spoon carries the festival flavors.',
+    'mango rice': 'Mango gives festive rice a seasonal tang.',
+    'avial': 'Vegetables and coconut make a sadya classic.',
+    'olan': 'A gentle coconut curry for festive spreads.',
+    'thoran': 'Coconut vegetables add texture to the feast.',
+    'parippu curry': 'Dal grounds the festival meal beautifully.',
+    'palada payasam': 'A creamy payasam made for slow servings.',
+    'sheer khurma': 'Dates and milk make Eid mornings special.',
+    'haleem': 'Slow-cooked richness for a festive table.',
+    'chicken biryani': 'A celebration centerpiece for hungry crowds.',
+    'seviyan': 'Fine noodles bring a sweet festival finish.',
+    'mutton korma': 'Rich gravy for a slow family feast.',
+    'kadubu': 'Steamed festive bites with soft coconut sweetness.',
+    'kozhukattai': 'Rice dumplings that feel handmade and festive.',
+    'ukadiche modak': 'Steamed modaks with a soft jaggery center.',
+    'plum cake': 'Spiced cake that tastes like holiday evenings.',
+    'rose cookies': 'Crisp floral cookies for festive tins.',
+    'kalkals': 'Tiny fried curls made for Christmas sharing.',
+    'coconut macaroons': 'Coconut sweetness with a soft chewy bite.',
+    'marzipan': 'Colorful almond sweets for festive gifting.'
+  };
+  if (exact[titleKey]) return exact[titleKey];
+  if (fallback && fallback.length >= 32 && fallback.length <= 52) return fallback;
+  const fallbackSets = {
+    baby: ['Soft texture for easier feeding days.', 'A small bowl for patient little bites.', 'Gentle enough for early meal practice.'],
+    lunchbox: ['Easy to pack and easy to finish.', 'Stays friendly even after a few hours.', 'Keeps lunch simple for busy school days.'],
+    drinks: ['A calming sip for a slower moment.', 'Works well when the day needs cooling.', 'A simple drink for between-meal comfort.'],
+    salads: ['Adds freshness without making the meal heavy.', 'Useful when the plate needs crunch and color.', 'Keeps the meal light but still interesting.'],
+    desserts: ['A small sweet pause after a homemade meal.', 'Good for sharing without making dessert fussy.', 'Brings a gentle finish to the table.'],
+    soups: ['Warm enough for dinner, light enough for comfort.', 'A quiet bowl when you want food to feel easy.', 'Useful when the evening needs something soft.'],
+    festival: ['Made for sharing around a festive table.', 'Brings a familiar celebration note home.', 'A special-day bite with homemade warmth.']
+  };
+  const options = fallbackSets[lowerKey] || ['Straightforward enough for a low-effort day.'];
+  const index = [...titleKey].reduce((sum, char) => sum + char.charCodeAt(0), 0) % options.length;
+  return options[index];
 }
 
 function collectionCard(item, icon, label, collectionKey = '') {
@@ -1897,15 +2359,14 @@ function collectionCard(item, icon, label, collectionKey = '') {
   article.className = 'drink-card';
   const slug = collectionImagePath(item, collectionKey, label);
   const meta = collectionBrowseMetadata(item, collectionKey);
-  const metaLines = (Array.isArray(meta) ? meta : String(meta || '').split('•'))
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .slice(0, 2);
   article.innerHTML = `
     <span class="recipe-icon"><img class="food-image" src="${slug}" alt="" loading="lazy" decoding="async" /></span>
     <div>
       <strong>${escapeHtml(item.title)}</strong>
-      <p class="collection-card-meta">${metaLines.map((line) => `<span>${escapeHtml(line)}</span>`).join('')}</p>
+      <p class="collection-card-meta">
+        <span class="collection-card-attribute">${escapeHtml(meta.attribute)}</span>
+        <small>${escapeHtml(meta.reason)}</small>
+      </p>
     </div>
   `;
   return article;
@@ -1944,6 +2405,8 @@ function editorialStaticCard(item, label) {
 
 function renderSpecialRows() {
   const collections = state.collections || [];
+  const previousScrollLeft = document.querySelector('.collection-scroll')?.scrollLeft ?? state.collectionScrollLeft ?? 0;
+  state.collectionScrollLeft = previousScrollLeft;
   if (!collections.length) {
     els.specialRows.innerHTML = '<p class="notice">Tomo Collections are loading.</p>';
     return;
@@ -1964,13 +2427,17 @@ function renderSpecialRows() {
     : `<p>${active.icon || '🍲'} ${active.title}</p><h3>${active.title}</h3><span>${active.copy || ''}</span>`;
 
   els.specialRows.innerHTML = `
-    <div class="collection-scroll" aria-label="Tomo collections">
-      ${collections.map((collection) => `
-        <button class="collection-segment collection-${collection.key} ${collection.tone} ${state.activeCollection === collection.key ? 'active' : ''}" data-collection-key="${collection.key}">
-          <strong>${collection.title}</strong>
-          <em>${collectionSegmentCopy(collection)}</em>
-        </button>
-      `).join('')}
+    <div class="collection-scroll-shell">
+      <button class="collection-scroll-button collection-scroll-left" type="button" data-scroll-collections="-1" aria-label="Scroll collections left">‹</button>
+      <div class="collection-scroll" aria-label="Tomo collections">
+        ${collections.map((collection) => `
+          <button class="collection-segment collection-${collection.key} ${collection.tone} ${state.activeCollection === collection.key ? 'active' : ''}" data-collection-key="${collection.key}">
+            <strong>${collection.title}</strong>
+            <em>${collectionSegmentCopy(collection)}</em>
+          </button>
+        `).join('')}
+      </div>
+      <button class="collection-scroll-button collection-scroll-right" type="button" data-scroll-collections="1" aria-label="Scroll collections right">›</button>
     </div>
     <article class="collection-pop ${active.tone}">
       <div class="collection-pop-copy">
@@ -1982,6 +2449,13 @@ function renderSpecialRows() {
 
   const container = els.specialRows.querySelector(`[data-special-row="${active.key}"]`);
   renderCollectionItems(active, container);
+  const restoredRow = els.specialRows.querySelector('.collection-scroll');
+  if (restoredRow) {
+    restoredRow.scrollLeft = state.collectionScrollLeft || 0;
+    restoredRow.addEventListener('scroll', () => {
+      state.collectionScrollLeft = restoredRow.scrollLeft;
+    }, { passive: true });
+  }
 }
 
 function collectionSegmentCopy(collection) {
@@ -1999,12 +2473,18 @@ function collectionSegmentCopy(collection) {
 
 function subcategoryIcon(name) {
   const text = String(name || '').toLowerCase();
-  if (text.includes('summer')) return '🌿';
-  if (text.includes('protein') || text.includes('nourishing')) return '💪';
-  if (text.includes('remed')) return '☕';
-  if (text.includes('milk')) return '🥛';
+  if (text.includes('first')) return '🥣';
+  if (text.includes('puree') || text.includes('mash')) return '🥄';
+  if (text.includes('growing')) return '🍅';
+  if (text.includes('little')) return '🍽️';
+  if (text.includes('warm') || text.includes('comfort')) return '☕';
+  if (text.includes('summer')) return '🍹';
+  if (text.includes('remed')) return '🌿';
+  if (text.includes('nourishing')) return '🥛';
+  if (text.includes('protein')) return '💪';
+  if (text.includes('everyday')) return '🥗';
+  if (text.includes('regional')) return '🏡';
   if (text.includes('festival') || text.includes('diwali') || text.includes('celebration')) return '✨';
-  if (text.includes('first') || text.includes('puree') || text.includes('little')) return '🥣';
   if (text.includes('rainy') || text.includes('comfort') || text.includes('warm')) return '🍲';
   return '🍅';
 }
@@ -2162,7 +2642,23 @@ function topIngredients() {
 }
 
 function normalizeIngredientName(name) {
-  return String(name).toLowerCase().replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+  const normalized = String(name).toLowerCase().replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim();
+  const canonical = {
+    eggs: 'egg',
+    'boiled egg': 'egg',
+    'boiled eggs': 'egg',
+    omelette: 'egg',
+    omelet: 'egg',
+    'egg omelette': 'egg',
+    'egg omelet': 'egg',
+    'cooked rice': 'rice',
+    'leftover rice': 'rice',
+    'steamed rice': 'rice',
+    'plain rice': 'rice',
+    kokkum: 'kokum',
+    kokam: 'kokum'
+  };
+  return canonical[normalized] || normalized;
 }
 
 function formatIngredientName(name) {
@@ -2319,6 +2815,70 @@ function recipeIsCore(recipe) {
   return String(recipe.recipeType || recipe.recipe_type || 'core').toLowerCase() === 'core';
 }
 
+function recipeExcludedFromDefaultFeeds(recipe) {
+  return recipe?.hardExcludeFromFeeds === true
+    || recipe?.excludeFromDefaultFeeds === true
+    || normalizeIngredientName(recipe?.feedVisibility) === 'pantry search only';
+}
+
+function feedDishFamily(recipe) {
+  return normalizeDishFamilyName(recipe?.dishFamily || recipe?.dish_family || recipeFamilyKey(recipe));
+}
+
+function feedFamilyVariantRank(recipe) {
+  const title = normalizeIngredientName(recipe?.title);
+  const family = feedDishFamily(recipe);
+  if (family === 'uttapam') {
+    if (title === 'onion uttapam') return 0;
+    if (title === 'tomato uttapam') return 1;
+    if (title === 'plain uttapam') return 2;
+    if (title === 'vegetable uttapam') return 3;
+    if (title === 'cheese uttapam') return 99;
+    return 10;
+  }
+  if (family !== 'dosa') return 0;
+  if (title === 'dosa') return 0;
+  if (title === 'masala dosa') return 1;
+  if (title === 'onion dosa') return 2;
+  if (title === 'paneer dosa') return 3;
+  if (title === 'egg dosa') return 4;
+  if (title === 'cheese dosa') return 99;
+  return 10;
+}
+
+function feedFamilyLimit(family, fallback = 2) {
+  if (family === 'uttapam') return 1;
+  return fallback;
+}
+
+function familyCappedVisibleList(recipes, maxPerFamily = 2) {
+  const allowedByFamily = new Map();
+  recipes.forEach((recipe, index) => {
+    const family = feedDishFamily(recipe);
+    if (!family) return;
+    const list = allowedByFamily.get(family) || [];
+    list.push({ recipe, index });
+    allowedByFamily.set(family, list);
+  });
+  for (const [family, list] of allowedByFamily.entries()) {
+    allowedByFamily.set(family, new Set(list
+      .sort((a, b) => feedFamilyVariantRank(a.recipe) - feedFamilyVariantRank(b.recipe) || a.index - b.index)
+      .slice(0, feedFamilyLimit(family, maxPerFamily))
+      .map((item) => item.recipe.id)));
+  }
+  const picked = [];
+  const counts = new Map();
+  for (const recipe of recipes) {
+    const family = feedDishFamily(recipe);
+    if (family && !allowedByFamily.get(family)?.has(recipe.id)) continue;
+    const count = counts.get(family) || 0;
+    if (family && count >= feedFamilyLimit(family, maxPerFamily)) continue;
+    picked.push(recipe);
+    counts.set(family, count + 1);
+  }
+  return picked;
+}
+
 function explicitPrimaryIngredients(recipe) {
   return [
     recipe.primaryIngredient1,
@@ -2357,6 +2917,444 @@ function selectedMatchesIngredient(selected, ingredient) {
   return selectedCoversIngredient(selected, ingredient);
 }
 
+const stapleIngredientBaseMap = {
+  rice: ['rice', 'cooked rice', 'leftover rice', 'plain rice', 'steamed rice'],
+  'wheat flour': ['wheat', 'wheat flour', 'atta', 'chapati flour'],
+  bread: ['bread', 'pav'],
+  'dosa batter': ['dosa batter', 'dosa'],
+  'idli batter': ['idli', 'idli batter', 'idli rice'],
+  poha: ['poha', 'avalakki'],
+  pasta: ['pasta'],
+  noodles: ['noodle', 'noodles']
+};
+
+function stapleBaseForIngredient(name) {
+  const normalized = normalizeIngredientName(name);
+  for (const [base, aliases] of Object.entries(stapleIngredientBaseMap)) {
+    if (aliases.includes(normalized)) return base;
+  }
+  return '';
+}
+
+function recipePantryOverrides(recipe) {
+  const key = normalizeIngredientName(recipe.title);
+  const overrides = {
+    'tomato rice': {
+      baseIngredient: 'rice',
+      coreIngredients: ['rice', 'tomato'],
+      requiredIngredients: ['rice', 'tomato'],
+      optionalIngredients: ['curry leaves', 'mustard seeds', 'peanut', 'oil', 'coriander'],
+      dishFamily: 'rice-meal'
+    },
+    'egg fried rice': {
+      baseIngredient: 'rice',
+      coreIngredients: ['rice', 'egg'],
+      requiredIngredients: ['rice', 'egg'],
+      optionalIngredients: ['onion', 'garlic', 'soy sauce', 'spring onion', 'oil'],
+      dishFamily: 'fried-rice'
+    },
+    'aloo paratha': {
+      baseIngredient: 'wheat flour',
+      coreIngredients: ['wheat flour', 'potato'],
+      requiredIngredients: ['wheat flour', 'potato'],
+      optionalIngredients: ['onion', 'spices', 'ghee'],
+      dishFamily: 'paratha'
+    },
+    'spicy aloo paratha': {
+      baseIngredient: 'wheat flour',
+      coreIngredients: ['wheat flour', 'potato'],
+      requiredIngredients: ['wheat flour', 'potato'],
+      optionalIngredients: ['green chilli', 'ghee', 'spices'],
+      dishFamily: 'paratha'
+    },
+    'gunpowder idli': {
+      baseIngredient: 'idli batter',
+      coreIngredients: ['idli', 'gunpowder'],
+      requiredIngredients: ['idli', 'gunpowder'],
+      optionalIngredients: ['oil', 'ghee', 'onion', 'curry leaves'],
+      dishFamily: 'idli'
+    },
+    pongal: {
+      baseIngredient: 'rice',
+      coreIngredients: ['rice', 'moong dal'],
+      requiredIngredients: ['rice', 'moong dal'],
+      optionalIngredients: ['pepper', 'cumin', 'ghee', 'cashew'],
+      dishFamily: 'rice-dal'
+    },
+    'sweet pongal': {
+      baseIngredient: 'rice',
+      coreIngredients: ['rice', 'moong dal'],
+      requiredIngredients: ['rice', 'moong dal'],
+      optionalIngredients: ['jaggery', 'ghee', 'cashew', 'cardamom'],
+      dishFamily: 'rice-dal'
+    }
+  };
+  return overrides[key] || null;
+}
+
+function uniqueNormalizedIngredients(values) {
+  return [...new Set((values || []).filter(Boolean).map(normalizeIngredientName))];
+}
+
+function normalizeDishFamilyName(value) {
+  const normalized = normalizeIngredientName(value);
+  const familyMap = {
+    'rice meal': 'rice-meal',
+    'fried rice': 'fried-rice',
+    'rice dal': 'rice-dal',
+    'paneer curry': 'paneer-curry',
+    'fish curry': 'fish-curry'
+  };
+  return familyMap[normalized] || normalized;
+}
+
+function configuredCoreIngredients(recipe) {
+  const override = recipePantryOverrides(recipe);
+  if (override?.coreIngredients?.length) return uniqueNormalizedIngredients(override.coreIngredients);
+  const configured = recipe.coreIngredients || recipe.core_ingredients;
+  if (Array.isArray(configured) && configured.length) return uniqueNormalizedIngredients(configured);
+  const explicit = explicitPrimaryIngredients(recipe);
+  if (explicit.length) return uniqueNormalizedIngredients(explicit);
+  return uniqueNormalizedIngredients(coreRecipeIngredients(recipe).map((item) => item.name || item.ingredientName || ''));
+}
+
+function configuredOptionalIngredients(recipe, core = configuredCoreIngredients(recipe)) {
+  const override = recipePantryOverrides(recipe);
+  const configured = override?.optionalIngredients || recipe.optionalIngredients || recipe.optional_ingredients;
+  const candidates = Array.isArray(configured) && configured.length
+    ? configured
+    : [
+      ...explicitSecondaryIngredients(recipe),
+      ...(recipe.ingredients || [])
+        .filter((item) => !item.isMain)
+        .map((item) => item.name || item.ingredientName || '')
+    ];
+  return uniqueNormalizedIngredients(candidates)
+    .filter((name) => !core.some((coreName) => pantryIngredientEquals(name, coreName)));
+}
+
+function configuredRequiredIngredients(recipe, core = configuredCoreIngredients(recipe)) {
+  const override = recipePantryOverrides(recipe);
+  const configured = override?.requiredIngredients || recipe.requiredIngredients || recipe.required_ingredients;
+  if (Array.isArray(configured) && configured.length) return uniqueNormalizedIngredients(configured);
+  return uniqueNormalizedIngredients(core);
+}
+
+function configuredBaseIngredient(recipe, core = configuredCoreIngredients(recipe)) {
+  const override = recipePantryOverrides(recipe);
+  const configured = override?.baseIngredient || recipe.baseIngredient || recipe.base_ingredient;
+  if (configured) return normalizeIngredientName(configured);
+  const title = normalizeIngredientName(recipe.title);
+  if (/\b(idli|uttapam)\b/.test(title)) return 'idli batter';
+  if (/\b(dosa)\b/.test(title)) return 'dosa batter';
+  if (/\b(paratha|roti|chapati)\b/.test(title)) return 'wheat flour';
+  if (/\b(poha|avalakki)\b/.test(title)) return 'poha';
+  if (/\b(pasta)\b/.test(title)) return 'pasta';
+  if (/\b(noodles)\b/.test(title)) return 'noodles';
+  const staple = core.map(stapleBaseForIngredient).find(Boolean);
+  return staple || core[0] || '';
+}
+
+function configuredIncompatibleIngredients(recipe) {
+  const override = recipePantryOverrides(recipe);
+  return uniqueNormalizedIngredients(override?.incompatibleWith || recipe.incompatibleWith || recipe.incompatible_with || []);
+}
+
+function configuredPantrySupportingIngredients(recipe) {
+  return uniqueNormalizedIngredients(recipe.pantrySupportingIngredients || recipe.pantry_supporting_ingredients || []);
+}
+
+function configuredPantryPartialMissingRequired(recipe) {
+  return uniqueNormalizedIngredients(recipe.pantryPartialMissingRequired || recipe.pantry_partial_missing_required || []);
+}
+
+function inferredDishFamily(recipe, core = configuredCoreIngredients(recipe), base = configuredBaseIngredient(recipe, core)) {
+  const override = recipePantryOverrides(recipe);
+  const configured = override?.dishFamily || recipe.dishFamily || recipe.dish_family;
+  if (configured) return normalizeDishFamilyName(configured);
+  const title = normalizeIngredientName(recipe.title);
+  const has = (name) => core.some((ingredient) => pantryIngredientEquals(ingredient, name));
+  if (/\b(pongal|khichdi|dal rice|sambar rice|rasam rice|curd rice)\b/.test(title) || (base === 'rice' && core.some((ingredient) => /\bdal\b/.test(ingredient)))) return 'rice-dal';
+  if (base === 'rice' && has('paneer')) return 'rice-meal';
+  if (base === 'rice' && /\b(fried rice)\b/.test(title)) return 'fried-rice';
+  if (base === 'rice') return 'rice-meal';
+  if (base === 'wheat flour') return 'paratha';
+  if (base === 'idli batter') return 'idli';
+  if (base === 'dosa batter') return 'dosa';
+  return base || 'general';
+}
+
+function pantryIngredientEquals(left, right) {
+  const leftName = normalizeIngredientName(left);
+  const rightName = normalizeIngredientName(right);
+  if (!leftName || !rightName) return false;
+  if (leftName === rightName) return true;
+
+  const leftStaple = stapleBaseForIngredient(leftName);
+  const rightStaple = stapleBaseForIngredient(rightName);
+  if (leftStaple || rightStaple) {
+    return Boolean(leftStaple && rightStaple && leftStaple === rightStaple);
+  }
+
+  const gunpowderAliases = ['podi', 'gunpowder', 'gun powder'];
+  if (gunpowderAliases.includes(leftName) && gunpowderAliases.includes(rightName)) return true;
+
+  const leftAliases = ingredientAliases(leftName).map(normalizeIngredientName);
+  const rightAliases = ingredientAliases(rightName).map(normalizeIngredientName);
+  return leftAliases.includes(rightName) || rightAliases.includes(leftName);
+}
+
+function pantryRankingBreakdown(recipe, selected) {
+  const normalizedSelected = uniqueNormalizedIngredients(selected);
+  const coreIngredients = configuredCoreIngredients(recipe);
+  const requiredIngredients = configuredRequiredIngredients(recipe, coreIngredients);
+  const optionalIngredients = configuredOptionalIngredients(recipe, coreIngredients);
+  const matchedCore = coreIngredients.filter((ingredient) => normalizedSelected.some((selectedName) => pantryIngredientEquals(selectedName, ingredient)));
+  const matchedRequired = requiredIngredients.filter((ingredient) => normalizedSelected.some((selectedName) => pantryIngredientEquals(selectedName, ingredient)));
+  const matchedOptional = optionalIngredients.filter((ingredient) => normalizedSelected.some((selectedName) => pantryIngredientEquals(selectedName, ingredient)));
+  const matchedSelected = normalizedSelected.filter((selectedName) => {
+    return coreIngredients.some((ingredient) => pantryIngredientEquals(selectedName, ingredient))
+      || requiredIngredients.some((ingredient) => pantryIngredientEquals(selectedName, ingredient))
+      || optionalIngredients.some((ingredient) => pantryIngredientEquals(selectedName, ingredient));
+  });
+  const unmatchedSelected = normalizedSelected.filter((selectedName) => !matchedSelected.some((matchedName) => pantryIngredientEquals(selectedName, matchedName)));
+  const selectedCoverageRatio = normalizedSelected.length ? matchedSelected.length / normalizedSelected.length : 0;
+  const unusedSelectedPenalty = normalizedSelected.length >= 2 ? unmatchedSelected.length * 55 : 0;
+  const missingCore = coreIngredients.filter((ingredient) => !normalizedSelected.some((selectedName) => pantryIngredientEquals(selectedName, ingredient)));
+  const missingRequired = requiredIngredients.filter((ingredient) => !normalizedSelected.some((selectedName) => pantryIngredientEquals(selectedName, ingredient)));
+  const selectedStaples = [...new Set(normalizedSelected.map(stapleBaseForIngredient).filter(Boolean))];
+  const baseIngredient = configuredBaseIngredient(recipe, coreIngredients);
+  const baseStaple = stapleBaseForIngredient(baseIngredient) || baseIngredient;
+  const coreStaples = [...new Set([baseStaple, ...coreIngredients.map(stapleBaseForIngredient)].filter(Boolean))];
+  const stapleMismatch = selectedStaples.length > 0 && selectedStaples.some((staple) => staple !== baseStaple && !coreStaples.includes(staple));
+  const moodBoost = Math.min(5, Math.round((pantryMoodBonus(recipe) || 0) / 2));
+  const score = (matchedCore.length * 50)
+    + (matchedSelected.length * 20)
+    + (matchedOptional.length * 8)
+    + moodBoost
+    - (missingRequired.length * 45)
+    - (Math.max(0, missingCore.length - missingRequired.length) * 20)
+    - unusedSelectedPenalty
+    - (stapleMismatch ? 60 : 0);
+
+  return {
+    coreIngredients,
+    requiredIngredients,
+    optionalIngredients,
+    baseIngredient,
+    baseStaple,
+    dishFamily: inferredDishFamily(recipe, coreIngredients, baseIngredient),
+    incompatibleWith: configuredIncompatibleIngredients(recipe),
+    matchedCore,
+    matchedRequired,
+    matchedOptional,
+    matchedSelected,
+    unmatchedSelected,
+    missingCore,
+    missingRequired,
+    coreIngredientMatches: matchedCore.length,
+    requiredIngredientMatches: matchedRequired.length,
+    selectedIngredientMatches: matchedSelected.length,
+    selectedIngredientMisses: unmatchedSelected.length,
+    selectedCoverageRatio,
+    optionalIngredientMatches: matchedOptional.length,
+    missingCoreIngredients: missingCore.length,
+    missingRequiredIngredients: missingRequired.length,
+    selectedStaples,
+    coreStaples,
+    stapleMismatch,
+    stapleMismatchPenalty: stapleMismatch ? 60 : 0,
+    unusedSelectedPenalty,
+    score
+  };
+}
+
+function dishFamilyIngredientAllowed(family, ingredient) {
+  const dishFamily = normalizeDishFamilyName(family);
+  const normalized = normalizeIngredientName(ingredient);
+  const base = stapleBaseForIngredient(normalized);
+  const dalLike = /\bdal\b/.test(normalized) || ['lentil', 'moong', 'toor dal', 'urad dal', 'chana dal'].includes(normalized);
+  const paneerLike = pantryIngredientEquals(normalized, 'paneer');
+  const eggLike = pantryIngredientEquals(normalized, 'egg');
+  const vegetableLike = ['onion', 'tomato', 'potato', 'carrot', 'capsicum', 'peas', 'corn', 'spinach', 'palak'].some((name) => pantryIngredientEquals(normalized, name));
+  const seasoningLike = ['spices', 'cumin', 'pepper', 'ghee', 'oil', 'garlic', 'ginger', 'green chilli', 'coriander', 'curry leaves', 'soy sauce'].some((name) => pantryIngredientEquals(normalized, name));
+  if (dishFamily === 'rice-dal') return base === 'rice' || dalLike || seasoningLike;
+  if (dishFamily === 'rice-meal' || dishFamily === 'fried-rice') return base === 'rice' || paneerLike || eggLike || vegetableLike || seasoningLike;
+  if (dishFamily === 'paratha') return base === 'wheat flour' || ['potato', 'paneer', 'onion', 'gobi', 'cauliflower', 'methi'].some((name) => pantryIngredientEquals(normalized, name)) || seasoningLike;
+  if (dishFamily === 'idli') return base === 'idli batter' || ['idli', 'gunpowder', 'podi', 'sambar', 'chutney', 'onion', 'tomato', 'cheese', 'vegetable mix'].some((name) => pantryIngredientEquals(normalized, name)) || seasoningLike;
+  if (dishFamily === 'uttapam') return base === 'idli batter' || ['onion', 'tomato', 'cheese', 'vegetable mix'].some((name) => pantryIngredientEquals(normalized, name)) || seasoningLike;
+  if (dishFamily === 'dosa') return base === 'dosa batter' || ['dosa', 'potato', 'paneer', 'onion', 'cheese', 'egg', 'sambar', 'chutney'].some((name) => pantryIngredientEquals(normalized, name)) || seasoningLike;
+  return true;
+}
+
+function logInvalidDishMatch(recipe, selected, reason) {
+  if (!window.COOKBUDDY_DEBUG_MATCHING) return;
+  console.log('[Tomo blocked pantry match]', {
+    dish: recipe.title,
+    selectedIngredients: selected,
+    reason
+  });
+}
+
+function validateDishCompatibility(recipe, selected, breakdown = pantryRankingBreakdown(recipe, selected)) {
+  const selectedIngredients = uniqueNormalizedIngredients(selected);
+  const reasons = [];
+  const matchedCoreCount = breakdown.matchedCore.length;
+  const supportingIngredients = configuredPantrySupportingIngredients(recipe);
+  const partialMissingRequired = configuredPantryPartialMissingRequired(recipe);
+  const matchedCoreOrRequiredSelected = selectedIngredients.filter((selectedName) => {
+    return breakdown.coreIngredients.some((ingredient) => pantryIngredientEquals(selectedName, ingredient))
+      || breakdown.requiredIngredients.some((ingredient) => pantryIngredientEquals(selectedName, ingredient))
+      || supportingIngredients.some((ingredient) => pantryIngredientEquals(selectedName, ingredient));
+  });
+  const permitsPartialMissingRequired = breakdown.missingRequired.length > 0
+    && breakdown.missingRequired.every((ingredient) => partialMissingRequired.some((allowed) => pantryIngredientEquals(ingredient, allowed)))
+    && matchedCoreOrRequiredSelected.length >= Math.min(2, selectedIngredients.length);
+  const unmatchedSelected = selectedIngredients.filter((selectedName) => !breakdown.matchedSelected.some((matchedName) => pantryIngredientEquals(selectedName, matchedName)));
+  const familyMismatches = selectedIngredients.filter((selectedName) => {
+    if (breakdown.matchedSelected.some((matchedName) => pantryIngredientEquals(selectedName, matchedName))) return false;
+    return !dishFamilyIngredientAllowed(breakdown.dishFamily, selectedName);
+  });
+  const incompatibleMatches = breakdown.incompatibleWith.filter((ingredient) => selectedIngredients.some((selectedName) => pantryIngredientEquals(selectedName, ingredient)));
+  const selectedBaseMismatch = breakdown.selectedStaples.length > 0
+    && breakdown.baseStaple
+    && breakdown.selectedStaples.some((staple) => staple !== breakdown.baseStaple);
+
+  if (!matchedCoreCount) reasons.push('no selected ingredient is a core ingredient');
+  if (incompatibleMatches.length) reasons.push(`incompatible with ${incompatibleMatches.map(formatIngredientName).join(', ')}`);
+  if (selectedBaseMismatch) reasons.push(`selected base ${breakdown.selectedStaples.map(formatIngredientName).join(', ')} does not match dish base ${formatIngredientName(breakdown.baseIngredient)}`);
+  if (selectedIngredients.length >= 2 && matchedCoreOrRequiredSelected.length < 2) {
+    reasons.push('fewer than two selected ingredients match core or required ingredients');
+  }
+  if (selectedIngredients.length >= 2 && breakdown.missingRequired.length && !permitsPartialMissingRequired) {
+    reasons.push(`missing required ingredient ${breakdown.missingRequired.map(formatIngredientName).join(', ')}`);
+  }
+  if (breakdown.missingRequired.length && unmatchedSelected.length && !permitsPartialMissingRequired) {
+    reasons.push(`missing required ingredient ${breakdown.missingRequired.map(formatIngredientName).join(', ')} and selected ${unmatchedSelected.map(formatIngredientName).join(', ')} is unrelated`);
+  }
+  if (breakdown.missingRequired.length && familyMismatches.length && !permitsPartialMissingRequired) {
+    reasons.push(`missing required ingredient ${breakdown.missingRequired.map(formatIngredientName).join(', ')} and selected ${familyMismatches.map(formatIngredientName).join(', ')} does not belong to dish family ${breakdown.dishFamily}`);
+  }
+
+  const blocked = reasons.some((reason) => {
+    return reason.startsWith('no selected')
+      || reason.startsWith('incompatible')
+      || reason.startsWith('selected base')
+      || reason.startsWith('fewer than two selected')
+      || reason.startsWith('missing required ingredient')
+      || reason.includes('unrelated')
+      || reason.includes('does not belong');
+  });
+
+  return {
+    valid: !blocked,
+    strict: !blocked
+      && selectedIngredients.length >= 2
+      && matchedCoreOrRequiredSelected.length >= Math.min(2, selectedIngredients.length)
+      && !breakdown.missingRequired.length,
+    fallback: !blocked && matchedCoreCount > 0,
+    reasons,
+    matchedCoreOrRequiredCount: matchedCoreOrRequiredSelected.length
+  };
+}
+
+function recipeIngredientNames(recipe) {
+  return [
+    ...explicitPrimaryIngredients(recipe),
+    ...explicitSecondaryIngredients(recipe),
+    ...(recipe.ingredients || []).map((item) => item.name || item.ingredientName || '')
+  ].filter(Boolean);
+}
+
+function selectedIngredientCoverage(recipe, selected) {
+  const names = recipeIngredientNames(recipe);
+  return selected.filter((ingredient) => names.some((name) => selectedCoversIngredient([ingredient], name)));
+}
+
+function selectedHasRiceAndEgg(selected) {
+  return selectedIncludesAll(selected, ['rice', 'egg']);
+}
+
+function eggFriedRiceRecipe() {
+  return state.recipes.find((recipe) => normalizeIngredientName(recipe.title) === 'egg fried rice') || null;
+}
+
+function pantryCoverageDetails(pantryBreakdown) {
+  const core = pantryBreakdown.coreIngredients || [];
+  const required = pantryBreakdown.requiredIngredients || core;
+  const optional = pantryBreakdown.optionalIngredients || [];
+  const uniqueIngredients = uniqueNormalizedIngredients([...core, ...required, ...optional]);
+  const matchedIngredients = uniqueIngredients.filter((ingredient) => {
+    return (pantryBreakdown.matchedCore || []).some((matched) => pantryIngredientEquals(matched, ingredient))
+      || (pantryBreakdown.matchedRequired || []).some((matched) => pantryIngredientEquals(matched, ingredient))
+      || (pantryBreakdown.matchedOptional || []).some((matched) => pantryIngredientEquals(matched, ingredient));
+  });
+  const matchedCoreCount = pantryBreakdown.coreIngredientMatches || 0;
+  const coreRatio = core.length ? matchedCoreCount / Math.max(1, core.length) : 0;
+  const requiredRatio = required.length ? (pantryBreakdown.requiredIngredientMatches || 0) / Math.max(1, required.length) : coreRatio;
+  const pantryCoverageRatio = uniqueIngredients.length ? matchedIngredients.length / Math.max(1, uniqueIngredients.length) : requiredRatio;
+  const confidence = Math.round(Math.min(100, (coreRatio * 45) + (requiredRatio * 35) + (pantryCoverageRatio * 20)));
+  return {
+    confidence,
+    coreRatio,
+    requiredRatio,
+    pantryCoverageRatio,
+    pantryAvailableCount: matchedIngredients.length,
+    pantryIngredientCount: uniqueIngredients.length || required.length || core.length,
+    hasAllRecipeIngredients: uniqueIngredients.length > 0
+      && (pantryBreakdown.missingCore || []).length === 0
+      && matchedIngredients.length >= uniqueIngredients.length
+  };
+}
+
+function eggFriedRiceFallbackMatch(selected) {
+  const recipe = eggFriedRiceRecipe();
+  if (!recipe || !selectedHasRiceAndEgg(selected)) return null;
+  const fallbackBreakdown = pantryRankingBreakdown(recipe, selected);
+  const coverage = pantryCoverageDetails(fallbackBreakdown);
+  return {
+    recipe,
+    ingredientMatchScore: coverage.confidence,
+    ingredientScore: coverage.confidence,
+    primaryMatchPercent: 100,
+    secondaryMatchCount: 0,
+    secondaryTotal: Math.max(0, explicitSecondaryIngredients(recipe).length),
+    selectedCoverageCount: 2,
+    selectedCoverageRatio: 1,
+    overallMatchPercent: coverage.confidence,
+    finalScore: 5000,
+    rankingScore: 5000,
+    moodTier: MoodTier.CORE,
+    pantryScore: Math.round(coverage.pantryCoverageRatio * 100),
+    mealTypeScore: recipeMatchesMeal(recipe, state.meal) ? 100 : 0,
+    tierBoost: 0,
+    rankReason: 'Exact rice + egg pantry fallback',
+    tierKey: 'top',
+    tierLabel: 'Top Match',
+    unlockIngredient: '',
+    mealTypeBonus: recipeMatchesMeal(recipe, state.meal) ? 10 : 0,
+    moodScore: 0,
+    recipePopularity: Math.min(20, userPreferenceScore(recipe)),
+    matchedPrimaryCount: 2,
+    requiredPrimaryCount: 2,
+    matchedPrimary: ['Rice', 'Egg'],
+    matchedSecondary: [],
+    missingPrimary: [],
+    classification: classifyIngredientMatch(coverage.confidence),
+    pantryAvailableCount: coverage.pantryAvailableCount,
+    pantryIngredientCount: coverage.pantryIngredientCount,
+    hasAllRecipeIngredients: coverage.hasAllRecipeIngredients,
+    discoveryScore: 100,
+    userPreferenceScore: Math.min(100, userPreferenceScore(recipe)),
+    comfortScore: Math.min(100, Number(recipe.comfortScore || 5) * 10),
+    quickMealScore: quickMealScore(recipe)
+  };
+}
+
+function safeCssEscape(value) {
+  return window.CSS?.escape ? CSS.escape(String(value)) : String(value).replace(/["\\]/g, '\\$&');
+}
+
 function moodMatchScore(recipe) {
   const mood = activeMood();
   if (!mood) return 0;
@@ -2373,8 +3371,7 @@ function discoveryScore(recipe, index = 0) {
 }
 
 function classifyIngredientMatch(score) {
-  if (score >= 100) return 'Everything Available';
-  if (score >= 80) return 'Excellent Match';
+  if (score >= 80) return 'Core Ingredients Match';
   if (score >= 60) return 'Good Match';
   if (score >= 40) return 'Possible Match';
   return 'Hide Recipe';
@@ -2435,24 +3432,28 @@ function matchTier(score) {
 }
 
 function weightedIngredientMatches(options = {}) {
-  const selected = [...state.selectedIngredients];
+  const selected = [...state.selectedIngredients].map(normalizeIngredientName);
   if (!selected.length) return [];
   const singleIngredientMode = options.singleIngredientMode ?? selected.length === 1;
   const matches = state.recipes
     .filter(recipeIsCore)
+    .filter((recipe) => recipe.isRealDish === true)
     .map((recipe, index) => {
-      const primary = explicitPrimaryIngredients(recipe).slice(0, 2);
-      const secondary = explicitSecondaryIngredients(recipe);
-      const matchedPrimary = primary.filter((name) => selectedMatchesIngredient(selected, name));
-      const matchedPrimaryCount = matchedPrimary.length;
-      const requiredPrimaryCount = requiredPrimaryMatches(recipe, primary.length || 2);
-      const primaryRatio = primary.length
-        ? matchedPrimaryCount / Math.max(1, primary.length)
-        : Math.min(matchedPrimaryCount, requiredPrimaryCount) / Math.max(1, requiredPrimaryCount);
+      const pantryBreakdown = pantryRankingBreakdown(recipe, selected);
+      const validity = validateDishCompatibility(recipe, selected, pantryBreakdown);
+      const primary = pantryBreakdown.coreIngredients;
+      const secondary = pantryBreakdown.optionalIngredients;
+      const matchedPrimary = pantryBreakdown.matchedCore;
+      const matchedPrimaryCount = pantryBreakdown.coreIngredientMatches;
+      const selectedCoverage = pantryBreakdown.matchedSelected;
+      const selectedCoverageCount = pantryBreakdown.selectedIngredientMatches;
+      const selectedCoverageRatio = selected.length ? selectedCoverageCount / selected.length : 0;
+      const requiredPrimaryCount = Math.min(primary.length || 1, requiredPrimaryMatches(recipe, primary.length || 2));
+      const primaryRatio = primary.length ? matchedPrimaryCount / Math.max(1, primary.length) : 0;
       const hasEveryPrimaryIngredient = primary.length > 0 && matchedPrimaryCount >= primary.length;
       const matchedPrimaryNames = matchedPrimary.map((name) => formatIngredientName(name));
-      const missingPrimary = primary.filter((name) => !selectedMatchesIngredient(selected, name)).map((name) => formatIngredientName(name));
-      const secondaryMatches = secondary.filter((name) => selectedMatchesIngredient(selected, name));
+      const missingPrimary = pantryBreakdown.missingCore.map((name) => formatIngredientName(name));
+      const secondaryMatches = pantryBreakdown.matchedOptional;
       const mealTypeBonus = recipeMatchesMeal(recipe, state.meal) ? 10 : 0;
       const recipePopularity = Math.min(20, userPreferenceScore(recipe));
       const comfort = Math.min(100, Number(recipe.comfortScore || 5) * 10);
@@ -2460,21 +3461,21 @@ function weightedIngredientMatches(options = {}) {
       const discovery = Math.min(100, discoveryScore(recipe, index));
       const preference = Math.min(100, userPreferenceScore(recipe));
       const secondaryTotal = secondary.length;
-      const secondaryMatchCount = secondaryMatches.length;
-      const secondaryRatio = secondaryTotal ? secondaryMatchCount / secondaryTotal : 1;
-      const ingredientSignalScore = (primaryRatio * 80) + (secondaryTotal ? secondaryRatio * 15 : 0);
-      let ingredientMatchScore = Math.min(100, Math.round(
-        ingredientSignalScore > 0
-          ? ingredientSignalScore
-          : 0
-      ));
-      if (!hasEveryPrimaryIngredient) ingredientMatchScore = Math.min(49, ingredientMatchScore);
+      const secondaryMatchCount = pantryBreakdown.optionalIngredientMatches;
+      const coverage = pantryCoverageDetails(pantryBreakdown);
+      const secondaryRatio = secondaryTotal ? secondaryMatchCount / secondaryTotal : coverage.requiredRatio;
+      let ingredientMatchScore = coverage.confidence;
+      if (selected.length >= 2 && pantryBreakdown.unmatchedSelected.length) {
+        ingredientMatchScore = Math.min(49, ingredientMatchScore - (pantryBreakdown.unmatchedSelected.length * 28));
+      }
+      if (!hasEveryPrimaryIngredient) ingredientMatchScore = Math.min(64, ingredientMatchScore);
+      if (pantryBreakdown.stapleMismatch) ingredientMatchScore = Math.min(38, ingredientMatchScore);
       if (singleIngredientMode) ingredientMatchScore = Math.min(30, ingredientMatchScore);
       const overallMatchPercent = ingredientMatchScore;
       const tier = matchTier(ingredientMatchScore);
       const unlockIngredient = highestImpactMissingIngredient(primary, secondary, selected);
       const mood = activeMood();
-      const pantryScore = Math.min(100, Math.round((secondaryRatio * 60) + Math.min(40, secondaryMatches.length * 10)));
+      const pantryScore = Math.round(coverage.pantryCoverageRatio * 100);
       const moodBreakdown = mood
         ? moodRankingBreakdown(recipe, mood, {
           ingredientScore: ingredientMatchScore,
@@ -2485,15 +3486,19 @@ function weightedIngredientMatches(options = {}) {
       const moodScore = moodBreakdown ? moodBreakdown.moodScore : pantryMoodBonus(recipe);
       const moodTier = moodBreakdown ? moodBreakdown.moodTier : MoodTier.SUPPORT;
       const tierBoost = moodBreakdown ? moodBreakdown.tierBoost : 0;
-      const rankingScore = moodBreakdown
-        ? Math.round(moodBreakdown.finalScore + recipePopularity)
-        : Math.round(
-          ingredientMatchScore
-          + (secondaryMatches.length * 10)
-          + moodScore
-          + mealTypeBonus
-          + recipePopularity
-        );
+      const exactCoreBoost = hasEveryPrimaryIngredient ? 220 : 0;
+      const selectedCoverageBoost = Math.round(selectedCoverageRatio * 170);
+      const rankingScore = Math.round(
+        (pantryBreakdown.score * 12)
+        + (ingredientMatchScore * 4)
+        + (matchedPrimaryCount * 80)
+        + exactCoreBoost
+        + selectedCoverageBoost
+        + (secondaryMatches.length * 6)
+        + Math.min(8, moodScore)
+        + mealTypeBonus
+        + Math.min(8, recipePopularity)
+      );
       return {
         recipe,
         ingredientMatchScore,
@@ -2501,11 +3506,18 @@ function weightedIngredientMatches(options = {}) {
         primaryMatchPercent: Math.round(primaryRatio * 100),
         secondaryMatchCount,
         secondaryTotal,
+        selectedCoverageCount,
+        selectedCoverageRatio,
+        unmatchedSelected: pantryBreakdown.unmatchedSelected,
+        unusedSelectedPenalty: pantryBreakdown.unusedSelectedPenalty,
         overallMatchPercent,
         finalScore: rankingScore,
         rankingScore,
         moodTier,
         pantryScore,
+        pantryAvailableCount: coverage.pantryAvailableCount,
+        pantryIngredientCount: coverage.pantryIngredientCount,
+        hasAllRecipeIngredients: coverage.hasAllRecipeIngredients,
         mealTypeScore: mealTypeBonus > 0 ? 100 : 0,
         tierBoost,
         rankReason: moodBreakdown?.rankReason || `Ingredient-led pantry match, ingredientScore=${ingredientMatchScore}`,
@@ -2520,6 +3532,14 @@ function weightedIngredientMatches(options = {}) {
         matchedPrimary: matchedPrimaryNames,
         matchedSecondary: secondaryMatches.map((name) => formatIngredientName(name)),
         missingPrimary: [...new Set(missingPrimary)],
+        pantryCoreIngredients: primary,
+        pantryRequiredIngredients: pantryBreakdown.requiredIngredients,
+        pantryOptionalIngredients: secondary,
+        pantryBaseIngredient: pantryBreakdown.baseIngredient,
+        pantryDishFamily: pantryBreakdown.dishFamily,
+        pantryFormulaScore: pantryBreakdown.score,
+        stapleMismatchPenalty: pantryBreakdown.stapleMismatchPenalty,
+        validity,
         classification: classifyIngredientMatch(ingredientMatchScore),
         discoveryScore: discovery,
         userPreferenceScore: preference,
@@ -2528,18 +3548,31 @@ function weightedIngredientMatches(options = {}) {
       };
     })
     .filter((item) => {
+      if (!item.validity.valid) {
+        logInvalidDishMatch(item.recipe, selected, item.validity.reasons.join('; '));
+        return false;
+      }
       const included = item.ingredientMatchScore > 0
-        && (!activeMood() || item.moodTier !== MoodTier.EXCLUDE);
+        && item.selectedCoverageCount > 0
+        && (!activeMood() || item.moodTier !== MoodTier.EXCLUDE || item.matchedPrimaryCount >= item.requiredPrimaryCount);
       if (window.COOKBUDDY_DEBUG_MATCHING) {
         console.log('[Tomo ingredient match]', {
           recipe: item.recipe.title,
           mood: labelForMood(activeMood()),
           moodTier: item.moodTier,
-          primaryIngredients: explicitPrimaryIngredients(item.recipe).slice(0, 2),
-          secondaryIngredients: explicitSecondaryIngredients(item.recipe),
+          primaryIngredients: item.pantryCoreIngredients,
+          requiredIngredients: item.pantryRequiredIngredients,
+          secondaryIngredients: item.pantryOptionalIngredients,
+          baseIngredient: item.pantryBaseIngredient,
+          dishFamily: item.pantryDishFamily,
+          validity: item.validity,
           matchedPrimaryCount: item.matchedPrimaryCount,
           required: item.requiredPrimaryCount,
           ingredientMatchScore: item.ingredientMatchScore,
+          pantryFormulaScore: item.pantryFormulaScore,
+          stapleMismatchPenalty: item.stapleMismatchPenalty,
+          unusedSelectedPenalty: item.unusedSelectedPenalty,
+          unmatchedSelected: item.unmatchedSelected,
           moodScore: item.moodScore,
           pantryScore: item.pantryScore,
           mealTypeScore: item.mealTypeScore,
@@ -2556,12 +3589,53 @@ function weightedIngredientMatches(options = {}) {
       }
       return included;
     });
-  return dedupeRecommendationMatches(matches)
+  const strictMatches = matches.filter((match) => match.validity?.strict);
+  const validityFilteredMatches = strictMatches.length ? strictMatches : matches.filter((match) => match.validity?.fallback);
+  const fallback = eggFriedRiceFallbackMatch(selected);
+  const reinforcedMatches = fallback && !validityFilteredMatches.some((match) => match.recipe.id === fallback.recipe.id)
+    ? [fallback, ...validityFilteredMatches]
+    : validityFilteredMatches.map((match) => fallback && match.recipe.id === fallback.recipe.id
+      ? {
+        ...match,
+        ingredientMatchScore: fallback.ingredientMatchScore,
+        ingredientScore: fallback.ingredientScore,
+        overallMatchPercent: fallback.overallMatchPercent,
+        primaryMatchPercent: 100,
+        finalScore: Math.max(match.finalScore, fallback.finalScore),
+        rankingScore: Math.max(match.rankingScore, fallback.rankingScore),
+        selectedCoverageCount: Math.max(match.selectedCoverageCount || 0, 2),
+        selectedCoverageRatio: 1,
+        tierKey: 'top',
+        tierLabel: 'Top Match',
+        classification: classifyIngredientMatch(fallback.ingredientMatchScore),
+        matchedPrimary: ['Rice', 'Egg'],
+        missingPrimary: [],
+        pantryAvailableCount: fallback.pantryAvailableCount,
+        pantryIngredientCount: fallback.pantryIngredientCount,
+        hasAllRecipeIngredients: fallback.hasAllRecipeIngredients
+      }
+      : match);
+  const dedupedMatches = dedupeRecommendationMatches(reinforcedMatches);
+  const hasStapleAlignedMatch = dedupedMatches.some((match) => {
+    return (match.selectedCoverageCount || 0) > 0
+      && (match.matchedPrimaryCount || 0) > 0
+      && !(match.stapleMismatchPenalty > 0)
+      && match.finalScore > 0;
+  });
+  const guardedMatches = hasStapleAlignedMatch
+    ? dedupedMatches.filter((match) => !(match.stapleMismatchPenalty > 0))
+    : dedupedMatches;
+  return guardedMatches
     .sort((a, b) => {
-      return b.finalScore - a.finalScore
+      return (b.selectedCoverageCount || 0) - (a.selectedCoverageCount || 0)
+        || (a.stapleMismatchPenalty || 0) - (b.stapleMismatchPenalty || 0)
+        || b.matchedPrimaryCount - a.matchedPrimaryCount
+        || (a.missingPrimary?.length || 0) - (b.missingPrimary?.length || 0)
+        || b.ingredientMatchScore - a.ingredientMatchScore
+        || (b.selectedCoverageCount || 0) - (a.selectedCoverageCount || 0)
+        || b.finalScore - a.finalScore
         || moodTierOrder[b.moodTier] - moodTierOrder[a.moodTier]
         || b.moodScore - a.moodScore
-        || b.ingredientMatchScore - a.ingredientMatchScore
         || Number(b.recipe.comfortScore || 0) - Number(a.recipe.comfortScore || 0)
         || a.recipe.title.localeCompare(b.recipe.title);
     });
@@ -2573,7 +3647,8 @@ function ingredientMatches() {
 
 function tomoMatchCopy(match) {
   const title = match.recipe.title;
-  if (match.overallMatchPercent >= 100) return `🍅 You already have everything for ${title}.`;
+  if (match.hasAllRecipeIngredients) return `🍅 You already have everything for ${title}.`;
+  if (match.primaryMatchPercent >= 100) return `🍅 You have the key ingredients for ${title}.`;
   if (match.tierKey === 'top') return getTomoMessage({ context: 'results_found', resultType: 'top', recipeName: title });
   if (match.tierKey === 'close') return getTomoMessage({ context: 'results_found', resultType: 'close', recipeName: title });
   if (match.tierKey === 'add-one' || match.tierKey === 'partial') {
@@ -2592,7 +3667,7 @@ function tomoMatchCopy(match) {
 }
 
 function matchBadge(match) {
-  return `${match.tierLabel} • ${match.overallMatchPercent}%`;
+  return `${match.tierLabel} • Core Ingredients Match`;
 }
 
 function pantryMoodBonus(recipe) {
@@ -2628,7 +3703,7 @@ function matchMetrics(match) {
     <div class="match-metrics" aria-label="Ingredient match percentage">
       <span><small>Primary Match</small><strong>${match.primaryMatchPercent}%</strong></span>
       <span><small>Secondary Match</small><strong>${match.secondaryMatchCount}/${match.secondaryTotal}</strong></span>
-      <span><small>Overall Match</small><strong>${match.overallMatchPercent}%</strong></span>
+      <span><small>Pantry Coverage</small><strong>${match.pantryAvailableCount || 0}/${match.pantryIngredientCount || 0}</strong></span>
     </div>
   `;
 }
@@ -2649,46 +3724,245 @@ function recommendationExplanationMarkup(match) {
   `;
 }
 
-function matchSection(title, matches) {
+function pantryMissingSummary(match) {
+  const keyCount = match.matchedPrimaryCount || 0;
+  const requiredCount = match.requiredPrimaryCount || Math.min((match.pantryCoreIngredients || []).length || 1, 2);
+  if (keyCount >= requiredCount && requiredCount > 0) return 'Key ingredients available';
+  if (keyCount > 0) return `${keyCount} key ${keyCount === 1 ? 'ingredient' : 'ingredients'} available`;
+  if ((match.selectedCoverageCount || 0) > 0 || (match.secondaryMatchCount || 0) > 0) return 'Some ingredients available';
+  return 'Add more ingredients to improve match';
+}
+
+const pantrySuggestionPreference = [
+  'onion',
+  'tomato',
+  'garlic',
+  'potato',
+  'egg',
+  'paneer',
+  'curd',
+  'lemon',
+  'ginger',
+  'capsicum',
+  'green chilli',
+  'coriander',
+  'soy sauce'
+];
+
+function suggestionPreferenceScore(ingredient) {
+  const index = pantrySuggestionPreference.indexOf(normalizeIngredientName(ingredient));
+  return index === -1 ? 0 : pantrySuggestionPreference.length - index;
+}
+
+function isSmartPantrySuggestionAllowed(ingredient) {
+  const normalized = normalizeIngredientName(ingredient);
+  if (!normalized || ['salt', 'water', 'oil', 'ghee', 'butter'].includes(normalized)) return false;
+  const catalog = Array.isArray(window.COOKBUDDY_PANTRY_CATALOG) ? window.COOKBUDDY_PANTRY_CATALOG : [];
+  const catalogItem = catalog.find((item) => normalizeIngredientName(item.ingredient_name || item.ingredientName || item.name) === normalized);
+  return catalogItem?.display_status !== 'hidden';
+}
+
+function pantrySuggestionList(items) {
+  if (items.length <= 1) return items[0] || '';
+  if (items.length === 2) return `${items[0]} or ${items[1]}`;
+  return `${items[0]}, ${items[1]} or ${items[2]}`;
+}
+
+function pantryRecipeIngredientNames(recipe) {
+  return uniqueNormalizedIngredients([
+    ...configuredCoreIngredients(recipe),
+    ...configuredRequiredIngredients(recipe),
+    ...configuredOptionalIngredients(recipe),
+    ...(recipe.ingredients || []).map((item) => item.name || item.ingredientName || '')
+  ]);
+}
+
+function pantryPairUnlocks(selected, candidate) {
+  const pair = uniqueNormalizedIngredients([...selected, candidate]);
+  if (pair.length <= selected.length) return [];
+  return state.recipes
+    .filter(recipeIsCore)
+    .filter((recipe) => recipe.isRealDish === true)
+    .filter((recipe) => !recipe.excludeFromRecommendations)
+    .map((recipe) => {
+      const breakdown = pantryRankingBreakdown(recipe, pair);
+      const validity = validateDishCompatibility(recipe, pair, breakdown);
+      const coverage = pantryCoverageDetails(breakdown);
+      const usesEverySelected = pair.every((ingredient) => breakdown.matchedSelected.some((matched) => pantryIngredientEquals(matched, ingredient)));
+      const stateName = validity.strict && coverage.confidence >= pantryStrongMatchThreshold ? 'STRONG_MATCH' : validity.valid ? 'PARTIAL_MATCH' : 'NO_STRONG_MATCH';
+      return { recipe, breakdown, coverage, stateName, usesEverySelected };
+    })
+    .filter((item) => item.usesEverySelected && ['STRONG_MATCH', 'PARTIAL_MATCH'].includes(item.stateName))
+    .sort((a, b) => b.coverage.confidence - a.coverage.confidence || a.recipe.title.localeCompare(b.recipe.title));
+}
+
+function databaseBackedPantryUnlocks(selected, limit = 3) {
+  const selectedNames = uniqueNormalizedIngredients(selected);
+  if (!selectedNames.length) return [];
+  const cacheKey = pantryUnlockCacheKey(selectedNames, limit);
+  if (pantryUnlockCache.has(cacheKey)) return pantryUnlockCache.get(cacheKey);
+  const candidates = new Map();
+  state.recipes
+    .filter(recipeIsCore)
+    .filter((recipe) => recipe.isRealDish === true)
+    .filter((recipe) => !recipe.excludeFromRecommendations)
+    .forEach((recipe) => {
+      const names = pantryRecipeIngredientNames(recipe);
+      const containsSelected = selectedNames.every((selectedName) => names.some((name) => pantryIngredientEquals(name, selectedName)));
+      if (!containsSelected) return;
+      names.forEach((name) => {
+        if (selectedNames.some((selectedName) => pantryIngredientEquals(selectedName, name))) return;
+        if (!isSmartPantrySuggestionAllowed(name)) return;
+        const unlocks = pantryPairUnlocks(selectedNames, name);
+        if (!unlocks.length) return;
+        const key = normalizeIngredientName(name);
+        const existing = candidates.get(key) || { ingredient: formatIngredientName(name), dishes: new Set(), bestScore: 0, strongCount: 0 };
+        unlocks.slice(0, 4).forEach((unlock) => {
+          existing.dishes.add(unlock.recipe.title);
+          existing.bestScore = Math.max(existing.bestScore, unlock.coverage.confidence);
+          if (unlock.stateName === 'STRONG_MATCH') existing.strongCount += 1;
+        });
+        candidates.set(key, existing);
+      });
+    });
+  const unlocks = [...candidates.values()]
+    .map((item) => ({ ...item, dishes: [...item.dishes] }))
+    .sort((a, b) => b.strongCount - a.strongCount
+      || b.bestScore - a.bestScore
+      || suggestionPreferenceScore(b.ingredient) - suggestionPreferenceScore(a.ingredient)
+      || a.ingredient.localeCompare(b.ingredient))
+    .slice(0, limit);
+  pantryUnlockCache.set(cacheKey, unlocks);
+  return unlocks;
+}
+
+function pantryUnlockCacheKey(selected, limit = 3) {
+  return `${uniqueNormalizedIngredients(selected).sort().join('|')}::${limit}`;
+}
+
+function pantryUnlockMessageFromUnlocks(unlocks) {
+  if (!unlocks.length) return 'No strong match yet. Try another ingredient from your pantry.';
+  return `Try ${pantrySuggestionList(unlocks.map((item) => item.ingredient))} to unlock real dishes.`;
+}
+
+function cachedPantryUnlockMessage(selected) {
+  const cacheKey = pantryUnlockCacheKey(selected);
+  if (!pantryUnlockCache.has(cacheKey)) return '';
+  return pantryUnlockMessageFromUnlocks(pantryUnlockCache.get(cacheKey));
+}
+
+function pantryUnlockMessage(selected) {
+  const unlocks = databaseBackedPantryUnlocks(selected);
+  return pantryUnlockMessageFromUnlocks(unlocks);
+}
+
+function smartPantrySuggestion(selected, matches) {
+  if (!selected.length) return '';
+  if (selected.length === 1) return pantryUnlockMessage(selected);
+  const scores = new Map();
+  const selectedNames = selected.map(normalizeIngredientName);
+  const relevantMatches = matches
+    .filter((match) => match.recipe?.isRealDish === true)
+    .filter((match) => (match.selectedCoverageCount || 0) > 0 || (match.matchedPrimaryCount || 0) > 0)
+    .sort((a, b) => b.finalScore - a.finalScore || pantryMatchConfidence(b) - pantryMatchConfidence(a));
+
+  relevantMatches.forEach((match) => {
+    const candidates = [
+      ...(match.missingPrimary || []),
+      ...(match.pantryOptionalIngredients || [])
+        .map(formatIngredientName)
+        .filter((name) => !selectedMatchesIngredient(selectedNames, name))
+    ];
+    [...new Set(candidates.map(formatIngredientName))].forEach((ingredient) => {
+      const key = normalizeIngredientName(ingredient);
+      if (!key || selectedMatchesIngredient(selectedNames, ingredient) || !isSmartPantrySuggestionAllowed(ingredient)) return;
+      const predicted = predictedMatchAfterAddingIngredient(match, ingredient);
+      const existing = scores.get(key) || { ingredient: formatIngredientName(ingredient), score: 0, unlocks: 0 };
+      existing.score += predicted >= pantryStrongMatchThreshold ? 8 : predicted >= 50 ? 5 : 2;
+      existing.score += Math.max(0, Math.round((match.finalScore || 0) / 1000));
+      existing.score += suggestionPreferenceScore(ingredient);
+      existing.unlocks += predicted >= 50 ? 1 : 0;
+      scores.set(key, existing);
+    });
+  });
+
+  const suggestions = [...scores.values()]
+    .filter((item) => item.unlocks > 0)
+    .sort((a, b) => b.unlocks - a.unlocks || b.score - a.score || a.ingredient.localeCompare(b.ingredient))
+    .slice(0, 3)
+    .map((item) => item.ingredient);
+
+  if (!suggestions.length) return pantryUnlockMessage(selected);
+  if (suggestions.length === 1) return `Add ${suggestions[0]} for better matches.`;
+  if (suggestions.length === 2) return `Add ${pantrySuggestionList(suggestions)} for better matches.`;
+  return `Try ${pantrySuggestionList(suggestions)} to unlock more dishes.`;
+}
+
+function matchSection(title, matches, helperText = '') {
   const section = document.createElement('section');
   section.className = 'weighted-match-section';
-  section.innerHTML = `<h3>${title}</h3><div class="weighted-match-list"></div>`;
+  section.innerHTML = `
+    <h3>${title}</h3>
+    ${helperText ? `<p class="dish-match-helper">${escapeHtml(helperText)}</p>` : ''}
+    <div class="weighted-match-list"></div>
+  `;
   const list = section.querySelector('.weighted-match-list');
-  matches.forEach((match) => {
+  const sortedMatches = [...matches].sort((a, b) => {
+    return pantryMatchConfidence(b) - pantryMatchConfidence(a)
+      || b.mealTypeBonus - a.mealTypeBonus
+      || b.quickMealScore - a.quickMealScore
+      || b.finalScore - a.finalScore
+      || a.recipe.title.localeCompare(b.recipe.title);
+  });
+  sortedMatches.forEach((match) => {
     const card = document.createElement('article');
     card.className = 'weighted-match-card';
     card.dataset.recipeId = match.recipe.id;
-    const unlockMarkup = (match.tierKey === 'add-one' || match.tierKey === 'partial') && match.unlockIngredient
-      ? `<p class="unlock-ingredient">${escapeHtml(getTomoMessage({ context: 'add_more_ingredient', missingIngredient: match.unlockIngredient, recipeName: match.recipe.title }))}</p>`
-      : '';
-    const missingMarkup = match.overallMatchPercent >= 100
-      ? '<p class="everything-available">✅ Everything Available</p>'
-      : match.missingPrimary.length
-        ? `<div class="missing-ingredients"><span>Missing:</span><ul>${match.missingPrimary.slice(0, 4).map((item) => `<li>${item}</li>`).join('')}</ul></div>`
-        : '';
-    const matchedMarkup = match.matchedPrimary.length
-      ? `<div class="matched-ingredients"><span>Matched:</span><ul>${match.matchedPrimary.slice(0, 4).map((item) => `<li>✓ ${item}</li>`).join('')}</ul></div>`
-      : '';
     card.innerHTML = `
-      <div>
+      <span class="match-thumb">${recipeVisual(match.recipe)}</span>
+      <div class="match-card-copy">
         <strong>${match.recipe.title}</strong>
-        <p>${tomoMatchCopy(match)}</p>
-        ${matchMetrics(match)}
-        <div class="recommendation-explanation"><span>Recommended because:</span><div class="match-reasons">${matchReasons(match).map((reason) => `<span>${reason}</span>`).join('')}</div></div>
-        ${unlockMarkup}
-        ${matchedMarkup}
-        ${missingMarkup}
+        <span class="match-percent">${pantryMatchConfidence(match)}% Match</span>
+        <p>${escapeHtml(pantryMissingSummary(match))}</p>
       </div>
-      <span class="match-badge">${matchBadge(match)}</span>
     `;
     list.appendChild(card);
   });
   return section;
 }
 
+function renderPantrySuggestionsContent(content) {
+  if (!els.ingredientResults) return;
+  const applyContent = () => {
+    if (typeof content === 'string') {
+      els.ingredientResults.innerHTML = content;
+    } else {
+      els.ingredientResults.replaceChildren(content);
+    }
+  };
+  clearTimeout(pantryResultsTransitionTimer);
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !els.ingredientResults.childElementCount) {
+    applyContent();
+    els.ingredientResults.classList.remove('is-updating');
+    return;
+  }
+  els.ingredientResults.classList.add('is-updating');
+  pantryResultsTransitionTimer = setTimeout(() => {
+    applyContent();
+    requestAnimationFrame(() => els.ingredientResults.classList.remove('is-updating'));
+  }, 90);
+}
+
 function curatedPantryMatches(matches) {
   return matches
-    .filter((item) => item.matchedPrimaryCount >= item.requiredPrimaryCount && item.overallMatchPercent >= 50)
+    .filter((item) => item.matchedPrimaryCount >= item.requiredPrimaryCount && pantryMatchConfidence(item) >= pantryStrongMatchThreshold)
+    .sort((a, b) => {
+      return pantryMatchConfidence(b) - pantryMatchConfidence(a)
+        || b.mealTypeBonus - a.mealTypeBonus
+        || b.quickMealScore - a.quickMealScore
+        || b.finalScore - a.finalScore
+        || a.recipe.title.localeCompare(b.recipe.title);
+    })
     .slice(0, 4);
 }
 
@@ -2771,58 +4045,229 @@ function updatePantryTomoMessage(messageOptions) {
   els.pantryTomoMessage.textContent = getTomoMessage(messageOptions);
 }
 
-function renderIngredientResults() {
-  const selected = [...state.selectedIngredients];
-  const matches = weightedIngredientMatches();
-  const curatedMatches = curatedPantryMatches(matches);
-  els.selectedCount.textContent = `${selected.length} selected`;
-  els.findDishes.classList.remove('hidden');
-  els.findDishes.textContent = curatedMatches.length ? `Show ${curatedMatches.length} Dishes` : 'Find Dishes';
-  els.ingredientResults.innerHTML = '';
-  renderSelectedIngredientTray();
-  if (!selected.length) {
-    updatePantryTomoMessage({ context: 'pantry_open' });
-    els.ingredientResults.innerHTML = tomoMessageMarkup({ context: 'pantry_open' }, 'preview-empty tomo-banter-line');
+function selectedIngredientSummary(selected) {
+  return selected
+    .slice(0, 2)
+    .map(formatIngredientName)
+    .join(' + ');
+}
+
+function selectedIncludesAll(selected, required) {
+  return required.every((ingredient) => selected.some((selectedIngredient) => selectedCoversIngredient([selectedIngredient], ingredient)));
+}
+
+function pantryMatchConfidence(match) {
+  if (!match?.recipe) return 0;
+  return Math.max(0, Math.min(100, Math.round(match.overallMatchPercent || match.ingredientMatchScore || 0)));
+}
+
+function pantryRecommendationState(match, selected = [...state.selectedIngredients]) {
+  if (hasWeirdPantryCombo(selected)) return 'UNUSUAL_COMBO';
+  if (!match?.recipe || match.recipe.isRealDish !== true) return 'NO_STRONG_MATCH';
+  const confidence = pantryMatchConfidence(match);
+  const hasRequiredIngredients = (match.missingPrimary || []).length === 0
+    && (match.matchedPrimaryCount || 0) >= (match.requiredPrimaryCount || 1);
+  const selectedCoverageRatio = selected.length ? (match.selectedCoverageCount || 0) / selected.length : 1;
+  const ignoresSelectedIngredient = selected.length >= 2
+    && ((match.unmatchedSelected || []).length > 0 || selectedCoverageRatio < 1);
+  const selectedNames = selected.map(normalizeIngredientName);
+  const isSparsePaneerRice = selectedNames.length === 2
+    && selectedIncludesAll(selectedNames, ['rice', 'paneer'])
+    && selectedIncludesAll(match.pantryCoreIngredients || [], ['rice', 'paneer'])
+    && !(match.pantryOptionalIngredients || []).some((ingredient) => selectedMatchesPantryIngredientName(ingredient));
+  if (isSparsePaneerRice) return 'PARTIAL_MATCH';
+  if (hasRequiredIngredients && !ignoresSelectedIngredient && confidence >= pantryStrongMatchThreshold) return 'STRONG_MATCH';
+  if ((match.matchedPrimaryCount || 0) > 0 || (match.selectedCoverageCount || 0) > 0) return 'PARTIAL_MATCH';
+  return 'NO_STRONG_MATCH';
+}
+
+function pantryMatchLabel(match, selected = [...state.selectedIngredients]) {
+  const stateName = pantryRecommendationState(match, selected);
+  if (stateName === 'STRONG_MATCH') return 'Strong match';
+  if (stateName === 'PARTIAL_MATCH') return 'Almost there';
+  if (stateName === 'UNUSUAL_COMBO') return 'Unusual combo';
+  return 'No strong match yet';
+}
+
+function selectedMatchesPantryIngredientName(name) {
+  const selected = [...state.selectedIngredients].map(normalizeIngredientName);
+  return selected.some((selectedName) => pantryIngredientEquals(selectedName, name));
+}
+
+function nextIngredientPrompt(match) {
+  const selected = [...state.selectedIngredients].map(normalizeIngredientName);
+  if (selectedIncludesAll(selected, ['rice', 'paneer']) && selected.length === 2) {
+    return 'Add onion, capsicum, or tomato to unlock paneer-based rice dishes';
+  }
+  const missingRequired = (match.missingPrimary || []).filter((name) => !selectedMatchesPantryIngredientName(name));
+  if (missingRequired.length) {
+    const required = missingRequired.slice(0, 2);
+    const joined = required.length === 1 ? required[0] : `${required[0]} and ${required[1]}`;
+    return `Add ${joined.toLowerCase()} to make ${match.recipe.title}`;
+  }
+  const optional = (match.pantryOptionalIngredients || [])
+    .map(formatIngredientName)
+    .filter((name) => !selectedMatchesPantryIngredientName(name));
+  const candidates = optional.slice(0, 2);
+  if (!candidates.length) return '';
+  const joined = candidates.length === 1 ? candidates[0] : `${candidates[0]} or ${candidates[1]}`;
+  return `Add ${joined.toLowerCase()} to make ${match.recipe.title}`;
+}
+
+function ricePairingSuggestion(selected) {
+  if (!selected.some((ingredient) => pantryIngredientEquals(ingredient, 'rice'))) return '';
+  return 'Add tomato, potato, egg, curd, or lemon for better rice dishes.';
+}
+
+function logMissingLikelyRecipe(selected) {
+  if (selected.length < 2) return;
+  console.info(`Missing likely recipe: ${selected.map(normalizeIngredientName).join(' + ')}`);
+}
+
+function pantryBestMatch(matches, selected) {
+  if (selected.length < 2) return null;
+  if (selectedIncludesAll(selected, ['rice', 'egg'])) {
+    const eggFriedRice = state.recipes.find((recipe) => normalizeIngredientName(recipe.title) === 'egg fried rice');
+    if (eggFriedRice) {
+      return matches.find((match) => match.recipe.id === eggFriedRice.id) || {
+        recipe: eggFriedRice,
+        overallMatchPercent: 92,
+        ingredientMatchScore: 92
+      };
+    }
+  }
+  const best = matches[0] || null;
+  return pantryRecommendationState(best, selected) === 'STRONG_MATCH' ? best : null;
+}
+
+function renderPantryInstantPreview(selected, matches, suggestionLine = '') {
+  if (!els.pantryInsightBanner || !els.pantryBestMatch) return;
+  const count = selected.length;
+  if (!count) {
+    els.pantryInsightBanner.textContent = 'Tell Tomo what’s in your kitchen.';
+    els.pantryBestMatch.classList.add('hidden');
+    els.pantryBestMatch.classList.remove('weak-match');
+    els.pantryBestMatch.innerHTML = '';
     return;
   }
-
-  updatePantryTomoMessage({ context: 'ingredient_selected', selectedIngredients: selected });
-  if (selected.length === 1) {
-    const singleMatches = matches
-      .filter((item) => item.ingredientMatchScore > 0)
-      .sort((a, b) => b.finalScore - a.finalScore || a.recipe.title.localeCompare(b.recipe.title));
-    els.findDishes.textContent = singleMatches.length ? `Show ${Math.min(3, singleMatches.length)} Ideas` : 'Find Dishes';
-    els.ingredientResults.appendChild(renderSingleIngredientHelper(selected, singleMatches));
+  if (count === 1) {
+    els.pantryInsightBanner.textContent = 'No strong match yet';
+    els.pantryBestMatch.classList.remove('hidden');
+    els.pantryBestMatch.classList.add('weak-match');
+    els.pantryBestMatch.innerHTML = `<p class="pantry-best-empty">${escapeHtml(suggestionLine || pantryUnlockMessage(selected))}</p>`;
     return;
   }
 
   if (hasWeirdPantryCombo(selected)) {
-    updatePantryTomoMessage({ context: 'empty_state', selectedIngredients: selected });
-    els.findDishes.textContent = 'Find Dishes';
-    const empty = document.createElement('p');
-    empty.className = 'preview-empty tomo-banter-line';
-    empty.textContent = getTomoMessage({ context: 'empty_state', selectedIngredients: selected });
-    els.ingredientResults.appendChild(empty);
+    els.pantryInsightBanner.textContent = 'No strong match yet';
+    els.pantryBestMatch.classList.remove('hidden');
+    els.pantryBestMatch.classList.add('weak-match');
+    els.pantryBestMatch.innerHTML = `<p class="pantry-best-empty">${escapeHtml(noStrongPantryPrompt())}</p>`;
     return;
   }
 
-  const summary = document.createElement('p');
-  summary.className = matches.length ? 'match-insight' : 'preview-empty';
-  summary.textContent = curatedMatches.length
-    ? getTomoMessage({ context: 'results_found', results: curatedMatches })
-    : getTomoMessage({ context: 'empty_state', selectedIngredients: selected });
-  els.ingredientResults.appendChild(summary);
-
-  if (!curatedMatches.length) return;
-
-  const unlock = singleUnlockSuggestion(curatedMatches);
-  if (unlock?.unlockIngredient) {
-    const helper = document.createElement('p');
-    helper.className = 'single-unlock-suggestion';
-    helper.innerHTML = `${escapeHtml(getTomoMessage({ context: 'add_more_ingredient', missingIngredient: unlock.unlockIngredient, recipeName: unlock.recipe.title })).replace(escapeHtml(unlock.unlockIngredient), `<button type="button" data-add-ingredient="${escapeHtml(unlock.unlockIngredient)}">${escapeHtml(unlock.unlockIngredient)}</button>`)}`;
-    els.ingredientResults.appendChild(helper);
+  els.pantryInsightBanner.textContent = matches.length ? `🍳 I found dishes for ${selectedIngredientSummary(selected)}` : 'No strong match yet';
+  const best = pantryBestMatch(matches, selected);
+  if (!best?.recipe) {
+    logMissingLikelyRecipe(selected);
+    const partial = matches.find((match) => pantryRecommendationState(match, selected) === 'PARTIAL_MATCH');
+    if (partial?.recipe) {
+      els.pantryInsightBanner.textContent = 'Almost there';
+      els.pantryBestMatch.classList.remove('hidden');
+      els.pantryBestMatch.classList.add('weak-match');
+      const coverageText = `${partial.pantryAvailableCount || 0} of ${partial.pantryIngredientCount || 0} ingredients available`;
+      els.pantryBestMatch.innerHTML = `
+        <div>
+          <span class="pantry-best-label">Almost there</span>
+          <strong>${escapeHtml(partial.recipe.title)}</strong>
+          <small>${escapeHtml(coverageText)}</small>
+          <p>${escapeHtml(nextIngredientPrompt(partial) || 'Add one more ingredient for a better match')}</p>
+        </div>
+        <button type="button" data-pantry-best-recipe="${escapeHtml(partial.recipe.id)}">View Dish</button>
+      `;
+      return;
+    }
+    els.pantryInsightBanner.textContent = 'No strong match yet';
+    els.pantryBestMatch.classList.remove('hidden');
+    els.pantryBestMatch.classList.add('weak-match');
+    els.pantryBestMatch.innerHTML = `<p class="pantry-best-empty">${escapeHtml(noStrongPantryPrompt())}</p>`;
+    return;
   }
-  els.ingredientResults.appendChild(matchSection('Curated pantry ideas', curatedMatches));
+
+  const coverageText = `${best.pantryAvailableCount || 0} of ${best.pantryIngredientCount || 0} ingredients available`;
+  const reason = best.hasAllRecipeIngredients ? 'Required ingredients selected' : 'Key ingredients available';
+  els.pantryBestMatch.classList.remove('hidden');
+  els.pantryBestMatch.classList.remove('weak-match');
+  els.pantryBestMatch.innerHTML = `
+    <div>
+      <span class="pantry-best-label">Strong match</span>
+      <strong>${escapeHtml(best.recipe.title)}</strong>
+      <small>Key ingredients match</small>
+      <p>${escapeHtml(coverageText)} • ${escapeHtml(reason)}</p>
+    </div>
+    <button type="button" data-pantry-best-recipe="${escapeHtml(best.recipe.id)}">View Dish</button>
+  `;
+}
+
+function renderIngredientResults() {
+  const selected = [...state.selectedIngredients];
+  if (els.selectedCount) {
+    els.selectedCount.textContent = selected.length ? `${selected.length} selected` : 'Choose 2-4 ingredients';
+  }
+  els.pantrySuggestions?.classList.remove('hidden');
+  renderSelectedIngredientTray();
+  if (!selected.length) {
+    renderPantryInstantPreview(selected, [], '');
+    updatePantryTomoMessage({ context: 'pantry_open' });
+    renderPantrySuggestionsContent('<p class="preview-empty dish-match-empty">Start with 2-4 ingredients.<small>Try Rice + Egg or Rava + Onion to see instant matches.</small></p>');
+    return;
+  }
+
+  if (selected.length === 1) {
+    const cachedSuggestion = cachedPantryUnlockMessage(selected);
+    const suggestionLine = cachedSuggestion || 'Checking real recipe paths...';
+    renderPantryInstantPreview(selected, [], suggestionLine);
+    if (els.pantryTomoMessage) els.pantryTomoMessage.textContent = formatTomoMessage(suggestionLine);
+    renderPantrySuggestionsContent(`<p class="preview-empty dish-match-empty">${escapeHtml(suggestionLine)}</p>`);
+    if (!cachedSuggestion) {
+      setTimeout(() => {
+        const current = [...state.selectedIngredients];
+        if (current.length !== 1 || !pantryIngredientEquals(current[0], selected[0])) return;
+        const message = pantryUnlockMessage(selected);
+        renderPantryInstantPreview(selected, [], message);
+        if (els.pantryTomoMessage) els.pantryTomoMessage.textContent = formatTomoMessage(message);
+        renderPantrySuggestionsContent(`<p class="preview-empty dish-match-empty">${escapeHtml(message)}</p>`);
+      }, 0);
+    }
+    return;
+  }
+
+  const matches = weightedIngredientMatches();
+  const curatedMatches = curatedPantryMatches(matches);
+  const suggestionLine = smartPantrySuggestion(selected, matches);
+  renderPantryInstantPreview(selected, matches, suggestionLine);
+  updatePantryTomoMessage({ context: 'ingredient_selected', selectedIngredients: selected });
+  if (hasWeirdPantryCombo(selected)) {
+    updatePantryTomoMessage({ context: 'empty_state', selectedIngredients: selected });
+    renderPantrySuggestionsContent(`<p class="preview-empty dish-match-empty">${escapeHtml(suggestionLine)}</p>`);
+    return;
+  }
+
+  if (!curatedMatches.length) {
+    renderPantrySuggestionsContent(`<p class="preview-empty dish-match-empty">${escapeHtml(suggestionLine)}</p>`);
+    return;
+  }
+
+  renderPantrySuggestionsContent(matchSection('Dish Matches', curatedMatches, suggestionLine));
+}
+
+function schedulePantrySelectionRefresh() {
+  if (pantrySelectionRenderFrame) cancelAnimationFrame(pantrySelectionRenderFrame);
+  pantrySelectionRenderFrame = requestAnimationFrame(() => {
+    pantrySelectionRenderFrame = null;
+    renderIngredientResults();
+    setTimeout(renderTomoPick, 80);
+  });
 }
 
 function recipeHasSelectedIngredient(recipeIngredients, selectedIngredient) {
@@ -2861,18 +4306,258 @@ function protectedIngredientNames(recipe) {
   return protectedIngredients.filter((ingredient) => haystack.includes(ingredient));
 }
 
+function normalizeIngredientId(value) {
+  const normalized = normalizeIngredientName(value).replace(/\s+/g, '-');
+  if (normalized.length > 3 && normalized.endsWith('ies')) return `${normalized.slice(0, -3)}y`;
+  if (normalized.length > 3 && normalized.endsWith('es')) return normalized.slice(0, -2);
+  if (normalized.length > 3 && normalized.endsWith('s') && !normalized.endsWith('ss')) return normalized.slice(0, -1);
+  return normalized;
+}
+
+function ingredientDisplayName(item) {
+  return item?.name || item?.ingredientName || item?.ingredient_name || item?.ingredient_id || item?.ingredientId || '';
+}
+
+function ingredientMatchKeys(item) {
+  const name = ingredientDisplayName(item);
+  return [
+    item?.ingredient_id,
+    item?.ingredientId,
+    item?.id,
+    name,
+    ...ingredientAliases(name)
+  ]
+    .filter(Boolean)
+    .map(normalizeIngredientId);
+}
+
+function selectedIngredientKeys(selected = [...state.selectedIngredients]) {
+  return selected
+    .flatMap((ingredient) => [ingredient, ...ingredientAliases(ingredient)])
+    .filter(Boolean)
+    .map(normalizeIngredientId);
+}
+
+function selectedMatchesRecipeIngredient(item, selected = [...state.selectedIngredients]) {
+  const selectedKeys = new Set(selectedIngredientKeys(selected));
+  return ingredientMatchKeys(item).some((key) => selectedKeys.has(key));
+}
+
+function recipeDetailIngredients(recipe) {
+  const sourceIngredients = (recipe.ingredients || []).filter((item) => ingredientDisplayName(item));
+  const fallbackIngredients = [
+    ...explicitPrimaryIngredients(recipe).map((name) => ({ name, role: 'required', isMain: true })),
+    ...explicitSecondaryIngredients(recipe).map((name) => ({ name, role: 'optional', isMain: false }))
+  ];
+  const ingredients = sourceIngredients.length ? sourceIngredients : fallbackIngredients;
+  const seen = new Set();
+  return ingredients.filter((item) => {
+    const key = ingredientMatchKeys(item)[0] || normalizeIngredientId(ingredientDisplayName(item));
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function persistGroceryItems() {
   localStorage.setItem('cookbuddy_grocery', JSON.stringify(state.groceryItems));
 }
 
 function recipeShoppingIngredients(recipe) {
-  const primary = explicitPrimaryIngredients(recipe);
-  const fallback = mainIngredientNames(recipe);
-  const needed = primary.length ? primary : fallback;
-  if (!state.selectedIngredients.size) return needed.map(formatIngredientName);
-  return needed
-    .filter((ingredient) => !selectedMatchesIngredient([...state.selectedIngredients], ingredient))
+  if (!state.selectedIngredients.size) return [];
+  const seen = new Set();
+  return recipeDetailIngredients(recipe)
+    .filter((ingredient) => !selectedMatchesRecipeIngredient(ingredient))
+    .map((ingredient) => formatIngredientName(ingredientDisplayName(ingredient)))
+    .filter((ingredient) => {
+      const key = normalizeIngredientId(ingredient);
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+}
+
+function recipePantryIngredientGroups(recipe) {
+  const ingredients = recipeDetailIngredients(recipe);
+  if (!state.selectedIngredients.size) {
+    return { ingredients, available: [], missing: [] };
+  }
+  const available = [];
+  const missing = [];
+  ingredients.forEach((ingredient) => {
+    (selectedMatchesRecipeIngredient(ingredient) ? available : missing).push(ingredient);
+  });
+  return { ingredients, available, missing };
+}
+
+function ingredientNameListMarkup(ingredients, marker = '•') {
+  return `
+    <ul>
+      ${ingredients.map((item) => `<li><span>${marker}</span>${escapeHtml(formatIngredientName(ingredientDisplayName(item)))}</li>`).join('')}
+    </ul>
+  `;
+}
+
+function dishCategoryBadge(recipe) {
+  const family = normalizeDishFamilyName(inferredDishFamily(recipe));
+  const text = `${recipe.title || ''} ${family} ${(recipe.tags || []).join(' ')}`.toLowerCase();
+  const familyCategories = {
+    paratha: { icon: '🫓', label: 'Paratha' },
+    chapati: { icon: '🫓', label: 'Flatbread' },
+    'rice-meal': { icon: '🍚', label: 'Rice' },
+    'rice-dal': { icon: '🍚', label: 'Rice' },
+    'fried-rice': { icon: '🍚', label: 'Rice' },
+    'paneer-curry': { icon: '🍛', label: 'Curry' },
+    'fish-curry': { icon: '🍛', label: 'Curry' },
+    omelette: { icon: '🍳', label: 'Egg' },
+    dosa: { icon: '🥞', label: 'Dosa' },
+    idli: { icon: '🥞', label: 'Idli' },
+    uttapam: { icon: '🥞', label: 'Uttapam' },
+    noodles: { icon: '🍜', label: 'Noodles' },
+    chicken: { icon: '🍗', label: 'Non-veg' }
+  };
+  const categories = [
+    { matches: ['paratha', 'flatbread', 'chapati', 'roti'], icon: '🫓', label: 'Flatbread' },
+    { matches: ['sandwich', 'toast'], icon: '🥪', label: 'Sandwich' },
+    { matches: ['dosa', 'idli', 'uttapam'], icon: '🥞', label: 'Dosa & Idli' },
+    { matches: ['noodle'], icon: '🍜', label: 'Noodles' },
+    { matches: ['chicken', 'non-vegetarian', 'non veg'], icon: '🍗', label: 'Non-veg' },
+    { matches: ['egg', 'omelette'], icon: '🍳', label: 'Egg' },
+    { matches: ['curry', 'gravy', 'paneer-curry', 'fish-curry'], icon: '🍛', label: 'Curry' },
+    { matches: ['rice', 'biryani', 'pulao', 'fried-rice'], icon: '🍚', label: 'Rice' }
+  ];
+  const category = familyCategories[family]
+    || categories.find((item) => item.matches.some((term) => text.includes(term)))
+    || { icon: '🍲', label: formatIngredientName(family || 'Dish') };
+  return `
+    <div class="detail-category-icon" aria-hidden="true">${category.icon}</div>
+    <small>${escapeHtml(category.label)}</small>
+  `;
+}
+
+function selectedPantryIngredientsFor(name) {
+  return [...state.selectedIngredients].filter((selected) => (
+    pantryIngredientEquals(selected, name)
+    || selectedCoversIngredient([selected], name)
+    || selectedCoversIngredient([name], selected)
+  ));
+}
+
+function ingredientIsOnShoppingList(name) {
+  const key = normalizeIngredientId(name);
+  return state.groceryItems.some((item) => normalizeIngredientId(item.ingredientName) === key);
+}
+
+function removeIngredientFromShoppingList(name) {
+  const key = normalizeIngredientId(name);
+  state.groceryItems = state.groceryItems.filter((item) => normalizeIngredientId(item.ingredientName) !== key);
+  persistGroceryItems();
+}
+
+function detailIngredientItem(name, status) {
+  const label = escapeHtml(formatIngredientName(name));
+  const value = escapeHtml(name);
+  const available = status === 'available';
+  const inShoppingList = ingredientIsOnShoppingList(name);
+  return `
+    <li class="detail-ingredient ${available ? 'available' : inShoppingList ? 'on-list' : status} ingredient-choice-row">
+      <strong>${label}</strong>
+      <div class="ingredient-choice-actions">
+        <button
+          class="ingredient-choice-button pantry-choice ${available ? 'active' : ''}"
+          type="button"
+          data-set-detail-ingredient-state="${value}"
+          data-detail-state="pantry"
+          aria-pressed="${available}"
+        >${available ? '✓ In Pantry' : '✓ Have'}</button>
+        <button
+          class="ingredient-choice-button shopping-choice ${inShoppingList && !available ? 'active' : ''}"
+          type="button"
+          data-set-detail-ingredient-state="${value}"
+          data-detail-state="shopping"
+          aria-pressed="${inShoppingList && !available}"
+        >${inShoppingList && !available ? '🛒 Shopping List' : '🛒 Need'}</button>
+        ${(available || inShoppingList)
+          ? `<button
+              class="ingredient-undo-button"
+              type="button"
+              data-clear-detail-ingredient-state="${value}"
+              data-detail-state="${available ? 'pantry' : 'shopping'}"
+            >Undo</button>`
+          : ''}
+      </div>
+    </li>
+  `;
+}
+
+function detailIngredientGroupsMarkup(recipe) {
+  const core = configuredCoreIngredients(recipe);
+  const optional = configuredOptionalIngredients(recipe, core);
+  const hasPantryContext = state.selectedIngredients.size > 0;
+  const itemStatus = (name) => {
+    if (!hasPantryContext) return 'neutral';
+    return selectedCoversIngredient([...state.selectedIngredients], name) ? 'available' : 'missing';
+  };
+  const keyMarkup = core.map((name) => {
+    const status = itemStatus(name);
+    return detailIngredientItem(name, status);
+  }).join('');
+  const optionalMarkup = optional.map((name) => {
+    const status = itemStatus(name);
+    return detailIngredientItem(name, status);
+  }).join('');
+  return `
+    <section class="detail-list detail-ingredients">
+      <h3>Key Ingredients</h3>
+      <ul>${keyMarkup}</ul>
+      ${optionalMarkup ? `
+        <h4>Nice to have</h4>
+        <p class="ingredient-section-helper">Add extras to your shopping list if needed.</p>
+        <ul>${optionalMarkup}</ul>
+      ` : ''}
+    </section>
+  `;
+}
+
+function detailPantryMatchMarkup(recipe) {
+  if (!state.selectedIngredients.size) return '';
+  const match = currentRecipePantryMatch(recipe);
+  if (!match) return '';
+  const available = match.pantryAvailableCount || 0;
+  const total = match.pantryIngredientCount || 0;
+  const missingOptional = (match.pantryOptionalIngredients || [])
+    .filter((name) => !selectedCoversIngredient([...state.selectedIngredients], name))
+    .slice(0, 2)
     .map(formatIngredientName);
+  const allIngredientsAvailable = match.hasAllRecipeIngredients === true;
+  const label = allIngredientsAvailable ? 'Required ingredients selected' : 'Key ingredients match';
+  const prompt = allIngredientsAvailable
+    ? ''
+    : missingOptional.length
+      ? `Add ${missingOptional.length === 1 ? missingOptional[0] : `${missingOptional[0]} or ${missingOptional[1]}`} for a better match`
+      : nextIngredientPrompt(match);
+  return `
+    <section class="detail-pantry-match">
+      <strong>${escapeHtml(label)}</strong>
+      <span>${available} of ${total} ingredients available</span>
+      ${prompt ? `<p>${escapeHtml(prompt)}</p>` : ''}
+    </section>
+  `;
+}
+
+function cookingNotesForRecipe(recipe) {
+  const specificNotes = {
+    'aloo paratha': [
+      'Boil and mash potato before mixing the filling.',
+      'Keep the dough soft so the paratha rolls easily.',
+      'Cook on medium heat with ghee or oil until golden spots appear.'
+    ]
+  };
+  const key = normalizeIngredientName(recipe.title);
+  const configured = recipe.cookingNotes || recipe.cooking_notes;
+  if (specificNotes[key]) return specificNotes[key];
+  if (Array.isArray(configured) && configured.length) return configured;
+  return ['Prep the key ingredients first, then cook with your usual base of oil, spices, and herbs.'];
 }
 
 function addGroceryItems(ingredients, sourceRecipe = '') {
@@ -2901,26 +4586,48 @@ function addGroceryItems(ingredients, sourceRecipe = '') {
 function renderGrocery() {
   state.groceryItems = normalizeGroceryItems(state.groceryItems);
   const pendingCount = state.groceryItems.filter((item) => !item.isCompleted).length;
+  const purchasedCount = state.groceryItems.length - pendingCount;
   els.groceryBadge.textContent = pendingCount;
   els.groceryBadge.classList.toggle('hidden', pendingCount === 0);
+  els.clearPurchased?.classList.toggle('hidden', purchasedCount === 0);
   els.groceryList.innerHTML = '';
   if (!state.groceryItems.length) {
-    els.groceryList.innerHTML = '<p class="shopping-empty">🍅 Tomo will automatically add missing ingredients from your selected recipes.</p>';
+    els.groceryList.innerHTML = '<p class="shopping-empty">Add items manually, or let Tomo add missing ingredients from recipes you cook.</p>';
     return;
   }
-  state.groceryItems.forEach((item) => {
+
+  const pendingItems = state.groceryItems.filter((item) => !item.isCompleted);
+  const purchasedItems = state.groceryItems.filter((item) => item.isCompleted);
+  const renderItem = (item) => {
     const row = document.createElement('article');
     row.className = item.isCompleted ? 'completed' : '';
     row.innerHTML = `
-      <button class="shopping-check" data-toggle-grocery="${escapeHtml(item.id)}" type="button" aria-label="${item.isCompleted ? 'Mark not purchased' : 'Mark purchased'}" aria-pressed="${item.isCompleted ? 'true' : 'false'}">${item.isCompleted ? '✓' : ''}</button>
+      <button class="shopping-check" data-toggle-grocery="${escapeHtml(item.id)}" type="button" aria-label="${item.isCompleted ? 'Move back to Things to pick up' : 'Mark as purchased'}" aria-pressed="${item.isCompleted ? 'true' : 'false'}">${item.isCompleted ? '✓' : ''}</button>
       <span>
         <strong>${escapeHtml(item.ingredientName)}</strong>
         ${item.sourceRecipe ? `<small>From ${escapeHtml(item.sourceRecipe)}</small>` : '<small>Added manually</small>'}
+        ${item.isCompleted ? '<em class="shopping-item-state">Purchased</em>' : '<em class="shopping-item-state">Tap the circle when purchased</em>'}
       </span>
       <button class="text-button" data-remove-grocery="${escapeHtml(item.id)}" type="button">Remove</button>
     `;
-    els.groceryList.appendChild(row);
-  });
+    return row;
+  };
+  const pendingSection = document.createElement('section');
+  pendingSection.className = 'shopping-section';
+  if (pendingItems.length) {
+    pendingItems.forEach((item) => pendingSection.appendChild(renderItem(item)));
+  } else {
+    pendingSection.innerHTML = '<p class="shopping-empty compact">No items waiting. Purchased items are listed below.</p>';
+  }
+  els.groceryList.appendChild(pendingSection);
+
+  if (purchasedItems.length) {
+    const purchasedSection = document.createElement('section');
+    purchasedSection.className = 'shopping-section purchased-section';
+    purchasedSection.innerHTML = '<h3 class="shopping-section-title">Purchased</h3>';
+    purchasedItems.forEach((item) => purchasedSection.appendChild(renderItem(item)));
+    els.groceryList.appendChild(purchasedSection);
+  }
 }
 
 function recipeSearchText(recipe) {
@@ -2929,6 +4636,7 @@ function recipeSearchText(recipe) {
     recipe.description,
     recipe.tomoLine,
     recipe.dietType,
+    (recipe.aliases || []).join(' '),
     (recipe.tags || []).join(' '),
     (recipe.ingredients || []).map((item) => item.name).join(' ')
   ].join(' ').toLowerCase();
@@ -3013,28 +4721,33 @@ function openGlobalSearch() {
 
 function renderActiveMoodBar() {
   if (!els.activeMoodBar) return;
-  const mood = activeMood();
-  els.activeMoodBar.classList.toggle('hidden', !mood);
-  const message = getTomoMessage({ context: 'mood_selected', mood });
-  els.activeMoodBar.innerHTML = mood
-    ? `<button class="active-mood-chip active-mood-${mood}" type="button" data-clear-active-mood aria-label="Clear ${escapeHtml(labelForMood(mood))} mood">${escapeHtml(labelForMood(mood))} <span>×</span></button><p class="active-mood-message">${escapeHtml(message)}</p>`
-    : '';
+  els.activeMoodBar.innerHTML = '';
+  els.activeMoodBar.classList.add('hidden');
 }
 
 function renderMood() {
   const mood = moodForCopy();
-  els.heroMessage.textContent = '🍅 Tomo';
+  if (els.heroMessage) els.heroMessage.textContent = '';
   renderAmbientCard();
   els.nudgeText.textContent = getTomoMessage({ context: 'mood_selected', mood });
   els.factBanter.textContent = factBanters[Math.abs(mood.charCodeAt(0) + state.meal.length) % factBanters.length];
   document.querySelectorAll('.mood-chip').forEach((button) => {
     button.classList.toggle('active', button.dataset.mood === activeMood());
   });
+  els.clearMoodButton?.classList.toggle('hidden', !activeMood());
   renderActiveMoodBar();
 }
 
 function renderMeal() {
-  els.mealTitle.textContent = mealTitles[state.meal];
+  const mood = activeMood();
+  const mealLabel = mealLabels[state.meal] || mealTitles[state.meal] || 'Meal';
+  els.mealTitle.textContent = mood ? mealLabel : mealTitles[state.meal];
+  const titleEyebrow = document.querySelector('.section-title p');
+  if (titleEyebrow) titleEyebrow.textContent = mood ? `${labelForMood(mood)} Ideas` : 'Today’s Picks';
+  if (els.recipeCount) {
+    els.recipeCount.textContent = mood ? '' : `${state.recipes.length} recipes`;
+    els.recipeCount.classList.toggle('hidden', Boolean(mood));
+  }
   document.querySelectorAll('.meal-tab').forEach((button) => {
     button.classList.toggle('active', button.dataset.meal === state.meal);
   });
@@ -3053,50 +4766,86 @@ function renderAll() {
   renderGrocery();
 }
 
-function openRecipe(recipe) {
-  state.activeRecipe = recipe;
-  recordRecipeInteraction(recipe, 'view');
-  const ingredients = recipe.ingredients || [];
-  const instructions = recipe.instructions || [];
+function renderPantryView() {
+  const showingRecommendations = state.pantryView === 'recommendations';
+  els.pantryDialog?.setAttribute('data-pantry-view', state.pantryView);
+  if (els.pantryModalTitle) {
+    els.pantryModalTitle.textContent = 'Pantry';
+  }
+  if (els.pantryModalSubtitle) {
+    els.pantryModalSubtitle.textContent = showingRecommendations
+      ? 'Dishes matched to your selected ingredients.'
+      : "Tell Tomo what's in your kitchen.";
+  }
+  els.closePantry?.setAttribute('aria-label', showingRecommendations ? 'Back to Pantry' : 'Close Pantry');
+}
+
+function showPantryView(view) {
+  state.pantryView = view === 'recommendations' ? 'recommendations' : 'dashboard';
+  renderPantryView();
+}
+
+function handlePantryClose() {
+  if (state.pantryView === 'recommendations') {
+    showPantryView('dashboard');
+    return;
+  }
+  els.pantryDialog?.close();
+}
+
+function closeRecipeDetail() {
+  els.recipeDialog?.close();
+  const returnContext = state.recipeReturnContext;
+  state.recipeReturnContext = null;
+  if (!returnContext) return;
+  showPantryView(returnContext.pantryView);
+  if (!els.pantryDialog?.open) els.pantryDialog?.showModal();
+  const pantryCard = els.pantryDialog?.querySelector('.pantry-card');
+  if (pantryCard) pantryCard.scrollTop = returnContext.scrollTop || 0;
+}
+
+function renderRecipeDetail(recipe) {
+  const cookingNotes = cookingNotesForRecipe(recipe);
   const tomoLine = recipe.tomoLine ? `<p class="tomo-detail-line">${recipe.tomoLine}</p>` : '';
-  const pantryMatch = currentRecipePantryMatch(recipe);
-  const missingShoppingIngredients = recipeShoppingIngredients(recipe);
-  const missingShoppingMarkup = missingShoppingIngredients.length
-    ? `<section class="missing-shopping-panel">
-        <h3>Missing Ingredients</h3>
-        <ul>${missingShoppingIngredients.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
-      </section>`
-    : state.selectedIngredients.size
-      ? '<section class="missing-shopping-panel ready"><h3>✅ Everything Available</h3><p>You have the core ingredients for this dish.</p></section>'
-      : '';
   els.recipeDetail.innerHTML = `
-    <div class="detail-hero">${recipeEmoji(recipe)}</div>
-    <h2>${recipe.title}</h2>
+    <header class="recipe-detail-header">
+      <div class="detail-hero detail-dish-image">${recipeVisual(recipe)}</div>
+      <div class="recipe-detail-heading">
+        <h2>${escapeHtml(recipe.title)}</h2>
+        <div class="recipe-meta">
+          <span class="pill">${recipe.prepTimeMinutes + recipe.cookTimeMinutes} min</span>
+          <span class="pill">${escapeHtml(recipe.difficulty || 'easy')}</span>
+          <span class="pill ${recipe.dietType === 'non-vegetarian' ? 'nonveg' : 'veg'}">${recipe.dietType === 'non-vegetarian' ? 'Non-veg' : 'Veg'}</span>
+        </div>
+      </div>
+    </header>
     ${tomoLine}
-    <p>${recipe.description}</p>
-    <div class="recipe-meta">
-      <span class="pill">${recipe.prepTimeMinutes + recipe.cookTimeMinutes} min</span>
-      <span class="pill">${recipe.difficulty || 'easy'}</span>
-      <span class="pill ${recipe.dietType === 'non-vegetarian' ? 'nonveg' : 'veg'}">${recipe.dietType === 'non-vegetarian' ? 'Non-veg' : 'Veg'}</span>
-    </div>
-    ${recommendationExplanationMarkup(pantryMatch)}
-    <div class="detail-list">
-      ${ingredients.map((item) => `<div><span>${item.name}</span><small>${item.quantity} ${item.unit}</small></div>`).join('')}
-    </div>
-    ${missingShoppingMarkup}
-    ${
-      instructions.length
-        ? `<section class="instruction-notes">
-            <h3>Cooking notes</h3>
-            ${instructions.map((step) => `<p>${step}</p>`).join('')}
-          </section>`
-        : ''
-    }
+    <p class="recipe-detail-description">${escapeHtml(recipe.description)}</p>
+    ${detailPantryMatchMarkup(recipe)}
+    ${detailIngredientGroupsMarkup(recipe)}
+    <section class="instruction-notes">
+      <h3>Cooking notes</h3>
+      ${cookingNotes.map((step) => `<p>${escapeHtml(step)}</p>`).join('')}
+    </section>
     <div class="detail-actions">
       <button class="primary-button" id="cookFromDetail">👨‍🍳 Cook This</button>
-      ${missingShoppingIngredients.length ? '<button class="secondary-button" id="addMissing">➕ Add Missing Ingredients</button>' : ''}
     </div>
   `;
+}
+
+function openRecipe(recipe, options = {}) {
+  if (options.returnToPantry) {
+    state.recipeReturnContext = {
+      pantryView: options.returnToPantry,
+      scrollTop: els.pantryDialog?.querySelector('.pantry-card')?.scrollTop || 0
+    };
+    if (els.pantryDialog?.open) els.pantryDialog.close();
+  } else {
+    state.recipeReturnContext = null;
+  }
+  state.activeRecipe = recipe;
+  recordRecipeInteraction(recipe, 'view');
+  renderRecipeDetail(recipe);
   els.recipeDialog.showModal();
 }
 
@@ -3113,6 +4862,7 @@ async function loadRecipes() {
     state.activeCollectionSubcategories.clear();
     els.recipeNotice.classList.add('hidden');
   } catch (error) {
+    els.recipeNotice.classList.remove('mood-helper');
     els.recipeNotice.textContent = error.message;
     els.recipeNotice.classList.remove('hidden');
   }
@@ -3121,42 +4871,34 @@ async function loadRecipes() {
 
 document.querySelectorAll('.mood-chip').forEach((button) => {
   button.addEventListener('click', () => {
-    state.activeMood = button.dataset.mood;
-    state.mood = button.dataset.mood;
+    const mood = button.dataset.mood;
+    if (activeMood() === mood) {
+      resetMoodSelection();
+      return;
+    }
+    state.activeMood = mood;
+    state.mood = mood;
     state.featuredRecipeId = null;
     state.revealedPickId = null;
-    renderMood();
-    renderMeal();
-    renderTomoPick();
-    transitionTodayPicks();
-    renderIngredientResults();
+    refreshTodayPicks();
   });
 });
 
 els.activeMoodBar?.addEventListener('click', (event) => {
   const clearButton = event.target.closest('[data-clear-active-mood]');
   if (!clearButton) return;
-  state.activeMood = null;
-  state.mood = 'comfort';
-  state.featuredRecipeId = null;
-  state.revealedPickId = null;
-  renderMood();
-  renderMeal();
-  renderTomoPick();
-  transitionTodayPicks();
-  renderIngredientResults();
+  resetMoodSelection();
 });
+
+els.clearMoodButton?.addEventListener('click', resetMoodSelection);
 
 document.querySelectorAll('.meal-tab').forEach((button) => {
   button.addEventListener('click', () => {
+    if (state.meal === button.dataset.meal) return;
     state.meal = button.dataset.meal;
     state.featuredRecipeId = null;
     state.revealedPickId = null;
-    renderMood();
-    renderMeal();
-    renderTomoPick();
-    transitionTodayPicks();
-    renderIngredientResults();
+    refreshTodayPicks();
   });
 });
 
@@ -3166,16 +4908,21 @@ els.ingredientChips.addEventListener('click', (event) => {
   const ingredient = button.dataset.ingredient;
   if (state.selectedIngredients.has(ingredient)) {
     state.selectedIngredients.delete(ingredient);
-  } else if (state.selectedIngredients.size >= 4) {
-    toast('Pick up to 4 ingredients for the clearest matches.');
-    return;
   } else {
     state.selectedIngredients.add(ingredient);
   }
+  els.ingredientChips
+    .querySelectorAll('[data-ingredient]')
+    .forEach((chip) => {
+      if (chip.dataset.ingredient === ingredient) chip.classList.toggle('active', state.selectedIngredients.has(ingredient));
+    });
+  if (els.selectedCount) {
+    const count = state.selectedIngredients.size;
+    els.selectedCount.textContent = count ? `${count} selected` : 'Choose 2-4 ingredients';
+  }
+  renderSelectedIngredientTray();
   state.revealedPickId = null;
-  renderIngredients();
-  renderIngredientResults();
-  renderTomoPick();
+  schedulePantrySelectionRefresh();
 });
 
 els.selectedIngredientTray?.addEventListener('click', (event) => {
@@ -3188,15 +4935,20 @@ els.selectedIngredientTray?.addEventListener('click', (event) => {
   renderTomoPick();
 });
 
+els.pantryBestMatch?.addEventListener('click', (event) => {
+  const button = event.target.closest('[data-pantry-best-recipe]');
+  if (!button) return;
+  const recipe = state.recipes.find((item) => item.id === button.dataset.pantryBestRecipe);
+  if (recipe) {
+    openRecipe(recipe, { returnToPantry: state.pantryView });
+  }
+});
+
 els.ingredientResults.addEventListener('click', (event) => {
   const addButton = event.target.closest('[data-add-ingredient]');
   if (addButton) {
     const ingredient = addButton.dataset.addIngredient;
     if (!state.selectedIngredients.has(ingredient)) {
-      if (state.selectedIngredients.size >= 4) {
-        toast('Pick up to 4 ingredients for the clearest matches.');
-        return;
-      }
       state.selectedIngredients.add(ingredient);
     }
     state.revealedPickId = null;
@@ -3207,8 +4959,11 @@ els.ingredientResults.addEventListener('click', (event) => {
   }
   const card = event.target.closest('[data-recipe-id]');
   if (!card) return;
+  event.stopPropagation();
   const recipe = state.recipes.find((item) => item.id === card.dataset.recipeId);
-  if (recipe) openRecipe(recipe);
+  if (recipe) {
+    openRecipe(recipe, { returnToPantry: state.pantryView });
+  }
 });
 
 els.ingredientSearch?.addEventListener('input', (event) => {
@@ -3217,13 +4972,43 @@ els.ingredientSearch?.addEventListener('input', (event) => {
   renderIngredients();
 });
 
-els.findDishes.addEventListener('click', renderIngredientResults);
+els.pantryDialog?.addEventListener('click', (event) => {
+  if (event.target === els.pantryDialog) handlePantryClose();
+});
+els.pantryDialog?.addEventListener('cancel', (event) => {
+  event.preventDefault();
+  handlePantryClose();
+});
 if (els.surpriseButton) {
   els.surpriseButton.addEventListener('click', (event) => {
     event.stopPropagation();
+    const cookButton = event.target.closest('#heroCookNow');
+    if (cookButton) {
+      const recipe = state.recipes.find((item) => item.id === cookButton.dataset.recipeId);
+      if (recipe) openRecipe(recipe);
+      return;
+    }
+    if (event.target.closest('#heroFindAnother')) {
+      revealTomoPick(true);
+      return;
+    }
+    if (!state.revealedPickId) surpriseMe();
+  });
+  els.surpriseButton.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    event.preventDefault();
     if (!state.revealedPickId) surpriseMe();
   });
 }
+els.heroCookNow?.addEventListener('click', (event) => {
+  event.stopPropagation();
+  if (!state.revealedPickId) {
+    surpriseMe();
+    return;
+  }
+  const recipe = state.recipes.find((item) => item.id === els.heroCookNow.dataset.recipeId);
+  if (recipe) openRecipe(recipe);
+});
 els.heroFindAnother?.addEventListener('click', (event) => {
   event.stopPropagation();
   revealTomoPick(true);
@@ -3298,17 +5083,48 @@ document.body.addEventListener('click', (event) => {
     renderGrocery();
     return;
   }
-  if (event.target.id === 'cookFromDetail' && state.activeRecipe) {
-    recordCookedRecipe(state.activeRecipe);
-    els.recipeDialog.close();
-    toast(`${state.activeRecipe.title} added to your Tomo Journal.`);
+  const detailStateButton = event.target.closest('[data-set-detail-ingredient-state]');
+  if (detailStateButton && state.activeRecipe) {
+    const ingredient = detailStateButton.dataset.setDetailIngredientState;
+    const nextState = detailStateButton.dataset.detailState;
+    selectedPantryIngredientsFor(ingredient).forEach((selected) => state.selectedIngredients.delete(selected));
+    removeIngredientFromShoppingList(ingredient);
+    if (nextState === 'pantry') {
+      state.selectedIngredients.add(ingredient);
+    } else {
+      addGroceryItems([ingredient], state.activeRecipe.title);
+    }
+    state.revealedPickId = null;
+    renderIngredients();
+    renderIngredientResults();
+    renderTomoPick();
+    renderGrocery();
+    renderRecipeDetail(state.activeRecipe);
+    toast(`${formatIngredientName(ingredient)} moved to ${nextState === 'pantry' ? 'Pantry' : 'Shopping List'}.`);
     return;
   }
-  if (event.target.id === 'addMissing' && state.activeRecipe) {
-    const additions = recipeShoppingIngredients(state.activeRecipe);
-    addGroceryItems(additions, state.activeRecipe.title);
+  const detailStateUndo = event.target.closest('[data-clear-detail-ingredient-state]');
+  if (detailStateUndo && state.activeRecipe) {
+    const ingredient = detailStateUndo.dataset.clearDetailIngredientState;
+    const currentState = detailStateUndo.dataset.detailState;
+    if (currentState === 'pantry') {
+      selectedPantryIngredientsFor(ingredient).forEach((selected) => state.selectedIngredients.delete(selected));
+    } else {
+      removeIngredientFromShoppingList(ingredient);
+    }
+    state.revealedPickId = null;
+    renderIngredients();
+    renderIngredientResults();
+    renderTomoPick();
     renderGrocery();
-    toast(additions.length ? 'Tomo added the missing ingredients.' : 'You already have the core ingredients.');
+    renderRecipeDetail(state.activeRecipe);
+    toast(`${formatIngredientName(ingredient)} selection cleared.`);
+    return;
+  }
+  if (event.target.id === 'cookFromDetail' && state.activeRecipe) {
+    recordCookedRecipe(state.activeRecipe);
+    closeRecipeDetail();
+    toast(`${state.activeRecipe.title} added to your Tomo Journal.`);
     return;
   }
   const journalAction = event.target.closest('[data-journal-action]');
@@ -3336,8 +5152,18 @@ document.body.addEventListener('click', (event) => {
   const selectSubcategory = event.target.closest('[data-select-subcategory]');
   if (selectSubcategory) {
     const [collectionKey, ...nameParts] = selectSubcategory.dataset.selectSubcategory.split('::');
-    state.activeCollectionSubcategories.set(collectionKey, nameParts.join('::'));
-    renderSpecialRows();
+    const subcategoryName = nameParts.join('::');
+    state.activeCollectionSubcategories.set(collectionKey, subcategoryName);
+    const activeDetail = state.collectionDetails.get(collectionKey);
+    if (activeDetail) activeDetail.activeSubcategory = subcategoryName;
+    document.querySelectorAll(`[data-select-subcategory^="${safeCssEscape(collectionKey)}::"]`).forEach((button) => {
+      const isActive = button.dataset.selectSubcategory === selectSubcategory.dataset.selectSubcategory;
+      button.classList.toggle('active', isActive);
+      button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+    const collection = state.collections.find((item) => item.key === collectionKey);
+    const container = document.querySelector(`[data-special-row="${safeCssEscape(collectionKey)}"]`);
+    if (collection && container) renderCollectionItems(collection, container);
     return;
   }
   const seeSubcategory = event.target.closest('[data-see-subcategory]');
@@ -3345,6 +5171,18 @@ document.body.addEventListener('click', (event) => {
     const key = seeSubcategory.dataset.seeSubcategory;
     state.expandedCollectionRows.has(key) ? state.expandedCollectionRows.delete(key) : state.expandedCollectionRows.add(key);
     renderSpecialRows();
+    return;
+  }
+  const collectionScroll = event.target.closest('[data-scroll-collections]');
+  if (collectionScroll) {
+    const row = document.querySelector('.collection-scroll');
+    if (row) {
+      const direction = Number(collectionScroll.dataset.scrollCollections || 1);
+      const firstCard = row.querySelector('.collection-segment');
+      const distance = firstCard ? firstCard.getBoundingClientRect().width + 16 : 280;
+      row.scrollBy({ left: direction * distance, behavior: 'smooth' });
+      state.collectionScrollLeft = row.scrollLeft;
+    }
     return;
   }
   const collectionFace = event.target.closest('[data-collection-key]');
@@ -3384,8 +5222,20 @@ function handleRecipeAction(action, recipe) {
   }
 }
 
-els.closeRecipe.addEventListener('click', () => els.recipeDialog.close());
+els.closeRecipe.addEventListener('click', closeRecipeDetail);
+els.recipeDialog?.addEventListener('click', (event) => {
+  if (event.target === els.recipeDialog) closeRecipeDetail();
+});
+els.recipeDialog?.addEventListener('cancel', (event) => {
+  event.preventDefault();
+  closeRecipeDetail();
+});
 els.closeJournal?.addEventListener('click', closeJournalRoute);
+els.journalGotIt?.addEventListener('click', closeJournalRoute);
+els.journalDialog?.addEventListener('click', (event) => {
+  if (event.target === els.journalDialog) closeJournalRoute();
+});
+els.journalNavButton?.addEventListener('click', openJournalRoute);
 els.groceryButton.addEventListener('click', () => els.groceryDialog.showModal());
 els.searchButton.addEventListener('click', openGlobalSearch);
 els.closeSearch?.addEventListener('click', () => els.searchDialog.close());
@@ -3393,9 +5243,10 @@ els.globalSearchInput?.addEventListener('input', renderGlobalSearch);
 els.pantryNavButton.addEventListener('click', () => {
   updatePantryTomoMessage({ context: state.selectedIngredients.size ? 'ingredient_selected' : 'pantry_open', selectedIngredients: [...state.selectedIngredients] });
   renderIngredientResults();
+  showPantryView('dashboard');
   els.pantryDialog.showModal();
 });
-els.closePantry.addEventListener('click', () => els.pantryDialog.close());
+els.closePantry.addEventListener('click', handlePantryClose);
 els.closeGrocery.addEventListener('click', () => els.groceryDialog.close());
 els.clearPurchased?.addEventListener('click', () => {
   const before = state.groceryItems.length;
@@ -3426,11 +5277,11 @@ document.querySelectorAll('[data-pantry-action]').forEach((button) => {
 });
 
 window.addEventListener('popstate', () => {
-  if (window.location.pathname === '/journal') openJournalRoute(false);
-  else els.journalDialog?.close();
+  els.journalDialog?.close();
 });
 
 loadRecipes();
-if (window.location.pathname === '/journal') {
-  setTimeout(() => openJournalRoute(false), 0);
-}
+loadLiveWeather();
+setInterval(renderAmbientCard, 60 * 1000);
+setInterval(loadLiveWeather, 15 * 60 * 1000);
+document.querySelector('.cb-dashboard-weather')?.addEventListener('click', loadLiveWeather);

@@ -301,8 +301,10 @@ function scoreRecipe(recipe, context = {}) {
 
 function recommendRecipes(recipes, context = {}) {
   const limit = Math.min(context.limit || 4, 4);
+  const selectedMood = normalized(context.selectedMood);
   const scoredRecipes = recipes
     .filter(recipeIsCore)
+    .filter((recipe) => !selectedMood || !Array.isArray(recipe.moodTags) || recipe.moodTags.includes(selectedMood))
     .filter((recipe) => normalized(context.selectedMood) !== 'protein' || hasHighProteinCore(recipe))
     .filter((recipe) => {
       const selectedIngredients = context.selectedIngredients || [];

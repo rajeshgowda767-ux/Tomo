@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tomo</title>
-    <link rel="stylesheet" href="styles.css?v=tomo-banter-1" />
+    <link rel="stylesheet" href="styles.css?v=journal-compact-copy-25" />
+    <link rel="stylesheet" href="final-overrides.css?v=journal-compact-copy-25" />
   </head>
   <body>
     <main class="app-shell">
@@ -27,28 +28,18 @@
         </div>
       </header>
 
-      <section class="tomo-hero">
-        <div class="hero-left">
-          <button id="surpriseButton" class="hero-art hero-surprise-card" type="button" aria-label="Reveal Tomo's pick">
+      <section class="cb-dashboard-hero">
+        <div class="cb-dashboard-main">
+          <div id="surpriseButton" class="cb-dashboard-mascot" role="button" tabindex="0" aria-label="Reveal Tomo's pick">
             <img src="tomo.png" alt="" />
-            <span class="pick-flip">
-              <span class="pick-face pick-front">Tap to reveal</span>
-              <span class="pick-face pick-back">Tomo’s pick</span>
-            </span>
-          </button>
-          <div class="hero-copy">
-            <p id="heroMessage">🍅 Tomo</p>
-            <div id="heroRevealDish" class="hero-reveal-dish hidden"></div>
-            <strong id="heroPickTitle">A comforting plate sounds perfect tonight.</strong>
-            <ul id="heroPickReasons" class="hero-pick-reasons hidden"></ul>
-            <div class="hero-reveal-actions">
-              <button id="heroCookNow" class="hero-cook-button hidden" type="button">Cook Now</button>
-              <button id="heroFindAnother" class="hero-secondary-button hidden" type="button">Find Another</button>
-            </div>
+            <span>Tap to reveal</span>
+          </div>
+          <div class="cb-dashboard-copy">
+            <strong id="heroPickTitle">Looks like comfort is calling today. I’ll find something warm, familiar, and easy to love.</strong>
+            <ul id="heroPickReasons" class="cb-dashboard-reasons hidden"></ul>
           </div>
         </div>
-        <aside class="hero-ambient-card" aria-label="Kitchen ambience">
-          <div class="ambient-glow" aria-hidden="true">☁️</div>
+        <aside class="cb-dashboard-weather" aria-label="Kitchen ambience">
           <time id="ambientTime" datetime="">7:42 PM</time>
           <p id="ambientWeather">24°C • Light Rain 🌧️</p>
           <span id="ambientHint">Perfect weather for comfort food 🍲</span>
@@ -56,7 +47,10 @@
       </section>
 
       <section class="mood-panel" aria-label="Choose mood">
-        <div class="mood-panel-title">How are you feeling?</div>
+        <div class="mood-panel-title">
+          <span>How are you feeling?</span>
+          <button id="clearMoodButton" class="clear-mood-button hidden" type="button">Clear mood</button>
+        </div>
         <div class="mood-row">
           <button class="mood-chip mood-comfort" data-mood="comfort">
             <span class="mood-icon">😊</span>
@@ -135,7 +129,7 @@
       <nav class="bottom-nav" aria-label="Primary">
         <button class="active">⌂<span>Home</span></button>
         <button id="pantryNavButton">▣<span>Pantry</span></button>
-        <button>♡<span>Tomo Journal</span></button>
+        <button id="journalNavButton">♡<span>Tomo Journal</span></button>
       </nav>
     </main>
 
@@ -171,7 +165,7 @@
           <img src="tomo.png" alt="" />
           <div>
             <h2>Tomo’s Shopping List</h2>
-            <p>Let’s grab a few things before we start cooking 🍅</p>
+            <p>Missing ingredients from recipes you choose will appear here.</p>
           </div>
         </div>
         <form id="groceryForm" class="grocery-form">
@@ -180,62 +174,73 @@
         </form>
         <div class="shopping-list-head">
           <strong>Things to pick up</strong>
-          <button id="clearPurchased" class="text-button" type="button">Clear purchased</button>
+          <button id="clearPurchased" class="text-button hidden" type="button">Clear purchased</button>
         </div>
         <div id="groceryList" class="grocery-list"></div>
       </article>
     </dialog>
 
     <dialog id="journalDialog">
-      <article class="detail-card journal-detail-card">
+      <article class="detail-card journal-detail-card journal-coming-soon-card">
         <button id="closeJournal" class="icon-button close-button" aria-label="Close">×</button>
-        <div class="journal-page-head">
-          <p>📖 Tomo Journal</p>
-          <h2>A record of your cooking journey.</h2>
-        </div>
-        <div id="journalDetail" class="journal-detail-list"></div>
+        <img src="tomo.png" alt="" />
+        <p class="journal-coming-badge">🍅 Coming Soon</p>
+        <h2>🍅 Your food story starts here</h2>
+        <p class="journal-coming-description">Moods, favorites and food memories.</p>
+        <button id="journalGotIt" class="journal-primary" type="button">Got It</button>
+        <div id="journalDetail" class="journal-detail-list hidden"></div>
       </article>
     </dialog>
 
     <dialog id="pantryDialog">
       <article class="detail-card pantry-card">
-        <button id="closePantry" class="icon-button close-button" aria-label="Close">×</button>
-        <h2>Pantry</h2>
-        <p>Tell Tomo what's in your kitchen.</p>
-        <p id="pantryTomoMessage" class="tomo-inline-message" aria-live="polite">🍅 What’s in your kitchen today? Pick 2–4 ingredients and I’ll connect the dots.</p>
-        <section class="pantry-options">
-          <button class="pantry-tile" data-pantry-action="voice">
-            <span>🎙</span>
-            <div><strong>Voice command</strong><small>Say what you have in the kitchen.</small></div>
-          </button>
-          <button class="pantry-tile" data-pantry-action="scanner">
-            <span>▦</span>
-            <div><strong>Scanner</strong><small>Scan items and identify ingredients.</small></div>
-          </button>
-        </section>
-        <section class="cook-section">
-          <div class="section-title compact">
-            <div>
-              <p>Tomo Pantry</p>
-              <h2>What’s in your kitchen today?</h2>
-              <small>Pick 2–4 ingredients. Tomo will connect the dots.</small>
-            </div>
-            <span id="selectedCount" class="selected-count">0 selected</span>
-            <button id="clearIngredients" class="text-button">Clear</button>
+        <div class="pantry-modal-head">
+          <div>
+            <h2 id="pantryModalTitle">Pantry</h2>
+            <p id="pantryModalSubtitle">Tell Tomo what's in your kitchen.</p>
+            <p id="pantryTomoMessage" class="tomo-inline-message" aria-live="polite">🍅 What’s in your kitchen today? Pick your ingredients and I’ll connect the dots.</p>
           </div>
-          <label class="ingredient-search">
-            <span>Search ingredients</span>
-            <input id="ingredientSearch" type="search" placeholder="Search rice, paneer, tomato..." autocomplete="off" />
-          </label>
-          <div id="selectedIngredientTray" class="selected-ingredient-tray"></div>
+          <button id="closePantry" class="icon-button close-button" aria-label="Close">×</button>
+        </div>
+        <aside id="pantrySuggestions" class="live-preview pantry-suggestions">
+          <p class="pantry-section-label">
+            <span>Dish Suggestions</span>
+            <span id="selectedCount" class="selected-count">Choose 2-4 ingredients</span>
+          </p>
+          <section id="ingredientResults" class="compact-stack"></section>
+        </aside>
+        <section class="cook-section">
+          <p class="pantry-section-label">Pantry Input</p>
+          <div class="pantry-input-stack">
+            <div class="section-title compact">
+              <div>
+                <p>Tomo Pantry</p>
+                <h2>What’s in your kitchen today?</h2>
+                <small>Pick your ingredients. Tomo will connect the dots.</small>
+              </div>
+              <button id="clearIngredients" class="text-button">Clear</button>
+            </div>
+            <div class="ingredient-search">
+              <label for="ingredientSearch">Search ingredients</label>
+              <div class="ingredient-search-bar">
+                <input id="ingredientSearch" type="search" placeholder="Search rice, paneer, tomato..." autocomplete="off" />
+                <div class="pantry-options" aria-label="Pantry actions">
+                  <button class="pantry-tile" data-pantry-action="voice" type="button" aria-label="Voice">
+                    <span>🎤</span>
+                    <strong>Voice</strong>
+                  </button>
+                  <button class="pantry-tile" data-pantry-action="scanner" type="button" aria-label="Scan">
+                    <span>📷</span>
+                    <strong>Scan</strong>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div id="selectedIngredientTray" class="selected-ingredient-tray"></div>
+          </div>
           <div class="ingredient-engine">
             <div id="ingredientChips" class="ingredient-grid"></div>
-            <aside class="live-preview">
-              <p>Kitchen matches</p>
-              <section id="ingredientResults" class="compact-stack"></section>
-            </aside>
           </div>
-          <button id="findDishes" class="primary-button hidden">Find dishes</button>
         </section>
 
 
@@ -250,9 +255,9 @@
 
     <div id="toast" class="toast hidden"></div>
     <script src="app-config.js?v=tomo-brand-1"></script>
-    <script src="local-recipes.js?v=tomo-brand-1"></script>
+    <script src="local-recipes.js?v=pantry-confidence-1"></script>
     <script src="local-collections.js?v=duplicate-cleanup-1"></script>
     <script src="local-pantry-catalog.js?v=pantry-dosa-rice-catalog-1"></script>
-    <script src="app.js?v=tomo-brand-1"></script>
+    <script src="app.js?v=journal-compact-copy-25"></script>
   </body>
 </html>

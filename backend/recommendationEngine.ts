@@ -42,6 +42,7 @@ interface ScorableRecipe {
   recipeType?: string;
   recipe_type?: string;
   tags?: string[];
+  moodTags?: string[];
   ingredients?: Array<{ name: string; isMain?: boolean }>;
   primaryIngredient1?: string;
   primaryIngredient2?: string;
@@ -398,8 +399,10 @@ export function scoreRecipe(recipe: ScorableRecipe, context: RecommendationConte
 
 export function recommendRecipes<T extends ScorableRecipe>(recipes: T[], context: RecommendationContext = {}): Array<T & RecipeRecommendation> {
   const limit = Math.min(context.limit || 4, 4);
+  const selectedMood = normalized(context.selectedMood);
   const scoredRecipes = recipes
     .filter(recipeIsCore)
+    .filter((recipe) => !selectedMood || !Array.isArray(recipe.moodTags) || recipe.moodTags.includes(selectedMood))
     .filter((recipe) => normalized(context.selectedMood) !== 'protein' || hasHighProteinCore(recipe))
     .filter((recipe) => {
       const selectedIngredients = context.selectedIngredients || [];

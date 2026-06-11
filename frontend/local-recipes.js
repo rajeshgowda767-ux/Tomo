@@ -73,7 +73,51 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "homeStyleScore": 9,
     "rainyDayScore": 3,
     "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food"
+    "secondaryMood": "Soul Food",
+    "coreIngredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "spices",
+      "ghee",
+      "green chilli",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "spices",
+      "ghee",
+      "green chilli",
+      "coriander"
+    ],
+    "baseIngredient": "wheat flour",
+    "requiredIngredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "incompatibleWith": [
+      "rice",
+      "urad dal"
+    ],
+    "dishFamily": "paratha",
+    "base_ingredient": "wheat flour",
+    "required_ingredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "incompatible_with": [
+      "rice",
+      "urad dal"
+    ],
+    "dish_family": "paratha",
+    "isRealDish": true,
+    "name": "Aloo Paratha"
   },
   {
     "id": "eac23e09-f8ae-56e9-b0cf-6451426f8a62",
@@ -170,8530 +214,53 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryMood": "High Protein",
-    "secondaryMood": "Spicy Food"
-  },
-  {
-    "id": "48e908cd-ad9d-5c8c-8496-83f522dca7d6",
-    "sourceId": "andhra-podi-idli",
-    "title": "Andhra Podi Idli",
-    "description": "Andhra Podi Idli is a home-style morning idea made with idli, podi, and ghee. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 6,
-    "cookTimeMinutes": 14,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/idli.png",
-    "tags": [
-      "breakfast",
-      "south-indian",
-      "andhra",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "emotionalState": "morning_energy",
-    "soulFoodScore": 8,
-    "rainyDayScore": 3,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "stomachFeel": "light",
-    "bestTime": "breakfast",
-    "bestDay": "weekday",
-    "tomoLine": "🍅 Spicy podi idli to wake up the day!",
-    "homeStyleScore": 9,
-    "instructions": [
-      "Prep idli, podi, and ghee so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Andhra Podi Idli with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "id": "idli-rice",
-        "name": "Idli Rice",
-        "isMain": true,
-        "matchWeight": 1,
-        "role": "required"
-      },
-      {
-        "id": "urad-dal",
-        "name": "Urad Dal",
-        "isMain": true,
-        "matchWeight": 1,
-        "role": "required"
-      },
-      {
-        "id": "podi",
-        "name": "Podi",
-        "isMain": false,
-        "matchWeight": 0.8,
-        "role": "flavor-base"
-      },
-      {
-        "id": "ghee",
-        "name": "Ghee",
-        "isMain": false,
-        "matchWeight": 0.3,
-        "role": "cooking-fat"
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Idli Rice",
-    "primary_ingredient_2": "Urad Dal",
-    "primaryIngredient1": "Idli Rice",
-    "primaryIngredient2": "Urad Dal",
-    "secondary_ingredient_1": "Podi",
-    "secondaryIngredient1": "Podi",
-    "secondary_ingredient_2": "Ghee",
-    "secondaryIngredient2": "Ghee",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food",
-    "primaryIngredients": [
-      "Idli Rice",
-      "Urad Dal"
-    ],
-    "requiredPrimaryMatches": 2,
-    "required_primary_matches": 2,
-    "secondaryIngredients": [
-      "Podi",
-      "Ghee"
-    ]
-  },
-  {
-    "id": "9c8a6733-ecd6-5340-8030-896f40b4f119",
-    "sourceId": "apple-puree-snack",
-    "title": "Apple Puree",
-    "description": "Apple Puree is a home-style dinner idea made with apple and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep apple and milk so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Apple Puree with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "apple",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "milk",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Apple",
-    "primary_ingredient_2": "Milk",
-    "primaryIngredient1": "Apple",
-    "primaryIngredient2": "Milk",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
-    "proteinScore": 3,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "cb7e1bda-4c58-563b-bcd3-3dde4ce33b3f",
-    "sourceId": "avalakki-breakfast",
-    "title": "Avalakki",
-    "description": "Avalakki is a home-style morning idea made with poha and onion. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/breakfast-default.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "soul-food"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep poha and onion so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Avalakki with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "poha",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Poha",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Poha",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Peanut",
-    "secondaryIngredient1": "Peanut",
-    "secondary_ingredient_2": "Lemon",
-    "secondaryIngredient2": "Lemon",
-    "secondary_ingredient_3": "Curry Leaves",
-    "secondaryIngredient3": "Curry Leaves",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Soul Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "a6412a17-dd83-55c9-a382-56e4fa2080b7",
-    "sourceId": "besan-chilla-breakfast",
-    "title": "Besan Chilla",
-    "description": "Besan Chilla is a simple home-style breakfast made with besan, onion, and a little curd for softness. It is quick, warm, and especially nice when you want something light but satisfying. Serve it hot with chutney or curd on the side.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/breakfast-default.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": true,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "instructions": [
-      "Prep besan and curd so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Besan Chilla with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "besan",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "curd",
-        "quantity": 0.25,
-        "unit": "cup",
-        "role": "texture",
-        "isMain": false
-      },
-      {
-        "name": "green chilli",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Besan",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Besan",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Curd",
-    "secondaryIngredient1": "Curd",
-    "secondary_ingredient_2": "Green Chilli",
-    "secondaryIngredient2": "Green Chilli",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 6,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "ce5bd18e-6ff0-5007-8a5e-0bd8ca569258",
-    "sourceId": "biryani-festival",
-    "title": "Biryani",
-    "description": "Biryani is a home-style dinner idea made with rice and chicken. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/biryani.png",
-    "tags": [
-      "festival",
-      "non-vegetarian",
-      "one-pot",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep rice and chicken so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Biryani with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Chicken",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Chicken",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Mint",
-    "secondaryIngredient2": "Mint",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 7,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "f7508d42-98e0-5d34-b6f6-eaa410e2a439",
-    "sourceId": "bisibelebath-lunch",
-    "title": "Bisibelebath",
-    "description": "Bisibelebath is a home-style midday idea made with rice and toor dal. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep rice and toor dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Bisibelebath with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "toor dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "vegetables",
-        "quantity": 0.5,
-        "unit": "g",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Toor Dal",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Toor Dal",
-    "secondary_ingredient_1": "Vegetables",
-    "secondaryIngredient1": "Vegetables",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 8,
-    "rainyDayScore": 3,
-    "primaryMood": "High Protein",
-    "secondaryMood": ""
-  },
-  {
-    "id": "7c0d09e9-0bec-536c-ae15-6c6c91b1c107",
-    "sourceId": "boiled-corn-snack",
-    "title": "Boiled Corn",
-    "description": "Boiled Corn is a home-style dinner idea made with corn and chaat masala. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "snacks",
-      "non-vegetarian",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "instructions": [
-      "Prep corn and chaat masala so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Boiled Corn with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "corn",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "chaat masala",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Corn",
-    "primary_ingredient_2": "Chaat Masala",
-    "primaryIngredient1": "Corn",
-    "primaryIngredient2": "Chaat Masala",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 6,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "9992bcd8-0abd-511b-ba21-e50fb04f5a9a",
-    "sourceId": "bonda-snack",
-    "title": "Bonda",
-    "description": "Bonda is a home-style dinner idea made with potato and besan. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "rainy-day"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": true,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 3,
-    "instructions": [
-      "Prep potato and besan so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Bonda with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "potato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "besan",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Potato",
-    "primary_ingredient_2": "Besan",
-    "primaryIngredient1": "Potato",
-    "primaryIngredient2": "Besan",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 3,
-    "homeStyleScore": 5,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": ""
-  },
-  {
-    "id": "c6804fce-a3d7-556d-ab31-43c484701460",
-    "sourceId": "bread-omelette-breakfast",
-    "title": "Bread Omelette",
-    "description": "Bread Omelette is a home-style morning idea made with egg and bread. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/bread-omelette.png",
-    "tags": [
-      "breakfast",
-      "non-vegetarian",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep egg and bread so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Bread Omelette with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "egg",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "bread",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Bread",
-    "primary_ingredient_2": "Egg",
-    "primaryIngredient1": "Bread",
-    "primaryIngredient2": "Egg",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Green Chilli",
-    "secondaryIngredient2": "Green Chilli",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 3,
-    "primaryMood": "High Protein",
-    "secondaryMood": ""
-  },
-  {
-    "id": "7c1d5f97-d5dd-5aea-818d-5b39bfb1f1c5",
-    "sourceId": "bread-pakora-snack",
-    "title": "Bread Pakora",
-    "description": "Bread Pakora is a home-style dinner idea made with bread and besan. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/snacks/pakora.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "rainy-day"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "instructions": [
-      "Prep bread and besan so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Bread Pakora with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "bread",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "besan",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Bread",
-    "primary_ingredient_2": "Besan",
-    "primaryIngredient1": "Bread",
-    "primaryIngredient2": "Besan",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 3,
-    "homeStyleScore": 5,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": ""
-  },
-  {
-    "id": "99e58cc9-52dc-5490-b0bd-cb2d27bef319",
-    "sourceId": "butter-chicken-lunch",
-    "title": "Butter Chicken",
-    "description": "Butter Chicken is a home-style midday idea made with chicken and butter. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "non-vegetarian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep chicken and butter so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Butter Chicken with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "butter",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Tomato",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Tomato",
-    "secondary_ingredient_1": "Butter",
-    "secondaryIngredient1": "Butter",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 8,
-    "rainyDayScore": 5,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "9904ca6a-c778-5c30-bb05-0f444ac5c5d7",
-    "sourceId": "chaat-snack",
-    "title": "Chaat",
-    "description": "Chaat is a home-style dinner idea made with potato and wheat. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep potato and wheat so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chaat with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "potato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "wheat",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Potato",
-    "primary_ingredient_2": "Wheat",
-    "primaryIngredient1": "Potato",
-    "primaryIngredient2": "Wheat",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "0d715835-2f42-5ac9-8b5c-0d83bfad2f2b",
-    "sourceId": "chicken-65",
-    "title": "Chicken 65",
-    "description": "Chicken 65 is a home-style snack-time idea made with chicken, red chilli, curd, and curry leaves. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 25,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/snacks/chicken-65.png",
-    "tags": [
-      "snack",
-      "south-indian",
-      "tamil-nadu",
-      "late-night-food",
-      "spicy-food",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": true,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep chicken, red chilli, curd, and curry leaves so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chicken 65 with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Red Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Curd",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Curd",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Curd",
-    "secondary_ingredient_1": "Red Chilli",
-    "secondaryIngredient1": "Red Chilli",
-    "secondary_ingredient_2": "Curry Leaves",
-    "secondaryIngredient2": "Curry Leaves",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Spicy Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "cdc3f903-37f6-57d0-83cf-902475244c0f",
-    "sourceId": "chicken-chettinad",
-    "title": "Chicken Chettinad",
-    "description": "Chicken Chettinad is a home-style midday idea made with chicken, black pepper, coconut, and onion. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 50,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "south-indian",
-      "tamil-nadu",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "spicy_craving, indulgent",
-    "soulFoodScore": 7,
-    "rainyDayScore": 5,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "stomachFeel": "heavy",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Peppery comfort sounds perfect tonight.",
-    "homeStyleScore": 8,
-    "instructions": [
-      "Prep chicken, black pepper, coconut, and onion so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chicken Chettinad with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Black Pepper",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Coconut",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Coconut",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Coconut",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Black Pepper",
-    "secondaryIngredient2": "Black Pepper",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "45290fa8-aa46-559c-9ff6-24066c1e6302",
-    "sourceId": "chicken-curry-dinner",
-    "title": "Chicken Curry",
-    "description": "Chicken Curry is a home-style dinner idea made with chicken and tomato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/chicken-curry-rice.png",
-    "tags": [
-      "dinner",
-      "non-vegetarian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep chicken and tomato so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chicken Curry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Tomato",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Tomato",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Red Chilli",
-    "secondaryIngredient2": "Red Chilli",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 5,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "bfdc43f0-6137-5901-b78f-68a18b7b38df",
-    "sourceId": "chicken-pulao-dinner",
-    "title": "Chicken Pulao",
-    "description": "Chicken Pulao is a home-style dinner idea made with rice and chicken. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/pulao.png",
-    "tags": [
-      "dinner",
-      "non-vegetarian",
-      "one-pot",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep rice and chicken so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chicken Pulao with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Rice",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Rice",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 8,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "686a5460-0fcc-58ed-a823-56faf4d918a4",
-    "sourceId": "chicken-rice-dinner",
-    "title": "Chicken Rice",
-    "description": "Chicken Rice is a home-style dinner idea made with chicken and rice. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "dinner",
-      "non-vegetarian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 6,
-    "instructions": [
-      "Prep chicken and rice so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chicken Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Rice",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Rice",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 8,
-    "rainyDayScore": 6,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "ef193ec0-58fa-5b8a-bd3e-7e44064706ca",
-    "sourceId": "chicken-roll-snack",
-    "title": "Chicken Roll",
-    "description": "Chicken Roll is a home-style dinner idea made with chicken and tomato. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "snacks",
-      "non-vegetarian",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": true,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep chicken and tomato so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chicken Roll with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Tomato",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Tomato",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "homeStyleScore": 5,
-    "rainyDayScore": 4,
-    "primaryMood": "High Protein",
-    "secondaryMood": ""
-  },
-  {
-    "id": "ac9edd23-eae8-5e48-8dfc-c5773ed3e042",
-    "sourceId": "chicken-stew-lunch",
-    "title": "Chicken Stew",
-    "description": "Chicken Stew is a home-style midday idea made with chicken and tomato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "non-vegetarian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep chicken and tomato so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chicken Stew with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Tomato",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Tomato",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 8,
-    "rainyDayScore": 8,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "b0fbc187-0b62-533b-9ba9-937fb1bf3e6c",
-    "sourceId": "chicken-sukka",
-    "title": "Chicken Sukka",
-    "description": "Chicken Sukka is a home-style midday idea made with chicken, coconut, curry leaves, and red chilli. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 40,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "south-indian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 5,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 8,
-    "instructions": [
-      "Prep chicken, coconut, curry leaves, and red chilli so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chicken Sukka with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Coconut",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Red Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Coconut",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Coconut",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Curry Leaves",
-    "secondaryIngredient2": "Curry Leaves",
-    "secondary_ingredient_3": "Green Chilli",
-    "secondaryIngredient3": "Green Chilli",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "c57d4242-2920-566e-a41e-dee284fec172",
-    "sourceId": "chilli-paneer",
-    "title": "Chilli Paneer",
-    "description": "Chilli Paneer is a home-style snack-time idea made with paneer, capsicum, soy sauce, and green chilli. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 8,
-    "cookTimeMinutes": 17,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/paneer-curry.png",
-    "tags": [
-      "snack",
-      "north-indian",
-      "late-night-food",
-      "spicy-food",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": true,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep paneer, capsicum, soy sauce, and green chilli so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chilli Paneer with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Paneer",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Capsicum",
-        "quantity": 1,
-        "unit": "g",
-        "role": "supporting",
-        "isMain": true
-      },
-      {
-        "name": "Soy Sauce",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Green Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Paneer",
-    "primary_ingredient_2": "Capsicum",
-    "primaryIngredient1": "Paneer",
-    "primaryIngredient2": "Capsicum",
-    "secondary_ingredient_1": "Green Chilli",
-    "secondaryIngredient1": "Green Chilli",
-    "secondary_ingredient_2": "Soy Sauce",
-    "secondaryIngredient2": "Soy Sauce",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Spicy Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "aeeb3e13-6481-57c2-8a90-9fcae507dee0",
-    "sourceId": "chole-chawal-lunch",
-    "title": "Chole Chawal",
-    "description": "Chole Chawal is a home-style midday idea made with chole and rice. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep chole and rice so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chole Chawal with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "chole",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chole",
-    "primary_ingredient_2": "Rice",
-    "primaryIngredient1": "Chole",
-    "primaryIngredient2": "Rice",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 7,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 6,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "71a1fdf2-24eb-572f-9f1f-649e5e205625",
-    "sourceId": "corn-soup-snack",
-    "title": "Corn Soup",
-    "description": "Corn Soup is a home-style dinner idea made with corn and vegetables. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/soup-bowls.png",
-    "tags": [
-      "snacks",
-      "non-vegetarian",
-      "rainy-day"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": true,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 3,
-    "instructions": [
-      "Prep corn and vegetables so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Corn Soup with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "corn",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "carrot",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "black pepper",
-        "quantity": 0.5,
-        "unit": "tsp",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Corn",
-    "primary_ingredient_2": "Carrot",
-    "primaryIngredient1": "Corn",
-    "primaryIngredient2": "Carrot",
-    "secondary_ingredient_1": "Black Pepper",
-    "secondaryIngredient1": "Black Pepper",
-    "secondary_ingredient_2": "Onion",
-    "secondaryIngredient2": "Onion",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 9,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": ""
-  },
-  {
-    "id": "1f0252b6-fd53-56f8-9281-bbd2cede4830",
-    "sourceId": "curd-rice-lunch",
-    "title": "Curd Rice",
-    "description": "Curd Rice is a home-style midday idea made with rice and curd. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/curd-rice-homestyle.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": true,
-    "budgetFriendly": true,
-    "summerCooling": true,
-    "lightMeal": true,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep rice and curd so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Curd Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "curd",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Curd",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Curd",
-    "secondary_ingredient_1": "Mustard Seeds",
-    "secondaryIngredient1": "Mustard Seeds",
-    "secondary_ingredient_2": "Curry Leaves",
-    "secondaryIngredient2": "Curry Leaves",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 8,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food"
-  },
-  {
-    "id": "7e1672ca-2f34-5085-8a63-dc65d434e274",
-    "sourceId": "dal-makhani",
-    "title": "Dal Makhani",
-    "description": "Dal Makhani is a home-style dinner idea made with black urad dal and rajma. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "lunch",
-      "dinner",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep black urad dal and rajma so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Dal Makhani with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "black urad dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "rajma",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Black Urad Dal",
-    "primary_ingredient_2": "Rajma",
-    "primaryIngredient1": "Black Urad Dal",
-    "primaryIngredient2": "Rajma",
-    "secondary_ingredient_1": "Butter",
-    "secondaryIngredient1": "Butter",
-    "secondary_ingredient_2": "Tomato",
-    "secondaryIngredient2": "Tomato",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 8,
-    "rainyDayScore": 6,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "",
-    "mealType": "Lunch,Dinner",
-    "meal_type": "Lunch,Dinner",
-    "timeMinutes": 30,
-    "mergedSourceIds": [
-      "dal-makhani-dinner",
-      "dal-makhani-lunch"
-    ]
-  },
-  {
-    "id": "f49323cb-5f41-572a-bb9b-981f7d3b88f4",
-    "sourceId": "dal-rice-lunch",
-    "title": "Dal Rice",
-    "description": "Dal Rice is a home-style midday idea made with rice and toor dal. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dal-rice.png",
-    "tags": [
-      "lunch",
-      "non-vegetarian",
-      "vegetarian",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep rice and toor dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Dal Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "toor dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "dal",
-        "quantity": 0.5,
-        "unit": "g",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Toor Dal",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Toor Dal",
-    "secondary_ingredient_1": "Ghee",
-    "secondaryIngredient1": "Ghee",
-    "secondary_ingredient_2": "Dal",
-    "secondaryIngredient2": "Dal",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 8,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food"
-  },
-  {
-    "id": "b09b9104-29fd-56d9-b515-00d4396492dc",
-    "sourceId": "dal-roti-lunch",
-    "title": "Dal Roti",
-    "description": "Dal Roti is a home-style midday idea made with toor dal and wheat. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep toor dal and wheat so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Dal Roti with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "toor dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "wheat",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Toor Dal",
-    "primary_ingredient_2": "Wheat",
-    "primaryIngredient1": "Toor Dal",
-    "primaryIngredient2": "Wheat",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "High Protein",
-    "secondaryMood": ""
-  },
-  {
-    "id": "dcf45c13-9902-53f8-b583-4aa0f185776d",
-    "sourceId": "dosa-breakfast",
-    "title": "Dosa",
-    "description": "Dosa is a home-style morning idea made with rice and urad dal. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dosa.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 3,
-    "instructions": [
-      "Prep rice and urad dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Dosa with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "id": "dosa-rice",
-        "name": "Dosa Rice",
-        "isMain": true,
-        "matchWeight": 1,
-        "role": "required"
-      },
-      {
-        "id": "urad-dal",
-        "name": "Urad Dal",
-        "isMain": true,
-        "matchWeight": 1,
-        "role": "required"
-      },
-      {
-        "id": "ghee",
-        "name": "Ghee",
-        "isMain": false,
-        "matchWeight": 0.3,
-        "role": "cooking-fat"
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Dosa Rice",
-    "primary_ingredient_2": "Urad Dal",
-    "primaryIngredient1": "Dosa Rice",
-    "primaryIngredient2": "Urad Dal",
-    "secondary_ingredient_1": "Ghee",
-    "secondaryIngredient1": "Ghee",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 6,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food",
-    "primaryIngredients": [
-      "Dosa Rice",
-      "Urad Dal"
-    ],
-    "requiredPrimaryMatches": 2,
-    "required_primary_matches": 2,
-    "secondaryIngredients": [
-      "Ghee"
-    ]
-  },
-  {
-    "id": "0dcb753b-69b0-544f-8ff8-cec59cc10601",
-    "sourceId": "egg-bhurji-dinner",
-    "title": "Egg Bhurji",
-    "description": "Egg Bhurji is a home-style dinner idea made with egg and onion. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "dinner",
-      "non-vegetarian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep egg and onion so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Egg Bhurji with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "egg",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Egg",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Egg",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": "Green Chilli",
-    "secondaryIngredient2": "Green Chilli",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 3,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "1b1433fd-3930-5976-b740-44d5de04a5d5",
-    "sourceId": "egg-curry",
-    "title": "Egg Curry",
-    "description": "Egg Curry is a home-style midday idea made with egg, onion, tomato, and red chilli. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 25,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "eggetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/egg-curry.png",
-    "tags": [
-      "lunch",
-      "north-indian",
-      "high-protein",
-      "spicy-food"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 9,
-    "energyScore": 6,
-    "emotionalState": "low_energy, hungry",
-    "soulFoodScore": 8,
-    "rainyDayScore": 5,
-    "proteinScore": 8,
-    "nostalgiaScore": 7,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekday",
-    "tomoLine": "🍅 Egg curry always fixes dinner stress 😄",
-    "homeStyleScore": 9,
-    "instructions": [
-      "Prep egg, onion, tomato, and red chilli so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Egg Curry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Egg",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Red Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Egg",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Egg",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": "Red Chilli",
-    "secondaryIngredient2": "Red Chilli",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Spicy Food"
-  },
-  {
-    "id": "b30d95b0-2f39-582c-a859-a33433b5bc91",
-    "sourceId": "egg-curry-dinner",
-    "title": "Egg Curry",
-    "description": "Egg Curry is a home-style dinner idea made with egg and tomato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/egg-curry.png",
-    "tags": [
-      "dinner",
-      "non-vegetarian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 3,
-    "instructions": [
-      "Prep egg and tomato so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Egg Curry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "egg",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Egg",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Egg",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": "Red Chilli",
-    "secondaryIngredient2": "Red Chilli",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 5,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "41903499-9058-5568-bc90-781e9309d01d",
-    "sourceId": "egg-curry-rice-lunch",
-    "title": "Egg Curry Rice",
-    "description": "Egg Curry Rice is a home-style midday idea made with egg and rice. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/egg-curry.png",
-    "tags": [
-      "lunch",
-      "non-vegetarian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep egg and rice so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Egg Curry Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "egg",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Egg",
-    "primary_ingredient_2": "Rice",
-    "primaryIngredient1": "Egg",
-    "primaryIngredient2": "Rice",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 5,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "f4400866-c4e8-5c2b-ae4f-d72ca3cd1de0",
-    "sourceId": "egg-fried-rice-breakfast",
-    "title": "Egg Fried Rice",
-    "description": "Egg Fried Rice is a home-style morning idea made with rice and vegetables. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/breakfast-default.png",
-    "tags": [
-      "breakfast",
-      "non-vegetarian",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep rice and vegetables so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Egg Fried Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "vegetables",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "egg",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Egg",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Egg",
-    "secondary_ingredient_1": "Vegetables",
-    "secondaryIngredient1": "Vegetables",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 3,
-    "primaryMood": "High Protein",
-    "secondaryMood": ""
-  },
-  {
-    "id": "20c6cab1-6f31-52ea-9412-eced95c59e73",
-    "sourceId": "fish-curry-dinner",
-    "title": "Fish Curry",
-    "description": "Fish Curry is a home-style dinner idea made with fish and tomato. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/fish-curry-rice.png",
-    "tags": [
-      "dinner",
-      "non-vegetarian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep fish and tomato so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Fish Curry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "fish",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Fish",
-    "primary_ingredient_2": "Tomato",
-    "primaryIngredient1": "Fish",
-    "primaryIngredient2": "Tomato",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 5,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "cb7a2e7a-d335-5ccd-86ef-fc429ce8faea",
-    "sourceId": "fish-curry-rice-lunch",
-    "title": "Fish Curry Rice",
-    "description": "Fish Curry Rice is a home-style midday idea made with fish and tomato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/fish-curry-rice.png",
-    "tags": [
-      "lunch",
-      "non-vegetarian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 6,
-    "instructions": [
-      "Prep fish and tomato so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Fish Curry Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "fish",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Fish",
-    "primary_ingredient_2": "Rice",
-    "primaryIngredient1": "Fish",
-    "primaryIngredient2": "Rice",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 5,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "691e1313-b316-5d49-8749-5ac62472f7f4",
-    "sourceId": "fish-fry-dinner",
-    "title": "Fish Fry",
-    "description": "Fish Fry is a home-style dinner idea made with fish and spices. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "dinner",
-      "non-vegetarian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep fish and spices so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Fish Fry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "fish",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "rice flour",
-        "quantity": 2,
-        "unit": "tbsp",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "red chilli",
-        "quantity": 1,
-        "unit": "tsp",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "turmeric",
-        "quantity": 0.25,
-        "unit": "tsp",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Fish",
-    "primary_ingredient_2": "Rice Flour",
-    "primaryIngredient1": "Fish",
-    "primaryIngredient2": "Rice Flour",
-    "secondary_ingredient_1": "Red Chilli",
-    "secondaryIngredient1": "Red Chilli",
-    "secondary_ingredient_2": "Turmeric",
-    "secondaryIngredient2": "Turmeric",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 5,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "7448bf61-1195-524d-9705-a4a82a0d1d1a",
-    "sourceId": "fish-pakora-snack",
-    "title": "Fish Pakora",
-    "description": "Fish Pakora is a home-style dinner idea made with fish and besan. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/snacks/pakora.png",
-    "tags": [
-      "snacks",
-      "non-vegetarian",
-      "rainy-day"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep fish and besan so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Fish Pakora with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "fish",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "besan",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Fish",
-    "primary_ingredient_2": "Besan",
-    "primaryIngredient1": "Fish",
-    "primaryIngredient2": "Besan",
-    "secondary_ingredient_1": "Wheat",
-    "secondaryIngredient1": "Wheat",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "homeStyleScore": 5,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": ""
-  },
-  {
-    "id": "5336ec52-a13b-5692-9496-8f82fc423ad3",
-    "sourceId": "gongura-mutton",
-    "title": "Gongura Mutton",
-    "description": "Gongura Mutton is a home-style midday idea made with mutton, gongura, red chilli, and onion. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 70,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "south-indian",
-      "andhra",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 3,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 6,
-    "instructions": [
-      "Prep mutton, gongura, red chilli, and onion so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Gongura Mutton with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Mutton",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Gongura",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Red Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Mutton",
-    "primary_ingredient_2": "Gongura",
-    "primaryIngredient1": "Mutton",
-    "primaryIngredient2": "Gongura",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Red Chilli",
-    "secondaryIngredient2": "Red Chilli",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "78f42ef9-9779-5453-ac98-4b7bcf83ec1c",
-    "sourceId": "gujiya-festival",
-    "title": "Gujiya",
-    "description": "Gujiya is a home-style dinner idea made with maida and khoya. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "festival",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep maida and khoya so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Gujiya with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "maida",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "khoya",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Maida",
-    "primary_ingredient_2": "Khoya",
-    "primaryIngredient1": "Maida",
-    "primaryIngredient2": "Khoya",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 7,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "82d6ae3d-e06d-5e1f-9784-83eaa9b50bb9",
-    "sourceId": "guntur-chilli-chicken",
-    "title": "Guntur Chilli Chicken",
-    "description": "Guntur Chilli Chicken is a home-style midday idea made with chicken, guntur chilli, onion, and garlic. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 35,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "south-indian",
-      "andhra",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep chicken, guntur chilli, onion, and garlic so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Guntur Chilli Chicken with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Guntur Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Garlic",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Guntur Chilli",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Guntur Chilli",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Garlic",
-    "secondaryIngredient2": "Garlic",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "e25041f6-7cb7-563e-9ea7-6e127abce415",
-    "sourceId": "idli-breakfast",
-    "title": "Idli",
-    "description": "Idli is a home-style morning idea made with idli rice and urad dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/idli.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep idli rice and urad dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Idli with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "idli rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "urad dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Idli Rice",
-    "primary_ingredient_2": "Urad Dal",
-    "primaryIngredient1": "Idli Rice",
-    "primaryIngredient2": "Urad Dal",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food"
-  },
-  {
-    "id": "bc50c525-dd05-559f-9e49-f8ff33bd0d59",
-    "sourceId": "kachori-snack",
-    "title": "Kachori",
-    "description": "Kachori is a home-style dinner idea made with maida and moong dal. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 6,
-    "instructions": [
-      "Prep maida and moong dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Kachori with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "maida",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "moong dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Maida",
-    "primary_ingredient_2": "Moong Dal",
-    "primaryIngredient1": "Maida",
-    "primaryIngredient2": "Moong Dal",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 3,
-    "homeStyleScore": 5,
-    "rainyDayScore": 4,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "1c05fccc-5dd4-5e01-946a-a52f66f2c2b7",
-    "sourceId": "kada-prasad-festival",
-    "title": "Kada Prasad",
-    "description": "Kada Prasad is a home-style dinner idea made with whole wheat and ghee. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "festival",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep whole wheat and ghee so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Kada Prasad with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "whole wheat",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "ghee",
-        "quantity": 1,
-        "unit": "tsp",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Whole Wheat",
-    "primary_ingredient_2": "Ghee",
-    "primaryIngredient1": "Whole Wheat",
-    "primaryIngredient2": "Ghee",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 7,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "b29ded95-c980-532b-81e6-03afcd41d895",
-    "sourceId": "kadhi-chawal-lunch",
-    "title": "Kadhi Chawal",
-    "description": "Kadhi Chawal is a home-style midday idea made with besan and curd. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": true,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "instructions": [
-      "Prep besan and curd so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Kadhi Chawal with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "besan",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "curd",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Besan",
-    "primary_ingredient_2": "Curd",
-    "primaryIngredient1": "Besan",
-    "primaryIngredient2": "Curd",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 8,
-    "rainyDayScore": 6,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "33124995-50ed-52c1-9d92-2213a8b1652d",
-    "sourceId": "keema-fry",
-    "title": "Keema Fry",
-    "description": "Keema Fry is a home-style midday idea made with keema, onion, green chilli, and garam masala. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 25,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "north-indian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 3,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 6,
-    "instructions": [
-      "Prep keema, onion, green chilli, and garam masala so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Keema Fry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Keema",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Green Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Garam Masala",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Keema",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Keema",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Green Chilli",
-    "secondaryIngredient1": "Green Chilli",
-    "secondary_ingredient_2": "Garam Masala",
-    "secondaryIngredient2": "Garam Masala",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "3a03ee13-9f20-56cb-9457-c1f3a0e2763d",
-    "sourceId": "kerala-fish-curry",
-    "title": "Kerala Fish Curry",
-    "description": "Kerala Fish Curry is a home-style midday idea made with fish, coconut milk, kokum, and red chilli. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 30,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/fish-curry-rice.png",
-    "tags": [
-      "lunch",
-      "south-indian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 5,
-    "proteinScore": 8,
-    "nostalgiaScore": 7,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 9,
-    "instructions": [
-      "Prep fish, coconut milk, kokum, and red chilli so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Kerala Fish Curry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Fish",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Coconut Milk",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Kokum",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Red Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Fish",
-    "primary_ingredient_2": "Coconut Milk",
-    "primaryIngredient1": "Fish",
-    "primaryIngredient2": "Coconut Milk",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": "Red Chilli",
-    "secondaryIngredient2": "Red Chilli",
-    "secondary_ingredient_3": "Kokum",
-    "secondaryIngredient3": "Kokum",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "8ad2d49c-7a04-5ee5-8148-62dcfe85ab0e",
-    "sourceId": "kheema-pav",
-    "title": "Kheema Pav",
-    "description": "Kheema Pav is a home-style snack-time idea made with keema, pav, onion, and green chilli. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 30,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/snacks/snacks-default.png",
-    "tags": [
-      "snack",
-      "maharashtrian",
-      "late-night-food",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep keema, pav, onion, and green chilli so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Kheema Pav with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Keema",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Pav",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Green Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Keema",
-    "primary_ingredient_2": "Pav",
-    "primaryIngredient1": "Keema",
-    "primaryIngredient2": "Pav",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Green Chilli",
-    "secondaryIngredient2": "Green Chilli",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "059e3c93-804f-5c2c-8fc1-a283c6ea95b1",
-    "sourceId": "khichdi",
-    "title": "Khichdi",
-    "description": "Khichdi is a home-style dinner idea made with rice and moong dal. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/rice-moong-khichdi-homestyle.png",
-    "tags": [
-      "lunch",
-      "dinner",
-      "vegetarian",
-      "one-pot",
-      "comfort",
-      "rainy-day"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": true,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep rice and moong dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Khichdi with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "moong dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Moong Dal",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Moong Dal",
-    "secondary_ingredient_1": "Ghee",
-    "secondaryIngredient1": "Ghee",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 9,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Rainy Day",
-    "mealType": "Lunch,Dinner",
-    "meal_type": "Lunch,Dinner",
-    "timeMinutes": 30,
-    "mergedSourceIds": [
-      "khichdi-dinner",
-      "khichdi-lunch"
-    ]
-  },
-  {
-    "id": "1be069ab-c75e-5324-a07b-2b452d09f144",
-    "sourceId": "kolhapuri-chicken",
-    "title": "Kolhapuri Chicken",
-    "description": "Kolhapuri Chicken is a home-style midday idea made with chicken, kolhapuri masala, onion, and dry coconut. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 50,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "maharashtrian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep chicken, kolhapuri masala, onion, and dry coconut so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Kolhapuri Chicken with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Kolhapuri Masala",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Dry Coconut",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Dry Coconut",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Dry Coconut",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Kolhapuri Masala",
-    "secondaryIngredient2": "Kolhapuri Masala",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "9bbe29b8-fca3-530d-bc82-5f7680b4cb74",
-    "sourceId": "kolhapuri-misal-pav",
-    "title": "Kolhapuri Misal Pav",
-    "description": "Kolhapuri Misal Pav is a home-style snack-time idea made with matki, misal masala, onion, and pav. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 35,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/snacks/snacks-default.png",
-    "tags": [
-      "snack",
-      "maharashtrian",
-      "late-night-food",
-      "spicy-food",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 6,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep matki, misal masala, onion, and pav so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Kolhapuri Misal Pav with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Matki",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Misal Masala",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "supporting",
-        "isMain": true
-      },
-      {
-        "name": "Pav",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Matki",
-    "primary_ingredient_2": "Pav",
-    "primaryIngredient1": "Matki",
-    "primaryIngredient2": "Pav",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Misal Masala",
-    "secondaryIngredient2": "Misal Masala",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Spicy Food",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "ea5ea5ab-b18e-544c-bb1f-28b61a7ca6c0",
-    "sourceId": "laal-maas",
-    "title": "Laal Maas",
-    "description": "Laal Maas is a home-style midday idea made with mutton, mathania chilli, curd, and garlic. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 70,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "north-indian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": true,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep mutton, mathania chilli, curd, and garlic so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Laal Maas with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Mutton",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Mathania Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Curd",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Garlic",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Mutton",
-    "primary_ingredient_2": "Curd",
-    "primaryIngredient1": "Mutton",
-    "primaryIngredient2": "Curd",
-    "secondary_ingredient_1": "Mathania Chilli",
-    "secondaryIngredient1": "Mathania Chilli",
-    "secondary_ingredient_2": "Garlic",
-    "secondaryIngredient2": "Garlic",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "2521b7a1-49f9-539a-bd7f-f4fa72117f20",
-    "sourceId": "ladoo-festival",
-    "title": "Ladoo",
-    "description": "Ladoo is a home-style dinner idea made with besan and ghee. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/desserts/laddoo.png",
-    "tags": [
-      "festival",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep besan and ghee so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Ladoo with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "besan",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "ghee",
-        "quantity": 1,
-        "unit": "tsp",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Besan",
-    "primary_ingredient_2": "Ghee",
-    "primaryIngredient1": "Besan",
-    "primaryIngredient2": "Ghee",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 7,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "52da8b63-1678-5f99-be66-7f288f1fdf41",
-    "sourceId": "lemon-rice-lunch",
-    "title": "Lemon Rice",
-    "description": "Lemon Rice is a home-style midday idea made with rice and lemon. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lemon-rice.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "soul-food",
-      "quick"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep rice and lemon so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Lemon Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "lemon",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "peanut",
-        "quantity": 0.5,
-        "unit": "g",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Lemon",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Lemon",
-    "secondary_ingredient_1": "Mustard Seeds",
-    "secondaryIngredient1": "Mustard Seeds",
-    "secondary_ingredient_2": "Peanut",
-    "secondaryIngredient2": "Peanut",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 3,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "dcb4aa84-6b23-523e-abe1-f88c5a2bff71",
-    "sourceId": "madras-curry",
-    "title": "Madras Curry",
-    "description": "Madras Curry is a home-style midday idea made with chicken, madras curry powder, tomato, and coconut milk. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 40,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "south-indian",
-      "tamil-nadu",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep chicken, madras curry powder, tomato, and coconut milk so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Madras Curry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Madras Curry Powder",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Coconut Milk",
-        "quantity": 1,
-        "unit": "g",
-        "role": "supporting",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Coconut Milk",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Coconut Milk",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": "Madras Curry Powder",
-    "secondaryIngredient2": "Madras Curry Powder",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "4ef13d94-fca7-5a7d-b50d-c66c14e840b6",
-    "sourceId": "masala-chai-snack",
-    "title": "Masala Chai",
-    "description": "Masala Chai is a warm rainy-day sip made with tea, milk, and ginger. It belongs with slow evenings, light snacks, and a little comfort in the cup. Simmer it gently so the spice feels cozy, not harsh.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 10,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/masala-chai.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "rainy-day"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": true,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 3,
-    "instructions": [
-      "Bring water, tea, and crushed ginger to a gentle boil until the colour deepens.",
-      "Add milk and simmer briefly so the flavour turns warm and balanced.",
-      "Sweeten if needed, strain, and serve hot while the chai still feels fresh."
-    ],
-    "ingredients": [
-      {
-        "name": "tea",
-        "quantity": 2,
-        "unit": "tsp",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "milk",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "ginger",
-        "quantity": 1,
-        "unit": "inch",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Tea",
-    "primary_ingredient_2": "Milk",
-    "primaryIngredient1": "Tea",
-    "primaryIngredient2": "Milk",
-    "secondary_ingredient_1": "Ginger",
-    "secondaryIngredient1": "Ginger",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "requiredPrimaryMatches": 2,
-    "required_primary_matches": 2,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": "",
-    "timeMinutes": 15
-  },
-  {
-    "id": "bd46a130-d167-5b72-83e1-e12502fdb4d4",
-    "sourceId": "mashed-banana-snack",
-    "title": "Mashed Banana",
-    "description": "Mashed Banana is a home-style dinner idea made with banana and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep banana and milk so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Mashed Banana with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "banana",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "milk",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Banana",
-    "primary_ingredient_2": "Milk",
-    "primaryIngredient1": "Banana",
-    "primaryIngredient2": "Milk",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
-    "proteinScore": 3,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "4b529cc8-757e-5ef6-b3fc-839149b57ecf",
-    "sourceId": "mathri-snack",
-    "title": "Mathri",
-    "description": "Mathri is a home-style dinner idea made with wheat and methi. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep wheat and methi so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Mathri with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "wheat",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "methi",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Wheat",
-    "primary_ingredient_2": "Methi",
-    "primaryIngredient1": "Wheat",
-    "primaryIngredient2": "Methi",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "0166c0c5-a7fd-57a6-8eba-fb7e19aae86f",
-    "sourceId": "methi-paratha-breakfast",
-    "title": "Methi Paratha",
-    "description": "Methi Paratha is a home-style morning idea made with wheat and methi. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/paratha.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep wheat and methi so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Methi Paratha with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "wheat",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "methi",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Wheat",
-    "primary_ingredient_2": "Methi",
-    "primaryIngredient1": "Wheat",
-    "primaryIngredient2": "Methi",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "0c52bf5a-8421-596d-98db-64e24c330eb4",
-    "sourceId": "mirchi-bajji",
-    "title": "Mirchi Bajji",
-    "description": "Mirchi Bajji is a home-style snack-time idea made with green chilli, besan, and ajwain. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 8,
-    "cookTimeMinutes": 17,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/snacks/mirchi-bajji.png",
-    "tags": [
-      "snack",
-      "south-indian",
-      "vegetarian",
-      "rainy-day",
-      "late-night-food"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": true,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 9,
-    "proteinScore": 6,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep green chilli, besan, and ajwain so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Mirchi Bajji with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Green Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Besan",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Ajwain",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Oil",
-        "quantity": 1,
-        "unit": "g",
-        "role": "cooking-fat",
-        "isMain": false
-      },
-      {
-        "name": "Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Green Chilli",
-    "primary_ingredient_2": "Besan",
-    "primaryIngredient1": "Green Chilli",
-    "primaryIngredient2": "Besan",
-    "secondary_ingredient_1": "Ajwain",
-    "secondaryIngredient1": "Ajwain",
-    "secondary_ingredient_2": "Oil",
-    "secondaryIngredient2": "Oil",
-    "secondary_ingredient_3": "Chilli",
-    "secondaryIngredient3": "Chilli",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": "",
-    "mealType": "Snacks",
-    "meal_type": "Snacks",
-    "timeMinutes": 25,
-    "primaryIngredients": [
-      "Green Chilli",
-      "Besan"
-    ],
-    "mergedSourceIds": [
-      "mirchi-bajji",
-      "mirchi-bajji-snack"
-    ]
-  },
-  {
-    "id": "19b617b4-fc04-56db-9b49-98a14128cb4b",
-    "sourceId": "mirchi-ka-salan",
-    "title": "Mirchi Ka Salan",
-    "description": "Mirchi Ka Salan is a home-style midday idea made with green chilli, peanut, sesame, and tamarind. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 35,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "hyderabadi",
-      "spicy-food",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 3,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep green chilli, peanut, sesame, and tamarind so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Mirchi Ka Salan with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Green Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Peanut",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Sesame",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Tamarind",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Green Chilli",
-    "primary_ingredient_2": "Peanut",
-    "primaryIngredient1": "Green Chilli",
-    "primaryIngredient2": "Peanut",
-    "secondary_ingredient_1": "Sesame",
-    "secondaryIngredient1": "Sesame",
-    "secondary_ingredient_2": "Tamarind",
-    "secondaryIngredient2": "Tamarind",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Spicy Food",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "7157654a-9e2f-5004-87aa-7f0d0f8a2ad3",
-    "sourceId": "modak-festival",
-    "title": "Modak",
-    "description": "Modak is a home-style dinner idea made with rice flour and coconut. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "festival",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep rice flour and coconut so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Modak with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice flour",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "coconut",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "ghee",
-        "quantity": 0.5,
-        "unit": "tsp",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice Flour",
-    "primary_ingredient_2": "Coconut",
-    "primaryIngredient1": "Rice Flour",
-    "primaryIngredient2": "Coconut",
-    "secondary_ingredient_1": "Ghee",
-    "secondaryIngredient1": "Ghee",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 7,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "bd5c342a-6ad3-51c3-a11e-26954541829f",
-    "sourceId": "momos-breakfast",
-    "title": "Momos",
-    "description": "Momos is a home-style morning idea made with wheat and vegetables. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/breakfast-default.png",
-    "tags": [
-      "breakfast",
-      "non-vegetarian",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "instructions": [
-      "Prep wheat and vegetables so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Momos with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "wheat",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "carrot",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "cabbage",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "supporting",
-        "isMain": false
-      },
-      {
-        "name": "onion",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Wheat",
-    "primary_ingredient_2": "Carrot",
-    "primaryIngredient1": "Wheat",
-    "primaryIngredient2": "Carrot",
-    "secondary_ingredient_1": "Cabbage",
-    "secondaryIngredient1": "Cabbage",
-    "secondary_ingredient_2": "Onion",
-    "secondaryIngredient2": "Onion",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 3,
-    "homeStyleScore": 5,
-    "rainyDayScore": 4,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "c101d168-caa7-5a38-988b-3643bac39e49",
-    "sourceId": "mushroom-soup-dinner",
-    "title": "Mushroom Soup",
-    "description": "Mushroom Soup is a home-style dinner idea made with mushroom and onion. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/soup-bowls.png",
-    "tags": [
-      "dinner",
-      "non-vegetarian",
-      "rainy-day"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": true,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep mushroom and onion so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Mushroom Soup with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "mushroom",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "black pepper",
-        "quantity": 0.5,
-        "unit": "tsp",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Mushroom",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Mushroom",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Black Pepper",
-    "secondaryIngredient1": "Black Pepper",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 9,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": ""
-  },
-  {
-    "id": "c1f3c945-38fd-5b3f-beef-291ca5a9a91e",
-    "sourceId": "nattu-kozhi-curry",
-    "title": "Nattu Kozhi Curry",
-    "description": "Nattu Kozhi Curry is a home-style midday idea made with country chicken, black pepper, shallots, and curry leaves. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 60,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "south-indian",
-      "tamil-nadu",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 3,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 8,
-    "instructions": [
-      "Prep country chicken, black pepper, shallots, and curry leaves so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Nattu Kozhi Curry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Country Chicken",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Black Pepper",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Shallots",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Country Chicken",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Country Chicken",
-    "secondary_ingredient_1": "Shallots",
-    "secondaryIngredient1": "Shallots",
-    "secondary_ingredient_2": "Black Pepper",
-    "secondaryIngredient2": "Black Pepper",
-    "secondary_ingredient_3": "Curry Leaves",
-    "secondaryIngredient3": "Curry Leaves",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "0bb6464d-9e2a-5f40-92c4-3c10dd5d1af3",
-    "sourceId": "oats-porridge-dinner",
-    "title": "Oats Porridge",
-    "description": "Oats Porridge is a home-style dinner idea made with oats and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/oats-porridge-homestyle.png",
-    "tags": [
-      "dinner",
-      "vegetarian",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": true,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep oats and milk so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Oats Porridge with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "oats",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "milk",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Oats",
-    "primary_ingredient_2": "Milk",
-    "primaryIngredient1": "Oats",
-    "primaryIngredient2": "Milk",
-    "secondary_ingredient_1": "Banana",
-    "secondaryIngredient1": "Banana",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 8,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food"
-  },
-  {
-    "id": "f69050ba-0a8a-5c1c-b796-28d28b5ef434",
-    "sourceId": "pakora-snack",
-    "title": "Pakora",
-    "description": "Pakora is a home-style dinner idea made with besan and potato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/snacks/pakora.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "rainy-day"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep besan and potato so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Pakora with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "besan",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "potato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Besan",
-    "primary_ingredient_2": "Potato",
-    "primaryIngredient1": "Besan",
-    "primaryIngredient2": "Potato",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
-    "proteinScore": 6,
-    "nostalgiaScore": 3,
-    "homeStyleScore": 5,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": ""
-  },
-  {
-    "id": "3d2cf73e-481d-5561-9873-4420c5c4c895",
-    "sourceId": "palak-paneer-lunch",
-    "title": "Palak Paneer",
-    "description": "Palak Paneer is a home-style midday idea made with palak and paneer. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/paneer-curry.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep palak and paneer so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Palak Paneer with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "palak",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "paneer",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Palak",
-    "primary_ingredient_2": "Paneer",
-    "primaryIngredient1": "Palak",
-    "primaryIngredient2": "Paneer",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "7ef194cc-8faa-52e2-9b27-19ea7f708a25",
-    "sourceId": "paneer-bhurji-dinner",
-    "title": "Paneer Bhurji",
-    "description": "Paneer Bhurji is a quick home-style dish made with crumbled paneer, onion, tomato, and gentle spices. It works well when you want something filling without a heavy curry. Serve it with roti, toast, or a simple rice bowl.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/paneer-curry.png",
-    "tags": [
-      "dinner",
-      "vegetarian",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep egg and onion so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Paneer Bhurji with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "paneer",
-        "quantity": 200,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "green chilli",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Paneer",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Paneer",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": "Green Chilli",
-    "secondaryIngredient2": "Green Chilli",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 3,
-    "primaryMood": "High Protein",
-    "secondaryMood": ""
-  },
-  {
-    "id": "33f0c885-d196-52a0-a0fc-83b135bab1f0",
-    "sourceId": "paneer-pakora-snack",
-    "title": "Paneer Pakora",
-    "description": "Paneer Pakora is a home-style dinner idea made with paneer and besan. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/snacks/pakora.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "rainy-day"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": true,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 3,
-    "instructions": [
-      "Prep paneer and besan so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Paneer Pakora with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "paneer",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "besan",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Paneer",
-    "primary_ingredient_2": "Besan",
-    "primaryIngredient1": "Paneer",
-    "primaryIngredient2": "Besan",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "homeStyleScore": 5,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": ""
-  },
-  {
-    "id": "5f7465e8-6818-5d67-b192-4ae22346f1e7",
-    "sourceId": "paneer-paratha-breakfast",
-    "title": "Paneer Paratha",
-    "description": "Paneer Paratha is a home-style morning idea made with wheat and potato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/paratha.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 6,
-    "instructions": [
-      "Prep wheat and potato so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Paneer Paratha with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "wheat",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "potato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "paneer",
-        "quantity": 0.5,
-        "unit": "g",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Wheat",
-    "primary_ingredient_2": "Paneer",
-    "primaryIngredient1": "Wheat",
-    "primaryIngredient2": "Paneer",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Potato",
-    "secondaryIngredient2": "Potato",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 9,
-    "rainyDayScore": 6,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "283fb5a2-8774-5aca-b3f2-30d64579bc2f",
-    "sourceId": "paneer-tikka-masala",
-    "title": "Paneer Tikka Masala",
-    "description": "Paneer Tikka Masala is a home-style midday idea made with paneer, capsicum, tomato, and garam masala. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 40,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/paneer-curry.png",
-    "tags": [
-      "lunch",
-      "north-indian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep paneer, capsicum, tomato, and garam masala so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Paneer Tikka Masala with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Paneer",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Capsicum",
-        "quantity": 1,
-        "unit": "g",
-        "role": "supporting",
-        "isMain": true
-      },
-      {
-        "name": "Tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Garam Masala",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Paneer",
-    "primary_ingredient_2": "Tomato",
-    "primaryIngredient1": "Paneer",
-    "primaryIngredient2": "Tomato",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Garam Masala",
-    "secondaryIngredient2": "Garam Masala",
-    "secondary_ingredient_3": "Capsicum",
-    "secondaryIngredient3": "Capsicum",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "bf541c47-19b4-5df7-a4cd-a69138c42d49",
-    "sourceId": "paneer-tikka-snack",
-    "title": "Paneer Tikka",
-    "description": "Paneer Tikka is a home-style dinner idea made with paneer and curd. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/paneer-curry.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": true,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep paneer and curd so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Paneer Tikka with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "paneer",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "curd",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Paneer",
-    "primary_ingredient_2": "Curd",
-    "primaryIngredient1": "Paneer",
-    "primaryIngredient2": "Curd",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "homeStyleScore": 5,
-    "rainyDayScore": 4,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "cad7fd64-a18a-547e-ba7b-c19e96e0aaa0",
-    "sourceId": "pepper-rasam",
-    "title": "Pepper Rasam",
-    "description": "Pepper Rasam is a home-style midday idea made with black pepper, tamarind, tomato, and cumin. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 8,
-    "cookTimeMinutes": 17,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "south-indian",
-      "tamil-nadu",
-      "rainy-day",
-      "spicy-food"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": true,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 10,
-    "energyScore": 3,
-    "emotionalState": "sick_day, peaceful",
-    "soulFoodScore": 10,
-    "rainyDayScore": 9,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "stomachFeel": "light",
-    "bestTime": "dinner",
-    "bestDay": "rainy_day",
-    "tomoLine": "🍅 Pepper rasam feels like a warm reset.",
-    "homeStyleScore": 6,
-    "instructions": [
-      "Prep black pepper, tamarind, tomato, and cumin so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Pepper Rasam with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Black Pepper",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Tamarind",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "supporting",
-        "isMain": true
-      },
-      {
-        "name": "Cumin",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Black Pepper",
-    "primary_ingredient_2": "Tamarind",
-    "primaryIngredient1": "Black Pepper",
-    "primaryIngredient2": "Tamarind",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": "Cumin",
-    "secondaryIngredient2": "Cumin",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": "Spicy Food"
-  },
-  {
-    "id": "a10586fc-5b70-5fe7-b1d8-f475a36186fb",
-    "sourceId": "pitha-festival",
-    "title": "Pitha",
-    "description": "Pitha is a home-style dinner idea made with rice flour and maida. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "festival",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep rice flour and maida so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Pitha with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice flour",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "maida",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "milk",
-        "quantity": 0.5,
-        "unit": "cup",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice Flour",
-    "primary_ingredient_2": "Maida",
-    "primaryIngredient1": "Rice Flour",
-    "primaryIngredient2": "Maida",
-    "secondary_ingredient_1": "Milk",
-    "secondaryIngredient1": "Milk",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 7,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "dda25733-7b18-5e90-8f11-1f5fcb415e12",
-    "sourceId": "plum-cake-festival",
-    "title": "Plum Cake",
-    "description": "Plum Cake is a home-style dinner idea made with maida and dry fruits. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "festival",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": true,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep maida and dry fruits so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Plum Cake with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "maida",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "dry fruits",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Maida",
-    "primary_ingredient_2": "Dry Fruits",
-    "primaryIngredient1": "Maida",
-    "primaryIngredient2": "Dry Fruits",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 7,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "bc627d5d-b17d-5625-bb55-77ee49ba8b6c",
-    "sourceId": "poha-breakfast",
-    "title": "Poha",
-    "description": "Poha is a home-style morning idea made with poha and peanut. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/poha.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "soul-food"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep poha and peanut so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Poha with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "poha",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "peanut",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Poha",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Poha",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Peanut",
-    "secondaryIngredient1": "Peanut",
-    "secondary_ingredient_2": "Curry Leaves",
-    "secondaryIngredient2": "Curry Leaves",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Soul Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "09545ae4-464d-59fb-ba43-ce8f08242e9e",
-    "sourceId": "pongal-breakfast",
-    "title": "Pongal",
-    "description": "Pongal is a home-style morning idea made with rice and moong dal. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/pongal.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "one-pot",
-      "comfort",
-      "rainy-day"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep rice and moong dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Pongal with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "moong dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Moong Dal",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Moong Dal",
-    "secondary_ingredient_1": "Ghee",
-    "secondaryIngredient1": "Ghee",
-    "secondary_ingredient_2": "Black Pepper",
-    "secondaryIngredient2": "Black Pepper",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 9,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Rainy Day"
-  },
-  {
-    "id": "41f02fad-1353-5963-9a98-d90ad65c9225",
-    "sourceId": "pork-curry-dinner",
-    "title": "Pork Curry",
-    "description": "Pork Curry is a home-style dinner idea made with pork and onion. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "dinner",
-      "non-vegetarian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 6,
-    "instructions": [
-      "Prep pork and onion so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Pork Curry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "pork",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Pork",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Pork",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Red Chilli",
-    "secondaryIngredient1": "Red Chilli",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 8,
-    "rainyDayScore": 5,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "57797f61-0e93-5d43-ba49-b4c9150eda62",
-    "sourceId": "prawn-ghee-roast",
-    "title": "Prawn Ghee Roast",
-    "description": "Prawn Ghee Roast is a home-style midday idea made with prawn, ghee, byadgi chilli, and tamarind. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 30,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "south-indian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep prawn, ghee, byadgi chilli, and tamarind so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Prawn Ghee Roast with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Prawn",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Ghee",
-        "quantity": 1,
-        "unit": "tsp",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Byadgi Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Tamarind",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Prawn",
-    "primary_ingredient_2": "Ghee",
-    "primaryIngredient1": "Prawn",
-    "primaryIngredient2": "Ghee",
-    "secondary_ingredient_1": "Red Chilli",
-    "secondaryIngredient1": "Red Chilli",
-    "secondary_ingredient_2": "Byadgi Chilli",
-    "secondaryIngredient2": "Byadgi Chilli",
-    "secondary_ingredient_3": "Tamarind",
-    "secondaryIngredient3": "Tamarind",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "974c262e-52b1-5d70-a869-62f93ac4e320",
-    "sourceId": "ragi-porridge-breakfast",
-    "title": "Ragi Porridge",
-    "description": "Ragi Porridge is a home-style morning idea made with ragi and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/ragi-porridge-homestyle.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": true,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep ragi and milk so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Ragi Porridge with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "ragi",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "milk",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Ragi",
-    "primary_ingredient_2": "Milk",
-    "primaryIngredient1": "Ragi",
-    "primaryIngredient2": "Milk",
-    "secondary_ingredient_1": "Jaggery",
-    "secondaryIngredient1": "Jaggery",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 8,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food"
-  },
-  {
-    "id": "efb9c9bb-b83a-5251-ba2e-3918409559cf",
-    "sourceId": "rajma-chawal-lunch",
-    "title": "Rajma Chawal",
-    "description": "Rajma Chawal is a home-style midday idea made with rajma and rice. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/rajma-chawal.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "non-vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep rajma and rice so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Rajma Chawal with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rajma",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "tomato",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rajma",
-    "primary_ingredient_2": "Rice",
-    "primaryIngredient1": "Rajma",
-    "primaryIngredient2": "Rice",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Tomato",
-    "secondaryIngredient2": "Tomato",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 7,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "96675ee8-fc7e-59f2-9a93-aca530803829",
-    "sourceId": "rasam-rice-lunch",
-    "title": "Rasam Rice",
-    "description": "Rasam Rice is a home-style midday idea made with rice and tomato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/rasam-rice.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": true,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep rice and tomato so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Rasam Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "tamarind",
-        "quantity": 0.5,
-        "unit": "g",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Tamarind",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Tamarind",
-    "secondary_ingredient_1": "Tomato",
-    "secondaryIngredient1": "Tomato",
-    "secondary_ingredient_2": "Black Pepper",
-    "secondaryIngredient2": "Black Pepper",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 9,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food"
-  },
-  {
-    "id": "1265459d-2eb0-5ef5-9a96-8b339a118ed1",
-    "sourceId": "rice-cakes-snack",
-    "title": "Rice Cakes",
-    "description": "Rice Cakes is a home-style dinner idea made with rice and sesame oil. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "snacks",
-      "non-vegetarian",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep rice and sesame oil so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Rice Cakes with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "sesame oil",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "sesame oil",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "sesame oil",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
-    "proteinScore": 2,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 6,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "e8936611-d4a4-509c-808f-2dea85fb4619",
-    "sourceId": "rice-porridge-breakfast",
-    "title": "Rice Porridge",
-    "description": "Rice Porridge is a home-style morning idea made with rice and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/breakfast-default.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": true,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep rice and milk so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Rice Porridge with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "milk",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Milk",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Milk",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 8,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food"
-  },
-  {
-    "id": "e2ffa180-4fa7-5da9-b1e0-2d0fc89240a2",
-    "sourceId": "sabudana-khichdi-festival",
-    "title": "Sabudana Khichdi",
-    "description": "Sabudana Khichdi is a home-style dinner idea made with rice and moong dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/khichdi.png",
-    "tags": [
-      "festival",
-      "vegetarian",
-      "one-pot",
-      "rainy-day",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": true,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep rice and moong dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Sabudana Khichdi with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "moong dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "sabudana",
-        "quantity": 0.5,
-        "unit": "g",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Sabudana",
-    "primary_ingredient_2": "Peanut",
-    "primaryIngredient1": "Sabudana",
-    "primaryIngredient2": "Peanut",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "rice",
-    "secondaryIngredient2": "rice",
-    "secondary_ingredient_3": "moong dal",
-    "secondaryIngredient3": "moong dal",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "5b502a16-ead4-5ace-a8d2-953b8654d77e",
-    "sourceId": "sambar-rice-lunch",
-    "title": "Sambar Rice",
-    "description": "Sambar Rice is a home-style midday idea made with rice and toor dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/sambar-rice.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "comfort",
-      "rainy-day"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep rice and toor dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Sambar Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "toor dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "drumstick",
-        "quantity": 0.5,
-        "unit": "g",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Toor Dal",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Toor Dal",
-    "secondary_ingredient_1": "Vegetables",
-    "secondaryIngredient1": "Vegetables",
-    "secondary_ingredient_2": "Drumstick",
-    "secondaryIngredient2": "Drumstick",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 6,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 8,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Rainy Day"
-  },
-  {
-    "id": "9bbe62ed-ca4c-54c8-a30b-901c1af0479a",
-    "sourceId": "samosa-snack",
-    "title": "Samosa",
-    "description": "Samosa is a home-style dinner idea made with potato and wheat. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/snacks/samosa.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep potato and wheat so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Samosa with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "potato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "wheat",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Potato",
-    "primary_ingredient_2": "Wheat",
-    "primaryIngredient1": "Potato",
-    "primaryIngredient2": "Wheat",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 3,
-    "homeStyleScore": 5,
-    "rainyDayScore": 4,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "5d2a1179-d7b8-5cff-9399-a25ca21cafe6",
-    "sourceId": "schezwan-fried-rice",
-    "title": "Schezwan Fried Rice",
-    "description": "Schezwan Fried Rice is a home-style midday idea made with rice, schezwan sauce, spring onion, and capsicum. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 8,
-    "cookTimeMinutes": 17,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "north-indian",
-      "spicy-food",
-      "comfort"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 2,
-    "nostalgiaScore": 3,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
-    "instructions": [
-      "Prep rice, schezwan sauce, spring onion, and capsicum so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Schezwan Fried Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Schezwan Sauce",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Spring Onion",
-        "quantity": 1,
-        "unit": "g",
-        "role": "supporting",
-        "isMain": true
-      },
-      {
-        "name": "Capsicum",
-        "quantity": 1,
-        "unit": "g",
-        "role": "supporting",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Schezwan Sauce",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Schezwan Sauce",
-    "secondary_ingredient_1": "Vegetables",
-    "secondaryIngredient1": "Vegetables",
-    "secondary_ingredient_2": "Spring Onion",
-    "secondaryIngredient2": "Spring Onion",
-    "secondary_ingredient_3": "Capsicum",
-    "secondaryIngredient3": "Capsicum",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Spicy Food",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "08f2865a-8ff3-50b2-8f0e-086b3f4b3a36",
-    "sourceId": "smoked-pork-rice-lunch",
-    "title": "Smoked Pork Rice",
-    "description": "Smoked Pork Rice is a home-style midday idea made with pork and rice. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
-    "tags": [
-      "lunch",
-      "non-vegetarian",
-      "high-protein",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 6,
-    "instructions": [
-      "Prep pork and rice so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Smoked Pork Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "pork",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Pork",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Pork",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 6,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "4fc03733-2d70-58c9-8e40-3376e0291cac",
-    "sourceId": "soft-idli-breakfast",
-    "title": "Soft Idli",
-    "description": "Soft Idli is a home-style morning idea made with idli rice and urad dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/idli.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep idli rice and urad dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Soft Idli with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "id": "idli-rice",
-        "name": "Idli Rice",
-        "isMain": true,
-        "matchWeight": 1,
-        "role": "required"
-      },
-      {
-        "id": "urad-dal",
-        "name": "Urad Dal",
-        "isMain": true,
-        "matchWeight": 1,
-        "role": "required"
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Idli Rice",
-    "primary_ingredient_2": "Urad Dal",
-    "primaryIngredient1": "Idli Rice",
-    "primaryIngredient2": "Urad Dal",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food",
-    "primaryIngredients": [
-      "Idli Rice",
-      "Urad Dal"
-    ],
-    "requiredPrimaryMatches": 2,
-    "required_primary_matches": 2,
-    "secondaryIngredients": []
-  },
-  {
-    "id": "9927a138-c633-543e-94b4-927f1c75e5f7",
-    "sourceId": "spicy-aloo-paratha",
-    "title": "Spicy Aloo Paratha",
-    "description": "Spicy Aloo Paratha is a home-style morning idea made with wheat flour, potato, green chilli, and ghee. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 25,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/aloo-paratha.png",
-    "tags": [
-      "breakfast",
-      "north-indian",
-      "soul-food",
-      "spicy-food"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 10,
-    "energyScore": 5,
-    "emotionalState": "family_time, relaxed",
-    "soulFoodScore": 9,
-    "rainyDayScore": 3,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "stomachFeel": "filling",
-    "bestTime": "breakfast",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Feels like an aloo paratha kind of morning 😄",
-    "homeStyleScore": 9,
-    "instructions": [
-      "Prep wheat flour, potato, green chilli, and ghee so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Spicy Aloo Paratha with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "Wheat Flour",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Potato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Green Chilli",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Ghee",
-        "quantity": 1,
-        "unit": "tsp",
-        "role": "flavor-base",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Wheat",
-    "primary_ingredient_2": "Potato",
-    "primaryIngredient1": "Wheat",
-    "primaryIngredient2": "Potato",
-    "secondary_ingredient_1": "Red Chilli",
-    "secondaryIngredient1": "Red Chilli",
-    "secondary_ingredient_2": "Green Chilli",
-    "secondaryIngredient2": "Green Chilli",
-    "secondary_ingredient_3": "Ghee",
-    "secondaryIngredient3": "Ghee",
-    "secondary_ingredient_4": "Wheat Flour",
-    "secondaryIngredient4": "Wheat Flour",
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Soul Food",
-    "secondaryMood": "Spicy Food"
-  },
-  {
-    "id": "5d7a89df-4ba0-521f-bf52-519540ac1cc6",
-    "sourceId": "spicy-masala-dosa",
-    "title": "Spicy Masala Dosa",
-    "description": "Spicy Masala Dosa is a home-style morning idea made with dosa batter, potato, green chilli, and onion. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dosa.png",
-    "tags": [
-      "breakfast",
-      "south-indian",
-      "comfort",
-      "soul-food"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "emotionalState": "comfort_craving",
-    "soulFoodScore": 7,
-    "rainyDayScore": 3,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "stomachFeel": "medium",
-    "bestTime": "dinner",
-    "bestDay": "weekend",
-    "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 9,
-    "instructions": [
-      "Prep dosa batter, potato, green chilli, and onion so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Spicy Masala Dosa with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "id": "dosa-rice",
-        "name": "Dosa Rice",
-        "isMain": true,
-        "matchWeight": 1,
-        "role": "required"
-      },
-      {
-        "id": "urad-dal",
-        "name": "Urad Dal",
-        "isMain": true,
-        "matchWeight": 1,
-        "role": "required"
-      },
-      {
-        "id": "potato",
-        "name": "Potato",
-        "isMain": false,
-        "matchWeight": 0.8,
-        "role": "filling"
-      },
-      {
-        "id": "green-chilli",
-        "name": "Green Chilli",
-        "isMain": false,
-        "matchWeight": 0.5,
-        "role": "flavor-base"
-      },
-      {
-        "id": "onion",
-        "name": "Onion",
-        "isMain": false,
-        "matchWeight": 0.5,
-        "role": "supporting"
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Dosa Rice",
-    "primary_ingredient_2": "Urad Dal",
-    "primaryIngredient1": "Dosa Rice",
-    "primaryIngredient2": "Urad Dal",
-    "secondary_ingredient_1": "Potato",
-    "secondaryIngredient1": "Potato",
-    "secondary_ingredient_2": "Green Chilli",
-    "secondaryIngredient2": "Green Chilli",
-    "secondary_ingredient_3": "Onion",
-    "secondaryIngredient3": "Onion",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food",
-    "primaryIngredients": [
-      "Dosa Rice",
-      "Urad Dal"
-    ],
-    "requiredPrimaryMatches": 2,
-    "required_primary_matches": 2,
-    "secondaryIngredients": [
-      "Potato",
-      "Green Chilli",
-      "Onion"
-    ]
-  },
-  {
-    "id": "188f3314-71f4-5eba-8b4d-51bd1083084b",
-    "sourceId": "sticky-rice-breakfast",
-    "title": "Sticky Rice",
-    "description": "Sticky Rice is a home-style morning idea made with rice and sesame oil. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/breakfast-default.png",
-    "tags": [
-      "breakfast",
-      "non-vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "instructions": [
-      "Prep rice and sesame oil so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Sticky Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "sesame oil",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "sesame oil",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "sesame oil",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 6,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "3bc2b280-cc5c-5f34-8725-54f5f6b077d5",
-    "sourceId": "stuffed-paratha-breakfast",
-    "title": "Stuffed Paratha",
-    "description": "Stuffed Paratha is a home-style morning idea made with wheat and potato. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/paratha.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep wheat and potato so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Stuffed Paratha with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "wheat",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "potato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Wheat",
-    "primary_ingredient_2": "Potato",
-    "primaryIngredient1": "Wheat",
-    "primaryIngredient2": "Potato",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "fce23586-b793-5b67-b338-2e4e50970865",
-    "sourceId": "sundal-snack",
-    "title": "Sundal",
-    "description": "Sundal is a home-style dinner idea made with chana and coconut. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "comfort",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep chana and coconut so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Sundal with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "chana",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "coconut",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chana",
-    "primary_ingredient_2": "Coconut",
-    "primaryIngredient1": "Chana",
-    "primaryIngredient2": "Coconut",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 7,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 6,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "5680a04f-284b-5bc1-a0b4-27b967733aa7",
-    "sourceId": "sweet-pongal-festival",
-    "title": "Sweet Pongal",
-    "description": "Sweet Pongal is a home-style dinner idea made with rice and moong dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/pongal.png",
-    "tags": [
-      "festival",
-      "vegetarian",
-      "one-pot",
-      "rainy-day",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 6,
-    "instructions": [
-      "Prep rice and moong dal so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Sweet Pongal with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "moong dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "ghee",
-        "quantity": 0.5,
-        "unit": "tsp",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Moong Dal",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Moong Dal",
-    "secondary_ingredient_1": "Ghee",
-    "secondaryIngredient1": "Ghee",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "01818ce1-148c-5292-9d27-41c4e3bddf43",
-    "sourceId": "thukpa-breakfast",
-    "title": "Thukpa",
-    "description": "Thukpa is a home-style morning idea made with noodles and vegetables. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/breakfast-default.png",
-    "tags": [
-      "breakfast",
-      "non-vegetarian",
-      "rainy-day",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "instructions": [
-      "Prep noodles and vegetables so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Thukpa with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "noodles",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "carrot",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "cabbage",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "supporting",
-        "isMain": false
-      },
-      {
-        "name": "onion",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Noodles",
-    "primary_ingredient_2": "Carrot",
-    "primaryIngredient1": "Noodles",
-    "primaryIngredient2": "Carrot",
-    "secondary_ingredient_1": "Cabbage",
-    "secondaryIngredient1": "Cabbage",
-    "secondary_ingredient_2": "Onion",
-    "secondaryIngredient2": "Onion",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "8a029051-cabb-5dcb-a1fb-7cb3752ac18e",
-    "sourceId": "upma-breakfast",
-    "title": "Upma",
-    "description": "Upma is a home-style morning idea made with rava and vegetables. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/upma.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "soul-food"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
-    "instructions": [
-      "Prep rava and vegetables so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Upma with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "rava",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "carrot",
-        "quantity": 0.5,
-        "unit": "pcs",
-        "role": "supporting",
-        "isMain": false
-      },
-      {
-        "name": "curry leaves",
-        "quantity": 6,
-        "unit": "leaves",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rava",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Rava",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Carrot",
-    "secondaryIngredient1": "Carrot",
-    "secondary_ingredient_2": "Curry Leaves",
-    "secondaryIngredient2": "Curry Leaves",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Soul Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "49fd478b-d305-5a27-9306-f7e99bfdae05",
-    "sourceId": "vegetable-puree-dinner",
-    "title": "Vegetable Puree",
-    "description": "Vegetable Puree is a home-style dinner idea made with carrot and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/dinner-default.png",
-    "tags": [
-      "dinner",
-      "vegetarian",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep carrot and milk so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Vegetable Puree with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "carrot",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "milk",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Carrot",
-    "primary_ingredient_2": "Milk",
-    "primaryIngredient1": "Carrot",
-    "primaryIngredient2": "Milk",
-    "secondary_ingredient_1": null,
-    "secondaryIngredient1": null,
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": ""
-  },
-  {
-    "id": "389bdc96-0ee6-5f76-8a42-1332b896f1dd",
-    "sourceId": "vegetable-soup-dinner",
-    "title": "Vegetable Soup",
-    "description": "Vegetable Soup is a home-style dinner idea made with vegetables and onion. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/soup-bowls.png",
-    "tags": [
-      "dinner",
-      "vegetarian",
-      "rainy-day",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": true,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 5,
-    "comfortScore": 8,
-    "energyScore": 3,
-    "instructions": [
-      "Prep vegetables and onion so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Vegetable Soup with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
-    ],
-    "ingredients": [
-      {
-        "name": "carrot",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "black pepper",
-        "quantity": 0.5,
-        "unit": "tsp",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Carrot",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Carrot",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Black Pepper",
-    "secondaryIngredient1": "Black Pepper",
-    "secondary_ingredient_2": null,
-    "secondaryIngredient2": null,
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "proteinScore": 3,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 9,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "c19a76f1-3b76-50dd-9f8c-2ec9729f3094",
-    "sourceId": "bread-upma",
-    "title": "Bread Upma",
-    "description": "Bread Upma is a quick home-style idea made with Bread and Onion. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 15,
-    "timeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/bread-upma.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "quick",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "instructions": [
-      "Prep Bread and Onion so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Bread Upma with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Bread",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Mustard Seeds",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Green Chilli",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Bread",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Bread",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "Mustard Seeds",
-    "secondaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_3": "Green Chilli",
-    "secondaryIngredient3": "Green Chilli",
-    "secondary_ingredient_4": "Oil",
-    "secondaryIngredient4": "Oil",
-    "secondary_ingredient_5": "Coriander",
-    "secondaryIngredient5": "Coriander",
-    "primaryIngredients": [
-      "Bread",
-      "Onion"
-    ],
-    "proteinScore": 3,
-    "nostalgiaScore": 6,
-    "homeStyleScore": 8,
-    "rainyDayScore": 5,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "828e35bc-cde3-52fb-9b6f-f8a24bf4b892",
-    "sourceId": "tomato-rice",
-    "title": "Tomato Rice",
-    "description": "Tomato Rice is a quick home-style idea made with Rice and Tomato. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "secondaryMood": "Spicy Food",
+    "isRealDish": true,
+    "name": "Andhra Chicken Curry",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "onion"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "onion"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "red chilli",
+      "curry leaves",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "red chilli",
+      "curry leaves",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "86c21ea4-cfdd-5212-9b78-0c53ea1d88c7",
+    "sourceId": "andhra-egg-fry",
+    "title": "Andhra Egg Fry",
+    "description": "Andhra Egg Fry is a bold Indian spicy dish made with Egg and Chilli. It brings heat, punch, and strong regional flavor while staying useful for Tomo's spicy recommendations. Tomo would suggest it when the mood calls for something lively and satisfying.",
     "prepTimeMinutes": 10,
     "cookTimeMinutes": 15,
     "timeMinutes": 25,
@@ -8701,1129 +268,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/tomato-rice.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "quick",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "instructions": [
-      "Prep Rice and Tomato so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Tomato Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Rice",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Tomato",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Mustard Seeds",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Peanut",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Tomato",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Tomato",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "Mustard Seeds",
-    "secondaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_3": "Peanut",
-    "secondaryIngredient3": "Peanut",
-    "secondary_ingredient_4": "Oil",
-    "secondaryIngredient4": "Oil",
-    "secondary_ingredient_5": "Coriander",
-    "secondaryIngredient5": "Coriander",
-    "primaryIngredients": [
-      "Rice",
-      "Tomato"
-    ],
-    "proteinScore": 2,
-    "nostalgiaScore": 6,
-    "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "095af1fd-982c-500f-96c5-a360f48ec7b3",
-    "sourceId": "coconut-rice",
-    "title": "Coconut Rice",
-    "description": "Coconut Rice is a quick home-style idea made with Rice and Coconut. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 15,
-    "timeMinutes": 25,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/coconut-rice.png",
-    "tags": [
-      "lunch",
-      "vegetarian",
-      "quick",
-      "soul-food"
-    ],
-    "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "instructions": [
-      "Prep Rice and Coconut so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Coconut Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Rice",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Coconut",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Mustard Seeds",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Peanut",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "Coconut",
-    "primaryIngredient1": "Rice",
-    "primaryIngredient2": "Coconut",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "Mustard Seeds",
-    "secondaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_3": "Peanut",
-    "secondaryIngredient3": "Peanut",
-    "secondary_ingredient_4": "Oil",
-    "secondaryIngredient4": "Oil",
-    "secondary_ingredient_5": "Coriander",
-    "secondaryIngredient5": "Coriander",
-    "primaryIngredients": [
-      "Rice",
-      "Coconut"
-    ],
-    "proteinScore": 2,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "Soul Food"
-  },
-  {
-    "id": "108c0ed1-124f-561b-b15a-bd1aff82b663",
-    "sourceId": "lemon-sevai",
-    "title": "Lemon Sevai",
-    "description": "Lemon Sevai is a quick home-style idea made with Sevai and Lemon. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 15,
-    "timeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lemon-sevai.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "quick",
-      "soul-food"
-    ],
-    "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 6,
-    "energyScore": 5,
-    "instructions": [
-      "Prep Sevai and Lemon so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Lemon Sevai with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Sevai",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Lemon",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Mustard Seeds",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Sevai",
-    "primary_ingredient_2": "Lemon",
-    "primaryIngredient1": "Sevai",
-    "primaryIngredient2": "Lemon",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "Mustard Seeds",
-    "secondaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_3": "Onion",
-    "secondaryIngredient3": "Onion",
-    "secondary_ingredient_4": "Oil",
-    "secondaryIngredient4": "Oil",
-    "secondary_ingredient_5": "Coriander",
-    "secondaryIngredient5": "Coriander",
-    "primaryIngredients": [
-      "Sevai",
-      "Lemon"
-    ],
-    "proteinScore": 2,
-    "nostalgiaScore": 6,
-    "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "Soul Food"
-  },
-  {
-    "id": "7021748f-4101-50db-918c-81a438cde6bf",
-    "sourceId": "egg-toast",
-    "title": "Egg Toast",
-    "description": "Egg Toast is a quick home-style idea made with Egg and Bread. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 10,
-    "timeMinutes": 15,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/egg-toast.png",
-    "tags": [
-      "breakfast",
-      "non-vegetarian",
-      "quick",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 5,
-    "energyScore": 7,
-    "instructions": [
-      "Prep Egg and Bread so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Egg Toast with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Egg",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Bread",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Mustard Seeds",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Egg",
-    "primary_ingredient_2": "Bread",
-    "primaryIngredient1": "Egg",
-    "primaryIngredient2": "Bread",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "Mustard Seeds",
-    "secondaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_3": "Onion",
-    "secondaryIngredient3": "Onion",
-    "secondary_ingredient_4": "Oil",
-    "secondaryIngredient4": "Oil",
-    "secondary_ingredient_5": "Coriander",
-    "secondaryIngredient5": "Coriander",
-    "primaryIngredients": [
-      "Egg",
-      "Bread"
-    ],
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
-    "homeStyleScore": 6,
-    "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "392e3ec0-23e5-5e10-b967-0a2088887a90",
-    "sourceId": "veg-sandwich",
-    "title": "Veg Sandwich",
-    "description": "Veg Sandwich is a quick home-style idea made with Bread and Vegetables. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 10,
-    "timeMinutes": 15,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/veg-sandwich.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "quick"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": true,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 5,
-    "energyScore": 5,
-    "instructions": [
-      "Prep Bread and Vegetables so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Veg Sandwich with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Bread",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Vegetables",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Butter",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Black Pepper",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Tomato",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Bread",
-    "primary_ingredient_2": "Vegetables",
-    "primaryIngredient1": "Bread",
-    "primaryIngredient2": "Vegetables",
-    "secondary_ingredient_1": "Butter",
-    "secondaryIngredient1": "Butter",
-    "secondary_ingredient_2": "Black Pepper",
-    "secondaryIngredient2": "Black Pepper",
-    "secondary_ingredient_3": "Tomato",
-    "secondaryIngredient3": "Tomato",
-    "secondary_ingredient_4": "Onion",
-    "secondaryIngredient4": "Onion",
-    "secondary_ingredient_5": "Coriander",
-    "secondaryIngredient5": "Coriander",
-    "primaryIngredients": [
-      "Bread",
-      "Vegetables"
-    ],
-    "proteinScore": 2,
-    "nostalgiaScore": 4,
-    "homeStyleScore": 5,
-    "rainyDayScore": 3,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": ""
-  },
-  {
-    "id": "f93e862f-6ef9-5068-ad4e-4528409c0a83",
-    "sourceId": "paneer-sandwich",
-    "title": "Paneer Sandwich",
-    "description": "Paneer Sandwich is a quick home-style idea made with Bread and Paneer. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 10,
-    "timeMinutes": 15,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/paneer-sandwich.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "quick",
-      "high-protein"
-    ],
-    "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 5,
-    "energyScore": 7,
-    "instructions": [
-      "Prep Bread and Paneer so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Paneer Sandwich with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Bread",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Paneer",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Butter",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Black Pepper",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Tomato",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Bread",
-    "primary_ingredient_2": "Paneer",
-    "primaryIngredient1": "Bread",
-    "primaryIngredient2": "Paneer",
-    "secondary_ingredient_1": "Butter",
-    "secondaryIngredient1": "Butter",
-    "secondary_ingredient_2": "Black Pepper",
-    "secondaryIngredient2": "Black Pepper",
-    "secondary_ingredient_3": "Tomato",
-    "secondaryIngredient3": "Tomato",
-    "secondary_ingredient_4": "Onion",
-    "secondaryIngredient4": "Onion",
-    "secondary_ingredient_5": "Coriander",
-    "secondaryIngredient5": "Coriander",
-    "primaryIngredients": [
-      "Bread",
-      "Paneer"
-    ],
-    "proteinScore": 8,
-    "nostalgiaScore": 4,
-    "homeStyleScore": 5,
-    "rainyDayScore": 3,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "c18fbf55-4162-5c03-974c-8cbf8a6fa11d",
-    "sourceId": "corn-chaat",
-    "title": "Corn Chaat",
-    "description": "Corn Chaat is a quick home-style idea made with Corn and Onion. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 10,
-    "timeMinutes": 15,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/corn-chaat.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "quick"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": true,
-    "studySnack": true,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 5,
-    "energyScore": 5,
-    "instructions": [
-      "Prep Corn and Onion so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Corn Chaat with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Corn",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Mustard Seeds",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Oil",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Corn",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Corn",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "Mustard Seeds",
-    "secondaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_3": "Oil",
-    "secondaryIngredient3": "Oil",
-    "secondary_ingredient_4": "Coriander",
-    "secondaryIngredient4": "Coriander",
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryIngredients": [
-      "Corn",
-      "Onion"
-    ],
-    "proteinScore": 3,
-    "nostalgiaScore": 4,
-    "homeStyleScore": 5,
-    "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": ""
-  },
-  {
-    "id": "ea3245b2-2eb8-57e2-ac7e-a317d9302cf4",
-    "sourceId": "peanut-sundal",
-    "title": "Peanut Sundal",
-    "description": "Peanut Sundal is a quick home-style idea made with Peanut and Coconut. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 15,
-    "timeMinutes": 20,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/peanut-sundal.png",
-    "tags": [
-      "snacks",
-      "vegetarian",
-      "quick",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": true,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 6,
-    "energyScore": 5,
-    "instructions": [
-      "Prep Peanut and Coconut so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Peanut Sundal with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Peanut",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Coconut",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Mustard Seeds",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Peanut",
-    "primary_ingredient_2": "Coconut",
-    "primaryIngredient1": "Peanut",
-    "primaryIngredient2": "Coconut",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "Mustard Seeds",
-    "secondaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_3": "Onion",
-    "secondaryIngredient3": "Onion",
-    "secondary_ingredient_4": "Oil",
-    "secondaryIngredient4": "Oil",
-    "secondary_ingredient_5": "Coriander",
-    "secondaryIngredient5": "Coriander",
-    "primaryIngredients": [
-      "Peanut",
-      "Coconut"
-    ],
-    "proteinScore": 7,
-    "nostalgiaScore": 6,
-    "homeStyleScore": 7,
-    "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "b0aaaa44-3a13-5365-b80f-d4c7994f5df3",
-    "sourceId": "instant-rava-upma",
-    "title": "Instant Rava Upma",
-    "description": "Instant Rava Upma is a quick home-style idea made with Rava and Onion. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 10,
-    "timeMinutes": 15,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/instant-rava-upma.png",
-    "tags": [
-      "breakfast",
-      "vegetarian",
-      "quick",
-      "comfort"
-    ],
-    "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "instructions": [
-      "Prep Rava and Onion so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Instant Rava Upma with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Rava",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Mustard Seeds",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Green Chilli",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rava",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Rava",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "Mustard Seeds",
-    "secondaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_3": "Green Chilli",
-    "secondaryIngredient3": "Green Chilli",
-    "secondary_ingredient_4": "Oil",
-    "secondaryIngredient4": "Oil",
-    "secondary_ingredient_5": "Coriander",
-    "secondaryIngredient5": "Coriander",
-    "primaryIngredients": [
-      "Rava",
-      "Onion"
-    ],
-    "proteinScore": 2,
-    "nostalgiaScore": 6,
-    "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "Comfort Food"
-  },
-  {
-    "id": "fb35172d-555d-5969-896f-102273dae010",
-    "sourceId": "chicken-555",
-    "title": "Chicken 555",
-    "description": "Chicken 555 is a bold Indian spicy dish made with Chicken and Chilli. It brings heat, punch, and strong regional flavor while staying useful for Tomo's spicy recommendations. Tomo would suggest it when the mood calls for something lively and satisfying.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 25,
-    "timeMinutes": 35,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/chicken-555.png",
-    "tags": [
-      "snack",
-      "spicy-food",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": true,
-    "weekendSpecial": true,
-    "effortScore": 6,
-    "comfortScore": 3,
-    "energyScore": 7,
-    "instructions": [
-      "Prep Chicken and Chilli so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Chicken 555 with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Chicken",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Chilli",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Garlic",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Chilli",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Chilli",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Curry Leaves",
-    "secondaryIngredient2": "Curry Leaves",
-    "secondary_ingredient_3": "Garlic",
-    "secondaryIngredient3": "Garlic",
-    "secondary_ingredient_4": "Ginger",
-    "secondaryIngredient4": "Ginger",
-    "secondary_ingredient_5": "Oil",
-    "secondaryIngredient5": "Oil",
-    "primaryIngredients": [
-      "Chicken",
-      "Chilli"
-    ],
-    "proteinScore": 8,
-    "nostalgiaScore": 2,
-    "homeStyleScore": 3,
-    "rainyDayScore": 2,
-    "primaryMood": "Spicy Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "269a57c4-c326-560c-b5d3-886b2e5b6a45",
-    "sourceId": "chicken-majestic",
-    "title": "Chicken Majestic",
-    "description": "Chicken Majestic is a bold Indian spicy dish made with Chicken and Curd. It brings heat, punch, and strong regional flavor while staying useful for Tomo's spicy recommendations. Tomo would suggest it when the mood calls for something lively and satisfying.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 25,
-    "timeMinutes": 35,
-    "servings": 2,
-    "cuisine": "Indian",
-    "dietType": "vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/chicken-majestic.png",
-    "tags": [
-      "snack",
-      "spicy-food",
-      "high-protein"
-    ],
-    "lateNight": true,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": true,
-    "weekendSpecial": true,
-    "effortScore": 6,
-    "comfortScore": 3,
-    "energyScore": 7,
-    "instructions": [
-      "Prep Chicken and Curd so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Chicken Majestic with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
-    ],
-    "ingredients": [
-      {
-        "name": "Chicken",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Curd",
-        "quantity": 1,
-        "unit": "portion",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Curry Leaves",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      },
-      {
-        "name": "Garlic",
-        "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Curd",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Curd",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Curry Leaves",
-    "secondaryIngredient2": "Curry Leaves",
-    "secondary_ingredient_3": "Garlic",
-    "secondaryIngredient3": "Garlic",
-    "secondary_ingredient_4": "Ginger",
-    "secondaryIngredient4": "Ginger",
-    "secondary_ingredient_5": "Oil",
-    "secondaryIngredient5": "Oil",
-    "primaryIngredients": [
-      "Chicken",
-      "Curd"
-    ],
-    "proteinScore": 8,
-    "nostalgiaScore": 2,
-    "homeStyleScore": 3,
-    "rainyDayScore": 2,
-    "primaryMood": "Spicy Food",
-    "secondaryMood": "High Protein"
-  },
-  {
-    "id": "95752df9-b6a6-53f3-a173-ec190ec46108",
-    "sourceId": "guntur-chicken-fry",
-    "title": "Guntur Chicken Fry",
-    "description": "Guntur Chicken Fry is a bold Indian spicy dish made with Chicken and Guntur Chilli. It brings heat, punch, and strong regional flavor while staying useful for Tomo's spicy recommendations. Tomo would suggest it when the mood calls for something lively and satisfying.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 30,
-    "timeMinutes": 40,
-    "servings": 2,
-    "cuisine": "Andhra",
-    "dietType": "vegetarian",
-    "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/guntur-chicken-fry.png",
+    "imageUrl": "/assets/images/dishes/andhra-egg-fry.png",
     "tags": [
       "lunch",
       "spicy-food",
-      "andhra",
       "high-protein"
     ],
     "lateNight": false,
@@ -9840,21 +288,21 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "comfortScore": 4,
     "energyScore": 7,
     "instructions": [
-      "Prep Chicken and Guntur Chilli so the cooking stays smooth.",
+      "Prep Egg and Chilli so the cooking stays smooth.",
       "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Guntur Chicken Fry with salt, heat, and texture adjusted to taste.",
+      "Cook until the flavours come together, then finish Andhra Egg Fry with salt, heat, and texture adjusted to taste.",
       "Serve warm while it still feels fresh and satisfying."
     ],
     "ingredients": [
       {
-        "name": "Chicken",
+        "name": "Egg",
         "quantity": 1,
         "unit": "portion",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "Guntur Chilli",
+        "name": "Chilli",
         "quantity": 1,
         "unit": "portion",
         "role": "required",
@@ -9884,10 +332,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Guntur Chilli",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Guntur Chilli",
+    "primary_ingredient_1": "Egg",
+    "primary_ingredient_2": "Chilli",
+    "primaryIngredient1": "Egg",
+    "primaryIngredient2": "Chilli",
     "secondary_ingredient_1": "Onion",
     "secondaryIngredient1": "Onion",
     "secondary_ingredient_2": "Curry Leaves",
@@ -9899,15 +347,55 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "secondary_ingredient_5": "Oil",
     "secondaryIngredient5": "Oil",
     "primaryIngredients": [
-      "Chicken",
-      "Guntur Chilli"
+      "Egg",
+      "Chilli"
     ],
     "proteinScore": 8,
     "nostalgiaScore": 3,
     "homeStyleScore": 4,
     "rainyDayScore": 2,
     "primaryMood": "Spicy Food",
-    "secondaryMood": "High Protein"
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Andhra Egg Fry",
+    "baseIngredient": "egg",
+    "base_ingredient": "egg",
+    "coreIngredients": [
+      "egg",
+      "chilli"
+    ],
+    "core_ingredients": [
+      "egg",
+      "chilli"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "chilli"
+    ],
+    "required_ingredients": [
+      "egg",
+      "chilli"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "egg",
+    "dish_family": "egg",
+    "incompatibleWith": [],
+    "incompatible_with": []
   },
   {
     "id": "aef4a9e5-779b-58c1-b71d-9d7061d884d3",
@@ -10009,7 +497,3341 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "homeStyleScore": 5,
     "rainyDayScore": 2,
     "primaryMood": "Spicy Food",
-    "secondaryMood": "High Protein"
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Andhra Kodi Vepudu",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "chilli"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "chilli"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "chilli"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "chilli"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "aliases": [
+      "Chicken Fry",
+      "Andhra Chicken Fry"
+    ]
+  },
+  {
+    "id": "48e908cd-ad9d-5c8c-8496-83f522dca7d6",
+    "sourceId": "andhra-podi-idli",
+    "title": "Andhra Podi Idli",
+    "description": "Andhra Podi Idli is a home-style morning idea made with idli, podi, and ghee. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 6,
+    "cookTimeMinutes": 14,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/andhra-podi-idli-homestyle.png",
+    "tags": [
+      "breakfast",
+      "south-indian",
+      "andhra",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "emotionalState": "morning_energy",
+    "soulFoodScore": 8,
+    "rainyDayScore": 3,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "stomachFeel": "light",
+    "bestTime": "breakfast",
+    "bestDay": "weekday",
+    "tomoLine": "🍅 Spicy podi idli to wake up the day!",
+    "homeStyleScore": 9,
+    "instructions": [
+      "Prep idli, podi, and ghee so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Andhra Podi Idli with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "id": "idli-rice",
+        "name": "Idli Rice",
+        "isMain": true,
+        "matchWeight": 1,
+        "role": "required"
+      },
+      {
+        "id": "urad-dal",
+        "name": "Urad Dal",
+        "isMain": true,
+        "matchWeight": 1,
+        "role": "required"
+      },
+      {
+        "id": "podi",
+        "name": "Podi",
+        "isMain": false,
+        "matchWeight": 0.8,
+        "role": "flavor-base"
+      },
+      {
+        "id": "ghee",
+        "name": "Ghee",
+        "isMain": false,
+        "matchWeight": 0.3,
+        "role": "cooking-fat"
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Idli Rice",
+    "primary_ingredient_2": "Urad Dal",
+    "primaryIngredient1": "Idli Rice",
+    "primaryIngredient2": "Urad Dal",
+    "secondary_ingredient_1": "Podi",
+    "secondaryIngredient1": "Podi",
+    "secondary_ingredient_2": "Ghee",
+    "secondaryIngredient2": "Ghee",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "primaryIngredients": [
+      "Idli Rice",
+      "Urad Dal"
+    ],
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "secondaryIngredients": [
+      "Podi",
+      "Ghee"
+    ],
+    "isRealDish": true,
+    "name": "Andhra Podi Idli",
+    "baseIngredient": "idli batter",
+    "base_ingredient": "idli batter",
+    "coreIngredients": [
+      "idli batter",
+      "gunpowder"
+    ],
+    "core_ingredients": [
+      "idli batter",
+      "gunpowder"
+    ],
+    "requiredIngredients": [
+      "idli batter",
+      "gunpowder"
+    ],
+    "required_ingredients": [
+      "idli batter",
+      "gunpowder"
+    ],
+    "optionalIngredients": [
+      "idli rice",
+      "urad dal",
+      "ghee",
+      "oil",
+      "curry leaves",
+      "chutney"
+    ],
+    "optional_ingredients": [
+      "idli rice",
+      "urad dal",
+      "ghee",
+      "oil",
+      "curry leaves",
+      "chutney"
+    ],
+    "dishFamily": "idli",
+    "dish_family": "idli",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "9c8a6733-ecd6-5340-8030-896f40b4f119",
+    "sourceId": "apple-puree-snack",
+    "title": "Apple Puree",
+    "description": "Apple Puree is a home-style dinner idea made with apple and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep apple and milk so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Apple Puree with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "apple",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Apple",
+    "primary_ingredient_2": "Milk",
+    "primaryIngredient1": "Apple",
+    "primaryIngredient2": "Milk",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Apple Puree",
+    "baseIngredient": "apple",
+    "base_ingredient": "apple",
+    "coreIngredients": [
+      "apple",
+      "milk"
+    ],
+    "core_ingredients": [
+      "apple",
+      "milk"
+    ],
+    "requiredIngredients": [
+      "apple",
+      "milk"
+    ],
+    "required_ingredients": [
+      "apple",
+      "milk"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "apple",
+    "dish_family": "apple",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "cb7e1bda-4c58-563b-bcd3-3dde4ce33b3f",
+    "sourceId": "avalakki-breakfast",
+    "title": "Avalakki",
+    "description": "Avalakki is a home-style morning idea made with poha and onion. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/breakfast-default.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "soul-food"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 5,
+    "energyScore": 3,
+    "instructions": [
+      "Prep poha and onion so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Avalakki with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "poha",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Poha",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Poha",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Peanut",
+    "secondaryIngredient1": "Peanut",
+    "secondary_ingredient_2": "Lemon",
+    "secondaryIngredient2": "Lemon",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Soul Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Avalakki",
+    "baseIngredient": "poha",
+    "base_ingredient": "poha",
+    "coreIngredients": [
+      "poha",
+      "onion"
+    ],
+    "core_ingredients": [
+      "poha",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "poha",
+      "onion"
+    ],
+    "required_ingredients": [
+      "poha",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "mustard seeds",
+      "curry leaves",
+      "green chilli",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "mustard seeds",
+      "curry leaves",
+      "green chilli",
+      "oil"
+    ],
+    "dishFamily": "poha",
+    "dish_family": "poha",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "a6412a17-dd83-55c9-a382-56e4fa2080b7",
+    "sourceId": "besan-chilla-breakfast",
+    "title": "Besan Chilla",
+    "description": "Besan Chilla is a simple home-style breakfast made with besan, onion, and a little curd for softness. It is quick, warm, and especially nice when you want something light but satisfying. Serve it hot with chutney or curd on the side.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/breakfast-default.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": true,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep besan and curd so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Besan Chilla with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "quantity": 0.25,
+        "unit": "cup",
+        "role": "texture",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Besan",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Besan",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Curd",
+    "secondaryIngredient1": "Curd",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Besan Chilla",
+    "baseIngredient": "besan",
+    "base_ingredient": "besan",
+    "coreIngredients": [
+      "besan",
+      "onion"
+    ],
+    "core_ingredients": [
+      "besan",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "besan",
+      "onion"
+    ],
+    "required_ingredients": [
+      "besan",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "curd",
+      "green chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "curd",
+      "green chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "besan",
+    "dish_family": "besan",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "ce5bd18e-6ff0-5007-8a5e-0bd8ca569258",
+    "sourceId": "biryani-festival",
+    "title": "Biryani",
+    "description": "Biryani is a home-style dinner idea made with rice and chicken. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/biryani.png",
+    "tags": [
+      "festival",
+      "non-vegetarian",
+      "one-pot",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep rice and chicken so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Biryani with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Chicken",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Chicken",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Mint",
+    "secondaryIngredient2": "Mint",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Biryani",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "chicken"
+    ],
+    "core_ingredients": [
+      "rice",
+      "chicken"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "chicken"
+    ],
+    "required_ingredients": [
+      "rice",
+      "chicken"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "f7508d42-98e0-5d34-b6f6-eaa410e2a439",
+    "sourceId": "bisibelebath-lunch",
+    "title": "Bisibelebath",
+    "description": "Bisibelebath is a home-style midday idea made with rice and toor dal. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 5,
+    "energyScore": 3,
+    "instructions": [
+      "Prep rice and toor dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Bisibelebath with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "toor dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "quantity": 0.5,
+        "unit": "g",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Toor Dal",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Toor Dal",
+    "secondary_ingredient_1": "Vegetables",
+    "secondaryIngredient1": "Vegetables",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 8,
+    "rainyDayScore": 3,
+    "primaryMood": "High Protein",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Bisibelebath",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "toor dal"
+    ],
+    "core_ingredients": [
+      "rice",
+      "toor dal"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "toor dal"
+    ],
+    "required_ingredients": [
+      "rice",
+      "toor dal"
+    ],
+    "optionalIngredients": [
+      "vegetable mix",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "vegetable mix",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-dal",
+    "dish_family": "rice-dal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "7c0d09e9-0bec-536c-ae15-6c6c91b1c107",
+    "sourceId": "boiled-corn-snack",
+    "title": "Boiled Corn",
+    "description": "Boiled Corn is a home-style dinner idea made with corn and chaat masala. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "snacks",
+      "non-vegetarian",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep corn and chaat masala so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Boiled Corn with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "corn",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chaat masala",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Corn",
+    "primary_ingredient_2": "Chaat Masala",
+    "primaryIngredient1": "Corn",
+    "primaryIngredient2": "Chaat Masala",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Boiled Corn",
+    "baseIngredient": "corn",
+    "base_ingredient": "corn",
+    "coreIngredients": [
+      "corn",
+      "chaat masala"
+    ],
+    "core_ingredients": [
+      "corn",
+      "chaat masala"
+    ],
+    "requiredIngredients": [
+      "corn",
+      "chaat masala"
+    ],
+    "required_ingredients": [
+      "corn",
+      "chaat masala"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "corn",
+    "dish_family": "corn",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "9992bcd8-0abd-511b-ba21-e50fb04f5a9a",
+    "sourceId": "bonda-snack",
+    "title": "Bonda",
+    "description": "Bonda is a home-style dinner idea made with potato and besan. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "rainy-day"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 3,
+    "instructions": [
+      "Prep potato and besan so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Bonda with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Potato",
+    "primary_ingredient_2": "Besan",
+    "primaryIngredient1": "Potato",
+    "primaryIngredient2": "Besan",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 5,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Bonda",
+    "baseIngredient": "potato",
+    "base_ingredient": "potato",
+    "coreIngredients": [
+      "potato",
+      "besan"
+    ],
+    "core_ingredients": [
+      "potato",
+      "besan"
+    ],
+    "requiredIngredients": [
+      "potato",
+      "besan"
+    ],
+    "required_ingredients": [
+      "potato",
+      "besan"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "potato",
+    "dish_family": "potato",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [],
+    "moodExcludes": [
+      "protein"
+    ]
+  },
+  {
+    "id": "c6804fce-a3d7-556d-ab31-43c484701460",
+    "sourceId": "bread-omelette-breakfast",
+    "title": "Bread Omelette",
+    "description": "Bread Omelette is a home-style morning idea made with egg and bread. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/bread-omelette.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 5,
+    "energyScore": 3,
+    "instructions": [
+      "Prep egg and bread so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Bread Omelette with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "bread",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Bread",
+    "primary_ingredient_2": "Egg",
+    "primaryIngredient1": "Bread",
+    "primaryIngredient2": "Egg",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 3,
+    "primaryMood": "High Protein",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Bread Omelette",
+    "baseIngredient": "bread",
+    "base_ingredient": "bread",
+    "coreIngredients": [
+      "egg",
+      "bread"
+    ],
+    "core_ingredients": [
+      "egg",
+      "bread"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "bread"
+    ],
+    "required_ingredients": [
+      "egg",
+      "bread"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "pepper",
+      "oil",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "pepper",
+      "oil",
+      "coriander"
+    ],
+    "dishFamily": "omelette",
+    "dish_family": "omelette",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "7c1d5f97-d5dd-5aea-818d-5b39bfb1f1c5",
+    "sourceId": "bread-pakora-snack",
+    "title": "Bread Pakora",
+    "description": "Bread Pakora is a home-style dinner idea made with bread and besan. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/snacks/pakora.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "rainy-day"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep bread and besan so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Bread Pakora with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "bread",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Bread",
+    "primary_ingredient_2": "Besan",
+    "primaryIngredient1": "Bread",
+    "primaryIngredient2": "Besan",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 5,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Bread Pakora",
+    "baseIngredient": "bread",
+    "base_ingredient": "bread",
+    "coreIngredients": [
+      "bread",
+      "besan"
+    ],
+    "core_ingredients": [
+      "bread",
+      "besan"
+    ],
+    "requiredIngredients": [
+      "bread",
+      "besan"
+    ],
+    "required_ingredients": [
+      "bread",
+      "besan"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "bread",
+    "dish_family": "bread",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [],
+    "moodExcludes": [
+      "protein"
+    ]
+  },
+  {
+    "id": "c19a76f1-3b76-50dd-9f8c-2ec9729f3094",
+    "sourceId": "bread-upma",
+    "title": "Bread Upma",
+    "description": "Bread Upma is a quick home-style idea made with Bread and Onion. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 15,
+    "timeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/bread-upma.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "quick",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep Bread and Onion so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Bread Upma with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Bread",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Green Chilli",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Bread",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Bread",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Curry Leaves",
+    "secondaryIngredient1": "Curry Leaves",
+    "secondary_ingredient_2": "Mustard Seeds",
+    "secondaryIngredient2": "Mustard Seeds",
+    "secondary_ingredient_3": "Green Chilli",
+    "secondaryIngredient3": "Green Chilli",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Coriander",
+    "secondaryIngredient5": "Coriander",
+    "primaryIngredients": [
+      "Bread",
+      "Onion"
+    ],
+    "proteinScore": 3,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Bread Upma",
+    "baseIngredient": "rava",
+    "base_ingredient": "rava",
+    "coreIngredients": [
+      "bread",
+      "onion"
+    ],
+    "core_ingredients": [
+      "bread",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "bread",
+      "onion"
+    ],
+    "required_ingredients": [
+      "bread",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "curry leaves",
+      "mustard seeds",
+      "green chilli",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "curry leaves",
+      "mustard seeds",
+      "green chilli",
+      "oil"
+    ],
+    "dishFamily": "upma",
+    "dish_family": "upma",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "99e58cc9-52dc-5490-b0bd-cb2d27bef319",
+    "sourceId": "butter-chicken-lunch",
+    "title": "Butter Chicken",
+    "description": "Butter Chicken is a home-style midday idea made with chicken and butter. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "non-vegetarian",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep chicken and butter so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Butter Chicken with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Tomato",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Tomato",
+    "secondary_ingredient_1": "Butter",
+    "secondaryIngredient1": "Butter",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Butter Chicken",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "tomato"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "tomato"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "tomato"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "butter",
+      "onion",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "onion",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "9904ca6a-c778-5c30-bb05-0f444ac5c5d7",
+    "sourceId": "chaat-snack",
+    "title": "Chaat",
+    "description": "Chaat is a home-style dinner idea made with potato and wheat. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep potato and wheat so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chaat with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "wheat",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Potato",
+    "primary_ingredient_2": "Wheat",
+    "primaryIngredient1": "Potato",
+    "primaryIngredient2": "Wheat",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Chaat",
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "potato",
+      "wheat flour"
+    ],
+    "core_ingredients": [
+      "potato",
+      "wheat flour"
+    ],
+    "requiredIngredients": [
+      "potato",
+      "wheat flour"
+    ],
+    "required_ingredients": [
+      "potato",
+      "wheat flour"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "wheat flour",
+    "dish_family": "wheat flour",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-cheese-omelette",
+    "sourceId": "pantry-cheese-omelette",
+    "title": "Cheese Omelette",
+    "name": "Cheese Omelette",
+    "description": "Cheese Omelette is a familiar home-style dish made around egg and cheese. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "pantry",
+      "protein",
+      "quick"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep egg and cheese before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Cheese Omelette warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "egg",
+    "primary_ingredient_2": "cheese",
+    "primaryIngredient1": "egg",
+    "primaryIngredient2": "cheese",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "pepper",
+    "secondaryIngredient2": "pepper",
+    "secondary_ingredient_3": "butter",
+    "secondaryIngredient3": "butter",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "egg",
+    "base_ingredient": "egg",
+    "coreIngredients": [
+      "egg",
+      "cheese"
+    ],
+    "core_ingredients": [
+      "egg",
+      "cheese"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "cheese"
+    ],
+    "required_ingredients": [
+      "egg",
+      "cheese"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "pepper",
+      "butter",
+      "oil",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "pepper",
+      "butter",
+      "oil",
+      "coriander"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "omelette",
+    "dish_family": "omelette",
+    "isRealDish": true
+  },
+  {
+    "id": "fb35172d-555d-5969-896f-102273dae010",
+    "sourceId": "chicken-555",
+    "title": "Chicken 555",
+    "description": "Chicken 555 is a bold Indian spicy dish made with Chicken and Chilli. It brings heat, punch, and strong regional flavor while staying useful for Tomo's spicy recommendations. Tomo would suggest it when the mood calls for something lively and satisfying.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/chicken-555.png",
+    "tags": [
+      "snack",
+      "spicy-food",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 3,
+    "energyScore": 7,
+    "instructions": [
+      "Prep Chicken and Chilli so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Chicken 555 with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Garlic",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Chilli",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Chilli",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Garlic",
+    "secondaryIngredient3": "Garlic",
+    "secondary_ingredient_4": "Ginger",
+    "secondaryIngredient4": "Ginger",
+    "secondary_ingredient_5": "Oil",
+    "secondaryIngredient5": "Oil",
+    "primaryIngredients": [
+      "Chicken",
+      "Chilli"
+    ],
+    "proteinScore": 8,
+    "nostalgiaScore": 2,
+    "homeStyleScore": 3,
+    "rainyDayScore": 2,
+    "primaryMood": "Spicy Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Chicken 555",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "chilli"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "chilli"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "chilli"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "chilli"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "0d715835-2f42-5ac9-8b5c-0d83bfad2f2b",
+    "sourceId": "chicken-65",
+    "title": "Chicken 65",
+    "description": "Chicken 65 is a home-style snack-time idea made with chicken, red chilli, curd, and curry leaves. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/snacks/chicken-65.png",
+    "tags": [
+      "snack",
+      "south-indian",
+      "tamil-nadu",
+      "late-night-food",
+      "spicy-food",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": true,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep chicken, red chilli, curd, and curry leaves so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chicken 65 with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Red Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Curd",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": "Red Chilli",
+    "secondaryIngredient1": "Red Chilli",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Spicy Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Chicken 65",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "curd"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "curd"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "red chilli",
+      "curry leaves",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "red chilli",
+      "curry leaves",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "cdc3f903-37f6-57d0-83cf-902475244c0f",
+    "sourceId": "chicken-chettinad",
+    "title": "Chicken Chettinad",
+    "description": "Chicken Chettinad is a home-style midday idea made with chicken, black pepper, coconut, and onion. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "south-indian",
+      "tamil-nadu",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "spicy_craving, indulgent",
+    "soulFoodScore": 7,
+    "rainyDayScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "stomachFeel": "heavy",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Peppery comfort sounds perfect tonight.",
+    "homeStyleScore": 8,
+    "instructions": [
+      "Prep chicken, black pepper, coconut, and onion so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chicken Chettinad with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Coconut",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Black Pepper",
+    "secondaryIngredient2": "Black Pepper",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Chicken Chettinad",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "black pepper",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "black pepper",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "protein",
+      "spicy"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "45290fa8-aa46-559c-9ff6-24066c1e6302",
+    "sourceId": "chicken-curry-dinner",
+    "title": "Chicken Curry",
+    "description": "Chicken Curry is a home-style dinner idea made with chicken and tomato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/chicken-curry-rice.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep chicken and tomato so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chicken Curry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Tomato",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Tomato",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Red Chilli",
+    "secondaryIngredient2": "Red Chilli",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Chicken Curry",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "tomato"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "tomato"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "tomato"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "pantry-chicken-fried-rice",
+    "sourceId": "pantry-chicken-fried-rice",
+    "title": "Chicken Fried Rice",
+    "name": "Chicken Fried Rice",
+    "description": "Chicken Fried Rice is a familiar home-style dish made around rice and chicken. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "lunch",
+      "non-vegetarian",
+      "pantry",
+      "indo-chinese",
+      "protein",
+      "quick"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep rice and chicken before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Chicken Fried Rice warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primary_ingredient_2": "chicken",
+    "primaryIngredient1": "rice",
+    "primaryIngredient2": "chicken",
+    "secondary_ingredient_1": "egg",
+    "secondaryIngredient1": "egg",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "soy sauce",
+    "secondaryIngredient3": "soy sauce",
+    "secondary_ingredient_4": "spring onion",
+    "secondaryIngredient4": "spring onion",
+    "secondary_ingredient_5": "oil",
+    "secondaryIngredient5": "oil",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "chicken"
+    ],
+    "core_ingredients": [
+      "rice",
+      "chicken"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "chicken"
+    ],
+    "required_ingredients": [
+      "rice",
+      "chicken"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "garlic",
+      "soy sauce",
+      "spring onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "egg",
+      "garlic",
+      "soy sauce",
+      "spring onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fried-rice",
+    "dish_family": "fried-rice",
+    "isRealDish": true,
+    "aliases": [
+      "Chicken Egg Fried Rice",
+      "Chicken and Egg Fried Rice",
+      "Chicken Rice"
+    ],
+    "pantrySupportingIngredients": [
+      "egg"
+    ],
+    "pantry_supporting_ingredients": [
+      "egg"
+    ],
+    "pantryPartialMissingRequired": [
+      "rice"
+    ],
+    "pantry_partial_missing_required": [
+      "rice"
+    ],
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "269a57c4-c326-560c-b5d3-886b2e5b6a45",
+    "sourceId": "chicken-majestic",
+    "title": "Chicken Majestic",
+    "description": "Chicken Majestic is a bold Indian spicy dish made with Chicken and Curd. It brings heat, punch, and strong regional flavor while staying useful for Tomo's spicy recommendations. Tomo would suggest it when the mood calls for something lively and satisfying.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/chicken-majestic.png",
+    "tags": [
+      "snack",
+      "spicy-food",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 3,
+    "energyScore": 7,
+    "instructions": [
+      "Prep Chicken and Curd so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Chicken Majestic with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Curd",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Garlic",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Garlic",
+    "secondaryIngredient3": "Garlic",
+    "secondary_ingredient_4": "Ginger",
+    "secondaryIngredient4": "Ginger",
+    "secondary_ingredient_5": "Oil",
+    "secondaryIngredient5": "Oil",
+    "primaryIngredients": [
+      "Chicken",
+      "Curd"
+    ],
+    "proteinScore": 8,
+    "nostalgiaScore": 2,
+    "homeStyleScore": 3,
+    "rainyDayScore": 2,
+    "primaryMood": "Spicy Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Chicken Majestic",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "curd"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "curd"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "bfdc43f0-6137-5901-b78f-68a18b7b38df",
+    "sourceId": "chicken-pulao-dinner",
+    "title": "Chicken Pulao",
+    "description": "Chicken Pulao is a home-style dinner idea made with rice and chicken. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/pulao.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "one-pot",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep rice and chicken so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chicken Pulao with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Rice",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Rice",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 8,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Chicken Pulao",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "chicken"
+    ],
+    "core_ingredients": [
+      "rice",
+      "chicken"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "chicken"
+    ],
+    "required_ingredients": [
+      "rice",
+      "chicken"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "686a5460-0fcc-58ed-a823-56faf4d918a4",
+    "sourceId": "chicken-rice-dinner",
+    "title": "Chicken Rice",
+    "description": "Chicken Rice is a home-style dinner idea made with chicken and rice. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 6,
+    "instructions": [
+      "Prep chicken and rice so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chicken Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "inactive",
+    "recipeType": "inactive",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Rice",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Rice",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 8,
+    "rainyDayScore": 6,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Chicken Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "chicken",
+      "rice"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "rice"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "rice"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "rice"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "isActive": false,
+    "excludeFromRecommendations": true,
+    "hardExcludeFromFeeds": true,
+    "replacedBy": "Chicken Fried Rice"
+  },
+  {
+    "id": "ef193ec0-58fa-5b8a-bd3e-7e44064706ca",
+    "sourceId": "chicken-roll-snack",
+    "title": "Chicken Roll",
+    "description": "Chicken Roll is a home-style dinner idea made with chicken and tomato. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "snacks",
+      "non-vegetarian",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 5,
+    "energyScore": 3,
+    "instructions": [
+      "Prep chicken and tomato so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chicken Roll with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Tomato",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Tomato",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 5,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Chicken Roll",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "tomato"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "tomato"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "tomato"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "ac9edd23-eae8-5e48-8dfc-c5773ed3e042",
+    "sourceId": "chicken-stew-lunch",
+    "title": "Chicken Stew",
+    "description": "Chicken Stew is a home-style midday idea made with chicken and tomato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "non-vegetarian",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep chicken and tomato so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chicken Stew with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Tomato",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Tomato",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Chicken Stew",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "tomato"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "tomato"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "tomato"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "b0fbc187-0b62-533b-9ba9-937fb1bf3e6c",
+    "sourceId": "chicken-sukka",
+    "title": "Chicken Sukka",
+    "description": "Chicken Sukka is a home-style midday idea made with chicken, coconut, curry leaves, and red chilli. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "south-indian",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 8,
+    "instructions": [
+      "Prep chicken, coconut, curry leaves, and red chilli so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chicken Sukka with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Coconut",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Red Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Green Chilli",
+    "secondaryIngredient3": "Green Chilli",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Chicken Sukka",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "curry leaves",
+      "red chilli",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "curry leaves",
+      "red chilli",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-chilli-chicken",
+    "sourceId": "pantry-chilli-chicken",
+    "title": "Chilli Chicken",
+    "name": "Chilli Chicken",
+    "description": "Chilli Chicken is a familiar home-style dish made around chicken and capsicum. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "pantry",
+      "indo-chinese",
+      "protein",
+      "spicy"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep chicken and capsicum before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Chilli Chicken warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "capsicum",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "chilli sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "chicken",
+    "primary_ingredient_2": "capsicum",
+    "primaryIngredient1": "chicken",
+    "primaryIngredient2": "capsicum",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "soy sauce",
+    "secondaryIngredient3": "soy sauce",
+    "secondary_ingredient_4": "chilli sauce",
+    "secondaryIngredient4": "chilli sauce",
+    "secondary_ingredient_5": "oil",
+    "secondaryIngredient5": "oil",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "capsicum"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "capsicum"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "capsicum"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "capsicum"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "garlic",
+      "soy sauce",
+      "chilli sauce",
+      "oil",
+      "tomato",
+      "ginger"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "soy sauce",
+      "chilli sauce",
+      "oil",
+      "tomato",
+      "ginger"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "spicy"
+    ],
+    "moodExcludes": []
   },
   {
     "id": "271613bf-824d-5d19-8138-4a7d9b40a46c",
@@ -10109,7 +3931,1310 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "homeStyleScore": 3,
     "rainyDayScore": 2,
     "primaryMood": "Spicy Food",
-    "secondaryMood": ""
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Chilli Mushroom",
+    "baseIngredient": "mushroom",
+    "base_ingredient": "mushroom",
+    "coreIngredients": [
+      "mushroom",
+      "chilli"
+    ],
+    "core_ingredients": [
+      "mushroom",
+      "chilli"
+    ],
+    "requiredIngredients": [
+      "mushroom",
+      "chilli"
+    ],
+    "required_ingredients": [
+      "mushroom",
+      "chilli"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "mushroom",
+    "dish_family": "mushroom",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "c57d4242-2920-566e-a41e-dee284fec172",
+    "sourceId": "chilli-paneer",
+    "title": "Chilli Paneer",
+    "description": "Chilli Paneer is a home-style snack-time idea made with paneer, capsicum, soy sauce, and green chilli. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 8,
+    "cookTimeMinutes": 17,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paneer-curry.png",
+    "tags": [
+      "snack",
+      "north-indian",
+      "late-night-food",
+      "spicy-food",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep paneer, capsicum, soy sauce, and green chilli so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chilli Paneer with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Paneer",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Capsicum",
+        "quantity": 1,
+        "unit": "g",
+        "role": "supporting",
+        "isMain": true
+      },
+      {
+        "name": "Soy Sauce",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Green Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Paneer",
+    "primary_ingredient_2": "Capsicum",
+    "primaryIngredient1": "Paneer",
+    "primaryIngredient2": "Capsicum",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Soy Sauce",
+    "secondaryIngredient2": "Soy Sauce",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Spicy Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Chilli Paneer",
+    "baseIngredient": "paneer",
+    "base_ingredient": "paneer",
+    "coreIngredients": [
+      "paneer",
+      "capsicum"
+    ],
+    "core_ingredients": [
+      "paneer",
+      "capsicum"
+    ],
+    "requiredIngredients": [
+      "paneer",
+      "capsicum"
+    ],
+    "required_ingredients": [
+      "paneer",
+      "capsicum"
+    ],
+    "optionalIngredients": [
+      "soy sauce",
+      "green chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "soy sauce",
+      "green chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "paneer-curry",
+    "dish_family": "paneer-curry",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "aeeb3e13-6481-57c2-8a90-9fcae507dee0",
+    "sourceId": "chole-chawal-lunch",
+    "title": "Chole Chawal",
+    "description": "Chole Chawal is a home-style midday idea made with chole and rice. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep chole and rice so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Chole Chawal with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "chole",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chole",
+    "primary_ingredient_2": "Rice",
+    "primaryIngredient1": "Chole",
+    "primaryIngredient2": "Rice",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 7,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Chole Chawal",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "chole",
+      "rice"
+    ],
+    "core_ingredients": [
+      "chole",
+      "rice"
+    ],
+    "requiredIngredients": [
+      "chole",
+      "rice"
+    ],
+    "required_ingredients": [
+      "chole",
+      "rice"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "095af1fd-982c-500f-96c5-a360f48ec7b3",
+    "sourceId": "coconut-rice",
+    "title": "Coconut Rice",
+    "description": "Coconut Rice is a quick home-style idea made with Rice and Coconut. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 15,
+    "timeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/coconut-rice.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "quick",
+      "soul-food"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep Rice and Coconut so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Coconut Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Coconut",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Peanut",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Curry Leaves",
+    "secondaryIngredient1": "Curry Leaves",
+    "secondary_ingredient_2": "Mustard Seeds",
+    "secondaryIngredient2": "Mustard Seeds",
+    "secondary_ingredient_3": "Peanut",
+    "secondaryIngredient3": "Peanut",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Coriander",
+    "secondaryIngredient5": "Coriander",
+    "primaryIngredients": [
+      "Rice",
+      "Coconut"
+    ],
+    "proteinScore": 2,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Soul Food",
+    "isRealDish": true,
+    "name": "Coconut Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "rice",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "rice",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "curry leaves",
+      "mustard seeds",
+      "peanuts",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "curry leaves",
+      "mustard seeds",
+      "peanuts",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "c18fbf55-4162-5c03-974c-8cbf8a6fa11d",
+    "sourceId": "corn-chaat",
+    "title": "Corn Chaat",
+    "description": "Corn Chaat is a quick home-style idea made with Corn and Onion. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 10,
+    "timeMinutes": 15,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/corn-chaat.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "quick"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "instructions": [
+      "Prep Corn and Onion so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Corn Chaat with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Corn",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Oil",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Corn",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Corn",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Curry Leaves",
+    "secondaryIngredient1": "Curry Leaves",
+    "secondary_ingredient_2": "Mustard Seeds",
+    "secondaryIngredient2": "Mustard Seeds",
+    "secondary_ingredient_3": "Oil",
+    "secondaryIngredient3": "Oil",
+    "secondary_ingredient_4": "Coriander",
+    "secondaryIngredient4": "Coriander",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "Corn",
+      "Onion"
+    ],
+    "proteinScore": 3,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 5,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Corn Chaat",
+    "baseIngredient": "corn",
+    "base_ingredient": "corn",
+    "coreIngredients": [
+      "corn",
+      "onion"
+    ],
+    "core_ingredients": [
+      "corn",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "corn",
+      "onion"
+    ],
+    "required_ingredients": [
+      "corn",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "curry leaves",
+      "mustard seeds",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "curry leaves",
+      "mustard seeds",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "corn",
+    "dish_family": "corn",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "71a1fdf2-24eb-572f-9f1f-649e5e205625",
+    "sourceId": "corn-soup-snack",
+    "title": "Corn Soup",
+    "description": "Corn Soup is a home-style dinner idea made with corn and vegetables. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/soup-bowls.png",
+    "tags": [
+      "snacks",
+      "non-vegetarian",
+      "rainy-day"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 3,
+    "instructions": [
+      "Prep corn and vegetables so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Corn Soup with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "corn",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Corn",
+    "primary_ingredient_2": "Carrot",
+    "primaryIngredient1": "Corn",
+    "primaryIngredient2": "Carrot",
+    "secondary_ingredient_1": "Black Pepper",
+    "secondaryIngredient1": "Black Pepper",
+    "secondary_ingredient_2": "Onion",
+    "secondaryIngredient2": "Onion",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 9,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Corn Soup",
+    "baseIngredient": "corn",
+    "base_ingredient": "corn",
+    "coreIngredients": [
+      "corn",
+      "carrot"
+    ],
+    "core_ingredients": [
+      "corn",
+      "carrot"
+    ],
+    "requiredIngredients": [
+      "corn",
+      "carrot"
+    ],
+    "required_ingredients": [
+      "corn",
+      "carrot"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "black pepper",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "black pepper",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "corn",
+    "dish_family": "corn",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "1f0252b6-fd53-56f8-9281-bbd2cede4830",
+    "sourceId": "curd-rice-lunch",
+    "title": "Curd Rice",
+    "description": "Curd Rice is a home-style midday idea made with rice and curd. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/curd-rice-homestyle.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": true,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep rice and curd so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Curd Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": "Mustard Seeds",
+    "secondaryIngredient1": "Mustard Seeds",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "isRealDish": true,
+    "name": "Curd Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "curd"
+    ],
+    "core_ingredients": [
+      "rice",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "curd"
+    ],
+    "required_ingredients": [
+      "rice",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-dal",
+    "dish_family": "rice-dal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "7e1672ca-2f34-5085-8a63-dc65d434e274",
+    "sourceId": "dal-makhani",
+    "title": "Dal Makhani",
+    "description": "Dal Makhani is a home-style dinner idea made with black urad dal and rajma. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep black urad dal and rajma so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Dal Makhani with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "black urad dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rajma",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Black Urad Dal",
+    "primary_ingredient_2": "Rajma",
+    "primaryIngredient1": "Black Urad Dal",
+    "primaryIngredient2": "Rajma",
+    "secondary_ingredient_1": "Butter",
+    "secondaryIngredient1": "Butter",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 8,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "mealType": "Lunch,Dinner",
+    "meal_type": "Lunch,Dinner",
+    "timeMinutes": 30,
+    "mergedSourceIds": [
+      "dal-makhani-dinner",
+      "dal-makhani-lunch"
+    ],
+    "isRealDish": true,
+    "name": "Dal Makhani",
+    "baseIngredient": "black urad dal",
+    "base_ingredient": "black urad dal",
+    "coreIngredients": [
+      "black urad dal",
+      "rajma"
+    ],
+    "core_ingredients": [
+      "black urad dal",
+      "rajma"
+    ],
+    "requiredIngredients": [
+      "black urad dal",
+      "rajma"
+    ],
+    "required_ingredients": [
+      "black urad dal",
+      "rajma"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "black urad dal",
+    "dish_family": "black urad dal",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "comfort",
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "f49323cb-5f41-572a-bb9b-981f7d3b88f4",
+    "sourceId": "dal-rice-lunch",
+    "title": "Dal Rice",
+    "description": "Dal Rice is a home-style midday idea made with rice and toor dal. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dal-rice.png",
+    "tags": [
+      "lunch",
+      "non-vegetarian",
+      "vegetarian",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep rice and toor dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Dal Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "toor dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "dal",
+        "quantity": 0.5,
+        "unit": "g",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Toor Dal",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Toor Dal",
+    "secondary_ingredient_1": "Ghee",
+    "secondaryIngredient1": "Ghee",
+    "secondary_ingredient_2": "Dal",
+    "secondaryIngredient2": "Dal",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "isRealDish": true,
+    "name": "Dal Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "toor dal"
+    ],
+    "core_ingredients": [
+      "rice",
+      "toor dal"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "toor dal"
+    ],
+    "required_ingredients": [
+      "rice",
+      "toor dal"
+    ],
+    "optionalIngredients": [
+      "dal",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "dal",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-dal",
+    "dish_family": "rice-dal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "b09b9104-29fd-56d9-b515-00d4396492dc",
+    "sourceId": "dal-roti-lunch",
+    "title": "Dal Roti",
+    "description": "Dal Roti is a home-style midday idea made with toor dal and wheat. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 5,
+    "energyScore": 3,
+    "instructions": [
+      "Prep toor dal and wheat so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Dal Roti with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "toor dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "wheat",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Toor Dal",
+    "primary_ingredient_2": "Wheat",
+    "primaryIngredient1": "Toor Dal",
+    "primaryIngredient2": "Wheat",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "High Protein",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Dal Roti",
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "toor dal",
+      "wheat flour"
+    ],
+    "core_ingredients": [
+      "toor dal",
+      "wheat flour"
+    ],
+    "requiredIngredients": [
+      "toor dal",
+      "wheat flour"
+    ],
+    "required_ingredients": [
+      "toor dal",
+      "wheat flour"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "wheat flour",
+    "dish_family": "wheat flour",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "dcf45c13-9902-53f8-b583-4aa0f185776d",
+    "sourceId": "dosa-breakfast",
+    "title": "Dosa",
+    "description": "Dosa is a home-style morning idea made with rice and urad dal. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dosa.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 3,
+    "instructions": [
+      "Prep rice and urad dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Dosa with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "id": "dosa-rice",
+        "name": "Dosa Rice",
+        "isMain": true,
+        "matchWeight": 1,
+        "role": "required"
+      },
+      {
+        "id": "urad-dal",
+        "name": "Urad Dal",
+        "isMain": true,
+        "matchWeight": 1,
+        "role": "required"
+      },
+      {
+        "id": "ghee",
+        "name": "Ghee",
+        "isMain": false,
+        "matchWeight": 0.3,
+        "role": "cooking-fat"
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Dosa Rice",
+    "primary_ingredient_2": "Urad Dal",
+    "primaryIngredient1": "Dosa Rice",
+    "primaryIngredient2": "Urad Dal",
+    "secondary_ingredient_1": "Ghee",
+    "secondaryIngredient1": "Ghee",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "primaryIngredients": [
+      "Dosa Rice",
+      "Urad Dal"
+    ],
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "secondaryIngredients": [
+      "Ghee"
+    ],
+    "isRealDish": true,
+    "name": "Dosa",
+    "baseIngredient": "dosa batter",
+    "base_ingredient": "dosa batter",
+    "coreIngredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "core_ingredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "requiredIngredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "required_ingredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "optionalIngredients": [
+      "ghee",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "optional_ingredients": [
+      "ghee",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": []
   },
   {
     "id": "f8b6e544-d1b7-5b21-90f7-fb0bd0870c28",
@@ -10210,7 +5335,2009 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "homeStyleScore": 3,
     "rainyDayScore": 2,
     "primaryMood": "Spicy Food",
-    "secondaryMood": "High Protein"
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Dragon Chicken",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "chilli"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "chilli"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "chilli"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "chilli"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "0dcb753b-69b0-544f-8ff8-cec59cc10601",
+    "sourceId": "egg-bhurji-dinner",
+    "title": "Egg Bhurji",
+    "description": "Egg Bhurji is a home-style dinner idea made with egg and onion. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep egg and onion so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Egg Bhurji with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Egg",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Egg",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 3,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Egg Bhurji",
+    "baseIngredient": "egg",
+    "base_ingredient": "egg",
+    "coreIngredients": [
+      "egg",
+      "onion"
+    ],
+    "core_ingredients": [
+      "egg",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "onion"
+    ],
+    "required_ingredients": [
+      "egg",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "egg",
+    "dish_family": "egg",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "1b1433fd-3930-5976-b740-44d5de04a5d5",
+    "sourceId": "egg-curry",
+    "title": "Egg Curry",
+    "description": "Egg Curry is a home-style midday idea made with egg, onion, tomato, and red chilli. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "eggetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/egg-curry.png",
+    "tags": [
+      "lunch",
+      "north-indian",
+      "high-protein",
+      "spicy-food"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 9,
+    "energyScore": 6,
+    "emotionalState": "low_energy, hungry",
+    "soulFoodScore": 8,
+    "rainyDayScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekday",
+    "tomoLine": "🍅 Egg curry always fixes dinner stress 😄",
+    "homeStyleScore": 9,
+    "instructions": [
+      "Prep egg, onion, tomato, and red chilli so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Egg Curry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Red Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Egg",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Egg",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Red Chilli",
+    "secondaryIngredient2": "Red Chilli",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Spicy Food",
+    "isRealDish": true,
+    "name": "Egg Curry",
+    "baseIngredient": "egg",
+    "base_ingredient": "egg",
+    "coreIngredients": [
+      "egg",
+      "onion"
+    ],
+    "core_ingredients": [
+      "egg",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "onion"
+    ],
+    "required_ingredients": [
+      "egg",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "red chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "red chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "egg",
+    "dish_family": "egg",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "b30d95b0-2f39-582c-a859-a33433b5bc91",
+    "sourceId": "egg-curry-dinner",
+    "title": "Egg Curry",
+    "description": "Egg Curry is a home-style dinner idea made with egg and tomato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/egg-curry.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 3,
+    "instructions": [
+      "Prep egg and tomato so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Egg Curry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Egg",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Egg",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Red Chilli",
+    "secondaryIngredient2": "Red Chilli",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Egg Curry",
+    "baseIngredient": "egg",
+    "base_ingredient": "egg",
+    "coreIngredients": [
+      "egg",
+      "onion"
+    ],
+    "core_ingredients": [
+      "egg",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "onion"
+    ],
+    "required_ingredients": [
+      "egg",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "egg",
+    "dish_family": "egg",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "41903499-9058-5568-bc90-781e9309d01d",
+    "sourceId": "egg-curry-rice-lunch",
+    "title": "Egg Curry Rice",
+    "description": "Egg Curry Rice is a home-style midday idea made with egg and rice. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/egg-curry.png",
+    "tags": [
+      "lunch",
+      "non-vegetarian",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep egg and rice so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Egg Curry Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Egg",
+    "primary_ingredient_2": "Rice",
+    "primaryIngredient1": "Egg",
+    "primaryIngredient2": "Rice",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Egg Curry Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "egg",
+      "rice"
+    ],
+    "core_ingredients": [
+      "egg",
+      "rice"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "rice"
+    ],
+    "required_ingredients": [
+      "egg",
+      "rice"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-egg-dosa",
+    "sourceId": "pantry-egg-dosa",
+    "title": "Egg Dosa",
+    "name": "Egg Dosa",
+    "description": "Egg Dosa is a familiar home-style dish made around dosa batter and egg. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "pantry",
+      "south-indian",
+      "dosa",
+      "protein"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep dosa batter and egg before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Egg Dosa warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "dosa batter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "dosa batter",
+    "primary_ingredient_2": "egg",
+    "primaryIngredient1": "dosa batter",
+    "primaryIngredient2": "egg",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "pepper",
+    "secondaryIngredient2": "pepper",
+    "secondary_ingredient_3": "oil",
+    "secondaryIngredient3": "oil",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "dosa batter",
+    "base_ingredient": "dosa batter",
+    "coreIngredients": [
+      "dosa batter",
+      "egg"
+    ],
+    "core_ingredients": [
+      "dosa batter",
+      "egg"
+    ],
+    "requiredIngredients": [
+      "dosa batter",
+      "egg"
+    ],
+    "required_ingredients": [
+      "dosa batter",
+      "egg"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "pepper",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "pepper",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "protein"
+    ],
+    "moodExcludes": [
+      "soul",
+      "spicy"
+    ]
+  },
+  {
+    "id": "f4400866-c4e8-5c2b-ae4f-d72ca3cd1de0",
+    "sourceId": "egg-fried-rice-breakfast",
+    "title": "Egg Fried Rice",
+    "description": "Quick Indo-Chinese egg fried rice made with leftover rice, egg, onion, garlic, soy sauce, spring onion, and oil.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "cuisine": "Indo-Chinese / Asian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/breakfast-default.png",
+    "tags": [
+      "quick",
+      "comfort",
+      "protein",
+      "leftover rice",
+      "indo-chinese",
+      "asian",
+      "non-vegetarian"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 3,
+    "instructions": [
+      "Keep cooked or leftover rice ready so the grains stay separate.",
+      "Scramble the eggs in hot oil and move them aside.",
+      "Saute onion and garlic, then add rice, soy sauce, and the scrambled egg.",
+      "Toss on high heat and finish with spring onion."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "egg",
+        "quantity": 2,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 2,
+        "unit": "cloves",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "tbsp",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 2,
+        "unit": "tbsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tbsp",
+        "role": "required",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Egg",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Egg",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Garlic",
+    "secondaryIngredient2": "Garlic",
+    "secondary_ingredient_3": "Soy Sauce",
+    "secondaryIngredient3": "Soy Sauce",
+    "secondary_ingredient_4": "Spring Onion",
+    "secondaryIngredient4": "Spring Onion",
+    "secondary_ingredient_5": "Oil",
+    "secondaryIngredient5": "Oil",
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 8,
+    "rainyDayScore": 3,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "High Protein",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "coreIngredients": [
+      "rice",
+      "egg"
+    ],
+    "core_ingredients": [
+      "rice",
+      "egg"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "garlic",
+      "soy sauce",
+      "spring onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "soy sauce",
+      "spring onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "baseIngredient": "rice",
+    "requiredIngredients": [
+      "rice",
+      "egg"
+    ],
+    "incompatibleWith": [],
+    "dishFamily": "fried-rice",
+    "base_ingredient": "rice",
+    "required_ingredients": [
+      "rice",
+      "egg"
+    ],
+    "incompatible_with": [],
+    "dish_family": "fried-rice",
+    "isRealDish": true,
+    "name": "Egg Fried Rice",
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "pantry-egg-paratha",
+    "sourceId": "pantry-egg-paratha",
+    "title": "Egg Paratha",
+    "description": "Wheat paratha layered with egg for a quick filling meal.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 28,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paratha.png",
+    "tags": [
+      "quick",
+      "comfort",
+      "pantry",
+      "breakfast",
+      "wheat",
+      "paratha",
+      "egg",
+      "protein"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep the core ingredients for Egg Paratha.",
+      "Cook the aromatics and seasonings until fragrant.",
+      "Add the main ingredients and cook until the flavours come together.",
+      "Serve warm with a simple side."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "wheat flour",
+    "primaryIngredient1": "wheat flour",
+    "primary_ingredient_2": "egg",
+    "primaryIngredient2": "egg",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "pepper",
+    "secondaryIngredient2": "pepper",
+    "secondary_ingredient_3": "oil",
+    "secondaryIngredient3": "oil",
+    "secondary_ingredient_4": "coriander",
+    "secondaryIngredient4": "coriander",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "egg"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "egg"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "egg"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "egg"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "pepper",
+      "oil",
+      "coriander",
+      "spices",
+      "ghee",
+      "green chilli"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "pepper",
+      "oil",
+      "coriander",
+      "spices",
+      "ghee",
+      "green chilli"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "paratha",
+    "dish_family": "paratha",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "proteinScore": 7,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Egg Paratha"
+  },
+  {
+    "id": "7021748f-4101-50db-918c-81a438cde6bf",
+    "sourceId": "egg-toast",
+    "title": "Egg Toast",
+    "description": "Egg Toast is a quick home-style idea made with Egg and Bread. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 10,
+    "timeMinutes": 15,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/egg-toast.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "quick",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 5,
+    "energyScore": 7,
+    "instructions": [
+      "Prep Egg and Bread so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Egg Toast with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Bread",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Egg",
+    "primary_ingredient_2": "Bread",
+    "primaryIngredient1": "Egg",
+    "primaryIngredient2": "Bread",
+    "secondary_ingredient_1": "Curry Leaves",
+    "secondaryIngredient1": "Curry Leaves",
+    "secondary_ingredient_2": "Mustard Seeds",
+    "secondaryIngredient2": "Mustard Seeds",
+    "secondary_ingredient_3": "Onion",
+    "secondaryIngredient3": "Onion",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Coriander",
+    "secondaryIngredient5": "Coriander",
+    "primaryIngredients": [
+      "Egg",
+      "Bread"
+    ],
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Egg Toast",
+    "baseIngredient": "bread",
+    "base_ingredient": "bread",
+    "coreIngredients": [
+      "egg",
+      "bread"
+    ],
+    "core_ingredients": [
+      "egg",
+      "bread"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "bread"
+    ],
+    "required_ingredients": [
+      "egg",
+      "bread"
+    ],
+    "optionalIngredients": [
+      "curry leaves",
+      "mustard seeds",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "curry leaves",
+      "mustard seeds",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "bread",
+    "dish_family": "bread",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "20c6cab1-6f31-52ea-9412-eced95c59e73",
+    "sourceId": "fish-curry-dinner",
+    "title": "Fish Curry",
+    "description": "Fish Curry is a home-style dinner idea made with fish and tomato. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/fish-curry-rice.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep fish and tomato so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Fish Curry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": "1",
+        "unit": "small lemon-sized piece"
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Tomato",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Tomato",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "coreIngredients": [
+      "fish",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "onion",
+      "garlic",
+      "curry leaves",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "baseIngredient": "fish",
+    "dishFamily": "fish-curry",
+    "name": "Fish Curry",
+    "base_ingredient": "fish",
+    "core_ingredients": [
+      "fish",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "fish",
+      "tamarind"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "onion",
+      "garlic",
+      "curry leaves",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dish_family": "fish-curry",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "cb7a2e7a-d335-5ccd-86ef-fc429ce8faea",
+    "sourceId": "fish-curry-rice-lunch",
+    "title": "Fish Curry Rice",
+    "description": "Fish Curry Rice is a home-style midday idea made with fish and tomato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry-rice.png",
+    "tags": [
+      "lunch",
+      "non-vegetarian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 6,
+    "instructions": [
+      "Prep fish and tomato so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Fish Curry Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Rice",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Rice",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Fish Curry Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "fish",
+      "rice"
+    ],
+    "core_ingredients": [
+      "fish",
+      "rice"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "rice"
+    ],
+    "required_ingredients": [
+      "fish",
+      "rice"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "691e1313-b316-5d49-8749-5ac62472f7f4",
+    "sourceId": "fish-fry-dinner",
+    "title": "Fish Fry",
+    "description": "Fish Fry is a home-style dinner idea made with fish and spices. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep fish and spices so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Fish Fry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice flour",
+        "quantity": 2,
+        "unit": "tbsp",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "red chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Rice Flour",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Rice Flour",
+    "secondary_ingredient_1": "Red Chilli",
+    "secondaryIngredient1": "Red Chilli",
+    "secondary_ingredient_2": "Turmeric",
+    "secondaryIngredient2": "Turmeric",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Fish Fry",
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "coreIngredients": [
+      "fish",
+      "rice flour"
+    ],
+    "core_ingredients": [
+      "fish",
+      "rice flour"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "rice flour"
+    ],
+    "required_ingredients": [
+      "fish",
+      "rice flour"
+    ],
+    "optionalIngredients": [
+      "red chilli",
+      "turmeric",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "red chilli",
+      "turmeric",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "fish-curry",
+    "dish_family": "fish-curry",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "7448bf61-1195-524d-9705-a4a82a0d1d1a",
+    "sourceId": "fish-pakora-snack",
+    "title": "Fish Pakora",
+    "description": "Fish Pakora is a home-style dinner idea made with fish and besan. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/pakora.png",
+    "tags": [
+      "snacks",
+      "non-vegetarian",
+      "rainy-day"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep fish and besan so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Fish Pakora with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Besan",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Besan",
+    "secondary_ingredient_1": "Wheat",
+    "secondaryIngredient1": "Wheat",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 5,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Fish Pakora",
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "coreIngredients": [
+      "fish",
+      "besan"
+    ],
+    "core_ingredients": [
+      "fish",
+      "besan"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "besan"
+    ],
+    "required_ingredients": [
+      "fish",
+      "besan"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "fish-curry",
+    "dish_family": "fish-curry",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [],
+    "moodExcludes": [
+      "protein"
+    ]
+  },
+  {
+    "id": "pantry-garlic-chicken",
+    "sourceId": "pantry-garlic-chicken",
+    "title": "Garlic Chicken",
+    "name": "Garlic Chicken",
+    "description": "Garlic Chicken is a familiar home-style dish made around chicken and garlic. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "pantry",
+      "protein",
+      "quick"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep chicken and garlic before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Garlic Chicken warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "chicken",
+    "primary_ingredient_2": "garlic",
+    "primaryIngredient1": "chicken",
+    "primaryIngredient2": "garlic",
+    "secondary_ingredient_1": "pepper",
+    "secondaryIngredient1": "pepper",
+    "secondary_ingredient_2": "soy sauce",
+    "secondaryIngredient2": "soy sauce",
+    "secondary_ingredient_3": "oil",
+    "secondaryIngredient3": "oil",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "garlic"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "garlic"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "garlic"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "garlic"
+    ],
+    "optionalIngredients": [
+      "pepper",
+      "soy sauce",
+      "oil",
+      "onion",
+      "tomato",
+      "ginger"
+    ],
+    "optional_ingredients": [
+      "pepper",
+      "soy sauce",
+      "oil",
+      "onion",
+      "tomato",
+      "ginger"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "isRealDish": true
+  },
+  {
+    "id": "5336ec52-a13b-5692-9496-8f82fc423ad3",
+    "sourceId": "gongura-mutton",
+    "title": "Gongura Mutton",
+    "description": "Gongura Mutton is a home-style midday idea made with mutton, gongura, red chilli, and onion. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 70,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "south-indian",
+      "andhra",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 3,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 6,
+    "instructions": [
+      "Prep mutton, gongura, red chilli, and onion so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Gongura Mutton with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Mutton",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Gongura",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Red Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Mutton",
+    "primary_ingredient_2": "Gongura",
+    "primaryIngredient1": "Mutton",
+    "primaryIngredient2": "Gongura",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Red Chilli",
+    "secondaryIngredient2": "Red Chilli",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Gongura Mutton",
+    "baseIngredient": "mutton",
+    "base_ingredient": "mutton",
+    "coreIngredients": [
+      "mutton",
+      "gongura"
+    ],
+    "core_ingredients": [
+      "mutton",
+      "gongura"
+    ],
+    "requiredIngredients": [
+      "mutton",
+      "gongura"
+    ],
+    "required_ingredients": [
+      "mutton",
+      "gongura"
+    ],
+    "optionalIngredients": [
+      "red chilli",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "red chilli",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "mutton",
+    "dish_family": "mutton",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "78f42ef9-9779-5453-ac98-4b7bcf83ec1c",
+    "sourceId": "gujiya-festival",
+    "title": "Gujiya",
+    "description": "Gujiya is a home-style dinner idea made with maida and khoya. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "festival",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep maida and khoya so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Gujiya with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "maida",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "khoya",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Maida",
+    "primary_ingredient_2": "Khoya",
+    "primaryIngredient1": "Maida",
+    "primaryIngredient2": "Khoya",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 7,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Gujiya",
+    "baseIngredient": "maida",
+    "base_ingredient": "maida",
+    "coreIngredients": [
+      "maida",
+      "khoya"
+    ],
+    "core_ingredients": [
+      "maida",
+      "khoya"
+    ],
+    "requiredIngredients": [
+      "maida",
+      "khoya"
+    ],
+    "required_ingredients": [
+      "maida",
+      "khoya"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "maida",
+    "dish_family": "maida",
+    "incompatibleWith": [],
+    "incompatible_with": []
   },
   {
     "id": "19083d74-67a6-5c24-b029-32f0ac9c0771",
@@ -10335,7 +7462,580 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Curry Leaves",
       "Garlic",
       "Ginger"
+    ],
+    "coreIngredients": [
+      "idli",
+      "gunpowder"
+    ],
+    "core_ingredients": [
+      "idli",
+      "gunpowder"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "ghee",
+      "onion",
+      "curry leaves",
+      "chutney"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "ghee",
+      "onion",
+      "curry leaves",
+      "chutney"
+    ],
+    "baseIngredient": "idli batter",
+    "requiredIngredients": [
+      "idli",
+      "gunpowder"
+    ],
+    "incompatibleWith": [
+      "rice"
+    ],
+    "dishFamily": "idli",
+    "base_ingredient": "idli batter",
+    "required_ingredients": [
+      "idli",
+      "gunpowder"
+    ],
+    "incompatible_with": [
+      "rice"
+    ],
+    "dish_family": "idli",
+    "isRealDish": true,
+    "name": "Gunpowder Idli",
+    "moodIncludes": [],
+    "moodExcludes": [
+      "soul"
     ]
+  },
+  {
+    "id": "95752df9-b6a6-53f3-a173-ec190ec46108",
+    "sourceId": "guntur-chicken-fry",
+    "title": "Guntur Chicken Fry",
+    "description": "Guntur Chicken Fry is a bold Indian spicy dish made with Chicken and Guntur Chilli. It brings heat, punch, and strong regional flavor while staying useful for Tomo's spicy recommendations. Tomo would suggest it when the mood calls for something lively and satisfying.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/guntur-chicken-fry.png",
+    "tags": [
+      "lunch",
+      "spicy-food",
+      "andhra",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 4,
+    "energyScore": 7,
+    "instructions": [
+      "Prep Chicken and Guntur Chilli so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Guntur Chicken Fry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Guntur Chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Garlic",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Guntur Chilli",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Guntur Chilli",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Garlic",
+    "secondaryIngredient3": "Garlic",
+    "secondary_ingredient_4": "Ginger",
+    "secondaryIngredient4": "Ginger",
+    "secondary_ingredient_5": "Oil",
+    "secondaryIngredient5": "Oil",
+    "primaryIngredients": [
+      "Chicken",
+      "Guntur Chilli"
+    ],
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 4,
+    "rainyDayScore": 2,
+    "primaryMood": "Spicy Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Guntur Chicken Fry",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "guntur chilli"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "guntur chilli"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "guntur chilli"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "guntur chilli"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "82d6ae3d-e06d-5e1f-9784-83eaa9b50bb9",
+    "sourceId": "guntur-chilli-chicken",
+    "title": "Guntur Chilli Chicken",
+    "description": "Guntur Chilli Chicken is a home-style midday idea made with chicken, guntur chilli, onion, and garlic. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "south-indian",
+      "andhra",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep chicken, guntur chilli, onion, and garlic so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Guntur Chilli Chicken with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Guntur Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Garlic",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Guntur Chilli",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Guntur Chilli",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Garlic",
+    "secondaryIngredient2": "Garlic",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Guntur Chilli Chicken",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "guntur chilli"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "guntur chilli"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "guntur chilli"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "guntur chilli"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "tomato",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "e25041f6-7cb7-563e-9ea7-6e127abce415",
+    "sourceId": "idli-breakfast",
+    "title": "Idli",
+    "description": "Idli is a home-style morning idea made with idli rice and urad dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/idli.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep idli rice and urad dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Idli with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "idli rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "urad dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Idli Rice",
+    "primary_ingredient_2": "Urad Dal",
+    "primaryIngredient1": "Idli Rice",
+    "primaryIngredient2": "Urad Dal",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "isRealDish": true,
+    "name": "Idli",
+    "baseIngredient": "idli batter",
+    "base_ingredient": "idli batter",
+    "coreIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "core_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "requiredIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "required_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "ghee",
+      "curry leaves",
+      "chutney"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "ghee",
+      "curry leaves",
+      "chutney"
+    ],
+    "dishFamily": "idli",
+    "dish_family": "idli",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "b0aaaa44-3a13-5365-b80f-d4c7994f5df3",
+    "sourceId": "instant-rava-upma",
+    "title": "Instant Rava Upma",
+    "description": "Instant Rava Upma is a quick home-style idea made with Rava and Onion. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 10,
+    "timeMinutes": 15,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/instant-rava-upma.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "quick",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep Rava and Onion so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Instant Rava Upma with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Rava",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Green Chilli",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rava",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Rava",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Curry Leaves",
+    "secondaryIngredient1": "Curry Leaves",
+    "secondary_ingredient_2": "Mustard Seeds",
+    "secondaryIngredient2": "Mustard Seeds",
+    "secondary_ingredient_3": "Green Chilli",
+    "secondaryIngredient3": "Green Chilli",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Coriander",
+    "secondaryIngredient5": "Coriander",
+    "primaryIngredients": [
+      "Rava",
+      "Onion"
+    ],
+    "proteinScore": 2,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Instant Rava Upma",
+    "baseIngredient": "rava",
+    "base_ingredient": "rava",
+    "coreIngredients": [
+      "rava",
+      "onion"
+    ],
+    "core_ingredients": [
+      "rava",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "rava",
+      "onion"
+    ],
+    "required_ingredients": [
+      "rava",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "curry leaves",
+      "mustard seeds",
+      "green chilli",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "curry leaves",
+      "mustard seeds",
+      "green chilli",
+      "oil"
+    ],
+    "dishFamily": "upma",
+    "dish_family": "upma",
+    "incompatibleWith": [],
+    "incompatible_with": []
   },
   {
     "id": "f2256c12-fcbb-5bd8-8376-6b5c884cdcb4",
@@ -10460,25 +8160,182 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Curry Leaves",
       "Garlic",
       "Ginger"
+    ],
+    "isRealDish": true,
+    "name": "Kaaram Dosa",
+    "baseIngredient": "dosa batter",
+    "base_ingredient": "dosa batter",
+    "coreIngredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "core_ingredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "requiredIngredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "required_ingredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "optionalIngredients": [
+      "red chilli",
+      "onion",
+      "curry leaves",
+      "garlic",
+      "ginger",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "optional_ingredients": [
+      "red chilli",
+      "onion",
+      "curry leaves",
+      "garlic",
+      "ginger",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [],
+    "moodExcludes": [
+      "soul"
     ]
   },
   {
-    "id": "86c21ea4-cfdd-5212-9b78-0c53ea1d88c7",
-    "sourceId": "andhra-egg-fry",
-    "title": "Andhra Egg Fry",
-    "description": "Andhra Egg Fry is a bold Indian spicy dish made with Egg and Chilli. It brings heat, punch, and strong regional flavor while staying useful for Tomo's spicy recommendations. Tomo would suggest it when the mood calls for something lively and satisfying.",
+    "id": "bc50c525-dd05-559f-9e49-f8ff33bd0d59",
+    "sourceId": "kachori-snack",
+    "title": "Kachori",
+    "description": "Kachori is a home-style dinner idea made with maida and moong dal. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
     "prepTimeMinutes": 10,
-    "cookTimeMinutes": 15,
-    "timeMinutes": 25,
+    "cookTimeMinutes": 20,
     "servings": 2,
     "cuisine": "Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/andhra-egg-fry.png",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
     "tags": [
-      "lunch",
-      "spicy-food",
+      "snacks",
+      "vegetarian",
+      "comfort",
       "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 6,
+    "instructions": [
+      "Prep maida and moong dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Kachori with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "maida",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "moong dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Maida",
+    "primary_ingredient_2": "Moong Dal",
+    "primaryIngredient1": "Maida",
+    "primaryIngredient2": "Moong Dal",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 5,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Kachori",
+    "baseIngredient": "maida",
+    "base_ingredient": "maida",
+    "coreIngredients": [
+      "maida",
+      "moong dal"
+    ],
+    "core_ingredients": [
+      "maida",
+      "moong dal"
+    ],
+    "requiredIngredients": [
+      "maida",
+      "moong dal"
+    ],
+    "required_ingredients": [
+      "maida",
+      "moong dal"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "maida",
+    "dish_family": "maida",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "1c05fccc-5dd4-5e01-946a-a52f66f2c2b7",
+    "sourceId": "kada-prasad-festival",
+    "title": "Kada Prasad",
+    "description": "Kada Prasad is a home-style dinner idea made with whole wheat and ghee. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "festival",
+      "vegetarian",
+      "comfort"
     ],
     "lateNight": false,
     "lowEffort": false,
@@ -10490,36 +8347,1563 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 6,
-    "comfortScore": 4,
-    "energyScore": 7,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
     "instructions": [
-      "Prep Egg and Chilli so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Andhra Egg Fry with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
+      "Prep whole wheat and ghee so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Kada Prasad with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
     ],
     "ingredients": [
       {
-        "name": "Egg",
+        "name": "whole wheat",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Whole Wheat",
+    "primary_ingredient_2": "Ghee",
+    "primaryIngredient1": "Whole Wheat",
+    "primaryIngredient2": "Ghee",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 7,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Kada Prasad",
+    "baseIngredient": "whole wheat",
+    "base_ingredient": "whole wheat",
+    "coreIngredients": [
+      "whole wheat",
+      "ghee"
+    ],
+    "core_ingredients": [
+      "whole wheat",
+      "ghee"
+    ],
+    "requiredIngredients": [
+      "whole wheat",
+      "ghee"
+    ],
+    "required_ingredients": [
+      "whole wheat",
+      "ghee"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "whole wheat",
+    "dish_family": "whole wheat",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-kadai-paneer",
+    "sourceId": "pantry-kadai-paneer",
+    "title": "Kadai Paneer",
+    "name": "Kadai Paneer",
+    "description": "Kadai Paneer is a familiar home-style dish made around paneer and capsicum. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "dinner",
+      "vegetarian",
+      "pantry",
+      "paneer",
+      "protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep paneer and capsicum before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Kadai Paneer warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "paneer",
         "quantity": 1,
         "unit": "portion",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "Chilli",
+        "name": "capsicum",
         "quantity": 1,
         "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "kadai masala",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "paneer",
+    "primary_ingredient_2": "capsicum",
+    "primaryIngredient1": "paneer",
+    "primaryIngredient2": "capsicum",
+    "secondary_ingredient_1": "tomato",
+    "secondaryIngredient1": "tomato",
+    "secondary_ingredient_2": "onion",
+    "secondaryIngredient2": "onion",
+    "secondary_ingredient_3": "kadai masala",
+    "secondaryIngredient3": "kadai masala",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "paneer",
+    "base_ingredient": "paneer",
+    "coreIngredients": [
+      "paneer",
+      "capsicum"
+    ],
+    "core_ingredients": [
+      "paneer",
+      "capsicum"
+    ],
+    "requiredIngredients": [
+      "paneer",
+      "capsicum"
+    ],
+    "required_ingredients": [
+      "paneer",
+      "capsicum"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "onion",
+      "kadai masala",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "onion",
+      "kadai masala",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "paneer-curry",
+    "dish_family": "paneer-curry",
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "b29ded95-c980-532b-81e6-03afcd41d895",
+    "sourceId": "kadhi-chawal-lunch",
+    "title": "Kadhi Chawal",
+    "description": "Kadhi Chawal is a home-style midday idea made with besan and curd. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": true,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep besan and curd so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Kadhi Chawal with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Besan",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Besan",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 8,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Kadhi Chawal",
+    "baseIngredient": "besan",
+    "base_ingredient": "besan",
+    "coreIngredients": [
+      "besan",
+      "curd"
+    ],
+    "core_ingredients": [
+      "besan",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "besan",
+      "curd"
+    ],
+    "required_ingredients": [
+      "besan",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "besan",
+    "dish_family": "besan",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "33124995-50ed-52c1-9d92-2213a8b1652d",
+    "sourceId": "keema-fry",
+    "title": "Keema Fry",
+    "description": "Keema Fry is a home-style midday idea made with keema, onion, green chilli, and garam masala. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "north-indian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 3,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 6,
+    "instructions": [
+      "Prep keema, onion, green chilli, and garam masala so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Keema Fry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Keema",
+        "quantity": 1,
+        "unit": "g",
         "role": "required",
         "isMain": true
       },
       {
         "name": "Onion",
         "quantity": 1,
-        "unit": "small",
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Green Chilli",
+        "quantity": 1,
+        "unit": "g",
         "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Garam Masala",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Keema",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Keema",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Garam Masala",
+    "secondaryIngredient2": "Garam Masala",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Keema Fry",
+    "baseIngredient": "keema",
+    "base_ingredient": "keema",
+    "coreIngredients": [
+      "keema",
+      "onion"
+    ],
+    "core_ingredients": [
+      "keema",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "keema",
+      "onion"
+    ],
+    "required_ingredients": [
+      "keema",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "garam masala",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "garam masala",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "keema",
+    "dish_family": "keema",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "3a03ee13-9f20-56cb-9457-c1f3a0e2763d",
+    "sourceId": "kerala-fish-curry",
+    "title": "Kerala Fish Curry",
+    "description": "Kerala Fish Curry is a home-style midday idea made with fish, coconut milk, kokum, and red chilli. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/fish-curry-rice.png",
+    "tags": [
+      "lunch",
+      "south-indian",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 9,
+    "instructions": [
+      "Prep fish, coconut milk, kokum, and red chilli so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Kerala Fish Curry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Fish",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Coconut Milk",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Kokum",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Red Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Coconut Milk",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Coconut Milk",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Red Chilli",
+    "secondaryIngredient2": "Red Chilli",
+    "secondary_ingredient_3": "Kokum",
+    "secondaryIngredient3": "Kokum",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "coreIngredients": [
+      "fish",
+      "kokum"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "kokum"
+    ],
+    "optionalIngredients": [
+      "coconut milk",
+      "red chilli",
+      "curry leaves",
+      "shallot",
+      "coconut oil",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "baseIngredient": "fish",
+    "dishFamily": "fish-curry",
+    "name": "Kerala Fish Curry",
+    "base_ingredient": "fish",
+    "core_ingredients": [
+      "fish",
+      "kokum"
+    ],
+    "required_ingredients": [
+      "fish",
+      "kokum"
+    ],
+    "optional_ingredients": [
+      "coconut milk",
+      "red chilli",
+      "curry leaves",
+      "shallot",
+      "coconut oil",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dish_family": "fish-curry",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "8ad2d49c-7a04-5ee5-8148-62dcfe85ab0e",
+    "sourceId": "kheema-pav",
+    "title": "Kheema Pav",
+    "description": "Kheema Pav is a home-style snack-time idea made with keema, pav, onion, and green chilli. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/snacks-default.png",
+    "tags": [
+      "snack",
+      "maharashtrian",
+      "late-night-food",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep keema, pav, onion, and green chilli so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Kheema Pav with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Keema",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Pav",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Green Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Keema",
+    "primary_ingredient_2": "Pav",
+    "primaryIngredient1": "Keema",
+    "primaryIngredient2": "Pav",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Kheema Pav",
+    "baseIngredient": "keema",
+    "base_ingredient": "keema",
+    "coreIngredients": [
+      "keema",
+      "pav"
+    ],
+    "core_ingredients": [
+      "keema",
+      "pav"
+    ],
+    "requiredIngredients": [
+      "keema",
+      "pav"
+    ],
+    "required_ingredients": [
+      "keema",
+      "pav"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "green chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "green chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "keema",
+    "dish_family": "keema",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "059e3c93-804f-5c2c-8fc1-a283c6ea95b1",
+    "sourceId": "khichdi",
+    "title": "Khichdi",
+    "description": "Khichdi is a home-style dinner idea made with rice and moong dal. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/rice-moong-khichdi-homestyle.png",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "one-pot",
+      "comfort",
+      "rainy-day"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep rice and moong dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Khichdi with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "moong dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Moong Dal",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Moong Dal",
+    "secondary_ingredient_1": "Ghee",
+    "secondaryIngredient1": "Ghee",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 9,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Rainy Day",
+    "mealType": "Lunch,Dinner",
+    "meal_type": "Lunch,Dinner",
+    "timeMinutes": 30,
+    "mergedSourceIds": [
+      "khichdi-dinner",
+      "khichdi-lunch"
+    ],
+    "isRealDish": true,
+    "name": "Khichdi",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "moong dal"
+    ],
+    "core_ingredients": [
+      "rice",
+      "moong dal"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "moong dal"
+    ],
+    "required_ingredients": [
+      "rice",
+      "moong dal"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-dal",
+    "dish_family": "rice-dal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "1be069ab-c75e-5324-a07b-2b452d09f144",
+    "sourceId": "kolhapuri-chicken",
+    "title": "Kolhapuri Chicken",
+    "description": "Kolhapuri Chicken is a home-style midday idea made with chicken, kolhapuri masala, onion, and dry coconut. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "maharashtrian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep chicken, kolhapuri masala, onion, and dry coconut so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Kolhapuri Chicken with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Kolhapuri Masala",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Dry Coconut",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Dry Coconut",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Dry Coconut",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Kolhapuri Masala",
+    "secondaryIngredient2": "Kolhapuri Masala",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Kolhapuri Chicken",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "dry coconut"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "dry coconut"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "dry coconut"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "dry coconut"
+    ],
+    "optionalIngredients": [
+      "kolhapuri masala",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "kolhapuri masala",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "9bbe29b8-fca3-530d-bc82-5f7680b4cb74",
+    "sourceId": "kolhapuri-misal-pav",
+    "title": "Kolhapuri Misal Pav",
+    "description": "Kolhapuri Misal Pav is a home-style snack-time idea made with matki, misal masala, onion, and pav. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/snacks/snacks-default.png",
+    "tags": [
+      "snack",
+      "maharashtrian",
+      "late-night-food",
+      "spicy-food",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 6,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep matki, misal masala, onion, and pav so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Kolhapuri Misal Pav with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Matki",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Misal Masala",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "supporting",
+        "isMain": true
+      },
+      {
+        "name": "Pav",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Matki",
+    "primary_ingredient_2": "Pav",
+    "primaryIngredient1": "Matki",
+    "primaryIngredient2": "Pav",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Misal Masala",
+    "secondaryIngredient2": "Misal Masala",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Spicy Food",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Kolhapuri Misal Pav",
+    "baseIngredient": "matki",
+    "base_ingredient": "matki",
+    "coreIngredients": [
+      "matki",
+      "pav"
+    ],
+    "core_ingredients": [
+      "matki",
+      "pav"
+    ],
+    "requiredIngredients": [
+      "matki",
+      "pav"
+    ],
+    "required_ingredients": [
+      "matki",
+      "pav"
+    ],
+    "optionalIngredients": [
+      "misal masala",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "misal masala",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "matki",
+    "dish_family": "matki",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "ea5ea5ab-b18e-544c-bb1f-28b61a7ca6c0",
+    "sourceId": "laal-maas",
+    "title": "Laal Maas",
+    "description": "Laal Maas is a home-style midday idea made with mutton, mathania chilli, curd, and garlic. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 70,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "north-indian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": true,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep mutton, mathania chilli, curd, and garlic so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Laal Maas with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Mutton",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Mathania Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Curd",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Garlic",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Mutton",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Mutton",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": "Mathania Chilli",
+    "secondaryIngredient1": "Mathania Chilli",
+    "secondary_ingredient_2": "Garlic",
+    "secondaryIngredient2": "Garlic",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Laal Maas",
+    "baseIngredient": "mutton",
+    "base_ingredient": "mutton",
+    "coreIngredients": [
+      "mutton",
+      "curd"
+    ],
+    "core_ingredients": [
+      "mutton",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "mutton",
+      "curd"
+    ],
+    "required_ingredients": [
+      "mutton",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "mathania chilli",
+      "garlic",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "mathania chilli",
+      "garlic",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "mutton",
+    "dish_family": "mutton",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "2521b7a1-49f9-539a-bd7f-f4fa72117f20",
+    "sourceId": "ladoo-festival",
+    "title": "Ladoo",
+    "description": "Ladoo is a home-style dinner idea made with besan and ghee. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/desserts/laddoo.png",
+    "tags": [
+      "festival",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep besan and ghee so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Ladoo with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Besan",
+    "primary_ingredient_2": "Ghee",
+    "primaryIngredient1": "Besan",
+    "primaryIngredient2": "Ghee",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 7,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Ladoo",
+    "baseIngredient": "besan",
+    "base_ingredient": "besan",
+    "coreIngredients": [
+      "besan",
+      "ghee"
+    ],
+    "core_ingredients": [
+      "besan",
+      "ghee"
+    ],
+    "requiredIngredients": [
+      "besan",
+      "ghee"
+    ],
+    "required_ingredients": [
+      "besan",
+      "ghee"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "besan",
+    "dish_family": "besan",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [],
+    "moodExcludes": [
+      "protein"
+    ]
+  },
+  {
+    "id": "52da8b63-1678-5f99-be66-7f288f1fdf41",
+    "sourceId": "lemon-rice-lunch",
+    "title": "Lemon Rice",
+    "description": "Lemon Rice is a home-style midday idea made with rice and lemon. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lemon-rice.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "soul-food",
+      "quick"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 5,
+    "energyScore": 3,
+    "instructions": [
+      "Prep rice and lemon so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Lemon Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanut",
+        "quantity": 0.5,
+        "unit": "g",
+        "role": "optional",
         "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Lemon",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Lemon",
+    "secondary_ingredient_1": "Mustard Seeds",
+    "secondaryIngredient1": "Mustard Seeds",
+    "secondary_ingredient_2": "Peanut",
+    "secondaryIngredient2": "Peanut",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 3,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Lemon Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "lemon"
+    ],
+    "core_ingredients": [
+      "rice",
+      "lemon"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "lemon"
+    ],
+    "required_ingredients": [
+      "rice",
+      "lemon"
+    ],
+    "optionalIngredients": [
+      "peanuts",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "peanuts",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "108c0ed1-124f-561b-b15a-bd1aff82b663",
+    "sourceId": "lemon-sevai",
+    "title": "Lemon Sevai",
+    "description": "Lemon Sevai is a quick home-style idea made with Sevai and Lemon. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 15,
+    "timeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lemon-sevai.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "quick",
+      "soul-food"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "instructions": [
+      "Prep Sevai and Lemon so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Lemon Sevai with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Sevai",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Lemon",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
       },
       {
         "name": "Curry Leaves",
@@ -10529,7 +9913,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "isMain": false
       },
       {
-        "name": "Garlic",
+        "name": "Mustard Seeds",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Onion",
         "quantity": 1,
         "unit": "small",
         "role": "flavor-base",
@@ -10538,30 +9929,1119 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Egg",
-    "primary_ingredient_2": "Chilli",
-    "primaryIngredient1": "Egg",
-    "primaryIngredient2": "Chilli",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Curry Leaves",
-    "secondaryIngredient2": "Curry Leaves",
-    "secondary_ingredient_3": "Garlic",
-    "secondaryIngredient3": "Garlic",
-    "secondary_ingredient_4": "Ginger",
-    "secondaryIngredient4": "Ginger",
-    "secondary_ingredient_5": "Oil",
-    "secondaryIngredient5": "Oil",
+    "primary_ingredient_1": "Sevai",
+    "primary_ingredient_2": "Lemon",
+    "primaryIngredient1": "Sevai",
+    "primaryIngredient2": "Lemon",
+    "secondary_ingredient_1": "Curry Leaves",
+    "secondaryIngredient1": "Curry Leaves",
+    "secondary_ingredient_2": "Mustard Seeds",
+    "secondaryIngredient2": "Mustard Seeds",
+    "secondary_ingredient_3": "Onion",
+    "secondaryIngredient3": "Onion",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Coriander",
+    "secondaryIngredient5": "Coriander",
     "primaryIngredients": [
-      "Egg",
-      "Chilli"
+      "Sevai",
+      "Lemon"
     ],
+    "proteinScore": 2,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Soul Food",
+    "isRealDish": true,
+    "name": "Lemon Sevai",
+    "baseIngredient": "sevai",
+    "base_ingredient": "sevai",
+    "coreIngredients": [
+      "sevai",
+      "lemon"
+    ],
+    "core_ingredients": [
+      "sevai",
+      "lemon"
+    ],
+    "requiredIngredients": [
+      "sevai",
+      "lemon"
+    ],
+    "required_ingredients": [
+      "sevai",
+      "lemon"
+    ],
+    "optionalIngredients": [
+      "curry leaves",
+      "mustard seeds",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "curry leaves",
+      "mustard seeds",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "sevai",
+    "dish_family": "sevai",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "dcb4aa84-6b23-523e-abe1-f88c5a2bff71",
+    "sourceId": "madras-curry",
+    "title": "Madras Curry",
+    "description": "Madras Curry is a home-style midday idea made with chicken, madras curry powder, tomato, and coconut milk. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "south-indian",
+      "tamil-nadu",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
     "proteinScore": 8,
     "nostalgiaScore": 3,
-    "homeStyleScore": 4,
-    "rainyDayScore": 2,
-    "primaryMood": "Spicy Food",
-    "secondaryMood": "High Protein"
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep chicken, madras curry powder, tomato, and coconut milk so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Madras Curry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Madras Curry Powder",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Coconut Milk",
+        "quantity": 1,
+        "unit": "g",
+        "role": "supporting",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Coconut Milk",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Coconut Milk",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Madras Curry Powder",
+    "secondaryIngredient2": "Madras Curry Powder",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Madras Curry",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "coconut milk"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "coconut milk"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "coconut milk"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "coconut milk"
+    ],
+    "optionalIngredients": [
+      "madras curry powder",
+      "tomato",
+      "onion",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "madras curry powder",
+      "tomato",
+      "onion",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "4ef13d94-fca7-5a7d-b50d-c66c14e840b6",
+    "sourceId": "masala-chai-snack",
+    "title": "Masala Chai",
+    "description": "Masala Chai is a warm rainy-day sip made with tea, milk, and ginger. It belongs with slow evenings, light snacks, and a little comfort in the cup. Simmer it gently so the spice feels cozy, not harsh.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 10,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/masala-chai.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "rainy-day"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 3,
+    "instructions": [
+      "Bring water, tea, and crushed ginger to a gentle boil until the colour deepens.",
+      "Add milk and simmer briefly so the flavour turns warm and balanced.",
+      "Sweeten if needed, strain, and serve hot while the chai still feels fresh."
+    ],
+    "ingredients": [
+      {
+        "name": "tea",
+        "quantity": 2,
+        "unit": "tsp",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "inch",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Tea",
+    "primary_ingredient_2": "Milk",
+    "primaryIngredient1": "Tea",
+    "primaryIngredient2": "Milk",
+    "secondary_ingredient_1": "Ginger",
+    "secondaryIngredient1": "Ginger",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "",
+    "timeMinutes": 15,
+    "isRealDish": true,
+    "name": "Masala Chai",
+    "baseIngredient": "tea",
+    "base_ingredient": "tea",
+    "coreIngredients": [
+      "tea",
+      "milk"
+    ],
+    "core_ingredients": [
+      "tea",
+      "milk"
+    ],
+    "requiredIngredients": [
+      "tea",
+      "milk"
+    ],
+    "required_ingredients": [
+      "tea",
+      "milk"
+    ],
+    "optionalIngredients": [
+      "ginger",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "ginger",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "tea",
+    "dish_family": "tea",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-masala-dosa",
+    "sourceId": "pantry-masala-dosa",
+    "title": "Masala Dosa",
+    "name": "Masala Dosa",
+    "description": "Masala Dosa is a familiar home-style dish made around dosa batter and potato. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry",
+      "south-indian",
+      "dosa"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep dosa batter and potato before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Masala Dosa warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "dosa batter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "dosa batter",
+    "primary_ingredient_2": "potato",
+    "primaryIngredient1": "dosa batter",
+    "primaryIngredient2": "potato",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "mustard seeds",
+    "secondaryIngredient2": "mustard seeds",
+    "secondary_ingredient_3": "curry leaves",
+    "secondaryIngredient3": "curry leaves",
+    "secondary_ingredient_4": "turmeric",
+    "secondaryIngredient4": "turmeric",
+    "secondary_ingredient_5": "oil",
+    "secondaryIngredient5": "oil",
+    "baseIngredient": "dosa batter",
+    "base_ingredient": "dosa batter",
+    "coreIngredients": [
+      "dosa batter",
+      "potato"
+    ],
+    "core_ingredients": [
+      "dosa batter",
+      "potato"
+    ],
+    "requiredIngredients": [
+      "dosa batter",
+      "potato"
+    ],
+    "required_ingredients": [
+      "dosa batter",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "mustard seeds",
+      "curry leaves",
+      "turmeric",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "mustard seeds",
+      "curry leaves",
+      "turmeric",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "rainy"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "pantry-masala-omelette",
+    "sourceId": "pantry-masala-omelette",
+    "title": "Masala Omelette",
+    "name": "Masala Omelette",
+    "description": "Masala Omelette is a familiar home-style dish made around egg and capsicum. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "pantry",
+      "protein",
+      "quick"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep egg and capsicum before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Masala Omelette warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "capsicum",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "egg",
+    "primary_ingredient_2": "capsicum",
+    "primaryIngredient1": "egg",
+    "primaryIngredient2": "capsicum",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "tomato",
+    "secondaryIngredient2": "tomato",
+    "secondary_ingredient_3": "green chilli",
+    "secondaryIngredient3": "green chilli",
+    "secondary_ingredient_4": "coriander",
+    "secondaryIngredient4": "coriander",
+    "secondary_ingredient_5": "oil",
+    "secondaryIngredient5": "oil",
+    "baseIngredient": "egg",
+    "base_ingredient": "egg",
+    "coreIngredients": [
+      "egg",
+      "capsicum"
+    ],
+    "core_ingredients": [
+      "egg",
+      "capsicum"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "capsicum"
+    ],
+    "required_ingredients": [
+      "egg",
+      "capsicum"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "tomato",
+      "green chilli",
+      "coriander",
+      "oil",
+      "pepper"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "green chilli",
+      "coriander",
+      "oil",
+      "pepper"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "omelette",
+    "dish_family": "omelette",
+    "isRealDish": true
+  },
+  {
+    "id": "bd46a130-d167-5b72-83e1-e12502fdb4d4",
+    "sourceId": "mashed-banana-snack",
+    "title": "Mashed Banana",
+    "description": "Mashed Banana is a home-style dinner idea made with banana and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep banana and milk so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Mashed Banana with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "banana",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Banana",
+    "primary_ingredient_2": "Milk",
+    "primaryIngredient1": "Banana",
+    "primaryIngredient2": "Milk",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Mashed Banana",
+    "baseIngredient": "banana",
+    "base_ingredient": "banana",
+    "coreIngredients": [
+      "banana",
+      "milk"
+    ],
+    "core_ingredients": [
+      "banana",
+      "milk"
+    ],
+    "requiredIngredients": [
+      "banana",
+      "milk"
+    ],
+    "required_ingredients": [
+      "banana",
+      "milk"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "banana",
+    "dish_family": "banana",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-matar-paneer",
+    "sourceId": "pantry-matar-paneer",
+    "title": "Matar Paneer",
+    "name": "Matar Paneer",
+    "description": "Matar Paneer is a familiar home-style dish made around paneer and green peas. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "dinner",
+      "vegetarian",
+      "pantry",
+      "paneer",
+      "protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep paneer and green peas before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Matar Paneer warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "paneer",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green peas",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "paneer",
+    "primary_ingredient_2": "green peas",
+    "primaryIngredient1": "paneer",
+    "primaryIngredient2": "green peas",
+    "secondary_ingredient_1": "tomato",
+    "secondaryIngredient1": "tomato",
+    "secondary_ingredient_2": "onion",
+    "secondaryIngredient2": "onion",
+    "secondary_ingredient_3": "garam masala",
+    "secondaryIngredient3": "garam masala",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "paneer",
+    "base_ingredient": "paneer",
+    "coreIngredients": [
+      "paneer",
+      "green peas"
+    ],
+    "core_ingredients": [
+      "paneer",
+      "green peas"
+    ],
+    "requiredIngredients": [
+      "paneer",
+      "green peas"
+    ],
+    "required_ingredients": [
+      "paneer",
+      "green peas"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "onion",
+      "garam masala",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "onion",
+      "garam masala",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "paneer-curry",
+    "dish_family": "paneer-curry",
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "4b529cc8-757e-5ef6-b3fc-839149b57ecf",
+    "sourceId": "mathri-snack",
+    "title": "Mathri",
+    "description": "Mathri is a home-style dinner idea made with wheat and methi. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep wheat and methi so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Mathri with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "methi",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Wheat",
+    "primary_ingredient_2": "Methi",
+    "primaryIngredient1": "Wheat",
+    "primaryIngredient2": "Methi",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Mathri",
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "methi"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "methi"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "methi"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "methi"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "wheat flour",
+    "dish_family": "wheat flour",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "0166c0c5-a7fd-57a6-8eba-fb7e19aae86f",
+    "sourceId": "methi-paratha-breakfast",
+    "title": "Methi Paratha",
+    "description": "Methi Paratha is a home-style morning idea made with wheat and methi. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paratha.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep wheat and methi so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Methi Paratha with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "methi",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Wheat",
+    "primary_ingredient_2": "Methi",
+    "primaryIngredient1": "Wheat",
+    "primaryIngredient2": "Methi",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Methi Paratha",
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "methi"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "methi"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "methi"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "methi"
+    ],
+    "optionalIngredients": [
+      "spices",
+      "ghee",
+      "green chilli",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "spices",
+      "ghee",
+      "green chilli",
+      "coriander"
+    ],
+    "dishFamily": "paratha",
+    "dish_family": "paratha",
+    "incompatibleWith": [],
+    "incompatible_with": []
   },
   {
     "id": "0df0850f-c591-5911-aace-f845faa5d056",
@@ -10662,6 +11142,10726 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "homeStyleScore": 4,
     "rainyDayScore": 8,
     "primaryMood": "Spicy Food",
-    "secondaryMood": "Rainy Day"
+    "secondaryMood": "Rainy Day",
+    "isRealDish": true,
+    "name": "Mirapakaya Bajji",
+    "baseIngredient": "green chilli",
+    "base_ingredient": "green chilli",
+    "coreIngredients": [
+      "green chilli",
+      "besan"
+    ],
+    "core_ingredients": [
+      "green chilli",
+      "besan"
+    ],
+    "requiredIngredients": [
+      "green chilli",
+      "besan"
+    ],
+    "required_ingredients": [
+      "green chilli",
+      "besan"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "curry leaves",
+      "garlic",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "green chilli",
+    "dish_family": "green chilli",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [],
+    "moodExcludes": [
+      "protein"
+    ]
+  },
+  {
+    "id": "0c52bf5a-8421-596d-98db-64e24c330eb4",
+    "sourceId": "mirchi-bajji",
+    "title": "Mirchi Bajji",
+    "description": "Mirchi Bajji is a home-style snack-time idea made with green chilli, besan, and ajwain. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 8,
+    "cookTimeMinutes": 17,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/mirchi-bajji.png",
+    "tags": [
+      "snack",
+      "south-indian",
+      "vegetarian",
+      "rainy-day",
+      "late-night-food"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 9,
+    "proteinScore": 6,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep green chilli, besan, and ajwain so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Mirchi Bajji with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Green Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Besan",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Ajwain",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Oil",
+        "quantity": 1,
+        "unit": "g",
+        "role": "cooking-fat",
+        "isMain": false
+      },
+      {
+        "name": "Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Green Chilli",
+    "primary_ingredient_2": "Besan",
+    "primaryIngredient1": "Green Chilli",
+    "primaryIngredient2": "Besan",
+    "secondary_ingredient_1": "Ajwain",
+    "secondaryIngredient1": "Ajwain",
+    "secondary_ingredient_2": "Oil",
+    "secondaryIngredient2": "Oil",
+    "secondary_ingredient_3": "Chilli",
+    "secondaryIngredient3": "Chilli",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "",
+    "mealType": "Snacks",
+    "meal_type": "Snacks",
+    "timeMinutes": 25,
+    "primaryIngredients": [
+      "Green Chilli",
+      "Besan"
+    ],
+    "mergedSourceIds": [
+      "mirchi-bajji",
+      "mirchi-bajji-snack"
+    ],
+    "isRealDish": true,
+    "name": "Mirchi Bajji",
+    "baseIngredient": "green chilli",
+    "base_ingredient": "green chilli",
+    "coreIngredients": [
+      "green chilli",
+      "besan"
+    ],
+    "core_ingredients": [
+      "green chilli",
+      "besan"
+    ],
+    "requiredIngredients": [
+      "green chilli",
+      "besan"
+    ],
+    "required_ingredients": [
+      "green chilli",
+      "besan"
+    ],
+    "optionalIngredients": [
+      "ajwain",
+      "oil",
+      "chilli",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "ajwain",
+      "oil",
+      "chilli",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "green chilli",
+    "dish_family": "green chilli",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [],
+    "moodExcludes": [
+      "protein"
+    ]
+  },
+  {
+    "id": "19b617b4-fc04-56db-9b49-98a14128cb4b",
+    "sourceId": "mirchi-ka-salan",
+    "title": "Mirchi Ka Salan",
+    "description": "Mirchi Ka Salan is a home-style midday idea made with green chilli, peanut, sesame, and tamarind. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "hyderabadi",
+      "spicy-food",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 3,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep green chilli, peanut, sesame, and tamarind so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Mirchi Ka Salan with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Green Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Peanut",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Sesame",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Tamarind",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Green Chilli",
+    "primary_ingredient_2": "Peanut",
+    "primaryIngredient1": "Green Chilli",
+    "primaryIngredient2": "Peanut",
+    "secondary_ingredient_1": "Sesame",
+    "secondaryIngredient1": "Sesame",
+    "secondary_ingredient_2": "Tamarind",
+    "secondaryIngredient2": "Tamarind",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Spicy Food",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Mirchi Ka Salan",
+    "baseIngredient": "green chilli",
+    "base_ingredient": "green chilli",
+    "coreIngredients": [
+      "green chilli",
+      "peanuts"
+    ],
+    "core_ingredients": [
+      "green chilli",
+      "peanuts"
+    ],
+    "requiredIngredients": [
+      "green chilli",
+      "peanuts"
+    ],
+    "required_ingredients": [
+      "green chilli",
+      "peanuts"
+    ],
+    "optionalIngredients": [
+      "sesame",
+      "tamarind",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "sesame",
+      "tamarind",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "green chilli",
+    "dish_family": "green chilli",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "7157654a-9e2f-5004-87aa-7f0d0f8a2ad3",
+    "sourceId": "modak-festival",
+    "title": "Modak",
+    "description": "Modak is a home-style dinner idea made with rice flour and coconut. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "festival",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep rice flour and coconut so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Modak with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice Flour",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Rice Flour",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Ghee",
+    "secondaryIngredient1": "Ghee",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 7,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Modak",
+    "baseIngredient": "rice flour",
+    "base_ingredient": "rice flour",
+    "coreIngredients": [
+      "rice flour",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "rice flour",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "rice flour",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "rice flour",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "ghee",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "ghee",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice flour",
+    "dish_family": "rice flour",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "bd5c342a-6ad3-51c3-a11e-26954541829f",
+    "sourceId": "momos-breakfast",
+    "title": "Momos",
+    "description": "Momos is a home-style morning idea made with wheat and vegetables. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/breakfast-default.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep wheat and vegetables so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Momos with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cabbage",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "supporting",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Wheat",
+    "primary_ingredient_2": "Carrot",
+    "primaryIngredient1": "Wheat",
+    "primaryIngredient2": "Carrot",
+    "secondary_ingredient_1": "Cabbage",
+    "secondaryIngredient1": "Cabbage",
+    "secondary_ingredient_2": "Onion",
+    "secondaryIngredient2": "Onion",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 5,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Momos",
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "carrot"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "carrot"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "carrot"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "carrot"
+    ],
+    "optionalIngredients": [
+      "cabbage",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "cabbage",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "wheat flour",
+    "dish_family": "wheat flour",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-mushroom-omelette",
+    "sourceId": "pantry-mushroom-omelette",
+    "title": "Mushroom Omelette",
+    "name": "Mushroom Omelette",
+    "description": "Mushroom Omelette is a familiar home-style dish made around egg and mushroom. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "pantry",
+      "protein",
+      "quick"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep egg and mushroom before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Mushroom Omelette warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mushroom",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "egg",
+    "primary_ingredient_2": "mushroom",
+    "primaryIngredient1": "egg",
+    "primaryIngredient2": "mushroom",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "pepper",
+    "secondaryIngredient2": "pepper",
+    "secondary_ingredient_3": "oil",
+    "secondaryIngredient3": "oil",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "egg",
+    "base_ingredient": "egg",
+    "coreIngredients": [
+      "egg",
+      "mushroom"
+    ],
+    "core_ingredients": [
+      "egg",
+      "mushroom"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "mushroom"
+    ],
+    "required_ingredients": [
+      "egg",
+      "mushroom"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "pepper",
+      "oil",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "pepper",
+      "oil",
+      "coriander"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "omelette",
+    "dish_family": "omelette",
+    "isRealDish": true
+  },
+  {
+    "id": "c101d168-caa7-5a38-988b-3643bac39e49",
+    "sourceId": "mushroom-soup-dinner",
+    "title": "Mushroom Soup",
+    "description": "Mushroom Soup is a home-style dinner idea made with mushroom and onion. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/soup-bowls.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "rainy-day"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 5,
+    "energyScore": 3,
+    "instructions": [
+      "Prep mushroom and onion so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Mushroom Soup with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "mushroom",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Mushroom",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Mushroom",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Black Pepper",
+    "secondaryIngredient1": "Black Pepper",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 9,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Mushroom Soup",
+    "baseIngredient": "mushroom",
+    "base_ingredient": "mushroom",
+    "coreIngredients": [
+      "mushroom",
+      "onion"
+    ],
+    "core_ingredients": [
+      "mushroom",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "mushroom",
+      "onion"
+    ],
+    "required_ingredients": [
+      "mushroom",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "black pepper",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "black pepper",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "mushroom",
+    "dish_family": "mushroom",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "c1f3c945-38fd-5b3f-beef-291ca5a9a91e",
+    "sourceId": "nattu-kozhi-curry",
+    "title": "Nattu Kozhi Curry",
+    "description": "Nattu Kozhi Curry is a home-style midday idea made with country chicken, black pepper, shallots, and curry leaves. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 60,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "south-indian",
+      "tamil-nadu",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 3,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 8,
+    "instructions": [
+      "Prep country chicken, black pepper, shallots, and curry leaves so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Nattu Kozhi Curry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Country Chicken",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Shallots",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Country Chicken",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Country Chicken",
+    "secondary_ingredient_1": "Shallots",
+    "secondaryIngredient1": "Shallots",
+    "secondary_ingredient_2": "Black Pepper",
+    "secondaryIngredient2": "Black Pepper",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Nattu Kozhi Curry",
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "country chicken"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "country chicken"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "country chicken"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "country chicken"
+    ],
+    "optionalIngredients": [
+      "black pepper",
+      "shallots",
+      "curry leaves",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "black pepper",
+      "shallots",
+      "curry leaves",
+      "onion",
+      "tomato",
+      "garlic",
+      "ginger",
+      "oil"
+    ],
+    "dishFamily": "chicken",
+    "dish_family": "chicken",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "0bb6464d-9e2a-5f40-92c4-3c10dd5d1af3",
+    "sourceId": "oats-porridge-dinner",
+    "title": "Oats Porridge",
+    "description": "Oats Porridge is a home-style dinner idea made with oats and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/oats-porridge-homestyle.png",
+    "tags": [
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep oats and milk so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Oats Porridge with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "oats",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Oats",
+    "primary_ingredient_2": "Milk",
+    "primaryIngredient1": "Oats",
+    "primaryIngredient2": "Milk",
+    "secondary_ingredient_1": "Banana",
+    "secondaryIngredient1": "Banana",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "isRealDish": true,
+    "name": "Oats Porridge",
+    "baseIngredient": "oats",
+    "base_ingredient": "oats",
+    "coreIngredients": [
+      "oats",
+      "milk"
+    ],
+    "core_ingredients": [
+      "oats",
+      "milk"
+    ],
+    "requiredIngredients": [
+      "oats",
+      "milk"
+    ],
+    "required_ingredients": [
+      "oats",
+      "milk"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "oats",
+    "dish_family": "oats",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-onion-dosa",
+    "sourceId": "pantry-onion-dosa",
+    "title": "Onion Dosa",
+    "name": "Onion Dosa",
+    "description": "Onion Dosa is a familiar home-style dish made around dosa batter and onion. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry",
+      "south-indian",
+      "dosa"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep dosa batter and onion before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Onion Dosa warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "dosa batter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "dosa batter",
+    "primary_ingredient_2": "onion",
+    "primaryIngredient1": "dosa batter",
+    "primaryIngredient2": "onion",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "coriander",
+    "secondaryIngredient2": "coriander",
+    "secondary_ingredient_3": "oil",
+    "secondaryIngredient3": "oil",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "dosa batter",
+    "base_ingredient": "dosa batter",
+    "coreIngredients": [
+      "dosa batter",
+      "onion"
+    ],
+    "core_ingredients": [
+      "dosa batter",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "dosa batter",
+      "onion"
+    ],
+    "required_ingredients": [
+      "dosa batter",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "coriander",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "coriander",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [
+      "spicy"
+    ]
+  },
+  {
+    "id": "pantry-onion-paratha",
+    "sourceId": "pantry-onion-paratha",
+    "title": "Onion Paratha",
+    "description": "Whole wheat paratha stuffed with onion, spices, and a little ghee.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 28,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paratha.png",
+    "tags": [
+      "quick",
+      "comfort",
+      "pantry",
+      "breakfast",
+      "vegetarian",
+      "wheat",
+      "paratha",
+      "onion"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep the core ingredients for Onion Paratha.",
+      "Cook the aromatics and seasonings until fragrant.",
+      "Add the main ingredients and cook until the flavours come together.",
+      "Serve warm with a simple side."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "spices",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "wheat flour",
+    "primaryIngredient1": "wheat flour",
+    "primary_ingredient_2": "onion",
+    "primaryIngredient2": "onion",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "coriander",
+    "secondaryIngredient2": "coriander",
+    "secondary_ingredient_3": "ghee",
+    "secondaryIngredient3": "ghee",
+    "secondary_ingredient_4": "spices",
+    "secondaryIngredient4": "spices",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "onion"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "onion"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "coriander",
+      "ghee",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "coriander",
+      "ghee",
+      "spices"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "paratha",
+    "dish_family": "paratha",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Quick & Easy",
+    "isRealDish": true,
+    "name": "Onion Paratha"
+  },
+  {
+    "id": "pantry-onion-rice",
+    "sourceId": "pantry-onion-rice",
+    "title": "Onion Rice",
+    "name": "Onion Rice",
+    "description": "Onion Rice is a familiar home-style dish made around rice and onion. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "pantry",
+      "rice",
+      "quick"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep rice and onion before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Onion Rice warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primary_ingredient_2": "onion",
+    "primaryIngredient1": "rice",
+    "primaryIngredient2": "onion",
+    "secondary_ingredient_1": "cumin",
+    "secondaryIngredient1": "cumin",
+    "secondary_ingredient_2": "curry leaves",
+    "secondaryIngredient2": "curry leaves",
+    "secondary_ingredient_3": "green chilli",
+    "secondaryIngredient3": "green chilli",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "onion"
+    ],
+    "core_ingredients": [
+      "rice",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "onion"
+    ],
+    "required_ingredients": [
+      "rice",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "cumin",
+      "curry leaves",
+      "green chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "cumin",
+      "curry leaves",
+      "green chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "isRealDish": true
+  },
+  {
+    "id": "pantry-onion-uttapam",
+    "sourceId": "pantry-onion-uttapam",
+    "title": "Onion Uttapam",
+    "name": "Onion Uttapam",
+    "description": "Onion Uttapam is a familiar home-style dish made around idli batter and onion. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry",
+      "south-indian"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep idli batter and onion before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Onion Uttapam warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "idli batter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "idli batter",
+    "primary_ingredient_2": "onion",
+    "primaryIngredient1": "idli batter",
+    "primaryIngredient2": "onion",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "coriander",
+    "secondaryIngredient2": "coriander",
+    "secondary_ingredient_3": "oil",
+    "secondaryIngredient3": "oil",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "idli batter",
+    "base_ingredient": "idli batter",
+    "coreIngredients": [
+      "idli batter",
+      "onion"
+    ],
+    "core_ingredients": [
+      "idli batter",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "idli batter",
+      "onion"
+    ],
+    "required_ingredients": [
+      "idli batter",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "coriander",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "coriander",
+      "oil"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "uttapam",
+    "dish_family": "uttapam",
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort"
+    ],
+    "moodExcludes": [
+      "soul",
+      "spicy"
+    ]
+  },
+  {
+    "id": "f69050ba-0a8a-5c1c-b796-28d28b5ef434",
+    "sourceId": "pakora-snack",
+    "title": "Pakora",
+    "description": "Pakora is a home-style dinner idea made with besan and potato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/pakora.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "rainy-day"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep besan and potato so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Pakora with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Besan",
+    "primary_ingredient_2": "Potato",
+    "primaryIngredient1": "Besan",
+    "primaryIngredient2": "Potato",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "proteinScore": 6,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 5,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Pakora",
+    "baseIngredient": "besan",
+    "base_ingredient": "besan",
+    "coreIngredients": [
+      "besan",
+      "potato"
+    ],
+    "core_ingredients": [
+      "besan",
+      "potato"
+    ],
+    "requiredIngredients": [
+      "besan",
+      "potato"
+    ],
+    "required_ingredients": [
+      "besan",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "besan",
+    "dish_family": "besan",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [],
+    "moodExcludes": [
+      "protein"
+    ]
+  },
+  {
+    "id": "3d2cf73e-481d-5561-9873-4420c5c4c895",
+    "sourceId": "palak-paneer-lunch",
+    "title": "Palak Paneer",
+    "description": "Palak Paneer is a home-style midday idea made with palak and paneer. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paneer-curry.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep palak and paneer so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Palak Paneer with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "palak",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "paneer",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Palak",
+    "primary_ingredient_2": "Paneer",
+    "primaryIngredient1": "Palak",
+    "primaryIngredient2": "Paneer",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Palak Paneer",
+    "baseIngredient": "paneer",
+    "base_ingredient": "paneer",
+    "coreIngredients": [
+      "paneer",
+      "spinach"
+    ],
+    "core_ingredients": [
+      "paneer",
+      "spinach"
+    ],
+    "requiredIngredients": [
+      "paneer",
+      "spinach"
+    ],
+    "required_ingredients": [
+      "paneer",
+      "spinach"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "paneer-curry",
+    "dish_family": "paneer-curry",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "7ef194cc-8faa-52e2-9b27-19ea7f708a25",
+    "sourceId": "paneer-bhurji-dinner",
+    "title": "Paneer Bhurji",
+    "description": "Paneer Bhurji is a quick home-style dish made with crumbled paneer, onion, tomato, and gentle spices. It works well when you want something filling without a heavy curry. Serve it with roti, toast, or a simple rice bowl.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paneer-curry.png",
+    "tags": [
+      "dinner",
+      "vegetarian",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 5,
+    "energyScore": 3,
+    "instructions": [
+      "Prep egg and onion so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Paneer Bhurji with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "paneer",
+        "quantity": 200,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Paneer",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Paneer",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 3,
+    "primaryMood": "High Protein",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Paneer Bhurji",
+    "baseIngredient": "paneer",
+    "base_ingredient": "paneer",
+    "coreIngredients": [
+      "paneer",
+      "onion"
+    ],
+    "core_ingredients": [
+      "paneer",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "paneer",
+      "onion"
+    ],
+    "required_ingredients": [
+      "paneer",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "green chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "green chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "paneer-curry",
+    "dish_family": "paneer-curry",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "pantry-paneer-dosa",
+    "sourceId": "pantry-paneer-dosa",
+    "title": "Paneer Dosa",
+    "name": "Paneer Dosa",
+    "description": "Paneer Dosa is a familiar home-style dish made around dosa batter and paneer. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry",
+      "south-indian",
+      "dosa",
+      "protein"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 8,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep dosa batter and paneer before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Paneer Dosa warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "dosa batter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "paneer",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "capsicum",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "dosa batter",
+    "primary_ingredient_2": "paneer",
+    "primaryIngredient1": "dosa batter",
+    "primaryIngredient2": "paneer",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "capsicum",
+    "secondaryIngredient2": "capsicum",
+    "secondary_ingredient_3": "green chilli",
+    "secondaryIngredient3": "green chilli",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "dosa batter",
+    "base_ingredient": "dosa batter",
+    "coreIngredients": [
+      "dosa batter",
+      "paneer"
+    ],
+    "core_ingredients": [
+      "dosa batter",
+      "paneer"
+    ],
+    "requiredIngredients": [
+      "dosa batter",
+      "paneer"
+    ],
+    "required_ingredients": [
+      "dosa batter",
+      "paneer"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "capsicum",
+      "green chilli",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "capsicum",
+      "green chilli",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "protein"
+    ],
+    "moodExcludes": [
+      "soul",
+      "spicy"
+    ]
+  },
+  {
+    "id": "pantry-paneer-fried-rice",
+    "sourceId": "pantry-paneer-fried-rice",
+    "title": "Paneer Fried Rice",
+    "description": "Quick fried rice with paneer, onion, garlic, and a light Indo-Chinese finish.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 28,
+    "servings": 2,
+    "cuisine": "Indo-Chinese / Asian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/pulao.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "rice",
+      "pantry",
+      "paneer",
+      "fried rice",
+      "indo-chinese",
+      "protein"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Keep cooked rice ready before starting Paneer Fried Rice.",
+      "Saute the aromatics until soft and fragrant.",
+      "Add the core ingredients, rice, and seasoning, then toss until everything is coated.",
+      "Serve warm with curd, pickle, or a simple side."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "paneer",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primary_ingredient_2": "paneer",
+    "primaryIngredient1": "rice",
+    "primaryIngredient2": "paneer",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "soy sauce",
+    "secondaryIngredient3": "soy sauce",
+    "secondary_ingredient_4": "spring onion",
+    "secondaryIngredient4": "spring onion",
+    "secondary_ingredient_5": "oil",
+    "secondaryIngredient5": "oil",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "paneer"
+    ],
+    "core_ingredients": [
+      "rice",
+      "paneer"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "paneer"
+    ],
+    "required_ingredients": [
+      "rice",
+      "paneer"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "garlic",
+      "soy sauce",
+      "spring onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "soy sauce",
+      "spring onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fried-rice",
+    "dish_family": "fried-rice",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "proteinScore": 7,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Paneer Fried Rice"
+  },
+  {
+    "id": "33f0c885-d196-52a0-a0fc-83b135bab1f0",
+    "sourceId": "paneer-pakora-snack",
+    "title": "Paneer Pakora",
+    "description": "Paneer Pakora is a home-style dinner idea made with paneer and besan. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/pakora.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "rainy-day"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 3,
+    "instructions": [
+      "Prep paneer and besan so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Paneer Pakora with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "paneer",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Paneer",
+    "primary_ingredient_2": "Besan",
+    "primaryIngredient1": "Paneer",
+    "primaryIngredient2": "Besan",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 5,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Paneer Pakora",
+    "baseIngredient": "paneer",
+    "base_ingredient": "paneer",
+    "coreIngredients": [
+      "paneer",
+      "besan"
+    ],
+    "core_ingredients": [
+      "paneer",
+      "besan"
+    ],
+    "requiredIngredients": [
+      "paneer",
+      "besan"
+    ],
+    "required_ingredients": [
+      "paneer",
+      "besan"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "paneer-curry",
+    "dish_family": "paneer-curry",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [],
+    "moodExcludes": [
+      "protein"
+    ]
+  },
+  {
+    "id": "5f7465e8-6818-5d67-b192-4ae22346f1e7",
+    "sourceId": "paneer-paratha-breakfast",
+    "title": "Paneer Paratha",
+    "description": "Paneer Paratha is a home-style morning idea made with wheat and potato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/paratha.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 6,
+    "instructions": [
+      "Prep wheat and potato so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Paneer Paratha with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "paneer",
+        "quantity": 0.5,
+        "unit": "g",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Wheat",
+    "primary_ingredient_2": "Paneer",
+    "primaryIngredient1": "Wheat",
+    "primaryIngredient2": "Paneer",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Potato",
+    "secondaryIngredient2": "Potato",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 9,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "paneer"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "paneer"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "paneer"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "paneer"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "spices",
+      "ghee",
+      "green chilli",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "spices",
+      "ghee",
+      "green chilli",
+      "coriander"
+    ],
+    "incompatibleWith": [
+      "rice"
+    ],
+    "incompatible_with": [
+      "rice"
+    ],
+    "dishFamily": "paratha",
+    "dish_family": "paratha",
+    "isRealDish": true,
+    "name": "Paneer Paratha",
+    "moodIncludes": [
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "pantry-paneer-pulao",
+    "sourceId": "pantry-paneer-pulao",
+    "title": "Paneer Pulao",
+    "description": "A simple paneer rice pulao with soft spices and everyday pantry aromatics.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 28,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/pulao.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "rice",
+      "pantry",
+      "paneer",
+      "pulao",
+      "protein"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Keep cooked rice ready before starting Paneer Pulao.",
+      "Saute the aromatics until soft and fragrant.",
+      "Add the core ingredients, rice, and seasoning, then toss until everything is coated.",
+      "Serve warm with curd, pickle, or a simple side."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "paneer",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "peas",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "whole spices",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primary_ingredient_2": "paneer",
+    "primaryIngredient1": "rice",
+    "primaryIngredient2": "paneer",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "peas",
+    "secondaryIngredient2": "peas",
+    "secondary_ingredient_3": "whole spices",
+    "secondaryIngredient3": "whole spices",
+    "secondary_ingredient_4": "ghee",
+    "secondaryIngredient4": "ghee",
+    "secondary_ingredient_5": "coriander",
+    "secondaryIngredient5": "coriander",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "paneer"
+    ],
+    "core_ingredients": [
+      "rice",
+      "paneer"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "paneer"
+    ],
+    "required_ingredients": [
+      "rice",
+      "paneer"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "green peas",
+      "whole spices",
+      "ghee",
+      "coriander",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "green peas",
+      "whole spices",
+      "ghee",
+      "coriander",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "proteinScore": 7,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Paneer Pulao"
+  },
+  {
+    "id": "f93e862f-6ef9-5068-ad4e-4528409c0a83",
+    "sourceId": "paneer-sandwich",
+    "title": "Paneer Sandwich",
+    "description": "Paneer Sandwich is a quick home-style idea made with Bread and Paneer. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 10,
+    "timeMinutes": 15,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paneer-sandwich.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "quick",
+      "high-protein"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 5,
+    "energyScore": 7,
+    "instructions": [
+      "Prep Bread and Paneer so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Paneer Sandwich with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Bread",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Paneer",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Butter",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Tomato",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Bread",
+    "primary_ingredient_2": "Paneer",
+    "primaryIngredient1": "Bread",
+    "primaryIngredient2": "Paneer",
+    "secondary_ingredient_1": "Butter",
+    "secondaryIngredient1": "Butter",
+    "secondary_ingredient_2": "Black Pepper",
+    "secondaryIngredient2": "Black Pepper",
+    "secondary_ingredient_3": "Tomato",
+    "secondaryIngredient3": "Tomato",
+    "secondary_ingredient_4": "Onion",
+    "secondaryIngredient4": "Onion",
+    "secondary_ingredient_5": "Coriander",
+    "secondaryIngredient5": "Coriander",
+    "primaryIngredients": [
+      "Bread",
+      "Paneer"
+    ],
+    "proteinScore": 8,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 5,
+    "rainyDayScore": 3,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Paneer Sandwich",
+    "baseIngredient": "bread",
+    "base_ingredient": "bread",
+    "coreIngredients": [
+      "bread",
+      "paneer"
+    ],
+    "core_ingredients": [
+      "bread",
+      "paneer"
+    ],
+    "requiredIngredients": [
+      "bread",
+      "paneer"
+    ],
+    "required_ingredients": [
+      "bread",
+      "paneer"
+    ],
+    "optionalIngredients": [
+      "butter",
+      "black pepper",
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "black pepper",
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "bread",
+    "dish_family": "bread",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "bf541c47-19b4-5df7-a4cd-a69138c42d49",
+    "sourceId": "paneer-tikka-snack",
+    "title": "Paneer Tikka",
+    "description": "Paneer Tikka is a home-style dinner idea made with paneer and curd. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paneer-curry.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": true,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep paneer and curd so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Paneer Tikka with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "paneer",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Paneer",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Paneer",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 5,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Paneer Tikka",
+    "baseIngredient": "paneer",
+    "base_ingredient": "paneer",
+    "coreIngredients": [
+      "paneer",
+      "curd"
+    ],
+    "core_ingredients": [
+      "paneer",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "paneer",
+      "curd"
+    ],
+    "required_ingredients": [
+      "paneer",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "paneer-curry",
+    "dish_family": "paneer-curry",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "283fb5a2-8774-5aca-b3f2-30d64579bc2f",
+    "sourceId": "paneer-tikka-masala",
+    "title": "Paneer Tikka Masala",
+    "description": "Paneer Tikka Masala is a home-style midday idea made with paneer, capsicum, tomato, and garam masala. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paneer-curry.png",
+    "tags": [
+      "lunch",
+      "north-indian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 8,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep paneer, capsicum, tomato, and garam masala so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Paneer Tikka Masala with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Paneer",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Capsicum",
+        "quantity": 1,
+        "unit": "g",
+        "role": "supporting",
+        "isMain": true
+      },
+      {
+        "name": "Tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Garam Masala",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Paneer",
+    "primary_ingredient_2": "Tomato",
+    "primaryIngredient1": "Paneer",
+    "primaryIngredient2": "Tomato",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Garam Masala",
+    "secondaryIngredient2": "Garam Masala",
+    "secondary_ingredient_3": "Capsicum",
+    "secondaryIngredient3": "Capsicum",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Paneer Tikka Masala",
+    "baseIngredient": "paneer",
+    "base_ingredient": "paneer",
+    "coreIngredients": [
+      "paneer",
+      "tomato"
+    ],
+    "core_ingredients": [
+      "paneer",
+      "tomato"
+    ],
+    "requiredIngredients": [
+      "paneer",
+      "tomato"
+    ],
+    "required_ingredients": [
+      "paneer",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "capsicum",
+      "garam masala",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "capsicum",
+      "garam masala",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "paneer-curry",
+    "dish_family": "paneer-curry",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-peanut-rice",
+    "sourceId": "pantry-peanut-rice",
+    "title": "Peanut Rice",
+    "name": "Peanut Rice",
+    "description": "Peanut Rice is a familiar home-style dish made around rice and peanuts. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "pantry",
+      "rice",
+      "south-indian",
+      "quick"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep rice and peanuts before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Peanut Rice warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanuts",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "red chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primary_ingredient_2": "peanuts",
+    "primaryIngredient1": "rice",
+    "primaryIngredient2": "peanuts",
+    "secondary_ingredient_1": "curry leaves",
+    "secondaryIngredient1": "curry leaves",
+    "secondary_ingredient_2": "mustard seeds",
+    "secondaryIngredient2": "mustard seeds",
+    "secondary_ingredient_3": "red chilli",
+    "secondaryIngredient3": "red chilli",
+    "secondary_ingredient_4": "sesame oil",
+    "secondaryIngredient4": "sesame oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "peanuts"
+    ],
+    "core_ingredients": [
+      "rice",
+      "peanuts"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "peanuts"
+    ],
+    "required_ingredients": [
+      "rice",
+      "peanuts"
+    ],
+    "optionalIngredients": [
+      "curry leaves",
+      "mustard seeds",
+      "red chilli",
+      "sesame oil",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "curry leaves",
+      "mustard seeds",
+      "red chilli",
+      "sesame oil",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "isRealDish": true
+  },
+  {
+    "id": "ea3245b2-2eb8-57e2-ac7e-a317d9302cf4",
+    "sourceId": "peanut-sundal",
+    "title": "Peanut Sundal",
+    "description": "Peanut Sundal is a quick home-style idea made with Peanut and Coconut. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 15,
+    "timeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/peanut-sundal.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "quick",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "instructions": [
+      "Prep Peanut and Coconut so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Peanut Sundal with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Peanut",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Coconut",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Peanut",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Peanut",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Curry Leaves",
+    "secondaryIngredient1": "Curry Leaves",
+    "secondary_ingredient_2": "Mustard Seeds",
+    "secondaryIngredient2": "Mustard Seeds",
+    "secondary_ingredient_3": "Onion",
+    "secondaryIngredient3": "Onion",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Coriander",
+    "secondaryIngredient5": "Coriander",
+    "primaryIngredients": [
+      "Peanut",
+      "Coconut"
+    ],
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Peanut Sundal",
+    "baseIngredient": "peanuts",
+    "base_ingredient": "peanuts",
+    "coreIngredients": [
+      "peanuts",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "peanuts",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "peanuts",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "peanuts",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "curry leaves",
+      "mustard seeds",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "curry leaves",
+      "mustard seeds",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "peanuts",
+    "dish_family": "peanuts",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "cad7fd64-a18a-547e-ba7b-c19e96e0aaa0",
+    "sourceId": "pepper-rasam",
+    "title": "Pepper Rasam",
+    "description": "Pepper Rasam is a home-style midday idea made with black pepper, tamarind, tomato, and cumin. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 8,
+    "cookTimeMinutes": 17,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "south-indian",
+      "tamil-nadu",
+      "rainy-day",
+      "spicy-food"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 10,
+    "energyScore": 3,
+    "emotionalState": "sick_day, peaceful",
+    "soulFoodScore": 10,
+    "rainyDayScore": 9,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "stomachFeel": "light",
+    "bestTime": "dinner",
+    "bestDay": "rainy_day",
+    "tomoLine": "🍅 Pepper rasam feels like a warm reset.",
+    "homeStyleScore": 6,
+    "instructions": [
+      "Prep black pepper, tamarind, tomato, and cumin so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Pepper Rasam with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Black Pepper",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Tamarind",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "supporting",
+        "isMain": true
+      },
+      {
+        "name": "Cumin",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Black Pepper",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Black Pepper",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "Spicy Food",
+    "isRealDish": true,
+    "name": "Pepper Rasam",
+    "baseIngredient": "black pepper",
+    "base_ingredient": "black pepper",
+    "coreIngredients": [
+      "black pepper",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "black pepper",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "black pepper",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "black pepper",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "cumin",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "cumin",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "black pepper",
+    "dish_family": "black pepper",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "a10586fc-5b70-5fe7-b1d8-f475a36186fb",
+    "sourceId": "pitha-festival",
+    "title": "Pitha",
+    "description": "Pitha is a home-style dinner idea made with rice flour and maida. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "festival",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep rice flour and maida so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Pitha with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "maida",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice Flour",
+    "primary_ingredient_2": "Maida",
+    "primaryIngredient1": "Rice Flour",
+    "primaryIngredient2": "Maida",
+    "secondary_ingredient_1": "Milk",
+    "secondaryIngredient1": "Milk",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Pitha",
+    "baseIngredient": "rice flour",
+    "base_ingredient": "rice flour",
+    "coreIngredients": [
+      "rice flour",
+      "maida"
+    ],
+    "core_ingredients": [
+      "rice flour",
+      "maida"
+    ],
+    "requiredIngredients": [
+      "rice flour",
+      "maida"
+    ],
+    "required_ingredients": [
+      "rice flour",
+      "maida"
+    ],
+    "optionalIngredients": [
+      "milk",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "milk",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice flour",
+    "dish_family": "rice flour",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-plain-chapati",
+    "sourceId": "pantry-plain-chapati",
+    "title": "Plain Chapati",
+    "description": "Soft everyday chapati made with wheat flour and a little oil.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 28,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/chapati-dal.png",
+    "tags": [
+      "quick",
+      "comfort",
+      "pantry",
+      "dinner",
+      "vegetarian",
+      "wheat",
+      "chapati"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep the core ingredients for Plain Chapati.",
+      "Cook the aromatics and seasonings until fragrant.",
+      "Add the main ingredients and cook until the flavours come together.",
+      "Serve warm with a simple side."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "wheat flour",
+    "primaryIngredient1": "wheat flour",
+    "primary_ingredient_2": null,
+    "primaryIngredient2": null,
+    "secondary_ingredient_1": "oil",
+    "secondaryIngredient1": "oil",
+    "secondary_ingredient_2": "salt",
+    "secondaryIngredient2": "salt",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour"
+    ],
+    "core_ingredients": [
+      "wheat flour"
+    ],
+    "requiredIngredients": [
+      "wheat flour"
+    ],
+    "required_ingredients": [
+      "wheat flour"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chapati",
+    "dish_family": "chapati",
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Quick & Easy",
+    "isRealDish": true,
+    "name": "Plain Chapati"
+  },
+  {
+    "id": "dda25733-7b18-5e90-8f11-1f5fcb415e12",
+    "sourceId": "plum-cake-festival",
+    "title": "Plum Cake",
+    "description": "Plum Cake is a home-style dinner idea made with maida and dry fruits. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "festival",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": true,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep maida and dry fruits so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Plum Cake with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "maida",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "dry fruits",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Maida",
+    "primary_ingredient_2": "Dry Fruits",
+    "primaryIngredient1": "Maida",
+    "primaryIngredient2": "Dry Fruits",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Plum Cake",
+    "baseIngredient": "maida",
+    "base_ingredient": "maida",
+    "coreIngredients": [
+      "maida",
+      "dry fruits"
+    ],
+    "core_ingredients": [
+      "maida",
+      "dry fruits"
+    ],
+    "requiredIngredients": [
+      "maida",
+      "dry fruits"
+    ],
+    "required_ingredients": [
+      "maida",
+      "dry fruits"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "maida",
+    "dish_family": "maida",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "bc627d5d-b17d-5625-bb55-77ee49ba8b6c",
+    "sourceId": "poha-breakfast",
+    "title": "Poha",
+    "description": "Poha is a home-style morning idea made with poha and peanut. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/poha.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "soul-food"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 5,
+    "energyScore": 3,
+    "instructions": [
+      "Prep poha and peanut so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Poha with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "poha",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanut",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Poha",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Poha",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Peanut",
+    "secondaryIngredient1": "Peanut",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Soul Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Poha",
+    "baseIngredient": "poha",
+    "base_ingredient": "poha",
+    "coreIngredients": [
+      "poha",
+      "onion"
+    ],
+    "core_ingredients": [
+      "poha",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "poha",
+      "onion"
+    ],
+    "required_ingredients": [
+      "poha",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "peanuts",
+      "mustard seeds",
+      "curry leaves",
+      "green chilli",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "peanuts",
+      "mustard seeds",
+      "curry leaves",
+      "green chilli",
+      "oil"
+    ],
+    "dishFamily": "poha",
+    "dish_family": "poha",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "09545ae4-464d-59fb-ba43-ce8f08242e9e",
+    "sourceId": "pongal-breakfast",
+    "title": "Pongal",
+    "description": "Pongal is a home-style morning idea made with rice and moong dal. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/pongal.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "one-pot",
+      "comfort",
+      "rainy-day"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep rice and moong dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Pongal with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "moong dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Moong Dal",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Moong Dal",
+    "secondary_ingredient_1": "Ghee",
+    "secondaryIngredient1": "Ghee",
+    "secondary_ingredient_2": "Black Pepper",
+    "secondaryIngredient2": "Black Pepper",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 9,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Rainy Day",
+    "baseIngredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "moong dal"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "moong dal"
+    ],
+    "optionalIngredients": [
+      "pepper",
+      "cumin",
+      "ghee",
+      "cashew",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [
+      "paneer"
+    ],
+    "dishFamily": "rice-dal",
+    "base_ingredient": "rice",
+    "core_ingredients": [
+      "rice",
+      "moong dal"
+    ],
+    "required_ingredients": [
+      "rice",
+      "moong dal"
+    ],
+    "optional_ingredients": [
+      "pepper",
+      "cumin",
+      "ghee",
+      "cashew",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatible_with": [
+      "paneer"
+    ],
+    "dish_family": "rice-dal",
+    "isRealDish": true,
+    "name": "Pongal"
+  },
+  {
+    "id": "41f02fad-1353-5963-9a98-d90ad65c9225",
+    "sourceId": "pork-curry-dinner",
+    "title": "Pork Curry",
+    "description": "Pork Curry is a home-style dinner idea made with pork and onion. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 6,
+    "instructions": [
+      "Prep pork and onion so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Pork Curry with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "pork",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Pork",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Pork",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Red Chilli",
+    "secondaryIngredient1": "Red Chilli",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Pork Curry",
+    "baseIngredient": "pork",
+    "base_ingredient": "pork",
+    "coreIngredients": [
+      "pork",
+      "onion"
+    ],
+    "core_ingredients": [
+      "pork",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "pork",
+      "onion"
+    ],
+    "required_ingredients": [
+      "pork",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "pork",
+    "dish_family": "pork",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "57797f61-0e93-5d43-ba49-b4c9150eda62",
+    "sourceId": "prawn-ghee-roast",
+    "title": "Prawn Ghee Roast",
+    "description": "Prawn Ghee Roast is a home-style midday idea made with prawn, ghee, byadgi chilli, and tamarind. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "south-indian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 8,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep prawn, ghee, byadgi chilli, and tamarind so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Prawn Ghee Roast with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Prawn",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Byadgi Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Tamarind",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Prawn",
+    "primary_ingredient_2": "Ghee",
+    "primaryIngredient1": "Prawn",
+    "primaryIngredient2": "Ghee",
+    "secondary_ingredient_1": "Red Chilli",
+    "secondaryIngredient1": "Red Chilli",
+    "secondary_ingredient_2": "Byadgi Chilli",
+    "secondaryIngredient2": "Byadgi Chilli",
+    "secondary_ingredient_3": "Tamarind",
+    "secondaryIngredient3": "Tamarind",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Prawn Ghee Roast",
+    "baseIngredient": "prawn",
+    "base_ingredient": "prawn",
+    "coreIngredients": [
+      "prawn",
+      "ghee"
+    ],
+    "core_ingredients": [
+      "prawn",
+      "ghee"
+    ],
+    "requiredIngredients": [
+      "prawn",
+      "ghee"
+    ],
+    "required_ingredients": [
+      "prawn",
+      "ghee"
+    ],
+    "optionalIngredients": [
+      "byadgi chilli",
+      "tamarind",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "byadgi chilli",
+      "tamarind",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "prawn",
+    "dish_family": "prawn",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-puliyogare",
+    "sourceId": "pantry-puliyogare",
+    "title": "Puliyogare",
+    "description": "Tangy tamarind rice with peanuts, curry leaves, and warm South Indian seasoning.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 28,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lemon-rice.png",
+    "tags": [
+      "quick",
+      "comfort",
+      "pantry",
+      "lunch",
+      "vegetarian",
+      "rice",
+      "tamarind",
+      "south-indian"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep the core ingredients for Puliyogare.",
+      "Cook the aromatics and seasonings until fragrant.",
+      "Add the main ingredients and cook until the flavours come together.",
+      "Serve warm with a simple side."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanut",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primaryIngredient1": "rice",
+    "primary_ingredient_2": "tamarind",
+    "primaryIngredient2": "tamarind",
+    "secondary_ingredient_1": "peanut",
+    "secondaryIngredient1": "peanut",
+    "secondary_ingredient_2": "curry leaves",
+    "secondaryIngredient2": "curry leaves",
+    "secondary_ingredient_3": "mustard seeds",
+    "secondaryIngredient3": "mustard seeds",
+    "secondary_ingredient_4": "sesame oil",
+    "secondaryIngredient4": "sesame oil",
+    "secondary_ingredient_5": "chilli",
+    "secondaryIngredient5": "chilli",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "rice",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "rice",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "peanuts",
+      "curry leaves",
+      "mustard seeds",
+      "sesame oil",
+      "chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "peanuts",
+      "curry leaves",
+      "mustard seeds",
+      "sesame oil",
+      "chilli",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Quick & Easy",
+    "isRealDish": true,
+    "name": "Puliyogare"
+  },
+  {
+    "id": "974c262e-52b1-5d70-a869-62f93ac4e320",
+    "sourceId": "ragi-porridge-breakfast",
+    "title": "Ragi Porridge",
+    "description": "Ragi Porridge is a home-style morning idea made with ragi and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/ragi-porridge-homestyle.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep ragi and milk so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Ragi Porridge with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "ragi",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Ragi",
+    "primary_ingredient_2": "Milk",
+    "primaryIngredient1": "Ragi",
+    "primaryIngredient2": "Milk",
+    "secondary_ingredient_1": "Jaggery",
+    "secondaryIngredient1": "Jaggery",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "isRealDish": true,
+    "name": "Ragi Porridge",
+    "baseIngredient": "ragi",
+    "base_ingredient": "ragi",
+    "coreIngredients": [
+      "ragi",
+      "milk"
+    ],
+    "core_ingredients": [
+      "ragi",
+      "milk"
+    ],
+    "requiredIngredients": [
+      "ragi",
+      "milk"
+    ],
+    "required_ingredients": [
+      "ragi",
+      "milk"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "ragi",
+    "dish_family": "ragi",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "efb9c9bb-b83a-5251-ba2e-3918409559cf",
+    "sourceId": "rajma-chawal-lunch",
+    "title": "Rajma Chawal",
+    "description": "Rajma Chawal is a home-style midday idea made with rajma and rice. It is filling enough to anchor the meal while still feeling simple and practical. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/rajma-chawal.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "non-vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep rajma and rice so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Rajma Chawal with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rajma",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rajma",
+    "primary_ingredient_2": "Rice",
+    "primaryIngredient1": "Rajma",
+    "primaryIngredient2": "Rice",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 7,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Rajma Chawal",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rajma",
+      "rice"
+    ],
+    "core_ingredients": [
+      "rajma",
+      "rice"
+    ],
+    "requiredIngredients": [
+      "rajma",
+      "rice"
+    ],
+    "required_ingredients": [
+      "rajma",
+      "rice"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "96675ee8-fc7e-59f2-9a93-aca530803829",
+    "sourceId": "rasam-rice-lunch",
+    "title": "Rasam Rice",
+    "description": "Rasam Rice is a home-style midday idea made with rice and tomato. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/rasam-rice.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep rice and tomato so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Rasam Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 0.5,
+        "unit": "g",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Black Pepper",
+    "secondaryIngredient2": "Black Pepper",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 9,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "isRealDish": true,
+    "name": "Rasam Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "rice",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "rice",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-dal",
+    "dish_family": "rice-dal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "1265459d-2eb0-5ef5-9a96-8b339a118ed1",
+    "sourceId": "rice-cakes-snack",
+    "title": "Rice Cakes",
+    "description": "Rice Cakes is a home-style dinner idea made with rice and sesame oil. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "snacks",
+      "non-vegetarian",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep rice and sesame oil so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Rice Cakes with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "sesame oil",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "sesame oil",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "proteinScore": 2,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Rice Cakes",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "sesame oil"
+    ],
+    "core_ingredients": [
+      "rice",
+      "sesame oil"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "sesame oil"
+    ],
+    "required_ingredients": [
+      "rice",
+      "sesame oil"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "e8936611-d4a4-509c-808f-2dea85fb4619",
+    "sourceId": "rice-porridge-breakfast",
+    "title": "Rice Porridge",
+    "description": "Rice Porridge is a home-style morning idea made with rice and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/breakfast-default.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep rice and milk so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Rice Porridge with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Milk",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Milk",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "isRealDish": true,
+    "name": "Rice Porridge",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "milk"
+    ],
+    "core_ingredients": [
+      "rice",
+      "milk"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "milk"
+    ],
+    "required_ingredients": [
+      "rice",
+      "milk"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "e2ffa180-4fa7-5da9-b1e0-2d0fc89240a2",
+    "sourceId": "sabudana-khichdi-festival",
+    "title": "Sabudana Khichdi",
+    "description": "Sabudana Khichdi is a home-style dinner idea made with rice and moong dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/khichdi.png",
+    "tags": [
+      "festival",
+      "vegetarian",
+      "one-pot",
+      "rainy-day",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep rice and moong dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Sabudana Khichdi with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "moong dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sabudana",
+        "quantity": 0.5,
+        "unit": "g",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Sabudana",
+    "primary_ingredient_2": "Peanut",
+    "primaryIngredient1": "Sabudana",
+    "primaryIngredient2": "Peanut",
+    "secondary_ingredient_1": "Curry Leaves",
+    "secondaryIngredient1": "Curry Leaves",
+    "secondary_ingredient_2": "rice",
+    "secondaryIngredient2": "rice",
+    "secondary_ingredient_3": "moong dal",
+    "secondaryIngredient3": "moong dal",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Sabudana Khichdi",
+    "baseIngredient": "sabudana",
+    "base_ingredient": "sabudana",
+    "coreIngredients": [
+      "sabudana",
+      "peanuts"
+    ],
+    "core_ingredients": [
+      "sabudana",
+      "peanuts"
+    ],
+    "requiredIngredients": [
+      "sabudana",
+      "peanuts"
+    ],
+    "required_ingredients": [
+      "sabudana",
+      "peanuts"
+    ],
+    "optionalIngredients": [
+      "rice",
+      "moong dal",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "rice",
+      "moong dal",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-dal",
+    "dish_family": "rice-dal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "5b502a16-ead4-5ace-a8d2-953b8654d77e",
+    "sourceId": "sambar-rice-lunch",
+    "title": "Sambar Rice",
+    "description": "Sambar Rice is a home-style midday idea made with rice and toor dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/sambar-rice.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "comfort",
+      "rainy-day"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep rice and toor dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Sambar Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "toor dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "drumstick",
+        "quantity": 0.5,
+        "unit": "g",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Toor Dal",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Toor Dal",
+    "secondary_ingredient_1": "Vegetables",
+    "secondaryIngredient1": "Vegetables",
+    "secondary_ingredient_2": "Drumstick",
+    "secondaryIngredient2": "Drumstick",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 6,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Rainy Day",
+    "isRealDish": true,
+    "name": "Sambar Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "toor dal"
+    ],
+    "core_ingredients": [
+      "rice",
+      "toor dal"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "toor dal"
+    ],
+    "required_ingredients": [
+      "rice",
+      "toor dal"
+    ],
+    "optionalIngredients": [
+      "drumstick",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "drumstick",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-dal",
+    "dish_family": "rice-dal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "9bbe62ed-ca4c-54c8-a30b-901c1af0479a",
+    "sourceId": "samosa-snack",
+    "title": "Samosa",
+    "description": "Samosa is a home-style dinner idea made with potato and wheat. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/samosa.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep potato and wheat so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Samosa with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "wheat",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Potato",
+    "primary_ingredient_2": "Wheat",
+    "primaryIngredient1": "Potato",
+    "primaryIngredient2": "Wheat",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 3,
+    "homeStyleScore": 5,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Samosa",
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "potato",
+      "wheat flour"
+    ],
+    "core_ingredients": [
+      "potato",
+      "wheat flour"
+    ],
+    "requiredIngredients": [
+      "potato",
+      "wheat flour"
+    ],
+    "required_ingredients": [
+      "potato",
+      "wheat flour"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "wheat flour",
+    "dish_family": "wheat flour",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "5d2a1179-d7b8-5cff-9399-a25ca21cafe6",
+    "sourceId": "schezwan-fried-rice",
+    "title": "Schezwan Fried Rice",
+    "description": "Schezwan Fried Rice is a home-style midday idea made with rice, schezwan sauce, spring onion, and capsicum. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 8,
+    "cookTimeMinutes": 17,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "north-indian",
+      "spicy-food",
+      "comfort"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 4,
+    "proteinScore": 2,
+    "nostalgiaScore": 3,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 5,
+    "instructions": [
+      "Prep rice, schezwan sauce, spring onion, and capsicum so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Schezwan Fried Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Schezwan Sauce",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Spring Onion",
+        "quantity": 1,
+        "unit": "g",
+        "role": "supporting",
+        "isMain": true
+      },
+      {
+        "name": "Capsicum",
+        "quantity": 1,
+        "unit": "g",
+        "role": "supporting",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Schezwan Sauce",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Schezwan Sauce",
+    "secondary_ingredient_1": "Vegetables",
+    "secondaryIngredient1": "Vegetables",
+    "secondary_ingredient_2": "Spring Onion",
+    "secondaryIngredient2": "Spring Onion",
+    "secondary_ingredient_3": "Capsicum",
+    "secondaryIngredient3": "Capsicum",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Spicy Food",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Schezwan Fried Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "schezwan sauce"
+    ],
+    "core_ingredients": [
+      "rice",
+      "schezwan sauce"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "schezwan sauce"
+    ],
+    "required_ingredients": [
+      "rice",
+      "schezwan sauce"
+    ],
+    "optionalIngredients": [
+      "spring onion",
+      "capsicum",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "spring onion",
+      "capsicum",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "fried-rice",
+    "dish_family": "fried-rice",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "08f2865a-8ff3-50b2-8f0e-086b3f4b3a36",
+    "sourceId": "smoked-pork-rice-lunch",
+    "title": "Smoked Pork Rice",
+    "description": "Smoked Pork Rice is a home-style midday idea made with pork and rice. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "tags": [
+      "lunch",
+      "non-vegetarian",
+      "high-protein",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 6,
+    "instructions": [
+      "Prep pork and rice so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Smoked Pork Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "pork",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Pork",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Pork",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 6,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Smoked Pork Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "pork"
+    ],
+    "core_ingredients": [
+      "rice",
+      "pork"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "pork"
+    ],
+    "required_ingredients": [
+      "rice",
+      "pork"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "4fc03733-2d70-58c9-8e40-3376e0291cac",
+    "sourceId": "soft-idli-breakfast",
+    "title": "Soft Idli",
+    "description": "Soft Idli is a home-style morning idea made with idli rice and urad dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/idli.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep idli rice and urad dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Soft Idli with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "id": "idli-rice",
+        "name": "Idli Rice",
+        "isMain": true,
+        "matchWeight": 1,
+        "role": "required"
+      },
+      {
+        "id": "urad-dal",
+        "name": "Urad Dal",
+        "isMain": true,
+        "matchWeight": 1,
+        "role": "required"
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Idli Rice",
+    "primary_ingredient_2": "Urad Dal",
+    "primaryIngredient1": "Idli Rice",
+    "primaryIngredient2": "Urad Dal",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "primaryIngredients": [
+      "Idli Rice",
+      "Urad Dal"
+    ],
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "secondaryIngredients": [],
+    "isRealDish": true,
+    "name": "Soft Idli",
+    "baseIngredient": "idli batter",
+    "base_ingredient": "idli batter",
+    "coreIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "core_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "requiredIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "required_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "ghee",
+      "curry leaves",
+      "chutney"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "ghee",
+      "curry leaves",
+      "chutney"
+    ],
+    "dishFamily": "idli",
+    "dish_family": "idli",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "9927a138-c633-543e-94b4-927f1c75e5f7",
+    "sourceId": "spicy-aloo-paratha",
+    "title": "Spicy Aloo Paratha",
+    "description": "Spicy Aloo Paratha is a home-style morning idea made with wheat flour, potato, green chilli, and ghee. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/aloo-paratha.png",
+    "tags": [
+      "breakfast",
+      "north-indian",
+      "soul-food",
+      "spicy-food"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 10,
+    "energyScore": 5,
+    "emotionalState": "family_time, relaxed",
+    "soulFoodScore": 9,
+    "rainyDayScore": 3,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "stomachFeel": "filling",
+    "bestTime": "breakfast",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Feels like an aloo paratha kind of morning 😄",
+    "homeStyleScore": 9,
+    "instructions": [
+      "Prep wheat flour, potato, green chilli, and ghee so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Spicy Aloo Paratha with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "Wheat Flour",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Potato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Green Chilli",
+        "quantity": 1,
+        "unit": "g",
+        "role": "flavor-base",
+        "isMain": true
+      },
+      {
+        "name": "Ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "flavor-base",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Wheat",
+    "primary_ingredient_2": "Potato",
+    "primaryIngredient1": "Wheat",
+    "primaryIngredient2": "Potato",
+    "secondary_ingredient_1": "Red Chilli",
+    "secondaryIngredient1": "Red Chilli",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Ghee",
+    "secondaryIngredient3": "Ghee",
+    "secondary_ingredient_4": "Wheat Flour",
+    "secondaryIngredient4": "Wheat Flour",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Soul Food",
+    "secondaryMood": "Spicy Food",
+    "coreIngredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "ghee",
+      "spices",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "ghee",
+      "spices",
+      "coriander"
+    ],
+    "baseIngredient": "wheat flour",
+    "requiredIngredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "incompatibleWith": [
+      "rice",
+      "urad dal"
+    ],
+    "dishFamily": "paratha",
+    "base_ingredient": "wheat flour",
+    "required_ingredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "incompatible_with": [
+      "rice",
+      "urad dal"
+    ],
+    "dish_family": "paratha",
+    "isRealDish": true,
+    "name": "Spicy Aloo Paratha",
+    "moodIncludes": [],
+    "moodExcludes": [
+      "soul"
+    ]
+  },
+  {
+    "id": "5d7a89df-4ba0-521f-bf52-519540ac1cc6",
+    "sourceId": "spicy-masala-dosa",
+    "title": "Spicy Masala Dosa",
+    "description": "Spicy Masala Dosa is a home-style morning idea made with dosa batter, potato, green chilli, and onion. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dosa.png",
+    "tags": [
+      "breakfast",
+      "south-indian",
+      "comfort",
+      "soul-food"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "emotionalState": "comfort_craving",
+    "soulFoodScore": 7,
+    "rainyDayScore": 3,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "stomachFeel": "medium",
+    "bestTime": "dinner",
+    "bestDay": "weekend",
+    "tomoLine": "🍅 Something comforting sounds right today.",
+    "homeStyleScore": 9,
+    "instructions": [
+      "Prep dosa batter, potato, green chilli, and onion so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Spicy Masala Dosa with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "id": "dosa-rice",
+        "name": "Dosa Rice",
+        "isMain": true,
+        "matchWeight": 1,
+        "role": "required"
+      },
+      {
+        "id": "urad-dal",
+        "name": "Urad Dal",
+        "isMain": true,
+        "matchWeight": 1,
+        "role": "required"
+      },
+      {
+        "id": "potato",
+        "name": "Potato",
+        "isMain": false,
+        "matchWeight": 0.8,
+        "role": "filling"
+      },
+      {
+        "id": "green-chilli",
+        "name": "Green Chilli",
+        "isMain": false,
+        "matchWeight": 0.5,
+        "role": "flavor-base"
+      },
+      {
+        "id": "onion",
+        "name": "Onion",
+        "isMain": false,
+        "matchWeight": 0.5,
+        "role": "supporting"
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Dosa Rice",
+    "primary_ingredient_2": "Urad Dal",
+    "primaryIngredient1": "Dosa Rice",
+    "primaryIngredient2": "Urad Dal",
+    "secondary_ingredient_1": "Potato",
+    "secondaryIngredient1": "Potato",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Onion",
+    "secondaryIngredient3": "Onion",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "primaryIngredients": [
+      "Dosa Rice",
+      "Urad Dal"
+    ],
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "secondaryIngredients": [
+      "Potato",
+      "Green Chilli",
+      "Onion"
+    ],
+    "isRealDish": true,
+    "name": "Spicy Masala Dosa",
+    "baseIngredient": "dosa batter",
+    "base_ingredient": "dosa batter",
+    "coreIngredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "core_ingredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "requiredIngredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "required_ingredients": [
+      "dosa rice",
+      "urad dal"
+    ],
+    "optionalIngredients": [
+      "potato",
+      "green chilli",
+      "onion",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "optional_ingredients": [
+      "potato",
+      "green chilli",
+      "onion",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [],
+    "moodExcludes": [
+      "soul"
+    ]
+  },
+  {
+    "id": "188f3314-71f4-5eba-8b4d-51bd1083084b",
+    "sourceId": "sticky-rice-breakfast",
+    "title": "Sticky Rice",
+    "description": "Sticky Rice is a home-style morning idea made with rice and sesame oil. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/breakfast-default.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep rice and sesame oil so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Sticky Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "sesame oil",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "sesame oil",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Sticky Rice",
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "sesame oil"
+    ],
+    "core_ingredients": [
+      "rice",
+      "sesame oil"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "sesame oil"
+    ],
+    "required_ingredients": [
+      "rice",
+      "sesame oil"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "rice-meal",
+    "dish_family": "rice-meal",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "3bc2b280-cc5c-5f34-8725-54f5f6b077d5",
+    "sourceId": "stuffed-paratha-breakfast",
+    "title": "Stuffed Paratha",
+    "description": "Stuffed Paratha is a home-style morning idea made with wheat and potato. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paratha.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep wheat and potato so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Stuffed Paratha with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Wheat",
+    "primary_ingredient_2": "Potato",
+    "primaryIngredient1": "Wheat",
+    "primaryIngredient2": "Potato",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Stuffed Paratha",
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "spices",
+      "ghee",
+      "green chilli",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "spices",
+      "ghee",
+      "green chilli",
+      "coriander"
+    ],
+    "dishFamily": "paratha",
+    "dish_family": "paratha",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "fce23586-b793-5b67-b338-2e4e50970865",
+    "sourceId": "sundal-snack",
+    "title": "Sundal",
+    "description": "Sundal is a home-style dinner idea made with chana and coconut. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "comfort",
+      "high-protein"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep chana and coconut so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Sundal with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "chana",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chana",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Chana",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 7,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "isRealDish": true,
+    "name": "Sundal",
+    "baseIngredient": "chana",
+    "base_ingredient": "chana",
+    "coreIngredients": [
+      "chana",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "chana",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "chana",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "chana",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "chana",
+    "dish_family": "chana",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "5680a04f-284b-5bc1-a0b4-27b967733aa7",
+    "sourceId": "sweet-pongal-festival",
+    "title": "Sweet Pongal",
+    "description": "Sweet Pongal is a home-style dinner idea made with rice and moong dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/pongal.png",
+    "tags": [
+      "festival",
+      "vegetarian",
+      "one-pot",
+      "rainy-day",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "instructions": [
+      "Prep rice and moong dal so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Sweet Pongal with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "moong dal",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Moong Dal",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Moong Dal",
+    "secondary_ingredient_1": "Ghee",
+    "secondaryIngredient1": "Ghee",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "Comfort Food",
+    "baseIngredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "moong dal"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "moong dal"
+    ],
+    "optionalIngredients": [
+      "jaggery",
+      "ghee",
+      "cashew",
+      "cardamom",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatibleWith": [
+      "paneer"
+    ],
+    "dishFamily": "rice-dal",
+    "base_ingredient": "rice",
+    "core_ingredients": [
+      "rice",
+      "moong dal"
+    ],
+    "required_ingredients": [
+      "rice",
+      "moong dal"
+    ],
+    "optional_ingredients": [
+      "jaggery",
+      "ghee",
+      "cashew",
+      "cardamom",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "incompatible_with": [
+      "paneer"
+    ],
+    "dish_family": "rice-dal",
+    "isRealDish": true,
+    "name": "Sweet Pongal"
+  },
+  {
+    "id": "01818ce1-148c-5292-9d27-41c4e3bddf43",
+    "sourceId": "thukpa-breakfast",
+    "title": "Thukpa",
+    "description": "Thukpa is a home-style morning idea made with noodles and vegetables. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/breakfast-default.png",
+    "tags": [
+      "non-vegetarian",
+      "comfort",
+      "lunch",
+      "dinner",
+      "soul-food"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "instructions": [
+      "Prep noodles and vegetables so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Thukpa with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "noodles",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cabbage",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "supporting",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Noodles",
+    "primary_ingredient_2": "Carrot",
+    "primaryIngredient1": "Noodles",
+    "primaryIngredient2": "Carrot",
+    "secondary_ingredient_1": "Cabbage",
+    "secondaryIngredient1": "Cabbage",
+    "secondary_ingredient_2": "Onion",
+    "secondaryIngredient2": "Onion",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 6,
+    "rainyDayScore": 9,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "isRealDish": true,
+    "name": "Thukpa",
+    "baseIngredient": "noodles",
+    "base_ingredient": "noodles",
+    "coreIngredients": [
+      "noodles",
+      "carrot"
+    ],
+    "core_ingredients": [
+      "noodles",
+      "carrot"
+    ],
+    "requiredIngredients": [
+      "noodles",
+      "carrot"
+    ],
+    "required_ingredients": [
+      "noodles",
+      "carrot"
+    ],
+    "optionalIngredients": [
+      "cabbage",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "cabbage",
+      "onion",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "noodles",
+    "dish_family": "noodles",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "moodIncludes": [
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [
+      "rainy"
+    ],
+    "mealType": "lunch,dinner",
+    "meal_type": "lunch,dinner"
+  },
+  {
+    "id": "828e35bc-cde3-52fb-9b6f-f8a24bf4b892",
+    "sourceId": "tomato-rice",
+    "title": "Tomato Rice",
+    "description": "Tomato Rice is a quick home-style idea made with Rice and Tomato. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 15,
+    "timeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/tomato-rice.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "quick",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep Rice and Tomato so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Tomato Rice with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Tomato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Curry Leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Peanut",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Tomato",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Tomato",
+    "secondary_ingredient_1": "Curry Leaves",
+    "secondaryIngredient1": "Curry Leaves",
+    "secondary_ingredient_2": "Mustard Seeds",
+    "secondaryIngredient2": "Mustard Seeds",
+    "secondary_ingredient_3": "Peanut",
+    "secondaryIngredient3": "Peanut",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Coriander",
+    "secondaryIngredient5": "Coriander",
+    "primaryIngredients": [
+      "Rice",
+      "Tomato"
+    ],
+    "proteinScore": 2,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "coreIngredients": [
+      "rice",
+      "tomato"
+    ],
+    "core_ingredients": [
+      "rice",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "curry leaves",
+      "mustard seeds",
+      "peanuts",
+      "oil",
+      "coriander",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "curry leaves",
+      "mustard seeds",
+      "peanuts",
+      "oil",
+      "coriander",
+      "salt",
+      "spices"
+    ],
+    "baseIngredient": "rice",
+    "requiredIngredients": [
+      "rice",
+      "tomato"
+    ],
+    "incompatibleWith": [],
+    "dishFamily": "rice-meal",
+    "base_ingredient": "rice",
+    "required_ingredients": [
+      "rice",
+      "tomato"
+    ],
+    "incompatible_with": [],
+    "dish_family": "rice-meal",
+    "isRealDish": true,
+    "name": "Tomato Rice"
+  },
+  {
+    "id": "pantry-tomato-uttapam",
+    "sourceId": "pantry-tomato-uttapam",
+    "title": "Tomato Uttapam",
+    "name": "Tomato Uttapam",
+    "description": "Tomato Uttapam is a familiar home-style dish made around idli batter and tomato. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry",
+      "south-indian"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep idli batter and tomato before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Tomato Uttapam warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "idli batter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "idli batter",
+    "primary_ingredient_2": "tomato",
+    "primaryIngredient1": "idli batter",
+    "primaryIngredient2": "tomato",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "green chilli",
+    "secondaryIngredient2": "green chilli",
+    "secondary_ingredient_3": "oil",
+    "secondaryIngredient3": "oil",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "idli batter",
+    "base_ingredient": "idli batter",
+    "coreIngredients": [
+      "idli batter",
+      "tomato"
+    ],
+    "core_ingredients": [
+      "idli batter",
+      "tomato"
+    ],
+    "requiredIngredients": [
+      "idli batter",
+      "tomato"
+    ],
+    "required_ingredients": [
+      "idli batter",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "green chilli",
+      "oil",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "green chilli",
+      "oil",
+      "coriander"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "uttapam",
+    "dish_family": "uttapam",
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort"
+    ],
+    "moodExcludes": [
+      "soul",
+      "spicy"
+    ]
+  },
+  {
+    "id": "8a029051-cabb-5dcb-a1fb-7cb3752ac18e",
+    "sourceId": "upma-breakfast",
+    "title": "Upma",
+    "description": "Upma is a home-style morning idea made with rava and vegetables. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/upma.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "soul-food"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 5,
+    "energyScore": 3,
+    "instructions": [
+      "Prep rava and vegetables so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Upma with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "rava",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "carrot",
+        "quantity": 0.5,
+        "unit": "pcs",
+        "role": "supporting",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 6,
+        "unit": "leaves",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rava",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Rava",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Carrot",
+    "secondaryIngredient1": "Carrot",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 2,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Soul Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Upma",
+    "baseIngredient": "rava",
+    "base_ingredient": "rava",
+    "coreIngredients": [
+      "rava",
+      "onion"
+    ],
+    "core_ingredients": [
+      "rava",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "rava"
+    ],
+    "required_ingredients": [
+      "rava"
+    ],
+    "optionalIngredients": [
+      "carrot",
+      "curry leaves",
+      "mustard seeds",
+      "green chilli",
+      "oil",
+      "onion",
+      "vegetable mix"
+    ],
+    "optional_ingredients": [
+      "carrot",
+      "curry leaves",
+      "mustard seeds",
+      "green chilli",
+      "oil",
+      "onion",
+      "vegetable mix"
+    ],
+    "dishFamily": "upma",
+    "dish_family": "upma",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "aliases": [
+      "Vegetable Upma",
+      "Vegetable Rava Upma"
+    ],
+    "moodIncludes": [
+      "soul",
+      "rainy"
+    ],
+    "moodExcludes": []
+  },
+  {
+    "id": "pantry-veg-fried-rice",
+    "sourceId": "pantry-veg-fried-rice",
+    "title": "Veg Fried Rice",
+    "description": "A quick fried rice built from cooked rice, onion, and crunchy pantry vegetables.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 28,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/pulao.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "rice",
+      "pantry",
+      "fried rice",
+      "indo-chinese",
+      "onion"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Keep cooked rice ready before starting Veg Fried Rice.",
+      "Saute the aromatics and pantry vegetables until they soften.",
+      "Add rice, spices, and salt, then toss until the flavours coat every grain.",
+      "Serve warm with curd, pickle, or a simple side."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primary_ingredient_2": "onion",
+    "primaryIngredient1": "rice",
+    "primaryIngredient2": "onion",
+    "secondary_ingredient_1": "garlic",
+    "secondaryIngredient1": "garlic",
+    "secondary_ingredient_2": "soy sauce",
+    "secondaryIngredient2": "soy sauce",
+    "secondary_ingredient_3": "carrot",
+    "secondaryIngredient3": "carrot",
+    "secondary_ingredient_4": "spring onion",
+    "secondaryIngredient4": "spring onion",
+    "secondary_ingredient_5": "oil",
+    "secondaryIngredient5": "oil",
+    "coreIngredients": [
+      "rice",
+      "onion"
+    ],
+    "core_ingredients": [
+      "rice",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "garlic",
+      "soy sauce",
+      "carrot",
+      "spring onion",
+      "oil",
+      "salt",
+      "spices",
+      "capsicum"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "soy sauce",
+      "carrot",
+      "spring onion",
+      "oil",
+      "salt",
+      "spices",
+      "capsicum"
+    ],
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Quick & Easy",
+    "baseIngredient": "rice",
+    "requiredIngredients": [
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "dishFamily": "fried-rice",
+    "base_ingredient": "rice",
+    "required_ingredients": [
+      "rice"
+    ],
+    "incompatible_with": [],
+    "dish_family": "fried-rice",
+    "isRealDish": true,
+    "name": "Veg Fried Rice",
+    "aliases": [
+      "Vegetable Fried Rice"
+    ],
+    "pantrySupportingIngredients": [
+      "capsicum"
+    ],
+    "pantry_supporting_ingredients": [
+      "capsicum"
+    ]
+  },
+  {
+    "id": "pantry-veg-pulao",
+    "sourceId": "pantry-veg-pulao",
+    "title": "Veg Pulao",
+    "description": "A simple rice pulao that works with potato, onion, and pantry vegetables.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 28,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/pulao.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "rice",
+      "pantry",
+      "pulao",
+      "potato"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Keep cooked rice ready before starting Veg Pulao.",
+      "Saute the aromatics and pantry vegetables until they soften.",
+      "Add rice, spices, and salt, then toss until the flavours coat every grain.",
+      "Serve warm with curd, pickle, or a simple side."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "peas",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "whole spices",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primary_ingredient_2": "potato",
+    "primaryIngredient1": "rice",
+    "primaryIngredient2": "potato",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "carrot",
+    "secondaryIngredient2": "carrot",
+    "secondary_ingredient_3": "peas",
+    "secondaryIngredient3": "peas",
+    "secondary_ingredient_4": "whole spices",
+    "secondaryIngredient4": "whole spices",
+    "secondary_ingredient_5": "ghee",
+    "secondaryIngredient5": "ghee",
+    "coreIngredients": [
+      "rice",
+      "potato"
+    ],
+    "core_ingredients": [
+      "rice",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "carrot",
+      "green peas",
+      "whole spices",
+      "ghee",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "carrot",
+      "green peas",
+      "whole spices",
+      "ghee",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Quick & Easy",
+    "baseIngredient": "rice",
+    "requiredIngredients": [
+      "rice",
+      "potato"
+    ],
+    "incompatibleWith": [],
+    "dishFamily": "rice-meal",
+    "base_ingredient": "rice",
+    "required_ingredients": [
+      "rice",
+      "potato"
+    ],
+    "incompatible_with": [],
+    "dish_family": "rice-meal",
+    "isRealDish": true,
+    "name": "Veg Pulao"
+  },
+  {
+    "id": "392e3ec0-23e5-5e10-b967-0a2088887a90",
+    "sourceId": "veg-sandwich",
+    "title": "Veg Sandwich",
+    "description": "Veg Sandwich is a quick home-style idea made with Bread and Vegetables. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 10,
+    "timeMinutes": 15,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/veg-sandwich.png",
+    "tags": [
+      "snacks",
+      "vegetarian",
+      "quick"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "instructions": [
+      "Prep Bread and Vegetables so the cooking stays smooth.",
+      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
+      "Cook until the flavours come together, then finish Veg Sandwich with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and satisfying."
+    ],
+    "ingredients": [
+      {
+        "name": "Bread",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Vegetables",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "Butter",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "Tomato",
+        "quantity": 1,
+        "unit": "small",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Bread",
+    "primary_ingredient_2": "Vegetables",
+    "primaryIngredient1": "Bread",
+    "primaryIngredient2": "Vegetables",
+    "secondary_ingredient_1": "Butter",
+    "secondaryIngredient1": "Butter",
+    "secondary_ingredient_2": "Black Pepper",
+    "secondaryIngredient2": "Black Pepper",
+    "secondary_ingredient_3": "Tomato",
+    "secondaryIngredient3": "Tomato",
+    "secondary_ingredient_4": "Onion",
+    "secondaryIngredient4": "Onion",
+    "secondary_ingredient_5": "Coriander",
+    "secondaryIngredient5": "Coriander",
+    "primaryIngredients": [
+      "Bread",
+      "Vegetables"
+    ],
+    "proteinScore": 2,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 5,
+    "rainyDayScore": 3,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Veg Sandwich",
+    "baseIngredient": "bread",
+    "base_ingredient": "bread",
+    "coreIngredients": [
+      "bread",
+      "vegetable mix"
+    ],
+    "core_ingredients": [
+      "bread",
+      "vegetable mix"
+    ],
+    "requiredIngredients": [
+      "bread",
+      "vegetable mix"
+    ],
+    "required_ingredients": [
+      "bread",
+      "vegetable mix"
+    ],
+    "optionalIngredients": [
+      "butter",
+      "black pepper",
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "black pepper",
+      "tomato",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "bread",
+    "dish_family": "bread",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "49fd478b-d305-5a27-9306-f7e99bfdae05",
+    "sourceId": "vegetable-puree-dinner",
+    "title": "Vegetable Puree",
+    "description": "Vegetable Puree is a home-style dinner idea made with carrot and milk. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "tags": [
+      "dinner",
+      "vegetarian",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep carrot and milk so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Vegetable Puree with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "g",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Carrot",
+    "primary_ingredient_2": "Milk",
+    "primaryIngredient1": "Carrot",
+    "primaryIngredient2": "Milk",
+    "secondary_ingredient_1": null,
+    "secondaryIngredient1": null,
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "",
+    "isRealDish": true,
+    "name": "Vegetable Puree",
+    "baseIngredient": "carrot",
+    "base_ingredient": "carrot",
+    "coreIngredients": [
+      "carrot",
+      "milk"
+    ],
+    "core_ingredients": [
+      "carrot",
+      "milk"
+    ],
+    "requiredIngredients": [
+      "carrot",
+      "milk"
+    ],
+    "required_ingredients": [
+      "carrot",
+      "milk"
+    ],
+    "optionalIngredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "carrot",
+    "dish_family": "carrot",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "389bdc96-0ee6-5f76-8a42-1332b896f1dd",
+    "sourceId": "vegetable-soup-dinner",
+    "title": "Vegetable Soup",
+    "description": "Vegetable Soup is a home-style dinner idea made with vegetables and onion. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/soup-bowls.png",
+    "tags": [
+      "dinner",
+      "vegetarian",
+      "rainy-day",
+      "comfort"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 3,
+    "instructions": [
+      "Prep vegetables and onion so everything is ready before the pan gets hot.",
+      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
+      "Cook gently until the flavours come together, then finish the Vegetable Soup with salt, heat, and texture adjusted to taste.",
+      "Serve warm while it still feels fresh and comforting."
+    ],
+    "ingredients": [
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Carrot",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Carrot",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Black Pepper",
+    "secondaryIngredient1": "Black Pepper",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 9,
+    "rainyDayScore": 9,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "Comfort Food",
+    "isRealDish": true,
+    "name": "Vegetable Soup",
+    "baseIngredient": "carrot",
+    "base_ingredient": "carrot",
+    "coreIngredients": [
+      "carrot",
+      "onion"
+    ],
+    "core_ingredients": [
+      "carrot",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "carrot",
+      "onion"
+    ],
+    "required_ingredients": [
+      "carrot",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "black pepper",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "optional_ingredients": [
+      "black pepper",
+      "oil",
+      "salt",
+      "spices"
+    ],
+    "dishFamily": "carrot",
+    "dish_family": "carrot",
+    "incompatibleWith": [],
+    "incompatible_with": []
+  },
+  {
+    "id": "pantry-vegetable-uttapam",
+    "sourceId": "pantry-vegetable-uttapam",
+    "title": "Vegetable Uttapam",
+    "name": "Vegetable Uttapam",
+    "description": "Vegetable Uttapam is a familiar home-style dish made around idli batter and vegetable mix. Tomo suggests it only when those key ingredients are actually in your pantry.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry",
+      "south-indian"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Comfort Food",
+    "instructions": [
+      "Prep idli batter and vegetable mix before starting.",
+      "Cook the base gently with the supporting ingredients.",
+      "Finish Vegetable Uttapam warm and adjust seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "idli batter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetable mix",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "capsicum",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "idli batter",
+    "primary_ingredient_2": "vegetable mix",
+    "primaryIngredient1": "idli batter",
+    "primaryIngredient2": "vegetable mix",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "carrot",
+    "secondaryIngredient2": "carrot",
+    "secondary_ingredient_3": "capsicum",
+    "secondaryIngredient3": "capsicum",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "idli batter",
+    "base_ingredient": "idli batter",
+    "coreIngredients": [
+      "idli batter",
+      "vegetable mix"
+    ],
+    "core_ingredients": [
+      "idli batter",
+      "vegetable mix"
+    ],
+    "requiredIngredients": [
+      "idli batter",
+      "vegetable mix"
+    ],
+    "required_ingredients": [
+      "idli batter",
+      "vegetable mix"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "carrot",
+      "capsicum",
+      "oil",
+      "green chilli",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "carrot",
+      "capsicum",
+      "oil",
+      "green chilli",
+      "coriander"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "uttapam",
+    "dish_family": "uttapam",
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort"
+    ],
+    "moodExcludes": [
+      "soul"
+    ]
+  },
+  {
+    "id": "pantry-wheat-dosa",
+    "sourceId": "pantry-wheat-dosa",
+    "title": "Wheat Dosa",
+    "description": "Quick wheat dosa made with wheat flour, water, and simple seasoning.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 28,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "tags": [
+      "quick",
+      "comfort",
+      "pantry",
+      "breakfast",
+      "vegetarian",
+      "wheat",
+      "dosa"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "instructions": [
+      "Prep the core ingredients for Wheat Dosa.",
+      "Cook the aromatics and seasonings until fragrant.",
+      "Add the main ingredients and cook until the flavours come together.",
+      "Serve warm with a simple side."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "flavor-base",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "wheat flour",
+    "primaryIngredient1": "wheat flour",
+    "primary_ingredient_2": null,
+    "primaryIngredient2": null,
+    "secondary_ingredient_1": "cumin",
+    "secondaryIngredient1": "cumin",
+    "secondary_ingredient_2": "onion",
+    "secondaryIngredient2": "onion",
+    "secondary_ingredient_3": "green chilli",
+    "secondaryIngredient3": "green chilli",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour"
+    ],
+    "core_ingredients": [
+      "wheat flour"
+    ],
+    "requiredIngredients": [
+      "wheat flour"
+    ],
+    "required_ingredients": [
+      "wheat flour"
+    ],
+    "optionalIngredients": [
+      "cumin",
+      "onion",
+      "green chilli",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "optional_ingredients": [
+      "cumin",
+      "onion",
+      "green chilli",
+      "oil",
+      "chutney",
+      "sambar"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "proteinScore": 3,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Quick & Easy",
+    "isRealDish": true,
+    "name": "Wheat Dosa"
+  },
+  {
+    "id": "57c763b2-cd03-598d-921b-e32299d39aba",
+    "sourceId": "approved-peas-pulao",
+    "title": "Peas Pulao",
+    "name": "Peas Pulao",
+    "aliases": [
+      "Matar Pulao",
+      "Green Peas Pulao"
+    ],
+    "description": "Peas Pulao is a recognized Indian pulao built around rice and green peas.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/pulao.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Cook the rice with green peas and mild whole spices. Keep the grains separate and avoid overcooking the peas.",
+    "instructions": [
+      "Prepare rice, green peas before cooking.",
+      "Cook the rice with green peas and mild whole spices. Keep the grains separate and avoid overcooking the peas.",
+      "Cook until the pulao has the expected texture and the core ingredients are fully done.",
+      "Serve Peas Pulao fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green peas",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "whole spices",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Green Peas",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Green Peas",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "cumin",
+    "secondaryIngredient2": "cumin",
+    "secondary_ingredient_3": "whole spices",
+    "secondaryIngredient3": "whole spices",
+    "secondary_ingredient_4": "ghee",
+    "secondaryIngredient4": "ghee",
+    "secondary_ingredient_5": "mint",
+    "secondaryIngredient5": "mint",
+    "primaryIngredients": [
+      "rice",
+      "green peas"
+    ],
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "green peas"
+    ],
+    "core_ingredients": [
+      "rice",
+      "green peas"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "green peas"
+    ],
+    "required_ingredients": [
+      "rice",
+      "green peas"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "cumin",
+      "whole spices",
+      "ghee",
+      "mint",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "cumin",
+      "whole spices",
+      "ghee",
+      "mint",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pulao",
+    "dish_family": "pulao",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "c4e3f6e6-082a-5fcb-84a7-ec7ea40b9d46",
+    "sourceId": "approved-mushroom-pulao",
+    "title": "Mushroom Pulao",
+    "name": "Mushroom Pulao",
+    "aliases": [
+      "Mushroom Rice",
+      "Mushroom Pilaf"
+    ],
+    "description": "Mushroom Pulao is a recognized Indian pulao built around rice and mushroom.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/pulao.png",
+    "tags": [
+      "lunch",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Brown the mushrooms first so they release excess moisture, then cook with rice and aromatic whole spices.",
+    "instructions": [
+      "Prepare rice, mushroom before cooking.",
+      "Brown the mushrooms first so they release excess moisture, then cook with rice and aromatic whole spices.",
+      "Cook until the pulao has the expected texture and the core ingredients are fully done.",
+      "Serve Mushroom Pulao fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mushroom",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green peas",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Mushroom",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Mushroom",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "green peas",
+    "secondaryIngredient3": "green peas",
+    "secondary_ingredient_4": "whole spices",
+    "secondaryIngredient4": "whole spices",
+    "secondary_ingredient_5": "ghee",
+    "secondaryIngredient5": "ghee",
+    "primaryIngredients": [
+      "rice",
+      "mushroom"
+    ],
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "mushroom"
+    ],
+    "core_ingredients": [
+      "rice",
+      "mushroom"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "mushroom"
+    ],
+    "required_ingredients": [
+      "rice",
+      "mushroom"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "garlic",
+      "green peas",
+      "whole spices",
+      "ghee",
+      "mint",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "green peas",
+      "whole spices",
+      "ghee",
+      "mint",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pulao",
+    "dish_family": "pulao",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "38e10f97-7ec1-5410-91a6-b937e8cfe228",
+    "sourceId": "approved-onion-omelette",
+    "title": "Onion Omelette",
+    "name": "Onion Omelette",
+    "aliases": [
+      "Onion Omelet",
+      "Pyaz Omelette"
+    ],
+    "description": "Onion Omelette is a recognized Indian omelette built around egg and onion.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 8,
+    "timeMinutes": 13,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/bread-omelette-homestyle.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Chop the onion finely so it softens while the egg sets. Cook until just firm to keep the omelette tender.",
+    "instructions": [
+      "Prepare egg, onion before cooking.",
+      "Chop the onion finely so it softens while the egg sets. Cook until just firm to keep the omelette tender.",
+      "Cook until the omelette has the expected texture and the core ingredients are fully done.",
+      "Serve Onion Omelette fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Egg",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Egg",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "coriander",
+    "secondaryIngredient2": "coriander",
+    "secondary_ingredient_3": "black pepper",
+    "secondaryIngredient3": "black pepper",
+    "secondary_ingredient_4": "turmeric",
+    "secondaryIngredient4": "turmeric",
+    "secondary_ingredient_5": "oil",
+    "secondaryIngredient5": "oil",
+    "primaryIngredients": [
+      "egg",
+      "onion"
+    ],
+    "baseIngredient": "egg",
+    "base_ingredient": "egg",
+    "coreIngredients": [
+      "egg",
+      "onion"
+    ],
+    "core_ingredients": [
+      "egg",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "onion"
+    ],
+    "required_ingredients": [
+      "egg",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "coriander",
+      "black pepper",
+      "turmeric",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "coriander",
+      "black pepper",
+      "turmeric",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "omelette",
+    "dish_family": "omelette",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "4d63e325-461e-52ce-b00a-ee70c37df3ec",
+    "sourceId": "approved-tomato-omelette",
+    "title": "Tomato Omelette",
+    "name": "Tomato Omelette",
+    "aliases": [
+      "Tomato Omelet"
+    ],
+    "description": "Tomato Omelette is a recognized Indian omelette built around egg and tomato.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 8,
+    "timeMinutes": 13,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/bread-omelette-homestyle.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Use deseeded, finely chopped tomato to prevent excess moisture, then cook the egg mixture until just set.",
+    "instructions": [
+      "Prepare egg, tomato before cooking.",
+      "Use deseeded, finely chopped tomato to prevent excess moisture, then cook the egg mixture until just set.",
+      "Cook until the omelette has the expected texture and the core ingredients are fully done.",
+      "Serve Tomato Omelette fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Egg",
+    "primary_ingredient_2": "Tomato",
+    "primaryIngredient1": "Egg",
+    "primaryIngredient2": "Tomato",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "green chilli",
+    "secondaryIngredient2": "green chilli",
+    "secondary_ingredient_3": "coriander",
+    "secondaryIngredient3": "coriander",
+    "secondary_ingredient_4": "black pepper",
+    "secondaryIngredient4": "black pepper",
+    "secondary_ingredient_5": "oil",
+    "secondaryIngredient5": "oil",
+    "primaryIngredients": [
+      "egg",
+      "tomato"
+    ],
+    "baseIngredient": "egg",
+    "base_ingredient": "egg",
+    "coreIngredients": [
+      "egg",
+      "tomato"
+    ],
+    "core_ingredients": [
+      "egg",
+      "tomato"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "tomato"
+    ],
+    "required_ingredients": [
+      "egg",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "green chilli",
+      "coriander",
+      "black pepper",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "green chilli",
+      "coriander",
+      "black pepper",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "omelette",
+    "dish_family": "omelette",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "76847d05-3c02-566e-9fbc-46a29ca6f8fb",
+    "sourceId": "approved-batata-poha",
+    "title": "Batata Poha",
+    "name": "Batata Poha",
+    "aliases": [
+      "Potato Poha",
+      "Aloo Poha"
+    ],
+    "description": "Batata Poha is a recognized Maharashtrian poha built around poha and potato.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/poha-homestyle.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Rinse the poha briefly. Cook small potato cubes until tender before folding in the poha, then finish with lemon.",
+    "instructions": [
+      "Prepare poha, potato before cooking.",
+      "Rinse the poha briefly. Cook small potato cubes until tender before folding in the poha, then finish with lemon.",
+      "Cook until the poha has the expected texture and the core ingredients are fully done.",
+      "Serve Batata Poha fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "poha",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "peanuts",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Poha",
+    "primary_ingredient_2": "Potato",
+    "primaryIngredient1": "Poha",
+    "primaryIngredient2": "Potato",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "peanuts",
+    "secondaryIngredient2": "peanuts",
+    "secondary_ingredient_3": "mustard seeds",
+    "secondaryIngredient3": "mustard seeds",
+    "secondary_ingredient_4": "turmeric",
+    "secondaryIngredient4": "turmeric",
+    "secondary_ingredient_5": "curry leaves",
+    "secondaryIngredient5": "curry leaves",
+    "primaryIngredients": [
+      "poha",
+      "potato"
+    ],
+    "baseIngredient": "poha",
+    "base_ingredient": "poha",
+    "coreIngredients": [
+      "poha",
+      "potato"
+    ],
+    "core_ingredients": [
+      "poha",
+      "potato"
+    ],
+    "requiredIngredients": [
+      "poha",
+      "potato"
+    ],
+    "required_ingredients": [
+      "poha",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "peanuts",
+      "mustard seeds",
+      "turmeric",
+      "curry leaves",
+      "green chilli",
+      "lemon",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "peanuts",
+      "mustard seeds",
+      "turmeric",
+      "curry leaves",
+      "green chilli",
+      "lemon",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "poha",
+    "dish_family": "poha",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "b8c0addf-df03-5bbc-9e9a-0dce8a092533",
+    "sourceId": "approved-paneer-mushroom-masala",
+    "title": "Paneer Mushroom Masala",
+    "name": "Paneer Mushroom Masala",
+    "aliases": [
+      "Mushroom Paneer Masala",
+      "Paneer Mushroom Curry"
+    ],
+    "description": "Paneer Mushroom Masala is a recognized North Indian paneer curry built around paneer and mushroom.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "North Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/paneer-curry.png",
+    "tags": [
+      "dinner",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Brown mushrooms separately to remove moisture, then finish the paneer and mushrooms in an onion-tomato masala.",
+    "instructions": [
+      "Prepare paneer, mushroom before cooking.",
+      "Brown mushrooms separately to remove moisture, then finish the paneer and mushrooms in an onion-tomato masala.",
+      "Cook until the paneer curry has the expected texture and the core ingredients are fully done.",
+      "Serve Paneer Mushroom Masala fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "paneer",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mushroom",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Paneer",
+    "primary_ingredient_2": "Mushroom",
+    "primaryIngredient1": "Paneer",
+    "primaryIngredient2": "Mushroom",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "tomato",
+    "secondaryIngredient2": "tomato",
+    "secondary_ingredient_3": "ginger",
+    "secondaryIngredient3": "ginger",
+    "secondary_ingredient_4": "garlic",
+    "secondaryIngredient4": "garlic",
+    "secondary_ingredient_5": "cream",
+    "secondaryIngredient5": "cream",
+    "primaryIngredients": [
+      "paneer",
+      "mushroom"
+    ],
+    "baseIngredient": "paneer",
+    "base_ingredient": "paneer",
+    "coreIngredients": [
+      "paneer",
+      "mushroom"
+    ],
+    "core_ingredients": [
+      "paneer",
+      "mushroom"
+    ],
+    "requiredIngredients": [
+      "paneer",
+      "mushroom"
+    ],
+    "required_ingredients": [
+      "paneer",
+      "mushroom"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "tomato",
+      "ginger",
+      "garlic",
+      "cream",
+      "garam masala",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "ginger",
+      "garlic",
+      "cream",
+      "garam masala",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "paneer-curry",
+    "dish_family": "paneer-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "ba997981-3612-5a12-8911-246fe84173c2",
+    "sourceId": "approved-chicken-potato-curry",
+    "title": "Chicken Potato Curry",
+    "name": "Chicken Potato Curry",
+    "aliases": [
+      "Chicken Aloo Curry",
+      "Chicken and Potato Curry"
+    ],
+    "description": "Chicken Potato Curry is a recognized Indian chicken curry built around chicken and potato.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 35,
+    "timeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/chicken-curry-rice.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Cut potatoes evenly and simmer them with the chicken until both are tender in a medium-thick gravy.",
+    "instructions": [
+      "Prepare chicken, potato before cooking.",
+      "Cut potatoes evenly and simmer them with the chicken until both are tender in a medium-thick gravy.",
+      "Cook until the chicken curry has the expected texture and the core ingredients are fully done.",
+      "Serve Chicken Potato Curry fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Potato",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Potato",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "tomato",
+    "secondaryIngredient2": "tomato",
+    "secondary_ingredient_3": "ginger",
+    "secondaryIngredient3": "ginger",
+    "secondary_ingredient_4": "garlic",
+    "secondaryIngredient4": "garlic",
+    "secondary_ingredient_5": "green chilli",
+    "secondaryIngredient5": "green chilli",
+    "primaryIngredients": [
+      "chicken",
+      "potato"
+    ],
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "potato"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "potato"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "potato"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "tomato",
+      "ginger",
+      "garlic",
+      "green chilli",
+      "garam masala",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "ginger",
+      "garlic",
+      "green chilli",
+      "garam masala",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chicken-curry",
+    "dish_family": "chicken-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "020d228a-41c9-501e-b3f3-a63e877c43b6",
+    "sourceId": "approved-chicken-mushroom-stir-fry",
+    "title": "Chicken Mushroom Stir Fry",
+    "name": "Chicken Mushroom Stir Fry",
+    "aliases": [
+      "Mushroom Chicken Stir Fry",
+      "Chicken and Mushroom Stir Fry"
+    ],
+    "description": "Chicken Mushroom Stir Fry is a recognized Asian / Indo-Chinese stir fry built around chicken and mushroom.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 15,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Asian / Indo-Chinese",
+    "dietType": "non-vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/chicken-curry.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Cook over high heat in batches so the mushrooms brown and the chicken stays tender instead of steaming.",
+    "instructions": [
+      "Prepare chicken, mushroom before cooking.",
+      "Cook over high heat in batches so the mushrooms brown and the chicken stays tender instead of steaming.",
+      "Cook until the stir fry has the expected texture and the core ingredients are fully done.",
+      "Serve Chicken Mushroom Stir Fry fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mushroom",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Mushroom",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Mushroom",
+    "secondary_ingredient_1": "garlic",
+    "secondaryIngredient1": "garlic",
+    "secondary_ingredient_2": "soy sauce",
+    "secondaryIngredient2": "soy sauce",
+    "secondary_ingredient_3": "black pepper",
+    "secondaryIngredient3": "black pepper",
+    "secondary_ingredient_4": "capsicum",
+    "secondaryIngredient4": "capsicum",
+    "secondary_ingredient_5": "spring onion",
+    "secondaryIngredient5": "spring onion",
+    "primaryIngredients": [
+      "chicken",
+      "mushroom"
+    ],
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "mushroom"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "mushroom"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "mushroom"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "mushroom"
+    ],
+    "optionalIngredients": [
+      "garlic",
+      "soy sauce",
+      "black pepper",
+      "capsicum",
+      "spring onion",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "soy sauce",
+      "black pepper",
+      "capsicum",
+      "spring onion",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "stir-fry",
+    "dish_family": "stir-fry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "80fa9550-534b-53b8-a9e6-c1072ad32c55",
+    "sourceId": "approved-mutton-pulao",
+    "title": "Mutton Pulao",
+    "name": "Mutton Pulao",
+    "aliases": [
+      "Mutton Pilaf",
+      "Gosht Pulao"
+    ],
+    "description": "Mutton Pulao is a recognized Indian pulao built around rice and mutton.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 55,
+    "timeMinutes": 75,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/pulao.png",
+    "tags": [
+      "dinner",
+      "non-vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Tenderize the mutton before adding rice. Use the cooking stock for flavor and keep the rice grains separate.",
+    "instructions": [
+      "Prepare rice, mutton before cooking.",
+      "Tenderize the mutton before adding rice. Use the cooking stock for flavor and keep the rice grains separate.",
+      "Cook until the pulao has the expected texture and the core ingredients are fully done.",
+      "Serve Mutton Pulao fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mutton",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "yogurt",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Mutton",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Mutton",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "yogurt",
+    "secondaryIngredient2": "yogurt",
+    "secondary_ingredient_3": "ginger",
+    "secondaryIngredient3": "ginger",
+    "secondary_ingredient_4": "garlic",
+    "secondaryIngredient4": "garlic",
+    "secondary_ingredient_5": "whole spices",
+    "secondaryIngredient5": "whole spices",
+    "primaryIngredients": [
+      "rice",
+      "mutton"
+    ],
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "mutton"
+    ],
+    "core_ingredients": [
+      "rice",
+      "mutton"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "mutton"
+    ],
+    "required_ingredients": [
+      "rice",
+      "mutton"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "yogurt",
+      "ginger",
+      "garlic",
+      "whole spices",
+      "mint",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "yogurt",
+      "ginger",
+      "garlic",
+      "whole spices",
+      "mint",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pulao",
+    "dish_family": "pulao",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "93998719-ab3a-5d42-8edd-a97a6d053534",
+    "sourceId": "approved-palak-paratha",
+    "title": "Palak Paratha",
+    "name": "Palak Paratha",
+    "aliases": [
+      "Spinach Paratha"
+    ],
+    "description": "Palak Paratha is a recognized North Indian paratha built around wheat flour and spinach.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "North Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/paratha.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Use chopped or pureed spinach in the dough and rest it briefly before rolling. Cook on a hot tawa.",
+    "instructions": [
+      "Prepare wheat flour, spinach before cooking.",
+      "Use chopped or pureed spinach in the dough and rest it briefly before rolling. Cook on a hot tawa.",
+      "Cook until the paratha has the expected texture and the core ingredients are fully done.",
+      "Serve Palak Paratha fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "spinach",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Wheat Flour",
+    "primary_ingredient_2": "Spinach",
+    "primaryIngredient1": "Wheat Flour",
+    "primaryIngredient2": "Spinach",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "cumin",
+    "secondaryIngredient2": "cumin",
+    "secondary_ingredient_3": "ginger",
+    "secondaryIngredient3": "ginger",
+    "secondary_ingredient_4": "ajwain",
+    "secondaryIngredient4": "ajwain",
+    "secondary_ingredient_5": "ghee",
+    "secondaryIngredient5": "ghee",
+    "primaryIngredients": [
+      "wheat flour",
+      "spinach"
+    ],
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "spinach"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "spinach"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "spinach"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "spinach"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "cumin",
+      "ginger",
+      "ajwain",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "cumin",
+      "ginger",
+      "ajwain",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "paratha",
+    "dish_family": "paratha",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "4f1058f2-5cc8-5734-a1eb-e1700aaeae4f",
+    "sourceId": "approved-mooli-paratha",
+    "title": "Mooli Paratha",
+    "name": "Mooli Paratha",
+    "aliases": [
+      "Radish Paratha"
+    ],
+    "description": "Mooli Paratha is a recognized North Indian paratha built around wheat flour and radish.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "North Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/paratha.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Salt and squeeze grated radish thoroughly before stuffing so the filling does not make the dough wet.",
+    "instructions": [
+      "Prepare wheat flour, radish before cooking.",
+      "Salt and squeeze grated radish thoroughly before stuffing so the filling does not make the dough wet.",
+      "Cook until the paratha has the expected texture and the core ingredients are fully done.",
+      "Serve Mooli Paratha fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "radish",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "radish leaves",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ajwain",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Wheat Flour",
+    "primary_ingredient_2": "Radish",
+    "primaryIngredient1": "Wheat Flour",
+    "primaryIngredient2": "Radish",
+    "secondary_ingredient_1": "radish leaves",
+    "secondaryIngredient1": "radish leaves",
+    "secondary_ingredient_2": "green chilli",
+    "secondaryIngredient2": "green chilli",
+    "secondary_ingredient_3": "ajwain",
+    "secondaryIngredient3": "ajwain",
+    "secondary_ingredient_4": "coriander",
+    "secondaryIngredient4": "coriander",
+    "secondary_ingredient_5": "ghee",
+    "secondaryIngredient5": "ghee",
+    "primaryIngredients": [
+      "wheat flour",
+      "radish"
+    ],
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "radish"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "radish"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "radish"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "radish"
+    ],
+    "optionalIngredients": [
+      "radish leaves",
+      "green chilli",
+      "ajwain",
+      "coriander",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "radish leaves",
+      "green chilli",
+      "ajwain",
+      "coriander",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "paratha",
+    "dish_family": "paratha",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "4da817f0-d8d2-50b9-8b1a-74d88a03ddb0",
+    "sourceId": "approved-cheese-paratha",
+    "title": "Cheese Paratha",
+    "name": "Cheese Paratha",
+    "aliases": [
+      "Cheesy Paratha"
+    ],
+    "description": "Cheese Paratha is a recognized Indian paratha built around wheat flour and cheese.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 15,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/paratha.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Seal grated cheese inside the dough and cook over medium heat so the filling melts without burning the paratha.",
+    "instructions": [
+      "Prepare wheat flour, cheese before cooking.",
+      "Seal grated cheese inside the dough and cook over medium heat so the filling melts without burning the paratha.",
+      "Cook until the paratha has the expected texture and the core ingredients are fully done.",
+      "Serve Cheese Paratha fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chilli flakes",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Wheat Flour",
+    "primary_ingredient_2": "Cheese",
+    "primaryIngredient1": "Wheat Flour",
+    "primaryIngredient2": "Cheese",
+    "secondary_ingredient_1": "chilli flakes",
+    "secondaryIngredient1": "chilli flakes",
+    "secondary_ingredient_2": "coriander",
+    "secondaryIngredient2": "coriander",
+    "secondary_ingredient_3": "black pepper",
+    "secondaryIngredient3": "black pepper",
+    "secondary_ingredient_4": "ghee",
+    "secondaryIngredient4": "ghee",
+    "secondary_ingredient_5": "oil",
+    "secondaryIngredient5": "oil",
+    "primaryIngredients": [
+      "wheat flour",
+      "cheese"
+    ],
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "cheese"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "cheese"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "cheese"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "cheese"
+    ],
+    "optionalIngredients": [
+      "chilli flakes",
+      "coriander",
+      "black pepper",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "chilli flakes",
+      "coriander",
+      "black pepper",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "paratha",
+    "dish_family": "paratha",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "02d176de-fb82-58f5-a22a-076dd715c5f8",
+    "sourceId": "approved-sweet-holige",
+    "title": "Sweet Holige",
+    "name": "Sweet Holige",
+    "aliases": [
+      "Holige",
+      "Obbattu",
+      "Puran Poli"
+    ],
+    "description": "Sweet Holige is a recognized Karnataka / South Indian sweet flatbread built around wheat flour and jaggery.",
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 35,
+    "timeMinutes": 65,
+    "servings": 2,
+    "cuisine": "Karnataka / South Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/paratha.png",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Cook the jaggery-lentil filling until dry, cool it fully, then roll gently and cook the filled flatbread with ghee.",
+    "instructions": [
+      "Prepare wheat flour, jaggery before cooking.",
+      "Cook the jaggery-lentil filling until dry, cool it fully, then roll gently and cook the filled flatbread with ghee.",
+      "Cook until the sweet flatbread has the expected texture and the core ingredients are fully done.",
+      "Serve Sweet Holige fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "wheat flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chana dal",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Wheat Flour",
+    "primary_ingredient_2": "Jaggery",
+    "primaryIngredient1": "Wheat Flour",
+    "primaryIngredient2": "Jaggery",
+    "secondary_ingredient_1": "chana dal",
+    "secondaryIngredient1": "chana dal",
+    "secondary_ingredient_2": "coconut",
+    "secondaryIngredient2": "coconut",
+    "secondary_ingredient_3": "cardamom",
+    "secondaryIngredient3": "cardamom",
+    "secondary_ingredient_4": "turmeric",
+    "secondaryIngredient4": "turmeric",
+    "secondary_ingredient_5": "ghee",
+    "secondaryIngredient5": "ghee",
+    "primaryIngredients": [
+      "wheat flour",
+      "jaggery"
+    ],
+    "baseIngredient": "wheat flour",
+    "base_ingredient": "wheat flour",
+    "coreIngredients": [
+      "wheat flour",
+      "jaggery"
+    ],
+    "core_ingredients": [
+      "wheat flour",
+      "jaggery"
+    ],
+    "requiredIngredients": [
+      "wheat flour",
+      "jaggery"
+    ],
+    "required_ingredients": [
+      "wheat flour",
+      "jaggery"
+    ],
+    "optionalIngredients": [
+      "chana dal",
+      "coconut",
+      "cardamom",
+      "turmeric",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "chana dal",
+      "coconut",
+      "cardamom",
+      "turmeric",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "sweet-flatbread",
+    "dish_family": "sweet-flatbread",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "ff57d15a-2f86-5e97-8bb2-d2cce46bbd36",
+    "sourceId": "approved-cheese-dosa",
+    "title": "Cheese Dosa",
+    "name": "Cheese Dosa",
+    "aliases": [
+      "Cheesy Dosa"
+    ],
+    "description": "Cheese Dosa is a recognized South Indian / Fusion dosa built around dosa batter and cheese.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 10,
+    "timeMinutes": 15,
+    "servings": 2,
+    "cuisine": "South Indian / Fusion",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Spread the batter thinly, cook until crisp, add cheese near the end, and fold once the cheese melts.",
+    "instructions": [
+      "Prepare dosa batter, cheese before cooking.",
+      "Spread the batter thinly, cook until crisp, add cheese near the end, and fold once the cheese melts.",
+      "Cook until the dosa has the expected texture and the core ingredients are fully done.",
+      "Serve Cheese Dosa fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "dosa batter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli flakes",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Dosa Batter",
+    "primary_ingredient_2": "Cheese",
+    "primaryIngredient1": "Dosa Batter",
+    "primaryIngredient2": "Cheese",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "chilli flakes",
+    "secondaryIngredient2": "chilli flakes",
+    "secondary_ingredient_3": "coriander",
+    "secondaryIngredient3": "coriander",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": "chutney",
+    "secondaryIngredient5": "chutney",
+    "primaryIngredients": [
+      "dosa batter",
+      "cheese"
+    ],
+    "baseIngredient": "dosa batter",
+    "base_ingredient": "dosa batter",
+    "coreIngredients": [
+      "dosa batter",
+      "cheese"
+    ],
+    "core_ingredients": [
+      "dosa batter",
+      "cheese"
+    ],
+    "requiredIngredients": [
+      "dosa batter",
+      "cheese"
+    ],
+    "required_ingredients": [
+      "dosa batter",
+      "cheese"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "chilli flakes",
+      "coriander",
+      "oil",
+      "chutney",
+      "sambar",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "chilli flakes",
+      "coriander",
+      "oil",
+      "chutney",
+      "sambar",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "hardExcludeFromFeeds": true,
+    "excludeFromDefaultFeeds": true,
+    "feedVisibility": "pantry-search-only"
+  },
+  {
+    "id": "6611ed0d-d92c-5794-9070-fa867e35caf9",
+    "sourceId": "approved-cheese-uttapam",
+    "title": "Cheese Uttapam",
+    "name": "Cheese Uttapam",
+    "aliases": [
+      "Cheesy Uttapam"
+    ],
+    "description": "Cheese Uttapam is a recognized South Indian / Fusion uttapam built around idli batter and cheese.",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 12,
+    "timeMinutes": 17,
+    "servings": 2,
+    "cuisine": "South Indian / Fusion",
+    "dietType": "vegetarian",
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Cook a thick uttapam, add toppings and cheese, then cover briefly so the cheese melts while the base browns.",
+    "instructions": [
+      "Prepare idli batter, cheese before cooking.",
+      "Cook a thick uttapam, add toppings and cheese, then cover briefly so the cheese melts while the base browns.",
+      "Cook until the uttapam has the expected texture and the core ingredients are fully done.",
+      "Serve Cheese Uttapam fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "idli batter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "capsicum",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Idli Batter",
+    "primary_ingredient_2": "Cheese",
+    "primaryIngredient1": "Idli Batter",
+    "primaryIngredient2": "Cheese",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "tomato",
+    "secondaryIngredient2": "tomato",
+    "secondary_ingredient_3": "capsicum",
+    "secondaryIngredient3": "capsicum",
+    "secondary_ingredient_4": "green chilli",
+    "secondaryIngredient4": "green chilli",
+    "secondary_ingredient_5": "coriander",
+    "secondaryIngredient5": "coriander",
+    "primaryIngredients": [
+      "idli batter",
+      "cheese"
+    ],
+    "baseIngredient": "idli batter",
+    "base_ingredient": "idli batter",
+    "coreIngredients": [
+      "idli batter",
+      "cheese"
+    ],
+    "core_ingredients": [
+      "idli batter",
+      "cheese"
+    ],
+    "requiredIngredients": [
+      "idli batter",
+      "cheese"
+    ],
+    "required_ingredients": [
+      "idli batter",
+      "cheese"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "tomato",
+      "capsicum",
+      "green chilli",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "capsicum",
+      "green chilli",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "uttapam",
+    "dish_family": "uttapam",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "82d80f17-967c-5533-9cb7-4dd4e80b886a",
+    "sourceId": "approved-spanish-omelette",
+    "title": "Spanish Omelette",
+    "name": "Spanish Omelette",
+    "aliases": [
+      "Spanish Tortilla",
+      "Tortilla Espanola",
+      "Potato Omelette"
+    ],
+    "description": "Spanish Omelette is a recognized Spanish omelette built around egg and potato.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 45,
+    "servings": 2,
+    "cuisine": "Spanish",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/bread-omelette-homestyle.png",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Cook sliced potatoes and onion gently before setting them in beaten eggs. Finish slowly for a tender center.",
+    "instructions": [
+      "Prepare egg, potato before cooking.",
+      "Cook sliced potatoes and onion gently before setting them in beaten eggs. Finish slowly for a tender center.",
+      "Cook until the omelette has the expected texture and the core ingredients are fully done.",
+      "Serve Spanish Omelette fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "pcs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "parsley",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Egg",
+    "primary_ingredient_2": "Potato",
+    "primaryIngredient1": "Egg",
+    "primaryIngredient2": "Potato",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "black pepper",
+    "secondaryIngredient2": "black pepper",
+    "secondary_ingredient_3": "parsley",
+    "secondaryIngredient3": "parsley",
+    "secondary_ingredient_4": "paprika",
+    "secondaryIngredient4": "paprika",
+    "secondary_ingredient_5": "olive oil",
+    "secondaryIngredient5": "olive oil",
+    "primaryIngredients": [
+      "egg",
+      "potato"
+    ],
+    "baseIngredient": "egg",
+    "base_ingredient": "egg",
+    "coreIngredients": [
+      "egg",
+      "potato"
+    ],
+    "core_ingredients": [
+      "egg",
+      "potato"
+    ],
+    "requiredIngredients": [
+      "egg",
+      "potato"
+    ],
+    "required_ingredients": [
+      "egg",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "black pepper",
+      "parsley",
+      "paprika",
+      "olive oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "black pepper",
+      "parsley",
+      "paprika",
+      "olive oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "omelette",
+    "dish_family": "omelette",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
+  },
+  {
+    "id": "406addc8-f956-5091-bb76-f88d63d0cb2b",
+    "sourceId": "approved-sweet-rice",
+    "title": "Sweet Rice",
+    "name": "Sweet Rice",
+    "aliases": [
+      "Meetha Chawal",
+      "Jaggery Rice"
+    ],
+    "description": "Sweet Rice is a recognized Indian sweet rice built around rice and jaggery.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/pongal.png",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "pantry"
+    ],
+    "moodTags": [],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 5,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "",
+    "secondaryMood": "",
+    "cookingNotes": "Cook rice until tender, dissolve jaggery separately, then combine and finish with cardamom and ghee.",
+    "instructions": [
+      "Prepare rice, jaggery before cooking.",
+      "Cook rice until tender, dissolve jaggery separately, then combine and finish with cardamom and ghee.",
+      "Cook until the sweet rice has the expected texture and the core ingredients are fully done.",
+      "Serve Sweet Rice fresh and adjust salt and seasoning to taste."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "small",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Jaggery",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Jaggery",
+    "secondary_ingredient_1": "ghee",
+    "secondaryIngredient1": "ghee",
+    "secondary_ingredient_2": "cardamom",
+    "secondaryIngredient2": "cardamom",
+    "secondary_ingredient_3": "coconut",
+    "secondaryIngredient3": "coconut",
+    "secondary_ingredient_4": "cashew",
+    "secondaryIngredient4": "cashew",
+    "secondary_ingredient_5": "raisins",
+    "secondaryIngredient5": "raisins",
+    "primaryIngredients": [
+      "rice",
+      "jaggery"
+    ],
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "jaggery"
+    ],
+    "core_ingredients": [
+      "rice",
+      "jaggery"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "jaggery"
+    ],
+    "required_ingredients": [
+      "rice",
+      "jaggery"
+    ],
+    "optionalIngredients": [
+      "ghee",
+      "cardamom",
+      "coconut",
+      "cashew",
+      "raisins",
+      "saffron"
+    ],
+    "optional_ingredients": [
+      "ghee",
+      "cardamom",
+      "coconut",
+      "cashew",
+      "raisins",
+      "saffron"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "sweet-rice",
+    "dish_family": "sweet-rice",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true
   }
 ];
