@@ -2391,7 +2391,7 @@
     width: 100% !important;
     max-width: 100% !important;
     padding-right: 12px !important;
-    padding-bottom: calc(112px + env(safe-area-inset-bottom)) !important;
+    padding-bottom: calc(96px + env(safe-area-inset-bottom)) !important;
     padding-left: 12px !important;
     overflow-x: clip !important;
   }
@@ -2406,6 +2406,12 @@
 
   .section-title {
     margin-top: 18px !important;
+  }
+
+  .mood-panel,
+  .special-section,
+  .facts-section {
+    margin-top: 20px !important;
   }
 
   .meal-tabs {
@@ -2462,26 +2468,26 @@
   }
 
   #todayPicks .today-card {
-    grid-template-rows: 180px auto !important;
+    grid-template-rows: 176px auto !important;
     min-width: 0 !important;
     min-height: 0 !important;
-    max-height: 310px !important;
-    padding: 7px !important;
+    max-height: 300px !important;
+    padding: 6px !important;
     overflow: hidden !important;
     border-radius: 20px !important;
     scroll-snap-align: start !important;
   }
 
   #todayPicks .today-card .recipe-icon {
-    height: 180px !important;
-    min-height: 180px !important;
+    height: 176px !important;
+    min-height: 176px !important;
     border-radius: 17px !important;
   }
 
   #todayPicks .today-card .recipe-content {
     grid-template-rows: auto auto auto 34px !important;
     gap: 3px !important;
-    padding: 7px 5px 1px !important;
+    padding: 6px 5px 1px !important;
   }
 
   #todayPicks .today-card strong {
@@ -2540,11 +2546,12 @@
   }
 
   .collection-segment {
-    flex: 0 0 min(76vw, 300px) !important;
-    grid-template-rows: 160px auto auto !important;
+    flex: 0 0 min(72vw, 290px) !important;
+    grid-template-rows: 92px 28px 25px !important;
     min-width: 0 !important;
-    min-height: 230px !important;
-    max-height: 230px !important;
+    height: 145px !important;
+    min-height: 145px !important;
+    max-height: 145px !important;
     scroll-snap-align: start !important;
   }
 
@@ -2555,19 +2562,29 @@
   .collection-desserts,
   .collection-soups,
   .collection-festival {
-    min-height: 230px !important;
-    background-size: 100% 160px !important;
+    min-height: 145px !important;
+    background-size: 100% 92px !important;
   }
 
   .collection-segment strong {
-    padding-top: 116px !important;
-    font-size: 1.08rem !important;
+    display: -webkit-box !important;
+    min-height: 0 !important;
+    padding: 58px 10px 0 !important;
+    overflow: hidden !important;
+    font-size: 0.94rem !important;
+    line-height: 1.05 !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
   }
 
   .collection-segment em {
-    padding-top: 7px !important;
-    padding-bottom: 10px !important;
-    font-size: 0.75rem !important;
+    display: -webkit-box !important;
+    padding: 4px 10px 6px !important;
+    overflow: hidden !important;
+    font-size: 0.68rem !important;
+    line-height: 1.1 !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 1 !important;
   }
 
   .collection-scroll-button {
@@ -2576,35 +2593,27 @@
 
   .collection-pop {
     display: grid !important;
-    grid-template-columns: 260px 820px !important;
+    grid-template-columns: minmax(0, 1fr) !important;
     align-items: start !important;
     width: 100% !important;
     max-width: 100% !important;
     gap: 12px !important;
-    overflow-x: auto !important;
-    overscroll-behavior-inline: contain !important;
-    scroll-snap-type: x proximity !important;
-    scrollbar-width: none !important;
-  }
-
-  .collection-pop::-webkit-scrollbar {
-    display: none !important;
+    overflow: hidden !important;
   }
 
   .collection-pop-copy {
-    width: 260px !important;
-    min-width: 260px !important;
-    max-width: none !important;
-    scroll-snap-align: start !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
   }
 
   .collection-dishes,
   .collection-curated-page,
   .single-subcategory-list,
   .collection-subcategory-section {
-    width: 820px !important;
-    min-width: 820px !important;
-    max-width: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
   }
 
   .collection-pop-copy > p {
@@ -2613,56 +2622,68 @@
 
   .collection-sidebar-grid {
     display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    grid-auto-flow: row !important;
-    grid-auto-columns: auto !important;
+    grid-auto-flow: column !important;
+    grid-auto-columns: min(72vw, 290px) !important;
+    grid-template-columns: none !important;
     gap: 12px !important;
     width: 100% !important;
-    padding: 0 !important;
-    overflow: visible !important;
+    max-width: 100% !important;
+    padding: 2px 12px 8px 2px !important;
+    overflow-x: auto !important;
+    overscroll-behavior-inline: contain !important;
+    scroll-snap-type: x mandatory !important;
+    scrollbar-width: none !important;
+  }
+
+  .collection-sidebar-grid::-webkit-scrollbar {
+    display: none !important;
   }
 
   .collection-sidebar-tile {
     display: grid !important;
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto auto auto !important;
-    gap: 5px !important;
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+    grid-template-rows: auto auto !important;
+    column-gap: 10px !important;
+    row-gap: 4px !important;
     width: 100% !important;
-    height: 128px !important;
-    min-height: 128px !important;
-    max-height: 128px !important;
-    padding: 12px !important;
-    align-content: end !important;
+    height: 140px !important;
+    min-height: 140px !important;
+    max-height: 140px !important;
+    padding: 10px !important;
+    align-content: center !important;
     border-radius: 18px !important;
+    scroll-snap-align: start !important;
   }
 
   .collection-sidebar-tile > span,
   .collection-sidebar-tile span:first-child {
-    grid-row: 1 !important;
+    grid-row: 1 / 3 !important;
     grid-column: 1 !important;
-    width: 42px !important;
-    height: 42px !important;
-    margin: 0 0 3px !important;
+    width: 48px !important;
+    height: 48px !important;
+    margin: 0 !important;
     border-radius: 14px !important;
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
   }
 
   .collection-sidebar-tile strong {
-    grid-row: 2 !important;
-    grid-column: 1 !important;
+    grid-row: 1 !important;
+    grid-column: 2 !important;
+    align-self: end !important;
     display: -webkit-box !important;
     overflow: hidden !important;
-    font-size: 0.82rem !important;
+    font-size: 0.94rem !important;
     line-height: 1.08 !important;
     -webkit-box-orient: vertical !important;
     -webkit-line-clamp: 2 !important;
   }
 
   .collection-sidebar-tile small {
-    grid-row: 3 !important;
-    grid-column: 1 !important;
+    grid-row: 2 !important;
+    grid-column: 2 !important;
+    align-self: start !important;
     margin: 0 !important;
-    font-size: 0.66rem !important;
+    font-size: 0.7rem !important;
   }
 
   .collection-subcategory-section {
@@ -2673,12 +2694,19 @@
   .single-subcategory-list .collection-subcategory-row {
     display: grid !important;
     grid-auto-flow: column !important;
-    grid-auto-columns: 190px !important;
+    grid-auto-columns: min(80vw, 330px) !important;
     gap: 12px !important;
-    width: max-content !important;
-    max-width: none !important;
-    padding: 2px !important;
-    overflow: visible !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 2px 12px 8px 2px !important;
+    overflow-x: auto !important;
+    overscroll-behavior-inline: contain !important;
+    scroll-snap-type: x mandatory !important;
+    scrollbar-width: none !important;
+  }
+
+  .single-subcategory-list .collection-subcategory-row::-webkit-scrollbar {
+    display: none !important;
   }
 
   .single-subcategory-list .collection-subcategory-row > * {
@@ -2690,10 +2718,10 @@
   .collection-dishes .drink-card,
   .collection-reveal .drink-card,
   .collection-subcategory-row .drink-card {
-    grid-template-rows: 180px auto !important;
+    grid-template-rows: 176px auto !important;
     min-height: 0 !important;
-    max-height: 292px !important;
-    padding: 7px !important;
+    max-height: 282px !important;
+    padding: 6px !important;
     overflow: hidden !important;
     border-radius: 20px !important;
   }
@@ -2702,8 +2730,8 @@
   .collection-reveal .drink-card .recipe-icon,
   .collection-subcategory-row .drink-card .recipe-icon,
   .collection-subcategory-row .curated-collection-card .recipe-icon {
-    height: 180px !important;
-    min-height: 180px !important;
+    height: 176px !important;
+    min-height: 176px !important;
     border-radius: 17px !important;
   }
 
@@ -2711,7 +2739,7 @@
   .collection-reveal .drink-card > div,
   .collection-subcategory-row .drink-card > div {
     gap: 3px !important;
-    padding: 7px 5px 1px !important;
+    padding: 6px 5px 1px !important;
   }
 
   .collection-dishes .drink-card strong,
@@ -2740,5 +2768,41 @@
 
   .bottom-nav {
     padding-bottom: env(safe-area-inset-bottom) !important;
+  }
+
+  #pantryDialog {
+    width: calc(100vw - 16px) !important;
+    max-width: calc(100vw - 16px) !important;
+    max-height: calc(100dvh - 16px) !important;
+  }
+
+  #pantryDialog .pantry-card {
+    max-height: calc(100dvh - 16px) !important;
+    padding-right: 12px !important;
+    padding-bottom: 16px !important;
+    padding-left: 12px !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  #pantryDialog .cook-section {
+    padding: 12px !important;
+  }
+
+  #pantryDialog .weighted-match-list {
+    grid-auto-columns: min(78vw, 280px) !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+  }
+
+  #pantryDialog .weighted-match-card,
+  #pantryDialog .pantry-best-match {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    padding: 10px !important;
+  }
+
+  #pantryDialog button {
+    max-width: 100% !important;
   }
 }
