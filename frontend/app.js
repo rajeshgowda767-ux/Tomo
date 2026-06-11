@@ -1744,10 +1744,16 @@ function renderTomoPick() {
   els.surpriseButton.classList.toggle('revealed', Boolean(revealedPick));
   els.surpriseButton.dataset.recipeId = '';
   els.surpriseButton.setAttribute('aria-label', revealedPick ? `${pick?.title || "Tomo's pick"} revealed` : "Reveal Tomo's pick");
+  const heroMealLabel = mealTitles[state.meal]?.replace(' ideas', '') || 'Today';
+  const heroMeta = `${moodPill(pick)} • ${heroMealLabel} • ${recipeTotalTime(pick)} mins`;
   els.surpriseButton.innerHTML = revealedPick
     ? `<div id="heroRevealDish" class="cb-dashboard-reveal">
         <span class="cb-dashboard-mini-image">${recipeVisual(pick)}</span>
-        <span class="cb-dashboard-reveal-copy"><strong>${escapeHtml(pick.title)}</strong><small>${recipeTotalTime(pick)} mins • ${escapeHtml(moodPill(pick))}</small></span>
+        <span class="cb-dashboard-reveal-copy">
+          <em>Tomo Pick</em>
+          <strong>${escapeHtml(pick.title)}</strong>
+          <small>${escapeHtml(heroMeta)}</small>
+        </span>
         <span class="cb-dashboard-actions">
           <button id="heroCookNow" class="cb-dashboard-primary" type="button" data-recipe-id="${escapeHtml(pick.id)}">Cook Now</button>
           <button id="heroFindAnother" class="cb-dashboard-secondary" type="button">Another Pick</button>

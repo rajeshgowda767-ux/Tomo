@@ -3401,3 +3401,261 @@
     min-height: 182px !important;
   }
 }
+
+/* Final polish: make revealed Tomo pick and mobile Collections unmistakable. */
+.cb-dashboard-hero.revealed {
+  grid-template-columns: 230px minmax(0, 1fr) 210px !important;
+}
+
+.cb-dashboard-hero.revealed .cb-dashboard-mascot {
+  width: 220px !important;
+  max-width: 220px !important;
+  height: 138px !important;
+  min-height: 138px !important;
+}
+
+.cb-dashboard-hero.revealed .cb-dashboard-reveal {
+  display: grid !important;
+  grid-template-columns: 76px minmax(0, 1fr) !important;
+  grid-template-rows: 1fr auto !important;
+  align-items: center !important;
+  gap: 8px 10px !important;
+  width: 220px !important;
+  height: 138px !important;
+  padding: 10px !important;
+  border-radius: 22px !important;
+  background: rgba(255, 255, 255, 0.76) !important;
+  box-shadow: 0 12px 26px rgba(119, 104, 93, 0.1) !important;
+}
+
+.cb-dashboard-hero.revealed .cb-dashboard-mini-image {
+  grid-row: 1 / 3 !important;
+  width: 76px !important;
+  height: 76px !important;
+  border-radius: 16px !important;
+}
+
+.cb-dashboard-reveal-copy {
+  align-self: end !important;
+  gap: 3px !important;
+  text-align: left !important;
+}
+
+.cb-dashboard-reveal-copy em {
+  display: block !important;
+  color: rgba(143, 63, 42, 0.72) !important;
+  font-size: 0.56rem !important;
+  font-style: normal !important;
+  font-weight: 950 !important;
+  letter-spacing: 0.08em !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+.cb-dashboard-reveal-copy strong {
+  display: -webkit-box !important;
+  color: #2b211d !important;
+  font-size: 0.9rem !important;
+  font-weight: 950 !important;
+  line-height: 1.04 !important;
+  white-space: normal !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+}
+
+.cb-dashboard-reveal-copy small {
+  display: -webkit-box !important;
+  color: rgba(143, 63, 42, 0.76) !important;
+  font-size: 0.62rem !important;
+  font-weight: 820 !important;
+  line-height: 1.12 !important;
+  white-space: normal !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+}
+
+.cb-dashboard-hero.revealed .cb-dashboard-actions {
+  align-self: start !important;
+  display: grid !important;
+  grid-template-columns: max-content max-content !important;
+  justify-content: start !important;
+  gap: 5px !important;
+  width: auto !important;
+}
+
+.cb-dashboard-hero.revealed .cb-dashboard-primary,
+.cb-dashboard-hero.revealed .cb-dashboard-secondary {
+  min-height: 28px !important;
+  padding: 0 10px !important;
+  font-size: 0.62rem !important;
+}
+
+@media (max-width: 768px) {
+  .cb-dashboard-hero.revealed {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cb-dashboard-hero.revealed .cb-dashboard-mascot {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 118px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .cb-dashboard-hero.revealed .cb-dashboard-reveal {
+    grid-template-columns: 82px minmax(0, 1fr) !important;
+    grid-template-rows: 1fr auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 112px !important;
+    padding: 10px !important;
+  }
+
+  .cb-dashboard-hero.revealed .cb-dashboard-mini-image {
+    width: 82px !important;
+    height: 82px !important;
+  }
+
+  .cb-dashboard-reveal-copy em {
+    font-size: 0.56rem !important;
+  }
+
+  .cb-dashboard-reveal-copy strong {
+    font-size: 0.96rem !important;
+  }
+
+  .cb-dashboard-reveal-copy small {
+    font-size: 0.66rem !important;
+  }
+
+  .cb-dashboard-hero.revealed .cb-dashboard-primary {
+    min-height: 32px !important;
+    padding: 0 13px !important;
+    font-size: 0.68rem !important;
+  }
+
+  .cb-dashboard-hero.revealed .cb-dashboard-secondary {
+    min-height: 30px !important;
+    padding: 0 11px !important;
+    font-size: 0.62rem !important;
+  }
+
+  .collection-segment {
+    align-content: end !important;
+    gap: 3px !important;
+    width: min(72vw, 260px) !important;
+    min-width: min(72vw, 260px) !important;
+    max-width: min(72vw, 260px) !important;
+    height: 168px !important;
+    min-height: 168px !important;
+    max-height: 168px !important;
+    padding: 110px 12px 10px !important;
+    overflow: hidden !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+    background-size: 100% 102px !important;
+  }
+
+  .collection-baby {
+    background-image:
+      linear-gradient(180deg, rgba(44, 32, 24, 0.02), rgba(44, 32, 24, 0.14) 102px, rgba(255, 250, 242, 0.96) 102px),
+      url("assets/images/collections/baby-food.webp") !important;
+  }
+
+  .collection-lunchbox {
+    background-image:
+      linear-gradient(180deg, rgba(44, 32, 24, 0.02), rgba(44, 32, 24, 0.14) 102px, rgba(255, 250, 242, 0.96) 102px),
+      url("assets/images/collections/lunch-box-heroes.webp") !important;
+  }
+
+  .collection-drinks {
+    background-image:
+      linear-gradient(180deg, rgba(44, 32, 24, 0.02), rgba(44, 32, 24, 0.14) 102px, rgba(255, 250, 242, 0.96) 102px),
+      url("assets/images/collections/healthy-drinks.webp?v=herbal-2") !important;
+  }
+
+  .collection-salads {
+    background-image:
+      linear-gradient(180deg, rgba(44, 32, 24, 0.02), rgba(44, 32, 24, 0.14) 102px, rgba(255, 250, 242, 0.96) 102px),
+      url("assets/images/collections/salads.webp") !important;
+  }
+
+  .collection-desserts {
+    background-image:
+      linear-gradient(180deg, rgba(44, 32, 24, 0.02), rgba(44, 32, 24, 0.14) 102px, rgba(255, 250, 242, 0.96) 102px),
+      url("assets/images/collections/desserts.webp") !important;
+  }
+
+  .collection-soups {
+    background-image:
+      linear-gradient(180deg, rgba(44, 32, 24, 0.02), rgba(44, 32, 24, 0.14) 102px, rgba(255, 250, 242, 0.96) 102px),
+      url("assets/images/collections/soups.webp") !important;
+  }
+
+  .collection-festival {
+    background-image:
+      linear-gradient(180deg, rgba(44, 32, 24, 0.02), rgba(44, 32, 24, 0.14) 102px, rgba(255, 250, 242, 0.96) 102px),
+      url("assets/images/collections/festival-food.webp") !important;
+  }
+
+  .collection-segment strong {
+    display: -webkit-box !important;
+    font-size: 0.92rem !important;
+    line-height: 1.04 !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+  }
+
+  .collection-segment em {
+    display: -webkit-box !important;
+    padding: 0 !important;
+    color: rgba(119, 104, 93, 0.82) !important;
+    font-size: 0.66rem !important;
+    font-weight: 720 !important;
+    line-height: 1.08 !important;
+    text-shadow: none !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 1 !important;
+  }
+
+  .collection-affordance {
+    font-size: 0.64rem !important;
+    font-weight: 900 !important;
+  }
+
+  .collection-sidebar-tile {
+    min-width: 142px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    padding: 7px 11px !important;
+  }
+
+  .collection-sidebar-tile > span,
+  .collection-sidebar-tile span:first-child {
+    width: 26px !important;
+    height: 26px !important;
+    font-size: 0.82rem !important;
+  }
+
+  .collection-sidebar-tile strong {
+    color: #2b211d !important;
+    font-size: 0.76rem !important;
+    font-weight: 950 !important;
+  }
+
+  .collection-sidebar-tile small {
+    color: rgba(143, 63, 42, 0.62) !important;
+    font-size: 0.58rem !important;
+    font-weight: 820 !important;
+  }
+
+  .collection-sidebar-tile.active {
+    background:
+      radial-gradient(circle at 82% 14%, rgba(255, 190, 114, 0.35), transparent 38%),
+      rgba(255, 250, 242, 0.98) !important;
+    outline: 2px solid rgba(201, 106, 74, 0.22) !important;
+  }
+}
