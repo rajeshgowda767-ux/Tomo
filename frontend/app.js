@@ -3969,12 +3969,18 @@ function matchSection(title, matches, helperText = '') {
     const card = document.createElement('article');
     card.className = 'weighted-match-card';
     card.dataset.recipeId = match.recipe.id;
+    card.tabIndex = 0;
+    card.setAttribute('role', 'button');
+    const strongMatch = (match.missingPrimary || []).length === 0 && pantryMatchConfidence(match) >= pantryStrongMatchThreshold;
+    const actionLabel = strongMatch ? 'View dish' : 'See missing ingredients';
+    card.setAttribute('aria-label', `${actionLabel}: ${match.recipe.title}`);
     card.innerHTML = `
       <span class="match-thumb">${recipeVisual(match.recipe)}</span>
       <div class="match-card-copy">
         <strong>${match.recipe.title}</strong>
         <span class="match-percent">${pantryMatchConfidence(match)}% Match</span>
         <p>${escapeHtml(pantryMissingSummary(match))}</p>
+        <span class="pantry-match-cta">${actionLabel}<span aria-hidden="true">›</span></span>
       </div>
     `;
     list.appendChild(card);
@@ -5000,6 +5006,17 @@ els.ingredientResults.addEventListener('click', (event) => {
   const card = event.target.closest('[data-recipe-id]');
   if (!card) return;
   event.stopPropagation();
+  const recipe = state.recipes.find((item) => item.id === card.dataset.recipeId);
+  if (recipe) {
+    openRecipe(recipe, { returnToPantry: state.pantryView });
+  }
+});
+
+els.ingredientResults.addEventListener('keydown', (event) => {
+  if (event.key !== 'Enter' && event.key !== ' ') return;
+  const card = event.target.closest('[data-recipe-id]');
+  if (!card) return;
+  event.preventDefault();
   const recipe = state.recipes.find((item) => item.id === card.dataset.recipeId);
   if (recipe) {
     openRecipe(recipe, { returnToPantry: state.pantryView });
