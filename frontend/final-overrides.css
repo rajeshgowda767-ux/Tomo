@@ -2395,40 +2395,60 @@
   font-weight: 900;
 }
 
-/* Tester-release mobile density: one consistent responsive layout. */
+.mobile-pantry-entry {
+  display: none;
+}
+
+/* Mobile-first reset. Desktop layout remains unchanged. */
 @media (max-width: 768px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .app-shell {
+    display: flex !important;
+    flex-direction: column !important;
     width: 100% !important;
     max-width: 100% !important;
-    padding-right: 12px !important;
-    padding-bottom: calc(96px + env(safe-area-inset-bottom)) !important;
-    padding-left: 12px !important;
-    overflow-x: clip !important;
+    padding: 14px 12px calc(96px + env(safe-area-inset-bottom)) !important;
+    overflow-x: hidden !important;
   }
 
-  .mood-panel,
-  .section-title,
-  .meal-tabs,
-  .special-section,
-  .facts-section {
-    max-width: 100% !important;
+  .home-header {
+    order: 1;
+    width: 100% !important;
+    margin-bottom: 14px !important;
   }
 
-  .section-title {
-    margin-top: 18px !important;
+  .cb-dashboard-hero {
+    display: none !important;
   }
 
-  .mood-panel,
-  .special-section,
-  .facts-section {
-    margin-top: 20px !important;
+  .mood-panel {
+    order: 2;
+    width: 100% !important;
+    margin: 0 0 20px !important;
+    padding: 12px !important;
+  }
+
+  #activeMoodBar {
+    order: 3;
+  }
+
+  .app-shell > .section-title {
+    order: 4;
+    width: 100% !important;
+    margin: 0 0 8px !important;
   }
 
   .meal-tabs {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
+    order: 5;
+    width: 100% !important;
+    margin: 0 0 12px !important;
     padding: 6px !important;
-    overflow: visible !important;
+    overflow: hidden !important;
   }
 
   .meal-tab-scroll {
@@ -2438,11 +2458,14 @@
     grid-template-columns: none !important;
     gap: 5px !important;
     width: 100% !important;
-    max-width: 100% !important;
     overflow-x: auto !important;
     overscroll-behavior-inline: contain !important;
     scroll-snap-type: x proximity !important;
-    scroll-padding-inline: 0 !important;
+    scrollbar-width: none !important;
+  }
+
+  .meal-tab-scroll::-webkit-scrollbar {
+    display: none !important;
   }
 
   .meal-tab {
@@ -2456,62 +2479,57 @@
     scroll-snap-align: start !important;
   }
 
-  #todayPicks.meal-card-grid {
-    display: grid !important;
-    grid-auto-flow: column !important;
-    grid-auto-columns: min(82vw, 340px) !important;
-    grid-template-columns: none !important;
-    align-items: stretch !important;
-    gap: 12px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-top: 12px !important;
-    padding: 2px 2px 10px !important;
-    overflow-x: auto !important;
-    overscroll-behavior-inline: contain !important;
-    scroll-snap-type: x mandatory !important;
-    scrollbar-width: none !important;
+  #recipeNotice {
+    order: 6;
   }
 
-  #todayPicks.meal-card-grid::-webkit-scrollbar {
-    display: none !important;
+  #todayPicks.meal-card-grid {
+    order: 7;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
   }
 
   #todayPicks .today-card {
-    grid-template-rows: 176px auto !important;
+    grid-template-rows: 180px auto !important;
+    width: 100% !important;
     min-width: 0 !important;
     min-height: 0 !important;
-    max-height: 300px !important;
-    padding: 6px !important;
+    max-height: none !important;
+    padding: 8px !important;
     overflow: hidden !important;
-    border-radius: 20px !important;
-    scroll-snap-align: start !important;
+    border-radius: 24px !important;
   }
 
   #todayPicks .today-card .recipe-icon {
-    height: 176px !important;
-    min-height: 176px !important;
-    border-radius: 17px !important;
+    width: 100% !important;
+    height: 180px !important;
+    min-height: 180px !important;
+    border-radius: 18px !important;
   }
 
   #todayPicks .today-card .recipe-content {
-    grid-template-rows: auto auto auto 34px !important;
-    gap: 3px !important;
-    padding: 6px 5px 1px !important;
+    grid-template-rows: auto auto auto auto !important;
+    gap: 6px !important;
+    padding: 9px 7px 3px !important;
   }
 
   #todayPicks .today-card strong {
     display: -webkit-box !important;
-    min-height: 0 !important;
     overflow: hidden !important;
-    font-size: 0.94rem !important;
+    font-size: 1.05rem !important;
     line-height: 1.12 !important;
     white-space: normal !important;
     -webkit-box-orient: vertical !important;
     -webkit-line-clamp: 2 !important;
   }
 
-  #todayPicks .today-card .recommendation-context {
+  #todayPicks .recommendation-context {
     display: -webkit-box !important;
     overflow: hidden !important;
     white-space: normal !important;
@@ -2519,104 +2537,100 @@
     -webkit-line-clamp: 1 !important;
   }
 
-  #todayPicks .today-card .card-actions {
-    grid-template-columns: 32px 32px minmax(0, 1fr) !important;
-    gap: 5px !important;
-    margin-top: 1px !important;
+  #todayPicks .card-actions {
+    display: grid !important;
+    grid-template-columns: repeat(2, 38px) !important;
+    gap: 6px !important;
+    margin-top: 2px !important;
   }
 
-  #todayPicks .today-card .mini-action,
-  #todayPicks .today-card .cook-action {
-    min-height: 32px !important;
+  #todayPicks .card-actions .mini-action {
+    min-height: 36px !important;
+  }
+
+  #todayPicks .card-actions .cook-action {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    min-height: 40px !important;
+  }
+
+  .mobile-pantry-entry {
+    order: 8;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: 1px solid rgba(201, 106, 74, 0.14);
+    border-radius: 22px;
+    background:
+      radial-gradient(circle at 88% 0%, rgba(255, 208, 145, 0.28), transparent 36%),
+      rgba(255, 250, 242, 0.94);
+    box-shadow: 0 14px 28px rgba(119, 104, 93, 0.09);
+  }
+
+  .mobile-pantry-entry p {
+    margin: 0 0 3px;
+    color: rgba(143, 63, 42, 0.82);
+    font-size: 0.72rem;
+    font-weight: 900;
+  }
+
+  .mobile-pantry-entry h2 {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.1;
+  }
+
+  .mobile-pantry-entry span {
+    display: block;
+    margin-top: 5px;
+    color: rgba(119, 104, 93, 0.82);
+    font-size: 0.76rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .mobile-pantry-entry button {
+    min-height: 40px;
+    padding: 0 13px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--tomato);
+    color: #fff;
+    font-size: 0.76rem;
+    font-weight: 900;
+    white-space: nowrap;
   }
 
   .special-section {
-    margin-top: 22px !important;
+    order: 9;
+    width: 100% !important;
+    margin-top: 20px !important;
+    padding: 0 !important;
   }
 
-  .special-heading,
-  .collection-pop {
+  .special-heading {
     padding: 12px !important;
   }
 
-  .collection-scroll {
-    display: flex !important;
-    gap: 12px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 2px 12px 10px 2px !important;
-    overflow-x: auto !important;
-    overscroll-behavior-inline: contain !important;
-    scroll-snap-type: x mandatory !important;
-    scrollbar-width: none !important;
-  }
-
-  .collection-scroll::-webkit-scrollbar {
-    display: none !important;
-  }
-
-  .collection-segment {
-    flex: 0 0 min(72vw, 290px) !important;
-    grid-template-rows: 92px 28px 25px !important;
-    min-width: 0 !important;
-    height: 145px !important;
-    min-height: 145px !important;
-    max-height: 145px !important;
-    scroll-snap-align: start !important;
-  }
-
-  .collection-baby,
-  .collection-lunchbox,
-  .collection-drinks,
-  .collection-salads,
-  .collection-desserts,
-  .collection-soups,
-  .collection-festival {
-    min-height: 145px !important;
-    background-size: 100% 92px !important;
-  }
-
-  .collection-segment strong {
-    display: -webkit-box !important;
-    min-height: 0 !important;
-    padding: 58px 10px 0 !important;
-    overflow: hidden !important;
-    font-size: 0.94rem !important;
-    line-height: 1.05 !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-line-clamp: 2 !important;
-  }
-
-  .collection-segment em {
-    display: -webkit-box !important;
-    padding: 4px 10px 6px !important;
-    overflow: hidden !important;
-    font-size: 0.68rem !important;
-    line-height: 1.1 !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-line-clamp: 1 !important;
-  }
-
-  .collection-scroll-button {
+  .collection-scroll-shell {
     display: none !important;
   }
 
   .collection-pop {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr) !important;
-    align-items: start !important;
+    gap: 12px !important;
     width: 100% !important;
     max-width: 100% !important;
-    gap: 12px !important;
+    padding: 12px !important;
     overflow: hidden !important;
   }
 
-  .collection-pop-copy {
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-  }
-
+  .collection-pop-copy,
   .collection-dishes,
   .collection-curated-page,
   .single-subcategory-list,
@@ -2626,50 +2640,39 @@
     max-width: 100% !important;
   }
 
-  .collection-pop-copy > p {
-    margin-bottom: 8px !important;
-  }
-
   .collection-sidebar-grid {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     grid-auto-flow: row !important;
-    grid-auto-columns: auto !important;
     gap: 10px !important;
     width: 100% !important;
-    max-width: 100% !important;
     padding: 0 !important;
     overflow: visible !important;
   }
 
   .collection-sidebar-tile {
     display: grid !important;
-    grid-template-columns: 1fr !important;
     grid-template-rows: auto auto auto !important;
+    align-content: end !important;
     gap: 4px !important;
     width: 100% !important;
-    height: 138px !important;
-    min-height: 138px !important;
-    max-height: 138px !important;
+    height: 132px !important;
+    min-height: 132px !important;
+    max-height: 132px !important;
     padding: 10px !important;
-    align-content: end !important;
     border-radius: 18px !important;
   }
 
   .collection-sidebar-tile > span,
   .collection-sidebar-tile span:first-child {
-    grid-row: 1 !important;
-    grid-column: 1 !important;
-    width: 44px !important;
-    height: 44px !important;
+    width: 42px !important;
+    height: 42px !important;
     margin: 0 0 4px !important;
     border-radius: 14px !important;
-    font-size: 1.2rem !important;
+    font-size: 1.15rem !important;
   }
 
   .collection-sidebar-tile strong {
-    grid-row: 2 !important;
-    grid-column: 1 !important;
     display: -webkit-box !important;
     overflow: hidden !important;
     font-size: 0.86rem !important;
@@ -2679,15 +2682,13 @@
   }
 
   .collection-sidebar-tile small {
-    grid-row: 3 !important;
-    grid-column: 1 !important;
     margin: 0 !important;
     font-size: 0.68rem !important;
   }
 
   .collection-subcategory-section {
-    padding: 10px !important;
-    border-radius: 20px !important;
+    padding: 8px !important;
+    border-radius: 18px !important;
   }
 
   .single-subcategory-list .collection-subcategory-row {
@@ -2696,8 +2697,7 @@
     grid-auto-columns: min(80vw, 330px) !important;
     gap: 12px !important;
     width: 100% !important;
-    max-width: 100% !important;
-    padding: 2px 12px 8px 2px !important;
+    padding: 2px 10px 8px 2px !important;
     overflow-x: auto !important;
     overscroll-behavior-inline: contain !important;
     scroll-snap-type: x mandatory !important;
@@ -2710,59 +2710,53 @@
 
   .single-subcategory-list .collection-subcategory-row > * {
     min-width: 0 !important;
-    max-width: 100% !important;
     scroll-snap-align: start !important;
   }
 
-  .collection-dishes .drink-card,
-  .collection-reveal .drink-card,
   .collection-subcategory-row .drink-card {
     grid-template-rows: 176px auto !important;
     min-height: 0 !important;
     max-height: 282px !important;
-    padding: 6px !important;
+    padding: 7px !important;
     overflow: hidden !important;
     border-radius: 20px !important;
   }
 
-  .collection-dishes .drink-card .recipe-icon,
-  .collection-reveal .drink-card .recipe-icon,
   .collection-subcategory-row .drink-card .recipe-icon,
   .collection-subcategory-row .curated-collection-card .recipe-icon {
+    width: 100% !important;
     height: 176px !important;
     min-height: 176px !important;
     border-radius: 17px !important;
   }
 
-  .collection-dishes .drink-card > div,
-  .collection-reveal .drink-card > div,
-  .collection-subcategory-row .drink-card > div {
-    gap: 3px !important;
-    padding: 6px 5px 1px !important;
-  }
-
-  .collection-dishes .drink-card strong,
-  .collection-reveal .drink-card strong,
   .collection-subcategory-row .drink-card strong {
     display: -webkit-box !important;
-    min-height: 0 !important;
     overflow: hidden !important;
-    font-size: 0.94rem !important;
-    line-height: 1.1 !important;
     -webkit-box-orient: vertical !important;
     -webkit-line-clamp: 2 !important;
   }
 
-  .collection-dishes .drink-card .collection-card-meta small,
-  .collection-reveal .drink-card .collection-card-meta small,
-  .collection-subcategory-row .drink-card .collection-card-meta small {
+  .collection-subcategory-row .collection-card-meta small {
     display: -webkit-box !important;
-    min-height: 0 !important;
     overflow: hidden !important;
-    font-size: 0.7rem !important;
-    line-height: 1.18 !important;
     -webkit-box-orient: vertical !important;
     -webkit-line-clamp: 1 !important;
+  }
+
+  #kitchenJournal {
+    order: 10;
+    display: grid !important;
+    width: 100% !important;
+    max-height: none !important;
+    margin: 20px 0 0 !important;
+    padding: 14px !important;
+    border-radius: 22px !important;
+  }
+
+  .app-shell > .tomo-nudge,
+  .facts-section {
+    display: none !important;
   }
 
   .bottom-nav {
@@ -2770,102 +2764,93 @@
   }
 
   #pantryDialog {
-    width: calc(100vw - 16px) !important;
-    max-width: calc(100vw - 16px) !important;
-    max-height: calc(100dvh - 16px) !important;
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  #pantryDialog::backdrop {
+    background: rgba(44, 32, 24, 0.32) !important;
   }
 
   #pantryDialog .pantry-card {
-    max-height: calc(100dvh - 16px) !important;
-    padding-right: 12px !important;
-    padding-bottom: 16px !important;
-    padding-left: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    margin: 0 !important;
+    padding: 0 12px calc(20px + env(safe-area-inset-bottom)) !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    border-radius: 0 !important;
+  }
+
+  #pantryDialog .pantry-modal-head {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 40 !important;
+    margin: 0 -12px !important;
+    padding: calc(12px + env(safe-area-inset-top)) 12px 10px !important;
+    border-radius: 0 !important;
+  }
+
+  #pantryDialog .pantry-suggestions {
+    position: sticky !important;
+    top: calc(58px + env(safe-area-inset-top)) !important;
+    z-index: 35 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 96px !important;
+    max-height: 292px !important;
+    margin: 0 0 10px !important;
+    padding: 9px !important;
     overflow-x: hidden !important;
     overflow-y: auto !important;
   }
 
-  #pantryDialog .cook-section {
-    padding: 12px !important;
+  #pantryDialog .pantry-suggestions .compact-stack {
+    min-height: 62px !important;
   }
 
   #pantryDialog .weighted-match-list {
-    grid-auto-columns: min(78vw, 280px) !important;
-    max-width: 100% !important;
-    overflow-x: auto !important;
-  }
-
-  #pantryDialog .weighted-match-card,
-  #pantryDialog .pantry-best-match {
-    min-width: 0 !important;
-    max-width: 100% !important;
-    padding: 10px !important;
-  }
-
-  #pantryDialog button {
-    max-width: 100% !important;
-  }
-
-  .cb-dashboard-hero,
-  .cb-dashboard-hero.revealed,
-  .tomo-hero,
-  .tomo-hero.revealed,
-  .tomo-hero-stable,
-  .tomo-hero-stable.revealed {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-auto-flow: row !important;
+    gap: 8px !important;
     width: 100% !important;
-    max-width: 100% !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
-    overflow: hidden !important;
+    padding: 0 !important;
+    overflow: visible !important;
   }
 
-  .cb-dashboard-weather,
-  .tomo-hero .hero-ambient-card,
-  .tomo-hero.revealed .hero-ambient-card,
-  .tomo-hero-stable .hero-ambient-card,
-  .tomo-hero-stable.revealed .hero-ambient-card {
-    justify-self: center !important;
-    width: min(100%, 260px) !important;
-    max-width: 260px !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    text-align: left !important;
-  }
-
-  .pantry-suggestions {
-    height: 164px !important;
-    min-height: 164px !important;
-    max-height: 164px !important;
-  }
-
-  .pantry-suggestions .compact-stack {
-    min-height: 108px !important;
-  }
-
-  .pantry-suggestions .weighted-match-list {
-    grid-auto-columns: min(88vw, 330px) !important;
-    gap: 10px !important;
-  }
-
-  .pantry-suggestions .weighted-match-card {
-    grid-template-columns: 64px minmax(0, 1fr) !important;
+  #pantryDialog .weighted-match-card {
+    display: grid !important;
+    grid-template-columns: 68px minmax(0, 1fr) !important;
     align-items: center !important;
-    min-height: 104px !important;
-    padding: 9px !important;
+    gap: 10px !important;
+    width: 100% !important;
+    min-height: 112px !important;
+    padding: 10px !important;
+    overflow: visible !important;
     cursor: pointer !important;
   }
 
-  .pantry-suggestions .match-thumb,
-  .pantry-suggestions .match-thumb .recipe-icon,
-  .pantry-suggestions .match-thumb .food-image {
-    width: 64px !important;
-    height: 64px !important;
-    min-width: 64px !important;
-    min-height: 64px !important;
+  #pantryDialog .match-thumb,
+  #pantryDialog .match-thumb .recipe-icon,
+  #pantryDialog .match-thumb .food-image {
+    width: 68px !important;
+    height: 68px !important;
+    min-width: 68px !important;
+    min-height: 68px !important;
+    border-radius: 13px !important;
   }
 
-  .pantry-suggestions .weighted-match-card strong {
+  #pantryDialog .weighted-match-card strong {
     display: -webkit-box !important;
     overflow: hidden !important;
     white-space: normal !important;
@@ -2873,23 +2858,19 @@
     -webkit-line-clamp: 2 !important;
   }
 
-  .pantry-suggestions .weighted-match-card p {
-    -webkit-line-clamp: 1 !important;
+  #pantryDialog .weighted-match-card p {
+    display: -webkit-box !important;
+    overflow: hidden !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
   }
 
-  .pantry-match-cta {
+  #pantryDialog .pantry-match-cta {
     display: inline-flex !important;
-    align-items: center !important;
-    gap: 4px !important;
-    width: fit-content !important;
-    color: rgba(143, 63, 42, 0.94) !important;
-    font-size: 0.68rem !important;
-    font-weight: 900 !important;
-    line-height: 1 !important;
+    margin-top: 2px !important;
   }
 
-  .pantry-match-cta > span {
-    font-size: 0.9rem !important;
-    line-height: 0.8 !important;
+  #pantryDialog .cook-section {
+    padding: 12px !important;
   }
 }

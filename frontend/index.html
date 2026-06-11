@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tomo</title>
-    <link rel="stylesheet" href="styles.css?v=mobile-final-ux-34" />
-    <link rel="stylesheet" href="final-overrides.css?v=mobile-final-ux-34" />
+    <link rel="stylesheet" href="styles.css?v=mobile-layout-reset-35" />
+    <link rel="stylesheet" href="final-overrides.css?v=mobile-layout-reset-35" />
   </head>
   <body>
     <main class="app-shell">
@@ -100,6 +100,15 @@
 
       <p id="recipeNotice" class="notice hidden"></p>
       <section id="todayPicks" class="meal-card-grid"></section>
+
+      <section class="mobile-pantry-entry" aria-label="Open Pantry">
+        <div>
+          <p>Tomo Pantry</p>
+          <h2>What’s in your kitchen?</h2>
+          <span>Pick ingredients and Tomo will suggest real dishes.</span>
+        </div>
+        <button id="mobilePantryButton" type="button">Open Pantry</button>
+      </section>
 
       <section id="kitchenJournal" class="kitchen-journal-card" aria-label="Tomo Journal"></section>
 
@@ -257,6 +266,6 @@
     <script src="local-recipes.js?v=pantry-confidence-1"></script>
     <script src="local-collections.js?v=duplicate-cleanup-1"></script>
     <script src="local-pantry-catalog.js?v=pantry-pepper-catalog-2"></script>
-    <script src="app.js?v=mobile-final-ux-34"></script>
+    <script src="app.js?v=mobile-layout-reset-35"></script>
   </body>
 </html>

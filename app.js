@@ -486,6 +486,7 @@ const els = {
   globalSearchResults: document.querySelector('#globalSearchResults'),
   pantryDialog: document.querySelector('#pantryDialog'),
   pantryNavButton: document.querySelector('#pantryNavButton'),
+  mobilePantryButton: document.querySelector('#mobilePantryButton'),
   pantryModalTitle: document.querySelector('#pantryModalTitle'),
   pantryModalSubtitle: document.querySelector('#pantryModalSubtitle'),
   pantrySuggestions: document.querySelector('#pantrySuggestions'),
@@ -4806,6 +4807,7 @@ function renderAll() {
   renderTomoPick();
   renderTodayPicks();
   renderSpecialRows();
+  renderKitchenJournal();
   renderIngredients();
   renderIngredientResults();
   renderGrocery();
@@ -5297,12 +5299,15 @@ els.groceryButton.addEventListener('click', () => els.groceryDialog.showModal())
 els.searchButton.addEventListener('click', openGlobalSearch);
 els.closeSearch?.addEventListener('click', () => els.searchDialog.close());
 els.globalSearchInput?.addEventListener('input', renderGlobalSearch);
-els.pantryNavButton.addEventListener('click', () => {
+function openPantryRoute() {
   updatePantryTomoMessage({ context: state.selectedIngredients.size ? 'ingredient_selected' : 'pantry_open', selectedIngredients: [...state.selectedIngredients] });
   renderIngredientResults();
   showPantryView('dashboard');
   els.pantryDialog.showModal();
-});
+}
+
+els.pantryNavButton.addEventListener('click', openPantryRoute);
+els.mobilePantryButton?.addEventListener('click', openPantryRoute);
 els.closePantry.addEventListener('click', handlePantryClose);
 els.closeGrocery.addEventListener('click', () => els.groceryDialog.close());
 els.clearPurchased?.addEventListener('click', () => {
