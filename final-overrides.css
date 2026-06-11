@@ -2384,3 +2384,58 @@
     flex-wrap: wrap !important;
   }
 }
+
+/* Phone layout: keep navigation readable and collection dishes food-first. */
+@media (max-width: 430px) {
+  .meal-tabs {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 6px !important;
+    overflow: hidden !important;
+  }
+
+  .meal-tab-scroll {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 5px !important;
+    overflow: visible !important;
+  }
+
+  .meal-tab {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 42px !important;
+    padding: 0 5px !important;
+    font-size: 0.72rem !important;
+  }
+
+  .collection-pop {
+    min-width: 0 !important;
+    padding: 12px !important;
+  }
+
+  .collection-pop-copy,
+  .collection-dishes,
+  .collection-curated-page,
+  .single-subcategory-list,
+  .collection-subcategory-section {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .single-subcategory-list .collection-subcategory-row {
+    grid-auto-columns: 84% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: 10px !important;
+    overflow-x: auto !important;
+    overscroll-behavior-inline: contain !important;
+    scroll-snap-type: x mandatory !important;
+  }
+
+  .single-subcategory-list .collection-subcategory-row > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    scroll-snap-align: start !important;
+  }
+}
