@@ -1013,81 +1013,37 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   function journeyView() {
     const items = journalItems(state.cookedDishes)
       .sort((a, b) => new Date(b.record.timestamp || 0) - new Date(a.record.timestamp || 0));
-    if (!hasRealJourneyActivity()) return journalPrototypePreview();
-    if (!items.length) {
-      return actualJourneyPreview();
-    }
-    const summary = journeySummary(items);
+    const hasRealActivity = hasRealJourneyActivity();
+    const summary = hasRealActivity ? journeySummary(items) : prototypeJourneySummary();
+    const activity = hasRealActivity
+      ? realJourneyActivities().slice(0, 3)
+      : [
+        'Saved Chicken Curry',
+        'Viewed Egg Fried Rice',
+        'Added Garlic to Shopping Cart'
+      ];
     return `
       <section class="mv2-journey-section">
-        <div class="mv2-section-title"><div><p>Your kitchen story</p><h2>Journey Summary</h2></div></div>
+        <div class="mv2-section-title"><div><p>${hasRealActivity ? 'Your kitchen story' : 'Preview of your cooking journey'}</p><h2>Journey Summary</h2></div></div>
         <div class="mv2-journey-stats">
           ${journeyStat('🍳', 'Meals Cooked', summary.mealsCooked)}
           ${journeyStat('🔥', 'Current Streak', summary.streak ? `${summary.streak} ${summary.streak === 1 ? 'day' : 'days'}` : 'Coming Soon')}
           ${journeyStat('⭐', 'Most Cooked Dish', summary.mostCooked)}
-          ${journeyStat('🎯', 'Favorite Mood', summary.favoriteMood)}
+          ${journeyStat('😊', 'Favorite Mood', summary.favoriteMood)}
         </div>
       </section>
       <section class="mv2-journey-section">
-        <div class="mv2-section-title"><div><p>Your latest cooks</p><h2>Recent Activity</h2></div></div>
-        ${journeyActivity(items.slice(0, 3))}
+        ${tomoInsightCard(summary, hasRealActivity)}
       </section>
       <section class="mv2-journey-section">
-        <div class="mv2-section-title"><div><p>A little pattern spotting</p><h2>Cooking Insights</h2></div></div>
-        <article class="mv2-journey-insights">${journeyInsights(items).map((insight) => `<p>${esc(insight)}</p>`).join('')}</article>
+        <div class="mv2-section-title"><div><p>${hasRealActivity ? 'Your latest activity' : 'Preview of your cooking journey'}</p><h2>Recent Activity</h2></div></div>
+        ${journeyTextActivity(activity, !hasRealActivity)}
       </section>
     `;
   }
 
   function hasRealJourneyActivity() {
     return Boolean(state.cookedDishes.length || state.savedDishes.length || state.groceries.length);
-  }
-
-  function journalPrototypePreview() {
-    return `
-      <section class="mv2-journey-section">
-        <div class="mv2-section-title"><div><p>Preview of your cooking journey</p><h2>Journey Summary</h2></div></div>
-        <div class="mv2-journey-stats mv2-prototype-stats">
-          ${journeyStat('🔥', 'Dishes Explored', '3')}
-          ${journeyStat('❤️', 'Dishes Saved', '2')}
-          ${journeyStat('🛒', 'Ingredients Added', '4')}
-        </div>
-      </section>
-      <section class="mv2-journey-section">
-        <div class="mv2-section-title"><div><p>Preview of your cooking journey</p><h2>Recent Activity</h2></div></div>
-        ${journeyTextActivity([
-          'Saved Chicken Curry',
-          'Viewed Egg Fried Rice',
-          'Added Garlic to Shopping Cart'
-        ], true)}
-      </section>
-      <section class="mv2-journey-section">
-        <div class="mv2-section-title"><div><p>A little pattern spotting</p><h2>Cooking Insights</h2></div></div>
-        <article class="mv2-journey-insights"><p>Your cooking story is just getting started.</p></article>
-      </section>
-    `;
-  }
-
-  function actualJourneyPreview() {
-    const activities = realJourneyActivities().slice(0, 3);
-    return `
-      <section class="mv2-journey-section">
-        <div class="mv2-section-title"><div><p>Your kitchen story</p><h2>Journey Summary</h2></div></div>
-        <div class="mv2-journey-stats mv2-prototype-stats">
-          ${journeyStat('🔥', 'Dishes Explored', String(state.cookedDishes.length))}
-          ${journeyStat('❤️', 'Dishes Saved', String(state.savedDishes.length))}
-          ${journeyStat('🛒', 'Ingredients Added', String(state.groceries.length))}
-        </div>
-      </section>
-      <section class="mv2-journey-section">
-        <div class="mv2-section-title"><div><p>Your latest activity</p><h2>Recent Activity</h2></div></div>
-        ${activities.length ? journeyTextActivity(activities, false) : journalEmptyState('👨‍🍳', 'Your cooking journey starts here.', 'Cook your first dish and Tomo will begin building your kitchen story.')}
-      </section>
-      <section class="mv2-journey-section">
-        <div class="mv2-section-title"><div><p>A little pattern spotting</p><h2>Cooking Insights</h2></div></div>
-        <article class="mv2-journey-insights"><p>Your cooking story is just getting started.</p></article>
-      </section>
-    `;
   }
 
   function realJourneyActivities() {
@@ -1116,9 +1072,19 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return `<article class="mv2-journey-stat"><span>${icon}</span><small>${esc(label)}</small><strong>${esc(value)}</strong></article>`;
   }
 
+  function prototypeJourneySummary() {
+    return {
+      mealsCooked: '1',
+      streak: 1,
+      mostCooked: 'Chicken Curry',
+      favoriteMood: 'Rainy'
+    };
+  }
+
   function journeySummary(items) {
     const moodCounts = new Map();
-    items.forEach((item) => {
+    const moodRecords = items.length ? items : journalItems([...state.savedDishes]);
+    moodRecords.forEach((item) => {
       const mood = item.recipe ? moodLabel(item.recipe) : 'Comfort';
       moodCounts.set(mood, (moodCounts.get(mood) || 0) + Number(item.record.cookCount || 1));
     });
@@ -1130,6 +1096,23 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       mostCooked: mostCookedItem?.recipe?.title || mostCookedItem?.record.dishName || 'Still learning',
       favoriteMood
     };
+  }
+
+  function tomoInsightCard(summary, hasRealActivity) {
+    const mood = summary.favoriteMood && summary.favoriteMood !== 'Still learning' ? summary.favoriteMood : 'comfort';
+    const dish = summary.mostCooked && summary.mostCooked !== 'Still learning' ? summary.mostCooked : '';
+    const intro = hasRealActivity
+      ? dish
+        ? `${mood} meals like ${dish} seem to be your thing.`
+        : `${mood} meals seem to be your thing.`
+      : 'Rainy-day comfort meals seem to be your thing.';
+    return `
+      <article class="mv2-tomo-insight">
+        <strong>Tomo Insight</strong>
+        <p>${esc(intro)}</p>
+        <p>Tomo will keep learning your cooking style as you cook more dishes.</p>
+      </article>
+    `;
   }
 
   function cookingStreak(items) {

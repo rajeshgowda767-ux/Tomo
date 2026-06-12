@@ -1356,10 +1356,6 @@ html.mobile-v2-active body {
     gap: 9px;
   }
 
-  .mv2-prototype-stats {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .mv2-journey-stat {
     display: grid;
     align-content: start;
@@ -1400,26 +1396,6 @@ html.mobile-v2-active body {
     line-height: 1.14;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-  }
-
-  .mv2-prototype-stats .mv2-journey-stat {
-    min-height: 104px;
-    padding: 11px;
-  }
-
-  .mv2-prototype-stats .mv2-journey-stat > span {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 7px;
-    font-size: 0.98rem;
-  }
-
-  .mv2-prototype-stats .mv2-journey-stat small {
-    font-size: 0.6rem;
-  }
-
-  .mv2-prototype-stats .mv2-journey-stat strong {
-    font-size: 1rem;
   }
 
   .mv2-journey-activity {
@@ -1503,6 +1479,31 @@ html.mobile-v2-active body {
 
   .mv2-journey-text-activity.prototype {
     background: rgba(255, 244, 236, 0.86);
+  }
+
+  .mv2-tomo-insight {
+    display: grid;
+    gap: 7px;
+    padding: 14px;
+    border: 1px solid rgba(201, 106, 74, 0.16);
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(255, 244, 236, 0.96), rgba(255, 240, 215, 0.74));
+    box-shadow: 0 8px 18px rgba(164, 106, 59, 0.07);
+  }
+
+  .mv2-tomo-insight strong {
+    color: #9f4f38;
+    font-size: 0.76rem;
+    font-weight: 950;
+    letter-spacing: 0.01em;
+  }
+
+  .mv2-tomo-insight p {
+    margin: 0;
+    color: #5f4337;
+    font-size: 0.8rem;
+    font-weight: 780;
+    line-height: 1.35;
   }
 
   .mv2-journey-insights {
