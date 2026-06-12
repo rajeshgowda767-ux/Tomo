@@ -27,6 +27,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     dishOrigin: 'discover',
     kitchenTab: 'pantry',
     shoppingMode: false,
+    cartUnlocksExpanded: false,
     journalTab: 'saved',
     journalScrollY: 0,
     discoverScrollY: 0,
@@ -734,7 +735,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   function primaryScreen() {
     if (state.screen === 'collection') return 'discover';
     if (state.screen === 'dish') {
-      if (state.dishOrigin === 'pantry') return 'kitchen';
+      if (state.dishOrigin === 'pantry' || state.dishOrigin === 'cart') return 'kitchen';
       if (state.dishOrigin === 'journal') return 'journal';
       return 'discover';
     }
@@ -871,7 +872,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function groceriesView() {
-    const suggestions = grocerySuggestions();
+    const unlocks = groceryUnlocks();
     const left = state.groceries.filter((item) => !item.complete).length;
     const completed = state.groceries.some((item) => item.complete);
     const itemCount = state.groceries.length;
@@ -888,16 +889,37 @@ window.renderMobileV2App = function renderMobileV2App(root) {
           <button type="submit">Add</button>
         </form>
         ${state.groceries.length ? `<div class="mv2-grocery-tools">${state.shoppingMode && completed ? '<button type="button" data-clear-completed>Clear Completed</button>' : ''}<button type="button" data-clear-groceries>Clear Cart</button></div>` : ''}
+        ${state.groceries.length ? '<h3 class="mv2-cart-items-title">Items To Buy</h3>' : ''}
         <div class="mv2-grocery-list">
           ${state.groceries.map((item) => `<div class="mv2-grocery-item ${state.shoppingMode && item.complete ? 'complete' : ''}">${state.shoppingMode ? `<label><input type="checkbox" data-grocery-check="${esc(item.name)}" ${item.complete ? 'checked' : ''} /><span><strong>${esc(item.name)}</strong>${item.neededFor.length ? `<small>For: ${esc(item.neededFor.join(', '))}</small>` : ''}</span></label>` : `<div class="mv2-grocery-item-copy"><strong>${esc(item.name)}</strong>${item.neededFor.length ? `<small>For: ${esc(item.neededFor.join(', '))}</small>` : ''}</div>`}<button type="button" data-grocery-remove="${esc(item.name)}" aria-label="Remove ${esc(item.name)}">×</button></div>`).join('') || '<p class="mv2-empty">Your cart is empty.</p>'}
         </div>
         ${state.groceries.length && !state.shoppingMode ? '<button class="mv2-start-shopping" type="button" data-start-shopping>Start Shopping</button>' : ''}
         ${itemCount ? readyToShopView(itemCount, dishNames) : ''}
       </section>
-      <section class="mv2-grocery-suggestions">
-        <div class="mv2-section-title"><div><p>From your Pantry</p><h2>Tomo Suggestions</h2></div></div>
-        ${suggestions.map((item) => `<article class="mv2-grocery-suggestion"><div class="mv2-grocery-suggestion-copy"><strong>Add ${esc(item.ingredient)}</strong><span>Unlocks:</span><ul>${item.recipes.map((recipe) => `<li>${esc(recipe.title)}</li>`).join('')}</ul></div><button type="button" data-add-grocery="${esc(item.ingredient)}" data-needed-recipe="${esc(item.recipes[0]?.id || '')}">Add to Cart</button></article>`).join('') || '<p class="mv2-empty">Select Pantry ingredients to see useful additions.</p>'}
+      ${itemCount ? cartUnlocksView(unlocks) : ''}
+    `;
+  }
+
+  function cartUnlocksView(unlocks) {
+    if (!unlocks.length) return '';
+    const visible = state.cartUnlocksExpanded ? unlocks : unlocks.slice(0, 4);
+    return `
+      <section class="mv2-cart-unlocks">
+        <div class="mv2-section-title"><div><p>More ideas</p><h2>Unlock More Dishes</h2></div></div>
+        <div class="mv2-cart-unlock-grid">
+          ${visible.map((item) => cartUnlockCard(item)).join('')}
+        </div>
+        ${unlocks.length > 4 && !state.cartUnlocksExpanded ? '<button class="mv2-cart-view-more" type="button" data-cart-unlocks-more>View More →</button>' : ''}
       </section>
+    `;
+  }
+
+  function cartUnlockCard(item) {
+    return `
+      <button class="mv2-cart-unlock-card" type="button" data-cart-unlock-recipe="${esc(item.recipe.id)}">
+        ${imageTag(recipeImage(item.recipe))}
+        <span><strong>${esc(item.recipe.title)}</strong><small>Unlock by adding:</small><em>${esc(item.ingredient)}</em></span>
+      </button>
     `;
   }
 
@@ -991,12 +1013,9 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   function journeyView() {
     const items = journalItems(state.cookedDishes)
       .sort((a, b) => new Date(b.record.timestamp || 0) - new Date(a.record.timestamp || 0));
+    if (!hasRealJourneyActivity()) return journalPrototypePreview();
     if (!items.length) {
-      return journalEmptyState(
-        '👨‍🍳',
-        'Your cooking journey starts here.',
-        'Cook your first dish and Tomo will begin building your kitchen story.'
-      );
+      return actualJourneyPreview();
     }
     const summary = journeySummary(items);
     return `
@@ -1018,6 +1037,79 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         <article class="mv2-journey-insights">${journeyInsights(items).map((insight) => `<p>${esc(insight)}</p>`).join('')}</article>
       </section>
     `;
+  }
+
+  function hasRealJourneyActivity() {
+    return Boolean(state.cookedDishes.length || state.savedDishes.length || state.groceries.length);
+  }
+
+  function journalPrototypePreview() {
+    return `
+      <section class="mv2-journey-section">
+        <div class="mv2-section-title"><div><p>Preview of your cooking journey</p><h2>Journey Summary</h2></div></div>
+        <div class="mv2-journey-stats mv2-prototype-stats">
+          ${journeyStat('🔥', 'Dishes Explored', '3')}
+          ${journeyStat('❤️', 'Dishes Saved', '2')}
+          ${journeyStat('🛒', 'Ingredients Added', '4')}
+        </div>
+      </section>
+      <section class="mv2-journey-section">
+        <div class="mv2-section-title"><div><p>Preview of your cooking journey</p><h2>Recent Activity</h2></div></div>
+        ${journeyTextActivity([
+          'Saved Chicken Curry',
+          'Viewed Egg Fried Rice',
+          'Added Garlic to Shopping Cart'
+        ], true)}
+      </section>
+      <section class="mv2-journey-section">
+        <div class="mv2-section-title"><div><p>A little pattern spotting</p><h2>Cooking Insights</h2></div></div>
+        <article class="mv2-journey-insights"><p>Your cooking story is just getting started.</p></article>
+      </section>
+    `;
+  }
+
+  function actualJourneyPreview() {
+    const activities = realJourneyActivities().slice(0, 3);
+    return `
+      <section class="mv2-journey-section">
+        <div class="mv2-section-title"><div><p>Your kitchen story</p><h2>Journey Summary</h2></div></div>
+        <div class="mv2-journey-stats mv2-prototype-stats">
+          ${journeyStat('🔥', 'Dishes Explored', String(state.cookedDishes.length))}
+          ${journeyStat('❤️', 'Dishes Saved', String(state.savedDishes.length))}
+          ${journeyStat('🛒', 'Ingredients Added', String(state.groceries.length))}
+        </div>
+      </section>
+      <section class="mv2-journey-section">
+        <div class="mv2-section-title"><div><p>Your latest activity</p><h2>Recent Activity</h2></div></div>
+        ${activities.length ? journeyTextActivity(activities, false) : journalEmptyState('👨‍🍳', 'Your cooking journey starts here.', 'Cook your first dish and Tomo will begin building your kitchen story.')}
+      </section>
+      <section class="mv2-journey-section">
+        <div class="mv2-section-title"><div><p>A little pattern spotting</p><h2>Cooking Insights</h2></div></div>
+        <article class="mv2-journey-insights"><p>Your cooking story is just getting started.</p></article>
+      </section>
+    `;
+  }
+
+  function realJourneyActivities() {
+    const saved = state.savedDishes.map((record) => ({
+      text: `Saved ${record.dishName}`,
+      timestamp: record.timestamp || ''
+    }));
+    const cooked = state.cookedDishes.map((record) => ({
+      text: `Cooked ${record.dishName}`,
+      timestamp: record.timestamp || ''
+    }));
+    const cart = state.groceries.map((item) => ({
+      text: `Added ${item.name} to Shopping Cart`,
+      timestamp: ''
+    }));
+    return [...saved, ...cooked, ...cart]
+      .sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0))
+      .map((item) => item.text);
+  }
+
+  function journeyTextActivity(items, prototype = false) {
+    return `<article class="mv2-journey-text-activity ${prototype ? 'prototype' : ''}"><ul>${items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul></article>`;
   }
 
   function journeyStat(icon, label, value) {
@@ -1187,8 +1279,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const matchCopy = availability.need.length
       ? `You already have ${availability.have.length ? 'most of what you need' : 'a useful start'}. Only ${availability.need.length} ${availability.need.length === 1 ? 'ingredient is' : 'ingredients are'} missing.`
       : 'You already have the listed essentials for this dish.';
-    const backLabel = state.dishOrigin === 'pantry' ? '← Back to Pantry' : state.dishOrigin === 'journal' ? '← Back to Journal' : '← Back';
-    const backTarget = state.dishOrigin === 'pantry' ? 'pantry' : state.dishOrigin === 'journal' ? 'journal' : state.dishOrigin === 'collection' ? 'collection-detail' : 'discover';
+    const backLabel = state.dishOrigin === 'pantry' ? '← Back to Pantry' : state.dishOrigin === 'cart' ? '← Back to Shopping Cart' : state.dishOrigin === 'journal' ? '← Back to Journal' : '← Back';
+    const backTarget = state.dishOrigin === 'pantry' ? 'pantry' : state.dishOrigin === 'cart' ? 'cart' : state.dishOrigin === 'journal' ? 'journal' : state.dishOrigin === 'collection' ? 'collection-detail' : 'discover';
     return `
       <button class="mv2-back" type="button" data-back="${backTarget}">${backLabel}</button>
       <article class="mv2-dish-decision-head">
@@ -1645,6 +1737,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return [...suggestions].slice(0, 5).map(([ingredient, unlockedRecipes]) => ({ ingredient, recipes: unlockedRecipes }));
   }
 
+  function groceryUnlocks() {
+    return grocerySuggestions()
+      .flatMap((item) => item.recipes.map((recipe) => ({ ingredient: item.ingredient, recipe })))
+      .filter((item, index, list) => item.recipe?.id && list.findIndex((entry) => entry.recipe.id === item.recipe.id) === index);
+  }
+
   function isPantryStaple(value) {
     return /^(water|salt|oil|cooking oil|sugar|pepper|turmeric|chilli powder|cumin|mustard seeds)$/.test(norm(value));
   }
@@ -2080,6 +2178,23 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       return;
     }
 
+    const moreUnlocks = event.target.closest('[data-cart-unlocks-more]');
+    if (moreUnlocks) {
+      state.cartUnlocksExpanded = true;
+      render();
+      return;
+    }
+
+    const unlockRecipe = event.target.closest('[data-cart-unlock-recipe]');
+    if (unlockRecipe) {
+      state.activeRecipeId = unlockRecipe.dataset.cartUnlockRecipe;
+      state.dishOrigin = 'cart';
+      state.screen = 'dish';
+      renderWithMotion('detail-forward');
+      window.scrollTo(0, 0);
+      return;
+    }
+
     const copyList = event.target.closest('[data-copy-shopping-list]');
     if (copyList) {
       const copied = await copyShoppingList();
@@ -2202,6 +2317,13 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         state.kitchenTab = 'pantry';
         renderWithMotion('back');
         requestAnimationFrame(() => window.scrollTo(0, state.pantryScrollY));
+        return;
+      }
+      if (back.dataset.back === 'cart') {
+        state.screen = 'kitchen';
+        state.kitchenTab = 'groceries';
+        renderWithMotion('back');
+        window.scrollTo(0, 0);
         return;
       }
       if (back.dataset.back === 'journal') {
