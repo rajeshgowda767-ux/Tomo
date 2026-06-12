@@ -151,6 +151,16 @@ html.mobile-v2-active body {
     font-weight: 800;
   }
 
+  .mv2-discover-header .mv2-header-actions {
+    align-self: stretch;
+  }
+
+  .mv2-discover-header .mv2-header-weather {
+    align-content: center;
+    flex-basis: 132px;
+    width: 132px;
+  }
+
   .mv2-global-search {
     position: sticky;
     top: calc(72px + env(safe-area-inset-top));
@@ -189,6 +199,20 @@ html.mobile-v2-active body {
   .mv2-global-search input::placeholder {
     color: #9b7a67;
     opacity: 1;
+  }
+
+  .mv2-discover-search {
+    min-height: 44px;
+    padding: 0 12px;
+    border-radius: 15px;
+  }
+
+  .mv2-discover-search > span {
+    font-size: 0.82rem;
+  }
+
+  .mv2-discover-search input {
+    font-size: 0.8rem;
   }
 
   .mv2-screen,
@@ -911,6 +935,31 @@ html.mobile-v2-active body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8px;
     margin: 10px 0 22px;
+  }
+
+  .mv2-mood-heading {
+    display: grid;
+    gap: 3px;
+    margin: 14px 0 9px;
+  }
+
+  .mv2-mood-heading h2,
+  .mv2-mood-heading p {
+    margin: 0;
+  }
+
+  .mv2-mood-heading h2 {
+    color: #4c2f24;
+    font-size: 1rem;
+    font-weight: 950;
+    line-height: 1.15;
+  }
+
+  .mv2-mood-heading p {
+    color: #80695d;
+    font-size: 0.72rem;
+    font-weight: 730;
+    line-height: 1.3;
   }
 
   .mv2-moods::-webkit-scrollbar,
@@ -2202,7 +2251,7 @@ html.mobile-v2-active body {
     z-index: 18;
     display: grid;
     gap: 8px;
-    margin: 0 -16px 14px;
+    margin: 0 -16px 12px;
     padding: 10px 16px 11px;
     border-top: 1px solid rgba(201, 106, 74, 0.08);
     border-bottom: 1px solid rgba(201, 106, 74, 0.12);
@@ -2211,15 +2260,36 @@ html.mobile-v2-active body {
     backdrop-filter: blur(16px);
   }
 
+  .mv2-collection-context {
+    display: grid;
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 8px;
+    align-items: center;
+  }
+
+  .mv2-collection-back {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid #f1d8c8;
+    border-radius: 12px;
+    background: #fff4ec;
+    color: #9f4f38;
+    font-size: 1rem;
+    font-weight: 950;
+  }
+
   .mv2-collection-detail,
   .mv2-collection-results {
     overflow-anchor: none;
   }
 
-  .mv2-collection-nav > strong {
+  .mv2-collection-context > strong {
     overflow: hidden;
     color: #9f4f38;
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     font-weight: 950;
     line-height: 1.1;
     text-overflow: ellipsis;

@@ -705,11 +705,11 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     pendingMotion = '';
     root.innerHTML = `
       <div class="mv2-app${motionClass}">
-      <header class="mv2-header">
+      <header class="mv2-header ${state.screen === 'discover' ? 'mv2-discover-header' : ''}">
         <div class="mv2-brand"><span class="mv2-logo"><img src="tomo.png" alt="" /></span><div><h1>${state.screen === 'kitchen' ? '🍅 Kitchen' : state.screen === 'journal' ? '📖 Journal' : 'Tomo'}</h1><p>${state.screen === 'kitchen' ? 'Pantry to plate, all in one place' : state.screen === 'journal' ? 'Your cooking journey, saved in one place.' : 'Food for Every Mood'}</p></div></div>
         <div class="mv2-header-actions">${headerWeather()}</div>
       </header>
-      ${state.screen === 'kitchen' ? '' : globalSearchBar()}
+      ${state.screen === 'kitchen' ? '' : globalSearchBar(state.screen === 'discover')}
       <main>
         <section class="mv2-screen ${state.screen === 'discover' ? 'active' : ''}">${discoverView()}</section>
         <section class="mv2-screen ${state.screen === 'kitchen' ? 'active' : ''}">${kitchenView()}</section>
@@ -757,7 +757,6 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const pickContext = state.activeTomoPick;
     const picks = mealRecipes(state.meal, 2, { excludeDismissed: true });
     return `
-      <p class="mv2-banter mv2-tomo-strip"><span>🍅</span><span>Tomo has a pick waiting.</span></p>
       <article class="mv2-pick mv2-hero-pick">
         <div class="mv2-pick-image">${imageTag(recipeImage(pick))}<span class="mv2-badge">Tomo Pick</span></div>
         <div class="mv2-pick-body">
@@ -767,6 +766,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
           ${dishActionButtons(pick?.id || '', pick?.title || '', 'tomo-pick', 'mv2-hero-actions')}
         </div>
       </article>
+      <div class="mv2-mood-heading">
+        <h2>Choose Your Mood</h2>
+        <p>Pick how you're feeling and Tomo will adapt.</p>
+      </div>
       <div class="mv2-moods">${moods.map(([key, icon, label]) => `<button class="mv2-mood ${state.mood === key ? 'active' : ''}" type="button" data-mood="${key}"><span>${icon}</span><span>${label}</span></button>`).join('')}</div>
       <section><div class="mv2-section-title"><div><p>Today's Picks</p><h2>${mealLabel(state.meal)}</h2></div><span>${picks.length} ${picks.length === 1 ? 'dish' : 'dishes'}</span></div><div class="mv2-meal-tabs">${meals.map(([key, label]) => `<button class="${state.meal === key ? 'active' : ''}" type="button" data-meal="${key}">${label}</button>`).join('')}</div><div class="mv2-dish-list">${picks.map(recipeCard).join('') || '<p class="mv2-empty">No dishes found for this meal yet.</p>'}</div></section>
     `;
@@ -784,8 +787,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return String(phrase || '').match(/(?:☀️|🌙|🌧️|⛅)/u)?.[0] || '';
   }
 
-  function globalSearchBar() {
-    return `<form class="mv2-global-search" data-search-form><span>🔎</span><input id="mv2GlobalSearch" name="search" type="search" placeholder="Search dishes, moods, ingredients..." value="${esc(state.searchQuery)}" autocomplete="off" /></form>`;
+  function globalSearchBar(isDiscover = false) {
+    return `<form class="mv2-global-search ${isDiscover ? 'mv2-discover-search' : ''}" data-search-form><span>🔎</span><input id="mv2GlobalSearch" name="search" type="search" placeholder="Search dishes, moods, ingredients..." value="${esc(state.searchQuery)}" autocomplete="off" /></form>`;
   }
 
   function searchModal() {
@@ -1146,18 +1149,20 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const active = groups.find((group) => group.name === selected) || groups[0];
     return `
       <div class="mv2-collection-detail">
-        <button class="mv2-back" type="button" data-back="collections">← ${esc(collection.title)}</button>
+        <div class="mv2-collection-nav">
+          <div class="mv2-collection-context">
+            <button class="mv2-collection-back" type="button" data-back="collections" aria-label="Back to Collections">←</button>
+            <strong>${esc(collection.title)}</strong>
+          </div>
+          <div class="mv2-subcategories mv2-subcategories-grid">
+            ${groups.map((group) => `<button class="mv2-subcategory ${group.name === selected ? 'active' : ''}" type="button" data-subcategory="${esc(group.name)}">${esc(group.name)}</button>`).join('')}
+          </div>
+        </div>
         <header class="mv2-collection-header" style="--collection-image: url('${esc(collectionImage(collection))}')">
           <p>${esc(collection.icon || '🍲')} Tomo Collection</p>
           <h2>${esc(collection.title)}</h2>
           <span>${esc(collection.copy || collection.subtitle || '')}</span>
         </header>
-        <div class="mv2-collection-nav">
-          <strong>${esc(collection.title)}</strong>
-          <div class="mv2-subcategories mv2-subcategories-grid">
-            ${groups.map((group) => `<button class="mv2-subcategory ${group.name === selected ? 'active' : ''}" type="button" data-subcategory="${esc(group.name)}">${esc(group.name)}</button>`).join('')}
-          </div>
-        </div>
         <div class="mv2-collection-results">
           ${collectionResults(active)}
         </div>

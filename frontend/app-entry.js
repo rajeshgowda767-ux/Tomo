@@ -36,7 +36,7 @@ function startApp() {
 
   if (isMobile || forceMobileV2) {
     root.innerHTML = '';
-    loadStylesheet('mobile/mobile-v2.css?v=mobile-rc1-shopping-cart-final');
+    loadStylesheet('mobile/mobile-v2.css?v=mobile-v2-discover-regression-fix-1');
     window.renderMobileV2App(root);
     return;
   }
