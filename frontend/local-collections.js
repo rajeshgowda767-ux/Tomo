@@ -242,7 +242,7 @@ window.COOKBUDDY_LOCAL_COLLECTIONS = {
           "discovery_score": 31.1,
           "collection_order": 2,
           "display_order": 2,
-          "imagePath": "/assets/images/dishes/mashed-banana-baby-ceramic.png",
+          "imagePath": "/assets/images/dishes/batch7-mashed-banana.png",
           "recipe_type": "collection",
           "recipeType": "collection",
           "primary_ingredient_1": "Banana",
@@ -250,7 +250,9 @@ window.COOKBUDDY_LOCAL_COLLECTIONS = {
           "primary_ingredient_3": null,
           "primaryIngredient1": "Banana",
           "primaryIngredient2": null,
-          "primaryIngredient3": null
+          "primaryIngredient3": null,
+          "image_url": "/assets/images/dishes/batch7-mashed-banana.png",
+          "imageUrl": "/assets/images/dishes/batch7-mashed-banana.png"
         },
         {
           "id": "apple-puree",
@@ -5582,7 +5584,10 @@ window.COOKBUDDY_LOCAL_COLLECTIONS = {
           "primary_ingredient_3": null,
           "primaryIngredient1": "Millet",
           "primaryIngredient2": "Vegetables",
-          "primaryIngredient3": null
+          "primaryIngredient3": null,
+          "imagePath": "/assets/images/dishes/batch7-millet-salad.png",
+          "image_url": "/assets/images/dishes/batch7-millet-salad.png",
+          "imageUrl": "/assets/images/dishes/batch7-millet-salad.png"
         },
         {
           "id": "sprouts-salad",
@@ -9130,8 +9135,8 @@ window.COOKBUDDY_LOCAL_COLLECTIONS = {
           "discovery_score": 30.3,
           "collection_order": 9,
           "display_order": 4,
-          "imagePath": "assets/images/collections/soups.webp",
-          "image_url": "assets/images/collections/soups.webp",
+          "imagePath": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+          "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
           "recipe_type": "collection",
           "recipeType": "collection",
           "primary_ingredient_1": "Vegetable",
@@ -9139,7 +9144,8 @@ window.COOKBUDDY_LOCAL_COLLECTIONS = {
           "primary_ingredient_3": null,
           "primaryIngredient1": "Vegetable",
           "primaryIngredient2": "Spices",
-          "primaryIngredient3": null
+          "primaryIngredient3": null,
+          "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png"
         },
         {
           "id": "tomato-rasam",
@@ -10600,8 +10606,8 @@ window.COOKBUDDY_LOCAL_COLLECTIONS = {
           "discovery_score": 32,
           "collection_order": 31,
           "display_order": 7,
-          "imagePath": "assets/images/collections/festival-food.webp",
-          "image_url": "assets/images/collections/festival-food.webp",
+          "imagePath": "/assets/images/dishes/batch7-plum-cake.png",
+          "image_url": "/assets/images/dishes/batch7-plum-cake.png",
           "recipe_type": "collection",
           "recipeType": "collection",
           "primary_ingredient_1": null,
@@ -10609,7 +10615,8 @@ window.COOKBUDDY_LOCAL_COLLECTIONS = {
           "primary_ingredient_3": null,
           "primaryIngredient1": null,
           "primaryIngredient2": null,
-          "primaryIngredient3": null
+          "primaryIngredient3": null,
+          "imageUrl": "/assets/images/dishes/batch7-plum-cake.png"
         },
         {
           "id": "rose-cookies",

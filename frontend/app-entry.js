@@ -17,8 +17,8 @@ function loadScript(src) {
 }
 
 async function renderDesktopApp(root) {
-  loadStylesheet('styles.css?v=hero-collection-polish-40');
-  loadStylesheet('final-overrides.css?v=hero-collection-polish-40');
+  loadStylesheet('styles.css?v=hero-content-groups-8');
+  loadStylesheet('final-overrides.css?v=hero-content-groups-8');
 
   const response = await fetch('desktop-reference.html');
   if (!response.ok) throw new Error(`Desktop shell failed to load: ${response.status}`);
@@ -26,17 +26,24 @@ async function renderDesktopApp(root) {
   const page = new DOMParser().parseFromString(await response.text(), 'text/html');
   page.querySelectorAll('script').forEach((script) => script.remove());
   root.replaceChildren(...page.body.children);
-  await loadScript('app.js?v=render-path-proof-1');
+  await loadScript('app.js?v=hero-content-groups-8');
 }
+
+let currentAppMode = '';
+let resizeTimer = null;
 
 function startApp() {
   const root = document.querySelector('#appRoot');
   const isMobile = window.innerWidth <= 768;
   const forceMobileV2 = window.location.hash.includes('#mobile-v2');
+  const nextMode = isMobile || forceMobileV2 ? 'mobile' : 'desktop';
 
-  if (isMobile || forceMobileV2) {
+  if (currentAppMode === nextMode) return;
+  currentAppMode = nextMode;
+
+  if (nextMode === 'mobile') {
     root.innerHTML = '';
-    loadStylesheet('mobile/mobile-v2.css?v=journal-final-implementation-1');
+    loadStylesheet('mobile/mobile-v2.css?v=kitchen-empty-state-106');
     window.renderMobileV2App(root);
     return;
   }
@@ -45,3 +52,10 @@ function startApp() {
 }
 
 startApp();
+
+window.addEventListener('resize', () => {
+  window.clearTimeout(resizeTimer);
+  resizeTimer = window.setTimeout(startApp, 120);
+});
+
+window.addEventListener('hashchange', startApp);
