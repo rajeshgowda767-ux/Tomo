@@ -4654,6 +4654,267 @@
     ]
   },
   {
+    "id": "karnataka-pack-1-bassaru",
+    "sourceId": "karnataka-pack-1-bassaru",
+    "title": "Bassaru",
+    "name": "Bassaru",
+    "aliases": [
+      "Bas Saaru",
+      "Basaru"
+    ],
+    "description": "A rural Karnataka saaru made from cooked greens or dal water, served with ragi mudde, rice and a simple palya.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/soups.webp",
+    "image_url": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul-food",
+      "protein",
+      "karnataka",
+      "old-mysore",
+      "rural-karnataka"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 9,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Use the cooked dal or greens water as the base; the flavor should be earthy, peppery and pourable.",
+    "instructions": [
+      "Cook toor dal or mixed greens until soft and reserve the cooking water.",
+      "Grind coconut, cumin, pepper, garlic and a spoon of cooked dal or greens into a coarse paste.",
+      "Simmer the reserved cooking water with tamarind, the ground paste and salt.",
+      "Temper mustard seeds, curry leaves and dried red chilli in oil.",
+      "Add the tempering and serve hot with ragi mudde or rice."
+    ],
+    "ingredients": [
+      {
+        "name": "toor dal",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "greens",
+        "quantity": 2,
+        "unit": "cups",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 2,
+        "unit": "tbsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 6,
+        "unit": "leaves",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Toor Dal",
+    "primary_ingredient_2": "Greens",
+    "primaryIngredient1": "Toor Dal",
+    "primaryIngredient2": "Greens",
+    "secondary_ingredient_1": "Coconut",
+    "secondaryIngredient1": "Coconut",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": "Pepper",
+    "secondaryIngredient3": "Pepper",
+    "secondary_ingredient_4": "Tamarind",
+    "secondaryIngredient4": "Tamarind",
+    "secondary_ingredient_5": "Curry Leaves",
+    "secondaryIngredient5": "Curry Leaves",
+    "primaryIngredients": [
+      "toor dal",
+      "greens"
+    ],
+    "baseIngredient": "toor dal",
+    "base_ingredient": "toor dal",
+    "coreIngredients": [
+      "toor dal",
+      "greens"
+    ],
+    "core_ingredients": [
+      "toor dal",
+      "greens"
+    ],
+    "requiredIngredients": [
+      "toor dal",
+      "greens"
+    ],
+    "required_ingredients": [
+      "toor dal",
+      "greens"
+    ],
+    "optionalIngredients": [
+      "coconut",
+      "cumin",
+      "pepper",
+      "tamarind",
+      "curry leaves",
+      "mustard seeds",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "coconut",
+      "cumin",
+      "pepper",
+      "tamarind",
+      "curry leaves",
+      "mustard seeds",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "saaru",
+    "dish_family": "saaru",
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Old Mysore",
+        "Rural Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Steamed rice",
+        "Ragi mudde"
+      ],
+      "sides": [
+        "Palya",
+        "Greens palya"
+      ],
+      "chutneys": [
+        "Coconut chutney"
+      ],
+      "toppings": [
+        "Ghee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "1/2 cup toor dal",
+        "2 cups greens",
+        "2 tbsp coconut",
+        "1 tsp cumin",
+        "1/2 tsp pepper",
+        "1 tsp tamarind",
+        "Curry leaves",
+        "Mustard seeds",
+        "Salt"
+      ],
+      "steps": [
+        "Cook dal or greens until soft and save the cooking water.",
+        "Grind coconut, cumin, pepper, garlic and a spoon of cooked dal or greens.",
+        "Simmer the cooking water with tamarind, paste and salt.",
+        "Temper mustard seeds, curry leaves and dried red chilli.",
+        "Pour the tempering over the saaru and serve hot."
+      ],
+      "tip": "Keep the saaru thin enough to pour over ragi mudde or rice.",
+      "bestWith": [
+        "Ragi mudde",
+        "Steamed rice",
+        "Palya"
+      ]
+    },
+    "tomoLine": "Keep the saaru thin enough to pour over ragi mudde or rice."
+  },
+  {
     "id": "2a1518d6-b3fc-5202-afdc-5e16b5ad09f3",
     "sourceId": "balance-tier-1-bele-saaru",
     "title": "Bele Saaru",
@@ -67467,6 +67728,265 @@
       ]
     },
     "tomoLine": "Cook garlic gently; browning it too much can make the soup bitter."
+  },
+  {
+    "id": "karnataka-pack-1-soppu-saaru",
+    "sourceId": "karnataka-pack-1-soppu-saaru",
+    "title": "Soppu Saaru",
+    "name": "Soppu Saaru",
+    "aliases": [
+      "Soppina Saaru",
+      "Greens Saaru"
+    ],
+    "description": "An Old Mysore-style greens saaru with dal, tamarind and garlic, built for rice, ragi mudde and everyday palya plates.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 37,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/collections/soups.webp",
+    "image_url": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul-food",
+      "protein",
+      "karnataka",
+      "old-mysore",
+      "rural-karnataka"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 6,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 9,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Cook the greens just until soft and keep the saaru pourable rather than thick like dal.",
+    "instructions": [
+      "Cook chopped greens with toor dal until soft.",
+      "Simmer tamarind water with garlic, cumin and pepper.",
+      "Add the cooked greens and dal with enough water to make a pourable saaru.",
+      "Temper mustard seeds, curry leaves and dried red chilli in oil or ghee.",
+      "Finish with the tempering and serve hot."
+    ],
+    "ingredients": [
+      {
+        "name": "greens",
+        "quantity": 2,
+        "unit": "cups",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "toor dal",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 3,
+        "unit": "cloves",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 6,
+        "unit": "leaves",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Greens",
+    "primary_ingredient_2": "Toor Dal",
+    "primaryIngredient1": "Greens",
+    "primaryIngredient2": "Toor Dal",
+    "secondary_ingredient_1": "Tamarind",
+    "secondaryIngredient1": "Tamarind",
+    "secondary_ingredient_2": "Garlic",
+    "secondaryIngredient2": "Garlic",
+    "secondary_ingredient_3": "Cumin",
+    "secondaryIngredient3": "Cumin",
+    "secondary_ingredient_4": "Pepper",
+    "secondaryIngredient4": "Pepper",
+    "secondary_ingredient_5": "Curry Leaves",
+    "secondaryIngredient5": "Curry Leaves",
+    "primaryIngredients": [
+      "greens",
+      "toor dal"
+    ],
+    "baseIngredient": "greens",
+    "base_ingredient": "greens",
+    "coreIngredients": [
+      "greens",
+      "toor dal"
+    ],
+    "core_ingredients": [
+      "greens",
+      "toor dal"
+    ],
+    "requiredIngredients": [
+      "greens",
+      "toor dal"
+    ],
+    "required_ingredients": [
+      "greens",
+      "toor dal"
+    ],
+    "optionalIngredients": [
+      "tamarind",
+      "garlic",
+      "cumin",
+      "pepper",
+      "curry leaves",
+      "mustard seeds",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "tamarind",
+      "garlic",
+      "cumin",
+      "pepper",
+      "curry leaves",
+      "mustard seeds",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "saaru",
+    "dish_family": "saaru",
+    "requiredPrimaryMatches": 1,
+    "required_primary_matches": 1,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Old Mysore",
+        "Rural Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Steamed rice",
+        "Ragi mudde"
+      ],
+      "sides": [
+        "Palya",
+        "Beans palya"
+      ],
+      "toppings": [
+        "Ghee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "2 cups greens",
+        "1/2 cup toor dal",
+        "1 tsp tamarind",
+        "3 garlic cloves",
+        "1 tsp cumin",
+        "1/2 tsp pepper",
+        "Curry leaves",
+        "Mustard seeds",
+        "Salt"
+      ],
+      "steps": [
+        "Cook chopped greens with toor dal until soft.",
+        "Simmer tamarind water with garlic, cumin and pepper.",
+        "Add cooked greens and dal with enough water to make a pourable saaru.",
+        "Temper mustard seeds, curry leaves and dried red chilli.",
+        "Finish with tempering and serve hot."
+      ],
+      "tip": "Keep it pourable so it works with both rice and ragi mudde.",
+      "bestWith": [
+        "Steamed rice",
+        "Ragi mudde",
+        "Palya",
+        "Ghee"
+      ]
+    },
+    "tomoLine": "Keep it pourable so it works with both rice and ragi mudde."
   },
   {
     "id": "warm-bowls-detail-tomato-rasam",
