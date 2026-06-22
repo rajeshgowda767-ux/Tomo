@@ -1,3 +1,4 @@
+// TODO(Beta 3): Replace temporary shared fallback images with dedicated recipe images when approved assets are available.
 window.COOKBUDDY_LOCAL_RECIPES = [
   {
     "id": "5a3123e7-4ede-580b-af1b-7b0a5a58cf0e",
@@ -2078,7 +2079,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Andhra",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/andhra-kodi-vepudu.png",
+    "imageUrl": "/assets/images/dishes/chicken-sukka-homestyle.png",
     "tags": [
       "lunch",
       "spicy-food",
@@ -7874,7 +7875,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Andhra",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/chicken-555.png",
+    "imageUrl": "/assets/images/dishes/batch3a-chilli-chicken.png",
     "tags": [
       "snack",
       "spicy-food",
@@ -9297,7 +9298,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Hyderabadi",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/chicken-majestic.png",
+    "imageUrl": "/assets/images/dishes/batch3a-chilli-chicken.png",
     "tags": [
       "snack",
       "spicy-food",
@@ -15613,7 +15614,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Indo-Chinese",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/dragon-chicken.png",
+    "imageUrl": "/assets/images/dishes/batch3a-chilli-chicken.png",
     "tags": [
       "snack",
       "spicy-food",
@@ -17630,7 +17631,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/vegetarian-default.png",
+    "imageUrl": "/assets/images/dishes/batch3a-baingan-bharta.png",
     "tags": [
       "lunch",
       "dinner",
@@ -20873,7 +20874,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Andhra",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/guntur-chicken-fry.png",
+    "imageUrl": "/assets/images/dishes/chicken-sukka-homestyle.png",
     "tags": [
       "lunch",
       "spicy-food",
@@ -21828,7 +21829,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/vegetarian-default.png",
+    "imageUrl": "/assets/images/drinks/jeera-water-homestyle.png",
     "tags": [
       "snack",
       "vegetarian",
@@ -22027,7 +22028,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Andhra",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/kaaram-dosa.png",
+    "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
     "tags": [
       "breakfast",
       "spicy-food",
@@ -26306,7 +26307,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Assamese",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/salad.png",
+    "imageUrl": "/assets/images/dishes/sarson-ka-saag.png",
     "tags": [
       "lunch",
       "dinner",
@@ -26674,7 +26675,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Tamil",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lemon-sevai.png",
+    "imageUrl": "/assets/images/dishes/batch3b-lemon-rice.png",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -28718,7 +28719,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/vegetarian-default.png",
+    "imageUrl": "/assets/images/dishes/batch5-corn-sundal.png",
     "tags": [
       "snack",
       "vegetarian",
@@ -34569,7 +34570,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/vegetarian-default.png",
+    "imageUrl": "/assets/images/drinks/buttermilk-homestyle.png",
     "tags": [
       "snack",
       "vegetarian",
@@ -46401,7 +46402,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Konkani",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/drinks-default.png",
+    "imageUrl": "/assets/images/drinks/drinks-default.png",
     "tags": [
       "lunch",
       "dinner",
@@ -51750,7 +51751,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Indian Fusion",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/veg-sandwich.png",
+    "imageUrl": "/assets/images/snacks/sandwich.png",
     "tags": [
       "snacks",
       "vegetarian",
