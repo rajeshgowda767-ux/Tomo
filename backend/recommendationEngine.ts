@@ -39,6 +39,10 @@ interface ScorableRecipe {
   id: string;
   sourceId?: string;
   title: string;
+  categoryType?: string;
+  category_type?: string;
+  heroEligible?: boolean;
+  hero_eligible?: boolean;
   recipeType?: string;
   recipe_type?: string;
   tags?: string[];
@@ -174,6 +178,15 @@ function secondaryIngredientMatchCount(recipe: ScorableRecipe, selectedIngredien
 
 function recipeIsCore(recipe: ScorableRecipe): boolean {
   return normalized(recipe.recipeType || recipe.recipe_type || 'core') === 'core';
+}
+
+function recipeIsHeroEligible(recipe: ScorableRecipe): boolean {
+  const categoryType = normalized(recipe.categoryType || recipe.category_type || 'primaryDish');
+  return recipe.heroEligible !== false
+    && recipe.hero_eligible !== false
+    && categoryType !== 'drink'
+    && categoryType !== 'supportitem'
+    && categoryType !== 'support item';
 }
 
 function primaryIngredients(recipe: ScorableRecipe): string[] {
@@ -402,6 +415,7 @@ export function recommendRecipes<T extends ScorableRecipe>(recipes: T[], context
   const selectedMood = normalized(context.selectedMood);
   const scoredRecipes = recipes
     .filter(recipeIsCore)
+    .filter(recipeIsHeroEligible)
     .filter((recipe) => !selectedMood || !Array.isArray(recipe.moodTags) || recipe.moodTags.includes(selectedMood))
     .filter((recipe) => normalized(context.selectedMood) !== 'protein' || hasHighProteinCore(recipe))
     .filter((recipe) => {

@@ -705,8 +705,55 @@ function isDefaultDishImage(path) {
 function recipeImagePath(recipe) {
   const exactTitle = String(recipe.title || '').toLowerCase().trim();
   const exactImageMap = {
+    'corn sundal': 'dishes/batch5-corn-sundal',
+    'roasted chana chaat': 'dishes/batch5-roasted-chana-chaat',
+    'sprouts usal': 'dishes/batch5-sprouts-usal',
+    'coconut rice': 'dishes/batch5-coconut-rice',
+    'fish fry': 'dishes/batch5-fish-fry',
+    'soya chunks curry': 'dishes/batch5-soya-chunks-curry',
+    'beans thoran': 'dishes/batch5-beans-thoran',
+    'chicken rice': 'dishes/batch5-chicken-rice',
+    'chirer pulao': 'dishes/batch5-chirer-pulao',
+    'cabbage thoran': 'dishes/batch5-cabbage-thoran',
+    'beans poriyal': 'dishes/batch5-beans-poriyal',
+    'matar paneer': 'dishes/batch5-matar-paneer',
+    'garlic chicken': 'dishes/batch5-garlic-chicken',
+    'chicken fried rice': 'dishes/batch5-chicken-fried-rice',
+    'kokum sharbat': 'dishes/batch4-kokum-sharbat',
+    'mathri': 'dishes/batch4-mathri',
+    'kachori': 'dishes/batch4-kachori',
+    'dhokla': 'dishes/batch4-dhokla',
+    'patra': 'dishes/batch4-patra',
+    'handvo': 'dishes/batch4-handvo',
+    'matki usal': 'dishes/batch4-matki-usal',
+    'kolhapuri misal pav': 'dishes/batch4-kolhapuri-misal-pav',
+    'pitha': 'dishes/batch4-pitha',
+    'chingudi chhecha': 'dishes/batch4-chingudi-chhecha',
+    'pakhala bhata': 'dishes/batch4-pakhala-bhata',
+    'chingri malai curry': 'dishes/batch4-chingri-malai-curry',
+    'shukto': 'dishes/batch4-shukto',
+    'dhokar dalna': 'dishes/batch4-dhokar-dalna',
+    'mochar ghonto': 'dishes/batch4-mochar-ghonto',
+    'begun bhaja': 'dishes/batch4-begun-bhaja',
+    'ghugni': 'dishes/batch4-ghugni',
+    'kodubale': 'dishes/batch3b-kodubale',
+    'nippattu': 'dishes/batch3b-nippattu',
+    'maddur vada': 'dishes/batch3b-maddur-vada',
+    'akki roti': 'dishes/batch3b-akki-roti',
+    'onion rice': 'dishes/batch3b-onion-rice',
+    'puliyogare': 'dishes/batch3b-puliyogare',
+    'bisibelebath': 'dishes/batch3b-bisibelebath',
+    'kori rotti': 'dishes/batch3b-kori-rotti',
+    'luchi aloor dom': 'dishes/batch4-luchi-aloor-dom',
+    'kadala curry': 'dishes/batch3b-kadala-curry',
+    'chow chow kootu': 'dishes/batch3b-chow-chow-kootu',
+    'gujarati dal': 'dishes/batch4-gujarati-dal',
+    'dosakaya pappu': 'dishes/batch3b-dosakaya-pappu',
+    'bassaru': 'dishes/batch3b-bassaru',
+    'bele saaru': 'dishes/batch3b-bele-saaru',
     'aloo paratha': 'dishes/aloo-paratha-homestyle',
     'spicy aloo paratha': 'dishes/aloo-paratha-homestyle',
+    'masala dosa': 'dishes/batch3a-masala-dosa',
     'andhra podi idli': 'dishes/andhra-podi-idli-homestyle',
     avalakki: 'dishes/avalakki-homestyle',
     'besan chilla': 'dishes/besan-chilla-homestyle',
@@ -726,27 +773,27 @@ function recipeImagePath(recipe) {
     'butter chicken': 'dishes/butter-chicken-homestyle',
     'chicken chettinad': 'dishes/chicken-chettinad-homestyle',
     'chicken sukka': 'dishes/chicken-sukka-homestyle',
-    'curd rice': 'dishes/curd-rice-homestyle',
+    'curd rice': 'dishes/batch3b-curd-rice',
     'dal makhani': 'dishes/dal-makhani-homestyle',
     'dal rice': 'dishes/dal-rice',
     'egg curry rice': 'dishes/egg-curry',
     'fish curry rice': 'dishes/fish-curry-rice',
     khichdi: 'dishes/rice-moong-khichdi-homestyle',
-    'lemon rice': 'dishes/lemon-rice',
+    'lemon rice': 'dishes/batch3b-lemon-rice',
     'palak paneer': 'dishes/paneer-curry',
     'paneer tikka masala': 'dishes/paneer-tikka-masala-homestyle',
     'rajma chawal': 'dishes/rajma-chawal',
-    'rasam rice': 'dishes/rasam-rice',
-    'sambar rice': 'dishes/sambar-rice',
+    'rasam rice': 'dishes/batch3b-rasam-rice',
+    'sambar rice': 'dishes/batch3b-sambar-rice',
     'kerala fish curry': 'dishes/fish-curry-rice',
     'apple puree': 'dishes/homestyle-kitchen-placeholder',
     'boiled corn': 'dishes/homestyle-kitchen-placeholder',
     chaat: 'dishes/homestyle-kitchen-placeholder',
     'chicken roll': 'dishes/homestyle-kitchen-placeholder',
-    'chicken stew': 'dishes/homestyle-kitchen-placeholder',
-    'chole chawal': 'dishes/homestyle-kitchen-placeholder',
+    'chicken stew': 'dishes/batch5-chicken-stew',
+    'chole chawal': 'dishes/batch3a-chole-chawal',
     'dal roti': 'dishes/homestyle-kitchen-placeholder',
-    'egg fried rice': 'dishes/homestyle-kitchen-placeholder',
+    'egg fried rice': 'dishes/egg-fried-rice',
     'gongura mutton': 'dishes/homestyle-kitchen-placeholder',
     gujiya: 'dishes/homestyle-kitchen-placeholder',
     'guntur chilli chicken': 'dishes/homestyle-kitchen-placeholder',
@@ -761,9 +808,9 @@ function recipeImagePath(recipe) {
     mathri: 'dishes/homestyle-kitchen-placeholder',
     'mirchi ka salan': 'dishes/homestyle-kitchen-placeholder',
     modak: 'dishes/homestyle-kitchen-placeholder',
-    momos: 'dishes/homestyle-kitchen-placeholder',
+    momos: 'dishes/batch3a-momos',
     'nattu kozhi curry': 'dishes/homestyle-kitchen-placeholder',
-    'pepper rasam': 'dishes/homestyle-kitchen-placeholder',
+    'pepper rasam': 'dishes/pepper-rasam',
     pitha: 'dishes/homestyle-kitchen-placeholder',
     'plum cake': 'dishes/homestyle-kitchen-placeholder',
     'prawn ghee roast': 'dishes/homestyle-kitchen-placeholder',
@@ -773,7 +820,7 @@ function recipeImagePath(recipe) {
     'smoked pork rice': 'dishes/homestyle-kitchen-placeholder',
     'sticky rice': 'dishes/homestyle-kitchen-placeholder',
     sundal: 'dishes/homestyle-kitchen-placeholder',
-    thukpa: 'dishes/homestyle-kitchen-placeholder',
+    thukpa: 'dishes/batch3a-thukpa',
     'vegetable puree': 'dishes/homestyle-kitchen-placeholder'
   };
   if (exactImageMap[exactTitle]) return localPath(`/assets/images/${exactImageMap[exactTitle]}.png`);
@@ -1158,6 +1205,27 @@ function isComplexQuickRecipe(recipe) {
 
 function recipeTotalTime(recipe) {
   return Number(recipe.timeMinutes || 0) || Number(recipe.prepTimeMinutes || 0) + Number(recipe.cookTimeMinutes || 0);
+}
+
+function tomoPickSubtitle(recipe) {
+  const cuisine = String(recipe?.cuisine || '').trim();
+  if (!cuisine) return 'Tomo Favorite';
+  if (/favorite/i.test(cuisine)) return cuisine;
+  return `${cuisine} Favorite`;
+}
+
+function tomoPickDietaryLabel(recipe) {
+  const tags = [
+    recipe?.dietType,
+    ...(recipe?.tags || [])
+  ].filter(Boolean).map((tag) => String(tag).trim());
+  const labels = [];
+  const text = tags.join(' ').toLowerCase();
+  if (/non[-\s]?vegetarian|chicken|fish|egg|mutton|prawn|protein/.test(text)) labels.push('Protein');
+  else if (/vegetarian|veg\b/.test(text)) labels.push('Vegetarian');
+  if (/quick|easy/.test(text)) labels.push('Quick');
+  if (/comfort|homestyle|home-style|rainy/.test(text)) labels.push('Homestyle');
+  return [...new Set(labels)].slice(0, 2).join(' · ') || 'Tomo pick';
 }
 
 function recipeMoodTier(recipe, mood = activeMood()) {
@@ -1745,18 +1813,23 @@ function renderTomoPick() {
   els.surpriseButton.dataset.recipeId = '';
   els.surpriseButton.setAttribute('aria-label', revealedPick ? `${pick?.title || "Tomo's pick"} revealed` : "Reveal Tomo's pick");
   const heroMealLabel = mealTitles[state.meal]?.replace(' ideas', '') || 'Today';
-  const heroMeta = `${moodPill(pick)} • ${heroMealLabel} • ${recipeTotalTime(pick)} mins`;
+  const heroDietLabel = tomoPickDietaryLabel(pick);
+  const heroDietIcon = /protein|non/i.test(heroDietLabel) ? '🍗' : '🥬';
+  const heroMeta = `⏱ ${recipeTotalTime(pick)} min · 🍽 ${heroMealLabel} · ${heroDietIcon} ${heroDietLabel}`;
   els.surpriseButton.innerHTML = revealedPick
     ? `<div id="heroRevealDish" class="cb-dashboard-reveal">
-        <span class="cb-dashboard-mini-image">${recipeVisual(pick)}</span>
-        <span class="cb-dashboard-reveal-copy">
-          <em>Tomo Pick</em>
-          <strong>${escapeHtml(pick.title)}</strong>
-          <small>${escapeHtml(heroMeta)}</small>
+        <span class="cb-dashboard-pick-card">
+          <span class="cb-dashboard-mini-image">${recipeVisual(pick)}</span>
+          <span class="cb-dashboard-reveal-copy">
+            <span class="cb-dashboard-pick-kicker">✨ Tomo's Pick Today</span>
+            <strong>${escapeHtml(pick.title)}</strong>
+            <em>${escapeHtml(tomoPickSubtitle(pick))}</em>
+            <small>${escapeHtml(heroMeta)}</small>
+          </span>
         </span>
         <span class="cb-dashboard-actions">
-          <button id="heroCookNow" class="cb-dashboard-primary" type="button" data-recipe-id="${escapeHtml(pick.id)}">Cook Now</button>
-          <button id="heroFindAnother" class="cb-dashboard-secondary" type="button">Another Pick</button>
+          <button id="heroCookNow" class="cb-dashboard-primary" type="button" data-recipe-id="${escapeHtml(pick.id)}">Cook This</button>
+          <button id="heroSavePick" class="cb-dashboard-secondary" type="button" data-recipe-id="${escapeHtml(pick.id)}">Save</button>
         </span>
       </div>`
     : `<img src="${localPath('/tomo.png')}" alt="" /><span>Tap to reveal</span>`;
@@ -2168,7 +2241,7 @@ function collectionReasonLine(item, collectionKey = '', fallback = '') {
     'soft dosa': 'Soft edges make dosa easier for little bites.',
     'vegetable upma': 'Warm and steady when breakfast needs speed.',
     'paneer bhurji': 'Soft paneer adds protein without much fuss.',
-    'egg bhurji': 'Quick eggs make a small plate more filling.',
+    'egg bhurji': 'dishes/batch5-egg-bhurji',
     'soft veg pulao': 'Gentle rice with vegetables in every spoon.',
     'dalia porridge': 'Broken wheat keeps breakfast soft and filling.',
     'vegetable seviyan': 'Fine noodles make vegetables easier to enjoy.',
@@ -2184,7 +2257,7 @@ function collectionReasonLine(item, collectionKey = '', fallback = '') {
     'lemon rice': 'Bright, cheerful and easy to pack for lunch.',
     'tomato rice': 'Tastes good even after a few hours.',
     'aloo paratha': 'Filling enough for a long school day.',
-    'peanut rice': 'Nutty rice keeps lunch simple and satisfying.',
+    'peanut rice': 'dishes/batch3b-peanut-rice',
     'veg pulao': 'Colorful rice makes lunch feel complete.',
     'chapati jam roll': 'Sweet roll-up treat for small lunch breaks.',
     'paneer roll': 'Protein packed and lunchbox approved.',
@@ -2271,7 +2344,7 @@ function collectionReasonLine(item, collectionKey = '', fallback = '') {
     'motichoor ladoo': 'Tiny pearls of sweetness for celebrations.',
     'coconut barfi': 'Coconut keeps this sweet soft and simple.',
     'dry fruit ladoo': 'A small sweet bite with extra richness.',
-    'modak': 'A festive bite that feels handmade and special.',
+    'modak': 'dishes/batch4-modak',
     'chocolate burfi': 'A playful sweet for modern cravings.',
     'gulab jamun': 'Soft, warm and impossible to stop at one.',
     'rasgulla': 'Light syrupy sweetness for a cool finish.',
@@ -2827,9 +2900,18 @@ function recipeIsCore(recipe) {
   return String(recipe.recipeType || recipe.recipe_type || 'core').toLowerCase() === 'core';
 }
 
+function recipeIsHeroEligible(recipe) {
+  const categoryType = normalizeIngredientName(recipe?.categoryType || recipe?.category_type || 'primaryDish');
+  return recipe?.heroEligible !== false
+    && categoryType !== 'drink'
+    && categoryType !== 'supportitem'
+    && categoryType !== 'support item';
+}
+
 function recipeExcludedFromDefaultFeeds(recipe) {
   return recipe?.hardExcludeFromFeeds === true
     || recipe?.excludeFromDefaultFeeds === true
+    || !recipeIsHeroEligible(recipe)
     || normalizeIngredientName(recipe?.feedVisibility) === 'pantry search only';
 }
 
@@ -4563,7 +4645,7 @@ function detailIngredientGroupsMarkup(recipe) {
   }).join('');
   return `
     <section class="detail-list detail-ingredients">
-      <h3>Key Ingredients</h3>
+      <h3>Ingredients</h3>
       <ul>${keyMarkup}</ul>
       ${optionalMarkup ? `
         <h4>Nice to have</h4>
@@ -4596,6 +4678,113 @@ function detailPantryMatchMarkup(recipe) {
       <strong>${escapeHtml(label)}</strong>
       <span>${available} of ${total} ingredients available</span>
       ${prompt ? `<p>${escapeHtml(prompt)}</p>` : ''}
+    </section>
+  `;
+}
+
+function detailPairingItems(recipe) {
+  const pairings = recipe.pairings && typeof recipe.pairings === 'object' ? recipe.pairings : {};
+  const typedItems = ['sides', 'chutneys', 'pickles', 'drinks', 'rice', 'roti', 'toppings'].flatMap((type) => {
+    const value = pairings[type];
+    const items = Array.isArray(value) ? value : value ? [value] : [];
+    return items.map((item) => ({ item, type }));
+  });
+  const quickGuideItems = Array.isArray(recipe.quickGuide?.bestWith)
+    ? recipe.quickGuide.bestWith.map((item) => ({ item, type: detailPairingTypeForItem(item) }))
+    : [];
+  const seen = new Set();
+  return [...typedItems, ...quickGuideItems].filter(({ item }) => {
+    const key = normalizeIngredientName(item);
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, 10);
+}
+
+function detailPairingVisualType(type) {
+  if (type === 'pickles' || type === 'sides') return 'side';
+  if (type === 'drinks') return 'drink';
+  if (type === 'chutneys') return 'chutney';
+  if (type === 'toppings') return 'topping';
+  return ['rice', 'roti'].includes(type) ? type : 'side';
+}
+
+function detailPairingIcon(type) {
+  const visualType = detailPairingVisualType(type);
+  return { rice: '◌', roti: '▱', side: '+', drink: '◍', chutney: '•', topping: '✦' }[visualType] || '+';
+}
+
+function detailPairingTypeForItem(item) {
+  const value = normalizeIngredientName(item);
+  if (/rice|chawal|bhaat|pulao|biryani/.test(value)) return 'rice';
+  if (/roti|naan|paratha|chapati|kulcha|puri|bhatura|dosa/.test(value)) return 'roti';
+  if (/chai|coffee|lassi|chaas|mor|sharbat|soda|juice|water|drink/.test(value)) return 'drinks';
+  if (/chutney|sauce/.test(value)) return 'chutneys';
+  if (/ghee|butter|coriander|sev|lemon|oil|podi|chips/.test(value)) return 'toppings';
+  if (/pickle|achar|achaar/.test(value)) return 'pickles';
+  return 'sides';
+}
+
+function detailPairingsMarkup(recipe) {
+  const pairings = detailPairingItems(recipe);
+  if (!pairings.length) return '';
+  const visiblePairings = pairings.slice(0, 5);
+  const hiddenPairings = pairings.slice(5);
+  const pairingChip = ({ item, type }) => `<span class="detail-pairing-chip detail-pairing-${detailPairingVisualType(type)}"><b>${escapeHtml(detailPairingIcon(type))}</b>${escapeHtml(item)}</span>`;
+  return `
+    <section class="detail-pairings" aria-label="Pairs well with">
+      <h3>Pairs Well With</h3>
+      <div class="detail-chip-wrap">
+        ${visiblePairings.map(pairingChip).join('')}
+      </div>
+      ${hiddenPairings.length ? `
+        <details class="detail-pairing-more">
+          <summary>Show More</summary>
+          <div class="detail-chip-wrap">${hiddenPairings.map(pairingChip).join('')}</div>
+        </details>
+      ` : ''}
+    </section>
+  `;
+}
+
+function detailQuickGuideMarkup(recipe) {
+  const guide = recipe.quickGuide || {};
+  const meta = [
+    guide.serves ? `Serves ${guide.serves}` : '',
+    guide.prepTime ? `Prep ${guide.prepTime}` : '',
+    guide.cookTime ? `Cook ${guide.cookTime}` : ''
+  ].filter(Boolean);
+  if (!meta.length && !recipe.description) return '';
+  return `
+    <section class="detail-list detail-quick-guide">
+      <h3>Quick Guide</h3>
+      ${meta.length ? `<div class="detail-chip-wrap">${meta.map((item) => `<span class="detail-guide-chip">${escapeHtml(item)}</span>`).join('')}</div>` : ''}
+      ${recipe.description ? `<p>${escapeHtml(recipe.description)}</p>` : ''}
+    </section>
+  `;
+}
+
+function detailStepsMarkup(recipe, fallbackSteps) {
+  const steps = Array.isArray(recipe.quickGuide?.steps) && recipe.quickGuide.steps.length
+    ? recipe.quickGuide.steps
+    : Array.isArray(recipe.instructions) && recipe.instructions.length
+      ? recipe.instructions
+      : fallbackSteps;
+  return `
+    <section class="instruction-notes detail-steps">
+      <h3>Steps</h3>
+      ${steps.map((step) => `<p>${escapeHtml(step)}</p>`).join('')}
+    </section>
+  `;
+}
+
+function detailTomoTipMarkup(recipe, fallbackTip = '') {
+  const tip = recipe.quickGuide?.tip || recipe.tomoLine || fallbackTip;
+  if (!tip) return '';
+  return `
+    <section class="instruction-notes detail-tomo-tip">
+      <h3>Tomo Tip</h3>
+      <p>${escapeHtml(tip)}</p>
     </section>
   `;
 }
@@ -4862,7 +5051,7 @@ function closeRecipeDetail() {
 
 function renderRecipeDetail(recipe) {
   const cookingNotes = cookingNotesForRecipe(recipe);
-  const tomoLine = recipe.tomoLine ? `<p class="tomo-detail-line">${recipe.tomoLine}</p>` : '';
+  const isFavorite = state.favoriteIds.has(recipe.id);
   els.recipeDetail.innerHTML = `
     <header class="recipe-detail-header">
       <div class="detail-hero detail-dish-image">${recipeVisual(recipe)}</div>
@@ -4875,17 +5064,16 @@ function renderRecipeDetail(recipe) {
         </div>
       </div>
     </header>
-    ${tomoLine}
-    <p class="recipe-detail-description">${escapeHtml(recipe.description)}</p>
-    ${detailPantryMatchMarkup(recipe)}
-    ${detailIngredientGroupsMarkup(recipe)}
-    <section class="instruction-notes">
-      <h3>Cooking notes</h3>
-      ${cookingNotes.map((step) => `<p>${escapeHtml(step)}</p>`).join('')}
-    </section>
+    ${detailPairingsMarkup(recipe)}
     <div class="detail-actions">
       <button class="primary-button" id="cookFromDetail">👨‍🍳 Cook This</button>
+      <button class="secondary-button ${isFavorite ? 'active' : ''}" id="saveFromDetail">${isFavorite ? 'Saved' : 'Save'}</button>
     </div>
+    ${detailQuickGuideMarkup(recipe)}
+    ${detailPantryMatchMarkup(recipe)}
+    ${detailIngredientGroupsMarkup(recipe)}
+    ${detailStepsMarkup(recipe, cookingNotes)}
+    ${detailTomoTipMarkup(recipe, cookingNotes[0])}
   `;
 }
 
@@ -5056,6 +5244,12 @@ if (els.surpriseButton) {
       if (recipe) openRecipe(recipe);
       return;
     }
+    const saveButton = event.target.closest('#heroSavePick');
+    if (saveButton) {
+      const recipe = state.recipes.find((item) => item.id === saveButton.dataset.recipeId);
+      if (recipe) handleRecipeAction('favorite', recipe);
+      return;
+    }
     if (event.target.closest('#heroFindAnother')) {
       revealTomoPick(true);
       return;
@@ -5193,6 +5387,11 @@ document.body.addEventListener('click', (event) => {
     recordCookedRecipe(state.activeRecipe);
     closeRecipeDetail();
     toast(`${state.activeRecipe.title} added to your Tomo Journal.`);
+    return;
+  }
+  if (event.target.id === 'saveFromDetail' && state.activeRecipe) {
+    handleRecipeAction('favorite', state.activeRecipe);
+    renderRecipeDetail(state.activeRecipe);
     return;
   }
   const journalAction = event.target.closest('[data-journal-action]');

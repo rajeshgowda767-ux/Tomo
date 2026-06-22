@@ -4,3 +4,22 @@ node_modules
 .env
 .DS_Store
 *.log
+
+# Beta 3 cleanup
+
+/reference-builds/
+/outputs/
+/database/generated/reports/
+
+# Generated top-level audits and reports
+/*-audit.md
+/*-audit.json
+/*-report.md
+/*-report.json
+/*-validation.md
+
+# Generated documentation audits
+/docs/*-audit.md
+/docs/*-report.md
+/docs/*-validation.md
+

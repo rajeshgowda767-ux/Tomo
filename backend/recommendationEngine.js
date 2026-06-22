@@ -78,6 +78,15 @@ function recipeIsCore(recipe) {
   return normalized(recipe.recipeType || recipe.recipe_type || 'core') === 'core';
 }
 
+function recipeIsHeroEligible(recipe) {
+  const categoryType = normalized(recipe.categoryType || recipe.category_type || 'primaryDish');
+  return recipe.heroEligible !== false
+    && recipe.hero_eligible !== false
+    && categoryType !== 'drink'
+    && categoryType !== 'supportitem'
+    && categoryType !== 'support item';
+}
+
 function primaryIngredients(recipe) {
   const explicit = [
     recipe.primaryIngredient1,
@@ -304,6 +313,7 @@ function recommendRecipes(recipes, context = {}) {
   const selectedMood = normalized(context.selectedMood);
   const scoredRecipes = recipes
     .filter(recipeIsCore)
+    .filter(recipeIsHeroEligible)
     .filter((recipe) => !selectedMood || !Array.isArray(recipe.moodTags) || recipe.moodTags.includes(selectedMood))
     .filter((recipe) => normalized(context.selectedMood) !== 'protein' || hasHighProteinCore(recipe))
     .filter((recipe) => {
