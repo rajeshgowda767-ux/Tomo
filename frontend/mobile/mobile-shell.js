@@ -556,6 +556,56 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return ['side', 'condiment'].includes(recommendationRecipeRole(recipe));
   }
 
+  function roleContextText(context = {}) {
+    return [
+      context.mood,
+      context.meal,
+      context.surface,
+      context.collectionKey,
+      context.intent,
+      context.reason,
+      ...(context.tags || [])
+    ].map(norm).join(' ');
+  }
+
+  function roleContextAllowsSoup(context = {}) {
+    const text = roleContextText(context);
+    const hour = new Date().getHours();
+    return /\b(rainy|comfort|light|sick|soup|warm bowl|warm bowls|evening|dinner)\b/.test(text)
+      || hour >= 16
+      || hour < 5;
+  }
+
+  function roleContextAllowsDrink(context = {}) {
+    return /\b(drink|drinks|sip|sips|soother|soothers|chai|tea|coffee|juice|beverage)\b/.test(roleContextText(context));
+  }
+
+  function roleContextAllowsDessert(context = {}) {
+    return /\b(dessert|desserts|sweet|sweets|treat|festival|celebration)\b/.test(roleContextText(context));
+  }
+
+  function heroRoleEligible(recipe, mood = state.mood, meal = state.meal) {
+    const role = recommendationRecipeRole(recipe);
+    if (role === 'main') return true;
+    if (role === 'soup') return roleContextAllowsSoup({ mood, meal, surface: 'tomo_pick' });
+    if (role === 'snack') return meal === 'snack' && /\b(rainy|quick|protein|spicy)\b/.test(norm(mood));
+    return false;
+  }
+
+  function todaysPickRoleEligible(recipe, meal = state.meal, context = {}) {
+    const role = recommendationRecipeRole(recipe);
+    if (role === 'condiment') return false;
+    if (role === 'side') return /\b(side|sides|add on|add ons|addon|addons|accompaniment)\b/.test(roleContextText(context));
+    if (meal === 'snack') {
+      if (role === 'snack') return true;
+      if (role === 'drink') return roleContextAllowsDrink({ ...context, meal });
+      if (role === 'dessert') return roleContextAllowsDessert({ ...context, meal });
+      return false;
+    }
+    if (['breakfast', 'lunch', 'dinner'].includes(meal)) return role === 'main' || role === 'soup';
+    return role === 'main';
+  }
+
   function pantryCompatibleRecipe(recipe) {
     return Boolean(recipe && recipeIngredients(recipe).length > 0);
   }
@@ -1289,9 +1339,17 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     ].map(norm);
   }
 
-  function matchesMeal(recipe, meal) {
+  function matchesMeal(recipe, meal, context = {}) {
+    const role = recommendationRecipeRole(recipe);
     const haystack = tags(recipe);
-    return haystack.includes(meal) || (meal === 'snack' && haystack.includes('snacks'));
+    const baseMatch = haystack.includes(meal) || (meal === 'snack' && haystack.includes('snacks'));
+    if (role === 'side' || role === 'condiment') return false;
+    if (role === 'main') return ['breakfast', 'lunch', 'dinner'].includes(meal);
+    if (role === 'soup') return ['lunch', 'dinner'].includes(meal) || (baseMatch && roleContextAllowsSoup({ ...context, meal }));
+    if (role === 'snack') return meal === 'snack' && baseMatch;
+    if (role === 'drink') return meal === 'snack' && baseMatch && roleContextAllowsDrink({ ...context, meal });
+    if (role === 'dessert') return meal === 'snack' && baseMatch && roleContextAllowsDessert({ ...context, meal });
+    return baseMatch;
   }
 
   function moodScore(recipe, mood) {
@@ -1319,7 +1377,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (selected.length < limit) {
       const selectedIds = new Set(selected.map((item) => item.recipe.id));
       const fallbackPool = recipes
-        .filter((recipe) => matchesMeal(recipe, meal))
+        .filter((recipe) => matchesMeal(recipe, meal, { mood: state.mood, surface: 'todays_picks' }))
         .filter((recipe) => !dismissed.has(recipe.id) && !selectedIds.has(recipe.id))
         .filter(uniqueByTitle());
       selected = fillTodaysPickRow([...selected, ...scoreTodaysPickCandidates(fallbackPool, meal, dismissed)], limit);
@@ -1342,7 +1400,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (state.mood === 'protein' && moodCuration.proteinMeals[meal]) return curatedTitleRecipes(moodCuration.proteinMeals[meal], []);
     if (state.mood === 'spicy' && moodCuration.spicyMeals[meal]) return curatedTitleRecipes(moodCuration.spicyMeals[meal], []);
     return moodEligibleRecipes(state.mood)
-      .filter((recipe) => matchesMeal(recipe, meal))
+      .filter((recipe) => matchesMeal(recipe, meal, { mood: state.mood, surface: 'todays_picks' }))
       .filter(uniqueByTitle());
   }
 
@@ -1361,7 +1419,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         };
         return { recipe, score: scoreRecipeForSurface(recipe, context), meal };
       })
-      .filter((item) => item.recipe && item.score.eligible)
+      .filter((item) => item.recipe && item.score.eligible && todaysPickRoleEligible(item.recipe, meal, item.score.context || { mood: state.mood, surface: 'todays_picks' }))
       .sort(todayPickCandidateCompare);
   }
 
@@ -1743,7 +1801,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (mood === 'protein' && moodCuration.proteinMeals[meal]) return heroFoodFirstCandidates(curatedMealRecipes(moodCuration.proteinMeals[meal], 20, new Set()));
     if (mood === 'spicy' && moodCuration.spicyMeals[meal]) return heroFoodFirstCandidates(curatedMealRecipes(moodCuration.spicyMeals[meal], 20, new Set()));
     return heroFoodFirstCandidates(moodEligibleRecipes(mood)
-      .filter((recipe) => matchesMeal(recipe, meal))
+      .filter((recipe) => matchesMeal(recipe, meal, { mood, surface: 'tomo_pick' }))
       .filter(uniqueByTitle()));
   }
 
@@ -1813,14 +1871,15 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         ? curatedTitleRecipes(moodCuration.quickHeroPreferred, moodCuration.quickHeroExclude)
         : moodEligibleRecipes(mood);
     return heroFoodFirstCandidates(pool
-      .filter((recipe) => matchesMeal(recipe, meal))
+      .filter((recipe) => matchesMeal(recipe, meal, { mood, surface: 'tomo_pick' }))
+      .filter((recipe) => heroRoleEligible(recipe, mood, meal))
       .sort((a, b) => moodRecipeCompare(a, b, mood))
       .filter(uniqueByTitle()));
   }
 
   function heroFoodFirstCandidates(candidates = []) {
-    const food = candidates.filter((recipe) => !isHeroBeverageOnly(recipe));
-    return food.length ? food : candidates;
+    const food = candidates.filter((recipe) => heroRoleEligible(recipe) && !isHeroBeverageOnly(recipe));
+    return food;
   }
 
   function isHeroBeverageOnly(recipe) {
@@ -1832,7 +1891,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function heroFoodPriority(recipe) {
-    if (!recipe || isHeroBeverageOnly(recipe)) return -100;
+    if (!recipe || !heroRoleEligible(recipe) || isHeroBeverageOnly(recipe)) return -100;
     const title = norm(recipe.title);
     const haystack = `${title} ${tags(recipe).join(' ')} ${dishFamily(recipe)}`;
     let score = 0;
@@ -5537,7 +5596,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   window.__tomoMobileRoleAudit = {
     allowedRecipeRoles: [...allowedRecipeRoles],
     recommendationRecipeRole,
-    recommendationRolePenalty
+    recommendationRolePenalty,
+    matchesMeal,
+    heroRoleEligible,
+    todaysPickRoleEligible
   };
   window.runTomoCollectionImageAudit = runCollectionImageAudit;
   const collectionAuditRequested = new URLSearchParams(window.location.search).get('collectionImageAudit') === '1'
