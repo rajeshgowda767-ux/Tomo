@@ -3780,6 +3780,62 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return meal === 'Breakfast' ? 'Slow Mornings' : 'Comfort Cravings';
   }
 
+  function relatedLightMainRecipe(recipe) {
+    const haystack = tags(recipe).join(' ');
+    return Boolean(recipe?.lightMeal)
+      || totalTime(recipe) <= 30
+      || /\b(light|quick|simple|comfort|soft|one-pot|one pot|khichdi|rice|upma|poha|idli)\b/.test(haystack);
+  }
+
+  function relatedRoleScore(source, candidate) {
+    const sourceRole = recommendationRecipeRole(source);
+    const candidateRole = recommendationRecipeRole(candidate);
+    if (sourceRole === candidateRole) {
+      if (sourceRole === 'condiment') return -12;
+      return 7;
+    }
+    if (sourceRole === 'main') {
+      if (candidateRole === 'soup') return 2;
+      if (['side', 'condiment', 'drink', 'dessert'].includes(candidateRole)) return -5;
+      if (candidateRole === 'snack') return -2;
+      return 0;
+    }
+    if (sourceRole === 'soup') {
+      if (candidateRole === 'main') return relatedLightMainRecipe(candidate) ? 4 : 1;
+      if (candidateRole === 'side') return 2;
+      if (candidateRole === 'condiment') return -5;
+      if (['drink', 'dessert'].includes(candidateRole)) return -3;
+      return 0;
+    }
+    if (sourceRole === 'dessert') {
+      if (candidateRole === 'drink') return 1;
+      return ['condiment', 'side', 'soup'].includes(candidateRole) ? -5 : -2;
+    }
+    if (sourceRole === 'drink') {
+      if (candidateRole === 'snack') return 5;
+      if (candidateRole === 'dessert') return 2;
+      if (candidateRole === 'main') return -2;
+      return ['condiment', 'side', 'soup'].includes(candidateRole) ? -5 : 0;
+    }
+    if (sourceRole === 'snack') {
+      if (candidateRole === 'drink') return 4;
+      if (candidateRole === 'dessert') return 1;
+      if (candidateRole === 'main') return 1;
+      return ['condiment', 'side'].includes(candidateRole) ? -4 : 0;
+    }
+    if (sourceRole === 'side') {
+      if (candidateRole === 'main') return 3;
+      if (candidateRole === 'condiment') return -5;
+      return ['drink', 'dessert'].includes(candidateRole) ? -3 : 0;
+    }
+    if (sourceRole === 'condiment') {
+      if (candidateRole === 'main') return 2;
+      if (candidateRole === 'side') return 1;
+      return -5;
+    }
+    return 0;
+  }
+
   function relatedDishes(recipe) {
     const mealKeys = meals.filter(([key]) => matchesMeal(recipe, key)).map(([key]) => key);
     const mood = moodLabel(recipe);
@@ -3787,7 +3843,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       .filter((item) => item.id !== recipe.id)
       .map((item) => ({
         recipe: item,
-        score: (moodLabel(item) === mood ? 2 : 0) + (mealKeys.some((meal) => matchesMeal(item, meal)) ? 1 : 0)
+        score: relatedRoleScore(recipe, item)
+          + (moodLabel(item) === mood ? 2 : 0)
+          + (mealKeys.some((meal) => matchesMeal(item, meal)) ? 1 : 0)
+          + (dishFamily(item) === dishFamily(recipe) ? 1 : 0)
       }))
       .filter((item) => item.score > 0)
       .sort((a, b) => b.score - a.score || moodScore(b.recipe, norm(mood)) - moodScore(a.recipe, norm(mood)))
@@ -5677,7 +5736,9 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     moodRoleAdjustment,
     moodScore,
     heroRoleEligible,
-    todaysPickRoleEligible
+    todaysPickRoleEligible,
+    relatedRoleScore,
+    relatedDishes
   };
   window.runTomoCollectionImageAudit = runCollectionImageAudit;
   const collectionAuditRequested = new URLSearchParams(window.location.search).get('collectionImageAudit') === '1'
