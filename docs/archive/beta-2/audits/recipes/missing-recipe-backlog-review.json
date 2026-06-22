@@ -1,0 +1,1239 @@
+{
+  "generatedAt": "2026-06-10T17:32:05.542Z",
+  "sourceBacklogCount": 49,
+  "summary": {
+    "MUST_ADD": 8,
+    "NICE_TO_HAVE": 32,
+    "ALREADY_COVERED_BY_SIMILAR_DISH": 9
+  },
+  "mustAdd": [
+    {
+      "recipe": "Peas Pulao",
+      "pantry": [
+        "Rice",
+        "Green Peas"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A very common Indian home and restaurant dish that users will expect for rice and green peas."
+    },
+    {
+      "recipe": "Mushroom Rice",
+      "pantry": [
+        "Rice",
+        "Mushroom"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A common, recognizable rice dish and a clear pantry match for rice and mushroom."
+    },
+    {
+      "recipe": "Mutton Pulao",
+      "pantry": [
+        "Rice",
+        "Mutton"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A widely recognized Indian rice dish and an expected result for rice and mutton."
+    },
+    {
+      "recipe": "Mint Rice",
+      "pantry": [
+        "Rice",
+        "Mint"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "Pudina rice is common, recognizable, and a strong pantry result for rice and mint."
+    },
+    {
+      "recipe": "Palak Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Spinach"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A common Indian flatbread and an obvious result for wheat flour and spinach."
+    },
+    {
+      "recipe": "Mooli Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Radish"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A classic and widely recognized stuffed paratha."
+    },
+    {
+      "recipe": "Sweet Holige",
+      "pantry": [
+        "Wheat Flour",
+        "Jaggery"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "Holige/obbattu is a well-established regional sweet flatbread and should not be replaced by plain chapati."
+    },
+    {
+      "recipe": "Batata Poha",
+      "pantry": [
+        "Poha",
+        "Potato"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A widely recognized poha variation and the obvious match for poha and potato."
+    }
+  ],
+  "niceToHave": [
+    {
+      "recipe": "Carrot Rice",
+      "pantry": [
+        "Rice",
+        "Carrot"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real home-style rice variation, but less expected than pulao, lemon rice, or tomato rice."
+    },
+    {
+      "recipe": "Garlic Rice",
+      "pantry": [
+        "Rice",
+        "Garlic"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real and useful rice variation, but lower priority than staple pulao and regional rice dishes."
+    },
+    {
+      "recipe": "Coriander Rice",
+      "pantry": [
+        "Rice",
+        "Coriander"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real herb rice variation, but not a critical launch expectation."
+    },
+    {
+      "recipe": "Spinach Rice",
+      "pantry": [
+        "Rice",
+        "Spinach"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A valid home-style dish, but lower-frequency than major rice staples."
+    },
+    {
+      "recipe": "Beetroot Rice",
+      "pantry": [
+        "Rice",
+        "Beetroot"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real lunch-box style rice variation, but a lower-priority database addition."
+    },
+    {
+      "recipe": "Corn Rice",
+      "pantry": [
+        "Rice",
+        "Corn"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A recognizable quick rice dish, but not essential for launch coverage."
+    },
+    {
+      "recipe": "Soya Fried Rice",
+      "pantry": [
+        "Rice",
+        "Soya Chunks"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real protein-forward fried rice variation, but less universal than vegetable or egg fried rice."
+    },
+    {
+      "recipe": "Garlic Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Garlic"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A valid flavored paratha, but lower priority than stuffed vegetable parathas."
+    },
+    {
+      "recipe": "Beetroot Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Beetroot"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real lunch-box variation, but not a core user expectation."
+    },
+    {
+      "recipe": "Carrot Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Carrot"
+      ],
+      "currentTopRecommendation": "Momos",
+      "currentScore": 95,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A valid vegetable paratha, but relatively niche."
+    },
+    {
+      "recipe": "Cabbage Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Cabbage"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real stuffed paratha variation, but less common than aloo, paneer, palak, methi, or mooli."
+    },
+    {
+      "recipe": "Cheese Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Cheese"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "Recognizable and family-friendly, but not a foundational pantry recipe."
+    },
+    {
+      "recipe": "Corn Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Corn"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A valid modern paratha variation, but lower priority."
+    },
+    {
+      "recipe": "Peas Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Peas"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real seasonal stuffed paratha, but less universally expected."
+    },
+    {
+      "recipe": "Cheese Dosa",
+      "pantry": [
+        "Dosa Batter",
+        "Cheese"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A recognizable modern dosa variation, but lower priority than masala, onion, paneer, and egg dosa."
+    },
+    {
+      "recipe": "Cheese Uttapam",
+      "pantry": [
+        "Idli Batter",
+        "Cheese"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real modern variation, but not essential to core South Indian coverage."
+    },
+    {
+      "recipe": "Paneer Mushroom Masala",
+      "pantry": [
+        "Paneer",
+        "Mushroom"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real restaurant-style combination, but lower priority than kadai, matar, palak, and bhurji."
+    },
+    {
+      "recipe": "Corn Paneer Masala",
+      "pantry": [
+        "Paneer",
+        "Corn"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A plausible and recognized paneer-corn curry, but comparatively niche."
+    },
+    {
+      "recipe": "Cheesy Paneer Tikka",
+      "pantry": [
+        "Paneer",
+        "Cheese"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real fusion variation, but not required for reliable pantry coverage."
+    },
+    {
+      "recipe": "Garlic Paneer",
+      "pantry": [
+        "Paneer",
+        "Garlic"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A recognizable Indo-Chinese style paneer dish, but lower priority than mainstream paneer curries."
+    },
+    {
+      "recipe": "Tomato Omelette",
+      "pantry": [
+        "Egg",
+        "Tomato"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A valid egg-and-tomato omelette, but the name can also mean a besan-based dish regionally, so it needs careful naming."
+    },
+    {
+      "recipe": "Spanish Omelette",
+      "pantry": [
+        "Egg",
+        "Potato"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A globally recognized egg-and-potato dish, but secondary to Indian breakfast coverage."
+    },
+    {
+      "recipe": "Spinach Omelette",
+      "pantry": [
+        "Egg",
+        "Spinach"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real protein breakfast variation, but not essential for launch."
+    },
+    {
+      "recipe": "Paneer Omelette",
+      "pantry": [
+        "Egg",
+        "Paneer"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real high-protein variation, but comparatively niche."
+    },
+    {
+      "recipe": "Chicken Potato Curry",
+      "pantry": [
+        "Chicken",
+        "Potato"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real home-style curry, but lower priority than standard chicken curry and fried preparations."
+    },
+    {
+      "recipe": "Chicken Mushroom Stir Fry",
+      "pantry": [
+        "Chicken",
+        "Mushroom"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real stir-fry combination, but lower priority for an Indian home-cooking launch set."
+    },
+    {
+      "recipe": "Coriander Chicken",
+      "pantry": [
+        "Chicken",
+        "Coriander"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real herb-forward chicken preparation, but the name and style are less standardized."
+    },
+    {
+      "recipe": "Mint Chicken",
+      "pantry": [
+        "Chicken",
+        "Mint"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A recognized pudina chicken variation, but lower priority than core chicken dishes."
+    },
+    {
+      "recipe": "Peanut Poha",
+      "pantry": [
+        "Poha",
+        "Peanuts"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "Poha already includes peanuts as optional, but a peanut-forward version could be useful later."
+    },
+    {
+      "recipe": "Tomato Upma",
+      "pantry": [
+        "Rava",
+        "Tomato"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real upma variation, but lower priority than standard and vegetable upma."
+    },
+    {
+      "recipe": "Coconut Avalakki",
+      "pantry": [
+        "Avalakki",
+        "Coconut"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A recognized regional poha preparation, but lower priority than kanda and batata poha."
+    },
+    {
+      "recipe": "Sweet Rice",
+      "pantry": [
+        "Rice",
+        "Jaggery"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real sweet rice preparation, but it should not be conflated with Sweet Pongal, which requires moong dal."
+    }
+  ],
+  "coveredByExistingDish": [
+    {
+      "recipe": "Veg Rice",
+      "pantry": [
+        "Rice",
+        "Beans"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Veg Fried Rice",
+        "Veg Pulao"
+      ],
+      "reason": "“Veg Rice” is a generic family name already represented by two recognizable vegetable-rice dishes."
+    },
+    {
+      "recipe": "Fish Rice",
+      "pantry": [
+        "Rice",
+        "Fish"
+      ],
+      "currentTopRecommendation": "Fish Curry Rice",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Fish Curry Rice"
+      ],
+      "reason": "Fish Curry Rice is the clearer, more recognizable expression of the same fish-and-rice meal."
+    },
+    {
+      "recipe": "Onion Omelette",
+      "pantry": [
+        "Egg",
+        "Onion"
+      ],
+      "currentTopRecommendation": "Egg Bhurji",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Egg Bhurji"
+      ],
+      "reason": "Egg Bhurji already uses egg and onion as core ingredients and satisfies the same quick breakfast intent."
+    },
+    {
+      "recipe": "Chicken Fry",
+      "pantry": [
+        "Chicken",
+        "Onion"
+      ],
+      "currentTopRecommendation": "Andhra Chicken Curry",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Andhra Kodi Vepudu",
+        "Guntur Chicken Fry"
+      ],
+      "reason": "The database already contains two specific, recognizable chicken fry dishes."
+    },
+    {
+      "recipe": "Chicken Egg Fried Rice",
+      "pantry": [
+        "Chicken",
+        "Egg"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Chicken Fried Rice"
+      ],
+      "reason": "Chicken Fried Rice already lists egg as an optional ingredient and covers this pantry intent."
+    },
+    {
+      "recipe": "Kanda Poha",
+      "pantry": [
+        "Poha",
+        "Onion"
+      ],
+      "currentTopRecommendation": "Avalakki",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Poha",
+        "Avalakki"
+      ],
+      "reason": "Poha and Avalakki already use poha and onion as core ingredients; Kanda Poha is the regional name for that preparation."
+    },
+    {
+      "recipe": "Rava Upma",
+      "pantry": [
+        "Rava",
+        "Onion"
+      ],
+      "currentTopRecommendation": "Instant Rava Upma",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Instant Rava Upma",
+        "Upma"
+      ],
+      "reason": "Both existing dishes already use rava and onion as core ingredients."
+    },
+    {
+      "recipe": "Vegetable Upma",
+      "pantry": [
+        "Rava",
+        "Vegetable Mix"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Upma"
+      ],
+      "reason": "The existing Upma recipe already includes vegetables such as carrot as supporting ingredients; metadata can be broadened instead of adding a duplicate."
+    },
+    {
+      "recipe": "Avalakki Uppittu",
+      "pantry": [
+        "Avalakki",
+        "Onion"
+      ],
+      "currentTopRecommendation": "Avalakki",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Avalakki",
+        "Poha"
+      ],
+      "reason": "Avalakki Uppittu is already represented by the existing onion-based Avalakki/Poha preparation."
+    }
+  ],
+  "allReviewed": [
+    {
+      "recipe": "Carrot Rice",
+      "pantry": [
+        "Rice",
+        "Carrot"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real home-style rice variation, but less expected than pulao, lemon rice, or tomato rice."
+    },
+    {
+      "recipe": "Veg Rice",
+      "pantry": [
+        "Rice",
+        "Beans"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Veg Fried Rice",
+        "Veg Pulao"
+      ],
+      "reason": "“Veg Rice” is a generic family name already represented by two recognizable vegetable-rice dishes."
+    },
+    {
+      "recipe": "Peas Pulao",
+      "pantry": [
+        "Rice",
+        "Green Peas"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A very common Indian home and restaurant dish that users will expect for rice and green peas."
+    },
+    {
+      "recipe": "Mushroom Rice",
+      "pantry": [
+        "Rice",
+        "Mushroom"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A common, recognizable rice dish and a clear pantry match for rice and mushroom."
+    },
+    {
+      "recipe": "Fish Rice",
+      "pantry": [
+        "Rice",
+        "Fish"
+      ],
+      "currentTopRecommendation": "Fish Curry Rice",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Fish Curry Rice"
+      ],
+      "reason": "Fish Curry Rice is the clearer, more recognizable expression of the same fish-and-rice meal."
+    },
+    {
+      "recipe": "Mutton Pulao",
+      "pantry": [
+        "Rice",
+        "Mutton"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A widely recognized Indian rice dish and an expected result for rice and mutton."
+    },
+    {
+      "recipe": "Garlic Rice",
+      "pantry": [
+        "Rice",
+        "Garlic"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real and useful rice variation, but lower priority than staple pulao and regional rice dishes."
+    },
+    {
+      "recipe": "Coriander Rice",
+      "pantry": [
+        "Rice",
+        "Coriander"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real herb rice variation, but not a critical launch expectation."
+    },
+    {
+      "recipe": "Mint Rice",
+      "pantry": [
+        "Rice",
+        "Mint"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "Pudina rice is common, recognizable, and a strong pantry result for rice and mint."
+    },
+    {
+      "recipe": "Spinach Rice",
+      "pantry": [
+        "Rice",
+        "Spinach"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A valid home-style dish, but lower-frequency than major rice staples."
+    },
+    {
+      "recipe": "Beetroot Rice",
+      "pantry": [
+        "Rice",
+        "Beetroot"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real lunch-box style rice variation, but a lower-priority database addition."
+    },
+    {
+      "recipe": "Corn Rice",
+      "pantry": [
+        "Rice",
+        "Corn"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A recognizable quick rice dish, but not essential for launch coverage."
+    },
+    {
+      "recipe": "Soya Fried Rice",
+      "pantry": [
+        "Rice",
+        "Soya Chunks"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real protein-forward fried rice variation, but less universal than vegetable or egg fried rice."
+    },
+    {
+      "recipe": "Palak Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Spinach"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A common Indian flatbread and an obvious result for wheat flour and spinach."
+    },
+    {
+      "recipe": "Garlic Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Garlic"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A valid flavored paratha, but lower priority than stuffed vegetable parathas."
+    },
+    {
+      "recipe": "Beetroot Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Beetroot"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real lunch-box variation, but not a core user expectation."
+    },
+    {
+      "recipe": "Carrot Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Carrot"
+      ],
+      "currentTopRecommendation": "Momos",
+      "currentScore": 95,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A valid vegetable paratha, but relatively niche."
+    },
+    {
+      "recipe": "Mooli Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Radish"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A classic and widely recognized stuffed paratha."
+    },
+    {
+      "recipe": "Cabbage Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Cabbage"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real stuffed paratha variation, but less common than aloo, paneer, palak, methi, or mooli."
+    },
+    {
+      "recipe": "Cheese Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Cheese"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "Recognizable and family-friendly, but not a foundational pantry recipe."
+    },
+    {
+      "recipe": "Corn Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Corn"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A valid modern paratha variation, but lower priority."
+    },
+    {
+      "recipe": "Peas Paratha",
+      "pantry": [
+        "Wheat Flour",
+        "Peas"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real seasonal stuffed paratha, but less universally expected."
+    },
+    {
+      "recipe": "Sweet Holige",
+      "pantry": [
+        "Wheat Flour",
+        "Jaggery"
+      ],
+      "currentTopRecommendation": "Plain Chapati",
+      "currentScore": 66,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "Holige/obbattu is a well-established regional sweet flatbread and should not be replaced by plain chapati."
+    },
+    {
+      "recipe": "Cheese Dosa",
+      "pantry": [
+        "Dosa Batter",
+        "Cheese"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A recognizable modern dosa variation, but lower priority than masala, onion, paneer, and egg dosa."
+    },
+    {
+      "recipe": "Cheese Uttapam",
+      "pantry": [
+        "Idli Batter",
+        "Cheese"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real modern variation, but not essential to core South Indian coverage."
+    },
+    {
+      "recipe": "Paneer Mushroom Masala",
+      "pantry": [
+        "Paneer",
+        "Mushroom"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real restaurant-style combination, but lower priority than kadai, matar, palak, and bhurji."
+    },
+    {
+      "recipe": "Corn Paneer Masala",
+      "pantry": [
+        "Paneer",
+        "Corn"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A plausible and recognized paneer-corn curry, but comparatively niche."
+    },
+    {
+      "recipe": "Cheesy Paneer Tikka",
+      "pantry": [
+        "Paneer",
+        "Cheese"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real fusion variation, but not required for reliable pantry coverage."
+    },
+    {
+      "recipe": "Garlic Paneer",
+      "pantry": [
+        "Paneer",
+        "Garlic"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A recognizable Indo-Chinese style paneer dish, but lower priority than mainstream paneer curries."
+    },
+    {
+      "recipe": "Onion Omelette",
+      "pantry": [
+        "Egg",
+        "Onion"
+      ],
+      "currentTopRecommendation": "Egg Bhurji",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Egg Bhurji"
+      ],
+      "reason": "Egg Bhurji already uses egg and onion as core ingredients and satisfies the same quick breakfast intent."
+    },
+    {
+      "recipe": "Tomato Omelette",
+      "pantry": [
+        "Egg",
+        "Tomato"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A valid egg-and-tomato omelette, but the name can also mean a besan-based dish regionally, so it needs careful naming."
+    },
+    {
+      "recipe": "Spanish Omelette",
+      "pantry": [
+        "Egg",
+        "Potato"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A globally recognized egg-and-potato dish, but secondary to Indian breakfast coverage."
+    },
+    {
+      "recipe": "Spinach Omelette",
+      "pantry": [
+        "Egg",
+        "Spinach"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real protein breakfast variation, but not essential for launch."
+    },
+    {
+      "recipe": "Paneer Omelette",
+      "pantry": [
+        "Egg",
+        "Paneer"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real high-protein variation, but comparatively niche."
+    },
+    {
+      "recipe": "Chicken Fry",
+      "pantry": [
+        "Chicken",
+        "Onion"
+      ],
+      "currentTopRecommendation": "Andhra Chicken Curry",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Andhra Kodi Vepudu",
+        "Guntur Chicken Fry"
+      ],
+      "reason": "The database already contains two specific, recognizable chicken fry dishes."
+    },
+    {
+      "recipe": "Chicken Egg Fried Rice",
+      "pantry": [
+        "Chicken",
+        "Egg"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Chicken Fried Rice"
+      ],
+      "reason": "Chicken Fried Rice already lists egg as an optional ingredient and covers this pantry intent."
+    },
+    {
+      "recipe": "Chicken Potato Curry",
+      "pantry": [
+        "Chicken",
+        "Potato"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real home-style curry, but lower priority than standard chicken curry and fried preparations."
+    },
+    {
+      "recipe": "Chicken Mushroom Stir Fry",
+      "pantry": [
+        "Chicken",
+        "Mushroom"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real stir-fry combination, but lower priority for an Indian home-cooking launch set."
+    },
+    {
+      "recipe": "Coriander Chicken",
+      "pantry": [
+        "Chicken",
+        "Coriander"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real herb-forward chicken preparation, but the name and style are less standardized."
+    },
+    {
+      "recipe": "Mint Chicken",
+      "pantry": [
+        "Chicken",
+        "Mint"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A recognized pudina chicken variation, but lower priority than core chicken dishes."
+    },
+    {
+      "recipe": "Kanda Poha",
+      "pantry": [
+        "Poha",
+        "Onion"
+      ],
+      "currentTopRecommendation": "Avalakki",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Poha",
+        "Avalakki"
+      ],
+      "reason": "Poha and Avalakki already use poha and onion as core ingredients; Kanda Poha is the regional name for that preparation."
+    },
+    {
+      "recipe": "Batata Poha",
+      "pantry": [
+        "Poha",
+        "Potato"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "MUST_ADD",
+      "coveredBy": [],
+      "reason": "A widely recognized poha variation and the obvious match for poha and potato."
+    },
+    {
+      "recipe": "Peanut Poha",
+      "pantry": [
+        "Poha",
+        "Peanuts"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "Poha already includes peanuts as optional, but a peanut-forward version could be useful later."
+    },
+    {
+      "recipe": "Rava Upma",
+      "pantry": [
+        "Rava",
+        "Onion"
+      ],
+      "currentTopRecommendation": "Instant Rava Upma",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Instant Rava Upma",
+        "Upma"
+      ],
+      "reason": "Both existing dishes already use rava and onion as core ingredients."
+    },
+    {
+      "recipe": "Tomato Upma",
+      "pantry": [
+        "Rava",
+        "Tomato"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real upma variation, but lower priority than standard and vegetable upma."
+    },
+    {
+      "recipe": "Vegetable Upma",
+      "pantry": [
+        "Rava",
+        "Vegetable Mix"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Upma"
+      ],
+      "reason": "The existing Upma recipe already includes vegetables such as carrot as supporting ingredients; metadata can be broadened instead of adding a duplicate."
+    },
+    {
+      "recipe": "Coconut Avalakki",
+      "pantry": [
+        "Avalakki",
+        "Coconut"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A recognized regional poha preparation, but lower priority than kanda and batata poha."
+    },
+    {
+      "recipe": "Avalakki Uppittu",
+      "pantry": [
+        "Avalakki",
+        "Onion"
+      ],
+      "currentTopRecommendation": "Avalakki",
+      "currentScore": 95,
+      "classification": "ALREADY_COVERED_BY_SIMILAR_DISH",
+      "coveredBy": [
+        "Avalakki",
+        "Poha"
+      ],
+      "reason": "Avalakki Uppittu is already represented by the existing onion-based Avalakki/Poha preparation."
+    },
+    {
+      "recipe": "Sweet Rice",
+      "pantry": [
+        "Rice",
+        "Jaggery"
+      ],
+      "currentTopRecommendation": "None",
+      "currentScore": 0,
+      "classification": "NICE_TO_HAVE",
+      "coveredBy": [],
+      "reason": "A real sweet rice preparation, but it should not be conflated with Sweet Pongal, which requires moong dal."
+    }
+  ]
+}
