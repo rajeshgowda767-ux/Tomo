@@ -606,6 +606,81 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return role === 'main';
   }
 
+  function proteinRichRecipe(recipe, haystack = '') {
+    return Number(recipe?.proteinScore || 0) >= 6
+      || /\b(protein|egg|paneer|chicken|fish|mutton|pork|dal|lentil|moong|chana|chickpea|rajma|tofu|soy|soya|sprout|peanut|sundal)\b/.test(haystack);
+  }
+
+  function elaborateDessertRecipe(recipe, haystack = '') {
+    return totalTime(recipe) > 30
+      || /\b(festival|traditional sweet|festival sweet|milk dessert|halwa|jamun|rasgulla|rasmalai|malpua|kulfi|falooda|basundi)\b/.test(haystack);
+  }
+
+  function moodRoleAdjustment(recipe, mood, haystack = tags(recipe).join(' ')) {
+    const role = recommendationRecipeRole(recipe);
+    const proteinRich = proteinRichRecipe(recipe, haystack);
+    const elaborateDessert = role === 'dessert' && elaborateDessertRecipe(recipe, haystack);
+    if (mood === 'rainy') {
+      if (role === 'soup') return 12;
+      if (role === 'snack') return 8;
+      if (role === 'drink' && /\b(chai|tea|coffee|kashaya)\b/.test(haystack)) return 7;
+      if (role === 'condiment') return -12;
+      if (role === 'side') return -8;
+      if (role === 'dessert') return -4;
+      return 0;
+    }
+    if (mood === 'comfort') {
+      if (role === 'soup') return 8;
+      if (role === 'main') return 6;
+      if (role === 'condiment') return -16;
+      if (role === 'side') return -8;
+      if (role === 'drink') return -8;
+      if (role === 'dessert') return -4;
+      if (role === 'snack') return -2;
+      return 0;
+    }
+    if (mood === 'protein') {
+      if (role === 'main') return 6;
+      if (role === 'snack') return proteinRich ? 6 : -3;
+      if (role === 'soup') return proteinRich ? 4 : 0;
+      if (role === 'dessert' || role === 'drink') return proteinRich ? 2 : -14;
+      if (role === 'condiment') return -12;
+      if (role === 'side') return proteinRich ? 0 : -8;
+      return 0;
+    }
+    if (mood === 'quick') {
+      if (role === 'snack') return 6;
+      if (role === 'main') return 4;
+      if (role === 'drink') return 3;
+      if (role === 'dessert') return elaborateDessert ? -12 : -4;
+      if (role === 'soup') return -3;
+      if (role === 'condiment') return -10;
+      if (role === 'side') return -6;
+      return 0;
+    }
+    if (mood === 'spicy') {
+      if (role === 'snack') return 6;
+      if (role === 'main') return 5;
+      if (role === 'soup') return 4;
+      if (role === 'dessert') return -16;
+      if (role === 'drink') return -8;
+      if (role === 'side') return -8;
+      if (role === 'condiment') return -4;
+      return 0;
+    }
+    if (mood === 'soul') {
+      if (role === 'main') return 8;
+      if (role === 'soup') return 5;
+      if (role === 'condiment') return -10;
+      if (role === 'drink') return -8;
+      if (role === 'snack') return -6;
+      if (role === 'side') return -5;
+      if (role === 'dessert') return -4;
+      return 0;
+    }
+    return 0;
+  }
+
   function pantryCompatibleRecipe(recipe) {
     return Boolean(recipe && recipeIngredients(recipe).length > 0);
   }
@@ -1364,6 +1439,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (mood === 'protein') score += Number(recipe?.proteinScore || 0) * 2;
     if (mood === 'rainy' && /soup|pakora|bajji|chai|rasam/.test(haystack)) score += 18;
     if (mood === 'spicy' && /chilli|spicy|masala|pepper/.test(haystack)) score += 18;
+    score += moodRoleAdjustment(recipe, mood, haystack);
     if (isSaved(recipe.id)) score += 8;
     score -= recommendationRolePenalty(recipe, 'mood');
     return score + dishMemoryRecommendationAdjustment(recipe);
@@ -5598,6 +5674,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     recommendationRecipeRole,
     recommendationRolePenalty,
     matchesMeal,
+    moodRoleAdjustment,
+    moodScore,
     heroRoleEligible,
     todaysPickRoleEligible
   };
