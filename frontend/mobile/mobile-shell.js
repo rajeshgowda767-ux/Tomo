@@ -577,15 +577,55 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function roleContextAllowsDrink(context = {}) {
-    return /\b(drink|drinks|sip|sips|soother|soothers|chai|tea|coffee|juice|beverage)\b/.test(roleContextText(context));
+    const text = roleContextText(context);
+    return /\b(drink|drinks|sip|sips|soother|soothers|chai|tea|coffee|juice|beverage)\b/.test(text)
+      || (/\bsnack\b/.test(text) && /\b(rainy|comfort|evening)\b/.test(text));
+  }
+
+  function isWarmDrinkRecipe(recipe) {
+    const haystack = `${norm(recipe?.title)} ${tags(recipe).join(' ')} ${dishFamily(recipe)}`;
+    return recommendationRecipeRole(recipe) === 'drink'
+      && /\b(chai|tea|coffee|kashaya)\b/.test(haystack);
   }
 
   function roleContextAllowsDessert(context = {}) {
     return /\b(dessert|desserts|sweet|sweets|treat|festival|celebration)\b/.test(roleContextText(context));
   }
 
+  function recipeBreakfastSignalText(recipe) {
+    return [
+      recipe?.category,
+      recipe?.mealCategory,
+      recipe?.meal_category,
+      recipe?.dishFamily,
+      recipe?.dish_family,
+      recipe?.mealType,
+      recipe?.meal_type,
+      ...(recipe?.mealTags || []),
+      ...(recipe?.meal_tags || []),
+      ...(recipe?.tags || [])
+    ].map(norm).join(' ');
+  }
+
+  function hasBreakfastSignal(recipe) {
+    const title = norm(recipe?.title || '');
+    const text = recipeBreakfastSignalText(recipe);
+    return /\bbreakfast\b/.test(text)
+      || /\b(idli|dosa|uttapam|pongal|upma|poha|sevai|cheela|chilla|paratha|sandwich|toast|porridge|oats|appam|puttu|omelette)\b/.test(title)
+      || /\begg\b.*\bbhurji\b|\bbhurji\b.*\begg\b/.test(title);
+  }
+
+  function breakfastRecommendationEligible(recipe) {
+    if (!hasBreakfastSignal(recipe)) return false;
+    const role = recommendationRecipeRole(recipe);
+    if (role === 'main') return true;
+    if (role === 'snack') return proteinRichRecipe(recipe, tags(recipe).join(' '));
+    return false;
+  }
+
   function heroRoleEligible(recipe, mood = state.mood, meal = state.meal) {
     const role = recommendationRecipeRole(recipe);
+    if (meal === 'breakfast') return breakfastRecommendationEligible(recipe);
     if (role === 'main') return true;
     if (role === 'soup') return roleContextAllowsSoup({ mood, meal, surface: 'tomo_pick' });
     if (role === 'snack') return meal === 'snack' && /\b(rainy|quick|protein|spicy)\b/.test(norm(mood));
@@ -602,7 +642,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       if (role === 'dessert') return roleContextAllowsDessert({ ...context, meal });
       return false;
     }
-    if (['breakfast', 'lunch', 'dinner'].includes(meal)) return role === 'main' || role === 'soup';
+    if (meal === 'breakfast') return breakfastRecommendationEligible(recipe);
+    if (['lunch', 'dinner'].includes(meal)) return role === 'main' || role === 'soup';
     return role === 'main';
   }
 
@@ -1419,10 +1460,11 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const haystack = tags(recipe);
     const baseMatch = haystack.includes(meal) || (meal === 'snack' && haystack.includes('snacks'));
     if (role === 'side' || role === 'condiment') return false;
-    if (role === 'main') return ['breakfast', 'lunch', 'dinner'].includes(meal);
+    if (meal === 'breakfast') return breakfastRecommendationEligible(recipe);
+    if (role === 'main') return ['lunch', 'dinner'].includes(meal);
     if (role === 'soup') return ['lunch', 'dinner'].includes(meal) || (baseMatch && roleContextAllowsSoup({ ...context, meal }));
     if (role === 'snack') return meal === 'snack' && baseMatch;
-    if (role === 'drink') return meal === 'snack' && baseMatch && roleContextAllowsDrink({ ...context, meal });
+    if (role === 'drink') return meal === 'snack' && roleContextAllowsDrink({ ...context, meal }) && (baseMatch || isWarmDrinkRecipe(recipe));
     if (role === 'dessert') return meal === 'snack' && baseMatch && roleContextAllowsDessert({ ...context, meal });
     return baseMatch;
   }
@@ -1556,6 +1598,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       if (strongIndex >= 0) score += 260 - strongIndex * 8;
       if (/\b(sandwich|chaat|dhokla|khandvi|paniyaram|makhana|cutlet|roll|toast|chilla|cheela|uttapam)\b/.test(haystack)) score += 80;
       if (/\b(protein|egg|paneer|chana|moong|sprout|peanut|makhana|sweet potato)\b/.test(haystack)) score += 35;
+      if (isWarmDrinkRecipe(recipe) && /\b(rainy|comfort)\b/.test(norm(state.mood))) score += 130;
       if (/\b(pakora|bajji|bonda|kachori|samosa|fried)\b/.test(haystack)) score -= 90;
       if (/\b(chutney|raita|palya|poriyal|thoran|add on|addon|accompaniment|condiment)\b/.test(haystack)) score -= 220;
       if (title === 'chapati jam roll') score += 15;
@@ -1831,7 +1874,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         score: scoreRecipeForSurface(recipe, context)
       }))
       .filter((item) => item.recipe && item.score.eligible)
-      .sort((a, b) => (b.score.finalScore + heroFoodPriority(b.recipe)) - (a.score.finalScore + heroFoodPriority(a.recipe)) || moodRecipeCompare(a.recipe, b.recipe, mood));
+      .sort((a, b) => (b.score.finalScore + heroFoodPriority(b.recipe, mood, meal)) - (a.score.finalScore + heroFoodPriority(a.recipe, mood, meal)) || moodRecipeCompare(a.recipe, b.recipe, mood));
   }
 
   function diverseTomoPickCandidate(scoredCandidates, recent = state.tomoPickRecent || []) {
@@ -1966,11 +2009,16 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return /\b(chai|tea|coffee|water|buttermilk|chaas|lassi|sharbat|juice|drink|neer mor|jal jeera|ajwain water|jeera water|sattu drink|ragi malt)\b/.test(`${title} ${haystack}`);
   }
 
-  function heroFoodPriority(recipe) {
-    if (!recipe || !heroRoleEligible(recipe) || isHeroBeverageOnly(recipe)) return -100;
+  function heroSoupContextBonus(recipe, mood = state.mood, meal = state.meal) {
+    if (recommendationRecipeRole(recipe) !== 'soup') return 0;
+    return /\b(rainy|comfort|light|sick|evening)\b/.test(roleContextText({ mood, meal, surface: 'tomo_pick' })) ? 10 : 0;
+  }
+
+  function heroFoodPriority(recipe, mood = state.mood, meal = state.meal) {
+    if (!recipe || !heroRoleEligible(recipe, mood, meal) || isHeroBeverageOnly(recipe)) return -100;
     const title = norm(recipe.title);
     const haystack = `${title} ${tags(recipe).join(' ')} ${dishFamily(recipe)}`;
-    let score = 0;
+    let score = heroSoupContextBonus(recipe, mood, meal);
     if (matchesMeal(recipe, 'breakfast')) score += 14;
     if (/\b(rice|chawal|pulao|biryani|khichdi|pongal|bisibelebath|curd rice|lemon rice|tomato rice)\b/.test(haystack)) score += 12;
     if (/\b(curry|masala|korma|stew|saaru|rasam|dal|pappu|paneer|chicken|fish|egg|rajma|chole|chana)\b/.test(haystack)) score += 12;
@@ -5733,8 +5781,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     recommendationRecipeRole,
     recommendationRolePenalty,
     matchesMeal,
+    hasBreakfastSignal,
+    breakfastRecommendationEligible,
+    isWarmDrinkRecipe,
     moodRoleAdjustment,
     moodScore,
+    heroSoupContextBonus,
     heroRoleEligible,
     todaysPickRoleEligible,
     relatedRoleScore,
