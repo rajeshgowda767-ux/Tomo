@@ -6,12 +6,13 @@ const outputJson = path.join(root, 'banter-audit.json');
 const outputMarkdown = path.join(root, 'banter-audit.md');
 
 const sourceFiles = [
-  'index.html',
-  'app.js',
-  'styles.css',
-  'final-overrides.css',
-  'database/generated/collections.json',
-  'database/generated/recipes.json'
+  'frontend/index.html',
+  'frontend/app.js',
+  'frontend/styles.css',
+  'frontend/final-overrides.css',
+  'frontend/desktop-reference.html',
+  'frontend/mobile/mobile-shell.js',
+  'frontend/mobile/mobile-v2.css'
 ];
 
 const groups = [
@@ -560,9 +561,13 @@ function buildMarkdown(entries, summary, priorityFindings) {
 
 function runTomoBanterAudit() {
   const entries = [];
+  const missingFiles = sourceFiles.filter((file) => !fs.existsSync(path.join(root, file)));
+  if (missingFiles.length) {
+    throw new Error(`Missing required banter audit target${missingFiles.length === 1 ? '' : 's'}:\n${missingFiles.map((file) => `- ${file}`).join('\n')}`);
+  }
+
   sourceFiles.forEach((file) => {
     const absolute = path.join(root, file);
-    if (!fs.existsSync(absolute)) return;
     const text = fs.readFileSync(absolute, 'utf8');
     if (file.endsWith('.html')) extractHtml(file, text, entries);
     else if (file.endsWith('.css')) extractCss(file, text, entries);
@@ -576,7 +581,7 @@ function runTomoBanterAudit() {
   const report = {
     generatedAt: new Date().toISOString(),
     scannedFiles: sourceFiles,
-    duplicatePolicy: 'Canonical root files are scanned; mirrored frontend files are intentionally excluded.',
+    duplicatePolicy: 'Only active frontend runtime files are scanned; root legacy shell files are intentionally excluded.',
     totalUniqueLines: uniqueEntries.length,
     priorityFindings,
     summary,

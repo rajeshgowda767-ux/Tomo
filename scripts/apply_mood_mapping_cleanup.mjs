@@ -3,10 +3,7 @@ import path from 'node:path';
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const databasePath = path.join(root, 'database', 'generated', 'recipes.json');
-const browserPaths = [
-  path.join(root, 'local-recipes.js'),
-  path.join(root, 'frontend', 'local-recipes.js'),
-];
+const frontendRecipesPath = path.join(root, 'frontend', 'local-recipes.js');
 
 const changes = {
   Dosa: {
@@ -190,8 +187,6 @@ for (const [title, change] of Object.entries(changes)) {
 
 const json = `${JSON.stringify(recipes, null, 2)}\n`;
 fs.writeFileSync(databasePath, json);
-for (const browserPath of browserPaths) {
-  fs.writeFileSync(browserPath, `window.COOKBUDDY_LOCAL_RECIPES = ${json.trim()};\n`);
-}
+fs.writeFileSync(frontendRecipesPath, `window.COOKBUDDY_LOCAL_RECIPES = ${json.trim()};\n`);
 
 console.log(JSON.stringify({ updated }, null, 2));
