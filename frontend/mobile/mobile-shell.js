@@ -200,6 +200,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   const dietaryTagTypes = ['vegetarian', 'egg', 'non_vegetarian', 'no_onion_no_garlic', 'jain'];
   const recommendationSurfaces = ['tomo_pick', 'todays_picks', 'pantry', 'related'];
   const recommendationScoreKeys = ['mood', 'memory', 'feedback', 'recency', 'dietary', 'regional', 'pantry', 'diversity'];
+  const allowedRecipeRoles = ['main', 'side', 'condiment', 'snack', 'drink', 'dessert', 'soup'];
   const recommendationSurfaceWeights = {
     tomo_pick: { mood: 0.30, memory: 0.12, feedback: 0.08, recency: 0.18, dietary: 0.075, regional: 0.075, pantry: 0.05, diversity: 0.12 },
     todays_picks: { mood: 0.60, memory: 0.08, feedback: 0.07, recency: 0.08, dietary: 0.05, regional: 0.04, pantry: 0.01, diversity: 0.07 },
@@ -514,14 +515,22 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     ].map(norm).join(' ');
   }
 
+  function normalizedRecipeRole(value) {
+    const role = norm(value);
+    return allowedRecipeRoles.includes(role) ? role : '';
+  }
+
   function recommendationRecipeRole(recipe) {
-    const explicitRole = norm(recipe?.recipeRole || recipe?.recipe_role || '');
-    if (['main', 'snack', 'side', 'condiment'].includes(explicitRole)) return explicitRole;
+    const explicitRole = normalizedRecipeRole(recipe?.recipeRole || recipe?.recipe_role || '');
+    if (explicitRole) return explicitRole;
     const text = recommendationRoleText(recipe);
     const title = norm(recipe?.title || '');
     if (/\b(chutney|raita|pickle|podi|dip)\b/.test(title)) return 'condiment';
     if (/\b(condiment|dip|spread|pickle|podi)\b/.test(text)) return 'condiment';
-    if (/\b(sundal)\b/.test(title)) return 'snack';
+    if (/\b(chai|tea|coffee|buttermilk|chaas|lassi|sharbat|juice|water|drink|neer mor|jal jeera|ajwain water|jeera water|sattu drink|ragi malt|panakam|sherbet|milkshake)\b/.test(text)) return 'drink';
+    if (/\b(soup|rasam|saaru|stew|thukpa)\b/.test(text)) return 'soup';
+    if (/\b(kheer|payasam|halwa|ladoo|laddu|barfi|burfi|jamun|rasgulla|rasmalai|peda|sandesh|kalakand|malpua|kulfi|falooda|sheera|modak|gujiya|katli|dessert|traditional sweet|festival sweet|milk dessert)\b/.test(text)) return 'dessert';
+    if (/\b(samosa|pakora|bajji|bonda|kachori|vada|momos|chaat|sundal|dhokla|khandvi|paniyaram|kodubale|mathri|roll|sandwich|toast|cutlet|tikki)\b/.test(title)) return 'snack';
     if (/\b(palya|poriyal|thoran|kosambari|pachadi)\b/.test(title)) return 'side';
     if (sideAddOnCollectionTitles.has(title)) return 'side';
     if (/\b(side|sides|add on|add ons|addon|addons|accompaniment|tempering)\b/.test(text)) return 'side';
@@ -531,10 +540,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   function recommendationRolePenalty(recipe, surface = 'mood') {
     const role = recommendationRecipeRole(recipe);
     const penalties = surface === 'hero'
-      ? { main: 0, snack: 8, side: 120, condiment: 180 }
+      ? { main: 0, snack: 8, side: 120, condiment: 180, drink: 140, dessert: 80, soup: 35 }
       : surface === 'todays_picks'
-        ? { main: 0, snack: 6, side: 95, condiment: 150 }
-        : { main: 0, snack: 10, side: 90, condiment: 140 };
+        ? { main: 0, snack: 6, side: 95, condiment: 150, drink: 80, dessert: 45, soup: 20 }
+        : { main: 0, snack: 10, side: 90, condiment: 140, drink: 70, dessert: 35, soup: 15 };
     return penalties[role] || 0;
   }
 
@@ -5525,6 +5534,11 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   });
 
   installAnalyticsHelpers();
+  window.__tomoMobileRoleAudit = {
+    allowedRecipeRoles: [...allowedRecipeRoles],
+    recommendationRecipeRole,
+    recommendationRolePenalty
+  };
   window.runTomoCollectionImageAudit = runCollectionImageAudit;
   const collectionAuditRequested = new URLSearchParams(window.location.search).get('collectionImageAudit') === '1'
     || window.location.hash.includes('collection-image-audit');
