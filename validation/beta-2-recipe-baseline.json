@@ -1,0 +1,21 @@
+{
+  "recipeCount": 449,
+  "uniqueIds": 449,
+  "uniqueSourceIds": 449,
+  "imageCoverage": 449,
+  "quickGuideCoverage": 449,
+  "pairingCoverage": 395,
+  "dietaryTagCoverage": 449,
+  "mealTagCoverage": 295,
+  "moodTagCoverage": 317,
+  "moodTagNonEmptyCoverage": 306,
+  "regionTagCoverage": 278,
+  "aliasCoverage": 128,
+  "aliasNonEmptyCoverage": 24,
+  "recipeTypeCoverage": 449,
+  "dishFamilyCoverage": 449,
+  "totalPairingItems": 1196,
+  "schemaFieldCount": 107,
+  "generatedAt": "2026-06-22T11:06:15Z",
+  "baselineVersion": "beta-2"
+}
