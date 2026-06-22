@@ -1512,6 +1512,177 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return selected.map((item) => item.recipe);
   }
 
+  function fourCardRecommendationPool(meal = state.meal, mood = state.mood, dismissed = new Set()) {
+    const curated = todaysPickCandidatePool(meal);
+    const fallback = recipes
+      .filter((recipe) => matchesMeal(recipe, meal, { mood, surface: 'todays_picks' }))
+      .filter(uniqueByTitle());
+    const pool = mergeRecipeLists(curated, fallback)
+      .filter((recipe) => !dismissed.has(recipe.id))
+      .filter((recipe) => todaysPickRoleEligible(recipe, meal, { mood, meal, surface: 'todays_picks' }));
+    return scoreTodaysPickCandidates(pool, meal, dismissed);
+  }
+
+  function pickFirstUnused(scoredItems, usedIds, test = () => true) {
+    return scoredItems.find((item) => item?.recipe?.id && !usedIds.has(item.recipe.id) && test(item.recipe, item));
+  }
+
+  function familiarFavoriteScore(item) {
+    const recipe = item?.recipe;
+    if (!recipe) return 0;
+    const haystack = `${norm(recipe.title)} ${tags(recipe).join(' ')} ${dishFamily(recipe)}`;
+    let score = todayPickRankScore(item);
+    score += Number(recipe?.comfortScore || 0) * 4;
+    score += Number(recipe?.nostalgiaScore || 0) * 3;
+    score += todayPickHistoryScore(recipe) * 1.2;
+    if (/\b(comfort|soul|homestyle|home style|dal|rice|khichdi|pongal|idli|dosa|upma|poha|curd rice|rasam)\b/.test(haystack)) score += 28;
+    if (['side', 'condiment', 'drink', 'dessert'].includes(recommendationRecipeRole(recipe))) score -= 120;
+    return score;
+  }
+
+  function quickEasyScore(item) {
+    const recipe = item?.recipe;
+    if (!recipe) return 0;
+    let score = todayPickRankScore(item);
+    const minutes = totalTime(recipe);
+    if (minutes && minutes <= 20) score += 45;
+    else if (minutes && minutes <= 30) score += 24;
+    if (recipe?.lowEffort) score += 18;
+    if (recipe?.minimalCleanup) score += 12;
+    score += moodScore(recipe, 'quick') * 0.3;
+    if (state.meal === 'snack' && isWarmDrinkRecipe(recipe) && /\b(rainy|comfort)\b/.test(norm(state.mood))) score += 38;
+    if (['side', 'condiment'].includes(recommendationRecipeRole(recipe))) score -= 140;
+    return score;
+  }
+
+  function explorePickScore(item, usedIds = new Set()) {
+    const recipe = item?.recipe;
+    if (!recipe) return 0;
+    const usedRecipes = [...usedIds].map((id) => recipes.find((candidate) => candidate.id === id)).filter(Boolean);
+    const usedFamilies = new Set(usedRecipes.map((candidate) => dishFamily(candidate)).filter(Boolean));
+    const usedRegions = new Set(usedRecipes.flatMap((candidate) => recipeRegionalLabels(candidate).map(norm)).filter(Boolean));
+    const family = dishFamily(recipe);
+    const labels = recipeRegionalLabels(recipe).map(norm);
+    let score = todayPickRankScore(item) * 0.55;
+    if (family && !usedFamilies.has(family)) score += 50;
+    if (labels.some((label) => /karnataka|mangalorean|udupi|coastal|northeast|assam|bengal|malnad|kodagu|north karnataka|regional/.test(label))) score += 34;
+    if (!labels.some((label) => usedRegions.has(label))) score += 28;
+    if (state.meal === 'snack' && isWarmDrinkRecipe(recipe) && /\b(rainy|comfort)\b/.test(norm(state.mood))) score += 95;
+    score += todayPickDiversityScore(recipe) * 0.4;
+    if (['side', 'condiment'].includes(recommendationRecipeRole(recipe))) score -= 180;
+    if (['drink', 'dessert'].includes(recommendationRecipeRole(recipe)) && state.meal !== 'snack') score -= 120;
+    return score;
+  }
+
+  function pantryPickScoredItems(meal = state.meal, mood = state.mood, dismissed = new Set()) {
+    if (!state.selectedIngredients.size) return [];
+    return pantryMatches()
+      .filter((match) => match?.recipe && !dismissed.has(match.recipe.id))
+      .filter((match) => matchesMeal(match.recipe, meal, { mood, surface: 'todays_picks', intent: 'pantry' }))
+      .filter((match) => todaysPickRoleEligible(match.recipe, meal, { mood, meal, surface: 'todays_picks', intent: 'pantry' }))
+      .map((match) => ({
+        recipe: match.recipe,
+        meal,
+        score: scoreRecipeForSurface(match.recipe, {
+          surface: 'pantry',
+          mood,
+          meal,
+          selectedIngredients: [...state.selectedIngredients],
+          pantryScore: Math.max(0, Math.min(100, Number(match.score || 0) / 55))
+        }),
+        pantryMatch: match
+      }))
+      .sort((a, b) => Number(b.pantryMatch?.score || 0) - Number(a.pantryMatch?.score || 0));
+  }
+
+  function fourCardRecommendations(meal = state.meal, mood = state.mood) {
+    const dismissed = new Set(state.dismissedToday);
+    const scored = fourCardRecommendationPool(meal, mood, dismissed);
+    const used = new Set();
+    const cards = [];
+    const addCard = (slot, item, fallbackSubtitle = '') => {
+      if (!item?.recipe || used.has(item.recipe.id)) return false;
+      used.add(item.recipe.id);
+      cards.push({
+        ...slot,
+        recipe: item.recipe,
+        score: item.score,
+        subtitle: slot.subtitle || fallbackSubtitle
+      });
+      return true;
+    };
+    const best = pickFirstUnused(scored, used);
+    addCard({
+      key: 'bestPick',
+      icon: '🌟',
+      label: "Tomo's Best Pick",
+      subtitle: 'Strongest fit for this meal and mood.'
+    }, best);
+
+    const familiar = [...scored]
+      .filter((item) => !used.has(item.recipe.id))
+      .sort((a, b) => familiarFavoriteScore(b) - familiarFavoriteScore(a));
+    addCard({
+      key: 'familiarFavorite',
+      icon: '🍲',
+      label: 'Familiar Favorite',
+      subtitle: 'Safe, comforting and familiar.'
+    }, pickFirstUnused(familiar, used));
+
+    const pantryItems = pantryPickScoredItems(meal, mood, dismissed);
+    if (state.selectedIngredients.size && pantryItems.length) {
+      addCard({
+        key: 'fromYourKitchen',
+        icon: '🥗',
+        label: 'From Your Kitchen',
+        subtitle: 'Uses what you have selected.'
+      }, pickFirstUnused(pantryItems, used));
+    } else {
+      const quick = [...scored]
+        .filter((item) => !used.has(item.recipe.id))
+        .sort((a, b) => quickEasyScore(b) - quickEasyScore(a));
+      addCard({
+        key: 'quickEasy',
+        icon: '⚡',
+        label: 'Quick & Easy',
+        subtitle: 'Low-fuss backup when pantry is empty.'
+      }, pickFirstUnused(quick, used));
+    }
+
+    const explore = [...scored]
+      .filter((item) => !used.has(item.recipe.id))
+      .sort((a, b) => explorePickScore(b, used) - explorePickScore(a, used));
+    addCard({
+      key: 'explorePick',
+      icon: '🧭',
+      label: 'Explore Something Different',
+      subtitle: 'A different family, region, or flavor lane.'
+    }, pickFirstUnused(explore, used));
+
+    if (cards.length < 4) {
+      scored.forEach((item) => {
+        if (cards.length < 4) addCard({
+          key: `backup-${cards.length}`,
+          icon: '✨',
+          label: 'Another Good Pick',
+          subtitle: 'Still inside your meal boundary.'
+        }, item);
+      });
+    }
+    state.todaysPickScores[meal] = cards.map((card) => ({
+      recipeId: card.recipe.id,
+      title: card.recipe.title,
+      card: card.key,
+      label: card.label,
+      confidence: card.score?.confidence || 'medium',
+      finalScore: card.score?.finalScore || 0,
+      scores: card.score?.scores || {},
+      explanation: card.score?.explanation || []
+    }));
+    window.__TOMO_TODAYS_PICK_SCORES__ = state.todaysPickScores;
+    return cards.slice(0, 4);
+  }
+
   function todaysPickCandidatePool(meal = state.meal) {
     if (state.mood === 'rainy') return rainyMealCandidateRecipes(meal);
     if (state.mood === 'soul' && meal === 'dinner') return curatedTitleRecipes(moodCuration.soulDinner, []);
@@ -2890,35 +3061,11 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function moodsView() {
-    const pick = tomoPick();
-    const pickContext = state.activeTomoPick;
-    const subtitleReason = heroRecommendationSentence(pickContext, pick);
-    const heroMeal = mealLabel(pickContext?.meal || state.meal);
-    const heroDiet = heroDietaryLabel(pick);
-    const heroDietIcon = heroDiet === 'Protein' || heroDiet === 'Non-Veg' ? '🍗' : '🥬';
-    const picks = mealRecipes(state.meal, 2, { excludeDismissed: true });
-    const heroSaved = isSaved(pick?.id || '', pick?.title || '');
-    if (state.screen === 'discover' && state.discoverView === 'moods') trackTomoPickViewed(pick, pickContext);
+    const pickCards = fourCardRecommendations(state.meal, state.mood);
+    if (state.screen === 'discover' && state.discoverView === 'moods' && pickCards[0]?.recipe) {
+      trackTomoPickViewed(pickCards[0].recipe, { mood: state.mood || 'default', meal: state.meal });
+    }
     return `
-      <article class="mv2-pick mv2-hero-pick">
-        <div class="mv2-hero-card">
-          <div class="mv2-pick-image">
-            ${imageTag(recipeImage(pick))}
-          </div>
-          <div class="mv2-pick-body">
-            <div class="mv2-hero-header-row">
-              <span class="mv2-badge"><span class="mv2-badge-star">✨</span> Tomo's Pick Today</span>
-              <button class="mv2-hero-header-save ${heroSaved ? 'active' : ''}" type="button" data-save="${esc(pick?.id || '')}" data-dish-name="${esc(pick?.title || '')}" data-source="tomo-pick" aria-label="${heroSaved ? 'Saved' : 'Save'}">${heroSaved ? '♥' : '♡'}</button>
-            </div>
-            <h2 class="mv2-hero-title"><span class="mv2-hero-dish-name">${esc(pick?.title || 'Tomo Pick')}</span></h2>
-            <p class="mv2-hero-subtitle">${esc(subtitleReason)}</p>
-            <div class="mv2-meta mv2-hero-meta">
-              <span class="mv2-hero-meta-row">⏱ ${totalTime(pick)} min&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;${esc(heroDiet)}</span>
-            </div>
-            <div class="mv2-card-actions mv2-hero-actions"><button class="mv2-primary" type="button" data-cook-recipe="${esc(pick?.id || '')}" data-dish-name="${esc(pick?.title || '')}" data-source="tomo-pick">Cook This</button></div>
-          </div>
-        </div>
-      </article>
       <div class="mv2-mood-dashboard">
         <div class="mv2-mood-heading">
           <h2>Choose Your Mood</h2>
@@ -2926,7 +3073,26 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         </div>
         <div class="mv2-moods">${moods.map(([key, icon, label]) => `<button class="mv2-mood ${state.mood === key ? 'active' : ''}" type="button" data-mood="${key}"><span>${icon}</span><span>${label}</span></button>`).join('')}</div>
       </div>
-      <section class="mv2-todays-picks"><div class="mv2-section-title"><div><h2>Today's Picks</h2></div></div><div class="mv2-meal-tabs">${meals.map(([key, label]) => `<button class="${state.meal === key ? 'active' : ''}" type="button" data-meal="${key}">${label}</button>`).join('')}</div><div class="mv2-dish-list">${picks.map(recipeCard).join('') || '<p class="mv2-empty">No dishes found for this meal yet.</p>'}</div></section>
+      <section class="mv2-todays-picks mv2-four-picks"><div class="mv2-section-title"><div><h2>Today's Picks</h2><p>${esc(mealLabel(state.meal))}${state.mood ? ` through a ${esc(selectedMoodLabel(state.mood))} lens` : ''}</p></div></div><div class="mv2-meal-tabs">${meals.map(([key, label]) => `<button class="${state.meal === key ? 'active' : ''}" type="button" data-meal="${key}">${label}</button>`).join('')}</div><div class="mv2-four-pick-grid">${pickCards.map(todayPickCard).join('') || '<p class="mv2-empty">No dishes found for this meal yet.</p>'}</div></section>
+    `;
+  }
+
+  function todayPickCard(card) {
+    const recipe = card.recipe;
+    const role = titleCase(recommendationRecipeRole(recipe));
+    return `
+      <article class="mv2-today-card mv2-today-card-${esc(card.key)}">
+        <button class="mv2-today-main" type="button" data-recipe="${esc(recipe.id)}">
+          <span class="mv2-today-image">${imageTag(recipeImage(recipe))}</span>
+          <span class="mv2-today-copy">
+            <span class="mv2-today-label"><b>${esc(card.icon)}</b>${esc(card.label)}</span>
+            <strong>${esc(recipe.title)}</strong>
+            <small>${esc(card.subtitle)}</small>
+            <em>⏱ ${totalTime(recipe)} min • ${esc(role)}</em>
+          </span>
+        </button>
+        ${dishActionButtons(recipe.id, recipe.title, 'todays-picks', 'mv2-today-actions')}
+      </article>
     `;
   }
 
@@ -5789,8 +5955,30 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     heroSoupContextBonus,
     heroRoleEligible,
     todaysPickRoleEligible,
+    fourCardRecommendations,
     relatedRoleScore,
     relatedDishes
+  };
+  window.__tomoMobileDiscoverAudit = {
+    fourCards(mood = state.mood, meal = state.meal, selectedIngredients = [...state.selectedIngredients]) {
+      const previousMood = state.mood;
+      const previousMeal = state.meal;
+      const previousIngredients = new Set(state.selectedIngredients);
+      state.mood = mood;
+      state.meal = meal;
+      state.selectedIngredients = new Set(selectedIngredients);
+      const cards = fourCardRecommendations(meal, mood).map((card) => ({
+        key: card.key,
+        label: card.label,
+        title: card.recipe.title,
+        role: recommendationRecipeRole(card.recipe),
+        dishFamily: dishFamily(card.recipe)
+      }));
+      state.mood = previousMood;
+      state.meal = previousMeal;
+      state.selectedIngredients = previousIngredients;
+      return cards;
+    }
   };
   window.runTomoCollectionImageAudit = runCollectionImageAudit;
   const collectionAuditRequested = new URLSearchParams(window.location.search).get('collectionImageAudit') === '1'
