@@ -14,6 +14,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-akki-roti.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "dinner",
@@ -230,6 +231,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/recommendation-pack-aloo-jeera.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -447,6 +449,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -706,6 +709,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/bread-upma.png",
+    "recipeRole": "main",
     "image_url": "/assets/images/dishes/bread-upma.png",
     "tags": [
       "breakfast",
@@ -890,6 +894,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/recommendation-pack-aloo-jeera.png",
+    "recipeRole": "side",
     "image_url": "/assets/images/dishes/recommendation-pack-aloo-jeera.png",
     "tags": [
       "lunch",
@@ -1108,6 +1113,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/aloo-paratha.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -1285,6 +1291,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -1490,6 +1497,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -1683,6 +1691,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/recommendation-pack-andhra-chicken-curry.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "south-indian",
@@ -1880,6 +1889,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "spicy-food",
@@ -2080,6 +2090,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/chicken-sukka-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "spicy-food",
@@ -2282,6 +2293,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/andhra-podi-idli-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "south-indian",
@@ -2487,6 +2499,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "dinner",
@@ -2687,6 +2700,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -2846,6 +2860,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -3049,6 +3064,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/consistency-45-avalakki.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -3214,6 +3230,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/avial.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -3417,6 +3434,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3a-baingan-bharta.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -3620,6 +3638,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -3828,6 +3847,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/poha-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -4043,6 +4063,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-beans-poriyal.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -4249,6 +4270,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-beans-thoran.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -4451,6 +4473,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-begun-bhaja.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -4649,6 +4672,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-bele-saaru.png",
+    "recipeRole": "soup",
     "tags": [
       "lunch",
       "dinner",
@@ -4864,6 +4888,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/besan-chilla.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -5047,6 +5072,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/biryani.png",
+    "recipeRole": "main",
     "tags": [
       "festival",
       "vegetarian",
@@ -5263,6 +5289,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-bisibelebath.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -5437,6 +5464,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "non-vegetarian",
@@ -5601,6 +5629,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -5766,6 +5795,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/bread-omelette.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -5940,6 +5970,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -6110,6 +6141,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/bread-upma.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -6301,6 +6333,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "non-vegetarian",
@@ -6477,6 +6510,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/buttermilk-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -6696,6 +6730,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-cabbage-thoran.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -6899,6 +6934,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -7066,6 +7102,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -7274,6 +7311,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-masala-omelette.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -7466,6 +7504,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/paratha.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -7670,6 +7709,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -7876,6 +7916,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch3a-chilli-chicken.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "spicy-food",
@@ -8068,6 +8109,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/snacks/chicken-65.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "south-indian",
@@ -8263,6 +8305,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -8480,6 +8523,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "south-indian",
@@ -8679,6 +8723,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/chicken-curry-rice.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -8853,6 +8898,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -9070,6 +9116,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-chicken-fried-rice.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "non-vegetarian",
@@ -9299,6 +9346,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch3a-chilli-chicken.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "spicy-food",
@@ -9502,6 +9550,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/chicken-curry.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -9715,6 +9764,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -9935,6 +9985,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/chicken-curry-rice.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -10143,6 +10194,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -10307,6 +10359,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch5-chicken-rice.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -10483,6 +10536,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-chicken-roll.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "non-vegetarian",
@@ -10647,6 +10701,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-chicken-stew.png",
+    "recipeRole": "soup",
     "tags": [
       "lunch",
       "non-vegetarian",
@@ -10816,6 +10871,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "south-indian",
@@ -11009,6 +11065,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -11223,6 +11280,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3a-chilli-chicken.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -11443,6 +11501,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/chilli-mushroom.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "spicy-food"
@@ -11637,6 +11696,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-chilli-paneer.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "north-indian",
@@ -11829,6 +11889,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-chingri-malai-curry.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -12034,6 +12095,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-chingudi-chhecha.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -12243,6 +12305,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-chirer-pulao.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "snack",
@@ -12444,6 +12507,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3a-chole-chawal.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -12616,6 +12680,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-chow-chow-kootu.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -12829,6 +12894,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch5-coconut-rice.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -13029,6 +13095,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/corn-chaat-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -13257,6 +13324,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -13471,6 +13539,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -13704,6 +13773,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-corn-sundal.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "vegetarian",
@@ -13905,6 +13975,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-curd-rice.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -14074,6 +14145,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/consistency-45-dal-makhani.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -14262,6 +14334,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "non-vegetarian",
@@ -14435,6 +14508,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -14601,6 +14675,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -14809,6 +14884,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-dhokar-dalna.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -15010,6 +15086,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-dhokla.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "snack",
@@ -15212,6 +15289,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -15400,6 +15478,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-dosakaya-pappu.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -15615,6 +15694,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch3a-chilli-chicken.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "spicy-food",
@@ -15812,6 +15892,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-egg-bhurji.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -15991,6 +16072,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -16195,6 +16277,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "eggetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/egg-curry.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "north-indian",
@@ -16392,6 +16475,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "non-vegetarian",
@@ -16581,6 +16665,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -16778,6 +16863,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/egg-fried-rice.png",
+    "recipeRole": "main",
     "tags": [
       "quick",
       "comfort",
@@ -16995,6 +17081,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/paratha.png",
+    "recipeRole": "main",
     "tags": [
       "quick",
       "comfort",
@@ -17205,6 +17292,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-egg-toast.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -17407,6 +17495,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/breakfast-default.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -17632,6 +17721,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3a-baingan-bharta.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -17833,6 +17923,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -18018,6 +18109,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "non-vegetarian",
@@ -18186,6 +18278,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-fish-fry.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -18373,6 +18466,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "non-vegetarian",
@@ -18539,6 +18633,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-garlic-chicken.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -18734,6 +18829,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/breakfast-default.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -18950,6 +19046,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -19167,6 +19264,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -19445,6 +19543,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-ghugni.png",
+    "recipeRole": "main",
     "tags": [
       "snack",
       "dinner",
@@ -19653,6 +19752,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -19868,6 +19968,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "lunch",
@@ -20072,6 +20173,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "south-indian",
@@ -20270,6 +20372,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-gujarati-dal.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -20485,6 +20588,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "dessert",
     "tags": [
       "festival",
       "vegetarian",
@@ -20645,6 +20749,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/gunpowder-idli.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "spicy-food",
@@ -20875,6 +20980,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/chicken-sukka-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "spicy-food",
@@ -21071,6 +21177,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "south-indian",
@@ -21258,6 +21365,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-handvo.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "dinner",
@@ -21458,6 +21566,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/recommendation-pack-idli.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -21622,6 +21731,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/jadoh-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -21830,6 +21940,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/jeera-water-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "snack",
       "vegetarian",
@@ -22029,6 +22140,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "spicy-food",
@@ -22261,6 +22373,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-kachori.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -22422,6 +22535,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "dessert",
     "tags": [
       "festival",
       "vegetarian",
@@ -22583,6 +22697,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3a-kadai-paneer.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "vegetarian",
@@ -22786,6 +22901,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-kadala-curry.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "dinner",
@@ -22995,6 +23111,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch3a-kadhi-chawal.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -23163,6 +23280,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -23365,6 +23483,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "north-indian",
@@ -23555,6 +23674,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "dinner",
@@ -23765,6 +23885,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "south-indian",
@@ -23967,6 +24088,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/khandvi.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "vegetarian",
@@ -24169,6 +24291,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "maharashtrian",
@@ -24361,6 +24484,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/recommendation-pack-khichdi.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -24549,6 +24673,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-kodubale.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "vegetarian",
@@ -24754,6 +24879,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-kokum-sharbat.png",
+    "recipeRole": "drink",
     "tags": [
       "snack",
       "vegetarian",
@@ -24950,6 +25076,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "maharashtrian",
@@ -25143,6 +25270,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-kolhapuri-misal-pav.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "maharashtrian",
@@ -25331,6 +25459,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-kori-rotti.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "chicken",
@@ -25536,6 +25665,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/kosambari.png",
+    "recipeRole": "side",
     "tags": [
       "snack",
       "lunch",
@@ -25746,6 +25876,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/kuzhi-paniyaram.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "snack",
@@ -25948,6 +26079,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "north-indian",
@@ -26139,6 +26271,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "dessert",
     "tags": [
       "festival",
       "vegetarian",
@@ -26308,6 +26441,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/sarson-ka-saag.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -26500,6 +26634,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-lemon-rice.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -26676,6 +26811,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-lemon-rice.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -26878,6 +27014,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3a-litti-chokha.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -27098,6 +27235,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-luchi-aloor-dom.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "lunch",
@@ -27301,6 +27439,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -27505,6 +27644,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-maddur-vada.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "snacks",
@@ -27705,6 +27845,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "south-indian",
@@ -27890,6 +28031,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "snack",
@@ -28095,6 +28237,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/soup-bowls.png",
+    "recipeRole": "soup",
     "tags": [
       "lunch",
       "dinner",
@@ -28298,6 +28441,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -28499,6 +28643,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/masala-chai-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -28720,6 +28865,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-corn-sundal.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "vegetarian",
@@ -28919,6 +29065,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3a-masala-dosa.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -29136,6 +29283,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/consistency-45-masala-omelette.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -29343,6 +29491,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch7-mashed-banana.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -29503,6 +29652,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -29706,6 +29856,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-matar-paneer.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "vegetarian",
@@ -29907,6 +30058,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-mathri.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -30071,6 +30223,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-matki-usal.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -30276,6 +30429,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -30478,6 +30632,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/paratha.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -30646,6 +30801,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/paratha.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "dinner",
@@ -30850,6 +31006,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "spicy-food",
@@ -31051,6 +31208,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "south-indian",
@@ -31262,6 +31420,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "hyderabadi",
@@ -31453,6 +31612,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-mochar-ghonto.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -31655,6 +31815,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-modak.png",
+    "recipeRole": "dessert",
     "tags": [
       "festival-food",
       "collection-detail",
@@ -31881,6 +32042,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch3a-momos.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -32066,6 +32228,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/paratha.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -32275,6 +32438,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/recommendation-pack-moong-dal-chilla.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "snack",
@@ -32481,6 +32645,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/khichdi.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -32692,6 +32857,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/mor-kuzhambu.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "vegetarian",
@@ -32905,6 +33071,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-masala-omelette.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -33088,6 +33255,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -33308,6 +33476,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/mushroom-pulao.jpg",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -33515,6 +33684,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -33748,6 +33918,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/mutton-pulao-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -33959,6 +34130,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "soup",
     "tags": [
       "lunch",
       "dinner",
@@ -34161,6 +34333,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "south-indian",
@@ -34359,6 +34532,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "dinner",
@@ -34571,6 +34745,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/buttermilk-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "snack",
       "vegetarian",
@@ -34775,6 +34950,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-nippattu.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "vegetarian",
@@ -34974,6 +35150,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/oats-porridge-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "vegetarian",
@@ -35132,6 +35309,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/khichdi.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -35339,6 +35517,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -35542,6 +35721,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/bread-omelette-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -35747,6 +35927,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/paratha.png",
+    "recipeRole": "main",
     "tags": [
       "quick",
       "comfort",
@@ -35951,6 +36132,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-onion-rice.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -36150,6 +36332,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -36340,6 +36523,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-pakhala-bhata.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -36541,6 +36725,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/snacks/pakora.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -36714,6 +36899,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/palak-dal.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -36920,6 +37106,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -37093,6 +37280,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/paratha.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -37295,6 +37483,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/paneer-bhurji.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "vegetarian",
@@ -37483,6 +37672,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -37700,6 +37890,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -37917,6 +38108,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -38120,6 +38312,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/pulao.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -38342,6 +38535,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/paneer-curry.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "vegetarian",
@@ -38551,6 +38745,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -38714,6 +38909,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/paratha.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -38901,6 +39097,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -39117,6 +39314,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-paneer-sandwich.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -39310,6 +39508,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-paneer-tikka.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -39475,6 +39674,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/paneer-curry.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "north-indian",
@@ -39668,6 +39868,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-patra.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "snacks",
@@ -39868,6 +40069,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "Vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/poha.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -40100,6 +40302,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-peanut-rice.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -40302,6 +40505,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/consistency-45-peanut-sundal.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -40505,6 +40709,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/pulao.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -40708,6 +40913,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -40945,6 +41151,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "dinner",
@@ -41158,6 +41365,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-pitha.png",
+    "recipeRole": "snack",
     "tags": [
       "festival",
       "vegetarian",
@@ -41324,6 +41532,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/chapati-dal.png",
+    "recipeRole": "main",
     "tags": [
       "quick",
       "comfort",
@@ -41495,6 +41704,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch7-plum-cake.png",
+    "recipeRole": "dessert",
     "tags": [
       "festival-food",
       "collection-detail",
@@ -41728,6 +41938,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/poha.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -41901,6 +42112,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/recommendation-pack-pongal.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -42085,6 +42297,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
@@ -42246,6 +42459,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "south-indian",
@@ -42437,6 +42651,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "lunch",
@@ -42646,6 +42861,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-puliyogare.png",
+    "recipeRole": "main",
     "tags": [
       "quick",
       "comfort",
@@ -42871,6 +43087,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/puttu-kadala.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -43077,6 +43294,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "quick",
       "comfort",
@@ -43274,6 +43492,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/ragi-malt-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -43476,6 +43695,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/ragi-porridge-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -43632,6 +43852,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/rajma-chawal.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -43823,6 +44044,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-rasam-rice.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -43995,6 +44217,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "non-vegetarian",
@@ -44156,6 +44379,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -44319,6 +44543,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-roasted-chana-chaat.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "vegetarian",
@@ -44529,6 +44754,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/khichdi.png",
+    "recipeRole": "main",
     "tags": [
       "festival",
       "vegetarian",
@@ -44706,6 +44932,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-sambar-rice.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -44876,6 +45103,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/snacks/samosa.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -45042,6 +45270,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/sarson-ka-saag.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -45266,6 +45495,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/sattu-drink-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -45478,6 +45708,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "north-indian",
@@ -45668,6 +45899,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "dinner",
@@ -45865,6 +46097,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-shukto.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "vegetarian",
@@ -46066,6 +46299,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "non-vegetarian",
@@ -46229,6 +46463,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/idli.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -46403,6 +46638,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/drinks-default.png",
+    "recipeRole": "drink",
     "tags": [
       "lunch",
       "dinner",
@@ -46609,6 +46845,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-soya-chunks-curry.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -46826,6 +47063,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/bread-omelette-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -47026,6 +47264,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/aloo-paratha.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "north-indian",
@@ -47227,6 +47466,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "south-indian",
@@ -47449,6 +47689,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/sprouted-moong-salad.png",
+    "recipeRole": "side",
     "tags": [
       "snack",
       "lunch",
@@ -47664,6 +47905,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-sprouts-usal.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -47868,6 +48110,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -48030,6 +48273,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/paratha.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -48195,6 +48439,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch7-sundal.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -48369,6 +48614,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "dessert",
     "tags": [
       "snack",
       "vegetarian",
@@ -48572,6 +48818,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "dessert",
     "tags": [
       "festival",
       "vegetarian",
@@ -48758,6 +49005,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "dessert",
     "tags": [
       "dessert",
       "vegetarian",
@@ -48964,6 +49212,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/thepla.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "snack",
@@ -49167,6 +49416,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3a-thukpa.png",
+    "recipeRole": "soup",
     "tags": [
       "non-vegetarian",
       "comfort",
@@ -49362,6 +49612,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/recommendation-pack-tofu-bhurji.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "breakfast",
@@ -49582,6 +49833,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/bread-omelette-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "non-vegetarian",
@@ -49783,6 +50035,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "quick",
@@ -50000,6 +50253,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/tomato-pappu.png",
+    "recipeRole": "side",
     "tags": [
       "lunch",
       "dinner",
@@ -50217,6 +50471,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/tomato-rice.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -50414,6 +50669,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -50605,6 +50861,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/upma.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -50818,6 +51075,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/varan.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -51023,6 +51281,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/pulao.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -51256,6 +51515,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch3a-veg-manchurian.png",
+    "recipeRole": "snack",
     "categoryType": "primaryDish",
     "heroEligible": true,
     "tags": [
@@ -51537,6 +51797,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/pulao.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
@@ -51752,6 +52013,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/snacks/sandwich.png",
+    "recipeRole": "snack",
     "tags": [
       "snacks",
       "vegetarian",
@@ -51945,6 +52207,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dinner-default.png",
+    "recipeRole": "main",
     "tags": [
       "dinner",
       "vegetarian",
@@ -52100,6 +52363,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -52329,6 +52593,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/soup-bowls.png",
+    "recipeRole": "soup",
     "tags": [
       "dinner",
       "lunch",
@@ -52544,6 +52809,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
@@ -52750,6 +53016,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/zunka.png",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -52968,6 +53235,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-coconut-chutney.png",
+    "recipeRole": "condiment",
     "tags": [
       "side-dish",
       "sides-addons",
@@ -53172,6 +53440,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-tomato-chutney.png",
+    "recipeRole": "condiment",
     "tags": [
       "side-dish",
       "sides-addons",
@@ -53376,6 +53645,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch7-peanut-chutney.png",
+    "recipeRole": "condiment",
     "tags": [
       "side-dish",
       "sides-addons",
@@ -53581,6 +53851,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-mint-chutney.png",
+    "recipeRole": "condiment",
     "tags": [
       "side-dish",
       "sides-addons",
@@ -53777,6 +54048,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch7-beetroot-palya.png",
+    "recipeRole": "side",
     "tags": [
       "side-dish",
       "sides-addons",
@@ -53986,6 +54258,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch7-potato-palya.png",
+    "recipeRole": "side",
     "tags": [
       "side-dish",
       "sides-addons",
@@ -54195,6 +54468,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch7-cucumber-raita.png",
+    "recipeRole": "condiment",
     "tags": [
       "side-dish",
       "sides-addons",
@@ -54394,6 +54668,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "condiment",
     "tags": [
       "side-dish",
       "sides-addons",
@@ -54593,6 +54868,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch7-mint-raita.png",
+    "recipeRole": "condiment",
     "tags": [
       "side-dish",
       "sides-addons",
@@ -54792,6 +55068,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-boondi-raita.png",
+    "recipeRole": "condiment",
     "tags": [
       "side-dish",
       "sides-addons",
@@ -54989,6 +55266,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietType": "non-vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/recommendation-pack-egg-sandwich.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "snack",
@@ -55199,6 +55477,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "snack",
@@ -55409,6 +55688,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/vegetable-seviyan-baby-ceramic.png",
+    "recipeRole": "dessert",
     "tags": [
       "breakfast",
       "lunchbox",
@@ -55618,6 +55898,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/idli.png",
+    "recipeRole": "main",
     "tags": [
       "breakfast",
       "lunchbox",
@@ -55826,6 +56107,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dosa.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "lunchbox",
@@ -56035,6 +56317,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/idli.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "lunchbox",
@@ -56221,6 +56504,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-chapati-jam-roll.png",
+    "recipeRole": "snack",
     "tags": [
       "lunchbox",
       "snack",
@@ -56411,6 +56695,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-paneer-roll.png",
+    "recipeRole": "main",
     "tags": [
       "lunchbox",
       "protein",
@@ -56620,6 +56905,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-egg-roll.png",
+    "recipeRole": "main",
     "tags": [
       "lunchbox",
       "protein",
@@ -56829,6 +57115,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/paneer-bhurji.png",
+    "recipeRole": "main",
     "tags": [
       "lunchbox",
       "protein",
@@ -57044,6 +57331,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/moong-dal-chilla.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "lunchbox",
@@ -57251,6 +57539,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "lunchbox",
       "snack",
@@ -57463,6 +57752,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "lunchbox",
@@ -57672,6 +57962,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-banana-pancake.png",
+    "recipeRole": "snack",
     "tags": [
       "breakfast",
       "lunchbox",
@@ -57883,6 +58174,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/consistency-45-masala-makhana.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "lunchbox",
@@ -58086,6 +58378,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-sweet-potato-chaat.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "lunchbox",
@@ -58291,6 +58584,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch4-dhokla.png",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "lunchbox",
@@ -58501,6 +58795,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/jeera-water-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -58685,6 +58980,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/kashaya-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -58889,6 +59185,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/tulsi-tea-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -59083,6 +59380,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/ginger-chai-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -59277,6 +59575,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/ajwain-water-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -59461,6 +59760,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/sweet-lassi-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -59656,6 +59956,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/panakam-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -59861,6 +60162,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/nannari-sherbet-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -60056,6 +60358,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/carrot-beet-juice-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -60251,6 +60554,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/masala-chaas-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -60456,6 +60760,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/aam-panna-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -60661,6 +60966,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/rose-milk-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -60846,6 +61152,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/sugarcane-juice-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -61028,6 +61335,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/mango-lassi-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -61223,6 +61531,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/watermelon-juice-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -61405,6 +61714,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/salted-lassi-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -61600,6 +61910,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/dates-milkshake-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -61795,6 +62106,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/tender-coconut-water-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -61967,6 +62279,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/filter-coffee-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -62141,6 +62454,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/elaichi-chai-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -62335,6 +62649,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/lemon-honey-water-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -62509,6 +62824,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/banana-shake-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -62703,6 +63019,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/green-moong-drink-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -62897,6 +63214,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/turmeric-milk-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -63091,6 +63409,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/saffron-milk-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -63285,6 +63604,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/drinks/badam-milk-homestyle.png",
+    "recipeRole": "drink",
     "tags": [
       "drink",
       "sips-soothers",
@@ -63479,6 +63799,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -63695,6 +64016,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -63911,6 +64233,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -64128,6 +64451,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -64344,6 +64668,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -64560,6 +64885,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -64776,6 +65102,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -64992,6 +65319,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -65208,6 +65536,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -65423,6 +65752,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -65639,6 +65969,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -65855,6 +66186,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -66070,6 +66402,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -66286,6 +66619,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -66501,6 +66835,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -66717,6 +67052,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -66933,6 +67269,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -67149,6 +67486,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -67367,6 +67705,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -67585,6 +67924,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -67803,6 +68143,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -68019,6 +68360,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -68235,6 +68577,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -68451,6 +68794,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -68667,6 +69011,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -68883,6 +69228,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
     "tags": [
       "soup",
       "warm-bowls",
@@ -69099,6 +69445,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/green-gram-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -69315,6 +69662,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/pomegranate-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -69531,6 +69879,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch7-millet-salad.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -69748,6 +70097,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/cabbage-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -69964,6 +70314,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/avocado-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -70180,6 +70531,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/spinach-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -70396,6 +70748,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/lentil-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -70612,6 +70965,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/apple-walnut-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -70828,6 +71182,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/beetroot-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -71044,6 +71399,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch6-mixed-veg-salad.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -71260,6 +71616,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/sweet-corn-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -71476,6 +71833,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/onion-tomato-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -71692,6 +72050,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/broccoli-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -71908,6 +72267,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch5-roasted-chana-chaat.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -72124,6 +72484,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/sprouts-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -72340,6 +72701,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/sprouted-moong-salad.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -72556,6 +72918,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -72772,6 +73135,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/tomato-onion-chaat-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -72988,6 +73352,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/rajma-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -73204,6 +73569,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/pineapple-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -73420,6 +73786,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/salads/kachumber-salad-homestyle.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -73636,6 +74003,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -73852,6 +74220,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -74068,6 +74437,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -74284,6 +74654,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -74500,6 +74871,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -74716,6 +75088,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "salad",
       "fresh-plates",
@@ -74932,6 +75305,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/rice-moong-khichdi-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -75126,6 +75500,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/suji-porridge-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -75320,6 +75695,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/pear-puree-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -75491,6 +75867,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/carrot-puree-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -75662,6 +76039,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/sweet-potato-mash-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -75833,6 +76211,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/pumpkin-mash-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -76004,6 +76383,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dal-rice-mash-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -76198,6 +76578,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/beetroot-mash-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -76369,6 +76750,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/avocado-mash-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -76540,6 +76922,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/egg-yolk-mash-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -76711,6 +77094,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/soft-idli-mash-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -76892,6 +77276,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/vegetable-dal-mash-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -77086,6 +77471,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/soft-chapati-milk-mash-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -77270,6 +77656,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/vegetable-khichdi-baby-homestyle.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -77484,6 +77871,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/rice-kheer-baby-homestyle.png",
+    "recipeRole": "dessert",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -77678,6 +78066,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/mini-idli-sambar-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -77874,6 +78263,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/soft-dosa-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -78055,6 +78445,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/vegetable-upma-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -78261,6 +78652,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/soft-veg-pulao-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -78467,6 +78859,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/dalia-porridge-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -78671,6 +79064,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/vegetable-seviyan-baby-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -78877,6 +79271,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/baby-pongal-ceramic.png",
+    "recipeRole": "main",
     "tags": [
       "baby-food",
       "tiny-tummy",
@@ -79084,6 +79479,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -79279,6 +79675,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -79474,6 +79871,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -79669,6 +80067,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "quick-sweet",
       "collection-detail",
@@ -79850,6 +80249,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -80041,6 +80441,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -80236,6 +80637,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -80421,6 +80823,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -80606,6 +81009,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -80791,6 +81195,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -80972,6 +81377,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "quick-sweet",
       "collection-detail",
@@ -81163,6 +81569,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "quick-sweet",
       "collection-detail",
@@ -81348,6 +81755,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "traditional-sweet",
       "collection-detail",
@@ -81539,6 +81947,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -81720,6 +82129,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -81893,6 +82303,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "traditional-sweet",
       "collection-detail",
@@ -82074,6 +82485,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -82259,6 +82671,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -82440,6 +82853,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -82609,6 +83023,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -82790,6 +83205,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "traditional-sweet",
       "collection-detail",
@@ -82981,6 +83397,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "traditional-sweet",
       "collection-detail",
@@ -83172,6 +83589,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "traditional-sweet",
       "collection-detail",
@@ -83363,6 +83781,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "traditional-sweet",
       "collection-detail",
@@ -83558,6 +83977,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "traditional-sweet",
       "collection-detail",
@@ -83753,6 +84173,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -83944,6 +84365,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "quick-sweet",
       "collection-detail",
@@ -84135,6 +84557,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "quick-sweet",
       "collection-detail",
@@ -84326,6 +84749,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
     "tags": [
       "quick-sweet",
       "collection-detail",
@@ -84517,6 +84941,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "snack",
     "tags": [
       "festival-snack",
       "collection-detail",
@@ -84708,6 +85133,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "snack",
     "tags": [
       "festival-snack",
       "collection-detail",
@@ -84889,6 +85315,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -85074,6 +85501,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -85259,6 +85687,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -85450,6 +85879,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "main",
     "tags": [
       "festival-meal",
       "collection-detail",
@@ -85655,6 +86085,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "traditional-sweet",
       "collection-detail",
@@ -85850,6 +86281,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "condiment",
     "tags": [
       "festival-side",
       "collection-detail",
@@ -86041,6 +86473,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "festival-meal",
       "collection-detail",
@@ -86237,6 +86670,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "festival-meal",
       "collection-detail",
@@ -86439,6 +86873,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
     "tags": [
       "festival-side",
       "collection-detail",
@@ -86631,6 +87066,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "festival-meal",
       "collection-detail",
@@ -86823,6 +87259,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -87008,6 +87445,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -87203,6 +87641,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "festival-meal",
       "collection-detail",
@@ -87409,6 +87848,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "festival-meal",
       "collection-detail",
@@ -87615,6 +88055,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "milk-dessert",
       "collection-detail",
@@ -87810,6 +88251,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
     "tags": [
       "festival-meal",
       "collection-detail",
@@ -88002,6 +88444,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -88187,6 +88630,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -88372,6 +88816,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
@@ -88557,6 +89002,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "snack",
     "tags": [
       "festival-snack",
       "collection-detail",
@@ -88748,6 +89194,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "snack",
     "tags": [
       "festival-snack",
       "collection-detail",
@@ -88929,6 +89376,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "quick-sweet",
       "collection-detail",
@@ -89110,6 +89558,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
     "tags": [
       "festival-sweet",
       "collection-detail",
