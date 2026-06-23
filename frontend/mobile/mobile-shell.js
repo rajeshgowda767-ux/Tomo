@@ -3238,19 +3238,25 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     root.innerHTML = `
       <div class="mv2-app${motionClass}">
       <header class="mv2-header ${state.screen === 'discover' ? 'mv2-discover-header' : ''} ${state.screen === 'journal' ? 'mv2-journal-header' : ''}">
-        <div class="mv2-brand"><span class="mv2-logo"><img src="tomo.png" alt="" /></span><div><h1>${state.screen === 'kitchen' ? '🍅 Kitchen' : state.screen === 'journal' ? '📖 My Journal' : 'Tomo'}</h1><p>${state.screen === 'kitchen' ? 'Pantry to plate' : state.screen === 'journal' ? 'Your cooking journey,<br>favorites and memories.' : 'Food for Every Mood'}</p></div></div>
+        <div class="mv2-brand"><span class="mv2-logo"><img src="tomo.png" alt="" /></span><div><h1>${state.screen === 'kitchen' ? '🍅 Kitchen' : state.screen === 'collections' || state.screen === 'collection' ? '🧭 Collections' : state.screen === 'journal' ? '📖 My Journal' : 'Tomo'}</h1><p>${state.screen === 'kitchen' ? 'Pantry to plate' : state.screen === 'collections' || state.screen === 'collection' ? 'Explore by region, lifestyle and kitchen intent.' : state.screen === 'journal' ? 'Your cooking journey,<br>favorites and memories.' : 'Food for Every Mood'}</p></div></div>
         <div class="mv2-header-actions">${headerWeather()}</div>
       </header>
       ${state.screen === 'kitchen' || state.screen === 'journal' ? '' : globalSearchBar(state.screen === 'discover')}
       <main>
         <section class="mv2-screen ${state.screen === 'discover' ? 'active' : ''}">${discoverView()}</section>
+        <section class="mv2-screen ${state.screen === 'collections' ? 'active' : ''}">${collectionsView()}</section>
         <section class="mv2-screen ${state.screen === 'kitchen' ? 'active' : ''}">${kitchenView()}</section>
         <section class="mv2-screen ${state.screen === 'journal' ? 'active' : ''}">${journalView()}</section>
         <section class="mv2-screen ${state.screen === 'collection' ? 'active' : ''}">${collectionDetailView()}</section>
         <section class="mv2-screen ${state.screen === 'dish' ? 'active' : ''}">${dishDetailView()}</section>
       </main>
       <nav class="mv2-bottom-nav" aria-label="Primary">
-        ${['discover', 'kitchen', 'journal'].map((screen) => `<button class="${state.screen === screen || (state.screen === 'collection' && screen === 'discover') || (state.screen === 'dish' && state.dishOrigin === 'pantry' && screen === 'kitchen') || (state.screen === 'dish' && state.dishOrigin === 'journal' && screen === 'journal') ? 'active' : ''}" type="button" data-nav="${screen}">${screen === 'discover' ? '⌂' : screen === 'kitchen' ? '▣' : '♡'}<span>${screen === 'journal' ? 'My Journal' : `${screen[0].toUpperCase()}${screen.slice(1)}`}</span></button>`).join('')}
+        ${[
+          ['discover', '⌂', 'Discover'],
+          ['collections', '🧭', 'Collections'],
+          ['kitchen', '▣', 'Kitchen'],
+          ['journal', '♡', 'My Journal'],
+        ].map(([screen, icon, label]) => `<button class="${state.screen === screen || (state.screen === 'collection' && screen === 'collections') || (state.screen === 'dish' && state.dishOrigin === 'collection' && screen === 'collections') || (state.screen === 'dish' && (state.dishOrigin === 'pantry' || state.dishOrigin === 'cart') && screen === 'kitchen') || (state.screen === 'dish' && state.dishOrigin === 'journal' && screen === 'journal') ? 'active' : ''}" type="button" data-nav="${screen}">${icon}<span>${label}</span></button>`).join('')}
       </nav>
       ${toastView()}
       ${state.feedbackOpen ? feedbackModal() : ''}
@@ -3264,9 +3270,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function primaryScreen() {
-    if (state.screen === 'collection') return 'discover';
+    if (state.screen === 'collection') return 'collections';
     if (state.screen === 'dish') {
       if (state.dishOrigin === 'pantry' || state.dishOrigin === 'cart') return 'kitchen';
+      if (state.dishOrigin === 'collection') return 'collections';
       if (state.dishOrigin === 'journal') return 'journal';
       return 'discover';
     }
@@ -6190,10 +6197,9 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         window.scrollTo(0, 0);
         return;
       }
-      state.screen = back.dataset.back === 'collections' ? 'discover' : 'discover';
-      if (back.dataset.back === 'collections') state.discoverView = 'collections';
+      state.screen = back.dataset.back === 'collections' ? 'collections' : 'discover';
       renderWithMotion('back');
-      requestAnimationFrame(() => window.scrollTo(0, state.discoverScrollY));
+      requestAnimationFrame(() => window.scrollTo(0, state.tabScroll[state.screen] || state.discoverScrollY));
     }
   });
 
