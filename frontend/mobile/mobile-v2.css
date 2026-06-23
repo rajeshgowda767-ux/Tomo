@@ -3392,6 +3392,15 @@ html.mobile-v2-active body {
     white-space: normal;
   }
 
+  .mv2-collection-detail .mv2-subcategory span {
+    display: block;
+    max-width: 100%;
+  }
+
+  .mv2-collection-results {
+    padding-top: 2px;
+  }
+
   .mv2-subcategory-count {
     flex: 0 0 auto;
     color: rgba(111, 84, 71, 0.62);

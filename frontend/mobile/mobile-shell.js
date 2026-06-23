@@ -95,6 +95,33 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     'Everyday Desserts': 'Small sweet endings for ordinary days.',
     'Prasadam & Temple Foods': 'Temple-style and devotional foods.',
   };
+  const generatedCollectionDisplaySections = {
+    'Regional Journeys::Karnataka': ['Breakfast & Tiffin', 'Mains & Meals', 'Saaru, Rasam & Soups', 'Snacks & Street Bites', 'Sweets & Drinks'],
+    'Regional Journeys::Andhra & Telangana': ['Breakfast & Tiffin', 'Spicy Mains', 'Pappu, Pulusu & Rasam', 'Snacks', 'Sweets'],
+    'Regional Journeys::Tamil Nadu': ['Breakfast & Tiffin', 'Meals & Mains', 'Rasam, Kuzhambu & Kootu', 'Snacks', 'Sweets & Drinks'],
+    'Regional Journeys::Kerala': ['Breakfast Staples', 'Curries & Mains', 'Seafood', 'Snacks', 'Sweets & Drinks'],
+    'Regional Journeys::Bengal': ['Fish & Mains', 'Comfort Plates', 'Street Snacks', 'Sweets'],
+    'Regional Journeys::Maharashtra': ['Breakfast & Street Food', 'Mains & Bhakri Plates', 'Seafood & Konkan', 'Snacks', 'Sweets & Drinks'],
+    'Regional Journeys::Northeast': ['Rice, Stews & Mains', 'Smoked & Fermented', 'Greens & Sides', 'Snacks', 'Sweets'],
+    'Regional Journeys::North & West India': ['Comfort Mains', 'Breads & Rice Plates', 'Street Food & Snacks', 'Sweets', 'Drinks'],
+    'Regional Journeys::Jammu & Kashmir': ['Wazwan & Mains', 'Rice & Breads', 'Drinks', 'Sweets'],
+    'Everyday Cooking::Daily Comforts': ['Quick Comforts', 'Rice & Dal Meals', 'Breakfast Staples', 'Simple Dinner Ideas'],
+    'Everyday Cooking::Tea Time Favourites': ['Hot Drinks', 'Bakery Bites', 'Chai Snacks', 'Street Bites'],
+    'Everyday Cooking::Home Staples': ['Simple Mains', 'Quick Staples', 'Pantry Friendly'],
+    'Healthy Living::Healthy Plates': ['Protein Breakfasts', 'Protein Mains', 'Light Bowls', 'Quick Healthy'],
+    'Healthy Living::Warm & Light Bowls': ['Soups', 'Rasam & Saaru', 'Light Stews', 'Sick-Day Comfort'],
+    'Family Favorites::Tiny Tummy Favorites': ['First Foods', 'Purees & Mashes', 'Growing Bites', 'Little Plates'],
+    'Family Favorites::Lunch Box & Tiffin': ['Quick Morning Wins', 'Tiffin Box Favorites', 'Protein Packed', 'After School Snacks'],
+    'Global Bites::Global Comforts': ['Global Breakfasts', 'Bowls', 'Noodles & Pasta', 'Comfort Mains', 'Global Snacks'],
+    'Kitchen Essentials::Sides, Salads & Add-ons': ['Palyas, Poriyals & Thorans', 'Raitas & Cooling Sides', 'Salads & Fresh Sides', 'Sundals & Add-ons'],
+    'Kitchen Essentials::Chutneys, Podis & Condiments': ['Chutneys', 'Podis', 'Pickles', 'Raitas', 'Condiments'],
+    'Seasonal Specials::Summer Cooling': ['Coolers', 'Light Meals', 'Cooling Sides', 'Summer Sweets'],
+    'Seasonal Specials::Rainy Day Cravings': ['Hot Snacks', 'Warm Bowls', 'Chai Companions'],
+    'Celebrations & Traditions::Festival Sweets': ['Classic Sweets', 'Festival Specials', 'Payasam & Kheer', 'Fried Sweets'],
+    'Celebrations & Traditions::Regional Sweets': ['Karnataka Sweets', 'Bengali Sweets', 'North Indian Sweets', 'South Indian Sweets'],
+    'Celebrations & Traditions::Everyday Desserts': ['Quick Sweets', 'Milk Sweets', 'Fruit Desserts'],
+    'Celebrations & Traditions::Prasadam & Temple Foods': ['Prasadam', 'Temple Foods', 'Festival Offerings'],
+  };
   const baseCollections = window.COOKBUDDY_LOCAL_COLLECTIONS?.collections || [];
   const mobileCollectionsBase = baseCollections.some((collection) => collection.key === 'gym-foods')
     ? baseCollections
@@ -2833,6 +2860,256 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return preferred.filter((name) => present.has(name));
   }
 
+  function generatedCollectionDisplayKey(collection) {
+    return `${collection?.hubName || collection?.collectionHome?.hub || ''}::${collection?.title || collection?.collectionHome?.collection || ''}`;
+  }
+
+  function generatedSignalList(value) {
+    if (Array.isArray(value)) return value;
+    if (typeof value === 'string') return [value];
+    if (value && typeof value === 'object') return Object.values(value).flatMap(generatedSignalList);
+    return [];
+  }
+
+  function generatedRecipeSignals(recipe) {
+    const values = [
+      recipe?.title,
+      recipe?.name,
+      recipe?.description,
+      recipe?.dishFamily,
+      recipe?.dish_family,
+      recipe?.recipeRole,
+      recipe?.recipe_role,
+      recipe?.dietType,
+      recipe?.diet_type,
+      ...generatedSignalList(recipe?.mealTags),
+      ...generatedSignalList(recipe?.moodTags),
+      ...generatedSignalList(recipe?.regionTags),
+      ...generatedSignalList(recipe?.dietaryTags),
+      ...generatedSignalList(recipe?.tags),
+      ...generatedSignalList(recipe?.coreIngredients),
+      ...generatedSignalList(recipe?.requiredIngredients),
+      ...generatedSignalList(recipe?.optionalIngredients),
+      ...generatedSignalList(recipe?.ingredients).map((ingredient) => typeof ingredient === 'string' ? ingredient : ingredient?.name)
+    ];
+    return {
+      title: norm(recipe?.title || recipe?.name || ''),
+      role: String(recipe?.recipeRole || recipe?.recipe_role || '').toLowerCase().trim(),
+      family: norm(recipe?.dishFamily || recipe?.dish_family || ''),
+      meal: norm([...generatedSignalList(recipe?.mealTags), ...generatedSignalList(recipe?.tags)].join(' ')),
+      mood: norm([...generatedSignalList(recipe?.moodTags), ...generatedSignalList(recipe?.tags)].join(' ')),
+      region: norm([...generatedSignalList(recipe?.regionTags), recipe?.cuisine, recipe?.region].join(' ')),
+      diet: norm([...generatedSignalList(recipe?.dietaryTags), recipe?.dietType, recipe?.diet_type].join(' ')),
+      text: norm(values.filter(Boolean).join(' '))
+    };
+  }
+
+  function signalHas(signal, patterns) {
+    return patterns.some((pattern) => signal.text.includes(pattern) || signal.title.includes(pattern) || signal.family.includes(pattern));
+  }
+
+  function generatedFallbackDisplayGroup(recipe, sections = []) {
+    const signal = generatedRecipeSignals(recipe);
+    const byRole = generatedRecipeGroup(recipe);
+    const preferred = {
+      main: ['Mains & Meals', 'Meals & Mains', 'Comfort Mains', 'Protein Mains', 'Simple Mains', 'Comfort Plates', 'Curries & Mains', 'Mains & Bhakri Plates', 'Spicy Mains', 'Comfort Mains'],
+      snack: ['Snacks', 'Chai Snacks', 'Street Food & Snacks', 'Street Bites', 'Global Snacks', 'After School Snacks', 'Snacks & Street Bites'],
+      soup: ['Saaru, Rasam & Soups', 'Pappu, Pulusu & Rasam', 'Rasam, Kuzhambu & Kootu', 'Soups', 'Rasam & Saaru', 'Warm Bowls'],
+      drink: ['Drinks', 'Hot Drinks', 'Coolers', 'Sweets & Drinks', 'Chai Companions'],
+      dessert: ['Sweets', 'Sweets & Drinks', 'Classic Sweets', 'Festival Specials', 'Quick Sweets', 'Regional Sweets', 'Summer Sweets'],
+      side: ['Palyas, Poriyals & Thorans', 'Greens & Sides', 'Cooling Sides', 'Sides'],
+      condiment: ['Chutneys', 'Condiments', 'Raitas', 'Podis', 'Pickles']
+    }[signal.role] || [byRole];
+    return preferred.find((name) => sections.includes(name)) || sections[0] || byRole;
+  }
+
+  function generatedSpecificDisplayGroup(collection, item) {
+    const recipe = item.recipe || item;
+    const signal = generatedRecipeSignals(recipe);
+    const sections = generatedCollectionDisplaySections[generatedCollectionDisplayKey(collection)] || [];
+    const title = signal.title;
+    const text = signal.text;
+    const role = signal.role;
+    const isBreakfast = signal.meal.includes('breakfast') || signalHas(signal, ['idli', 'dosa', 'uttapam', 'pongal', 'upma', 'poha', 'sevai', 'cheela', 'chilla', 'paratha', 'toast', 'sandwich', 'appam', 'puttu', 'rotti']);
+    const isDrink = role === 'drink' || signalHas(signal, ['chai', 'tea', 'coffee', 'juice', 'sherbet', 'lassi', 'mor', 'paanaka', 'kashaya', 'drink', 'cooler', 'buttermilk', 'jal jeera']);
+    const isSweet = role === 'dessert' || signalHas(signal, ['sweet', 'peda', 'jamun', 'payasam', 'kheer', 'halwa', 'ladoo', 'laddu', 'barfi', 'burfi', 'modak', 'poli', 'obbattu', 'holige', 'sheera', 'kesari', 'mysore pak', 'rasgulla', 'sandesh', 'dessert']);
+    const isSoup = role === 'soup' || signalHas(signal, ['soup', 'rasam', 'saaru', 'charu', 'pulusu', 'kuzhambu', 'kootu', 'stew', 'tambuli']);
+    const isSnack = role === 'snack' || signal.meal.includes('snack') || signalHas(signal, ['bajji', 'pakora', 'samosa', 'bonda', 'vada', 'chaat', 'bun', 'toast', 'goli baje', 'girmit', 'mandakki', 'cutlet', 'roll']);
+    const isSide = role === 'side' || signalHas(signal, ['palya', 'poriyal', 'thoran', 'salad', 'sundal', 'raita', 'kosambari', 'bhaji']);
+    const isCondiment = role === 'condiment' || signalHas(signal, ['chutney', 'podi', 'pickle', 'achaar', 'raita', 'dip', 'condiment']);
+    const isSeafood = signalHas(signal, ['fish', 'meen', 'prawn', 'seafood', 'konkan', 'mangalorean fish']);
+    const isRiceDal = signalHas(signal, ['rice', 'dal', 'pappu', 'khichdi', 'pulao', 'biryani', 'sambar', 'rasam']);
+    const isBread = signalHas(signal, ['roti', 'rotti', 'chapati', 'paratha', 'naan', 'kulcha', 'bhakri', 'jolada', 'mudde']);
+    const isProtein = signalHas(signal, ['egg', 'chicken', 'fish', 'paneer', 'dal', 'lentil', 'chana', 'chole', 'rajma', 'sprout', 'sundal', 'peanut', 'tofu', 'besan', 'moong']) || signal.mood.includes('protein');
+    const isLight = signal.mood.includes('light') || signalHas(signal, ['salad', 'soup', 'rasam', 'stew', 'bowl', 'kanji', 'porridge']);
+    const isQuick = signal.mood.includes('quick') || signalHas(signal, ['quick', 'easy', 'toast', 'sandwich', 'poha', 'upma']);
+
+    switch (generatedCollectionDisplayKey(collection)) {
+      case 'Regional Journeys::Karnataka':
+        if (isBreakfast) return 'Breakfast & Tiffin';
+        if (isSoup) return 'Saaru, Rasam & Soups';
+        if (isSnack) return 'Snacks & Street Bites';
+        if (isSweet || isDrink) return 'Sweets & Drinks';
+        return 'Mains & Meals';
+      case 'Regional Journeys::Andhra & Telangana':
+        if (isBreakfast) return 'Breakfast & Tiffin';
+        if (isSoup || signalHas(signal, ['pappu', 'pulusu', 'charu'])) return 'Pappu, Pulusu & Rasam';
+        if (isSnack) return 'Snacks';
+        if (isSweet) return 'Sweets';
+        return 'Spicy Mains';
+      case 'Regional Journeys::Tamil Nadu':
+        if (isBreakfast) return 'Breakfast & Tiffin';
+        if (isSoup || signalHas(signal, ['kuzhambu', 'kootu'])) return 'Rasam, Kuzhambu & Kootu';
+        if (isSnack) return 'Snacks';
+        if (isSweet || isDrink) return 'Sweets & Drinks';
+        return 'Meals & Mains';
+      case 'Regional Journeys::Kerala':
+        if (isBreakfast) return 'Breakfast Staples';
+        if (isSeafood) return 'Seafood';
+        if (isSnack) return 'Snacks';
+        if (isSweet || isDrink) return 'Sweets & Drinks';
+        return 'Curries & Mains';
+      case 'Regional Journeys::Bengal':
+        if (isSweet) return 'Sweets';
+        if (isSnack) return 'Street Snacks';
+        if (isSeafood || signalHas(signal, ['fish', 'mach'])) return 'Fish & Mains';
+        return 'Comfort Plates';
+      case 'Regional Journeys::Maharashtra':
+        if (isBreakfast || signalHas(signal, ['pav', 'misal', 'poha'])) return 'Breakfast & Street Food';
+        if (isSeafood) return 'Seafood & Konkan';
+        if (isSnack) return 'Snacks';
+        if (isSweet || isDrink) return 'Sweets & Drinks';
+        return 'Mains & Bhakri Plates';
+      case 'Regional Journeys::Northeast':
+        if (isSnack) return 'Snacks';
+        if (isSweet) return 'Sweets';
+        if (isSide || signalHas(signal, ['greens', 'xaak'])) return 'Greens & Sides';
+        if (signalHas(signal, ['smoked', 'fermented', 'bamboo', 'axone'])) return 'Smoked & Fermented';
+        return 'Rice, Stews & Mains';
+      case 'Regional Journeys::North & West India':
+        if (isDrink) return 'Drinks';
+        if (isSweet) return 'Sweets';
+        if (isSnack || signalHas(signal, ['chaat', 'kachori'])) return 'Street Food & Snacks';
+        if (isBread || title.includes('rice')) return 'Breads & Rice Plates';
+        return 'Comfort Mains';
+      case 'Regional Journeys::Jammu & Kashmir':
+        if (isDrink) return 'Drinks';
+        if (isSweet) return 'Sweets';
+        if (isBread || title.includes('rice')) return 'Rice & Breads';
+        return 'Wazwan & Mains';
+      case 'Everyday Cooking::Daily Comforts':
+        if (isBreakfast) return 'Breakfast Staples';
+        if (isRiceDal) return 'Rice & Dal Meals';
+        if (isQuick) return 'Quick Comforts';
+        return 'Simple Dinner Ideas';
+      case 'Everyday Cooking::Tea Time Favourites':
+        if (isDrink) return 'Hot Drinks';
+        if (signalHas(signal, ['bun', 'toast', 'bakery', 'bread', 'cake', 'biscuit'])) return 'Bakery Bites';
+        if (signalHas(signal, ['chaat', 'girmit', 'mandakki', 'street'])) return 'Street Bites';
+        return 'Chai Snacks';
+      case 'Everyday Cooking::Home Staples':
+        if (isQuick) return 'Quick Staples';
+        if (signalHas(signal, ['pantry', 'pickle', 'podi', 'chutney'])) return 'Pantry Friendly';
+        return 'Simple Mains';
+      case 'Healthy Living::Healthy Plates':
+        if (isBreakfast && isProtein) return 'Protein Breakfasts';
+        if (isLight) return 'Light Bowls';
+        if (isQuick) return 'Quick Healthy';
+        return isProtein ? 'Protein Mains' : 'Quick Healthy';
+      case 'Healthy Living::Warm & Light Bowls':
+        if (signalHas(signal, ['rasam', 'saaru', 'charu'])) return 'Rasam & Saaru';
+        if (signal.mood.includes('sick') || signalHas(signal, ['sick', 'kanji', 'porridge'])) return 'Sick-Day Comfort';
+        if (signalHas(signal, ['stew', 'tambuli', 'bowl'])) return 'Light Stews';
+        return 'Soups';
+      case 'Family Favorites::Tiny Tummy Favorites':
+        if (signalHas(signal, ['mash', 'mashed', 'puree', 'purée'])) return 'Purees & Mashes';
+        if (signalHas(signal, ['baby', 'first food', 'first foods'])) return 'First Foods';
+        if (isSnack) return 'Growing Bites';
+        return 'Little Plates';
+      case 'Family Favorites::Lunch Box & Tiffin':
+        if (isBreakfast || isQuick) return 'Quick Morning Wins';
+        if (isProtein) return 'Protein Packed';
+        if (isSnack) return 'After School Snacks';
+        return 'Tiffin Box Favorites';
+      case 'Global Bites::Global Comforts':
+        if (isBreakfast) return 'Global Breakfasts';
+        if (signalHas(signal, ['bowl', 'rice'])) return 'Bowls';
+        if (signalHas(signal, ['noodle', 'pasta', 'spaghetti', 'mac'])) return 'Noodles & Pasta';
+        if (isSnack) return 'Global Snacks';
+        return 'Comfort Mains';
+      case 'Kitchen Essentials::Sides, Salads & Add-ons':
+        if (signalHas(signal, ['raita', 'curd', 'yogurt'])) return 'Raitas & Cooling Sides';
+        if (signalHas(signal, ['salad', 'kosambari', 'fresh'])) return 'Salads & Fresh Sides';
+        if (signalHas(signal, ['sundal', 'corn', 'add on', 'addon'])) return 'Sundals & Add-ons';
+        return 'Palyas, Poriyals & Thorans';
+      case 'Kitchen Essentials::Chutneys, Podis & Condiments':
+        if (signalHas(signal, ['podi', 'powder'])) return 'Podis';
+        if (signalHas(signal, ['pickle', 'achaar'])) return 'Pickles';
+        if (signalHas(signal, ['raita', 'curd', 'yogurt'])) return 'Raitas';
+        if (signalHas(signal, ['chutney'])) return 'Chutneys';
+        return 'Condiments';
+      case 'Seasonal Specials::Summer Cooling':
+        if (isDrink) return 'Coolers';
+        if (isSide) return 'Cooling Sides';
+        if (isSweet) return 'Summer Sweets';
+        return 'Light Meals';
+      case 'Seasonal Specials::Rainy Day Cravings':
+        if (isDrink) return 'Chai Companions';
+        if (isSoup) return 'Warm Bowls';
+        return 'Hot Snacks';
+      case 'Celebrations & Traditions::Festival Sweets':
+        if (signalHas(signal, ['payasam', 'kheer'])) return 'Payasam & Kheer';
+        if (signalHas(signal, ['fried', 'jalebi', 'jamun', 'boondi', 'imarti'])) return 'Fried Sweets';
+        if (signalHas(signal, ['festival', 'modak', 'poli', 'obbattu', 'holige', 'prasadam'])) return 'Festival Specials';
+        return 'Classic Sweets';
+      case 'Celebrations & Traditions::Regional Sweets':
+        if (signal.region.includes('karnataka') || signalHas(signal, ['peda', 'mysore', 'dharwad'])) return 'Karnataka Sweets';
+        if (signal.region.includes('bengal') || signalHas(signal, ['rasgulla', 'sandesh'])) return 'Bengali Sweets';
+        if (signal.region.includes('tamil') || signal.region.includes('kerala') || signal.region.includes('south')) return 'South Indian Sweets';
+        return 'North Indian Sweets';
+      case 'Celebrations & Traditions::Everyday Desserts':
+        if (signalHas(signal, ['milk', 'kheer', 'payasam', 'peda'])) return 'Milk Sweets';
+        if (signalHas(signal, ['fruit', 'banana', 'mango', 'apple'])) return 'Fruit Desserts';
+        return 'Quick Sweets';
+      case 'Celebrations & Traditions::Prasadam & Temple Foods':
+        if (signalHas(signal, ['temple'])) return 'Temple Foods';
+        if (signalHas(signal, ['festival', 'offering'])) return 'Festival Offerings';
+        return 'Prasadam';
+      default:
+        return generatedFallbackDisplayGroup(recipe, sections);
+    }
+  }
+
+  function generatedCollectionDisplayGroups(collection) {
+    const sections = generatedCollectionDisplaySections[generatedCollectionDisplayKey(collection)];
+    if (!sections) {
+      const groups = new Map((collection.subcategory_order || []).map((name) => [name, []]));
+      (collection.items || []).forEach((item) => {
+        const name = item.subcategory || item.subCategory || generatedRecipeGroup(item.recipe || item);
+        if (!groups.has(name)) groups.set(name, []);
+        groups.get(name).push(item);
+      });
+      return [...groups.entries()]
+        .filter(([, list]) => list.length)
+        .map(([name, list]) => ({ name, recipes: list, collectionKey: collection.key || '' }));
+    }
+
+    const groups = new Map(sections.map((name) => [name, []]));
+    const seen = new Set();
+    (collection.items || []).forEach((item) => {
+      const id = item.recipeId || item.id || norm(item.title);
+      if (seen.has(id)) return;
+      seen.add(id);
+      const target = generatedSpecificDisplayGroup(collection, item);
+      const name = groups.has(target) ? target : generatedFallbackDisplayGroup(item.recipe || item, sections);
+      if (!groups.has(name)) groups.set(name, []);
+      groups.get(name).push(item);
+    });
+    return [...groups.entries()]
+      .filter(([, list]) => list.length)
+      .map(([name, list]) => ({ name, recipes: list, collectionKey: collection.key || '' }));
+  }
+
   function buildGeneratedCollectionSystem() {
     const hubMap = new Map();
     recipes.forEach((recipe, index) => {
@@ -3158,15 +3435,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
   function collectionDetail(collection) {
     if (collection?.generatedType === 'collection') {
-      const groups = new Map((collection.subcategory_order || []).map((name) => [name, []]));
-      (collection.items || []).forEach((item) => {
-        const name = item.subcategory || item.subCategory || generatedRecipeGroup(item.recipe || item);
-        if (!groups.has(name)) groups.set(name, []);
-        groups.get(name).push(item);
-      });
-      return [...groups.entries()]
-        .filter(([, list]) => list.length)
-        .map(([name, list]) => ({ name, recipes: list, collectionKey: collection.key || '' }));
+      return generatedCollectionDisplayGroups(collection);
     }
 
     const celebrationOrder = ['Festive Sweets', 'Regional Feasts', 'Traditional Favorites', 'Seasonal Celebrations'];
@@ -6311,8 +6580,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         hub: collection.hubName,
         title: collection.title,
         count: collection.count,
-        groups: collection.subcategory_order,
+        groups: generatedCollectionDisplayGroups(collection).map((group) => ({
+          name: group.name,
+          count: group.recipes.length
+        })),
         duplicateRecipes: collection.items.length - new Set(collection.items.map((item) => item.recipeId || item.id)).size,
+        groupedRecipes: generatedCollectionDisplayGroups(collection).reduce((sum, group) => sum + group.recipes.length, 0),
       }));
     },
     summary() {
@@ -6327,6 +6600,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         collectionRecipes: collections.reduce((sum, collection) => sum + collection.count, 0),
         emptyCollections: collections.filter((collection) => collection.count === 0).map((collection) => collection.title),
         duplicateCollections: collections.filter((collection) => collection.duplicateRecipes > 0).map((collection) => collection.title),
+        groupingMismatches: collections.filter((collection) => collection.groupedRecipes !== collection.count).map((collection) => collection.title),
       };
     }
   };
