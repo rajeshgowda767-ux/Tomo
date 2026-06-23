@@ -2255,8 +2255,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "ginger",
       "oil"
     ],
-    "dishFamily": "meat-curry",
-    "dish_family": "meat-curry",
+    "dishFamily": "chicken-fry",
+    "dish_family": "chicken-fry",
     "incompatibleWith": [],
     "incompatible_with": [],
     "aliases": [
@@ -2268,10 +2268,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "South India"
       ],
       "subRegion": [
-        "Andhra / Telangana"
+        "Andhra",
+        "Telangana"
       ],
       "cuisine": [
-        "Andhra"
+        "Andhra & Telangana",
+        "Telugu"
       ]
     },
     "dietaryTags": [
@@ -2279,7 +2281,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "pairings": {
       "sides": [
-        "Onion salad"
+        "Onion salad",
+        "Rasam"
       ],
       "chutneys": [],
       "pickles": [],
@@ -2287,7 +2290,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Buttermilk"
       ],
       "rice": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ],
       "roti": [
         "Chapati"
@@ -2304,26 +2308,45 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 Onion",
         "Curry Leaves",
         "Garlic",
-        "Ginger"
+        "Ginger",
+        "Chicken",
+        "Onion",
+        "Ginger Garlic Paste",
+        "Red Chilli",
+        "Pepper",
+        "Oil",
+        "Salt"
       ],
       "steps": [
-        "Marinate chicken with chilli, garlic, ginger, salt, and a little turmeric if available.",
-        "Fry onion and curry leaves until the onion turns golden at the edges.",
-        "Add the marinated chicken and cook on medium heat until the pieces are tender.",
-        "Increase the heat briefly to roast the masala until it clings to the chicken.",
-        "Finish with extra curry leaves and serve hot with rice or roti."
+        "Marinate chicken with chilli, turmeric and salt.",
+        "Saute onion, curry leaves and ginger garlic.",
+        "Add chicken and cook covered.",
+        "Open and fry until the masala thickens.",
+        "Finish with pepper and more curry leaves."
       ],
-      "tip": "Roast the chicken at the end for the dry, peppery Andhra-style finish.",
+      "tip": "Let the chicken fry uncovered at the end for a proper vepudu texture.",
       "bestWith": [
         "Onion salad",
         "Buttermilk",
-        "Steamed rice"
+        "Steamed rice",
+        "Rice",
+        "Rasam"
       ]
     },
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "tomoLine": "Let the chicken fry uncovered at the end for a proper vepudu texture."
   },
   {
     "id": "48e908cd-ad9d-5c8c-8496-83f522dca7d6",
@@ -18361,7 +18384,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/batch3b-dosakaya-pappu.png",
-    "recipeRole": "side",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -18371,7 +18394,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "moodTags": [
       "comfort",
-      "soul-food"
+      "soul"
     ],
     "mealTags": [
       "lunch",
@@ -18518,15 +18541,18 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "South India"
       ],
       "subRegion": [
-        "Andhra Pradesh"
+        "Andhra",
+        "Telangana"
       ],
       "cuisine": [
-        "Andhra"
+        "Andhra & Telangana",
+        "Telugu"
       ]
     },
     "pairings": {
       "rice": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ],
       "sides": [
         "Cabbage thoran",
@@ -18548,7 +18574,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1/4 tsp turmeric",
         "1/2 tsp mustard seeds",
         "Curry leaves",
-        "Salt"
+        "Salt",
+        "Dosakaya",
+        "Toor Dal",
+        "Green Chilli",
+        "Turmeric",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Ghee"
       ],
       "steps": [
         "Cook dal with dosakaya and turmeric.",
@@ -18560,13 +18593,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "tip": "Do not over-mash the cucumber; a little bite makes it better.",
       "bestWith": [
         "Rice",
-        "Avakaya pickle"
+        "Avakaya pickle",
+        "Ghee"
       ]
     },
     "collectionHome": {
-      "hub": "Kitchen Essentials",
-      "collection": "Sides, Salads & Add-ons"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    },
+    "tomoLine": "Do not over-mash the dosakaya; small pieces make the dal feel homely."
   },
   {
     "id": "f8b6e544-d1b7-5b21-90f7-fb0bd0870c28",
@@ -23147,7 +23182,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Andhra",
     "dietType": "non-vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/mutton-pulao-homestyle.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -23276,22 +23311,26 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "South India"
       ],
       "subRegion": [
-        "Andhra / Telangana"
+        "Andhra",
+        "Telangana"
       ],
       "cuisine": [
-        "Andhra"
+        "Andhra & Telangana",
+        "Telugu"
       ]
     },
     "pairings": {
       "sides": [
-        "Onion salad"
+        "Onion salad",
+        "Ragi Sangati"
       ],
       "drinks": [
         "Buttermilk"
       ],
       "rice": [
         "Steamed rice",
-        "Bagara rice"
+        "Bagara rice",
+        "Rice"
       ],
       "toppings": [
         "Fried curry leaves"
@@ -23309,7 +23348,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 tsp chilli powder",
         "1/2 tsp turmeric",
         "1 tbsp oil",
-        "Curry leaves"
+        "Curry leaves",
+        "Mutton",
+        "Gongura",
+        "Onion",
+        "Ginger Garlic Paste",
+        "Red Chilli",
+        "Curry Leaves",
+        "Oil",
+        "Salt"
       ],
       "steps": [
         "Cook gongura leaves until wilted and mash lightly.",
@@ -23321,17 +23368,28 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "tip": "Add gongura after the mutton softens to keep its tang bright.",
       "bestWith": [
         "Steamed rice",
-        "Buttermilk"
+        "Buttermilk",
+        "Rice",
+        "Ragi Sangati"
       ]
     },
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/mutton-pulao-homestyle.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ]
   },
   {
     "id": "ea5c36f0-eaff-5d10-b2b8-353114d67eee",
@@ -44545,7 +44603,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Andhra",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
@@ -44556,7 +44614,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "moodTags": [
       "protein",
-      "comfort"
+      "comfort",
+      "quick"
     ],
     "mealTags": [
       "breakfast",
@@ -44692,10 +44751,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "South India"
       ],
       "subRegion": [
-        "Andhra Pradesh"
+        "Andhra",
+        "Telangana"
       ],
       "cuisine": [
-        "Andhra"
+        "Andhra & Telangana",
+        "Telugu"
       ]
     },
     "pairings": {
@@ -44705,7 +44766,9 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "chutneys": [
         "Ginger chutney",
         "Coconut chutney",
-        "Allam chutney"
+        "Allam chutney",
+        "Allam Pachadi",
+        "Coconut Chutney"
       ],
       "pickles": [],
       "drinks": [],
@@ -44725,18 +44788,28 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 green chilli",
         "1 small onion",
         "1 tbsp oil",
-        "Salt"
+        "Salt",
+        "Moong Dal",
+        "Ginger",
+        "Green Chilli",
+        "Onion",
+        "Cumin",
+        "Oil"
       ],
       "steps": [
-        "Grind soaked dal with ginger.",
-        "Add salt and chilli.",
-        "Spread on a hot tawa.",
-        "Top with onion if using.",
-        "Cook with oil until done."
+        "Soak moong dal until softened.",
+        "Grind with ginger, green chilli and cumin.",
+        "Spread the batter thin on a hot tawa.",
+        "Scatter onion if using and drizzle oil.",
+        "Cook until crisp and serve hot."
       ],
-      "tip": "Spread slightly thin for crisp edges.",
+      "tip": "Keep the batter slightly coarse for a more homestyle pesarattu bite.",
       "bestWith": [
-        "Ginger chutney"
+        "Ginger chutney",
+        "Allam Pachadi",
+        "Coconut Chutney",
+        "Upma",
+        "Onion"
       ]
     },
     "dietaryTags": [
@@ -44746,11 +44819,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Moong Dal Dosa",
       "Green Gram Dosa"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/dosa-homestyle.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "tomoLine": "Keep the batter slightly coarse for a more homestyle pesarattu bite."
   },
   {
     "id": "a10586fc-5b70-5fe7-b1d8-f475a36186fb",
@@ -53836,7 +53910,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "difficulty": "easy",
     "imageUrl": "/assets/images/dishes/tomato-pappu.png",
-    "recipeRole": "side",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
@@ -53846,7 +53920,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "moodTags": [
       "comfort",
-      "soul-food"
+      "soul",
+      "quick"
     ],
     "mealTags": [
       "lunch",
@@ -53993,15 +54068,18 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "South India"
       ],
       "subRegion": [
-        "Andhra Pradesh"
+        "Andhra",
+        "Telangana"
       ],
       "cuisine": [
-        "Andhra"
+        "Andhra & Telangana",
+        "Telugu"
       ]
     },
     "pairings": {
       "rice": [
-        "Steamed rice"
+        "Steamed rice",
+        "Steamed Rice"
       ],
       "sides": [
         "Papad",
@@ -54010,7 +54088,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ],
       "pickles": [],
       "toppings": [
-        "Ghee"
+        "Ghee",
+        "Papad"
       ]
     },
     "quickGuide": {
@@ -54024,7 +54103,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1/4 tsp turmeric",
         "1/2 tsp mustard seeds",
         "Curry leaves",
-        "Salt"
+        "Salt",
+        "Toor Dal",
+        "Tomato",
+        "Green Chilli",
+        "Garlic",
+        "Turmeric",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Ghee"
       ],
       "steps": [
         "Pressure cook dal with tomatoes and turmeric.",
@@ -54037,13 +54124,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Steamed rice",
         "Ghee",
-        "Papad"
+        "Papad",
+        "Steamed Rice"
       ]
     },
     "collectionHome": {
-      "hub": "Kitchen Essentials",
-      "collection": "Sides, Salads & Add-ons"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    },
+    "tomoLine": "Use ripe tomatoes for natural tang instead of extra tamarind."
   },
   {
     "id": "828e35bc-cde3-52fb-9b6f-f8a24bf4b892",
@@ -96909,6 +96998,5977 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
+    }
+  },
+  {
+    "id": "bea4d03b-f7b9-52e5-bb0a-b862b45da19e",
+    "sourceId": "andhra-telangana-wave-02-upma-pesarattu",
+    "title": "Upma Pesarattu",
+    "name": "Upma Pesarattu",
+    "aliases": [],
+    "description": "A fuller Andhra tiffin plate where crisp pesarattu wraps soft upma for a satisfying breakfast.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3a-masala-dosa.png",
+    "image_url": "/assets/images/dishes/batch3a-masala-dosa.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "protein",
+      "comfort",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Keep the upma soft so the dosa still folds easily.",
+    "instructions": [
+      "Prepare a soft rava upma and keep warm.",
+      "Grind soaked moong dal with ginger and chilli.",
+      "Spread pesarattu batter on a hot tawa.",
+      "Place upma in the center and fold.",
+      "Serve with allam pachadi."
+    ],
+    "ingredients": [
+      {
+        "name": "moong dal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "upma",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Moong Dal",
+    "primary_ingredient_2": "Upma",
+    "primaryIngredient1": "Moong Dal",
+    "primaryIngredient2": "Upma",
+    "secondary_ingredient_1": "Ginger",
+    "secondaryIngredient1": "Ginger",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Onion",
+    "secondaryIngredient3": "Onion",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Salt",
+    "secondaryIngredient5": "Salt",
+    "primaryIngredients": [
+      "moong dal",
+      "upma"
+    ],
+    "baseIngredient": "moong dal",
+    "base_ingredient": "moong dal",
+    "coreIngredients": [
+      "moong dal",
+      "upma"
+    ],
+    "core_ingredients": [
+      "moong dal",
+      "upma"
+    ],
+    "requiredIngredients": [
+      "moong dal",
+      "upma"
+    ],
+    "required_ingredients": [
+      "moong dal",
+      "upma"
+    ],
+    "optionalIngredients": [
+      "ginger",
+      "green chilli",
+      "onion",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "ginger",
+      "green chilli",
+      "onion",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Allam Pachadi",
+        "Coconut Chutney"
+      ],
+      "sides": [
+        "Upma"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Moong Dal",
+        "Upma",
+        "Ginger",
+        "Green Chilli",
+        "Onion",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Prepare a soft rava upma and keep warm.",
+        "Grind soaked moong dal with ginger and chilli.",
+        "Spread pesarattu batter on a hot tawa.",
+        "Place upma in the center and fold.",
+        "Serve with allam pachadi."
+      ],
+      "tip": "Keep the upma soft so the dosa still folds easily.",
+      "bestWith": [
+        "Allam Pachadi",
+        "Coconut Chutney",
+        "Upma"
+      ]
+    },
+    "tomoLine": "Keep the upma soft so the dosa still folds easily.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "b47ce4b4-03e9-5cb9-92b3-a265867b82ff",
+    "sourceId": "andhra-telangana-wave-03-punugulu",
+    "title": "Punugulu",
+    "name": "Punugulu",
+    "aliases": [],
+    "description": "Crisp Telugu street-style batter fritters, perfect with chutney and chai on rainy evenings.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "rainy",
+      "quick",
+      "comfort",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "rainy",
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "A little rice flour helps the outside turn crisp.",
+    "instructions": [
+      "Mix leftover batter with rice flour, onion and chilli.",
+      "Rest briefly until spoonable.",
+      "Heat oil for frying.",
+      "Drop small portions and fry until golden.",
+      "Serve hot with chutney."
+    ],
+    "ingredients": [
+      {
+        "name": "idli dosa batter",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice flour",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Idli Dosa Batter",
+    "primary_ingredient_2": "Rice Flour",
+    "primaryIngredient1": "Idli Dosa Batter",
+    "primaryIngredient2": "Rice Flour",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Salt",
+    "secondaryIngredient5": "Salt",
+    "primaryIngredients": [
+      "idli dosa batter",
+      "rice flour"
+    ],
+    "baseIngredient": "idli dosa batter",
+    "base_ingredient": "idli dosa batter",
+    "coreIngredients": [
+      "idli dosa batter",
+      "rice flour"
+    ],
+    "core_ingredients": [
+      "idli dosa batter",
+      "rice flour"
+    ],
+    "requiredIngredients": [
+      "idli dosa batter",
+      "rice flour"
+    ],
+    "required_ingredients": [
+      "idli dosa batter",
+      "rice flour"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "green chilli",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "green chilli",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fritter",
+    "dish_family": "fritter",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "rainy",
+      "quick",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Coconut Chutney"
+      ],
+      "drinks": [
+        "Masala Chai"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Idli Dosa Batter",
+        "Rice Flour",
+        "Onion",
+        "Green Chilli",
+        "Curry Leaves",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Mix leftover batter with rice flour, onion and chilli.",
+        "Rest briefly until spoonable.",
+        "Heat oil for frying.",
+        "Drop small portions and fry until golden.",
+        "Serve hot with chutney."
+      ],
+      "tip": "A little rice flour helps the outside turn crisp.",
+      "bestWith": [
+        "Coconut Chutney",
+        "Masala Chai"
+      ]
+    },
+    "tomoLine": "A little rice flour helps the outside turn crisp.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "384aba4b-4411-5ec7-b467-dbddc654e82d",
+    "sourceId": "andhra-telangana-wave-04-dibba-rotti",
+    "title": "Dibba Rotti",
+    "name": "Dibba Rotti",
+    "aliases": [],
+    "description": "A thick Andhra skillet rotti with a crisp crust and soft idli-like center.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "image_url": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Low heat gives dibba rotti its signature thick golden crust.",
+    "instructions": [
+      "Soak rice and dal, then grind into a coarse batter.",
+      "Season with cumin, chilli and salt.",
+      "Pour thick batter into an oiled pan.",
+      "Cook covered on low until set.",
+      "Flip carefully and crisp the other side."
+    ],
+    "ingredients": [
+      {
+        "name": "idli rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "urad dal",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Idli Rice",
+    "primary_ingredient_2": "Urad Dal",
+    "primaryIngredient1": "Idli Rice",
+    "primaryIngredient2": "Urad Dal",
+    "secondary_ingredient_1": "Cumin",
+    "secondaryIngredient1": "Cumin",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Ginger",
+    "secondaryIngredient3": "Ginger",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Salt",
+    "secondaryIngredient5": "Salt",
+    "primaryIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "baseIngredient": "idli rice",
+    "base_ingredient": "idli rice",
+    "coreIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "core_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "requiredIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "required_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "optionalIngredients": [
+      "cumin",
+      "green chilli",
+      "ginger",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "cumin",
+      "green chilli",
+      "ginger",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rotti",
+    "dish_family": "rotti",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Allam Pachadi",
+        "Coconut Chutney"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Idli Rice",
+        "Urad Dal",
+        "Cumin",
+        "Green Chilli",
+        "Ginger",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Soak rice and dal, then grind into a coarse batter.",
+        "Season with cumin, chilli and salt.",
+        "Pour thick batter into an oiled pan.",
+        "Cook covered on low until set.",
+        "Flip carefully and crisp the other side."
+      ],
+      "tip": "Low heat gives dibba rotti its signature thick golden crust.",
+      "bestWith": [
+        "Allam Pachadi",
+        "Coconut Chutney"
+      ]
+    },
+    "tomoLine": "Low heat gives dibba rotti its signature thick golden crust.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "dd1bfc5c-2d69-5fbe-93d3-debd0a2a16e6",
+    "sourceId": "andhra-telangana-wave-06-gongura-pappu",
+    "title": "Gongura Pappu",
+    "name": "Gongura Pappu",
+    "aliases": [],
+    "description": "Tangy gongura leaves folded into creamy dal for a deeply Telugu rice-side comfort.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3b-dosakaya-pappu.png",
+    "image_url": "/assets/images/dishes/batch3b-dosakaya-pappu.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "spicy",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "spicy"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Add gongura after the dal cooks so the sourness stays lively.",
+    "instructions": [
+      "Cook dal until soft.",
+      "Wilt gongura with chilli and turmeric.",
+      "Mash gongura into the dal.",
+      "Simmer with salt until balanced.",
+      "Finish with garlic mustard tempering."
+    ],
+    "ingredients": [
+      {
+        "name": "toor dal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "gongura",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Toor Dal",
+    "primary_ingredient_2": "Gongura",
+    "primaryIngredient1": "Toor Dal",
+    "primaryIngredient2": "Gongura",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Garlic",
+    "secondaryIngredient2": "Garlic",
+    "secondary_ingredient_3": "Turmeric",
+    "secondaryIngredient3": "Turmeric",
+    "secondary_ingredient_4": "Mustard Seeds",
+    "secondaryIngredient4": "Mustard Seeds",
+    "secondary_ingredient_5": "Curry Leaves",
+    "secondaryIngredient5": "Curry Leaves",
+    "primaryIngredients": [
+      "toor dal",
+      "gongura"
+    ],
+    "baseIngredient": "toor dal",
+    "base_ingredient": "toor dal",
+    "coreIngredients": [
+      "toor dal",
+      "gongura"
+    ],
+    "core_ingredients": [
+      "toor dal",
+      "gongura"
+    ],
+    "requiredIngredients": [
+      "toor dal",
+      "gongura"
+    ],
+    "required_ingredients": [
+      "toor dal",
+      "gongura"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "garlic",
+      "turmeric",
+      "mustard seeds",
+      "curry leaves",
+      "ghee",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "garlic",
+      "turmeric",
+      "mustard seeds",
+      "curry leaves",
+      "ghee",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pappu",
+    "dish_family": "pappu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "spicy"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Steamed Rice"
+      ],
+      "toppings": [
+        "Ghee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Toor Dal",
+        "Gongura",
+        "Green Chilli",
+        "Garlic",
+        "Turmeric",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Ghee"
+      ],
+      "steps": [
+        "Cook dal until soft.",
+        "Wilt gongura with chilli and turmeric.",
+        "Mash gongura into the dal.",
+        "Simmer with salt until balanced.",
+        "Finish with garlic mustard tempering."
+      ],
+      "tip": "Add gongura after the dal cooks so the sourness stays lively.",
+      "bestWith": [
+        "Steamed Rice",
+        "Ghee"
+      ]
+    },
+    "tomoLine": "Add gongura after the dal cooks so the sourness stays lively.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "65f6fa87-d555-5f26-841c-40963d5e5c4b",
+    "sourceId": "andhra-telangana-wave-07-mamidikaya-pappu",
+    "title": "Mamidikaya Pappu",
+    "name": "Mamidikaya Pappu",
+    "aliases": [],
+    "description": "Raw mango pappu with a gentle summer tang, made for rice and papad.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3b-dosakaya-pappu.png",
+    "image_url": "/assets/images/dishes/batch3b-dosakaya-pappu.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Use firm raw mango so the dal gets tang without becoming too sour.",
+    "instructions": [
+      "Cook dal with raw mango pieces and turmeric.",
+      "Mash lightly, keeping some mango texture.",
+      "Simmer with chilli and salt.",
+      "Temper mustard seeds and curry leaves.",
+      "Serve warm with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "toor dal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "raw mango",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Toor Dal",
+    "primary_ingredient_2": "Raw Mango",
+    "primaryIngredient1": "Toor Dal",
+    "primaryIngredient2": "Raw Mango",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Turmeric",
+    "secondaryIngredient2": "Turmeric",
+    "secondary_ingredient_3": "Mustard Seeds",
+    "secondaryIngredient3": "Mustard Seeds",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Ghee",
+    "secondaryIngredient5": "Ghee",
+    "primaryIngredients": [
+      "toor dal",
+      "raw mango"
+    ],
+    "baseIngredient": "toor dal",
+    "base_ingredient": "toor dal",
+    "coreIngredients": [
+      "toor dal",
+      "raw mango"
+    ],
+    "core_ingredients": [
+      "toor dal",
+      "raw mango"
+    ],
+    "requiredIngredients": [
+      "toor dal",
+      "raw mango"
+    ],
+    "required_ingredients": [
+      "toor dal",
+      "raw mango"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "turmeric",
+      "mustard seeds",
+      "curry leaves",
+      "ghee",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "turmeric",
+      "mustard seeds",
+      "curry leaves",
+      "ghee",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pappu",
+    "dish_family": "pappu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Steamed Rice"
+      ],
+      "toppings": [
+        "Papad",
+        "Ghee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Toor Dal",
+        "Raw Mango",
+        "Green Chilli",
+        "Turmeric",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Ghee",
+        "Salt"
+      ],
+      "steps": [
+        "Cook dal with raw mango pieces and turmeric.",
+        "Mash lightly, keeping some mango texture.",
+        "Simmer with chilli and salt.",
+        "Temper mustard seeds and curry leaves.",
+        "Serve warm with rice."
+      ],
+      "tip": "Use firm raw mango so the dal gets tang without becoming too sour.",
+      "bestWith": [
+        "Steamed Rice",
+        "Papad",
+        "Ghee"
+      ]
+    },
+    "tomoLine": "Use firm raw mango so the dal gets tang without becoming too sour.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "d4f44285-982a-508f-8a59-9cf9d685db79",
+    "sourceId": "andhra-telangana-wave-08-majjiga-pulusu",
+    "title": "Majjiga Pulusu",
+    "name": "Majjiga Pulusu",
+    "aliases": [],
+    "description": "A cooling Telugu buttermilk pulusu with gentle spice and vegetables for rice plates.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "quick",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": true,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Keep the heat low after adding buttermilk so it stays smooth.",
+    "instructions": [
+      "Whisk buttermilk with besan and turmeric.",
+      "Cook vegetables until just tender.",
+      "Simmer with the buttermilk mixture on low heat.",
+      "Temper mustard, chilli and curry leaves.",
+      "Pour tempering over the pulusu."
+    ],
+    "ingredients": [
+      {
+        "name": "buttermilk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Buttermilk",
+    "primary_ingredient_2": "Vegetables",
+    "primaryIngredient1": "Buttermilk",
+    "primaryIngredient2": "Vegetables",
+    "secondary_ingredient_1": "Besan",
+    "secondaryIngredient1": "Besan",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Ginger",
+    "secondaryIngredient3": "Ginger",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Mustard Seeds",
+    "secondaryIngredient5": "Mustard Seeds",
+    "primaryIngredients": [
+      "buttermilk",
+      "vegetables"
+    ],
+    "baseIngredient": "buttermilk",
+    "base_ingredient": "buttermilk",
+    "coreIngredients": [
+      "buttermilk",
+      "vegetables"
+    ],
+    "core_ingredients": [
+      "buttermilk",
+      "vegetables"
+    ],
+    "requiredIngredients": [
+      "buttermilk",
+      "vegetables"
+    ],
+    "required_ingredients": [
+      "buttermilk",
+      "vegetables"
+    ],
+    "optionalIngredients": [
+      "besan",
+      "green chilli",
+      "ginger",
+      "curry leaves",
+      "mustard seeds",
+      "turmeric",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "besan",
+      "green chilli",
+      "ginger",
+      "curry leaves",
+      "mustard seeds",
+      "turmeric",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pulusu",
+    "dish_family": "pulusu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Steamed Rice"
+      ],
+      "sides": [
+        "Palya"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Buttermilk",
+        "Vegetables",
+        "Besan",
+        "Green Chilli",
+        "Ginger",
+        "Curry Leaves",
+        "Mustard Seeds",
+        "Turmeric"
+      ],
+      "steps": [
+        "Whisk buttermilk with besan and turmeric.",
+        "Cook vegetables until just tender.",
+        "Simmer with the buttermilk mixture on low heat.",
+        "Temper mustard, chilli and curry leaves.",
+        "Pour tempering over the pulusu."
+      ],
+      "tip": "Keep the heat low after adding buttermilk so it stays smooth.",
+      "bestWith": [
+        "Steamed Rice",
+        "Palya"
+      ]
+    },
+    "tomoLine": "Keep the heat low after adding buttermilk so it stays smooth.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "af3dece7-d223-5756-878a-e27b925100f2",
+    "sourceId": "andhra-telangana-wave-09-gutti-vankaya",
+    "title": "Gutti Vankaya",
+    "name": "Gutti Vankaya",
+    "aliases": [],
+    "description": "Stuffed Andhra brinjals simmered in a nutty, tangy masala until soft and glossy.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3a-baingan-bharta.png",
+    "image_url": "/assets/images/dishes/batch3a-baingan-bharta.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "spicy",
+      "soul",
+      "comfort",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "spicy",
+      "soul",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Use small brinjals so the masala cooks through evenly.",
+    "instructions": [
+      "Slit small brinjals without cutting through.",
+      "Stuff with peanut sesame masala.",
+      "Sear in oil until lightly blistered.",
+      "Simmer with tamarind and spices.",
+      "Cook until the brinjals turn tender."
+    ],
+    "ingredients": [
+      {
+        "name": "brinjal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanut sesame masala",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Brinjal",
+    "primary_ingredient_2": "Peanut Sesame Masala",
+    "primaryIngredient1": "Brinjal",
+    "primaryIngredient2": "Peanut Sesame Masala",
+    "secondary_ingredient_1": "Tamarind",
+    "secondaryIngredient1": "Tamarind",
+    "secondary_ingredient_2": "Onion",
+    "secondaryIngredient2": "Onion",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Salt",
+    "secondaryIngredient5": "Salt",
+    "primaryIngredients": [
+      "brinjal",
+      "peanut sesame masala"
+    ],
+    "baseIngredient": "brinjal",
+    "base_ingredient": "brinjal",
+    "coreIngredients": [
+      "brinjal",
+      "peanut sesame masala"
+    ],
+    "core_ingredients": [
+      "brinjal",
+      "peanut sesame masala"
+    ],
+    "requiredIngredients": [
+      "brinjal",
+      "peanut sesame masala"
+    ],
+    "required_ingredients": [
+      "brinjal",
+      "peanut sesame masala"
+    ],
+    "optionalIngredients": [
+      "tamarind",
+      "onion",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "tamarind",
+      "onion",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "stuffed-vegetable",
+    "dish_family": "stuffed-vegetable",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "roti": [
+        "Roti"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Brinjal",
+        "Peanut Sesame Masala",
+        "Tamarind",
+        "Onion",
+        "Curry Leaves",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Slit small brinjals without cutting through.",
+        "Stuff with peanut sesame masala.",
+        "Sear in oil until lightly blistered.",
+        "Simmer with tamarind and spices.",
+        "Cook until the brinjals turn tender."
+      ],
+      "tip": "Use small brinjals so the masala cooks through evenly.",
+      "bestWith": [
+        "Rice",
+        "Roti"
+      ]
+    },
+    "tomoLine": "Use small brinjals so the masala cooks through evenly.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "4da9431a-9e51-54e6-a664-b5d319132089",
+    "sourceId": "andhra-telangana-wave-10-bendakaya-pulusu",
+    "title": "Bendakaya Pulusu",
+    "name": "Bendakaya Pulusu",
+    "aliases": [],
+    "description": "A tangy Andhra okra pulusu with tamarind warmth for simple rice meals.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Saute okra first so the pulusu stays clean and glossy.",
+    "instructions": [
+      "Saute okra until the stickiness reduces.",
+      "Simmer tamarind water with onion and spices.",
+      "Add okra and cook until tender.",
+      "Balance with a little jaggery if needed.",
+      "Finish with curry leaves."
+    ],
+    "ingredients": [
+      {
+        "name": "okra",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "red chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Okra",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Okra",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Jaggery",
+    "secondaryIngredient2": "Jaggery",
+    "secondary_ingredient_3": "Mustard Seeds",
+    "secondaryIngredient3": "Mustard Seeds",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Red Chilli",
+    "secondaryIngredient5": "Red Chilli",
+    "primaryIngredients": [
+      "okra",
+      "tamarind"
+    ],
+    "baseIngredient": "okra",
+    "base_ingredient": "okra",
+    "coreIngredients": [
+      "okra",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "okra",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "okra",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "okra",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "jaggery",
+      "mustard seeds",
+      "curry leaves",
+      "red chilli",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "jaggery",
+      "mustard seeds",
+      "curry leaves",
+      "red chilli",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pulusu",
+    "dish_family": "pulusu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Okra",
+        "Tamarind",
+        "Onion",
+        "Jaggery",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Red Chilli",
+        "Salt"
+      ],
+      "steps": [
+        "Saute okra until the stickiness reduces.",
+        "Simmer tamarind water with onion and spices.",
+        "Add okra and cook until tender.",
+        "Balance with a little jaggery if needed.",
+        "Finish with curry leaves."
+      ],
+      "tip": "Saute okra first so the pulusu stays clean and glossy.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Saute okra first so the pulusu stays clean and glossy.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "20246ec8-893a-501b-8352-131d9c557744",
+    "sourceId": "andhra-telangana-wave-11-royyala-iguru",
+    "title": "Royyala Iguru",
+    "name": "Royyala Iguru",
+    "aliases": [],
+    "description": "A thick Coastal Andhra prawn iguru with onion masala, chilli and curry leaves.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "soul",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Do not overcook prawns; finish them in the thick masala.",
+    "instructions": [
+      "Clean prawns and season lightly.",
+      "Cook onion, tomato and ginger garlic into a thick masala.",
+      "Add chilli, turmeric and curry leaves.",
+      "Add prawns and cook just until done.",
+      "Reduce until the iguru clings to the prawns."
+    ],
+    "ingredients": [
+      {
+        "name": "prawns",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger garlic paste",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "red chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Prawns",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Prawns",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Ginger Garlic Paste",
+    "secondaryIngredient2": "Ginger Garlic Paste",
+    "secondary_ingredient_3": "Red Chilli",
+    "secondaryIngredient3": "Red Chilli",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Oil",
+    "secondaryIngredient5": "Oil",
+    "primaryIngredients": [
+      "prawns",
+      "onion"
+    ],
+    "baseIngredient": "prawns",
+    "base_ingredient": "prawns",
+    "coreIngredients": [
+      "prawns",
+      "onion"
+    ],
+    "core_ingredients": [
+      "prawns",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "prawns",
+      "onion"
+    ],
+    "required_ingredients": [
+      "prawns",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "ginger garlic paste",
+      "red chilli",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "ginger garlic paste",
+      "red chilli",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "prawn-curry",
+    "dish_family": "prawn-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Neer Dosa"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Prawns",
+        "Onion",
+        "Tomato",
+        "Ginger Garlic Paste",
+        "Red Chilli",
+        "Curry Leaves",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Clean prawns and season lightly.",
+        "Cook onion, tomato and ginger garlic into a thick masala.",
+        "Add chilli, turmeric and curry leaves.",
+        "Add prawns and cook just until done.",
+        "Reduce until the iguru clings to the prawns."
+      ],
+      "tip": "Do not overcook prawns; finish them in the thick masala.",
+      "bestWith": [
+        "Rice",
+        "Neer Dosa"
+      ]
+    },
+    "tomoLine": "Do not overcook prawns; finish them in the thick masala.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "7e919b6f-3331-5ff9-b9ca-cefb070115d0",
+    "sourceId": "andhra-telangana-wave-13-sakinalu",
+    "title": "Sakinalu",
+    "name": "Sakinalu",
+    "aliases": [],
+    "description": "A Telangana festive spiral snack made with rice flour and sesame, crisp and deeply nostalgic.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch5-corn-sundal.png",
+    "image_url": "/assets/images/dishes/batch5-corn-sundal.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "festive",
+      "rainy",
+      "soul",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "festive",
+      "rainy",
+      "soul"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 7,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Festive",
+    "secondaryMood": "Rainy Day",
+    "cookingNotes": "Fry on medium heat so the sakinalu crisp without browning too fast.",
+    "instructions": [
+      "Mix rice flour with sesame, ajwain and salt.",
+      "Add water to make a pliable dough.",
+      "Shape into loose spirals on cloth or paper.",
+      "Deep fry on medium heat until crisp.",
+      "Cool before storing."
+    ],
+    "ingredients": [
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sesame seeds",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ajwain",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice Flour",
+    "primary_ingredient_2": "Sesame Seeds",
+    "primaryIngredient1": "Rice Flour",
+    "primaryIngredient2": "Sesame Seeds",
+    "secondary_ingredient_1": "Ajwain",
+    "secondaryIngredient1": "Ajwain",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": "Oil",
+    "secondaryIngredient3": "Oil",
+    "secondary_ingredient_4": "Salt",
+    "secondaryIngredient4": "Salt",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "rice flour",
+      "sesame seeds"
+    ],
+    "baseIngredient": "rice flour",
+    "base_ingredient": "rice flour",
+    "coreIngredients": [
+      "rice flour",
+      "sesame seeds"
+    ],
+    "core_ingredients": [
+      "rice flour",
+      "sesame seeds"
+    ],
+    "requiredIngredients": [
+      "rice flour",
+      "sesame seeds"
+    ],
+    "required_ingredients": [
+      "rice flour",
+      "sesame seeds"
+    ],
+    "optionalIngredients": [
+      "ajwain",
+      "cumin",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "ajwain",
+      "cumin",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "festival-snack",
+    "dish_family": "festival-snack",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "rainy",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Masala Chai"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Rice Flour",
+        "Sesame Seeds",
+        "Ajwain",
+        "Cumin",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Mix rice flour with sesame, ajwain and salt.",
+        "Add water to make a pliable dough.",
+        "Shape into loose spirals on cloth or paper.",
+        "Deep fry on medium heat until crisp.",
+        "Cool before storing."
+      ],
+      "tip": "Fry on medium heat so the sakinalu crisp without browning too fast.",
+      "bestWith": [
+        "Masala Chai"
+      ]
+    },
+    "tomoLine": "Fry on medium heat so the sakinalu crisp without browning too fast.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "bc3e521d-7413-540d-a663-20d70c1afedb",
+    "sourceId": "andhra-telangana-wave-14-sarva-pindi",
+    "title": "Sarva Pindi",
+    "name": "Sarva Pindi",
+    "aliases": [],
+    "description": "A Telangana skillet snack with rice flour, peanuts and crisp edges.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "rainy",
+      "comfort",
+      "soul",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "rainy",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Pat it thin at the edges for the best crunch.",
+    "instructions": [
+      "Mix rice flour with soaked chana dal, peanuts and spices.",
+      "Pat the dough directly into an oiled pan.",
+      "Make small steam holes across the surface.",
+      "Cook covered until the base crisps.",
+      "Flip or finish until cooked through."
+    ],
+    "ingredients": [
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanuts",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chana dal",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curd",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice Flour",
+    "primary_ingredient_2": "Peanuts",
+    "primaryIngredient1": "Rice Flour",
+    "primaryIngredient2": "Peanuts",
+    "secondary_ingredient_1": "Chana Dal",
+    "secondaryIngredient1": "Chana Dal",
+    "secondary_ingredient_2": "Sesame",
+    "secondaryIngredient2": "Sesame",
+    "secondary_ingredient_3": "Green Chilli",
+    "secondaryIngredient3": "Green Chilli",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Curd",
+    "secondaryIngredient5": "Curd",
+    "primaryIngredients": [
+      "rice flour",
+      "peanuts"
+    ],
+    "baseIngredient": "rice flour",
+    "base_ingredient": "rice flour",
+    "coreIngredients": [
+      "rice flour",
+      "peanuts"
+    ],
+    "core_ingredients": [
+      "rice flour",
+      "peanuts"
+    ],
+    "requiredIngredients": [
+      "rice flour",
+      "peanuts"
+    ],
+    "required_ingredients": [
+      "rice flour",
+      "peanuts"
+    ],
+    "optionalIngredients": [
+      "chana dal",
+      "sesame",
+      "green chilli",
+      "curry leaves",
+      "curd",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "chana dal",
+      "sesame",
+      "green chilli",
+      "curry leaves",
+      "curd",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rotti",
+    "dish_family": "rotti",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "rainy",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Peanut Chutney"
+      ],
+      "sides": [
+        "Curd"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Rice Flour",
+        "Peanuts",
+        "Chana Dal",
+        "Sesame",
+        "Green Chilli",
+        "Curry Leaves",
+        "Curd",
+        "Salt"
+      ],
+      "steps": [
+        "Mix rice flour with soaked chana dal, peanuts and spices.",
+        "Pat the dough directly into an oiled pan.",
+        "Make small steam holes across the surface.",
+        "Cook covered until the base crisps.",
+        "Flip or finish until cooked through."
+      ],
+      "tip": "Pat it thin at the edges for the best crunch.",
+      "bestWith": [
+        "Peanut Chutney",
+        "Curd"
+      ]
+    },
+    "tomoLine": "Pat it thin at the edges for the best crunch.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "d07cecda-b0d2-5973-9ff3-53aed3112e23",
+    "sourceId": "andhra-telangana-wave-15-pootharekulu",
+    "title": "Pootharekulu",
+    "name": "Pootharekulu",
+    "aliases": [],
+    "description": "Paper-thin Andhra sweet sheets layered with sugar and ghee for a delicate festive bite.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/festival-food.webp",
+    "image_url": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "festive",
+      "soul",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "festive",
+      "soul"
+    ],
+    "mealTags": [
+      "dessert"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Handle the sheets gently; the sweetness should stay delicate, not heavy.",
+    "instructions": [
+      "Lay rice starch sheets carefully on a dry surface.",
+      "Brush lightly with warm ghee.",
+      "Sprinkle powdered sugar and cardamom.",
+      "Add nuts if using.",
+      "Fold gently into layered parcels."
+    ],
+    "ingredients": [
+      {
+        "name": "rice starch sheets",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sugar",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cashews",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice Starch Sheets",
+    "primary_ingredient_2": "Sugar",
+    "primaryIngredient1": "Rice Starch Sheets",
+    "primaryIngredient2": "Sugar",
+    "secondary_ingredient_1": "Ghee",
+    "secondaryIngredient1": "Ghee",
+    "secondary_ingredient_2": "Cardamom",
+    "secondaryIngredient2": "Cardamom",
+    "secondary_ingredient_3": "Cashews",
+    "secondaryIngredient3": "Cashews",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "rice starch sheets",
+      "sugar"
+    ],
+    "baseIngredient": "rice starch sheets",
+    "base_ingredient": "rice starch sheets",
+    "coreIngredients": [
+      "rice starch sheets",
+      "sugar"
+    ],
+    "core_ingredients": [
+      "rice starch sheets",
+      "sugar"
+    ],
+    "requiredIngredients": [
+      "rice starch sheets",
+      "sugar"
+    ],
+    "required_ingredients": [
+      "rice starch sheets",
+      "sugar"
+    ],
+    "optionalIngredients": [
+      "ghee",
+      "cardamom",
+      "cashews"
+    ],
+    "optional_ingredients": [
+      "ghee",
+      "cardamom",
+      "cashews"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "sweet",
+    "dish_family": "sweet",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Filter Coffee",
+        "Milk"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "20 min",
+      "cookTime": "30 min",
+      "ingredients": [
+        "Rice Starch Sheets",
+        "Sugar",
+        "Ghee",
+        "Cardamom",
+        "Cashews"
+      ],
+      "steps": [
+        "Lay rice starch sheets carefully on a dry surface.",
+        "Brush lightly with warm ghee.",
+        "Sprinkle powdered sugar and cardamom.",
+        "Add nuts if using.",
+        "Fold gently into layered parcels."
+      ],
+      "tip": "Handle the sheets gently; the sweetness should stay delicate, not heavy.",
+      "bestWith": [
+        "Filter Coffee",
+        "Milk"
+      ]
+    },
+    "tomoLine": "Handle the sheets gently; the sweetness should stay delicate, not heavy.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "f0df6279-a9c9-50cd-95bb-7e5657fc0341",
+    "sourceId": "andhra-telangana-wave-16-ulavacharu",
+    "title": "Ulavacharu",
+    "name": "Ulavacharu",
+    "aliases": [],
+    "description": "A deep, earthy Andhra horse gram charu served hot with rice and ghee.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 35,
+    "timeMinutes": 47,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "soup",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "protein",
+      "comfort",
+      "soul",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "protein",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "The cooking liquid carries the body; do not discard it.",
+    "instructions": [
+      "Soak and cook horse gram until soft.",
+      "Reserve the cooking liquid and mash some gram.",
+      "Simmer with tamarind, pepper and cumin.",
+      "Temper garlic and curry leaves in ghee.",
+      "Serve hot as a pourable charu."
+    ],
+    "ingredients": [
+      {
+        "name": "horse gram",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Horse Gram",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Horse Gram",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Garlic",
+    "secondaryIngredient1": "Garlic",
+    "secondary_ingredient_2": "Pepper",
+    "secondaryIngredient2": "Pepper",
+    "secondary_ingredient_3": "Cumin",
+    "secondaryIngredient3": "Cumin",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Ghee",
+    "secondaryIngredient5": "Ghee",
+    "primaryIngredients": [
+      "horse gram",
+      "tamarind"
+    ],
+    "baseIngredient": "horse gram",
+    "base_ingredient": "horse gram",
+    "coreIngredients": [
+      "horse gram",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "horse gram",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "horse gram",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "horse gram",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "garlic",
+      "pepper",
+      "cumin",
+      "curry leaves",
+      "ghee",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "pepper",
+      "cumin",
+      "curry leaves",
+      "ghee",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "charu",
+    "dish_family": "charu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "toppings": [
+        "Ghee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "35 min",
+      "ingredients": [
+        "Horse Gram",
+        "Tamarind",
+        "Garlic",
+        "Pepper",
+        "Cumin",
+        "Curry Leaves",
+        "Ghee",
+        "Salt"
+      ],
+      "steps": [
+        "Soak and cook horse gram until soft.",
+        "Reserve the cooking liquid and mash some gram.",
+        "Simmer with tamarind, pepper and cumin.",
+        "Temper garlic and curry leaves in ghee.",
+        "Serve hot as a pourable charu."
+      ],
+      "tip": "The cooking liquid carries the body; do not discard it.",
+      "bestWith": [
+        "Rice",
+        "Ghee"
+      ]
+    },
+    "tomoLine": "The cooking liquid carries the body; do not discard it.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "ae5f6b1d-d022-589d-90ab-91e61f08b2cf",
+    "sourceId": "andhra-telangana-wave-17-ragi-sangati",
+    "title": "Ragi Sangati",
+    "name": "Ragi Sangati",
+    "aliases": [],
+    "description": "Rayalaseema-style ragi sangati, a rustic millet-rice ball built for pulusu and fiery curries.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/rasam-rice.png",
+    "image_url": "/assets/images/dishes/rasam-rice.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "soul",
+      "protein",
+      "comfort",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "soul",
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Stir vigorously after adding ragi to avoid dry pockets.",
+    "instructions": [
+      "Cook a small amount of rice until soft.",
+      "Add ragi flour gradually while stirring.",
+      "Beat until the mixture turns smooth and thick.",
+      "Shape into balls with wet hands.",
+      "Serve hot with pulusu or charu."
+    ],
+    "ingredients": [
+      {
+        "name": "ragi flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Ragi Flour",
+    "primary_ingredient_2": "Rice",
+    "primaryIngredient1": "Ragi Flour",
+    "primaryIngredient2": "Rice",
+    "secondary_ingredient_1": "Salt",
+    "secondaryIngredient1": "Salt",
+    "secondary_ingredient_2": "Ghee",
+    "secondaryIngredient2": "Ghee",
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "ragi flour",
+      "rice"
+    ],
+    "baseIngredient": "ragi flour",
+    "base_ingredient": "ragi flour",
+    "coreIngredients": [
+      "ragi flour",
+      "rice"
+    ],
+    "core_ingredients": [
+      "ragi flour",
+      "rice"
+    ],
+    "requiredIngredients": [
+      "ragi flour",
+      "rice"
+    ],
+    "required_ingredients": [
+      "ragi flour",
+      "rice"
+    ],
+    "optionalIngredients": [
+      "salt",
+      "ghee"
+    ],
+    "optional_ingredients": [
+      "salt",
+      "ghee"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "mudde",
+    "dish_family": "mudde",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "soul",
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Natu Kodi Pulusu",
+        "Ulavacharu"
+      ],
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Ragi Flour",
+        "Rice",
+        "Salt",
+        "Ghee"
+      ],
+      "steps": [
+        "Cook a small amount of rice until soft.",
+        "Add ragi flour gradually while stirring.",
+        "Beat until the mixture turns smooth and thick.",
+        "Shape into balls with wet hands.",
+        "Serve hot with pulusu or charu."
+      ],
+      "tip": "Stir vigorously after adding ragi to avoid dry pockets.",
+      "bestWith": [
+        "Natu Kodi Pulusu",
+        "Ulavacharu",
+        "Rice"
+      ]
+    },
+    "tomoLine": "Stir vigorously after adding ragi to avoid dry pockets.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "20dbd812-55e1-500f-aa47-617db391e956",
+    "sourceId": "andhra-telangana-wave-18-natu-kodi-pulusu",
+    "title": "Natu Kodi Pulusu",
+    "name": "Natu Kodi Pulusu",
+    "aliases": [],
+    "description": "A rustic country chicken pulusu with tamarind, chilli and slow-cooked depth.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-andhra-chicken-curry.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-andhra-chicken-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "soul",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Country chicken needs slower cooking; let the pulusu build its body.",
+    "instructions": [
+      "Brown country chicken with onion and ginger garlic.",
+      "Add chilli, turmeric and spice powder.",
+      "Pour in tamarind water and simmer.",
+      "Cook until chicken turns tender.",
+      "Finish with curry leaves."
+    ],
+    "ingredients": [
+      {
+        "name": "country chicken",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger garlic paste",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "red chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Country Chicken",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Country Chicken",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Ginger Garlic Paste",
+    "secondaryIngredient2": "Ginger Garlic Paste",
+    "secondary_ingredient_3": "Red Chilli",
+    "secondaryIngredient3": "Red Chilli",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Garam Masala",
+    "secondaryIngredient5": "Garam Masala",
+    "primaryIngredients": [
+      "country chicken",
+      "tamarind"
+    ],
+    "baseIngredient": "country chicken",
+    "base_ingredient": "country chicken",
+    "coreIngredients": [
+      "country chicken",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "country chicken",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "country chicken",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "country chicken",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "ginger garlic paste",
+      "red chilli",
+      "curry leaves",
+      "garam masala",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "ginger garlic paste",
+      "red chilli",
+      "curry leaves",
+      "garam masala",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chicken-curry",
+    "dish_family": "chicken-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Ragi Sangati"
+      ],
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Country Chicken",
+        "Tamarind",
+        "Onion",
+        "Ginger Garlic Paste",
+        "Red Chilli",
+        "Curry Leaves",
+        "Garam Masala",
+        "Oil"
+      ],
+      "steps": [
+        "Brown country chicken with onion and ginger garlic.",
+        "Add chilli, turmeric and spice powder.",
+        "Pour in tamarind water and simmer.",
+        "Cook until chicken turns tender.",
+        "Finish with curry leaves."
+      ],
+      "tip": "Country chicken needs slower cooking; let the pulusu build its body.",
+      "bestWith": [
+        "Ragi Sangati",
+        "Rice"
+      ]
+    },
+    "tomoLine": "Country chicken needs slower cooking; let the pulusu build its body.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "8aace2fe-d791-51ad-ba0b-ec1f8bb669c4",
+    "sourceId": "andhra-telangana-wave-19-chepala-pulusu",
+    "title": "Chepala Pulusu",
+    "name": "Chepala Pulusu",
+    "aliases": [],
+    "description": "A tangy Andhra fish pulusu where tamarind gravy soaks into the fish and rice.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "soul",
+      "comfort",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "spicy",
+      "soul",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Resting helps the fish absorb the tamarind gravy.",
+    "instructions": [
+      "Soak tamarind and extract a strong pulp.",
+      "Simmer onion, tomato and spices into a pulusu base.",
+      "Add fish pieces gently.",
+      "Cook until fish is just done.",
+      "Rest briefly before serving."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "red chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "fenugreek",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": "Red Chilli",
+    "secondaryIngredient3": "Red Chilli",
+    "secondary_ingredient_4": "Fenugreek",
+    "secondaryIngredient4": "Fenugreek",
+    "secondary_ingredient_5": "Curry Leaves",
+    "secondaryIngredient5": "Curry Leaves",
+    "primaryIngredients": [
+      "fish",
+      "tamarind"
+    ],
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "coreIngredients": [
+      "fish",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "fish",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "fish",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "tomato",
+      "red chilli",
+      "fenugreek",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "red chilli",
+      "fenugreek",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fish-curry",
+    "dish_family": "fish-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Fish",
+        "Tamarind",
+        "Onion",
+        "Tomato",
+        "Red Chilli",
+        "Fenugreek",
+        "Curry Leaves",
+        "Oil"
+      ],
+      "steps": [
+        "Soak tamarind and extract a strong pulp.",
+        "Simmer onion, tomato and spices into a pulusu base.",
+        "Add fish pieces gently.",
+        "Cook until fish is just done.",
+        "Rest briefly before serving."
+      ],
+      "tip": "Resting helps the fish absorb the tamarind gravy.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Resting helps the fish absorb the tamarind gravy.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "dd6095c4-b2bd-53ad-aca5-d430376da9cb",
+    "sourceId": "andhra-telangana-wave-20-andhra-fish-fry",
+    "title": "Andhra Fish Fry",
+    "name": "Andhra Fish Fry",
+    "aliases": [],
+    "description": "A chilli-forward Andhra fish fry with crisp edges and a simple rice-plate soul.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch5-fish-fry.png",
+    "image_url": "/assets/images/dishes/batch5-fish-fry.png",
+    "recipeRole": "snack",
+    "tags": [
+      "lunch",
+      "dinner",
+      "snack",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "rainy",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "rainy"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Use medium heat so the masala crisps before it burns.",
+    "instructions": [
+      "Marinate fish with chilli, turmeric, ginger garlic and salt.",
+      "Rest briefly for the masala to cling.",
+      "Dust lightly with rice flour if desired.",
+      "Pan fry until crisp on both sides.",
+      "Serve hot with rice or rasam."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "red chilli",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger garlic paste",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Red Chilli",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Red Chilli",
+    "secondary_ingredient_1": "Ginger Garlic Paste",
+    "secondaryIngredient1": "Ginger Garlic Paste",
+    "secondary_ingredient_2": "Turmeric",
+    "secondaryIngredient2": "Turmeric",
+    "secondary_ingredient_3": "Lemon",
+    "secondaryIngredient3": "Lemon",
+    "secondary_ingredient_4": "Rice Flour",
+    "secondaryIngredient4": "Rice Flour",
+    "secondary_ingredient_5": "Oil",
+    "secondaryIngredient5": "Oil",
+    "primaryIngredients": [
+      "fish",
+      "red chilli"
+    ],
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "coreIngredients": [
+      "fish",
+      "red chilli"
+    ],
+    "core_ingredients": [
+      "fish",
+      "red chilli"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "red chilli"
+    ],
+    "required_ingredients": [
+      "fish",
+      "red chilli"
+    ],
+    "optionalIngredients": [
+      "ginger garlic paste",
+      "turmeric",
+      "lemon",
+      "rice flour",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "ginger garlic paste",
+      "turmeric",
+      "lemon",
+      "rice flour",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fish-fry",
+    "dish_family": "fish-fry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "rainy"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Rasam"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Fish",
+        "Red Chilli",
+        "Ginger Garlic Paste",
+        "Turmeric",
+        "Lemon",
+        "Rice Flour",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Marinate fish with chilli, turmeric, ginger garlic and salt.",
+        "Rest briefly for the masala to cling.",
+        "Dust lightly with rice flour if desired.",
+        "Pan fry until crisp on both sides.",
+        "Serve hot with rice or rasam."
+      ],
+      "tip": "Use medium heat so the masala crisps before it burns.",
+      "bestWith": [
+        "Rice",
+        "Rasam"
+      ]
+    },
+    "tomoLine": "Use medium heat so the masala crisps before it burns.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "b3ae2779-ef54-59d5-b344-31518ecd82ee",
+    "sourceId": "andhra-telangana-wave-21-keema-undalu",
+    "title": "Keema Undalu",
+    "name": "Keema Undalu",
+    "aliases": [],
+    "description": "Spiced Telugu-style keema balls that work as a festive starter or curry-side protein.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/mutton-pulao-homestyle.png",
+    "image_url": "/assets/images/dishes/mutton-pulao-homestyle.png",
+    "recipeRole": "snack",
+    "tags": [
+      "lunch",
+      "dinner",
+      "snack",
+      "non_vegetarian",
+      "protein",
+      "spicy",
+      "festive",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy",
+      "festive"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Chill the mixture briefly so the undalu hold their shape.",
+    "instructions": [
+      "Mix minced meat with onion, chilli, herbs and spices.",
+      "Shape into small balls.",
+      "Steam or shallow fry until set.",
+      "Simmer briefly in masala if desired.",
+      "Serve hot."
+    ],
+    "ingredients": [
+      {
+        "name": "minced mutton",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger garlic paste",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Minced Mutton",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Minced Mutton",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Ginger Garlic Paste",
+    "secondaryIngredient1": "Ginger Garlic Paste",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Garam Masala",
+    "secondaryIngredient3": "Garam Masala",
+    "secondary_ingredient_4": "Coriander",
+    "secondaryIngredient4": "Coriander",
+    "secondary_ingredient_5": "Oil",
+    "secondaryIngredient5": "Oil",
+    "primaryIngredients": [
+      "minced mutton",
+      "onion"
+    ],
+    "baseIngredient": "minced mutton",
+    "base_ingredient": "minced mutton",
+    "coreIngredients": [
+      "minced mutton",
+      "onion"
+    ],
+    "core_ingredients": [
+      "minced mutton",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "minced mutton",
+      "onion"
+    ],
+    "required_ingredients": [
+      "minced mutton",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "ginger garlic paste",
+      "green chilli",
+      "garam masala",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "ginger garlic paste",
+      "green chilli",
+      "garam masala",
+      "coriander",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "meatball",
+    "dish_family": "meatball",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "spicy",
+      "festive"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "roti": [
+        "Roti"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Minced Mutton",
+        "Onion",
+        "Ginger Garlic Paste",
+        "Green Chilli",
+        "Garam Masala",
+        "Coriander",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Mix minced meat with onion, chilli, herbs and spices.",
+        "Shape into small balls.",
+        "Steam or shallow fry until set.",
+        "Simmer briefly in masala if desired.",
+        "Serve hot."
+      ],
+      "tip": "Chill the mixture briefly so the undalu hold their shape.",
+      "bestWith": [
+        "Rice",
+        "Roti"
+      ]
+    },
+    "tomoLine": "Chill the mixture briefly so the undalu hold their shape.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "b5ebd4c5-102c-53fb-b134-d8210df8ad58",
+    "sourceId": "andhra-telangana-wave-23-mutton-keema-curry",
+    "title": "Mutton Keema Curry",
+    "name": "Mutton Keema Curry",
+    "aliases": [],
+    "description": "A homestyle mutton keema curry with onion masala, spice and a soft rice-or-roti finish.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/mutton-pulao-homestyle.png",
+    "image_url": "/assets/images/dishes/mutton-pulao-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "protein",
+      "spicy",
+      "comfort",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Brown the keema well before simmering for deeper flavor.",
+    "instructions": [
+      "Saute onion and ginger garlic until golden.",
+      "Add tomato and spices to make a masala.",
+      "Add keema and cook until browned.",
+      "Simmer with a splash of water until tender.",
+      "Finish thick and serve hot."
+    ],
+    "ingredients": [
+      {
+        "name": "mutton keema",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger garlic paste",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green peas",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Mutton Keema",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Mutton Keema",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Ginger Garlic Paste",
+    "secondaryIngredient2": "Ginger Garlic Paste",
+    "secondary_ingredient_3": "Green Peas",
+    "secondaryIngredient3": "Green Peas",
+    "secondary_ingredient_4": "Garam Masala",
+    "secondaryIngredient4": "Garam Masala",
+    "secondary_ingredient_5": "Oil",
+    "secondaryIngredient5": "Oil",
+    "primaryIngredients": [
+      "mutton keema",
+      "onion"
+    ],
+    "baseIngredient": "mutton keema",
+    "base_ingredient": "mutton keema",
+    "coreIngredients": [
+      "mutton keema",
+      "onion"
+    ],
+    "core_ingredients": [
+      "mutton keema",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "mutton keema",
+      "onion"
+    ],
+    "required_ingredients": [
+      "mutton keema",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "ginger garlic paste",
+      "green peas",
+      "garam masala",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "ginger garlic paste",
+      "green peas",
+      "garam masala",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "mutton-curry",
+    "dish_family": "mutton-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "spicy",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "roti": [
+        "Roti"
+      ],
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Mutton Keema",
+        "Onion",
+        "Tomato",
+        "Ginger Garlic Paste",
+        "Green Peas",
+        "Garam Masala",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Saute onion and ginger garlic until golden.",
+        "Add tomato and spices to make a masala.",
+        "Add keema and cook until browned.",
+        "Simmer with a splash of water until tender.",
+        "Finish thick and serve hot."
+      ],
+      "tip": "Brown the keema well before simmering for deeper flavor.",
+      "bestWith": [
+        "Roti",
+        "Rice"
+      ]
+    },
+    "tomoLine": "Brown the keema well before simmering for deeper flavor.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "aadc73a8-eed2-5308-8640-42f50025eb91",
+    "sourceId": "andhra-telangana-wave-24-pesara-garelu",
+    "title": "Pesara Garelu",
+    "name": "Pesara Garelu",
+    "aliases": [],
+    "description": "Moong dal garelu with crisp edges and a lighter protein-rich snack feel.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "protein",
+      "rainy",
+      "comfort",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "protein",
+      "rainy",
+      "comfort"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Rainy Day",
+    "cookingNotes": "A coarse grind gives better texture than a smooth paste.",
+    "instructions": [
+      "Soak moong dal until soft.",
+      "Grind coarsely with ginger and chilli.",
+      "Mix in onion and curry leaves.",
+      "Shape small vadas.",
+      "Fry until golden and crisp."
+    ],
+    "ingredients": [
+      {
+        "name": "moong dal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Moong Dal",
+    "primary_ingredient_2": "Ginger",
+    "primaryIngredient1": "Moong Dal",
+    "primaryIngredient2": "Ginger",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Onion",
+    "secondaryIngredient2": "Onion",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Salt",
+    "secondaryIngredient5": "Salt",
+    "primaryIngredients": [
+      "moong dal",
+      "ginger"
+    ],
+    "baseIngredient": "moong dal",
+    "base_ingredient": "moong dal",
+    "coreIngredients": [
+      "moong dal",
+      "ginger"
+    ],
+    "core_ingredients": [
+      "moong dal",
+      "ginger"
+    ],
+    "requiredIngredients": [
+      "moong dal",
+      "ginger"
+    ],
+    "required_ingredients": [
+      "moong dal",
+      "ginger"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "onion",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "onion",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "vada",
+    "dish_family": "vada",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "rainy",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Coconut Chutney"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Moong Dal",
+        "Ginger",
+        "Green Chilli",
+        "Onion",
+        "Curry Leaves",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Soak moong dal until soft.",
+        "Grind coarsely with ginger and chilli.",
+        "Mix in onion and curry leaves.",
+        "Shape small vadas.",
+        "Fry until golden and crisp."
+      ],
+      "tip": "A coarse grind gives better texture than a smooth paste.",
+      "bestWith": [
+        "Coconut Chutney"
+      ]
+    },
+    "tomoLine": "A coarse grind gives better texture than a smooth paste.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "b4b1d45a-e80a-59d1-b060-b7fddabeb610",
+    "sourceId": "andhra-telangana-wave-25-minapa-garelu",
+    "title": "Minapa Garelu",
+    "name": "Minapa Garelu",
+    "aliases": [],
+    "description": "Classic urad dal garelu, crisp outside and soft inside, made for chutney or sambar.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "rainy",
+      "comfort",
+      "festive",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "rainy",
+      "comfort",
+      "festive"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Aerate the batter well for lighter garelu.",
+    "instructions": [
+      "Soak urad dal and grind into a fluffy batter.",
+      "Mix in pepper, ginger and curry leaves.",
+      "Shape with a center hole.",
+      "Fry until golden.",
+      "Serve hot."
+    ],
+    "ingredients": [
+      {
+        "name": "urad dal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Urad Dal",
+    "primary_ingredient_2": "Black Pepper",
+    "primaryIngredient1": "Urad Dal",
+    "primaryIngredient2": "Black Pepper",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Ginger",
+    "secondaryIngredient2": "Ginger",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Salt",
+    "secondaryIngredient5": "Salt",
+    "primaryIngredients": [
+      "urad dal",
+      "black pepper"
+    ],
+    "baseIngredient": "urad dal",
+    "base_ingredient": "urad dal",
+    "coreIngredients": [
+      "urad dal",
+      "black pepper"
+    ],
+    "core_ingredients": [
+      "urad dal",
+      "black pepper"
+    ],
+    "requiredIngredients": [
+      "urad dal",
+      "black pepper"
+    ],
+    "required_ingredients": [
+      "urad dal",
+      "black pepper"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "ginger",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "ginger",
+      "curry leaves",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "vada",
+    "dish_family": "vada",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "rainy",
+      "comfort",
+      "festive"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Coconut Chutney"
+      ],
+      "sides": [
+        "Sambar"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Urad Dal",
+        "Black Pepper",
+        "Green Chilli",
+        "Ginger",
+        "Curry Leaves",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Soak urad dal and grind into a fluffy batter.",
+        "Mix in pepper, ginger and curry leaves.",
+        "Shape with a center hole.",
+        "Fry until golden.",
+        "Serve hot."
+      ],
+      "tip": "Aerate the batter well for lighter garelu.",
+      "bestWith": [
+        "Coconut Chutney",
+        "Sambar"
+      ]
+    },
+    "tomoLine": "Aerate the batter well for lighter garelu.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "a09d0479-f5b0-595b-a5e1-78cede53b2df",
+    "sourceId": "andhra-telangana-wave-26-ariselu",
+    "title": "Ariselu",
+    "name": "Ariselu",
+    "aliases": [],
+    "description": "A festive Telugu jaggery-rice sweet with sesame and a chewy-crisp bite.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/festival-food.webp",
+    "image_url": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "festive",
+      "soul",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "festive",
+      "soul"
+    ],
+    "mealTags": [
+      "dessert"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "The jaggery syrup stage decides the texture; keep it soft-ball, not hard.",
+    "instructions": [
+      "Make a soft syrup with jaggery.",
+      "Mix in rice flour to form dough.",
+      "Shape into discs and press with sesame.",
+      "Fry gently until deep golden.",
+      "Drain and cool."
+    ],
+    "ingredients": [
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "jaggery",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sesame seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice Flour",
+    "primary_ingredient_2": "Jaggery",
+    "primaryIngredient1": "Rice Flour",
+    "primaryIngredient2": "Jaggery",
+    "secondary_ingredient_1": "Sesame Seeds",
+    "secondaryIngredient1": "Sesame Seeds",
+    "secondary_ingredient_2": "Ghee",
+    "secondaryIngredient2": "Ghee",
+    "secondary_ingredient_3": "Oil",
+    "secondaryIngredient3": "Oil",
+    "secondary_ingredient_4": "Cardamom",
+    "secondaryIngredient4": "Cardamom",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "baseIngredient": "rice flour",
+    "base_ingredient": "rice flour",
+    "coreIngredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "core_ingredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "requiredIngredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "required_ingredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "optionalIngredients": [
+      "sesame seeds",
+      "ghee",
+      "oil",
+      "cardamom"
+    ],
+    "optional_ingredients": [
+      "sesame seeds",
+      "ghee",
+      "oil",
+      "cardamom"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "sweet",
+    "dish_family": "sweet",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Filter Coffee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "20 min",
+      "cookTime": "30 min",
+      "ingredients": [
+        "Rice Flour",
+        "Jaggery",
+        "Sesame Seeds",
+        "Ghee",
+        "Oil",
+        "Cardamom"
+      ],
+      "steps": [
+        "Make a soft syrup with jaggery.",
+        "Mix in rice flour to form dough.",
+        "Shape into discs and press with sesame.",
+        "Fry gently until deep golden.",
+        "Drain and cool."
+      ],
+      "tip": "The jaggery syrup stage decides the texture; keep it soft-ball, not hard.",
+      "bestWith": [
+        "Filter Coffee"
+      ]
+    },
+    "tomoLine": "The jaggery syrup stage decides the texture; keep it soft-ball, not hard.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "9510fd17-9219-5797-bc15-286d81fabc48",
+    "sourceId": "andhra-telangana-wave-27-bobbatlu",
+    "title": "Bobbatlu",
+    "name": "Bobbatlu",
+    "aliases": [],
+    "description": "Telugu festival sweet flatbreads filled with chana dal and jaggery, best with ghee.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/festival-food.webp",
+    "image_url": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "festive",
+      "soul",
+      "comfort",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "festive",
+      "soul",
+      "comfort"
+    ],
+    "mealTags": [
+      "dessert"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Keep the filling dry enough so the bobbatlu roll without tearing.",
+    "instructions": [
+      "Cook chana dal until soft and drain well.",
+      "Mash with jaggery and cardamom into a filling.",
+      "Rest the outer dough with oil.",
+      "Stuff and roll gently.",
+      "Cook on a tawa with ghee."
+    ],
+    "ingredients": [
+      {
+        "name": "chana dal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "jaggery",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "maida",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chana Dal",
+    "primary_ingredient_2": "Jaggery",
+    "primaryIngredient1": "Chana Dal",
+    "primaryIngredient2": "Jaggery",
+    "secondary_ingredient_1": "Maida",
+    "secondaryIngredient1": "Maida",
+    "secondary_ingredient_2": "Cardamom",
+    "secondaryIngredient2": "Cardamom",
+    "secondary_ingredient_3": "Ghee",
+    "secondaryIngredient3": "Ghee",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Salt",
+    "secondaryIngredient5": "Salt",
+    "primaryIngredients": [
+      "chana dal",
+      "jaggery"
+    ],
+    "baseIngredient": "chana dal",
+    "base_ingredient": "chana dal",
+    "coreIngredients": [
+      "chana dal",
+      "jaggery"
+    ],
+    "core_ingredients": [
+      "chana dal",
+      "jaggery"
+    ],
+    "requiredIngredients": [
+      "chana dal",
+      "jaggery"
+    ],
+    "required_ingredients": [
+      "chana dal",
+      "jaggery"
+    ],
+    "optionalIngredients": [
+      "maida",
+      "cardamom",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "maida",
+      "cardamom",
+      "ghee",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "sweet-flatbread",
+    "dish_family": "sweet-flatbread",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "toppings": [
+        "Ghee"
+      ],
+      "drinks": [
+        "Milk"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "20 min",
+      "cookTime": "30 min",
+      "ingredients": [
+        "Chana Dal",
+        "Jaggery",
+        "Maida",
+        "Cardamom",
+        "Ghee",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Cook chana dal until soft and drain well.",
+        "Mash with jaggery and cardamom into a filling.",
+        "Rest the outer dough with oil.",
+        "Stuff and roll gently.",
+        "Cook on a tawa with ghee."
+      ],
+      "tip": "Keep the filling dry enough so the bobbatlu roll without tearing.",
+      "bestWith": [
+        "Ghee",
+        "Milk"
+      ]
+    },
+    "tomoLine": "Keep the filling dry enough so the bobbatlu roll without tearing.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "2d85811b-63ba-5394-b894-e6253c69ec16",
+    "sourceId": "andhra-telangana-wave-28-pachi-pulusu",
+    "title": "Pachi Pulusu",
+    "name": "Pachi Pulusu",
+    "aliases": [],
+    "description": "A raw, cooling Telugu tamarind pulusu mixed without cooking for hot-day rice plates.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "summer",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort",
+      "summer"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": true,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Serve fresh so the onion stays crisp and bright.",
+    "instructions": [
+      "Soak tamarind and extract a thin pulp.",
+      "Add chopped onion, chilli and coriander.",
+      "Balance with jaggery and salt.",
+      "Crush cumin and stir in.",
+      "Serve immediately with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Tamarind",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Tamarind",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Jaggery",
+    "secondaryIngredient2": "Jaggery",
+    "secondary_ingredient_3": "Coriander",
+    "secondaryIngredient3": "Coriander",
+    "secondary_ingredient_4": "Cumin",
+    "secondaryIngredient4": "Cumin",
+    "secondary_ingredient_5": "Salt",
+    "secondaryIngredient5": "Salt",
+    "primaryIngredients": [
+      "tamarind",
+      "onion"
+    ],
+    "baseIngredient": "tamarind",
+    "base_ingredient": "tamarind",
+    "coreIngredients": [
+      "tamarind",
+      "onion"
+    ],
+    "core_ingredients": [
+      "tamarind",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "tamarind",
+      "onion"
+    ],
+    "required_ingredients": [
+      "tamarind",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "jaggery",
+      "coriander",
+      "cumin",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "jaggery",
+      "coriander",
+      "cumin",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pulusu",
+    "dish_family": "pulusu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "comfort",
+      "summer"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Tamarind",
+        "Onion",
+        "Green Chilli",
+        "Jaggery",
+        "Coriander",
+        "Cumin",
+        "Salt"
+      ],
+      "steps": [
+        "Soak tamarind and extract a thin pulp.",
+        "Add chopped onion, chilli and coriander.",
+        "Balance with jaggery and salt.",
+        "Crush cumin and stir in.",
+        "Serve immediately with rice."
+      ],
+      "tip": "Serve fresh so the onion stays crisp and bright.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Serve fresh so the onion stays crisp and bright.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "4b9b4e17-e65a-575f-8ff6-bf562e3fa03e",
+    "sourceId": "andhra-telangana-wave-30-beerakaya-pappu",
+    "title": "Beerakaya Pappu",
+    "name": "Beerakaya Pappu",
+    "aliases": [],
+    "description": "A gentle ridge gourd pappu with soft vegetable sweetness and everyday comfort.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Andhra & Telangana",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3b-dosakaya-pappu.png",
+    "image_url": "/assets/images/dishes/batch3b-dosakaya-pappu.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "quick",
+      "andhra-telangana",
+      "telugu"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "quick"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Use tender ridge gourd for a naturally sweet pappu.",
+    "instructions": [
+      "Cook toor dal with chopped ridge gourd and turmeric.",
+      "Mash until creamy but still textured.",
+      "Simmer with chilli and salt.",
+      "Temper garlic, mustard and curry leaves.",
+      "Serve warm with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "ridge gourd",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "toor dal",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Ridge Gourd",
+    "primary_ingredient_2": "Toor Dal",
+    "primaryIngredient1": "Ridge Gourd",
+    "primaryIngredient2": "Toor Dal",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Garlic",
+    "secondaryIngredient2": "Garlic",
+    "secondary_ingredient_3": "Turmeric",
+    "secondaryIngredient3": "Turmeric",
+    "secondary_ingredient_4": "Mustard Seeds",
+    "secondaryIngredient4": "Mustard Seeds",
+    "secondary_ingredient_5": "Curry Leaves",
+    "secondaryIngredient5": "Curry Leaves",
+    "primaryIngredients": [
+      "ridge gourd",
+      "toor dal"
+    ],
+    "baseIngredient": "ridge gourd",
+    "base_ingredient": "ridge gourd",
+    "coreIngredients": [
+      "ridge gourd",
+      "toor dal"
+    ],
+    "core_ingredients": [
+      "ridge gourd",
+      "toor dal"
+    ],
+    "requiredIngredients": [
+      "ridge gourd",
+      "toor dal"
+    ],
+    "required_ingredients": [
+      "ridge gourd",
+      "toor dal"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "garlic",
+      "turmeric",
+      "mustard seeds",
+      "curry leaves",
+      "ghee",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "garlic",
+      "turmeric",
+      "mustard seeds",
+      "curry leaves",
+      "ghee",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pappu",
+    "dish_family": "pappu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra & Telangana",
+        "Telugu"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "toppings": [
+        "Papad"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Ridge Gourd",
+        "Toor Dal",
+        "Green Chilli",
+        "Garlic",
+        "Turmeric",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Ghee"
+      ],
+      "steps": [
+        "Cook toor dal with chopped ridge gourd and turmeric.",
+        "Mash until creamy but still textured.",
+        "Simmer with chilli and salt.",
+        "Temper garlic, mustard and curry leaves.",
+        "Serve warm with rice."
+      ],
+      "tip": "Use tender ridge gourd for a naturally sweet pappu.",
+      "bestWith": [
+        "Rice",
+        "Papad"
+      ]
+    },
+    "tomoLine": "Use tender ridge gourd for a naturally sweet pappu.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
     }
   }
 ];
