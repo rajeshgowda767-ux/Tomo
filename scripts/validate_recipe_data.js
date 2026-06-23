@@ -6,6 +6,7 @@ const baselinePath = path.join(root, 'validation', 'beta-2-recipe-baseline.json'
 const recipesPath = path.join(root, 'database', 'generated', 'recipes.json');
 const reportJsonPath = path.join(root, 'validation', 'recipe-validation-report.json');
 const reportMarkdownPath = path.join(root, 'validation', 'recipe-validation-report.md');
+const { COLLECTIONS_BY_HUB } = require('./generate_collection_home.js');
 
 const STATUS_RANK = { PASS: 0, WARNING: 1, FAIL: 2 };
 
@@ -27,6 +28,105 @@ const metricDefinitions = [
   { key: 'dishFamilyCoverage', label: 'Dish family coverage', blocker: false, kind: 'coverage' },
   { key: 'schemaFieldCount', label: 'Schema field count', blocker: true, kind: 'schema' },
 ];
+
+function collectionHomeDiagnostics(recipes) {
+  const allowedHubs = new Set(Object.keys(COLLECTIONS_BY_HUB));
+  const collectionCounts = {};
+  const missing = [];
+  const invalid = [];
+  const withSubcollection = [];
+  let collectionHomeCount = 0;
+
+  recipes.forEach((recipe, index) => {
+    const label = recipe.title || recipe.name || recipe.id || `recipe at index ${index}`;
+    const home = recipe.collectionHome;
+    if (!home || typeof home !== 'object' || Array.isArray(home)) {
+      missing.push(label);
+      return;
+    }
+
+    collectionHomeCount += 1;
+    if (Object.hasOwn(home, 'subcollection')) {
+      withSubcollection.push(label);
+    }
+
+    const allowedCollections = COLLECTIONS_BY_HUB[home.hub];
+    if (!allowedHubs.has(home.hub)) {
+      invalid.push(`${label}: unknown hub "${home.hub}"`);
+      return;
+    }
+    if (!allowedCollections.includes(home.collection)) {
+      invalid.push(`${label}: collection "${home.collection}" is not allowed under "${home.hub}"`);
+      return;
+    }
+
+    const key = `${home.hub} > ${home.collection}`;
+    collectionCounts[key] = (collectionCounts[key] || 0) + 1;
+  });
+
+  const sizeWarnings = Object.entries(collectionCounts)
+    .filter(([, count]) => count < 8 || count > 60)
+    .map(([collection, count]) => ({
+      collection,
+      count,
+      reason: count < 8 ? 'fewer than 8 recipes' : 'more than 60 recipes',
+    }));
+
+  return {
+    collectionHomeCount,
+    collectionCounts: Object.fromEntries(
+      Object.entries(collectionCounts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    ),
+    missing,
+    invalid,
+    withSubcollection,
+    sizeWarnings,
+  };
+}
+
+function collectionHomeChecks(recipes) {
+  const diagnostics = collectionHomeDiagnostics(recipes);
+  const checks = [
+    {
+      metric: 'collectionHomeCoverage',
+      label: 'Collection home coverage',
+      baseline: recipes.length,
+      current: diagnostics.collectionHomeCount,
+      delta: diagnostics.collectionHomeCount - recipes.length,
+      releaseBlocker: true,
+      status: diagnostics.collectionHomeCount === recipes.length ? 'PASS' : 'FAIL',
+      message: diagnostics.collectionHomeCount === recipes.length
+        ? 'Every recipe has a collectionHome.'
+        : `${recipes.length - diagnostics.collectionHomeCount} recipes are missing collectionHome.`,
+    },
+    {
+      metric: 'collectionHomeValidity',
+      label: 'Collection home hub/collection validity',
+      baseline: 0,
+      current: diagnostics.invalid.length,
+      delta: diagnostics.invalid.length,
+      releaseBlocker: true,
+      status: diagnostics.invalid.length === 0 ? 'PASS' : 'FAIL',
+      message: diagnostics.invalid.length === 0
+        ? 'All collectionHome values use frozen hubs and allowed collections.'
+        : `${diagnostics.invalid.length} recipes have invalid hub/collection values.`,
+    },
+    {
+      metric: 'collectionHomeNoSubcollection',
+      label: 'No stored collection subcollection',
+      baseline: 0,
+      current: diagnostics.withSubcollection.length,
+      delta: diagnostics.withSubcollection.length,
+      releaseBlocker: true,
+      status: diagnostics.withSubcollection.length === 0 ? 'PASS' : 'FAIL',
+      message: diagnostics.withSubcollection.length === 0
+        ? 'No recipe stores collectionHome.subcollection.'
+        : `${diagnostics.withSubcollection.length} recipes store collectionHome.subcollection.`,
+    },
+  ];
+
+  return { checks, diagnostics };
+}
 
 function readJson(filePath, label) {
   if (!fs.existsSync(filePath)) {
@@ -200,6 +300,13 @@ function markdownReport(report) {
     findings.forEach((check) => lines.push(`- **${check.status} — ${check.label}:** ${check.message}`));
   }
 
+  if (report.collectionHome?.sizeWarnings?.length) {
+    lines.push('', '## Collection home warnings', '');
+    report.collectionHome.sizeWarnings.forEach((warning) => {
+      lines.push(`- ${warning.collection}: ${warning.count} recipes (${warning.reason})`);
+    });
+  }
+
   lines.push(
     '',
     '## Release decision',
@@ -252,7 +359,9 @@ function validateRecipeData() {
   }
 
   const current = calculateMetrics(recipes);
-  const checks = metricDefinitions.map((definition) => validateMetric(definition, baseline, current));
+  const baseChecks = metricDefinitions.map((definition) => validateMetric(definition, baseline, current));
+  const collectionHome = collectionHomeChecks(recipes);
+  const checks = [...baseChecks, ...collectionHome.checks];
   const status = overallStatus(checks);
   const summary = checks.reduce(
     (counts, check) => {
@@ -274,6 +383,7 @@ function validateRecipeData() {
     summary,
     baselineMetrics: Object.fromEntries(metricDefinitions.map(({ key }) => [key, baseline[key]])),
     currentMetrics: current,
+    collectionHome: collectionHome.diagnostics,
     checks,
   };
 
@@ -303,5 +413,6 @@ if (require.main === module) {
 
 module.exports = {
   calculateMetrics,
+  collectionHomeDiagnostics,
   validateRecipeData,
 };

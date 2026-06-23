@@ -215,7 +215,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "01f4b24d-dd4b-5082-968c-f962f478347f",
@@ -433,7 +437,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/recommendation-pack-aloo-jeera.png"
+    "image_url": "/assets/images/dishes/recommendation-pack-aloo-jeera.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "pantry-aloo-rice",
@@ -693,7 +701,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "pantry-milk-toast",
@@ -878,7 +890,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "pantry-aloo-capsicum-sabzi",
@@ -1099,7 +1115,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "7f5cea1c-ca9d-5adb-a77b-ddab3402bdee",
@@ -1275,7 +1295,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "bcb89dfd-67a7-5a1c-bd3f-837228bd2a76",
@@ -1481,7 +1505,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "f12daeef-f40b-57e9-9b62-f1074e69f5d6",
@@ -1677,7 +1705,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "eac23e09-f8ae-56e9-b0cf-6451426f8a62",
@@ -1874,7 +1906,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ],
       "toppings": []
     },
-    "image_url": "/assets/images/dishes/recommendation-pack-andhra-chicken-curry.png"
+    "image_url": "/assets/images/dishes/recommendation-pack-andhra-chicken-curry.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
   },
   {
     "id": "86c21ea4-cfdd-5212-9b78-0c53ea1d88c7",
@@ -2075,7 +2111,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ],
       "toppings": []
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
   },
   {
     "id": "aef4a9e5-779b-58c1-b71d-9d7061d884d3",
@@ -2279,6 +2319,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Buttermilk",
         "Steamed rice"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
     }
   },
   {
@@ -2483,6 +2527,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Coconut chutney",
         "Sambar"
       ]
+    },
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Chutneys, Podis & Condiments"
     }
   },
   {
@@ -2686,7 +2734,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
   },
   {
     "id": "9c8a6733-ecd6-5340-8030-896f40b4f119",
@@ -2844,6 +2896,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Light snacks"
       ]
+    },
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
     }
   },
   {
@@ -3050,7 +3106,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    }
   },
   {
     "id": "cb7e1bda-4c58-563b-bcd3-3dde4ce33b3f",
@@ -3214,7 +3274,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "5ade76aa-ac77-51d8-b2bc-4e9b81e076ed",
@@ -3418,7 +3482,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "1d89fa14-6ae8-5b16-bcba-1cd24aee1546",
@@ -3622,7 +3690,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "31f31265-4d37-5aa0-84c1-279cac18eb24",
@@ -3827,7 +3899,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    }
   },
   {
     "id": "76847d05-3c02-566e-9fbc-46a29ca6f8fb",
@@ -4043,6 +4119,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Sev",
         "Lemon"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
     }
   },
   {
@@ -4254,7 +4334,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Curd rice"
       ]
     },
-    "tomoLine": "Cook the beans just tender so the poriyal stays bright."
+    "tomoLine": "Cook the beans just tender so the poriyal stays bright.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "d430dbf4-9afe-59bb-ac27-17a06be75396",
@@ -4457,7 +4541,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "tomoLine": "Fine-cut beans cook faster and taste better."
+    "tomoLine": "Fine-cut beans cook faster and taste better.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "6f1e3ece-4e4a-5b5c-821d-766ae991121c",
@@ -4652,23 +4740,2318 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
-  {"id":"karnataka-wave-a-ragi-mudde","sourceId":"karnataka-wave-a-ragi-mudde","title":"Ragi Mudde","name":"Ragi Mudde","aliases":[],"description":"Karnataka Wave A recipe for Ragi Mudde, added to deepen regional coverage for Old Mysore / Rural Karnataka.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"main","tags":["lunch","dinner","vegetarian","comfort","soul-food","protein","karnataka","old-mysore","rural-karnataka"],"moodTags":["comfort","soul","protein"],"mealTags":["lunch","dinner"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["ragi flour","water"],"coreIngredients":["ragi flour","water"],"core_ingredients":["ragi flour","water"],"requiredIngredients":["ragi flour","water"],"required_ingredients":["ragi flour","water"],"optionalIngredients":["ghee","salt"],"optional_ingredients":["ghee","salt"],"baseIngredient":"ragi flour","base_ingredient":"ragi flour","ingredients":[{"name":"ragi flour","role":"required","isMain":true},{"name":"water","role":"required","isMain":true},{"name":"ghee","role":"optional","isMain":false},{"name":"salt","role":"optional","isMain":false}],"dishFamily":"millet-ball","dish_family":"millet-ball","regionTags":{"region":["South India","Karnataka"],"subRegion":["Old Mysore","Rural Karnataka"],"cuisine":["Karnataka"]},"pairings":{"sides":["Soppu Saaru","Bassaru"],"toppings":["Ghee"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["ragi flour","water","ghee","salt"],"steps":["Prep the ragi flour and water.","Cook with ghee and salt until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Ragi Mudde simple and homestyle for a Karnataka plate.","bestWith":["Soppu Saaru","Bassaru","Ghee"]},"tomoLine":"Keep Ragi Mudde simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-jolada-rotti","sourceId":"karnataka-wave-a-jolada-rotti","title":"Jolada Rotti","name":"Jolada Rotti","aliases":[],"description":"Karnataka Wave A recipe for Jolada Rotti, added to deepen regional coverage for North Karnataka.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"main","tags":["lunch","dinner","vegetarian","comfort","soul-food","karnataka","north-karnataka"],"moodTags":["comfort","soul"],"mealTags":["lunch","dinner"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["jowar flour","water"],"coreIngredients":["jowar flour","water"],"core_ingredients":["jowar flour","water"],"requiredIngredients":["jowar flour","water"],"required_ingredients":["jowar flour","water"],"optionalIngredients":["ghee","salt"],"optional_ingredients":["ghee","salt"],"baseIngredient":"jowar flour","base_ingredient":"jowar flour","ingredients":[{"name":"jowar flour","role":"required","isMain":true},{"name":"water","role":"required","isMain":true},{"name":"ghee","role":"optional","isMain":false},{"name":"salt","role":"optional","isMain":false}],"dishFamily":"rotti","dish_family":"rotti","regionTags":{"region":["South India","Karnataka"],"subRegion":["North Karnataka"],"cuisine":["Karnataka"]},"pairings":{"sides":["Badanekayi Ennegayi","Shenga chutney"],"drinks":["Buttermilk"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["jowar flour","water","ghee","salt"],"steps":["Prep the jowar flour and water.","Cook with ghee and salt until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Jolada Rotti simple and homestyle for a Karnataka plate.","bestWith":["Badanekayi Ennegayi","Shenga chutney","Buttermilk"]},"tomoLine":"Keep Jolada Rotti simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-ragi-rotti","sourceId":"karnataka-wave-a-ragi-rotti","title":"Ragi Rotti","name":"Ragi Rotti","aliases":[],"description":"Karnataka Wave A recipe for Ragi Rotti, added to deepen regional coverage for Old Mysore / Rural Karnataka.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"main","tags":["breakfast","dinner","vegetarian","comfort","soul-food","protein","karnataka","old-mysore","rural-karnataka"],"moodTags":["comfort","soul","protein"],"mealTags":["breakfast","dinner"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["ragi flour","onion"],"coreIngredients":["ragi flour","onion"],"core_ingredients":["ragi flour","onion"],"requiredIngredients":["ragi flour","onion"],"required_ingredients":["ragi flour","onion"],"optionalIngredients":["coconut","green chilli","coriander","salt"],"optional_ingredients":["coconut","green chilli","coriander","salt"],"baseIngredient":"ragi flour","base_ingredient":"ragi flour","ingredients":[{"name":"ragi flour","role":"required","isMain":true},{"name":"onion","role":"required","isMain":true},{"name":"coconut","role":"optional","isMain":false},{"name":"green chilli","role":"optional","isMain":false},{"name":"coriander","role":"optional","isMain":false},{"name":"salt","role":"optional","isMain":false}],"dishFamily":"rotti","dish_family":"rotti","regionTags":{"region":["South India","Karnataka"],"subRegion":["Old Mysore","Rural Karnataka"],"cuisine":["Karnataka"]},"pairings":{"chutneys":["Coconut chutney"],"sides":["Curd"],"toppings":["Ghee"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["ragi flour","onion","coconut","green chilli","coriander","salt"],"steps":["Prep the ragi flour and onion.","Cook with coconut and green chilli until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Ragi Rotti simple and homestyle for a Karnataka plate.","bestWith":["Coconut chutney","Curd","Ghee"]},"tomoLine":"Keep Ragi Rotti simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-thatte-idli","sourceId":"karnataka-wave-a-thatte-idli","title":"Thatte Idli","name":"Thatte Idli","aliases":[],"description":"Karnataka Wave A recipe for Thatte Idli, added to deepen regional coverage for Bengaluru / Old Mysore.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"main","tags":["breakfast","vegetarian","comfort","soul-food","light","karnataka","bengaluru","old-mysore"],"moodTags":["comfort","soul","light"],"mealTags":["breakfast"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["idli batter"],"coreIngredients":["idli batter"],"core_ingredients":["idli batter"],"requiredIngredients":["idli batter"],"required_ingredients":["idli batter"],"optionalIngredients":["ghee"],"optional_ingredients":["ghee"],"baseIngredient":"idli batter","base_ingredient":"idli batter","ingredients":[{"name":"idli batter","role":"required","isMain":true},{"name":"ghee","role":"optional","isMain":false}],"dishFamily":"idli","dish_family":"idli","regionTags":{"region":["South India","Karnataka"],"subRegion":["Bengaluru","Old Mysore"],"cuisine":["Karnataka"]},"pairings":{"chutneys":["Coconut chutney"],"sides":["Sambar"],"drinks":["Filter coffee"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["idli batter","ghee"],"steps":["Prep the idli batter.","Cook with ghee until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Thatte Idli simple and homestyle for a Karnataka plate.","bestWith":["Coconut chutney","Sambar","Filter coffee"]},"tomoLine":"Keep Thatte Idli simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-davangere-benne-dosa","sourceId":"karnataka-wave-a-davangere-benne-dosa","title":"Davangere Benne Dosa","name":"Davangere Benne Dosa","aliases":[],"description":"Karnataka Wave A recipe for Davangere Benne Dosa, added to deepen regional coverage for Central Karnataka.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"main","tags":["breakfast","dinner","vegetarian","comfort","karnataka","central-karnataka"],"moodTags":["comfort"],"mealTags":["breakfast","dinner"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["dosa batter","butter"],"coreIngredients":["dosa batter","butter"],"core_ingredients":["dosa batter","butter"],"requiredIngredients":["dosa batter","butter"],"required_ingredients":["dosa batter","butter"],"optionalIngredients":["potato palya"],"optional_ingredients":["potato palya"],"baseIngredient":"dosa batter","base_ingredient":"dosa batter","ingredients":[{"name":"dosa batter","role":"required","isMain":true},{"name":"butter","role":"required","isMain":true},{"name":"potato palya","role":"optional","isMain":false}],"dishFamily":"dosa","dish_family":"dosa","regionTags":{"region":["South India","Karnataka"],"subRegion":["Central Karnataka"],"cuisine":["Karnataka"]},"pairings":{"chutneys":["Coconut chutney"],"sides":["Potato palya"],"drinks":["Filter coffee"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["dosa batter","butter","potato palya"],"steps":["Prep the dosa batter and butter.","Cook with potato palya until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Davangere Benne Dosa simple and homestyle for a Karnataka plate.","bestWith":["Coconut chutney","Potato palya","Filter coffee"]},"tomoLine":"Keep Davangere Benne Dosa simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-chow-chow-bath","sourceId":"karnataka-wave-a-chow-chow-bath","title":"Chow Chow Bath","name":"Chow Chow Bath","aliases":[],"description":"Karnataka Wave A recipe for Chow Chow Bath, added to deepen regional coverage for Bengaluru / Old Mysore.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"main","tags":["breakfast","vegetarian","comfort","soul-food","karnataka","bengaluru","old-mysore"],"moodTags":["comfort","soul"],"mealTags":["breakfast"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["rava","sugar"],"coreIngredients":["rava","sugar"],"core_ingredients":["rava","sugar"],"requiredIngredients":["rava","sugar"],"required_ingredients":["rava","sugar"],"optionalIngredients":["vegetables","ghee","cashews"],"optional_ingredients":["vegetables","ghee","cashews"],"baseIngredient":"rava","base_ingredient":"rava","ingredients":[{"name":"rava","role":"required","isMain":true},{"name":"sugar","role":"required","isMain":true},{"name":"vegetables","role":"optional","isMain":false},{"name":"ghee","role":"optional","isMain":false},{"name":"cashews","role":"optional","isMain":false}],"dishFamily":"breakfast-combo","dish_family":"breakfast-combo","regionTags":{"region":["South India","Karnataka"],"subRegion":["Bengaluru","Old Mysore"],"cuisine":["Karnataka"]},"pairings":{"chutneys":["Coconut chutney"],"drinks":["Filter coffee"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["rava","sugar","vegetables","ghee","cashews"],"steps":["Prep the rava and sugar.","Cook with vegetables and ghee until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Chow Chow Bath simple and homestyle for a Karnataka plate.","bestWith":["Coconut chutney","Filter coffee"]},"tomoLine":"Keep Chow Chow Bath simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-vangi-bath","sourceId":"karnataka-wave-a-vangi-bath","title":"Vangi Bath","name":"Vangi Bath","aliases":[],"description":"Karnataka Wave A recipe for Vangi Bath, added to deepen regional coverage for Bengaluru / Old Mysore.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"main","tags":["lunch","dinner","vegetarian","quick","comfort","soul-food","karnataka","bengaluru","old-mysore"],"moodTags":["quick","comfort","soul"],"mealTags":["lunch","dinner"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["rice","brinjal"],"coreIngredients":["rice","brinjal"],"core_ingredients":["rice","brinjal"],"requiredIngredients":["rice","brinjal"],"required_ingredients":["rice","brinjal"],"optionalIngredients":["vangi bath powder","peanuts","tamarind"],"optional_ingredients":["vangi bath powder","peanuts","tamarind"],"baseIngredient":"rice","base_ingredient":"rice","ingredients":[{"name":"rice","role":"required","isMain":true},{"name":"brinjal","role":"required","isMain":true},{"name":"vangi bath powder","role":"optional","isMain":false},{"name":"peanuts","role":"optional","isMain":false},{"name":"tamarind","role":"optional","isMain":false}],"dishFamily":"rice","dish_family":"rice","regionTags":{"region":["South India","Karnataka"],"subRegion":["Bengaluru","Old Mysore"],"cuisine":["Karnataka"]},"pairings":{"sides":["Raita","Papad"],"drinks":["Buttermilk"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["rice","brinjal","vangi bath powder","peanuts","tamarind"],"steps":["Prep the rice and brinjal.","Cook with vangi bath powder and peanuts until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Vangi Bath simple and homestyle for a Karnataka plate.","bestWith":["Raita","Papad","Buttermilk"]},"tomoLine":"Keep Vangi Bath simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-majjige-huli","sourceId":"karnataka-wave-a-majjige-huli","title":"Majjige Huli","name":"Majjige Huli","aliases":[],"description":"Karnataka Wave A recipe for Majjige Huli, added to deepen regional coverage for Old Mysore / Malnad.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"side","tags":["lunch","dinner","vegetarian","comfort","light","soul-food","karnataka","old-mysore","malnad"],"moodTags":["comfort","light","soul"],"mealTags":["lunch","dinner"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":false,"minimalCleanup":true,"primaryIngredients":["curd","ash gourd"],"coreIngredients":["curd","ash gourd"],"core_ingredients":["curd","ash gourd"],"requiredIngredients":["curd","ash gourd"],"required_ingredients":["curd","ash gourd"],"optionalIngredients":["coconut","green chilli","cumin","curry leaves"],"optional_ingredients":["coconut","green chilli","cumin","curry leaves"],"baseIngredient":"curd","base_ingredient":"curd","ingredients":[{"name":"curd","role":"required","isMain":true},{"name":"ash gourd","role":"required","isMain":true},{"name":"coconut","role":"optional","isMain":false},{"name":"green chilli","role":"optional","isMain":false},{"name":"cumin","role":"optional","isMain":false},{"name":"curry leaves","role":"optional","isMain":false}],"dishFamily":"yogurt-curry","dish_family":"yogurt-curry","regionTags":{"region":["South India","Karnataka"],"subRegion":["Old Mysore","Malnad"],"cuisine":["Karnataka"]},"pairings":{"rice":["Steamed rice"],"sides":["Palya"],"toppings":["Ghee"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["curd","ash gourd","coconut","green chilli","cumin","curry leaves"],"steps":["Prep the curd and ash gourd.","Cook with coconut and green chilli until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Majjige Huli simple and homestyle for a Karnataka plate.","bestWith":["Steamed rice","Palya","Ghee"]},"tomoLine":"Keep Majjige Huli simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-udupi-sambar","sourceId":"karnataka-wave-a-udupi-sambar","title":"Udupi Sambar","name":"Udupi Sambar","aliases":[],"description":"Karnataka Wave A recipe for Udupi Sambar, added to deepen regional coverage for Coastal Karnataka / Udupi.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/collections/soups.webp","image_url":"/assets/images/collections/soups.webp","recipeRole":"soup","tags":["lunch","dinner","vegetarian","comfort","soul-food","protein","karnataka","coastal-karnataka","udupi"],"moodTags":["comfort","soul","protein"],"mealTags":["lunch","dinner"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":false,"minimalCleanup":true,"primaryIngredients":["toor dal","vegetables"],"coreIngredients":["toor dal","vegetables"],"core_ingredients":["toor dal","vegetables"],"requiredIngredients":["toor dal","vegetables"],"required_ingredients":["toor dal","vegetables"],"optionalIngredients":["sambar powder","tamarind","jaggery","coconut"],"optional_ingredients":["sambar powder","tamarind","jaggery","coconut"],"baseIngredient":"toor dal","base_ingredient":"toor dal","ingredients":[{"name":"toor dal","role":"required","isMain":true},{"name":"vegetables","role":"required","isMain":true},{"name":"sambar powder","role":"optional","isMain":false},{"name":"tamarind","role":"optional","isMain":false},{"name":"jaggery","role":"optional","isMain":false},{"name":"coconut","role":"optional","isMain":false}],"dishFamily":"sambar","dish_family":"sambar","regionTags":{"region":["South India","Karnataka"],"subRegion":["Coastal Karnataka","Udupi"],"cuisine":["Karnataka"]},"pairings":{"rice":["Steamed rice"],"sides":["Idli","Dosa"],"toppings":["Ghee"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["toor dal","vegetables","sambar powder","tamarind","jaggery","coconut"],"steps":["Prep the toor dal and vegetables.","Cook with sambar powder and tamarind until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Udupi Sambar simple and homestyle for a Karnataka plate.","bestWith":["Steamed rice","Idli","Dosa","Ghee"]},"tomoLine":"Keep Udupi Sambar simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-mangalore-goli-baje","sourceId":"karnataka-wave-a-mangalore-goli-baje","title":"Mangalore Goli Baje","name":"Mangalore Goli Baje","aliases":[],"description":"Karnataka Wave A recipe for Mangalore Goli Baje, added to deepen regional coverage for Coastal Karnataka / Mangaluru.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"snack","tags":["snack","vegetarian","rainy","comfort","karnataka","coastal-karnataka","mangaluru"],"moodTags":["rainy","comfort"],"mealTags":["snack"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["maida","curd"],"coreIngredients":["maida","curd"],"core_ingredients":["maida","curd"],"requiredIngredients":["maida","curd"],"required_ingredients":["maida","curd"],"optionalIngredients":["green chilli","ginger","coconut"],"optional_ingredients":["green chilli","ginger","coconut"],"baseIngredient":"maida","base_ingredient":"maida","ingredients":[{"name":"maida","role":"required","isMain":true},{"name":"curd","role":"required","isMain":true},{"name":"green chilli","role":"optional","isMain":false},{"name":"ginger","role":"optional","isMain":false},{"name":"coconut","role":"optional","isMain":false}],"dishFamily":"bajji","dish_family":"bajji","regionTags":{"region":["South India","Karnataka"],"subRegion":["Coastal Karnataka","Mangaluru"],"cuisine":["Karnataka"]},"pairings":{"chutneys":["Coconut chutney"],"drinks":["Masala chai","Filter coffee"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["maida","curd","green chilli","ginger","coconut"],"steps":["Prep the maida and curd.","Cook with green chilli and ginger until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Mangalore Goli Baje simple and homestyle for a Karnataka plate.","bestWith":["Coconut chutney","Masala chai","Filter coffee"]},"tomoLine":"Keep Mangalore Goli Baje simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-dharwad-peda","sourceId":"karnataka-wave-a-dharwad-peda","title":"Dharwad Peda","name":"Dharwad Peda","aliases":[],"description":"Karnataka Wave A recipe for Dharwad Peda, added to deepen regional coverage for North Karnataka / Dharwad.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"dessert","tags":["dessert","snack","vegetarian","festival","celebration","karnataka","north-karnataka","dharwad"],"moodTags":["festival","celebration"],"mealTags":["dessert","snack"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":false,"minimalCleanup":true,"primaryIngredients":["khoya","sugar"],"coreIngredients":["khoya","sugar"],"core_ingredients":["khoya","sugar"],"requiredIngredients":["khoya","sugar"],"required_ingredients":["khoya","sugar"],"optionalIngredients":["ghee","cardamom"],"optional_ingredients":["ghee","cardamom"],"baseIngredient":"khoya","base_ingredient":"khoya","ingredients":[{"name":"khoya","role":"required","isMain":true},{"name":"sugar","role":"required","isMain":true},{"name":"ghee","role":"optional","isMain":false},{"name":"cardamom","role":"optional","isMain":false}],"dishFamily":"milk-sweet","dish_family":"milk-sweet","regionTags":{"region":["South India","Karnataka"],"subRegion":["North Karnataka","Dharwad"],"cuisine":["Karnataka"]},"pairings":{"drinks":["Filter coffee"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["khoya","sugar","ghee","cardamom"],"steps":["Prep the khoya and sugar.","Cook with ghee and cardamom until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Dharwad Peda simple and homestyle for a Karnataka plate.","bestWith":["Filter coffee"]},"tomoLine":"Keep Dharwad Peda simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-badanekayi-ennegayi","sourceId":"karnataka-wave-a-badanekayi-ennegayi","title":"Badanekayi Ennegayi","name":"Badanekayi Ennegayi","aliases":[],"description":"Karnataka Wave A recipe for Badanekayi Ennegayi, added to deepen regional coverage for North Karnataka.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"side","tags":["lunch","dinner","vegetarian","spicy","comfort","karnataka","north-karnataka"],"moodTags":["spicy","comfort"],"mealTags":["lunch","dinner"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":false,"minimalCleanup":true,"primaryIngredients":["brinjal","peanuts"],"coreIngredients":["brinjal","peanuts"],"core_ingredients":["brinjal","peanuts"],"requiredIngredients":["brinjal","peanuts"],"required_ingredients":["brinjal","peanuts"],"optionalIngredients":["sesame","coconut","tamarind","jaggery"],"optional_ingredients":["sesame","coconut","tamarind","jaggery"],"baseIngredient":"brinjal","base_ingredient":"brinjal","ingredients":[{"name":"brinjal","role":"required","isMain":true},{"name":"peanuts","role":"required","isMain":true},{"name":"sesame","role":"optional","isMain":false},{"name":"coconut","role":"optional","isMain":false},{"name":"tamarind","role":"optional","isMain":false},{"name":"jaggery","role":"optional","isMain":false}],"dishFamily":"stuffed-eggplant","dish_family":"stuffed-eggplant","regionTags":{"region":["South India","Karnataka"],"subRegion":["North Karnataka"],"cuisine":["Karnataka"]},"pairings":{"roti":["Jolada rotti"],"rice":["Steamed rice"],"drinks":["Buttermilk"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["brinjal","peanuts","sesame","coconut","tamarind","jaggery"],"steps":["Prep the brinjal and peanuts.","Cook with sesame and coconut until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Badanekayi Ennegayi simple and homestyle for a Karnataka plate.","bestWith":["Jolada rotti","Steamed rice","Buttermilk"]},"tomoLine":"Keep Badanekayi Ennegayi simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-masala-bun","sourceId":"karnataka-wave-a-masala-bun","title":"Masala Bun","name":"Masala Bun","aliases":[],"description":"Karnataka Wave A recipe for Masala Bun, added to deepen regional coverage for Bengaluru.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"snack","tags":["snack","vegetarian","quick","comfort","karnataka","bengaluru"],"moodTags":["quick","comfort"],"mealTags":["snack"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["bun","potato masala"],"coreIngredients":["bun","potato masala"],"core_ingredients":["bun","potato masala"],"requiredIngredients":["bun","potato masala"],"required_ingredients":["bun","potato masala"],"optionalIngredients":["butter","onion","green chutney"],"optional_ingredients":["butter","onion","green chutney"],"baseIngredient":"bun","base_ingredient":"bun","ingredients":[{"name":"bun","role":"required","isMain":true},{"name":"potato masala","role":"required","isMain":true},{"name":"butter","role":"optional","isMain":false},{"name":"onion","role":"optional","isMain":false},{"name":"green chutney","role":"optional","isMain":false}],"dishFamily":"bakery-snack","dish_family":"bakery-snack","regionTags":{"region":["South India","Karnataka"],"subRegion":["Bengaluru"],"cuisine":["Karnataka"]},"pairings":{"drinks":["Filter coffee","Masala chai"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["bun","potato masala","butter","onion","green chutney"],"steps":["Prep the bun and potato masala.","Cook with butter and onion until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Masala Bun simple and homestyle for a Karnataka plate.","bestWith":["Filter coffee","Masala chai"]},"tomoLine":"Keep Masala Bun simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-iyengar-bakery-toast","sourceId":"karnataka-wave-a-iyengar-bakery-toast","title":"Iyengar Bakery Toast","name":"Iyengar Bakery Toast","aliases":[],"description":"Karnataka Wave A recipe for Iyengar Bakery Toast, added to deepen regional coverage for Bengaluru.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"snack","tags":["snack","breakfast","vegetarian","quick","comfort","karnataka","bengaluru"],"moodTags":["quick","comfort"],"mealTags":["snack","breakfast"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["bread","vegetables"],"coreIngredients":["bread","vegetables"],"core_ingredients":["bread","vegetables"],"requiredIngredients":["bread","vegetables"],"required_ingredients":["bread","vegetables"],"optionalIngredients":["butter","green chutney","cheese"],"optional_ingredients":["butter","green chutney","cheese"],"baseIngredient":"bread","base_ingredient":"bread","ingredients":[{"name":"bread","role":"required","isMain":true},{"name":"vegetables","role":"required","isMain":true},{"name":"butter","role":"optional","isMain":false},{"name":"green chutney","role":"optional","isMain":false},{"name":"cheese","role":"optional","isMain":false}],"dishFamily":"toast","dish_family":"toast","regionTags":{"region":["South India","Karnataka"],"subRegion":["Bengaluru"],"cuisine":["Karnataka"]},"pairings":{"drinks":["Filter coffee","Masala chai"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["bread","vegetables","butter","green chutney","cheese"],"steps":["Prep the bread and vegetables.","Cook with butter and green chutney until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Iyengar Bakery Toast simple and homestyle for a Karnataka plate.","bestWith":["Filter coffee","Masala chai"]},"tomoLine":"Keep Iyengar Bakery Toast simple and homestyle for a Karnataka plate."},
-  {"id":"karnataka-wave-a-congress-kadlekai","sourceId":"karnataka-wave-a-congress-kadlekai","title":"Congress Kadlekai","name":"Congress Kadlekai","aliases":[],"description":"Karnataka Wave A recipe for Congress Kadlekai, added to deepen regional coverage for Bengaluru.","prepTimeMinutes":10,"cookTimeMinutes":20,"timeMinutes":30,"servings":2,"cuisine":"Karnataka","dietType":"vegetarian","dietaryTags":["vegetarian"],"difficulty":"easy","imageUrl":"/assets/images/dishes/homestyle-kitchen-placeholder.png","image_url":"/assets/images/dishes/homestyle-kitchen-placeholder.png","recipeRole":"snack","tags":["snack","vegetarian","quick","spicy","karnataka","bengaluru"],"moodTags":["quick","spicy"],"mealTags":["snack"],"recipe_type":"core","recipeType":"core","pantrySuitability":"high","budgetFriendly":true,"lowEffort":true,"minimalCleanup":true,"primaryIngredients":["peanuts"],"coreIngredients":["peanuts"],"core_ingredients":["peanuts"],"requiredIngredients":["peanuts"],"required_ingredients":["peanuts"],"optionalIngredients":["chilli powder","curry leaves","hing"],"optional_ingredients":["chilli powder","curry leaves","hing"],"baseIngredient":"peanuts","base_ingredient":"peanuts","ingredients":[{"name":"peanuts","role":"required","isMain":true},{"name":"chilli powder","role":"optional","isMain":false},{"name":"curry leaves","role":"optional","isMain":false},{"name":"hing","role":"optional","isMain":false}],"dishFamily":"peanut-snack","dish_family":"peanut-snack","regionTags":{"region":["South India","Karnataka"],"subRegion":["Bengaluru"],"cuisine":["Karnataka"]},"pairings":{"drinks":["Filter coffee","Masala chai"]},"quickGuide":{"serves":2,"prepTime":"10 min","cookTime":"20 min","ingredients":["peanuts","chilli powder","curry leaves","hing"],"steps":["Prep the peanuts.","Cook with chilli powder and curry leaves until the base is ready.","Adjust salt, heat and texture.","Finish with tempering or ghee if appropriate.","Serve warm with the suggested pairings."],"tip":"Keep Congress Kadlekai simple and homestyle for a Karnataka plate.","bestWith":["Filter coffee","Masala chai"]},"tomoLine":"Keep Congress Kadlekai simple and homestyle for a Karnataka plate."},
+  {
+    "id": "karnataka-wave-a-ragi-mudde",
+    "sourceId": "karnataka-wave-a-ragi-mudde",
+    "title": "Ragi Mudde",
+    "name": "Ragi Mudde",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Ragi Mudde, added to deepen regional coverage for Old Mysore / Rural Karnataka.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul-food",
+      "protein",
+      "karnataka",
+      "old-mysore",
+      "rural-karnataka"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "ragi flour",
+      "water"
+    ],
+    "coreIngredients": [
+      "ragi flour",
+      "water"
+    ],
+    "core_ingredients": [
+      "ragi flour",
+      "water"
+    ],
+    "requiredIngredients": [
+      "ragi flour",
+      "water"
+    ],
+    "required_ingredients": [
+      "ragi flour",
+      "water"
+    ],
+    "optionalIngredients": [
+      "ghee",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "ghee",
+      "salt"
+    ],
+    "baseIngredient": "ragi flour",
+    "base_ingredient": "ragi flour",
+    "ingredients": [
+      {
+        "name": "ragi flour",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "water",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "millet-ball",
+    "dish_family": "millet-ball",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Old Mysore",
+        "Rural Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Soppu Saaru",
+        "Bassaru"
+      ],
+      "toppings": [
+        "Ghee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "ragi flour",
+        "water",
+        "ghee",
+        "salt"
+      ],
+      "steps": [
+        "Prep the ragi flour and water.",
+        "Cook with ghee and salt until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Ragi Mudde simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Soppu Saaru",
+        "Bassaru",
+        "Ghee"
+      ]
+    },
+    "tomoLine": "Keep Ragi Mudde simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-jolada-rotti",
+    "sourceId": "karnataka-wave-a-jolada-rotti",
+    "title": "Jolada Rotti",
+    "name": "Jolada Rotti",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Jolada Rotti, added to deepen regional coverage for North Karnataka.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul-food",
+      "karnataka",
+      "north-karnataka"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "jowar flour",
+      "water"
+    ],
+    "coreIngredients": [
+      "jowar flour",
+      "water"
+    ],
+    "core_ingredients": [
+      "jowar flour",
+      "water"
+    ],
+    "requiredIngredients": [
+      "jowar flour",
+      "water"
+    ],
+    "required_ingredients": [
+      "jowar flour",
+      "water"
+    ],
+    "optionalIngredients": [
+      "ghee",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "ghee",
+      "salt"
+    ],
+    "baseIngredient": "jowar flour",
+    "base_ingredient": "jowar flour",
+    "ingredients": [
+      {
+        "name": "jowar flour",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "water",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "rotti",
+    "dish_family": "rotti",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "North Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Badanekayi Ennegayi",
+        "Shenga chutney"
+      ],
+      "drinks": [
+        "Buttermilk"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "jowar flour",
+        "water",
+        "ghee",
+        "salt"
+      ],
+      "steps": [
+        "Prep the jowar flour and water.",
+        "Cook with ghee and salt until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Jolada Rotti simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Badanekayi Ennegayi",
+        "Shenga chutney",
+        "Buttermilk"
+      ]
+    },
+    "tomoLine": "Keep Jolada Rotti simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-ragi-rotti",
+    "sourceId": "karnataka-wave-a-ragi-rotti",
+    "title": "Ragi Rotti",
+    "name": "Ragi Rotti",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Ragi Rotti, added to deepen regional coverage for Old Mysore / Rural Karnataka.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul-food",
+      "protein",
+      "karnataka",
+      "old-mysore",
+      "rural-karnataka"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "mealTags": [
+      "breakfast",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "ragi flour",
+      "onion"
+    ],
+    "coreIngredients": [
+      "ragi flour",
+      "onion"
+    ],
+    "core_ingredients": [
+      "ragi flour",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "ragi flour",
+      "onion"
+    ],
+    "required_ingredients": [
+      "ragi flour",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "coconut",
+      "green chilli",
+      "coriander",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "coconut",
+      "green chilli",
+      "coriander",
+      "salt"
+    ],
+    "baseIngredient": "ragi flour",
+    "base_ingredient": "ragi flour",
+    "ingredients": [
+      {
+        "name": "ragi flour",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "rotti",
+    "dish_family": "rotti",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Old Mysore",
+        "Rural Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Coconut chutney"
+      ],
+      "sides": [
+        "Curd"
+      ],
+      "toppings": [
+        "Ghee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "ragi flour",
+        "onion",
+        "coconut",
+        "green chilli",
+        "coriander",
+        "salt"
+      ],
+      "steps": [
+        "Prep the ragi flour and onion.",
+        "Cook with coconut and green chilli until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Ragi Rotti simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Coconut chutney",
+        "Curd",
+        "Ghee"
+      ]
+    },
+    "tomoLine": "Keep Ragi Rotti simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-thatte-idli",
+    "sourceId": "karnataka-wave-a-thatte-idli",
+    "title": "Thatte Idli",
+    "name": "Thatte Idli",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Thatte Idli, added to deepen regional coverage for Bengaluru / Old Mysore.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "soul-food",
+      "light",
+      "karnataka",
+      "bengaluru",
+      "old-mysore"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "light"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "idli batter"
+    ],
+    "coreIngredients": [
+      "idli batter"
+    ],
+    "core_ingredients": [
+      "idli batter"
+    ],
+    "requiredIngredients": [
+      "idli batter"
+    ],
+    "required_ingredients": [
+      "idli batter"
+    ],
+    "optionalIngredients": [
+      "ghee"
+    ],
+    "optional_ingredients": [
+      "ghee"
+    ],
+    "baseIngredient": "idli batter",
+    "base_ingredient": "idli batter",
+    "ingredients": [
+      {
+        "name": "idli batter",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "idli",
+    "dish_family": "idli",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Bengaluru",
+        "Old Mysore"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Coconut chutney"
+      ],
+      "sides": [
+        "Sambar"
+      ],
+      "drinks": [
+        "Filter coffee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "idli batter",
+        "ghee"
+      ],
+      "steps": [
+        "Prep the idli batter.",
+        "Cook with ghee until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Thatte Idli simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Coconut chutney",
+        "Sambar",
+        "Filter coffee"
+      ]
+    },
+    "tomoLine": "Keep Thatte Idli simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-davangere-benne-dosa",
+    "sourceId": "karnataka-wave-a-davangere-benne-dosa",
+    "title": "Davangere Benne Dosa",
+    "name": "Davangere Benne Dosa",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Davangere Benne Dosa, added to deepen regional coverage for Central Karnataka.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "karnataka",
+      "central-karnataka"
+    ],
+    "moodTags": [
+      "comfort"
+    ],
+    "mealTags": [
+      "breakfast",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "dosa batter",
+      "butter"
+    ],
+    "coreIngredients": [
+      "dosa batter",
+      "butter"
+    ],
+    "core_ingredients": [
+      "dosa batter",
+      "butter"
+    ],
+    "requiredIngredients": [
+      "dosa batter",
+      "butter"
+    ],
+    "required_ingredients": [
+      "dosa batter",
+      "butter"
+    ],
+    "optionalIngredients": [
+      "potato palya"
+    ],
+    "optional_ingredients": [
+      "potato palya"
+    ],
+    "baseIngredient": "dosa batter",
+    "base_ingredient": "dosa batter",
+    "ingredients": [
+      {
+        "name": "dosa batter",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "butter",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato palya",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Central Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Coconut chutney"
+      ],
+      "sides": [
+        "Potato palya"
+      ],
+      "drinks": [
+        "Filter coffee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "dosa batter",
+        "butter",
+        "potato palya"
+      ],
+      "steps": [
+        "Prep the dosa batter and butter.",
+        "Cook with potato palya until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Davangere Benne Dosa simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Coconut chutney",
+        "Potato palya",
+        "Filter coffee"
+      ]
+    },
+    "tomoLine": "Keep Davangere Benne Dosa simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-chow-chow-bath",
+    "sourceId": "karnataka-wave-a-chow-chow-bath",
+    "title": "Chow Chow Bath",
+    "name": "Chow Chow Bath",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Chow Chow Bath, added to deepen regional coverage for Bengaluru / Old Mysore.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "soul-food",
+      "karnataka",
+      "bengaluru",
+      "old-mysore"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "rava",
+      "sugar"
+    ],
+    "coreIngredients": [
+      "rava",
+      "sugar"
+    ],
+    "core_ingredients": [
+      "rava",
+      "sugar"
+    ],
+    "requiredIngredients": [
+      "rava",
+      "sugar"
+    ],
+    "required_ingredients": [
+      "rava",
+      "sugar"
+    ],
+    "optionalIngredients": [
+      "vegetables",
+      "ghee",
+      "cashews"
+    ],
+    "optional_ingredients": [
+      "vegetables",
+      "ghee",
+      "cashews"
+    ],
+    "baseIngredient": "rava",
+    "base_ingredient": "rava",
+    "ingredients": [
+      {
+        "name": "rava",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sugar",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cashews",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "breakfast-combo",
+    "dish_family": "breakfast-combo",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Bengaluru",
+        "Old Mysore"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Coconut chutney"
+      ],
+      "drinks": [
+        "Filter coffee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "rava",
+        "sugar",
+        "vegetables",
+        "ghee",
+        "cashews"
+      ],
+      "steps": [
+        "Prep the rava and sugar.",
+        "Cook with vegetables and ghee until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Chow Chow Bath simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Coconut chutney",
+        "Filter coffee"
+      ]
+    },
+    "tomoLine": "Keep Chow Chow Bath simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-vangi-bath",
+    "sourceId": "karnataka-wave-a-vangi-bath",
+    "title": "Vangi Bath",
+    "name": "Vangi Bath",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Vangi Bath, added to deepen regional coverage for Bengaluru / Old Mysore.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "soul-food",
+      "karnataka",
+      "bengaluru",
+      "old-mysore"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "rice",
+      "brinjal"
+    ],
+    "coreIngredients": [
+      "rice",
+      "brinjal"
+    ],
+    "core_ingredients": [
+      "rice",
+      "brinjal"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "brinjal"
+    ],
+    "required_ingredients": [
+      "rice",
+      "brinjal"
+    ],
+    "optionalIngredients": [
+      "vangi bath powder",
+      "peanuts",
+      "tamarind"
+    ],
+    "optional_ingredients": [
+      "vangi bath powder",
+      "peanuts",
+      "tamarind"
+    ],
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "ingredients": [
+      {
+        "name": "rice",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "brinjal",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vangi bath powder",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "peanuts",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tamarind",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "rice",
+    "dish_family": "rice",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Bengaluru",
+        "Old Mysore"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Raita",
+        "Papad"
+      ],
+      "drinks": [
+        "Buttermilk"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "rice",
+        "brinjal",
+        "vangi bath powder",
+        "peanuts",
+        "tamarind"
+      ],
+      "steps": [
+        "Prep the rice and brinjal.",
+        "Cook with vangi bath powder and peanuts until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Vangi Bath simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Raita",
+        "Papad",
+        "Buttermilk"
+      ]
+    },
+    "tomoLine": "Keep Vangi Bath simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-majjige-huli",
+    "sourceId": "karnataka-wave-a-majjige-huli",
+    "title": "Majjige Huli",
+    "name": "Majjige Huli",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Majjige Huli, added to deepen regional coverage for Old Mysore / Malnad.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "light",
+      "soul-food",
+      "karnataka",
+      "old-mysore",
+      "malnad"
+    ],
+    "moodTags": [
+      "comfort",
+      "light",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": false,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "curd",
+      "ash gourd"
+    ],
+    "coreIngredients": [
+      "curd",
+      "ash gourd"
+    ],
+    "core_ingredients": [
+      "curd",
+      "ash gourd"
+    ],
+    "requiredIngredients": [
+      "curd",
+      "ash gourd"
+    ],
+    "required_ingredients": [
+      "curd",
+      "ash gourd"
+    ],
+    "optionalIngredients": [
+      "coconut",
+      "green chilli",
+      "cumin",
+      "curry leaves"
+    ],
+    "optional_ingredients": [
+      "coconut",
+      "green chilli",
+      "cumin",
+      "curry leaves"
+    ],
+    "baseIngredient": "curd",
+    "base_ingredient": "curd",
+    "ingredients": [
+      {
+        "name": "curd",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ash gourd",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "yogurt-curry",
+    "dish_family": "yogurt-curry",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Old Mysore",
+        "Malnad"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Steamed rice"
+      ],
+      "sides": [
+        "Palya"
+      ],
+      "toppings": [
+        "Ghee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "curd",
+        "ash gourd",
+        "coconut",
+        "green chilli",
+        "cumin",
+        "curry leaves"
+      ],
+      "steps": [
+        "Prep the curd and ash gourd.",
+        "Cook with coconut and green chilli until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Majjige Huli simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Steamed rice",
+        "Palya",
+        "Ghee"
+      ]
+    },
+    "tomoLine": "Keep Majjige Huli simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-udupi-sambar",
+    "sourceId": "karnataka-wave-a-udupi-sambar",
+    "title": "Udupi Sambar",
+    "name": "Udupi Sambar",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Udupi Sambar, added to deepen regional coverage for Coastal Karnataka / Udupi.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/collections/soups.webp",
+    "image_url": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul-food",
+      "protein",
+      "karnataka",
+      "coastal-karnataka",
+      "udupi"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": false,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "toor dal",
+      "vegetables"
+    ],
+    "coreIngredients": [
+      "toor dal",
+      "vegetables"
+    ],
+    "core_ingredients": [
+      "toor dal",
+      "vegetables"
+    ],
+    "requiredIngredients": [
+      "toor dal",
+      "vegetables"
+    ],
+    "required_ingredients": [
+      "toor dal",
+      "vegetables"
+    ],
+    "optionalIngredients": [
+      "sambar powder",
+      "tamarind",
+      "jaggery",
+      "coconut"
+    ],
+    "optional_ingredients": [
+      "sambar powder",
+      "tamarind",
+      "jaggery",
+      "coconut"
+    ],
+    "baseIngredient": "toor dal",
+    "base_ingredient": "toor dal",
+    "ingredients": [
+      {
+        "name": "toor dal",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sambar powder",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tamarind",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "sambar",
+    "dish_family": "sambar",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Coastal Karnataka",
+        "Udupi"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Steamed rice"
+      ],
+      "sides": [
+        "Idli",
+        "Dosa"
+      ],
+      "toppings": [
+        "Ghee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "toor dal",
+        "vegetables",
+        "sambar powder",
+        "tamarind",
+        "jaggery",
+        "coconut"
+      ],
+      "steps": [
+        "Prep the toor dal and vegetables.",
+        "Cook with sambar powder and tamarind until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Udupi Sambar simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Steamed rice",
+        "Idli",
+        "Dosa",
+        "Ghee"
+      ]
+    },
+    "tomoLine": "Keep Udupi Sambar simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-mangalore-goli-baje",
+    "sourceId": "karnataka-wave-a-mangalore-goli-baje",
+    "title": "Mangalore Goli Baje",
+    "name": "Mangalore Goli Baje",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Mangalore Goli Baje, added to deepen regional coverage for Coastal Karnataka / Mangaluru.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "rainy",
+      "comfort",
+      "karnataka",
+      "coastal-karnataka",
+      "mangaluru"
+    ],
+    "moodTags": [
+      "rainy",
+      "comfort"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "maida",
+      "curd"
+    ],
+    "coreIngredients": [
+      "maida",
+      "curd"
+    ],
+    "core_ingredients": [
+      "maida",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "maida",
+      "curd"
+    ],
+    "required_ingredients": [
+      "maida",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "ginger",
+      "coconut"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "ginger",
+      "coconut"
+    ],
+    "baseIngredient": "maida",
+    "base_ingredient": "maida",
+    "ingredients": [
+      {
+        "name": "maida",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "bajji",
+    "dish_family": "bajji",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Coastal Karnataka",
+        "Mangaluru"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Coconut chutney"
+      ],
+      "drinks": [
+        "Masala chai",
+        "Filter coffee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "maida",
+        "curd",
+        "green chilli",
+        "ginger",
+        "coconut"
+      ],
+      "steps": [
+        "Prep the maida and curd.",
+        "Cook with green chilli and ginger until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Mangalore Goli Baje simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Coconut chutney",
+        "Masala chai",
+        "Filter coffee"
+      ]
+    },
+    "tomoLine": "Keep Mangalore Goli Baje simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-dharwad-peda",
+    "sourceId": "karnataka-wave-a-dharwad-peda",
+    "title": "Dharwad Peda",
+    "name": "Dharwad Peda",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Dharwad Peda, added to deepen regional coverage for North Karnataka / Dharwad.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "snack",
+      "vegetarian",
+      "festival",
+      "celebration",
+      "karnataka",
+      "north-karnataka",
+      "dharwad"
+    ],
+    "moodTags": [
+      "festival",
+      "celebration"
+    ],
+    "mealTags": [
+      "dessert",
+      "snack"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": false,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "khoya",
+      "sugar"
+    ],
+    "coreIngredients": [
+      "khoya",
+      "sugar"
+    ],
+    "core_ingredients": [
+      "khoya",
+      "sugar"
+    ],
+    "requiredIngredients": [
+      "khoya",
+      "sugar"
+    ],
+    "required_ingredients": [
+      "khoya",
+      "sugar"
+    ],
+    "optionalIngredients": [
+      "ghee",
+      "cardamom"
+    ],
+    "optional_ingredients": [
+      "ghee",
+      "cardamom"
+    ],
+    "baseIngredient": "khoya",
+    "base_ingredient": "khoya",
+    "ingredients": [
+      {
+        "name": "khoya",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sugar",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "milk-sweet",
+    "dish_family": "milk-sweet",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "North Karnataka",
+        "Dharwad"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Filter coffee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "khoya",
+        "sugar",
+        "ghee",
+        "cardamom"
+      ],
+      "steps": [
+        "Prep the khoya and sugar.",
+        "Cook with ghee and cardamom until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Dharwad Peda simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Filter coffee"
+      ]
+    },
+    "tomoLine": "Keep Dharwad Peda simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Regional Sweets"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-badanekayi-ennegayi",
+    "sourceId": "karnataka-wave-a-badanekayi-ennegayi",
+    "title": "Badanekayi Ennegayi",
+    "name": "Badanekayi Ennegayi",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Badanekayi Ennegayi, added to deepen regional coverage for North Karnataka.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "spicy",
+      "comfort",
+      "karnataka",
+      "north-karnataka"
+    ],
+    "moodTags": [
+      "spicy",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": false,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "brinjal",
+      "peanuts"
+    ],
+    "coreIngredients": [
+      "brinjal",
+      "peanuts"
+    ],
+    "core_ingredients": [
+      "brinjal",
+      "peanuts"
+    ],
+    "requiredIngredients": [
+      "brinjal",
+      "peanuts"
+    ],
+    "required_ingredients": [
+      "brinjal",
+      "peanuts"
+    ],
+    "optionalIngredients": [
+      "sesame",
+      "coconut",
+      "tamarind",
+      "jaggery"
+    ],
+    "optional_ingredients": [
+      "sesame",
+      "coconut",
+      "tamarind",
+      "jaggery"
+    ],
+    "baseIngredient": "brinjal",
+    "base_ingredient": "brinjal",
+    "ingredients": [
+      {
+        "name": "brinjal",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanuts",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sesame",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tamarind",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "stuffed-eggplant",
+    "dish_family": "stuffed-eggplant",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "North Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "roti": [
+        "Jolada rotti"
+      ],
+      "rice": [
+        "Steamed rice"
+      ],
+      "drinks": [
+        "Buttermilk"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "brinjal",
+        "peanuts",
+        "sesame",
+        "coconut",
+        "tamarind",
+        "jaggery"
+      ],
+      "steps": [
+        "Prep the brinjal and peanuts.",
+        "Cook with sesame and coconut until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Badanekayi Ennegayi simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Jolada rotti",
+        "Steamed rice",
+        "Buttermilk"
+      ]
+    },
+    "tomoLine": "Keep Badanekayi Ennegayi simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-masala-bun",
+    "sourceId": "karnataka-wave-a-masala-bun",
+    "title": "Masala Bun",
+    "name": "Masala Bun",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Masala Bun, added to deepen regional coverage for Bengaluru.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "karnataka",
+      "bengaluru"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "bun",
+      "potato masala"
+    ],
+    "coreIngredients": [
+      "bun",
+      "potato masala"
+    ],
+    "core_ingredients": [
+      "bun",
+      "potato masala"
+    ],
+    "requiredIngredients": [
+      "bun",
+      "potato masala"
+    ],
+    "required_ingredients": [
+      "bun",
+      "potato masala"
+    ],
+    "optionalIngredients": [
+      "butter",
+      "onion",
+      "green chutney"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "onion",
+      "green chutney"
+    ],
+    "baseIngredient": "bun",
+    "base_ingredient": "bun",
+    "ingredients": [
+      {
+        "name": "bun",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato masala",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "butter",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chutney",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "bakery-snack",
+    "dish_family": "bakery-snack",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Bengaluru"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Filter coffee",
+        "Masala chai"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "bun",
+        "potato masala",
+        "butter",
+        "onion",
+        "green chutney"
+      ],
+      "steps": [
+        "Prep the bun and potato masala.",
+        "Cook with butter and onion until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Masala Bun simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Filter coffee",
+        "Masala chai"
+      ]
+    },
+    "tomoLine": "Keep Masala Bun simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-iyengar-bakery-toast",
+    "sourceId": "karnataka-wave-a-iyengar-bakery-toast",
+    "title": "Iyengar Bakery Toast",
+    "name": "Iyengar Bakery Toast",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Iyengar Bakery Toast, added to deepen regional coverage for Bengaluru.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "breakfast",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "karnataka",
+      "bengaluru"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "snack",
+      "breakfast"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "bread",
+      "vegetables"
+    ],
+    "coreIngredients": [
+      "bread",
+      "vegetables"
+    ],
+    "core_ingredients": [
+      "bread",
+      "vegetables"
+    ],
+    "requiredIngredients": [
+      "bread",
+      "vegetables"
+    ],
+    "required_ingredients": [
+      "bread",
+      "vegetables"
+    ],
+    "optionalIngredients": [
+      "butter",
+      "green chutney",
+      "cheese"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "green chutney",
+      "cheese"
+    ],
+    "baseIngredient": "bread",
+    "base_ingredient": "bread",
+    "ingredients": [
+      {
+        "name": "bread",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "butter",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chutney",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cheese",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "toast",
+    "dish_family": "toast",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Bengaluru"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Filter coffee",
+        "Masala chai"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "bread",
+        "vegetables",
+        "butter",
+        "green chutney",
+        "cheese"
+      ],
+      "steps": [
+        "Prep the bread and vegetables.",
+        "Cook with butter and green chutney until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Iyengar Bakery Toast simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Filter coffee",
+        "Masala chai"
+      ]
+    },
+    "tomoLine": "Keep Iyengar Bakery Toast simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
+  },
+  {
+    "id": "karnataka-wave-a-congress-kadlekai",
+    "sourceId": "karnataka-wave-a-congress-kadlekai",
+    "title": "Congress Kadlekai",
+    "name": "Congress Kadlekai",
+    "aliases": [],
+    "description": "Karnataka Wave A recipe for Congress Kadlekai, added to deepen regional coverage for Bengaluru.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "quick",
+      "spicy",
+      "karnataka",
+      "bengaluru"
+    ],
+    "moodTags": [
+      "quick",
+      "spicy"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "primaryIngredients": [
+      "peanuts"
+    ],
+    "coreIngredients": [
+      "peanuts"
+    ],
+    "core_ingredients": [
+      "peanuts"
+    ],
+    "requiredIngredients": [
+      "peanuts"
+    ],
+    "required_ingredients": [
+      "peanuts"
+    ],
+    "optionalIngredients": [
+      "chilli powder",
+      "curry leaves",
+      "hing"
+    ],
+    "optional_ingredients": [
+      "chilli powder",
+      "curry leaves",
+      "hing"
+    ],
+    "baseIngredient": "peanuts",
+    "base_ingredient": "peanuts",
+    "ingredients": [
+      {
+        "name": "peanuts",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chilli powder",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "hing",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "dishFamily": "peanut-snack",
+    "dish_family": "peanut-snack",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Bengaluru"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Filter coffee",
+        "Masala chai"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "peanuts",
+        "chilli powder",
+        "curry leaves",
+        "hing"
+      ],
+      "steps": [
+        "Prep the peanuts.",
+        "Cook with chilli powder and curry leaves until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep Congress Kadlekai simple and homestyle for a Karnataka plate.",
+      "bestWith": [
+        "Filter coffee",
+        "Masala chai"
+      ]
+    },
+    "tomoLine": "Keep Congress Kadlekai simple and homestyle for a Karnataka plate.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
+  },
   {
     "id": "karnataka-pack-1-bassaru",
     "sourceId": "karnataka-pack-1-bassaru",
@@ -4928,7 +7311,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Palya"
       ]
     },
-    "tomoLine": "Keep the saaru thin enough to pour over ragi mudde or rice."
+    "tomoLine": "Keep the saaru thin enough to pour over ragi mudde or rice.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "2a1518d6-b3fc-5202-afdc-5e16b5ad09f3",
@@ -5150,6 +7537,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Rice",
         "Papad"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
     }
   },
   {
@@ -5334,6 +7725,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
     }
   },
   {
@@ -5551,7 +7946,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/biryani.png"
+    "image_url": "/assets/images/dishes/biryani.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "f7508d42-98e0-5d34-b6f6-eaa410e2a439",
@@ -5726,7 +8125,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "7c0d09e9-0bec-536c-ae15-6c6c91b1c107",
@@ -5891,6 +8294,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Buttermilk",
         "Lemon"
       ]
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
     }
   },
   {
@@ -6057,7 +8464,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
   },
   {
     "id": "c6804fce-a3d7-556d-ab31-43c484701460",
@@ -6232,6 +8643,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
     }
   },
   {
@@ -6402,7 +8817,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "c19a76f1-3b76-50dd-9f8c-2ec9729f3094",
@@ -6595,6 +9014,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
     }
   },
   {
@@ -6766,7 +9189,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "40a5705c-b248-5afb-875c-5fd1b65df779",
@@ -6986,7 +9413,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "heroEligible": false,
     "hardExcludeMoods": [],
     "avoidIf": [],
-    "tomoLine": "Churn or whisk well for a lighter texture."
+    "tomoLine": "Churn or whisk well for a lighter texture.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "2d359ba4-9ccb-58aa-948c-a0bcd1a8e269",
@@ -7196,7 +9627,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Kerala fish curry"
       ]
     },
-    "tomoLine": "Avoid overcooking so the cabbage stays sweet and light."
+    "tomoLine": "Avoid overcooking so the cabbage stays sweet and light.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "9904ca6a-c778-5c30-bb05-0f444ac5c5d7",
@@ -7359,6 +9794,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Buttermilk",
         "Lemon"
       ]
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
     }
   },
   {
@@ -7572,6 +10011,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Coconut chutney",
         "Tomato chutney"
       ]
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
     }
   },
   {
@@ -7761,7 +10204,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/batch6-masala-omelette.png"
+    "image_url": "/assets/images/dishes/batch6-masala-omelette.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "4da817f0-d8d2-50b9-8b1a-74d88a03ddb0",
@@ -7966,6 +10413,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Mango pickle",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -8177,6 +10628,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Coconut chutney",
         "Tomato chutney"
       ]
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
     }
   },
   {
@@ -8371,6 +10826,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Tamarind chutney",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
     }
   },
   {
@@ -8565,7 +11024,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "313cfa85-dbd0-53b6-aa57-822e41da77d0",
@@ -8785,7 +11248,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "feedVisibility": "pantry-search-only",
     "heroEligible": false,
     "todaysPicksEligible": false,
-    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only"
+    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "cdc3f903-37f6-57d0-83cf-902475244c0f",
@@ -8985,7 +11452,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "45290fa8-aa46-559c-9ff6-24066c1e6302",
@@ -9158,7 +11629,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "e72feb81-3efa-5132-9531-a980632aa29b",
@@ -9377,7 +11852,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "heroEligible": false,
     "todaysPicksEligible": false,
     "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "pantry-chicken-fried-rice",
@@ -9607,7 +12086,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "egg",
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "269a57c4-c326-560c-b5d3-886b2e5b6a45",
@@ -9806,7 +12289,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
   },
   {
     "id": "020d228a-41c9-501e-b3f3-a63e877c43b6",
@@ -10024,7 +12511,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "feedVisibility": "pantry-search-only",
     "heroEligible": false,
     "todaysPicksEligible": false,
-    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only"
+    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "2a4b5172-e07e-54b5-99a2-09c85884f225",
@@ -10241,7 +12732,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "feedVisibility": "pantry-search-only",
     "heroEligible": false,
     "todaysPicksEligible": false,
-    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only"
+    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "ba997981-3612-5a12-8911-246fe84173c2",
@@ -10456,7 +12951,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "bfdc43f0-6137-5901-b78f-68a18b7b38df",
@@ -10621,7 +13120,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "686a5460-0fcc-58ed-a823-56faf4d918a4",
@@ -10798,7 +13301,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "ef193ec0-58fa-5b8a-bd3e-7e44064706ca",
@@ -10963,6 +13470,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
     }
   },
   {
@@ -11133,7 +13644,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
   },
   {
     "id": "b0fbc187-0b62-533b-9ba9-937fb1bf3e6c",
@@ -11325,7 +13840,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "cfeca6dc-e138-538f-b50d-55b27fe841aa",
@@ -11541,7 +14060,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "feedVisibility": "pantry-search-only",
     "heroEligible": false,
     "todaysPicksEligible": false,
-    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only"
+    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "pantry-chilli-chicken",
@@ -11762,6 +14285,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Chapati"
       ],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
     }
   },
   {
@@ -11958,7 +14485,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "roti": [],
       "toppings": []
     },
-    "image_url": "/assets/images/dishes/chilli-mushroom.png"
+    "image_url": "/assets/images/dishes/chilli-mushroom.png",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "c57d4242-2920-566e-a41e-dee284fec172",
@@ -12149,6 +14680,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
     }
   },
   {
@@ -12355,7 +14890,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
   },
   {
     "id": "fd5a77d3-0777-506a-94ab-f95245ebaef3",
@@ -12561,7 +15100,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "e640c160-2043-5e8a-a83a-caf6f3a07712",
@@ -12769,6 +15312,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Tea"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
     }
   },
   {
@@ -12936,7 +15483,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "cc23b460-f101-5625-b654-a9b2968aaf2d",
@@ -13155,6 +15706,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Rice",
         "Rasam"
       ]
+    },
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -13356,6 +15911,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "toppings": [
         "Roasted peanuts"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
     }
   },
   {
@@ -13584,7 +16143,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "moodExcludes": [],
     "hardExcludeMoods": [],
     "avoidIf": [],
-    "tomoLine": "Use warm corn if you want a softer, cozier chaat."
+    "tomoLine": "Use warm corn if you want a softer, cozier chaat.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "b2c204d2-3207-5629-a72a-f4d0f36ccc92",
@@ -13801,7 +16364,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "heroEligible": false,
     "todaysPicksEligible": false,
     "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "71a1fdf2-24eb-572f-9f1f-649e5e205625",
@@ -14029,7 +16596,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "moodExcludes": [],
     "hardExcludeMoods": [],
     "avoidIf": [],
-    "tomoLine": "Blend only part of the corn so the soup keeps texture."
+    "tomoLine": "Blend only part of the corn so the soup keeps texture.",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "581b2744-b0ec-5f13-b542-e4c77382f4ba",
@@ -14237,7 +16808,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Filter coffee"
       ]
     },
-    "tomoLine": "Use fresh or frozen corn; both work well."
+    "tomoLine": "Use fresh or frozen corn; both work well.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "1f0252b6-fd53-56f8-9281-bbd2cede4830",
@@ -14407,7 +16982,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "7e1672ca-2f34-5085-8a63-dc65d434e274",
@@ -14596,6 +17175,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Chapati"
       ],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -14770,7 +17353,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "b09b9104-29fd-56d9-b515-00d4396492dc",
@@ -14935,6 +17522,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Mango pickle",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -15144,7 +17735,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "ca06450b-8e68-5f0b-8140-6445519334a8",
@@ -15346,7 +17941,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
   },
   {
     "id": "5f687b91-2339-5486-84f0-7911d8ababd0",
@@ -15551,7 +18150,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "dcf45c13-9902-53f8-b583-4aa0f185776d",
@@ -15734,7 +18337,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "a4ae4f63-ca64-5a16-9f01-d8e1948f7571",
@@ -15955,6 +18562,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Rice",
         "Avakaya pickle"
       ]
+    },
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -16154,6 +18765,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Veg fried rice",
         "Cucumber slices"
       ]
+    },
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
     }
   },
   {
@@ -16332,7 +18947,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "egg"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "807985df-9a1f-579a-93ec-0c70fc903714",
@@ -16539,7 +19158,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "egg"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "1b1433fd-3930-5976-b740-44d5de04a5d5",
@@ -16737,7 +19360,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "egg"
     ],
-    "image_url": "/assets/images/dishes/egg-curry.png"
+    "image_url": "/assets/images/dishes/egg-curry.png",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "41903499-9058-5568-bc90-781e9309d01d",
@@ -16926,7 +19553,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "feedVisibility": "pantry-search-only",
     "heroEligible": false,
     "todaysPicksEligible": false,
-    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only"
+    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "pantry-egg-dosa",
@@ -17125,7 +19756,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "egg"
     ],
-    "image_url": "/assets/images/dishes/dosa-homestyle.png"
+    "image_url": "/assets/images/dishes/dosa-homestyle.png",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "f4400866-c4e8-5c2b-ae4f-d72ca3cd1de0",
@@ -17342,7 +19977,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "egg"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "pantry-egg-paratha",
@@ -17553,6 +20192,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "toppings": [
         "Butter"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -17755,6 +20398,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
     }
   },
   {
@@ -17977,7 +20624,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "feedVisibility": "pantry-search-only",
     "heroEligible": false,
     "todaysPicksEligible": false,
-    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only"
+    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "2063f8d6-c646-5dc5-89d2-e751eabc0cf4",
@@ -18185,6 +20836,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Rice"
       ]
+    },
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -18371,7 +21026,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "cb7a2e7a-d335-5ccd-86ef-fc429ce8faea",
@@ -18540,7 +21199,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "roti": [],
       "toppings": []
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "691e1313-b316-5d49-8749-5ac62472f7f4",
@@ -18728,7 +21391,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "7448bf61-1195-524d-9705-a4a82a0d1d1a",
@@ -18894,7 +21561,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "pantry-garlic-chicken",
@@ -19089,6 +21760,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Chapati"
       ],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
     }
   },
   {
@@ -19306,7 +21981,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "feedVisibility": "pantry-search-only",
     "heroEligible": false,
     "todaysPicksEligible": false,
-    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only"
+    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "426c9d34-0896-5de9-9dd9-45956c549e85",
@@ -19524,7 +22203,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "heroEligible": false,
     "todaysPicksEligible": false,
     "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "8009a7a7-8685-5c05-8dfd-e81e1c428ce5",
@@ -19803,7 +22486,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "e238d5df-19a8-5102-8a00-6c51ccc00125",
@@ -20012,7 +22699,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
   },
   {
     "id": "2d56b091-f071-53bf-a111-356b22b441e1",
@@ -20228,7 +22919,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "301f2f2e-2c86-5044-ba32-3e1996706d74",
@@ -20435,7 +23130,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "5336ec52-a13b-5692-9496-8f82fc423ad3",
@@ -20628,7 +23327,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
   },
   {
     "id": "ea5c36f0-eaff-5d10-b2b8-353114d67eee",
@@ -20850,6 +23553,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Rice",
         "Rotli"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -21010,6 +23717,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Fresh fruit",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -21241,7 +23952,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "moodTags": [
       "spicy"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
   },
   {
     "id": "95752df9-b6a6-53f3-a173-ec190ec46108",
@@ -21439,6 +24154,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Buttermilk",
         "Steamed rice"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
     }
   },
   {
@@ -21625,6 +24344,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Buttermilk",
         "Steamed rice"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
     }
   },
   {
@@ -21828,7 +24551,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "e25041f6-7cb7-563e-9ea7-6e127abce415",
@@ -21991,7 +24718,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/recommendation-pack-idli.png"
+    "image_url": "/assets/images/dishes/recommendation-pack-idli.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "2aaf6d66-f922-5c0b-8372-4b6d6d3e7795",
@@ -22196,7 +24927,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/jadoh-homestyle.png"
+    "image_url": "/assets/images/dishes/jadoh-homestyle.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    }
   },
   {
     "id": "61e2c598-8d04-5f63-9d14-5f8cf8c11cff",
@@ -22401,7 +25136,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "categoryType": "drink",
-    "heroEligible": false
+    "heroEligible": false,
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "f2256c12-fcbb-5bd8-8376-6b5c884cdcb4",
@@ -22635,7 +25374,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "moodTags": [
       "spicy"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
   },
   {
     "id": "bc50c525-dd05-559f-9e49-f8ff33bd0d59",
@@ -22797,6 +25540,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Tamarind chutney",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -22958,7 +25705,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Prasadam & Temple Foods"
+    }
   },
   {
     "id": "pantry-kadai-paneer",
@@ -23161,7 +25912,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "c600206d-aca2-5bdb-852e-2088494553d7",
@@ -23373,7 +26128,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
   },
   {
     "id": "b29ded95-c980-532b-81e6-03afcd41d895",
@@ -23540,6 +26299,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -23745,7 +26508,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "33124995-50ed-52c1-9d92-2213a8b1652d",
@@ -23934,7 +26701,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Steamed rice"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "1316d32a-9caf-5564-948f-10965880baff",
@@ -24147,7 +26918,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "egg"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
   },
   {
     "id": "3a03ee13-9f20-56cb-9457-c1f3a0e2763d",
@@ -24344,7 +27119,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
   },
   {
     "id": "39a8a1c5-0b09-5b6c-a4ed-b9ab210d42c0",
@@ -24553,6 +27332,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Green chutney",
         "Tea"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -24746,7 +27529,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    }
   },
   {
     "id": "059e3c93-804f-5c2c-8fc1-a283c6ea95b1",
@@ -24929,7 +27716,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/recommendation-pack-khichdi.png"
+    "image_url": "/assets/images/dishes/recommendation-pack-khichdi.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "585c8600-b52f-5bd8-830c-1b34632d7547",
@@ -25135,6 +27926,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Filter coffee"
       ]
+    },
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -25338,7 +28133,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "categoryType": "drink",
-    "heroEligible": false
+    "heroEligible": false,
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    }
   },
   {
     "id": "1be069ab-c75e-5324-a07b-2b452d09f144",
@@ -25532,7 +28331,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    }
   },
   {
     "id": "9bbe29b8-fca3-530d-bc82-5f7680b4cb74",
@@ -25719,6 +28522,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Tamarind chutney",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
     }
   },
   {
@@ -25925,7 +28732,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "1f9fa95e-15a6-5657-8d2a-20bba373c87c",
@@ -26132,7 +28943,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "8a93e463-f25d-5c42-a8bc-bfe156da07af",
@@ -26341,6 +29156,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Coconut chutney"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
     }
   },
   {
@@ -26533,7 +29352,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "2521b7a1-49f9-539a-bd7f-f4fa72117f20",
@@ -26701,7 +29524,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Nuts"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "efe50564-baae-5e44-bffa-52c3b9f6884c",
@@ -26896,7 +29723,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "52da8b63-1678-5f99-be66-7f288f1fdf41",
@@ -27072,7 +29903,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "moodTags": [
       "quick"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "108c0ed1-124f-561b-b15a-bd1aff82b663",
@@ -27274,6 +30109,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Coconut chutney",
         "Filter coffee"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
     }
   },
   {
@@ -27491,7 +30330,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "07a0fcc8-b84d-5c7b-94db-8e85415311d1",
@@ -27699,6 +30542,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Mishti doi",
         "Tea"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
     }
   },
   {
@@ -27904,7 +30751,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
   },
   {
     "id": "9540a935-a914-500d-92d6-e2f77e62897f",
@@ -28107,7 +30958,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "dcb4aa84-6b23-523e-abe1-f88c5a2bff71",
@@ -28291,6 +31146,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Light snacks"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
     }
   },
   {
@@ -28497,7 +31356,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "37aae453-5e0c-5e11-929f-19c41f6e54f5",
@@ -28701,7 +31564,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    }
   },
   {
     "id": "7a352bfd-1881-5a82-b462-e578853b0168",
@@ -28905,7 +31772,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "4ef13d94-fca7-5a7d-b50d-c66c14e840b6",
@@ -29121,7 +31992,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "moodExcludes": [],
     "hardExcludeMoods": [],
     "avoidIf": [],
-    "tomoLine": "Do not overboil after adding milk."
+    "tomoLine": "Do not overboil after adding milk.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
   },
   {
     "id": "f9243e51-5a87-5480-891e-0e204cd0287a",
@@ -29326,6 +32201,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Jal jeera"
       ]
+    },
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
     }
   },
   {
@@ -29544,7 +32423,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "pantry-masala-omelette",
@@ -29753,6 +32636,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
     }
   },
   {
@@ -29912,7 +32799,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Light snacks"
       ]
     },
-    "image_url": "/assets/images/dishes/batch7-mashed-banana.png"
+    "image_url": "/assets/images/dishes/batch7-mashed-banana.png",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "1fada6ce-8f4a-5d1e-9eae-66110a7bab4c",
@@ -30117,7 +33008,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    }
   },
   {
     "id": "pantry-matar-paneer",
@@ -30320,7 +33215,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "4b529cc8-757e-5ef6-b3fc-839149b57ecf",
@@ -30483,6 +33382,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Tamarind chutney",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -30689,7 +33592,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    }
   },
   {
     "id": "3ec47ac3-378d-5021-8dcd-4bd29a4c0d23",
@@ -30894,7 +33801,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
   },
   {
     "id": "0166c0c5-a7fd-57a6-8eba-fb7e19aae86f",
@@ -31061,7 +33972,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "7f8b0a38-0970-5f1f-a92c-1737a5dd229a",
@@ -31267,7 +34182,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "0df0850f-c591-5911-aace-f845faa5d056",
@@ -31470,7 +34389,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
   },
   {
     "id": "0c52bf5a-8421-596d-98db-64e24c330eb4",
@@ -31682,7 +34605,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
   },
   {
     "id": "19b617b4-fc04-56db-9b49-98a14128cb4b",
@@ -31872,7 +34799,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Steamed rice"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "b0322ac2-ec2e-5cc7-b2c8-d8a197edb78b",
@@ -32077,7 +35008,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "7157654a-9e2f-5004-87aa-7f0d0f8a2ad3",
@@ -32304,7 +35239,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Ghee",
       "Panchamrit"
     ],
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "bd5c342a-6ad3-51c3-a11e-26954541829f",
@@ -32485,6 +35424,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Tamarind chutney",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
     }
   },
   {
@@ -32694,6 +35637,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Mango pickle",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -32905,7 +35852,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Curd"
       ]
     },
-    "image_url": "/assets/images/dishes/recommendation-pack-moong-dal-chilla.png"
+    "image_url": "/assets/images/dishes/recommendation-pack-moong-dal-chilla.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "239cccea-6581-58b5-a373-b44f427f390f",
@@ -33113,7 +36064,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "fb1bec17-f3bb-5c49-a3fc-8603e2e784f2",
@@ -33332,6 +36287,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Rice",
         "Potato fry"
       ]
+    },
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -33515,7 +36474,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/batch6-masala-omelette.png"
+    "image_url": "/assets/images/dishes/batch6-masala-omelette.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "db985b31-18be-58ff-bcf1-7e66cfa05e88",
@@ -33732,7 +36695,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "heroEligible": false,
     "todaysPicksEligible": false,
     "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "c4e3f6e6-082a-5fcb-84a7-ec7ea40b9d46",
@@ -33946,7 +36913,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "roti": [],
       "toppings": []
     },
-    "image_url": "/assets/images/dishes/mushroom-pulao.jpg"
+    "image_url": "/assets/images/dishes/mushroom-pulao.jpg",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "c101d168-caa7-5a38-988b-3643bac39e49",
@@ -34174,7 +37145,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "moodExcludes": [],
     "hardExcludeMoods": [],
     "avoidIf": [],
-    "tomoLine": "Brown the mushrooms lightly for better flavor."
+    "tomoLine": "Brown the mushrooms lightly for better flavor.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "80fa9550-534b-53b8-a9e6-c1072ad32c55",
@@ -34390,7 +37365,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/mutton-pulao-homestyle.png"
+    "image_url": "/assets/images/dishes/mutton-pulao-homestyle.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "4985a448-1fe5-5029-8d3b-7629d38b7662",
@@ -34595,7 +37574,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    }
   },
   {
     "id": "c1f3c945-38fd-5b3f-beef-291ca5a9a91e",
@@ -34792,7 +37775,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Steamed rice"
       ]
     },
-    "image_url": "/assets/images/dishes/lunch-default.png"
+    "image_url": "/assets/images/dishes/lunch-default.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "2c96efa2-bfe9-5c15-b217-ad3901b4065a",
@@ -35001,7 +37988,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "630eaf2d-c9e4-51f1-9732-c1ea97e17291",
@@ -35206,7 +38197,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "categoryType": "drink",
-    "heroEligible": false
+    "heroEligible": false,
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "86d51e94-296c-5c78-a3bc-33b1e821015f",
@@ -35412,6 +38407,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Tea"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
     }
   },
   {
@@ -35569,6 +38568,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Light snacks"
       ]
+    },
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
     }
   },
   {
@@ -35778,7 +38781,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "pantry-onion-dosa",
@@ -35977,7 +38984,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Ghee"
       ]
     },
-    "image_url": "/assets/images/dishes/dosa-homestyle.png"
+    "image_url": "/assets/images/dishes/dosa-homestyle.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "38e10f97-7ec1-5410-91a6-b937e8cfe228",
@@ -36188,6 +39199,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
     }
   },
   {
@@ -36393,6 +39408,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "toppings": [
         "Butter"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -36593,6 +39612,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
     }
   },
   {
@@ -36783,7 +39806,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/dosa-homestyle.png"
+    "image_url": "/assets/images/dishes/dosa-homestyle.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "36c237f6-5860-54ec-b8ee-1b6a49d14634",
@@ -36987,7 +40014,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "f69050ba-0a8a-5c1c-b796-28d28b5ef434",
@@ -37155,7 +40186,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/snacks/pakora.png"
+    "image_url": "/assets/images/snacks/pakora.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "cac2330c-14ca-5e88-b0cc-7b08b9188d11",
@@ -37368,6 +40403,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Rice",
         "Chapati"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -37537,7 +40576,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "93998719-ab3a-5d42-8edd-a97a6d053534",
@@ -37745,6 +40788,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Mango pickle",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -37932,7 +40979,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "c8da13df-2cde-59bf-9a1c-ffeab08f72c4",
@@ -38150,7 +41201,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "heroEligible": false,
     "todaysPicksEligible": false,
     "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "e7698df8-a3ff-536c-af5b-34a74a6075e4",
@@ -38369,7 +41424,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "heroEligible": false,
     "todaysPicksEligible": false,
     "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "pantry-paneer-dosa",
@@ -38573,7 +41632,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Tomato chutney"
       ]
     },
-    "image_url": "/assets/images/dishes/dosa-homestyle.png"
+    "image_url": "/assets/images/dishes/dosa-homestyle.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "pantry-paneer-fried-rice",
@@ -38791,7 +41854,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "roti": [],
       "toppings": []
     },
-    "image_url": "/assets/images/dishes/pulao.png"
+    "image_url": "/assets/images/dishes/pulao.png",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "b8c0addf-df03-5bbc-9e9a-0dce8a092533",
@@ -39007,7 +42074,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "33f0c885-d196-52a0-a0fc-83b135bab1f0",
@@ -39171,7 +42242,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "5f7465e8-6818-5d67-b192-4ae22346f1e7",
@@ -39358,6 +42433,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "toppings": [
         "Butter"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -39575,7 +42654,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "f93e862f-6ef9-5068-ad4e-4528409c0a83",
@@ -39770,7 +42853,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "bf541c47-19b4-5df7-a4cd-a69138c42d49",
@@ -39936,6 +43023,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -40128,7 +43219,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "b280fe25-ecce-583a-9911-c2c33b216d8c",
@@ -40331,7 +43426,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "pantry-peanut-poha",
@@ -40563,7 +43662,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "mealTags": [
       "Breakfast",
       "Snack"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    }
   },
   {
     "id": "pantry-peanut-rice",
@@ -40766,6 +43869,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
     }
   },
   {
@@ -40965,7 +44072,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Coriander"
       ]
     },
-    "tomoLine": "Boil peanuts until tender but not mushy."
+    "tomoLine": "Boil peanuts until tender but not mushy.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "57c763b2-cd03-598d-921b-e32299d39aba",
@@ -41175,6 +44286,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -41411,7 +44526,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "moodExcludes": [],
     "hardExcludeMoods": [],
     "avoidIf": [],
-    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png"
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "7d234dcc-2c68-503b-b2db-5c6e47dfde21",
@@ -41627,7 +44746,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Moong Dal Dosa",
       "Green Gram Dosa"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Andhra & Telangana"
+    }
   },
   {
     "id": "a10586fc-5b70-5fe7-b1d8-f475a36186fb",
@@ -41793,6 +44916,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Light snacks"
       ]
+    },
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -41966,6 +45093,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Mango pickle",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -42200,7 +45331,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Christmas sweets"
     ],
     "updatedAt": "2026-06-18T00:00:00.000Z",
-    "image_url": "/assets/images/dishes/batch7-plum-cake.png"
+    "image_url": "/assets/images/dishes/batch7-plum-cake.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "bc627d5d-b17d-5625-bb55-77ee49ba8b6c",
@@ -42374,7 +45509,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    }
   },
   {
     "id": "09545ae4-464d-59fb-ba43-ce8f08242e9e",
@@ -42559,7 +45698,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/recommendation-pack-pongal.png"
+    "image_url": "/assets/images/dishes/recommendation-pack-pongal.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "41f02fad-1353-5963-9a98-d90ad65c9225",
@@ -42721,7 +45864,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Steamed rice"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    }
   },
   {
     "id": "57797f61-0e93-5d43-ba49-b4c9150eda62",
@@ -42911,7 +46058,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "0c69f037-a5d0-5e24-b5ea-1b59a3c7c11d",
@@ -43122,7 +46273,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "non_vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "pantry-puliyogare",
@@ -43343,7 +46498,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "6a1064f9-3bde-5e2f-8b98-ce4f44db6c5f",
@@ -43555,6 +46714,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Banana",
         "Tea"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
     }
   },
   {
@@ -43748,7 +46911,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "aliases": [
       "Finger Millet Dosa"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "d7a0cbaa-145e-52f6-8cf8-e0b9494a5e51",
@@ -43957,7 +47124,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "heroEligible": false,
     "hardExcludeMoods": [],
     "avoidIf": [],
-    "tomoLine": "Stir continuously to avoid lumps."
+    "tomoLine": "Stir continuously to avoid lumps.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "974c262e-52b1-5d70-a869-62f93ac4e320",
@@ -44114,6 +47285,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Light snacks"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
     }
   },
   {
@@ -44306,7 +47481,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "96675ee8-fc7e-59f2-9a93-aca530803829",
@@ -44479,7 +47658,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "1265459d-2eb0-5ef5-9a96-8b339a118ed1",
@@ -44641,7 +47824,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "e8936611-d4a4-509c-808f-2dea85fb4619",
@@ -44799,7 +47986,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Light snacks"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "24779303-05c4-5120-b95a-7939628684d2",
@@ -45016,6 +48207,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
     }
   },
   {
@@ -45194,7 +48389,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "5b502a16-ead4-5ace-a8d2-953b8654d77e",
@@ -45365,7 +48564,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "9bbe62ed-ca4c-54c8-a30b-901c1af0479a",
@@ -45526,6 +48729,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Tamarind chutney",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
     }
   },
   {
@@ -45751,6 +48958,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Makki roti",
         "White butter"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -45970,7 +49181,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "heroEligible": false,
     "hardExcludeMoods": [],
     "avoidIf": [],
-    "tomoLine": "Whisk sattu with a splash of water first to avoid lumps."
+    "tomoLine": "Whisk sattu with a splash of water first to avoid lumps.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "5d2a1179-d7b8-5cff-9399-a25ca21cafe6",
@@ -46159,6 +49374,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
     }
   },
   {
@@ -46357,7 +49576,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "0303dc69-1270-5037-bcf7-5b846290e4ae",
@@ -46561,7 +49784,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "08f2865a-8ff3-50b2-8f0e-086b3f4b3a36",
@@ -46725,7 +49952,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Mango pickle"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    }
   },
   {
     "id": "4fc03733-2d70-58c9-8e40-3376e0291cac",
@@ -46898,6 +50129,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Coconut chutney",
         "Tomato chutney"
       ]
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
     }
   },
   {
@@ -47105,7 +50340,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    }
   },
   {
     "id": "31b3225e-4dad-5699-82fa-884a705efd87",
@@ -47318,7 +50557,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "82d80f17-967c-5533-9cb7-4dd4e80b886a",
@@ -47526,6 +50769,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Green chutney",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
     }
   },
   {
@@ -47728,7 +50975,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "moodTags": [
       "spicy",
       "comfort"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "5d7a89df-4ba0-521f-bf52-519540ac1cc6",
@@ -47945,7 +51196,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "moodTags": [
       "comfort",
       "spicy"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "8c98ad03-edf1-589a-91de-12ed7d270e07",
@@ -48165,6 +51420,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Buttermilk"
       ]
+    },
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -48372,7 +51631,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    }
   },
   {
     "id": "188f3314-71f4-5eba-8b4d-51bd1083084b",
@@ -48535,7 +51798,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Mango pickle"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    }
   },
   {
     "id": "3bc2b280-cc5c-5f34-8725-54f5f6b077d5",
@@ -48701,6 +51968,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Mango pickle",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -48869,7 +52140,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "tomoLine": "Drain chana well before tossing.",
-    "image_url": "/assets/images/dishes/batch7-sundal.png"
+    "image_url": "/assets/images/dishes/batch7-sundal.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "02d176de-fb82-58f5-a22a-076dd715c5f8",
@@ -49080,7 +52355,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Nuts"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Regional Sweets"
+    }
   },
   {
     "id": "5680a04f-284b-5bc1-a0b4-27b967733aa7",
@@ -49261,6 +52540,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai",
         "Nuts"
       ]
+    },
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -49468,6 +52751,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai",
         "Nuts"
       ]
+    },
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -49678,6 +52965,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Curd",
         "Chunda"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
     }
   },
   {
@@ -49872,6 +53163,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Coriander",
         "Chilli Oil"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
     }
   },
   {
@@ -50090,7 +53385,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/recommendation-pack-tofu-bhurji.png"
+    "image_url": "/assets/images/dishes/recommendation-pack-tofu-bhurji.png",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Healthy Plates"
+    }
   },
   {
     "id": "4d63e325-461e-52ce-b00a-ee70c37df3ec",
@@ -50295,6 +53594,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Green chutney",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
     }
   },
   {
@@ -50509,7 +53812,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "d9a91b22-ff01-5a16-bafc-0b6b501b9d53",
@@ -50732,6 +54039,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Ghee",
         "Papad"
       ]
+    },
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -50930,7 +54241,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "pantry-tomato-uttapam",
@@ -51123,7 +54438,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Tomato chutney"
       ]
     },
-    "image_url": "/assets/images/dishes/dosa-homestyle.png"
+    "image_url": "/assets/images/dishes/dosa-homestyle.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "8a029051-cabb-5dcb-a1fb-7cb3752ac18e",
@@ -51331,7 +54650,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "mealTags": [
       "breakfast"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "c0e23a23-967d-500c-bdc7-9cde7dd2d6e3",
@@ -51542,6 +54865,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Rice",
         "Lemon pickle"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
     }
   },
   {
@@ -51768,6 +55095,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "rice": [],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
     }
   },
   {
@@ -52058,6 +55389,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ],
       "roti": [],
       "toppings": []
+    },
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
     }
   },
   {
@@ -52274,7 +55609,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/pulao.png"
+    "image_url": "/assets/images/dishes/pulao.png",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "North & West India"
+    }
   },
   {
     "id": "392e3ec0-23e5-5e10-b967-0a2088887a90",
@@ -52469,6 +55808,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Green chutney",
         "Masala chai"
       ]
+    },
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
     }
   },
   {
@@ -52625,6 +55968,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "bestWith": [
         "Light snacks"
       ]
+    },
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
     }
   },
   {
@@ -52853,7 +56200,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "moodExcludes": [],
     "hardExcludeMoods": [],
     "avoidIf": [],
-    "tomoLine": "Cut vegetables small so the soup cooks quickly."
+    "tomoLine": "Cut vegetables small so the soup cooks quickly.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "ef049e30-0f83-5a1f-a886-2c6980a3c15f",
@@ -53070,7 +56421,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "dietaryTags": [
       "vegetarian"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
   },
   {
     "id": "pantry-vegetable-uttapam",
@@ -53272,7 +56627,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/dosa-homestyle.png"
+    "image_url": "/assets/images/dishes/dosa-homestyle.png",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Daily Comforts"
+    }
   },
   {
     "id": "f585fad9-5097-5321-a201-43269b7c4336",
@@ -53495,6 +56854,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Bhakri",
         "Thecha"
       ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
     }
   },
   {
@@ -53700,7 +57063,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "tomoLine": "Keep the texture slightly thick so it sits well with dosa, idli and snacks."
+    "tomoLine": "Keep the texture slightly thick so it sits well with dosa, idli and snacks.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Chutneys, Podis & Condiments"
+    }
   },
   {
     "id": "side-addon-tomato-chutney",
@@ -53905,7 +57272,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "tomoLine": "Cook the tomatoes down well so the chutney tastes bright, not raw."
+    "tomoLine": "Cook the tomatoes down well so the chutney tastes bright, not raw.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "side-addon-peanut-chutney",
@@ -54111,7 +57482,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "tomoLine": "Use warm water while blending for a smoother chutney.",
-    "image_url": "/assets/images/dishes/batch7-peanut-chutney.png"
+    "image_url": "/assets/images/dishes/batch7-peanut-chutney.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Chutneys, Podis & Condiments"
+    }
   },
   {
     "id": "side-addon-mint-chutney",
@@ -54308,7 +57683,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "tomoLine": "Add lemon before blending to keep the chutney bright."
+    "tomoLine": "Add lemon before blending to keep the chutney bright.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Chutneys, Podis & Condiments"
+    }
   },
   {
     "id": "side-addon-beetroot-palya",
@@ -54518,7 +57897,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "tomoLine": "Cut the beetroot small so it cooks quickly and stays lightly sweet.",
-    "image_url": "/assets/images/dishes/batch7-beetroot-palya.png"
+    "image_url": "/assets/images/dishes/batch7-beetroot-palya.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "side-addon-potato-palya",
@@ -54728,7 +58111,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "tomoLine": "Keep a few potato chunks intact for a homely texture.",
-    "image_url": "/assets/images/dishes/batch7-potato-palya.png"
+    "image_url": "/assets/images/dishes/batch7-potato-palya.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "side-addon-cucumber-raita",
@@ -54928,7 +58315,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "tomoLine": "Squeeze watery cucumber lightly if you want a thicker raita.",
-    "image_url": "/assets/images/dishes/batch7-cucumber-raita.png"
+    "image_url": "/assets/images/dishes/batch7-cucumber-raita.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Chutneys, Podis & Condiments"
+    }
   },
   {
     "id": "side-addon-onion-raita",
@@ -55128,7 +58519,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "tomoLine": "Chop onion fine so every spoonful stays balanced.",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Chutneys, Podis & Condiments"
+    }
   },
   {
     "id": "side-addon-mint-raita",
@@ -55328,7 +58723,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "tomoLine": "Use only fresh mint leaves for the cleanest cooling flavor.",
-    "image_url": "/assets/images/dishes/batch7-mint-raita.png"
+    "image_url": "/assets/images/dishes/batch7-mint-raita.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Chutneys, Podis & Condiments"
+    }
   },
   {
     "id": "side-addon-boondi-raita",
@@ -55526,7 +58925,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "tomoLine": "Add boondi just before serving if you like a little crunch."
+    "tomoLine": "Add boondi just before serving if you like a little crunch.",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "side-addon-egg-sandwich",
@@ -55733,7 +59136,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "non-vegetarian"
     ],
     "tomoLine": "A quick egg sandwich with soft bread, simple seasoning and enough protein for a filling lunchbox bite.",
-    "image_url": "/assets/images/dishes/recommendation-pack-egg-sandwich.png"
+    "image_url": "/assets/images/dishes/recommendation-pack-egg-sandwich.png",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-mini-uttapam",
@@ -55944,7 +59351,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "curd"
       ]
     },
-    "tomoLine": "Keep them small so they cool quickly and fit neatly in a lunchbox."
+    "tomoLine": "Keep them small so they cool quickly and fit neatly in a lunchbox.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-veg-seviyan",
@@ -56154,7 +59565,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "banana"
       ]
     },
-    "tomoLine": "Let it rest for two minutes before packing so the strands stay separate."
+    "tomoLine": "Let it rest for two minutes before packing so the strands stay separate.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-rava-idli",
@@ -56363,7 +59778,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "tomato chutney"
       ]
     },
-    "tomoLine": "Add eno only at the end for soft idlis."
+    "tomoLine": "Add eno only at the end for soft idlis.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-dosa-roll",
@@ -56573,7 +59992,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "fruit"
       ]
     },
-    "tomoLine": "Use a soft dosa rather than a crisp one so the roll stays flexible."
+    "tomoLine": "Use a soft dosa rather than a crisp one so the roll stays flexible.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-mini-idli",
@@ -56760,7 +60183,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "podi"
       ]
     },
-    "tomoLine": "For lunchboxes, toss with a little ghee so the idlis do not dry out."
+    "tomoLine": "For lunchboxes, toss with a little ghee so the idlis do not dry out.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-chapati-jam-roll",
@@ -56951,7 +60378,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "curd"
       ]
     },
-    "tomoLine": "Spread jam lightly so the roll stays neat and not sticky."
+    "tomoLine": "Spread jam lightly so the roll stays neat and not sticky.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-paneer-roll",
@@ -57161,7 +60592,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "fruit"
       ]
     },
-    "tomoLine": "Keep the filling dry so the roll does not turn soggy."
+    "tomoLine": "Keep the filling dry so the roll does not turn soggy.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-egg-roll",
@@ -57371,7 +60806,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "fruit"
       ]
     },
-    "tomoLine": "Cool the egg filling slightly before rolling to keep the chapati soft."
+    "tomoLine": "Cool the egg filling slightly before rolling to keep the chapati soft.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-paneer-bhurji-wrap",
@@ -57587,7 +61026,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "feedVisibility": "pantry-search-only",
     "heroEligible": false,
     "todaysPicksEligible": false,
-    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only"
+    "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-moong-dal-cheela",
@@ -57795,7 +61238,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "tomato chutney"
       ]
     },
-    "tomoLine": "Make the batter slightly thick so small cheelas are easy to flip."
+    "tomoLine": "Make the batter slightly thick so small cheelas are easy to flip.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-cheese-veg-sandwich",
@@ -58008,7 +61455,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "tomoLine": "Do not overfill the sandwich if it needs to stay neat in a box.",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-veg-cutlet",
@@ -58218,7 +61669,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "tomoLine": "Make small cutlets so they crisp faster and fit easily in snack boxes.",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-banana-pancake",
@@ -58430,7 +61885,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "milk"
       ]
     },
-    "tomoLine": "Keep the pancakes small so they stay soft after cooling."
+    "tomoLine": "Keep the pancakes small so they stay soft after cooling.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-masala-makhana",
@@ -58634,7 +62093,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "buttermilk"
       ]
     },
-    "tomoLine": "Cool completely before closing the box so the makhana stays crunchy."
+    "tomoLine": "Cool completely before closing the box so the makhana stays crunchy.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-sweet-potato-chaat",
@@ -58840,7 +62303,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "fruit"
       ]
     },
-    "tomoLine": "Pack the curd separately if the chaat needs to stay fresh for longer."
+    "tomoLine": "Pack the curd separately if the chaat needs to stay fresh for longer.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "lunchbox-detail-mini-dhokla",
@@ -59052,7 +62519,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "tea"
       ]
     },
-    "tomoLine": "Cut into small squares after cooling slightly so the dhokla keeps its shape."
+    "tomoLine": "Cut into small squares after cooling slightly so the dhokla keeps its shape.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
+    }
   },
   {
     "id": "sips-detail-jeera-water",
@@ -59237,7 +62708,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "plain khichdi"
       ]
     },
-    "tomoLine": "Roast jeera lightly; burnt jeera can taste bitter."
+    "tomoLine": "Roast jeera lightly; burnt jeera can taste bitter.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
   },
   {
     "id": "sips-detail-kashaya",
@@ -59442,7 +62917,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "plain toast"
       ]
     },
-    "tomoLine": "Keep the spice gentle if serving in the evening."
+    "tomoLine": "Keep the spice gentle if serving in the evening.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
   },
   {
     "id": "sips-detail-tulsi-tea",
@@ -59637,7 +63116,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "plain biscuits"
       ]
     },
-    "tomoLine": "Add honey only after the tea is warm, not boiling."
+    "tomoLine": "Add honey only after the tea is warm, not boiling.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
   },
   {
     "id": "sips-detail-ginger-chai",
@@ -59832,7 +63315,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Crush ginger fresh for the best aroma."
+    "tomoLine": "Crush ginger fresh for the best aroma.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
   },
   {
     "id": "sips-detail-ajwain-water",
@@ -60017,7 +63504,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "curd rice"
       ]
     },
-    "tomoLine": "Use a small amount of ajwain; it gets strong quickly."
+    "tomoLine": "Use a small amount of ajwain; it gets strong quickly.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
   },
   {
     "id": "sips-detail-sweet-lassi",
@@ -60213,7 +63704,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "poha"
       ]
     },
-    "tomoLine": "Use thick curd for the creamiest lassi."
+    "tomoLine": "Use thick curd for the creamiest lassi.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-panakam",
@@ -60419,7 +63914,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "kosambari"
       ]
     },
-    "tomoLine": "Balance lemon and jaggery so it tastes bright, not heavy."
+    "tomoLine": "Balance lemon and jaggery so it tastes bright, not heavy.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-nannari-sherbet",
@@ -60615,7 +64114,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "curd rice"
       ]
     },
-    "tomoLine": "Start with less syrup and adjust sweetness after tasting."
+    "tomoLine": "Start with less syrup and adjust sweetness after tasting.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-carrot-beet-juice",
@@ -60811,7 +64314,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "sprouts salad"
       ]
     },
-    "tomoLine": "Use a small beetroot piece so the flavor stays balanced."
+    "tomoLine": "Use a small beetroot piece so the flavor stays balanced.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-masala-chaas",
@@ -61017,7 +64524,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "khichdi"
       ]
     },
-    "tomoLine": "Whisk well so the chaas feels light and frothy."
+    "tomoLine": "Whisk well so the chaas feels light and frothy.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-aam-panna",
@@ -61223,7 +64734,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "chaat"
       ]
     },
-    "tomoLine": "Make a thicker concentrate and dilute only when serving."
+    "tomoLine": "Make a thicker concentrate and dilute only when serving.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-rose-milk",
@@ -61409,7 +64924,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "fruit"
       ]
     },
-    "tomoLine": "Keep it lightly sweet so the rose flavor stays fresh."
+    "tomoLine": "Keep it lightly sweet so the rose flavor stays fresh.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-sugarcane-juice",
@@ -61592,7 +65111,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "peanut chaat"
       ]
     },
-    "tomoLine": "Serve immediately so the flavor stays fresh."
+    "tomoLine": "Serve immediately so the flavor stays fresh.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-mango-lassi",
@@ -61788,7 +65311,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "light paratha"
       ]
     },
-    "tomoLine": "Use ripe mango so you need less sugar."
+    "tomoLine": "Use ripe mango so you need less sugar.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-watermelon-juice",
@@ -61971,7 +65498,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "veg sandwich"
       ]
     },
-    "tomoLine": "Use chilled watermelon so you do not need much ice."
+    "tomoLine": "Use chilled watermelon so you do not need much ice.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-salted-lassi",
@@ -62167,7 +65698,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "khichdi"
       ]
     },
-    "tomoLine": "Keep it thinner than sweet lassi for a lighter meal drink."
+    "tomoLine": "Keep it thinner than sweet lassi for a lighter meal drink.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-dates-milkshake",
@@ -62363,7 +65898,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Soaking dates makes the shake smoother."
+    "tomoLine": "Soaking dates makes the shake smoother.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-tender-coconut-water",
@@ -62536,7 +66075,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "light upma"
       ]
     },
-    "tomoLine": "Serve as fresh as possible for the cleanest taste."
+    "tomoLine": "Serve as fresh as possible for the cleanest taste.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-filter-coffee",
@@ -62711,7 +66254,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "dosa"
       ]
     },
-    "tomoLine": "Use fresh decoction for the best aroma."
+    "tomoLine": "Use fresh decoction for the best aroma.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
   },
   {
     "id": "sips-detail-elaichi-chai",
@@ -62906,7 +66453,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "poha"
       ]
     },
-    "tomoLine": "Crush cardamom just before brewing for better fragrance."
+    "tomoLine": "Crush cardamom just before brewing for better fragrance.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
   },
   {
     "id": "sips-detail-lemon-honey-water",
@@ -63081,7 +66632,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "fruit"
       ]
     },
-    "tomoLine": "Do not add honey to boiling water; let it cool slightly first."
+    "tomoLine": "Do not add honey to boiling water; let it cool slightly first.",
+    "collectionHome": {
+      "hub": "Everyday Cooking",
+      "collection": "Tea Time Favourites"
+    }
   },
   {
     "id": "sips-detail-banana-shake",
@@ -63276,7 +66831,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "pancake"
       ]
     },
-    "tomoLine": "Use ripe banana for natural sweetness."
+    "tomoLine": "Use ripe banana for natural sweetness.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-green-moong-drink",
@@ -63471,7 +67030,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "dhokla"
       ]
     },
-    "tomoLine": "Cook the moong very soft for a smoother drink."
+    "tomoLine": "Cook the moong very soft for a smoother drink.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-turmeric-milk",
@@ -63666,7 +67229,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "dates"
       ]
     },
-    "tomoLine": "Use only a pinch of pepper; it helps but should not dominate."
+    "tomoLine": "Use only a pinch of pepper; it helps but should not dominate.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "sips-detail-saffron-milk",
@@ -63861,7 +67428,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "dry fruit ladoo"
       ]
     },
-    "tomoLine": "Soak saffron first so the color and aroma bloom."
+    "tomoLine": "Soak saffron first so the color and aroma bloom.",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "sips-detail-badam-milk",
@@ -64056,7 +67627,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "fruit"
       ]
     },
-    "tomoLine": "Blend almonds finely for a smooth drink."
+    "tomoLine": "Blend almonds finely for a smooth drink.",
+    "collectionHome": {
+      "hub": "Seasonal Specials",
+      "collection": "Summer Cooling"
+    }
   },
   {
     "id": "warm-bowls-detail-manchow-soup",
@@ -64273,7 +67848,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "chilli paneer"
       ]
     },
-    "tomoLine": "Keep the vegetables finely chopped so every spoon feels balanced."
+    "tomoLine": "Keep the vegetables finely chopped so every spoon feels balanced.",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "warm-bowls-detail-beetroot-soup",
@@ -64490,7 +68069,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "veg cutlet"
       ]
     },
-    "tomoLine": "Add milk only after blending for a softer color and taste."
+    "tomoLine": "Add milk only after blending for a softer color and taste.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-noodle-soup",
@@ -64708,7 +68291,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "chilli paneer"
       ]
     },
-    "tomoLine": "Keep noodles slightly firm so they do not turn mushy."
+    "tomoLine": "Keep noodles slightly firm so they do not turn mushy.",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "warm-bowls-detail-oats-soup",
@@ -64925,7 +68512,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "banana pancake"
       ]
     },
-    "tomoLine": "Roast oats lightly first to avoid a raw taste."
+    "tomoLine": "Roast oats lightly first to avoid a raw taste.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-hot-and-sour-soup",
@@ -65142,7 +68733,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "chilli paneer"
       ]
     },
-    "tomoLine": "Add vinegar at the end so the soup stays bright."
+    "tomoLine": "Add vinegar at the end so the soup stays bright.",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "warm-bowls-detail-pumpkin-soup",
@@ -65359,7 +68954,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "paneer sandwich"
       ]
     },
-    "tomoLine": "Use ripe pumpkin for natural sweetness."
+    "tomoLine": "Use ripe pumpkin for natural sweetness.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-lemon-coriander-soup",
@@ -65576,7 +69175,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Add lemon after switching off the heat to keep it fresh."
+    "tomoLine": "Add lemon after switching off the heat to keep it fresh.",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "warm-bowls-detail-drumstick-soup",
@@ -65793,7 +69396,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "papad"
       ]
     },
-    "tomoLine": "Extract the drumstick pulp well for deeper flavor."
+    "tomoLine": "Extract the drumstick pulp well for deeper flavor.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-bottle-gourd-soup",
@@ -66009,7 +69616,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "khichdi"
       ]
     },
-    "tomoLine": "Keep the seasoning gentle so the bottle gourd stays soothing."
+    "tomoLine": "Keep the seasoning gentle so the bottle gourd stays soothing.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-carrot-soup",
@@ -66226,7 +69837,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "cutlet"
       ]
     },
-    "tomoLine": "A small piece of ginger makes the sweetness feel balanced."
+    "tomoLine": "A small piece of ginger makes the sweetness feel balanced.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-mixed-veg-soup",
@@ -66443,7 +70058,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "paneer roll"
       ]
     },
-    "tomoLine": "Use whatever vegetables are fresh, but keep the pieces small."
+    "tomoLine": "Use whatever vegetables are fresh, but keep the pieces small.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-millet-soup",
@@ -66659,7 +70278,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Cook millet until soft so the soup feels comforting, not grainy."
+    "tomoLine": "Cook millet until soft so the soup feels comforting, not grainy.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-spinach-soup",
@@ -66876,7 +70499,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "paneer tikka"
       ]
     },
-    "tomoLine": "Do not overcook spinach if you want a bright green soup."
+    "tomoLine": "Do not overcook spinach if you want a bright green soup.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-peas-soup",
@@ -67092,7 +70719,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "veg sandwich"
       ]
     },
-    "tomoLine": "Use fresh or frozen peas, but do not overboil after blending."
+    "tomoLine": "Use fresh or frozen peas, but do not overboil after blending.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-broccoli-soup",
@@ -67309,7 +70940,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "paneer sandwich"
       ]
     },
-    "tomoLine": "Cook broccoli only until tender so it stays fresh-tasting."
+    "tomoLine": "Cook broccoli only until tender so it stays fresh-tasting.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-cabbage-soup",
@@ -67526,7 +71161,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Keep cabbage slightly crisp for a fresher soup."
+    "tomoLine": "Keep cabbage slightly crisp for a fresher soup.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-garlic-soup",
@@ -67743,7 +71382,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "khichdi"
       ]
     },
-    "tomoLine": "Cook garlic gently; browning it too much can make the soup bitter."
+    "tomoLine": "Cook garlic gently; browning it too much can make the soup bitter.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "karnataka-pack-1-soppu-saaru",
@@ -68002,7 +71645,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Ghee"
       ]
     },
-    "tomoLine": "Keep it pourable so it works with both rice and ragi mudde."
+    "tomoLine": "Keep it pourable so it works with both rice and ragi mudde.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "warm-bowls-detail-tomato-rasam",
@@ -68221,7 +71868,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "papad"
       ]
     },
-    "tomoLine": "Do not boil rasam too long after it turns frothy."
+    "tomoLine": "Do not boil rasam too long after it turns frothy.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "warm-bowls-detail-kollu-rasam",
@@ -68440,7 +72091,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "poriyal"
       ]
     },
-    "tomoLine": "Use the cooked horse gram water for the richest rasam flavor."
+    "tomoLine": "Use the cooked horse gram water for the richest rasam flavor.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
   },
   {
     "id": "warm-bowls-detail-mysore-rasam",
@@ -68659,7 +72314,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "beans poriyal"
       ]
     },
-    "tomoLine": "Keep the coconut light so the rasam stays pourable."
+    "tomoLine": "Keep the coconut light so the rasam stays pourable.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "warm-bowls-detail-sweet-corn-soup",
@@ -68876,7 +72535,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Keep the soup lightly thick, not gluey."
+    "tomoLine": "Keep the soup lightly thick, not gluey.",
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Comforts"
+    }
   },
   {
     "id": "warm-bowls-detail-tomato-soup",
@@ -69093,7 +72756,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "grilled sandwich"
       ]
     },
-    "tomoLine": "A small carrot balances tomato acidity naturally."
+    "tomoLine": "A small carrot balances tomato acidity naturally.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-chicken-soup",
@@ -69310,7 +72977,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "rice"
       ]
     },
-    "tomoLine": "Simmer gently for a clearer, cleaner broth."
+    "tomoLine": "Simmer gently for a clearer, cleaner broth.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-lentil-soup",
@@ -69527,7 +73198,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "rice"
       ]
     },
-    "tomoLine": "Mash lightly for body while keeping the soup rustic."
+    "tomoLine": "Mash lightly for body while keeping the soup rustic.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-paneer-soup",
@@ -69744,7 +73419,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "veg sandwich"
       ]
     },
-    "tomoLine": "Add paneer at the end so it stays soft."
+    "tomoLine": "Add paneer at the end so it stays soft.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "warm-bowls-detail-moong-dal-soup",
@@ -69961,7 +73640,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "soft idli"
       ]
     },
-    "tomoLine": "Cook the dal very soft for a smooth soothing soup."
+    "tomoLine": "Cook the dal very soft for a smooth soothing soup.",
+    "collectionHome": {
+      "hub": "Healthy Living",
+      "collection": "Warm & Light Bowls"
+    }
   },
   {
     "id": "fresh-plates-detail-green-gram-salad",
@@ -70178,7 +73861,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Drain the green gram well so the salad stays crisp."
+    "tomoLine": "Drain the green gram well so the salad stays crisp.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-pomegranate-salad",
@@ -70395,7 +74082,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "veg sandwich"
       ]
     },
-    "tomoLine": "Add the pomegranate at the end so it stays juicy."
+    "tomoLine": "Add the pomegranate at the end so it stays juicy.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-millet-salad",
@@ -70613,7 +74304,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "tomoLine": "Cool the millet first so the grains stay separate.",
-    "image_url": "/assets/images/dishes/batch7-millet-salad.png"
+    "image_url": "/assets/images/dishes/batch7-millet-salad.png",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-cabbage-salad",
@@ -70830,7 +74525,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "curd rice"
       ]
     },
-    "tomoLine": "Slice cabbage thin so it absorbs the lemon nicely."
+    "tomoLine": "Slice cabbage thin so it absorbs the lemon nicely.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-avocado-salad",
@@ -71047,7 +74746,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "egg sandwich"
       ]
     },
-    "tomoLine": "Add lemon quickly so the avocado stays fresh and green."
+    "tomoLine": "Add lemon quickly so the avocado stays fresh and green.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-spinach-salad",
@@ -71264,7 +74967,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "paneer tikka"
       ]
     },
-    "tomoLine": "Dry the spinach after washing so the dressing clings better."
+    "tomoLine": "Dry the spinach after washing so the dressing clings better.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-lentil-salad",
@@ -71481,7 +75188,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Do not overcook lentils; they should hold their shape."
+    "tomoLine": "Do not overcook lentils; they should hold their shape.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-apple-walnut-salad",
@@ -71698,7 +75409,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Add lemon to keep the apple from browning."
+    "tomoLine": "Add lemon to keep the apple from browning.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-beetroot-salad",
@@ -71915,7 +75630,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "dal roti"
       ]
     },
-    "tomoLine": "Cool beetroot before mixing so the salad stays fresh."
+    "tomoLine": "Cool beetroot before mixing so the salad stays fresh.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-mixed-veg-salad",
@@ -72132,7 +75851,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "buttermilk"
       ]
     },
-    "tomoLine": "Dress it right before serving so the vegetables stay crisp."
+    "tomoLine": "Dress it right before serving so the vegetables stay crisp.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-sweet-corn-salad",
@@ -72349,7 +76072,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "masala chaas"
       ]
     },
-    "tomoLine": "Drain corn well so the salad does not turn watery."
+    "tomoLine": "Drain corn well so the salad does not turn watery.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-onion-tomato-salad",
@@ -72566,7 +76293,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "dal rice"
       ]
     },
-    "tomoLine": "Soaking sliced onion briefly softens the sharp bite."
+    "tomoLine": "Soaking sliced onion briefly softens the sharp bite.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-broccoli-salad",
@@ -72783,7 +76514,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "paneer sandwich"
       ]
     },
-    "tomoLine": "Blanch broccoli only briefly so it stays green and crisp."
+    "tomoLine": "Blanch broccoli only briefly so it stays green and crisp.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-chana-chaat",
@@ -73000,7 +76735,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "poha"
       ]
     },
-    "tomoLine": "Use well-cooked chana so every bite feels tender."
+    "tomoLine": "Use well-cooked chana so every bite feels tender.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-sprouts-salad",
@@ -73217,7 +76956,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Steam sprouts lightly for a gentler texture."
+    "tomoLine": "Steam sprouts lightly for a gentler texture.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-moong-salad",
@@ -73434,7 +77177,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "khichdi"
       ]
     },
-    "tomoLine": "Keep moong tender but not mushy for the best bite."
+    "tomoLine": "Keep moong tender but not mushy for the best bite.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-paneer-salad",
@@ -73651,7 +77398,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Use fresh soft paneer so the salad feels light."
+    "tomoLine": "Use fresh soft paneer so the salad feels light.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-tomato-onion-chaat",
@@ -73868,7 +77619,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "sandwich"
       ]
     },
-    "tomoLine": "Add sev only at the end so it stays crisp."
+    "tomoLine": "Add sev only at the end so it stays crisp.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-rajma-salad",
@@ -74085,7 +77840,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "rice bowl"
       ]
     },
-    "tomoLine": "Cool rajma before mixing so the vegetables stay crisp."
+    "tomoLine": "Cool rajma before mixing so the vegetables stay crisp.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-pineapple-salad",
@@ -74302,7 +78061,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "grilled sandwich"
       ]
     },
-    "tomoLine": "Use ripe pineapple so the salad tastes naturally sweet."
+    "tomoLine": "Use ripe pineapple so the salad tastes naturally sweet.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-kachumber-salad",
@@ -74519,7 +78282,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "paratha"
       ]
     },
-    "tomoLine": "Chop everything small and even for the best kachumber texture."
+    "tomoLine": "Chop everything small and even for the best kachumber texture.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-fruit-chaat",
@@ -74736,7 +78503,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "sandwich"
       ]
     },
-    "tomoLine": "Use firm fruits so the chaat does not become mushy."
+    "tomoLine": "Use firm fruits so the chaat does not become mushy.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-cucumber-raita-salad",
@@ -74953,7 +78724,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "paratha"
       ]
     },
-    "tomoLine": "Salt cucumber just before serving to avoid excess water."
+    "tomoLine": "Salt cucumber just before serving to avoid excess water.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-watermelon-mint-salad",
@@ -75170,7 +78945,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "light pulao"
       ]
     },
-    "tomoLine": "Keep everything chilled and toss only at the end."
+    "tomoLine": "Keep everything chilled and toss only at the end.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-coconut-cucumber-salad",
@@ -75387,7 +79166,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "curd rice"
       ]
     },
-    "tomoLine": "Use fresh coconut for the cleanest flavor."
+    "tomoLine": "Use fresh coconut for the cleanest flavor.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-carrot-cucumber-salad",
@@ -75604,7 +79387,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "buttermilk"
       ]
     },
-    "tomoLine": "Add peanuts just before serving for crunch."
+    "tomoLine": "Add peanuts just before serving for crunch.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "fresh-plates-detail-mango-salad",
@@ -75821,7 +79608,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "toast"
       ]
     },
-    "tomoLine": "Use firm ripe mango so the pieces hold their shape."
+    "tomoLine": "Use firm ripe mango so the pieces hold their shape.",
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "tiny-tummy-detail-rice-moong-khichdi",
@@ -76016,7 +79807,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "plain curd"
       ]
     },
-    "tomoLine": "Cook it softer than adult khichdi so it mashes easily."
+    "tomoLine": "Cook it softer than adult khichdi so it mashes easily.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-suji-porridge",
@@ -76211,7 +80006,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "mashed banana"
       ]
     },
-    "tomoLine": "Stir continuously while adding water to avoid lumps."
+    "tomoLine": "Stir continuously while adding water to avoid lumps.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-pear-puree",
@@ -76383,7 +80182,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "oats porridge"
       ]
     },
-    "tomoLine": "Use ripe pear for natural sweetness and smoother texture."
+    "tomoLine": "Use ripe pear for natural sweetness and smoother texture.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-carrot-puree",
@@ -76555,7 +80358,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "rice moong khichdi"
       ]
     },
-    "tomoLine": "Steam carrots well so the puree turns silky."
+    "tomoLine": "Steam carrots well so the puree turns silky.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-sweet-potato-mash",
@@ -76727,7 +80534,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "dal rice mash"
       ]
     },
-    "tomoLine": "Mash while warm for the smoothest texture."
+    "tomoLine": "Mash while warm for the smoothest texture.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-pumpkin-mash",
@@ -76899,7 +80710,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "moong dal soup"
       ]
     },
-    "tomoLine": "Use ripe pumpkin so no sweetener is needed."
+    "tomoLine": "Use ripe pumpkin so no sweetener is needed.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-dal-rice-mash",
@@ -77094,7 +80909,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "carrot puree"
       ]
     },
-    "tomoLine": "Use more water than usual so it becomes easy to mash."
+    "tomoLine": "Use more water than usual so it becomes easy to mash.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-beetroot-mash",
@@ -77266,7 +81085,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "curd rice"
       ]
     },
-    "tomoLine": "Start with a small portion because beetroot has a strong flavor."
+    "tomoLine": "Start with a small portion because beetroot has a strong flavor.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-avocado-mash",
@@ -77438,7 +81261,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "mashed banana"
       ]
     },
-    "tomoLine": "Use ripe avocado and serve right away to keep it fresh."
+    "tomoLine": "Use ripe avocado and serve right away to keep it fresh.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-egg-yolk-mash",
@@ -77610,7 +81437,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "soft idli mash"
       ]
     },
-    "tomoLine": "Introduce egg only when age-appropriate and advised for your baby."
+    "tomoLine": "Introduce egg only when age-appropriate and advised for your baby.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-soft-idli-mash",
@@ -77792,7 +81623,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "coconut chutney for older kids"
       ]
     },
-    "tomoLine": "Use fresh soft idli so it mashes without becoming rubbery."
+    "tomoLine": "Use fresh soft idli so it mashes without becoming rubbery.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-vegetable-dal-mash",
@@ -77987,7 +81822,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "rice mash"
       ]
     },
-    "tomoLine": "Choose soft vegetables like carrot, pumpkin or bottle gourd."
+    "tomoLine": "Choose soft vegetables like carrot, pumpkin or bottle gourd.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-soft-chapati-milk-mash",
@@ -78172,7 +82011,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "mashed banana"
       ]
     },
-    "tomoLine": "Use a fresh soft chapati and mash until no chewy pieces remain."
+    "tomoLine": "Use a fresh soft chapati and mash until no chewy pieces remain.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-vegetable-khichdi",
@@ -78387,7 +82230,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "curd"
       ]
     },
-    "tomoLine": "Keep the vegetables small and soft for easy eating."
+    "tomoLine": "Keep the vegetables small and soft for easy eating.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-rice-kheer-baby",
@@ -78582,7 +82429,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "fruit puree"
       ]
     },
-    "tomoLine": "Keep it lightly sweet and very soft for babies."
+    "tomoLine": "Keep it lightly sweet and very soft for babies.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-mini-idli-sambar",
@@ -78779,7 +82630,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "curd rice"
       ]
     },
-    "tomoLine": "Keep the sambar mild and thin for young kids."
+    "tomoLine": "Keep the sambar mild and thin for young kids.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-soft-dosa",
@@ -78961,7 +82816,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "coconut chutney for older kids"
       ]
     },
-    "tomoLine": "Cook it soft, not crisp, for easy chewing."
+    "tomoLine": "Cook it soft, not crisp, for easy chewing.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-vegetable-upma",
@@ -79168,7 +83027,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "curd"
       ]
     },
-    "tomoLine": "Add extra water for a softer child-friendly texture."
+    "tomoLine": "Add extra water for a softer child-friendly texture.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-soft-veg-pulao",
@@ -79375,7 +83238,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "cucumber raita"
       ]
     },
-    "tomoLine": "Cook the rice softer than regular pulao for little kids."
+    "tomoLine": "Cook the rice softer than regular pulao for little kids.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-dalia-porridge",
@@ -79580,7 +83447,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "fruit puree"
       ]
     },
-    "tomoLine": "Cook dalia until completely soft before adding milk."
+    "tomoLine": "Cook dalia until completely soft before adding milk.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-vegetable-seviyan",
@@ -79787,7 +83658,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "banana"
       ]
     },
-    "tomoLine": "Break seviyan shorter for easier little bites."
+    "tomoLine": "Break seviyan shorter for easier little bites.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "tiny-tummy-detail-baby-pongal",
@@ -79994,7 +83869,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "carrot puree"
       ]
     },
-    "tomoLine": "Use very little pepper or skip it for younger babies."
+    "tomoLine": "Use very little pepper or skip it for younger babies.",
+    "collectionHome": {
+      "hub": "Family Favorites",
+      "collection": "Tiny Tummy Favorites"
+    }
   },
   {
     "id": "collection-detail-rasmalai",
@@ -80190,7 +84069,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Masala chai"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-kheer",
@@ -80386,7 +84269,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Festive snacks"
     ],
     "dishFamily": "milk-dessert",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-payasam",
@@ -80582,7 +84469,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Sundal"
     ],
     "dishFamily": "milk-dessert",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-shrikhand",
@@ -80764,7 +84655,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Mango slices"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-basundi",
@@ -80956,7 +84851,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Fafda"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-rice-kheer",
@@ -81152,7 +85051,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Festival thali"
     ],
     "dishFamily": "milk-dessert",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-kaju-katli",
@@ -81338,7 +85241,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Diwali mixture"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-besan-ladoo",
@@ -81524,7 +85431,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Festival snack plate"
     ],
     "dishFamily": "ladoo",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-motichoor-ladoo",
@@ -81710,7 +85621,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Masala chai"
     ],
     "dishFamily": "ladoo",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-coconut-barfi",
@@ -81892,7 +85807,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Festival snack plate"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-dry-fruit-ladoo",
@@ -82084,7 +86003,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Fruit bowl"
     ],
     "dishFamily": "ladoo",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-chocolate-burfi",
@@ -82270,7 +86193,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Mixed nuts"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-gulab-jamun",
@@ -82462,7 +86389,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Festive thali"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Everyday Desserts"
+    }
   },
   {
     "id": "collection-detail-rasgulla",
@@ -82644,7 +86575,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Fresh fruit"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-mysore-pak",
@@ -82818,7 +86753,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Diwali snacks"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-jalebi",
@@ -83000,7 +86939,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Poha"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-phirni",
@@ -83186,7 +87129,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Fresh mango"
     ],
     "dishFamily": "milk-dessert",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-peda",
@@ -83368,7 +87315,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Festival platter"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-sandesh",
@@ -83538,7 +87489,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Fruit"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-kalakand",
@@ -83720,7 +87675,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Festival snacks"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-malpua",
@@ -83912,7 +87871,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Sliced nuts"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-carrot-halwa",
@@ -84104,7 +88067,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Poori"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-moong-dal-halwa",
@@ -84296,7 +88263,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Warm milk"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-obbattu",
@@ -84492,7 +88463,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Warm milk"
     ],
     "dishFamily": "sweet-flatbread",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-puran-poli",
@@ -84688,7 +88663,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Katachi amti"
     ],
     "dishFamily": "sweet-flatbread",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-kulfi",
@@ -84880,7 +88859,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Rose syrup"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-falooda",
@@ -85072,7 +89055,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Fresh fruit"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-rava-kesari",
@@ -85264,7 +89251,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Upma"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-sheera",
@@ -85456,7 +89447,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Poha"
     ],
     "dishFamily": "milk-dessert",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-chakli",
@@ -85648,7 +89643,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Kaju Katli"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-shankarpali",
@@ -85830,7 +89829,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Ladoo"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-tilgul",
@@ -86016,7 +90019,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Warm milk"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-ellu-bella",
@@ -86202,7 +90209,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Sugarcane"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-sakkarai-pongal",
@@ -86394,7 +90405,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Coconut chutney"
     ],
     "dishFamily": "festival-meal",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-ven-pongal",
@@ -86600,7 +90615,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Sambar"
     ],
     "dishFamily": "festival-meal",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-holige",
@@ -86796,7 +90815,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Warm milk"
     ],
     "dishFamily": "sweet-flatbread",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-ugadi-pachadi",
@@ -86988,7 +91011,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Kosambari"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-mango-rice",
@@ -87185,7 +91212,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "dishFamily": "festival-meal",
     "updatedAt": "2026-06-18T00:00:00.000Z",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-olan",
@@ -87388,7 +91419,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "dishFamily": "festival-sweets",
     "updatedAt": "2026-06-18T00:00:00.000Z",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-thoran",
@@ -87581,7 +91616,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "dishFamily": "festival-sweets",
     "updatedAt": "2026-06-18T00:00:00.000Z",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-parippu-curry",
@@ -87774,7 +91813,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "dishFamily": "festival-meal",
     "updatedAt": "2026-06-18T00:00:00.000Z",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-palada-payasam",
@@ -87960,7 +92003,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Banana chips"
     ],
     "dishFamily": "milk-dessert",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-sheer-khurma",
@@ -88156,7 +92203,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Eid snacks"
     ],
     "dishFamily": "milk-dessert",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-haleem",
@@ -88363,7 +92414,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "dishFamily": "festival-meal",
     "updatedAt": "2026-06-18T00:00:00.000Z",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-chicken-biryani",
@@ -88570,7 +92625,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "dishFamily": "festival-meal",
     "updatedAt": "2026-06-18T00:00:00.000Z",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-seviyan",
@@ -88766,7 +92825,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Fresh fruit"
     ],
     "dishFamily": "milk-dessert",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-mutton-korma",
@@ -88959,7 +93022,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "dishFamily": "festival-meal",
     "updatedAt": "2026-06-18T00:00:00.000Z",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png"
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-kadubu",
@@ -89145,7 +93212,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Ghee"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-kozhukattai",
@@ -89331,7 +93402,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Payasam"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-ukadiche-modak",
@@ -89517,7 +93592,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Panchamrit"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-rose-cookies",
@@ -89709,7 +93788,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Tea"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-kalkals",
@@ -89891,7 +93974,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Coffee"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-coconut-macaroons",
@@ -90073,7 +94160,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Hot chocolate"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "collection-detail-marzipan",
@@ -90255,7 +94346,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Tea"
     ],
     "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z"
+    "updatedAt": "2026-06-18T00:00:00.000Z",
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "karnataka-wave-b-coorg-pandi-curry",
@@ -90477,7 +94572,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "bestWith": [
       "Kadambuttu",
       "Steamed rice"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
   },
   {
     "id": "karnataka-wave-b-kadambuttu",
@@ -90659,7 +94758,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Coorg Pandi Curry",
       "Coorg Koli Curry",
       "Ghee"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "karnataka-wave-b-coorg-koli-curry",
@@ -90885,7 +94988,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Akki Roti",
       "Steamed rice",
       "Cucumber Raita"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "karnataka-wave-b-mangalorean-fish-curry",
@@ -91099,7 +95206,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "bestWith": [
       "Neer Dosa",
       "Steamed rice"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "karnataka-wave-b-pathrode",
@@ -91312,7 +95423,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "bestWith": [
       "Coconut Chutney",
       "Steamed rice"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
+    }
   },
   {
     "id": "karnataka-wave-b-kotte-kadubu",
@@ -91507,7 +95622,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "bestWith": [
       "Udupi Sambar",
       "Coconut Chutney"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "karnataka-wave-b-tambuli",
@@ -91720,7 +95839,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "bestWith": [
       "Steamed rice",
       "Palya"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "karnataka-wave-b-kayi-saaru",
@@ -91932,7 +96055,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "bestWith": [
       "Steamed rice",
       "Ragi Mudde"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "karnataka-wave-b-girmit",
@@ -92138,7 +96265,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "tomoLine": "Toss at the last minute; girmit loses its magic when it sits.",
     "bestWith": [
       "Masala Chai"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "karnataka-wave-b-mandakki-oggarane",
@@ -92345,7 +96476,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "tomoLine": "Keep the puffed rice light; over-soaking makes mandakki heavy.",
     "bestWith": [
       "Masala Chai"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   },
   {
     "id": "karnataka-wave-b-shenga-chutney",
@@ -92553,7 +96688,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Jolada Rotti",
       "Ragi Rotti",
       "Curd Rice"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Kitchen Essentials",
+      "collection": "Chutneys, Podis & Condiments"
+    }
   },
   {
     "id": "karnataka-wave-b-bamboo-shoot-curry",
@@ -92766,6 +96905,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "bestWith": [
       "Steamed rice",
       "Akki Roti"
-    ]
+    ],
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Karnataka"
+    }
   }
 ];
