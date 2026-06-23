@@ -90256,5 +90256,2516 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "dishFamily": "festival-sweets",
     "updatedAt": "2026-06-18T00:00:00.000Z"
+  },
+  {
+    "id": "karnataka-wave-b-coorg-pandi-curry",
+    "sourceId": "karnataka-wave-b-coorg-pandi-curry",
+    "title": "Coorg Pandi Curry",
+    "name": "Coorg Pandi Curry",
+    "aliases": [
+      "Kodava Pandi Curry",
+      "Pork Curry"
+    ],
+    "description": "A Kodagu-style pork curry with dark roasted spice, kachampuli sourness and a rich peppery finish for festive rice plates.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 45,
+    "timeMinutes": 65,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "non-vegetarian",
+    "dietaryTags": [
+      "non-vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non-vegetarian",
+      "comfort",
+      "soul",
+      "protein",
+      "karnataka",
+      "kodagu",
+      "coorg"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "low",
+    "budgetFriendly": false,
+    "lowEffort": false,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 9,
+    "energyScore": 8,
+    "proteinScore": 9,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 7,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Let the masala roast dark and add kachampuli at the end so the sourness stays bright.",
+    "instructions": [
+      "Roast and grind pepper, coriander, cumin and dry spices.",
+      "Brown pork with onion, ginger and garlic.",
+      "Add the ground masala and simmer until the pork is tender.",
+      "Finish with kachampuli and curry leaves.",
+      "Rest briefly before serving with kadambuttu or rice."
+    ],
+    "ingredients": [
+      {
+        "name": "pork",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "kachampuli",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander seeds",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Pork",
+    "primary_ingredient_2": "Kachampuli",
+    "primaryIngredient1": "Pork",
+    "primaryIngredient2": "Kachampuli",
+    "primaryIngredients": [
+      "pork",
+      "kachampuli"
+    ],
+    "coreIngredients": [
+      "pork",
+      "kachampuli"
+    ],
+    "core_ingredients": [
+      "pork",
+      "kachampuli"
+    ],
+    "requiredIngredients": [
+      "pork",
+      "kachampuli",
+      "onion"
+    ],
+    "required_ingredients": [
+      "pork",
+      "kachampuli",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "ginger",
+      "garlic",
+      "black pepper",
+      "coriander seeds",
+      "cumin",
+      "curry leaves"
+    ],
+    "optional_ingredients": [
+      "ginger",
+      "garlic",
+      "black pepper",
+      "coriander seeds",
+      "cumin",
+      "curry leaves"
+    ],
+    "baseIngredient": "pork",
+    "base_ingredient": "pork",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "pork-curry",
+    "dish_family": "pork-curry",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Kodagu"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "mains": [
+        "Kadambuttu"
+      ],
+      "rice": [
+        "Steamed rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "20 min",
+      "cookTime": "45 min",
+      "ingredients": [
+        "pork",
+        "kachampuli",
+        "onion",
+        "ginger",
+        "garlic",
+        "black pepper",
+        "coriander seeds",
+        "cumin",
+        "curry leaves"
+      ],
+      "steps": [
+        "Prep the pork and kachampuli.",
+        "Cook with ginger and garlic until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Kachampuli is the anchor; add it near the end for the deep Kodava tang.",
+      "bestWith": [
+        "Kadambuttu",
+        "Steamed rice"
+      ]
+    },
+    "tomoLine": "Kachampuli is the anchor; add it near the end for the deep Kodava tang.",
+    "bestWith": [
+      "Kadambuttu",
+      "Steamed rice"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-kadambuttu",
+    "sourceId": "karnataka-wave-b-kadambuttu",
+    "title": "Kadambuttu",
+    "name": "Kadambuttu",
+    "aliases": [
+      "Kodava Rice Dumplings"
+    ],
+    "description": "Soft Kodava steamed rice dumplings, shaped for soaking up pandi curry, koli curry or coconut gravies.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "karnataka",
+      "kodagu",
+      "coorg"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 9,
+    "rainyDayScore": 5,
+    "primaryMood": "Soul Food",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Cook the rice rava until it gathers, then shape while warm with wet hands.",
+    "instructions": [
+      "Boil water with salt.",
+      "Add rice rava and cook until the mixture thickens.",
+      "Rest until warm enough to handle.",
+      "Shape into small dumplings with wet hands.",
+      "Steam briefly and serve warm."
+    ],
+    "ingredients": [
+      {
+        "name": "rice rava",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "water",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "salt",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Rice Rava",
+    "primary_ingredient_2": "Water",
+    "primaryIngredient1": "Rice Rava",
+    "primaryIngredient2": "Water",
+    "primaryIngredients": [
+      "rice rava",
+      "water"
+    ],
+    "coreIngredients": [
+      "rice rava",
+      "water"
+    ],
+    "core_ingredients": [
+      "rice rava",
+      "water"
+    ],
+    "requiredIngredients": [
+      "rice rava",
+      "water"
+    ],
+    "required_ingredients": [
+      "rice rava",
+      "water"
+    ],
+    "optionalIngredients": [
+      "salt",
+      "ghee"
+    ],
+    "optional_ingredients": [
+      "salt",
+      "ghee"
+    ],
+    "baseIngredient": "rice rava",
+    "base_ingredient": "rice rava",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "rice-dumpling",
+    "dish_family": "rice-dumpling",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Kodagu"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "curries": [
+        "Coorg Pandi Curry",
+        "Coorg Koli Curry"
+      ],
+      "toppings": [
+        "Ghee"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "rice rava",
+        "water",
+        "salt",
+        "ghee"
+      ],
+      "steps": [
+        "Prep the rice rava and water.",
+        "Cook with salt and ghee until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Shape kadambuttu while the dough is still warm for soft dumplings.",
+      "bestWith": [
+        "Coorg Pandi Curry",
+        "Coorg Koli Curry",
+        "Ghee"
+      ]
+    },
+    "tomoLine": "Shape kadambuttu while the dough is still warm for soft dumplings.",
+    "bestWith": [
+      "Coorg Pandi Curry",
+      "Coorg Koli Curry",
+      "Ghee"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-coorg-koli-curry",
+    "sourceId": "karnataka-wave-b-coorg-koli-curry",
+    "title": "Coorg Koli Curry",
+    "name": "Coorg Koli Curry",
+    "aliases": [
+      "Kodava Chicken Curry"
+    ],
+    "description": "A Kodagu chicken curry with roasted spices, coconut and a gentle kachampuli finish for rice or akki roti.",
+    "prepTimeMinutes": 18,
+    "cookTimeMinutes": 35,
+    "timeMinutes": 53,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "non-vegetarian",
+    "dietaryTags": [
+      "non-vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/chicken-curry.png",
+    "image_url": "/assets/images/dishes/chicken-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non-vegetarian",
+      "comfort",
+      "soul",
+      "protein",
+      "karnataka",
+      "kodagu",
+      "coorg"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "medium",
+    "budgetFriendly": false,
+    "lowEffort": false,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 9,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 8,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Roast the spices before grinding so the curry tastes rounded rather than raw.",
+    "instructions": [
+      "Marinate chicken with salt and turmeric.",
+      "Roast and grind coconut with pepper and coriander.",
+      "Cook onion, ginger and garlic until soft.",
+      "Simmer chicken with the masala until tender.",
+      "Finish with curry leaves and a small splash of kachampuli."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander seeds",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "kachampuli",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Coconut",
+    "primaryIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "coreIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "coconut",
+      "onion"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "coconut",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "ginger",
+      "garlic",
+      "black pepper",
+      "coriander seeds",
+      "kachampuli",
+      "curry leaves"
+    ],
+    "optional_ingredients": [
+      "ginger",
+      "garlic",
+      "black pepper",
+      "coriander seeds",
+      "kachampuli",
+      "curry leaves"
+    ],
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "chicken-curry",
+    "dish_family": "chicken-curry",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Kodagu"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "breads": [
+        "Akki Roti"
+      ],
+      "rice": [
+        "Steamed rice"
+      ],
+      "sides": [
+        "Cucumber Raita"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "18 min",
+      "cookTime": "35 min",
+      "ingredients": [
+        "chicken",
+        "coconut",
+        "onion",
+        "ginger",
+        "garlic",
+        "black pepper",
+        "coriander seeds",
+        "kachampuli",
+        "curry leaves"
+      ],
+      "steps": [
+        "Prep the chicken and coconut.",
+        "Cook with ginger and garlic until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep the gravy medium-thick so it works with both rice and akki roti.",
+      "bestWith": [
+        "Akki Roti",
+        "Steamed rice",
+        "Cucumber Raita"
+      ]
+    },
+    "tomoLine": "Keep the gravy medium-thick so it works with both rice and akki roti.",
+    "bestWith": [
+      "Akki Roti",
+      "Steamed rice",
+      "Cucumber Raita"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-mangalorean-fish-curry",
+    "sourceId": "karnataka-wave-b-mangalorean-fish-curry",
+    "title": "Mangalorean Fish Curry",
+    "name": "Mangalorean Fish Curry",
+    "aliases": [
+      "Mangalore Meen Curry"
+    ],
+    "description": "A coastal Karnataka fish curry with coconut, tamarind and red chilli, made for neer dosa or steamed rice.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "non-vegetarian",
+    "dietaryTags": [
+      "non-vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non-vegetarian",
+      "comfort",
+      "soul",
+      "protein",
+      "karnataka",
+      "coastal-karnataka",
+      "mangaluru"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "medium",
+    "budgetFriendly": false,
+    "lowEffort": false,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 9,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 7,
+    "primaryMood": "Soul Food",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Simmer gently after adding fish so the pieces stay intact.",
+    "instructions": [
+      "Grind coconut, chilli, coriander, garlic and tamarind.",
+      "Simmer the masala with water and salt.",
+      "Add fish pieces gently.",
+      "Cook until the fish is just done.",
+      "Rest for a few minutes before serving."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "red chilli",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander seeds",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Coconut",
+    "primaryIngredients": [
+      "fish",
+      "coconut"
+    ],
+    "coreIngredients": [
+      "fish",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "fish",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "coconut",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "fish",
+      "coconut",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "red chilli",
+      "coriander seeds",
+      "garlic",
+      "onion",
+      "curry leaves"
+    ],
+    "optional_ingredients": [
+      "red chilli",
+      "coriander seeds",
+      "garlic",
+      "onion",
+      "curry leaves"
+    ],
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "fish-curry",
+    "dish_family": "fish-curry",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Coastal Karnataka",
+        "Mangaluru"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "breads": [
+        "Neer Dosa"
+      ],
+      "rice": [
+        "Steamed rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "fish",
+        "coconut",
+        "tamarind",
+        "red chilli",
+        "coriander seeds",
+        "garlic",
+        "onion",
+        "curry leaves"
+      ],
+      "steps": [
+        "Prep the fish and coconut.",
+        "Cook with red chilli and coriander seeds until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Let the curry rest briefly; coastal fish curries taste rounder after a short pause.",
+      "bestWith": [
+        "Neer Dosa",
+        "Steamed rice"
+      ]
+    },
+    "tomoLine": "Let the curry rest briefly; coastal fish curries taste rounder after a short pause.",
+    "bestWith": [
+      "Neer Dosa",
+      "Steamed rice"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-pathrode",
+    "sourceId": "karnataka-wave-b-pathrode",
+    "title": "Pathrode",
+    "name": "Pathrode",
+    "aliases": [
+      "Pathrode Rolls",
+      "Colocasia Leaf Rolls"
+    ],
+    "description": "Coastal colocasia leaf rolls layered with spiced rice-coconut batter, steamed and served as a hearty side.",
+    "prepTimeMinutes": 25,
+    "cookTimeMinutes": 35,
+    "timeMinutes": 60,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "karnataka",
+      "coastal-karnataka",
+      "mangaluru"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "low",
+    "budgetFriendly": true,
+    "lowEffort": false,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 9,
+    "homeStyleScore": 9,
+    "rainyDayScore": 6,
+    "primaryMood": "Soul Food",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Use tender leaves and balance tamarind well to soften the colocasia bite.",
+    "instructions": [
+      "Soak and grind rice with coconut, chilli and tamarind.",
+      "Spread batter over colocasia leaves.",
+      "Layer, roll tightly and steam until firm.",
+      "Cool slightly and slice.",
+      "Serve with coconut chutney or rice."
+    ],
+    "ingredients": [
+      {
+        "name": "colocasia leaves",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "red chilli",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut oil",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Colocasia Leaves",
+    "primary_ingredient_2": "Rice",
+    "primaryIngredient1": "Colocasia Leaves",
+    "primaryIngredient2": "Rice",
+    "primaryIngredients": [
+      "colocasia leaves",
+      "rice"
+    ],
+    "coreIngredients": [
+      "colocasia leaves",
+      "rice"
+    ],
+    "core_ingredients": [
+      "colocasia leaves",
+      "rice"
+    ],
+    "requiredIngredients": [
+      "colocasia leaves",
+      "rice",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "colocasia leaves",
+      "rice",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "tamarind",
+      "red chilli",
+      "jaggery",
+      "cumin",
+      "coconut oil"
+    ],
+    "optional_ingredients": [
+      "tamarind",
+      "red chilli",
+      "jaggery",
+      "cumin",
+      "coconut oil"
+    ],
+    "baseIngredient": "colocasia leaves",
+    "base_ingredient": "colocasia leaves",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "leaf-roll",
+    "dish_family": "leaf-roll",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Coastal Karnataka",
+        "Mangaluru"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Coconut Chutney"
+      ],
+      "rice": [
+        "Steamed rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "25 min",
+      "cookTime": "35 min",
+      "ingredients": [
+        "colocasia leaves",
+        "rice",
+        "coconut",
+        "tamarind",
+        "red chilli",
+        "jaggery",
+        "cumin",
+        "coconut oil"
+      ],
+      "steps": [
+        "Prep the colocasia leaves and rice.",
+        "Cook with tamarind and red chilli until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Slice only after steaming and resting so the rolls hold their shape.",
+      "bestWith": [
+        "Coconut Chutney",
+        "Steamed rice"
+      ]
+    },
+    "tomoLine": "Slice only after steaming and resting so the rolls hold their shape.",
+    "bestWith": [
+      "Coconut Chutney",
+      "Steamed rice"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-kotte-kadubu",
+    "sourceId": "karnataka-wave-b-kotte-kadubu",
+    "title": "Kotte Kadubu",
+    "name": "Kotte Kadubu",
+    "aliases": [
+      "Kotte Idli",
+      "Jackfruit Leaf Idli"
+    ],
+    "description": "Udupi-style idli batter steamed in leaf cups, soft and aromatic with sambar or coconut chutney.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "karnataka",
+      "coastal-karnataka",
+      "udupi"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "breakfast",
+      "lunch"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "medium",
+    "budgetFriendly": true,
+    "lowEffort": false,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 5,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Fermented batter gives the best texture; leaf cups add aroma but regular moulds can work.",
+    "instructions": [
+      "Soak rice and urad dal separately.",
+      "Grind and ferment the batter.",
+      "Pour into leaf cups or idli moulds.",
+      "Steam until set and fluffy.",
+      "Serve hot with sambar and chutney."
+    ],
+    "ingredients": [
+      {
+        "name": "idli rice",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "urad dal",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "fenugreek",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jackfruit leaves",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Idli Rice",
+    "primary_ingredient_2": "Urad Dal",
+    "primaryIngredient1": "Idli Rice",
+    "primaryIngredient2": "Urad Dal",
+    "primaryIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "coreIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "core_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "requiredIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "required_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "optionalIngredients": [
+      "fenugreek",
+      "salt",
+      "jackfruit leaves",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "fenugreek",
+      "salt",
+      "jackfruit leaves",
+      "oil"
+    ],
+    "baseIngredient": "idli rice",
+    "base_ingredient": "idli rice",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "idli",
+    "dish_family": "idli",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Coastal Karnataka",
+        "Udupi"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Udupi Sambar",
+        "Coconut Chutney"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "20 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "idli rice",
+        "urad dal",
+        "fenugreek",
+        "salt",
+        "jackfruit leaves",
+        "oil"
+      ],
+      "steps": [
+        "Prep the idli rice and urad dal.",
+        "Cook with fenugreek and salt until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep the batter airy and do not overfill the leaf cups.",
+      "bestWith": [
+        "Udupi Sambar",
+        "Coconut Chutney"
+      ]
+    },
+    "tomoLine": "Keep the batter airy and do not overfill the leaf cups.",
+    "bestWith": [
+      "Udupi Sambar",
+      "Coconut Chutney"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-tambuli",
+    "sourceId": "karnataka-wave-b-tambuli",
+    "title": "Tambuli",
+    "name": "Tambuli",
+    "aliases": [
+      "Thambuli",
+      "Tambli"
+    ],
+    "description": "A cooling Karnataka yogurt-coconut tambuli with herbs or greens, served with rice on warm days.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 5,
+    "timeMinutes": 15,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/soups.webp",
+    "image_url": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "quick",
+      "karnataka",
+      "coastal-karnataka",
+      "malnad"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": true,
+    "lightMeal": true,
+    "onePot": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 2,
+    "comfortScore": 7,
+    "energyScore": 4,
+    "proteinScore": 4,
+    "nostalgiaScore": 7,
+    "homeStyleScore": 9,
+    "rainyDayScore": 3,
+    "primaryMood": "Quick Fix",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep the heat gentle; tambuli should taste fresh and cooling.",
+    "instructions": [
+      "Grind coconut, cumin and herbs into a smooth paste.",
+      "Whisk with curd and salt.",
+      "Thin with water to a pourable consistency.",
+      "Temper mustard seeds and curry leaves in ghee.",
+      "Pour the tempering over the tambuli and serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "curd",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "herbs",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cumin",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Curd",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Curd",
+    "primaryIngredient2": "Coconut",
+    "primaryIngredients": [
+      "curd",
+      "coconut"
+    ],
+    "coreIngredients": [
+      "curd",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "curd",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "curd",
+      "coconut",
+      "herbs"
+    ],
+    "required_ingredients": [
+      "curd",
+      "coconut",
+      "herbs"
+    ],
+    "optionalIngredients": [
+      "cumin",
+      "green chilli",
+      "curry leaves",
+      "mustard seeds",
+      "ghee"
+    ],
+    "optional_ingredients": [
+      "cumin",
+      "green chilli",
+      "curry leaves",
+      "mustard seeds",
+      "ghee"
+    ],
+    "baseIngredient": "curd",
+    "base_ingredient": "curd",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "tambuli",
+    "dish_family": "tambuli",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Coastal Karnataka",
+        "Malnad"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Steamed rice"
+      ],
+      "sides": [
+        "Palya"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "5 min",
+      "ingredients": [
+        "curd",
+        "coconut",
+        "herbs",
+        "cumin",
+        "green chilli",
+        "curry leaves",
+        "mustard seeds",
+        "ghee"
+      ],
+      "steps": [
+        "Prep the curd and coconut.",
+        "Cook with cumin and green chilli until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Do not boil after adding curd; tambuli should stay cooling and fresh.",
+      "bestWith": [
+        "Steamed rice",
+        "Palya"
+      ]
+    },
+    "tomoLine": "Do not boil after adding curd; tambuli should stay cooling and fresh.",
+    "bestWith": [
+      "Steamed rice",
+      "Palya"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-kayi-saaru",
+    "sourceId": "karnataka-wave-b-kayi-saaru",
+    "title": "Kayi Saaru",
+    "name": "Kayi Saaru",
+    "aliases": [
+      "Coconut Saaru"
+    ],
+    "description": "An Old Mysore coconut saaru with tamarind and simple spices, made for rice, ragi mudde and everyday plates.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 32,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/soups.webp",
+    "image_url": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "karnataka",
+      "old-mysore",
+      "mandya"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 9,
+    "rainyDayScore": 6,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Keep the saaru pourable; it should soak into rice or ragi mudde rather than sit thick.",
+    "instructions": [
+      "Grind coconut with cumin, pepper and a little water.",
+      "Simmer tamarind water with rasam powder and salt.",
+      "Add the coconut paste and thin to a saaru consistency.",
+      "Temper mustard seeds and curry leaves.",
+      "Serve hot with rice or ragi mudde."
+    ],
+    "ingredients": [
+      {
+        "name": "coconut",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rasam powder",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "garlic",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Coconut",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Coconut",
+    "primaryIngredient2": "Tamarind",
+    "primaryIngredients": [
+      "coconut",
+      "tamarind"
+    ],
+    "coreIngredients": [
+      "coconut",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "coconut",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "coconut",
+      "tamarind",
+      "rasam powder"
+    ],
+    "required_ingredients": [
+      "coconut",
+      "tamarind",
+      "rasam powder"
+    ],
+    "optionalIngredients": [
+      "garlic",
+      "cumin",
+      "pepper",
+      "curry leaves",
+      "mustard seeds"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "cumin",
+      "pepper",
+      "curry leaves",
+      "mustard seeds"
+    ],
+    "baseIngredient": "coconut",
+    "base_ingredient": "coconut",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "saaru",
+    "dish_family": "saaru",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Old Mysore",
+        "Mandya"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Steamed rice"
+      ],
+      "mains": [
+        "Ragi Mudde"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "coconut",
+        "tamarind",
+        "rasam powder",
+        "garlic",
+        "cumin",
+        "pepper",
+        "curry leaves",
+        "mustard seeds"
+      ],
+      "steps": [
+        "Prep the coconut and tamarind.",
+        "Cook with garlic and cumin until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "A pourable texture is the whole point — thin it like saaru, not chutney.",
+      "bestWith": [
+        "Steamed rice",
+        "Ragi Mudde"
+      ]
+    },
+    "tomoLine": "A pourable texture is the whole point — thin it like saaru, not chutney.",
+    "bestWith": [
+      "Steamed rice",
+      "Ragi Mudde"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-girmit",
+    "sourceId": "karnataka-wave-b-girmit",
+    "title": "Girmit",
+    "name": "Girmit",
+    "aliases": [
+      "Hubballi Girmit",
+      "Masala Mandakki"
+    ],
+    "description": "A North Karnataka puffed rice snack tossed with onion, chilli, chutney powder and fresh coriander.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 2,
+    "timeMinutes": 12,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/snacks/bhel-puri.png",
+    "image_url": "/assets/images/snacks/bhel-puri.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "quick",
+      "rainy",
+      "spicy",
+      "karnataka",
+      "north-karnataka"
+    ],
+    "moodTags": [
+      "quick",
+      "rainy",
+      "spicy"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 2,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 7,
+    "rainyDayScore": 9,
+    "primaryMood": "Quick Fix",
+    "secondaryMood": "Rainy Day",
+    "cookingNotes": "Mix just before eating so the puffed rice stays crisp.",
+    "instructions": [
+      "Lightly warm puffed rice if needed.",
+      "Mix onion, chilli, chutney powder, lemon and coriander.",
+      "Toss in puffed rice quickly.",
+      "Top with sev or peanuts.",
+      "Serve immediately with chai."
+    ],
+    "ingredients": [
+      {
+        "name": "puffed rice",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chutney powder",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sev",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "peanuts",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Puffed Rice",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Puffed Rice",
+    "primaryIngredient2": "Onion",
+    "primaryIngredients": [
+      "puffed rice",
+      "onion"
+    ],
+    "coreIngredients": [
+      "puffed rice",
+      "onion"
+    ],
+    "core_ingredients": [
+      "puffed rice",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "puffed rice",
+      "onion",
+      "chutney powder"
+    ],
+    "required_ingredients": [
+      "puffed rice",
+      "onion",
+      "chutney powder"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "coriander",
+      "lemon",
+      "sev",
+      "peanuts"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "coriander",
+      "lemon",
+      "sev",
+      "peanuts"
+    ],
+    "baseIngredient": "puffed rice",
+    "base_ingredient": "puffed rice",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "puffed-rice-snack",
+    "dish_family": "puffed-rice-snack",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "North Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Masala Chai"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "2 min",
+      "ingredients": [
+        "puffed rice",
+        "onion",
+        "chutney powder",
+        "green chilli",
+        "coriander",
+        "lemon",
+        "sev",
+        "peanuts"
+      ],
+      "steps": [
+        "Prep the puffed rice and onion.",
+        "Cook with green chilli and coriander until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Toss at the last minute; girmit loses its magic when it sits.",
+      "bestWith": [
+        "Masala Chai"
+      ]
+    },
+    "tomoLine": "Toss at the last minute; girmit loses its magic when it sits.",
+    "bestWith": [
+      "Masala Chai"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-mandakki-oggarane",
+    "sourceId": "karnataka-wave-b-mandakki-oggarane",
+    "title": "Mandakki Oggarane",
+    "name": "Mandakki Oggarane",
+    "aliases": [
+      "Seasoned Puffed Rice"
+    ],
+    "description": "A warm North Karnataka puffed rice oggarane with onion, peanuts, curry leaves and turmeric.",
+    "prepTimeMinutes": 8,
+    "cookTimeMinutes": 10,
+    "timeMinutes": 18,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/snacks/bhel-puri.png",
+    "image_url": "/assets/images/snacks/bhel-puri.png",
+    "recipeRole": "snack",
+    "tags": [
+      "breakfast",
+      "snack",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "rainy",
+      "karnataka",
+      "north-karnataka"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort",
+      "rainy"
+    ],
+    "mealTags": [
+      "breakfast",
+      "snack"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 2,
+    "comfortScore": 7,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Quick Fix",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Rinse or soften the puffed rice only briefly if using very crisp mandakki.",
+    "instructions": [
+      "Soften puffed rice briefly if needed and drain well.",
+      "Temper mustard seeds, curry leaves and green chilli.",
+      "Cook onion with turmeric and peanuts.",
+      "Fold in puffed rice and salt.",
+      "Finish with lemon and serve warm."
+    ],
+    "ingredients": [
+      {
+        "name": "puffed rice",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanuts",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mustard seeds",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Puffed Rice",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Puffed Rice",
+    "primaryIngredient2": "Onion",
+    "primaryIngredients": [
+      "puffed rice",
+      "onion"
+    ],
+    "coreIngredients": [
+      "puffed rice",
+      "onion"
+    ],
+    "core_ingredients": [
+      "puffed rice",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "puffed rice",
+      "onion",
+      "peanuts"
+    ],
+    "required_ingredients": [
+      "puffed rice",
+      "onion",
+      "peanuts"
+    ],
+    "optionalIngredients": [
+      "mustard seeds",
+      "curry leaves",
+      "green chilli",
+      "turmeric",
+      "lemon"
+    ],
+    "optional_ingredients": [
+      "mustard seeds",
+      "curry leaves",
+      "green chilli",
+      "turmeric",
+      "lemon"
+    ],
+    "baseIngredient": "puffed rice",
+    "base_ingredient": "puffed rice",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "puffed-rice-snack",
+    "dish_family": "puffed-rice-snack",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "North Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Masala Chai"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "8 min",
+      "cookTime": "10 min",
+      "ingredients": [
+        "puffed rice",
+        "onion",
+        "peanuts",
+        "mustard seeds",
+        "curry leaves",
+        "green chilli",
+        "turmeric",
+        "lemon"
+      ],
+      "steps": [
+        "Prep the puffed rice and onion.",
+        "Cook with mustard seeds and curry leaves until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Keep the puffed rice light; over-soaking makes mandakki heavy.",
+      "bestWith": [
+        "Masala Chai"
+      ]
+    },
+    "tomoLine": "Keep the puffed rice light; over-soaking makes mandakki heavy.",
+    "bestWith": [
+      "Masala Chai"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-shenga-chutney",
+    "sourceId": "karnataka-wave-b-shenga-chutney",
+    "title": "Shenga Chutney",
+    "name": "Shenga Chutney",
+    "aliases": [
+      "Peanut Chutney Powder",
+      "Shenga Hindi"
+    ],
+    "description": "A dry North Karnataka peanut chutney powder for jolada rotti, ragi rotti, curd rice or snack plates.",
+    "prepTimeMinutes": 8,
+    "cookTimeMinutes": 8,
+    "timeMinutes": 16,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch7-peanut-chutney.png",
+    "image_url": "/assets/images/dishes/batch7-peanut-chutney.png",
+    "recipeRole": "condiment",
+    "tags": [
+      "lunch",
+      "dinner",
+      "snack",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "karnataka",
+      "north-karnataka"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "high",
+    "budgetFriendly": true,
+    "lowEffort": true,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 2,
+    "comfortScore": 7,
+    "energyScore": 5,
+    "proteinScore": 6,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 9,
+    "rainyDayScore": 5,
+    "primaryMood": "Quick Fix",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Roast peanuts fully and cool before grinding so the chutney stays powdery.",
+    "instructions": [
+      "Dry roast peanuts until aromatic.",
+      "Roast red chillies, cumin and sesame briefly.",
+      "Cool everything completely.",
+      "Grind coarsely with garlic, salt and jaggery.",
+      "Store dry and serve with rotti."
+    ],
+    "ingredients": [
+      {
+        "name": "peanuts",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "dry red chilli",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "garlic",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame seeds",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Peanuts",
+    "primary_ingredient_2": "Dry Red Chilli",
+    "primaryIngredient1": "Peanuts",
+    "primaryIngredient2": "Dry Red Chilli",
+    "primaryIngredients": [
+      "peanuts",
+      "dry red chilli"
+    ],
+    "coreIngredients": [
+      "peanuts",
+      "dry red chilli"
+    ],
+    "core_ingredients": [
+      "peanuts",
+      "dry red chilli"
+    ],
+    "requiredIngredients": [
+      "peanuts",
+      "dry red chilli"
+    ],
+    "required_ingredients": [
+      "peanuts",
+      "dry red chilli"
+    ],
+    "optionalIngredients": [
+      "garlic",
+      "cumin",
+      "sesame seeds",
+      "salt",
+      "jaggery"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "cumin",
+      "sesame seeds",
+      "salt",
+      "jaggery"
+    ],
+    "baseIngredient": "peanuts",
+    "base_ingredient": "peanuts",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "chutney",
+    "dish_family": "chutney",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "North Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "breads": [
+        "Jolada Rotti",
+        "Ragi Rotti"
+      ],
+      "rice": [
+        "Curd Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "8 min",
+      "cookTime": "8 min",
+      "ingredients": [
+        "peanuts",
+        "dry red chilli",
+        "garlic",
+        "cumin",
+        "sesame seeds",
+        "salt",
+        "jaggery"
+      ],
+      "steps": [
+        "Prep the peanuts and dry red chilli.",
+        "Cook with garlic and cumin until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Cool before grinding; warm peanuts turn into paste too quickly.",
+      "bestWith": [
+        "Jolada Rotti",
+        "Ragi Rotti",
+        "Curd Rice"
+      ]
+    },
+    "tomoLine": "Cool before grinding; warm peanuts turn into paste too quickly.",
+    "bestWith": [
+      "Jolada Rotti",
+      "Ragi Rotti",
+      "Curd Rice"
+    ]
+  },
+  {
+    "id": "karnataka-wave-b-bamboo-shoot-curry",
+    "sourceId": "karnataka-wave-b-bamboo-shoot-curry",
+    "title": "Bamboo Shoot Curry",
+    "name": "Bamboo Shoot Curry",
+    "aliases": [
+      "Kanile Curry",
+      "Bamboo Shoot Palya Curry"
+    ],
+    "description": "A Malnad bamboo shoot curry with coconut, tamarind and earthy spice, served with rice or akki roti.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Karnataka",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "karnataka",
+      "malnad",
+      "coastal-karnataka"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "pantrySuitability": "low",
+    "budgetFriendly": true,
+    "lowEffort": false,
+    "minimalCleanup": true,
+    "lateNight": false,
+    "sickDay": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 9,
+    "rainyDayScore": 6,
+    "primaryMood": "Soul Food",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Use cleaned and boiled bamboo shoot to remove bitterness before simmering with masala.",
+    "instructions": [
+      "Boil cleaned bamboo shoot until tender.",
+      "Grind coconut, chilli, coriander and tamarind.",
+      "Simmer bamboo shoot with the ground masala.",
+      "Balance with salt and a little jaggery.",
+      "Temper mustard seeds and curry leaves before serving."
+    ],
+    "ingredients": [
+      {
+        "name": "bamboo shoot",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "red chilli",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander seeds",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "primary_ingredient_1": "Bamboo Shoot",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Bamboo Shoot",
+    "primaryIngredient2": "Coconut",
+    "primaryIngredients": [
+      "bamboo shoot",
+      "coconut"
+    ],
+    "coreIngredients": [
+      "bamboo shoot",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "bamboo shoot",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "bamboo shoot",
+      "coconut",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "bamboo shoot",
+      "coconut",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "red chilli",
+      "coriander seeds",
+      "jaggery",
+      "mustard seeds",
+      "curry leaves"
+    ],
+    "optional_ingredients": [
+      "red chilli",
+      "coriander seeds",
+      "jaggery",
+      "mustard seeds",
+      "curry leaves"
+    ],
+    "baseIngredient": "bamboo shoot",
+    "base_ingredient": "bamboo shoot",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "dishFamily": "vegetable-curry",
+    "dish_family": "vegetable-curry",
+    "regionTags": {
+      "region": [
+        "South India",
+        "Karnataka"
+      ],
+      "subRegion": [
+        "Malnad",
+        "Coastal Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Steamed rice"
+      ],
+      "breads": [
+        "Akki Roti"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "20 min",
+      "cookTime": "30 min",
+      "ingredients": [
+        "bamboo shoot",
+        "coconut",
+        "tamarind",
+        "red chilli",
+        "coriander seeds",
+        "jaggery",
+        "mustard seeds",
+        "curry leaves"
+      ],
+      "steps": [
+        "Prep the bamboo shoot and coconut.",
+        "Cook with red chilli and coriander seeds until the base is ready.",
+        "Adjust salt, heat and texture.",
+        "Finish with tempering or ghee if appropriate.",
+        "Serve warm with the suggested pairings."
+      ],
+      "tip": "Pre-boiling the bamboo shoot is non-negotiable for a clean Malnad curry.",
+      "bestWith": [
+        "Steamed rice",
+        "Akki Roti"
+      ]
+    },
+    "tomoLine": "Pre-boiling the bamboo shoot is non-negotiable for a clean Malnad curry.",
+    "bestWith": [
+      "Steamed rice",
+      "Akki Roti"
+    ]
   }
 ];
