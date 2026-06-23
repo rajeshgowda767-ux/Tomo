@@ -3307,7 +3307,7 @@
     "sourceId": "expansion-pack-3-avial",
     "title": "Avial",
     "name": "Avial",
-    "description": "A Kerala mixed vegetable dish with coconut and curd that feels gentle and homestyle.",
+    "description": "Kerala avial with mixed vegetables, coconut, curd and coconut oil for sadya-style plates.",
     "prepTimeMinutes": 12,
     "cookTimeMinutes": 20,
     "timeMinutes": 32,
@@ -3322,11 +3322,16 @@
       "dinner",
       "vegetarian",
       "comfort",
-      "soul-food"
+      "soul-food",
+      "soul",
+      "festive",
+      "kerala",
+      "south-india"
     ],
     "moodTags": [
       "soul",
-      "comfort"
+      "comfort",
+      "festive"
     ],
     "mealTags": [
       "lunch",
@@ -3351,13 +3356,13 @@
     "rainyDayScore": 4,
     "primaryMood": "Soul Food",
     "secondaryMood": "Comfort Food",
-    "cookingNotes": "Cook vegetables just tender and finish with coconut paste.",
+    "cookingNotes": "Cut vegetables evenly so the avial keeps its sadya texture.",
     "instructions": [
-      "Cook vegetables with salt and little water.",
-      "Grind coconut with cumin if using.",
-      "Add coconut paste to vegetables.",
-      "Stir in curd gently.",
-      "Finish with curry leaves and coconut oil."
+      "Cook mixed vegetables until tender but not mushy.",
+      "Grind coconut with chilli and cumin.",
+      "Fold the coconut paste into the vegetables.",
+      "Add curd on low heat.",
+      "Finish with coconut oil and curry leaves."
     ],
     "ingredients": [
       {
@@ -3402,16 +3407,16 @@
     "primary_ingredient_2": "Coconut",
     "primaryIngredient1": "Vegetables",
     "primaryIngredient2": "Coconut",
-    "secondary_ingredient_1": "curd",
-    "secondaryIngredient1": "curd",
-    "secondary_ingredient_2": "curry leaves",
-    "secondaryIngredient2": "curry leaves",
-    "secondary_ingredient_3": "coconut oil",
-    "secondaryIngredient3": "coconut oil",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
+    "secondary_ingredient_1": "Curd",
+    "secondaryIngredient1": "Curd",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Coconut Oil",
+    "secondaryIngredient3": "Coconut Oil",
+    "secondary_ingredient_4": "Green Chilli",
+    "secondaryIngredient4": "Green Chilli",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
     "primaryIngredients": [
       "vegetables",
       "coconut"
@@ -3427,33 +3432,33 @@
       "coconut"
     ],
     "requiredIngredients": [
-      "vegetables",
+      "mixed vegetables",
       "coconut"
     ],
     "required_ingredients": [
-      "vegetables",
+      "mixed vegetables",
       "coconut"
     ],
     "optionalIngredients": [
       "curd",
       "curry leaves",
       "coconut oil",
-      "oil",
-      "salt",
-      "spices"
+      "green chilli",
+      "rice",
+      "kerala sambar"
     ],
     "optional_ingredients": [
       "curd",
       "curry leaves",
       "coconut oil",
-      "oil",
-      "salt",
-      "spices"
+      "green chilli",
+      "rice",
+      "kerala sambar"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "mixed vegetable",
-    "dish_family": "mixed vegetable",
+    "dishFamily": "avial",
+    "dish_family": "avial",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -3464,7 +3469,10 @@
         "South India"
       ],
       "subRegion": [
-        "Kerala"
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
       ],
       "cuisine": [
         "Kerala"
@@ -3472,10 +3480,12 @@
     },
     "pairings": {
       "rice": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ],
       "sides": [
-        "Sambar rice"
+        "Sambar rice",
+        "Kerala Sambar"
       ]
     },
     "quickGuide": {
@@ -3488,27 +3498,40 @@
         "1/4 cup curd",
         "Curry leaves",
         "1 tsp coconut oil",
-        "Salt"
+        "Salt",
+        "Mixed Vegetables",
+        "Coconut",
+        "Curd",
+        "Curry Leaves",
+        "Coconut Oil",
+        "Green Chilli",
+        "Rice",
+        "Kerala Sambar"
       ],
       "steps": [
-        "Cook vegetables until tender.",
-        "Grind coconut into paste.",
-        "Add paste to vegetables.",
-        "Stir in curd gently.",
-        "Finish with curry leaves and oil."
+        "Cook mixed vegetables until tender but not mushy.",
+        "Grind coconut with chilli and cumin.",
+        "Fold the coconut paste into the vegetables.",
+        "Add curd on low heat.",
+        "Finish with coconut oil and curry leaves."
       ],
-      "tip": "Do not boil hard after adding curd.",
+      "tip": "Cut vegetables evenly so the avial keeps its sadya texture.",
       "bestWith": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice",
+        "Kerala Sambar"
       ]
     },
     "dietaryTags": [
       "vegetarian"
     ],
     "collectionHome": {
-      "hub": "Kitchen Essentials",
-      "collection": "Sides, Salads & Add-ons"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    },
+    "aliases": [],
+    "image_url": "/assets/images/dishes/avial.png",
+    "tomoLine": "Cut vegetables evenly so the avial keeps its sadya texture."
   },
   {
     "id": "1d89fa14-6ae8-5b16-bcba-1cd24aee1546",
@@ -25980,7 +26003,7 @@
     "sourceId": "expansion-pack-3-kadala-curry",
     "title": "Kadala Curry",
     "name": "Kadala Curry",
-    "description": "A Kerala black chana curry with coconut notes, usually paired with puttu, appam or rice.",
+    "description": "Kerala kadala curry with black chickpeas and roasted coconut masala for puttu or appam.",
     "prepTimeMinutes": 10,
     "cookTimeMinutes": 25,
     "timeMinutes": 35,
@@ -25995,11 +26018,15 @@
       "dinner",
       "vegetarian",
       "protein",
-      "comfort"
+      "comfort",
+      "soul",
+      "kerala",
+      "south-india"
     ],
     "moodTags": [
       "protein",
-      "comfort"
+      "comfort",
+      "soul"
     ],
     "mealTags": [
       "breakfast",
@@ -26024,13 +26051,13 @@
     "rainyDayScore": 4,
     "primaryMood": "High Protein",
     "secondaryMood": "Comfort Food",
-    "cookingNotes": "Use cooked black chana and simmer with coconut masala.",
+    "cookingNotes": "Roasted coconut gives kadala curry its signature depth.",
     "instructions": [
-      "Saute onion, tomato and curry leaves.",
-      "Add cooked black chana.",
-      "Add coconut paste and water.",
-      "Simmer until thick.",
-      "Serve hot."
+      "Soak and cook black chickpeas until tender.",
+      "Roast coconut and spices.",
+      "Cook onion and tomato into a masala.",
+      "Add chickpeas and coconut paste.",
+      "Simmer until thick."
     ],
     "ingredients": [
       {
@@ -26075,16 +26102,16 @@
     "primary_ingredient_2": "Coconut",
     "primaryIngredient1": "Black Chana",
     "primaryIngredient2": "Coconut",
-    "secondary_ingredient_1": "onion",
-    "secondaryIngredient1": "onion",
-    "secondary_ingredient_2": "tomato",
-    "secondaryIngredient2": "tomato",
-    "secondary_ingredient_3": "curry leaves",
-    "secondaryIngredient3": "curry leaves",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Puttu",
+    "secondaryIngredient4": "Puttu",
+    "secondary_ingredient_5": "Appam",
+    "secondaryIngredient5": "Appam",
     "primaryIngredients": [
       "black chana",
       "coconut"
@@ -26100,33 +26127,31 @@
       "coconut"
     ],
     "requiredIngredients": [
-      "black chana",
-      "coconut",
-      "onion"
+      "black chickpeas",
+      "coconut"
     ],
     "required_ingredients": [
-      "black chana",
-      "coconut",
-      "onion"
+      "black chickpeas",
+      "coconut"
     ],
     "optionalIngredients": [
+      "onion",
       "tomato",
       "curry leaves",
-      "oil",
-      "salt",
-      "spices"
+      "puttu",
+      "appam"
     ],
     "optional_ingredients": [
+      "onion",
       "tomato",
       "curry leaves",
-      "oil",
-      "salt",
-      "spices"
+      "puttu",
+      "appam"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "chana curry",
-    "dish_family": "chana curry",
+    "dishFamily": "kadala-curry",
+    "dish_family": "kadala-curry",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -26137,7 +26162,10 @@
         "South India"
       ],
       "subRegion": [
-        "Kerala"
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
       ],
       "cuisine": [
         "Kerala"
@@ -26168,19 +26196,27 @@
         "1 onion",
         "1 tomato",
         "Curry leaves",
-        "Salt"
+        "Salt",
+        "Black Chickpeas",
+        "Coconut",
+        "Onion",
+        "Tomato",
+        "Curry Leaves",
+        "Puttu",
+        "Appam"
       ],
       "steps": [
-        "Saute onion, tomato and curry leaves.",
-        "Add cooked black chana.",
-        "Add coconut paste and water.",
-        "Simmer until thick.",
-        "Serve hot."
+        "Soak and cook black chickpeas until tender.",
+        "Roast coconut and spices.",
+        "Cook onion and tomato into a masala.",
+        "Add chickpeas and coconut paste.",
+        "Simmer until thick."
       ],
-      "tip": "Mash a few chana to thicken the curry.",
+      "tip": "Roasted coconut gives kadala curry its signature depth.",
       "bestWith": [
         "Appam",
-        "Ghee rice"
+        "Ghee rice",
+        "Puttu"
       ]
     },
     "dietaryTags": [
@@ -26189,7 +26225,10 @@
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Kerala"
-    }
+    },
+    "aliases": [],
+    "image_url": "/assets/images/dishes/batch3b-kadala-curry.png",
+    "tomoLine": "Roasted coconut gives kadala curry its signature depth."
   },
   {
     "id": "b29ded95-c980-532b-81e6-03afcd41d895",
@@ -33658,31 +33697,40 @@
   {
     "id": "3ec47ac3-378d-5021-8dcd-4bd29a4c0d23",
     "sourceId": "expansion-pack-3-meen-pollichathu",
-    "title": "Meen Pollichathu",
-    "name": "Meen Pollichathu",
-    "description": "A Kerala fish preparation wrapped and cooked with masala for a distinct coastal dinner.",
+    "title": "Kerala Fish Pollichathu",
+    "name": "Kerala Fish Pollichathu",
+    "description": "Kerala fish pollichathu wrapped in banana leaf with spicy masala and coconut oil aroma.",
     "prepTimeMinutes": 12,
     "cookTimeMinutes": 20,
     "timeMinutes": 32,
     "servings": 2,
     "cuisine": "Kerala",
-    "dietType": "non-vegetarian",
+    "dietType": "non_vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
     "recipeRole": "main",
     "tags": [
       "dinner",
       "non-vegetarian",
       "coastal",
       "protein",
-      "regional"
+      "regional",
+      "lunch",
+      "non_vegetarian",
+      "spicy",
+      "soul",
+      "kerala",
+      "south-india"
     ],
     "moodTags": [
       "protein",
-      "comfort"
+      "comfort",
+      "spicy",
+      "soul"
     ],
     "mealTags": [
-      "dinner"
+      "dinner",
+      "lunch"
     ],
     "lateNight": false,
     "lowEffort": false,
@@ -33703,13 +33751,13 @@
     "rainyDayScore": 4,
     "primaryMood": "High Protein",
     "secondaryMood": "Comfort Food",
-    "cookingNotes": "Pan-cook the fish packet gently so the masala stays moist.",
+    "cookingNotes": "Banana leaf wrapping keeps the fish moist and aromatic.",
     "instructions": [
-      "Make onion-tomato masala.",
-      "Coat fish with the masala.",
-      "Wrap in banana leaf if available.",
-      "Pan-cook covered until fish is done.",
-      "Serve hot."
+      "Marinate fish with chilli, turmeric and salt.",
+      "Sear lightly on both sides.",
+      "Cook onion-tomato masala with curry leaves.",
+      "Wrap fish and masala in banana leaf.",
+      "Pan roast until fragrant."
     ],
     "ingredients": [
       {
@@ -33754,16 +33802,16 @@
     "primary_ingredient_2": "Banana Leaf",
     "primaryIngredient1": "Fish",
     "primaryIngredient2": "Banana Leaf",
-    "secondary_ingredient_1": "onion",
-    "secondaryIngredient1": "onion",
-    "secondary_ingredient_2": "tomato",
-    "secondaryIngredient2": "tomato",
-    "secondary_ingredient_3": "coconut oil",
-    "secondaryIngredient3": "coconut oil",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": "Ginger Garlic",
+    "secondaryIngredient3": "Ginger Garlic",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Coconut Oil",
+    "secondaryIngredient5": "Coconut Oil",
     "primaryIngredients": [
       "fish",
       "banana leaf"
@@ -33780,32 +33828,32 @@
     ],
     "requiredIngredients": [
       "fish",
-      "banana leaf",
-      "onion"
+      "banana leaf"
     ],
     "required_ingredients": [
       "fish",
-      "banana leaf",
-      "onion"
+      "banana leaf"
     ],
     "optionalIngredients": [
+      "onion",
       "tomato",
+      "ginger garlic",
+      "curry leaves",
       "coconut oil",
-      "oil",
-      "salt",
-      "spices"
+      "rice"
     ],
     "optional_ingredients": [
+      "onion",
       "tomato",
+      "ginger garlic",
+      "curry leaves",
       "coconut oil",
-      "oil",
-      "salt",
-      "spices"
+      "rice"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "fish-curry",
-    "dish_family": "fish-curry",
+    "dishFamily": "fish-pollichathu",
+    "dish_family": "fish-pollichathu",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -33813,11 +33861,13 @@
     "moodExcludes": [],
     "regionTags": {
       "region": [
-        "South India",
-        "Coastal India"
+        "South India"
       ],
       "subRegion": [
-        "Kerala"
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
       ],
       "cuisine": [
         "Kerala"
@@ -33825,7 +33875,8 @@
     },
     "pairings": {
       "rice": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ],
       "sides": [
         "Beans thoran"
@@ -33841,28 +33892,41 @@
         "1 onion",
         "1 tomato",
         "1 tbsp coconut oil",
-        "Salt"
+        "Salt",
+        "Fish",
+        "Banana Leaf",
+        "Onion",
+        "Tomato",
+        "Ginger Garlic",
+        "Curry Leaves",
+        "Coconut Oil",
+        "Rice"
       ],
       "steps": [
-        "Make onion-tomato masala.",
-        "Coat fish with masala.",
-        "Wrap in banana leaf.",
-        "Pan-cook covered.",
-        "Serve hot."
+        "Marinate fish with chilli, turmeric and salt.",
+        "Sear lightly on both sides.",
+        "Cook onion-tomato masala with curry leaves.",
+        "Wrap fish and masala in banana leaf.",
+        "Pan roast until fragrant."
       ],
-      "tip": "Cook gently so the fish stays moist.",
+      "tip": "Banana leaf wrapping keeps the fish moist and aromatic.",
       "bestWith": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ]
     },
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Kerala"
-    }
+    },
+    "aliases": [
+      "Meen Pollichathu"
+    ],
+    "tomoLine": "Banana leaf wrapping keeps the fish moist and aromatic."
   },
   {
     "id": "0166c0c5-a7fd-57a6-8eba-fb7e19aae86f",
@@ -46583,7 +46647,7 @@
     "title": "Puttu Kadala",
     "name": "Puttu Kadala",
     "aliases": [],
-    "description": "A Kerala breakfast of steamed rice flour puttu with black chana curry, added as one authentic breakfast dish.",
+    "description": "A Kerala breakfast staple of soft steamed puttu with kadala curry, banana and tea-table comfort.",
     "prepTimeMinutes": 15,
     "cookTimeMinutes": 25,
     "timeMinutes": 40,
@@ -46600,11 +46664,15 @@
       "breakfast",
       "vegetarian",
       "comfort",
-      "protein"
+      "protein",
+      "soul",
+      "kerala",
+      "south-india"
     ],
     "moodTags": [
       "comfort",
-      "protein"
+      "protein",
+      "soul"
     ],
     "mealTags": [
       "breakfast"
@@ -46628,13 +46696,13 @@
     "rainyDayScore": 4,
     "primaryMood": "Comfort Food",
     "secondaryMood": "High Protein",
-    "cookingNotes": "The puttu flour should feel like damp sand, not dough.",
+    "cookingNotes": "Keep the puttu flour just moist enough to clump lightly without becoming doughy.",
     "instructions": [
-      "Moisten rice flour with salt water.",
-      "Layer with coconut and steam as puttu.",
-      "Simmer cooked chana with onion and spices.",
-      "Finish kadala with curry leaves.",
-      "Serve puttu with kadala curry."
+      "Steam rice flour and coconut in a puttu maker.",
+      "Cook black chickpeas until tender.",
+      "Simmer chickpeas with coconut masala and curry leaves.",
+      "Serve puttu hot with kadala curry.",
+      "Add banana or papadam if you like the classic plate."
     ],
     "ingredients": [
       {
@@ -46679,16 +46747,16 @@
     "primary_ingredient_2": "Black Chana",
     "primaryIngredient1": "Rice Flour",
     "primaryIngredient2": "Black Chana",
-    "secondary_ingredient_1": "coconut",
-    "secondaryIngredient1": "coconut",
-    "secondary_ingredient_2": "onion",
-    "secondaryIngredient2": "onion",
-    "secondary_ingredient_3": "curry leaves",
-    "secondaryIngredient3": "curry leaves",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
+    "secondary_ingredient_1": "Coconut",
+    "secondaryIngredient1": "Coconut",
+    "secondary_ingredient_2": "Onion",
+    "secondaryIngredient2": "Onion",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Tea",
+    "secondaryIngredient4": "Tea",
+    "secondary_ingredient_5": "Papadam",
+    "secondaryIngredient5": "Papadam",
     "primaryIngredients": [
       "rice flour",
       "black chana"
@@ -46705,32 +46773,32 @@
     ],
     "requiredIngredients": [
       "rice flour",
-      "black chana"
+      "black chickpeas"
     ],
     "required_ingredients": [
       "rice flour",
-      "black chana"
+      "black chickpeas"
     ],
     "optionalIngredients": [
       "coconut",
       "onion",
       "curry leaves",
-      "oil",
-      "salt",
-      "spices"
+      "tea",
+      "papadam",
+      "banana"
     ],
     "optional_ingredients": [
       "coconut",
       "onion",
       "curry leaves",
-      "oil",
-      "salt",
-      "spices"
+      "tea",
+      "papadam",
+      "banana"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "steamed breakfast",
-    "dish_family": "steamed breakfast",
+    "dishFamily": "puttu",
+    "dish_family": "puttu",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -46741,7 +46809,10 @@
         "South India"
       ],
       "subRegion": [
-        "Kerala"
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
       ],
       "cuisine": [
         "Kerala"
@@ -46750,12 +46821,14 @@
     "pairings": {
       "sides": [
         "Banana",
-        "Kadala curry"
+        "Kadala curry",
+        "Papadam"
       ],
       "chutneys": [],
       "pickles": [],
       "drinks": [
-        "Tea"
+        "Tea",
+        "Black Tea"
       ],
       "rice": [],
       "roti": [],
@@ -46773,25 +46846,37 @@
         "1/4 cup coconut",
         "1 small onion",
         "Curry leaves",
-        "Salt"
+        "Salt",
+        "Rice Flour",
+        "Black Chickpeas",
+        "Coconut",
+        "Onion",
+        "Curry Leaves",
+        "Tea",
+        "Papadam",
+        "Banana"
       ],
       "steps": [
-        "Moisten rice flour with salt water.",
-        "Layer with coconut and steam as puttu.",
-        "Simmer cooked chana with onion and spices.",
-        "Finish kadala with curry leaves.",
-        "Serve puttu with kadala curry."
+        "Steam rice flour and coconut in a puttu maker.",
+        "Cook black chickpeas until tender.",
+        "Simmer chickpeas with coconut masala and curry leaves.",
+        "Serve puttu hot with kadala curry.",
+        "Add banana or papadam if you like the classic plate."
       ],
-      "tip": "The puttu flour should feel like damp sand, not dough.",
+      "tip": "Keep the puttu flour just moist enough to clump lightly without becoming doughy.",
       "bestWith": [
         "Banana",
-        "Tea"
+        "Tea",
+        "Papadam",
+        "Black Tea"
       ]
     },
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Kerala"
-    }
+    },
+    "image_url": "/assets/images/dishes/puttu-kadala.png",
+    "tomoLine": "Keep the puttu flour just moist enough to clump lightly without becoming doughy."
   },
   {
     "id": "pantry-wheat-dosa",
@@ -91312,7 +91397,7 @@
     "title": "Olan",
     "name": "Olan",
     "aliases": [],
-    "description": "A gentle Kerala sadya dish with ash gourd, cowpeas and coconut milk.",
+    "description": "A gentle Kerala olan with ash gourd, coconut milk and curry leaves for sadya balance.",
     "prepTimeMinutes": 15,
     "cookTimeMinutes": 20,
     "timeMinutes": 35,
@@ -91330,16 +91415,25 @@
       "collection-detail",
       "onam-sadya",
       "vegetarian",
-      "festival"
+      "festival",
+      "lunch",
+      "dinner",
+      "light",
+      "comfort",
+      "festive",
+      "kerala",
+      "south-india"
     ],
     "moodTags": [
       "festive",
       "comfort",
-      "traditional"
+      "traditional",
+      "light"
     ],
     "mealTags": [
       "lunch",
-      "snack"
+      "snack",
+      "dinner"
     ],
     "lateNight": false,
     "lowEffort": false,
@@ -91360,13 +91454,13 @@
     "rainyDayScore": 4,
     "primaryMood": "Festival Food",
     "secondaryMood": "Comfort Food",
-    "cookingNotes": "After adding thick coconut milk, keep the heat low so it stays silky. Refrigerate and reheat gently without boiling.",
+    "cookingNotes": "Olan should stay pale, mild and coconut-forward.",
     "instructions": [
-      "Cook ash gourd with green chillies and a little water.",
-      "Add cooked cowpeas and thin coconut milk.",
-      "Simmer until the vegetable is tender.",
-      "Add thick coconut milk and warm gently.",
-      "Finish with curry leaves and coconut oil."
+      "Cook ash gourd and cowpeas until soft.",
+      "Add green chilli and salt.",
+      "Pour in coconut milk and warm gently.",
+      "Finish with coconut oil and curry leaves.",
+      "Serve as a soft side with rice."
     ],
     "ingredients": [
       {
@@ -91425,16 +91519,16 @@
     "primary_ingredient_2": "",
     "primaryIngredient1": "Ash Gourd",
     "primaryIngredient2": "",
-    "secondary_ingredient_1": "Cooked Cowpeas",
-    "secondaryIngredient1": "Cooked Cowpeas",
-    "secondary_ingredient_2": "Thin Coconut Milk",
-    "secondaryIngredient2": "Thin Coconut Milk",
-    "secondary_ingredient_3": "Thick Coconut Milk",
-    "secondaryIngredient3": "Thick Coconut Milk",
-    "secondary_ingredient_4": "Green Chillies",
-    "secondaryIngredient4": "Green Chillies",
-    "secondary_ingredient_5": "Curry Leaves",
-    "secondaryIngredient5": "Curry Leaves",
+    "secondary_ingredient_1": "Cowpeas",
+    "secondaryIngredient1": "Cowpeas",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Coconut Oil",
+    "secondaryIngredient4": "Coconut Oil",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
     "requiredPrimaryMatches": 1,
     "required_primary_matches": 1,
     "isRealDish": true,
@@ -91453,26 +91547,28 @@
       "ash gourd"
     ],
     "requiredIngredients": [
-      "2 cups ash gourd",
-      "0.5 cup cooked cowpeas",
-      "1 cup thin coconut milk",
-      "0.5 cup thick coconut milk"
+      "ash gourd",
+      "coconut milk"
     ],
     "required_ingredients": [
-      "2 cups ash gourd",
-      "0.5 cup cooked cowpeas",
-      "1 cup thin coconut milk",
-      "0.5 cup thick coconut milk"
+      "ash gourd",
+      "coconut milk"
     ],
     "optionalIngredients": [
-      "2 pieces green chillies",
-      "10 leaves curry leaves",
-      "1 tbsp coconut oil"
+      "cowpeas",
+      "green chilli",
+      "curry leaves",
+      "coconut oil",
+      "rice",
+      "papadam"
     ],
     "optional_ingredients": [
-      "2 pieces green chillies",
-      "10 leaves curry leaves",
-      "1 tbsp coconut oil"
+      "cowpeas",
+      "green chilli",
+      "curry leaves",
+      "coconut oil",
+      "rice",
+      "papadam"
     ],
     "quickGuide": {
       "serves": "4 servings",
@@ -91485,32 +91581,65 @@
         "0.5 cup thick coconut milk",
         "2 pieces green chillies",
         "10 leaves curry leaves",
-        "1 tbsp coconut oil"
+        "1 tbsp coconut oil",
+        "Ash Gourd",
+        "Coconut Milk",
+        "Cowpeas",
+        "Green Chilli",
+        "Curry Leaves",
+        "Coconut Oil",
+        "Rice",
+        "Papadam"
       ],
       "steps": [
-        "Cook ash gourd with green chillies and a little water.",
-        "Add cooked cowpeas and thin coconut milk.",
-        "Simmer until the vegetable is tender.",
-        "Add thick coconut milk and warm gently.",
-        "Finish with curry leaves and coconut oil."
+        "Cook ash gourd and cowpeas until soft.",
+        "Add green chilli and salt.",
+        "Pour in coconut milk and warm gently.",
+        "Finish with coconut oil and curry leaves.",
+        "Serve as a soft side with rice."
       ],
-      "tip": "After adding thick coconut milk, keep the heat low so it stays silky. Storage: Refrigerate and reheat gently without boiling.",
+      "tip": "Olan should stay pale, mild and coconut-forward.",
       "bestWith": [
         "Matta rice",
-        "Avial"
+        "Avial",
+        "Rice",
+        "Papadam"
       ]
     },
-    "tomoLine": "After adding thick coconut milk, keep the heat low so it stays silky. Refrigerate and reheat gently without boiling.",
+    "tomoLine": "Olan should stay pale, mild and coconut-forward.",
     "bestWith": [
       "Matta rice",
       "Avial"
     ],
-    "dishFamily": "festival-sweets",
+    "dishFamily": "olan",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "dish_family": "olan",
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Papadam"
+      ]
     }
   },
   {
@@ -91519,7 +91648,7 @@
     "title": "Thoran",
     "name": "Thoran",
     "aliases": [],
-    "description": "A dry Kerala coconut stir-fry made with finely chopped vegetables and curry leaves.",
+    "description": "A Kerala coconut vegetable stir-fry that fits everyday rice and sambar plates.",
     "prepTimeMinutes": 15,
     "cookTimeMinutes": 15,
     "timeMinutes": 30,
@@ -91530,23 +91659,34 @@
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/batch5-beans-thoran.png",
     "recipeRole": "side",
     "tags": [
       "festival-side",
       "collection-detail",
       "onam-sadya",
       "vegetarian",
-      "festival"
+      "festival",
+      "lunch",
+      "dinner",
+      "quick",
+      "comfort",
+      "soul",
+      "kerala",
+      "south-india"
     ],
     "moodTags": [
       "festive",
       "comfort",
-      "traditional"
+      "traditional",
+      "quick",
+      "soul"
     ],
     "mealTags": [
       "dessert",
-      "snack"
+      "snack",
+      "lunch",
+      "dinner"
     ],
     "lateNight": false,
     "lowEffort": false,
@@ -91567,13 +91707,13 @@
     "rainyDayScore": 4,
     "primaryMood": "Festival Food",
     "secondaryMood": "Comfort Food",
-    "cookingNotes": "Keep thoran dry and lightly cooked so it fits a sadya plate. Refrigerate and use within 2 days.",
+    "cookingNotes": "Keep the vegetables slightly crisp for a good thoran.",
     "instructions": [
-      "Finely chop the vegetable.",
-      "Crush coconut with green chilli lightly.",
-      "Temper mustard seeds and curry leaves in coconut oil.",
-      "Add vegetable and cook covered until tender.",
-      "Mix in coconut and cook briefly."
+      "Chop vegetables finely.",
+      "Crush coconut with chilli and cumin.",
+      "Temper mustard seeds and curry leaves.",
+      "Stir-fry vegetables until just cooked.",
+      "Fold in coconut and serve."
     ],
     "ingredients": [
       {
@@ -91625,16 +91765,16 @@
     "primary_ingredient_2": "",
     "primaryIngredient1": "Cabbage Or Beans",
     "primaryIngredient2": "",
-    "secondary_ingredient_1": "Grated Coconut",
-    "secondaryIngredient1": "Grated Coconut",
-    "secondary_ingredient_2": "Mustard Seeds",
-    "secondaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_3": "Green Chillies",
-    "secondaryIngredient3": "Green Chillies",
-    "secondary_ingredient_4": "Curry Leaves",
-    "secondaryIngredient4": "Curry Leaves",
-    "secondary_ingredient_5": "Coconut Oil",
-    "secondaryIngredient5": "Coconut Oil",
+    "secondary_ingredient_1": "Mustard Seeds",
+    "secondaryIngredient1": "Mustard Seeds",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Green Chilli",
+    "secondaryIngredient3": "Green Chilli",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": "Sambar",
+    "secondaryIngredient5": "Sambar",
     "requiredPrimaryMatches": 1,
     "required_primary_matches": 1,
     "isRealDish": true,
@@ -91653,24 +91793,26 @@
       "cabbage or beans"
     ],
     "requiredIngredients": [
-      "3 cups cabbage or beans",
-      "0.5 cup grated coconut",
-      "1 tsp mustard seeds",
-      "2 pieces green chillies"
+      "vegetables",
+      "coconut"
     ],
     "required_ingredients": [
-      "3 cups cabbage or beans",
-      "0.5 cup grated coconut",
-      "1 tsp mustard seeds",
-      "2 pieces green chillies"
+      "vegetables",
+      "coconut"
     ],
     "optionalIngredients": [
-      "10 leaves curry leaves",
-      "1 tbsp coconut oil"
+      "mustard seeds",
+      "curry leaves",
+      "green chilli",
+      "rice",
+      "sambar"
     ],
     "optional_ingredients": [
-      "10 leaves curry leaves",
-      "1 tbsp coconut oil"
+      "mustard seeds",
+      "curry leaves",
+      "green chilli",
+      "rice",
+      "sambar"
     ],
     "quickGuide": {
       "serves": "4 servings",
@@ -91682,32 +91824,64 @@
         "1 tsp mustard seeds",
         "2 pieces green chillies",
         "10 leaves curry leaves",
-        "1 tbsp coconut oil"
+        "1 tbsp coconut oil",
+        "Vegetables",
+        "Coconut",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Green Chilli",
+        "Rice",
+        "Sambar"
       ],
       "steps": [
-        "Finely chop the vegetable.",
-        "Crush coconut with green chilli lightly.",
-        "Temper mustard seeds and curry leaves in coconut oil.",
-        "Add vegetable and cook covered until tender.",
-        "Mix in coconut and cook briefly."
+        "Chop vegetables finely.",
+        "Crush coconut with chilli and cumin.",
+        "Temper mustard seeds and curry leaves.",
+        "Stir-fry vegetables until just cooked.",
+        "Fold in coconut and serve."
       ],
-      "tip": "Keep thoran dry and lightly cooked so it fits a sadya plate. Storage: Refrigerate and use within 2 days.",
+      "tip": "Keep the vegetables slightly crisp for a good thoran.",
       "bestWith": [
         "Matta rice",
-        "Parippu curry"
+        "Parippu curry",
+        "Rice",
+        "Sambar"
       ]
     },
-    "tomoLine": "Keep thoran dry and lightly cooked so it fits a sadya plate. Refrigerate and use within 2 days.",
+    "tomoLine": "Keep the vegetables slightly crisp for a good thoran.",
     "bestWith": [
       "Matta rice",
       "Parippu curry"
     ],
-    "dishFamily": "festival-sweets",
+    "dishFamily": "thoran",
     "updatedAt": "2026-06-18T00:00:00.000Z",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/batch5-beans-thoran.png",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "dish_family": "thoran",
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Sambar"
+      ]
     }
   },
   {
@@ -91716,7 +91890,7 @@
     "title": "Parippu Curry",
     "name": "Parippu Curry",
     "aliases": [],
-    "description": "Kerala moong dal curry finished with coconut paste, ghee and curry leaves.",
+    "description": "Kerala parippu curry with moong dal, coconut and ghee, a sadya first-course comfort.",
     "prepTimeMinutes": 10,
     "cookTimeMinutes": 25,
     "timeMinutes": 35,
@@ -91734,16 +91908,26 @@
       "collection-detail",
       "onam-sadya",
       "vegetarian",
-      "festival"
+      "festival",
+      "lunch",
+      "dinner",
+      "comfort",
+      "soul",
+      "protein",
+      "kerala",
+      "south-india"
     ],
     "moodTags": [
       "festive",
       "comfort",
-      "traditional"
+      "traditional",
+      "soul",
+      "protein"
     ],
     "mealTags": [
       "lunch",
-      "snack"
+      "snack",
+      "dinner"
     ],
     "lateNight": false,
     "lowEffort": false,
@@ -91764,13 +91948,13 @@
     "rainyDayScore": 4,
     "primaryMood": "Festival Food",
     "secondaryMood": "Comfort Food",
-    "cookingNotes": "Serve parippu curry first with rice and ghee for a traditional sadya start. Refrigerate for 2 days and reheat with water.",
+    "cookingNotes": "A spoon of ghee makes parippu curry feel complete.",
     "instructions": [
-      "Roast moong dal lightly and cook until soft.",
-      "Grind coconut with cumin to a paste.",
-      "Add turmeric and coconut paste to the dal.",
-      "Simmer until creamy.",
-      "Finish with ghee and curry leaves."
+      "Cook moong dal until soft.",
+      "Grind coconut with cumin.",
+      "Simmer dal with coconut paste.",
+      "Temper curry leaves in ghee.",
+      "Serve with rice, ghee and papadam."
     ],
     "ingredients": [
       {
@@ -91822,16 +92006,16 @@
     "primary_ingredient_2": "",
     "primaryIngredient1": "Moong Dal",
     "primaryIngredient2": "",
-    "secondary_ingredient_1": "Grated Coconut",
-    "secondaryIngredient1": "Grated Coconut",
-    "secondary_ingredient_2": "Cumin",
-    "secondaryIngredient2": "Cumin",
-    "secondary_ingredient_3": "Turmeric",
-    "secondaryIngredient3": "Turmeric",
-    "secondary_ingredient_4": "Ghee",
-    "secondaryIngredient4": "Ghee",
-    "secondary_ingredient_5": "Curry Leaves",
-    "secondaryIngredient5": "Curry Leaves",
+    "secondary_ingredient_1": "Cumin",
+    "secondaryIngredient1": "Cumin",
+    "secondary_ingredient_2": "Ghee",
+    "secondaryIngredient2": "Ghee",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": "Papadam",
+    "secondaryIngredient5": "Papadam",
     "requiredPrimaryMatches": 1,
     "required_primary_matches": 1,
     "isRealDish": true,
@@ -91850,24 +92034,26 @@
       "moong dal"
     ],
     "requiredIngredients": [
-      "1 cup moong dal",
-      "0.5 cup grated coconut",
-      "0.5 tsp cumin",
-      "0.5 tsp turmeric"
+      "moong dal",
+      "coconut"
     ],
     "required_ingredients": [
-      "1 cup moong dal",
-      "0.5 cup grated coconut",
-      "0.5 tsp cumin",
-      "0.5 tsp turmeric"
+      "moong dal",
+      "coconut"
     ],
     "optionalIngredients": [
-      "1 tbsp ghee",
-      "10 leaves curry leaves"
+      "cumin",
+      "ghee",
+      "curry leaves",
+      "rice",
+      "papadam"
     ],
     "optional_ingredients": [
-      "1 tbsp ghee",
-      "10 leaves curry leaves"
+      "cumin",
+      "ghee",
+      "curry leaves",
+      "rice",
+      "papadam"
     ],
     "quickGuide": {
       "serves": "4 servings",
@@ -91879,32 +92065,67 @@
         "0.5 tsp cumin",
         "0.5 tsp turmeric",
         "1 tbsp ghee",
-        "10 leaves curry leaves"
+        "10 leaves curry leaves",
+        "Moong Dal",
+        "Coconut",
+        "Cumin",
+        "Ghee",
+        "Curry Leaves",
+        "Rice",
+        "Papadam"
       ],
       "steps": [
-        "Roast moong dal lightly and cook until soft.",
-        "Grind coconut with cumin to a paste.",
-        "Add turmeric and coconut paste to the dal.",
-        "Simmer until creamy.",
-        "Finish with ghee and curry leaves."
+        "Cook moong dal until soft.",
+        "Grind coconut with cumin.",
+        "Simmer dal with coconut paste.",
+        "Temper curry leaves in ghee.",
+        "Serve with rice, ghee and papadam."
       ],
-      "tip": "Serve parippu curry first with rice and ghee for a traditional sadya start. Storage: Refrigerate for 2 days and reheat with water.",
+      "tip": "A spoon of ghee makes parippu curry feel complete.",
       "bestWith": [
         "Matta rice",
-        "Papadam"
+        "Papadam",
+        "Rice",
+        "Ghee"
       ]
     },
-    "tomoLine": "Serve parippu curry first with rice and ghee for a traditional sadya start. Refrigerate for 2 days and reheat with water.",
+    "tomoLine": "A spoon of ghee makes parippu curry feel complete.",
     "bestWith": [
       "Matta rice",
       "Papadam"
     ],
-    "dishFamily": "festival-meal",
+    "dishFamily": "parippu-curry",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "dish_family": "parippu-curry",
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "toppings": [
+        "Ghee"
+      ],
+      "sides": [
+        "Papadam"
+      ]
     }
   },
   {
@@ -91913,7 +92134,7 @@
     "title": "Palada Payasam",
     "name": "Palada Payasam",
     "aliases": [],
-    "description": "Kerala ada payasam simmered with milk and sugar until pale, creamy and festive.",
+    "description": "A Kerala sadya payasam with ada, milk and slow-cooked festive sweetness.",
     "prepTimeMinutes": 10,
     "cookTimeMinutes": 40,
     "timeMinutes": 50,
@@ -91931,12 +92152,18 @@
       "collection-detail",
       "onam-sadya",
       "vegetarian",
-      "dessert"
+      "dessert",
+      "festive",
+      "soul",
+      "comfort",
+      "kerala",
+      "south-india"
     ],
     "moodTags": [
       "festive",
       "comfort",
-      "traditional"
+      "traditional",
+      "soul"
     ],
     "mealTags": [
       "dessert",
@@ -91961,13 +92188,13 @@
     "rainyDayScore": 7,
     "primaryMood": "Festival Food",
     "secondaryMood": "Comfort Food",
-    "cookingNotes": "Slow simmering gives palada payasam its soft pinkish festive richness. Refrigerate and serve chilled or gently warmed.",
+    "cookingNotes": "Slow simmering gives palada its gentle caramel note.",
     "instructions": [
-      "Rinse and soak rice ada as needed.",
-      "Cook ada until soft and drain.",
-      "Simmer milk and sugar until slightly reduced.",
+      "Cook ada until soft.",
+      "Simmer milk and sugar together.",
       "Add ada and cook until creamy.",
-      "Finish with a little ghee and cardamom if desired."
+      "Finish with cardamom if using.",
+      "Serve warm or chilled."
     ],
     "ingredients": [
       {
@@ -92014,14 +92241,14 @@
     "primaryIngredient2": "Milk",
     "secondary_ingredient_1": "Sugar",
     "secondaryIngredient1": "Sugar",
-    "secondary_ingredient_2": "Ghee",
-    "secondaryIngredient2": "Ghee",
-    "secondary_ingredient_3": "Cardamom Powder",
-    "secondaryIngredient3": "Cardamom Powder",
-    "secondary_ingredient_4": "",
-    "secondaryIngredient4": "",
-    "secondary_ingredient_5": "",
-    "secondaryIngredient5": "",
+    "secondary_ingredient_2": "Cardamom",
+    "secondaryIngredient2": "Cardamom",
+    "secondary_ingredient_3": "Ghee",
+    "secondaryIngredient3": "Ghee",
+    "secondary_ingredient_4": "Sadya",
+    "secondaryIngredient4": "Sadya",
+    "secondary_ingredient_5": "Banana Leaf Meal",
+    "secondaryIngredient5": "Banana Leaf Meal",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -92044,22 +92271,26 @@
       "milk"
     ],
     "requiredIngredients": [
-      "0.75 cup rice ada",
-      "1 litre milk",
-      "0.5 cup sugar",
-      "1 tsp ghee"
+      "ada",
+      "milk"
     ],
     "required_ingredients": [
-      "0.75 cup rice ada",
-      "1 litre milk",
-      "0.5 cup sugar",
-      "1 tsp ghee"
+      "ada",
+      "milk"
     ],
     "optionalIngredients": [
-      "0.25 tsp cardamom powder"
+      "sugar",
+      "cardamom",
+      "ghee",
+      "sadya",
+      "banana leaf meal"
     ],
     "optional_ingredients": [
-      "0.25 tsp cardamom powder"
+      "sugar",
+      "cardamom",
+      "ghee",
+      "sadya",
+      "banana leaf meal"
     ],
     "quickGuide": {
       "serves": "4 servings",
@@ -92070,31 +92301,62 @@
         "1 litre milk",
         "0.5 cup sugar",
         "1 tsp ghee",
-        "0.25 tsp cardamom powder"
+        "0.25 tsp cardamom powder",
+        "Ada",
+        "Milk",
+        "Sugar",
+        "Cardamom",
+        "Ghee",
+        "Sadya",
+        "Banana Leaf Meal"
       ],
       "steps": [
-        "Rinse and soak rice ada as needed.",
-        "Cook ada until soft and drain.",
-        "Simmer milk and sugar until slightly reduced.",
+        "Cook ada until soft.",
+        "Simmer milk and sugar together.",
         "Add ada and cook until creamy.",
-        "Finish with a little ghee and cardamom if desired."
+        "Finish with cardamom if using.",
+        "Serve warm or chilled."
       ],
-      "tip": "Slow simmering gives palada payasam its soft pinkish festive richness. Storage: Refrigerate and serve chilled or gently warmed.",
+      "tip": "Slow simmering gives palada its gentle caramel note.",
       "bestWith": [
         "Onam sadya",
-        "Banana chips"
+        "Banana chips",
+        "Sadya",
+        "Banana Leaf Meal"
       ]
     },
-    "tomoLine": "Slow simmering gives palada payasam its soft pinkish festive richness. Refrigerate and serve chilled or gently warmed.",
+    "tomoLine": "Slow simmering gives palada its gentle caramel note.",
     "bestWith": [
       "Onam sadya",
       "Banana chips"
     ],
-    "dishFamily": "milk-dessert",
+    "dishFamily": "payasam",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    },
+    "image_url": "/assets/images/collections/festival-food.webp",
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "dish_family": "payasam",
+    "pairings": {
+      "sides": [
+        "Sadya",
+        "Banana Leaf Meal"
+      ]
     }
   },
   {
@@ -97229,8 +97491,8 @@
     },
     "tomoLine": "Keep the upma soft so the dosa still folds easily.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Family Favorites",
+      "collection": "Lunch Box & Tiffin"
     }
   },
   {
@@ -98449,8 +98711,8 @@
     },
     "tomoLine": "Keep the heat low after adding buttermilk so it stays smooth.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -98686,8 +98948,8 @@
     },
     "tomoLine": "Use small brinjals so the masala cooks through evenly.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -98926,8 +99188,8 @@
     },
     "tomoLine": "Saute okra first so the pulusu stays clean and glossy.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -99394,8 +99656,8 @@
     },
     "tomoLine": "Fry on medium heat so the sakinalu crisp without browning too fast.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -99849,8 +100111,8 @@
     },
     "tomoLine": "Handle the sheets gently; the sweetness should stay delicate, not heavy.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -101311,8 +101573,8 @@
     },
     "tomoLine": "Chill the mixture briefly so the undalu hold their shape.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -102024,8 +102286,8 @@
     },
     "tomoLine": "Aerate the batter well for lighter garelu.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -102242,8 +102504,8 @@
     },
     "tomoLine": "The jaggery syrup stage decides the texture; keep it soft-ball, not hard.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -102477,8 +102739,8 @@
     },
     "tomoLine": "Keep the filling dry enough so the bobbatlu roll without tearing.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -102710,8 +102972,8 @@
     },
     "tomoLine": "Serve fresh so the onion stays crisp and bright.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Andhra & Telangana"
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -102968,6 +103230,5276 @@
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
+    }
+  },
+  {
+    "id": "43faf685-67fb-5472-b590-99eb7ac3f810",
+    "sourceId": "kerala-wave-01-appam-stew",
+    "title": "Appam Stew",
+    "name": "Appam Stew",
+    "aliases": [],
+    "description": "Soft Kerala appam paired with a gentle coconut milk vegetable stew for a calm breakfast plate.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch5-chicken-stew.png",
+    "image_url": "/assets/images/dishes/batch5-chicken-stew.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "light",
+      "soul",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "light",
+      "soul"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Light Meal",
+    "cookingNotes": "Do not boil after adding thick coconut milk; keep the stew silky.",
+    "instructions": [
+      "Prepare or warm soft appams.",
+      "Cook vegetables until just tender.",
+      "Simmer them in thin coconut milk with pepper and curry leaves.",
+      "Finish with thick coconut milk.",
+      "Serve appam with hot stew."
+    ],
+    "ingredients": [
+      {
+        "name": "appam",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut milk",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "beans",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut chutney",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tea",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Appam",
+    "primary_ingredient_2": "Coconut Milk",
+    "primaryIngredient1": "Appam",
+    "primaryIngredient2": "Coconut Milk",
+    "secondary_ingredient_1": "Potato",
+    "secondaryIngredient1": "Potato",
+    "secondary_ingredient_2": "Carrot",
+    "secondaryIngredient2": "Carrot",
+    "secondary_ingredient_3": "Beans",
+    "secondaryIngredient3": "Beans",
+    "secondary_ingredient_4": "Pepper",
+    "secondaryIngredient4": "Pepper",
+    "secondary_ingredient_5": "Curry Leaves",
+    "secondaryIngredient5": "Curry Leaves",
+    "primaryIngredients": [
+      "appam",
+      "coconut milk"
+    ],
+    "baseIngredient": "appam",
+    "base_ingredient": "appam",
+    "coreIngredients": [
+      "appam",
+      "coconut milk"
+    ],
+    "core_ingredients": [
+      "appam",
+      "coconut milk"
+    ],
+    "requiredIngredients": [
+      "appam",
+      "coconut milk"
+    ],
+    "required_ingredients": [
+      "appam",
+      "coconut milk"
+    ],
+    "optionalIngredients": [
+      "potato",
+      "carrot",
+      "beans",
+      "pepper",
+      "curry leaves",
+      "coconut chutney",
+      "tea"
+    ],
+    "optional_ingredients": [
+      "potato",
+      "carrot",
+      "beans",
+      "pepper",
+      "curry leaves",
+      "coconut chutney",
+      "tea"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "appam-stew",
+    "dish_family": "appam-stew",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "light",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Coconut Chutney"
+      ],
+      "drinks": [
+        "Tea"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Appam",
+        "Coconut Milk",
+        "Potato",
+        "Carrot",
+        "Beans",
+        "Pepper",
+        "Curry Leaves",
+        "Coconut Chutney"
+      ],
+      "steps": [
+        "Prepare or warm soft appams.",
+        "Cook vegetables until just tender.",
+        "Simmer them in thin coconut milk with pepper and curry leaves.",
+        "Finish with thick coconut milk.",
+        "Serve appam with hot stew."
+      ],
+      "tip": "Do not boil after adding thick coconut milk; keep the stew silky.",
+      "bestWith": [
+        "Coconut Chutney",
+        "Tea"
+      ]
+    },
+    "tomoLine": "Do not boil after adding thick coconut milk; keep the stew silky.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "fa32d092-1f7c-5036-903b-0e4f9cb12d9f",
+    "sourceId": "kerala-wave-02-idiyappam-egg-curry",
+    "title": "Idiyappam Egg Curry",
+    "name": "Idiyappam Egg Curry",
+    "aliases": [],
+    "description": "Delicate idiyappam with Kerala-style egg curry for a protein-rich breakfast.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "egg"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/egg-curry.png",
+    "image_url": "/assets/images/dishes/egg-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "egg",
+      "protein",
+      "comfort",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Keep the curry slightly loose so it soaks into the idiyappam.",
+    "instructions": [
+      "Steam idiyappam until soft.",
+      "Boil eggs and halve them.",
+      "Cook onion, tomato and spices into a curry base.",
+      "Add coconut milk and eggs.",
+      "Serve curry over idiyappam."
+    ],
+    "ingredients": [
+      {
+        "name": "idiyappam",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "egg",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut milk",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tea",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Idiyappam",
+    "primary_ingredient_2": "Egg",
+    "primaryIngredient1": "Idiyappam",
+    "primaryIngredient2": "Egg",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": "Coconut Milk",
+    "secondaryIngredient3": "Coconut Milk",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Black Pepper",
+    "secondaryIngredient5": "Black Pepper",
+    "primaryIngredients": [
+      "idiyappam",
+      "egg"
+    ],
+    "baseIngredient": "idiyappam",
+    "base_ingredient": "idiyappam",
+    "coreIngredients": [
+      "idiyappam",
+      "egg"
+    ],
+    "core_ingredients": [
+      "idiyappam",
+      "egg"
+    ],
+    "requiredIngredients": [
+      "idiyappam",
+      "egg"
+    ],
+    "required_ingredients": [
+      "idiyappam",
+      "egg"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "tomato",
+      "coconut milk",
+      "curry leaves",
+      "black pepper",
+      "tea"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "coconut milk",
+      "curry leaves",
+      "black pepper",
+      "tea"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "idiyappam-curry",
+    "dish_family": "idiyappam-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Tea"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Idiyappam",
+        "Egg",
+        "Onion",
+        "Tomato",
+        "Coconut Milk",
+        "Curry Leaves",
+        "Black Pepper",
+        "Tea"
+      ],
+      "steps": [
+        "Steam idiyappam until soft.",
+        "Boil eggs and halve them.",
+        "Cook onion, tomato and spices into a curry base.",
+        "Add coconut milk and eggs.",
+        "Serve curry over idiyappam."
+      ],
+      "tip": "Keep the curry slightly loose so it soaks into the idiyappam.",
+      "bestWith": [
+        "Tea"
+      ]
+    },
+    "tomoLine": "Keep the curry slightly loose so it soaks into the idiyappam.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "4c4c9872-d670-5e87-9cc5-912f21702871",
+    "sourceId": "kerala-wave-03-erissery",
+    "title": "Erissery",
+    "name": "Erissery",
+    "aliases": [],
+    "description": "A Kerala pumpkin and cowpea erissery with roasted coconut tempering.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "festive",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "festive"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Roast the coconut tempering until nutty for the classic finish.",
+    "instructions": [
+      "Cook pumpkin and cowpeas until soft.",
+      "Add coconut-cumin paste and simmer.",
+      "Mash lightly for body.",
+      "Temper mustard, curry leaves and coconut.",
+      "Pour over the erissery."
+    ],
+    "ingredients": [
+      {
+        "name": "pumpkin",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cowpeas",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "avial",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Pumpkin",
+    "primary_ingredient_2": "Cowpeas",
+    "primaryIngredient1": "Pumpkin",
+    "primaryIngredient2": "Cowpeas",
+    "secondary_ingredient_1": "Coconut",
+    "secondaryIngredient1": "Coconut",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Mustard Seeds",
+    "secondaryIngredient4": "Mustard Seeds",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "pumpkin",
+      "cowpeas"
+    ],
+    "baseIngredient": "pumpkin",
+    "base_ingredient": "pumpkin",
+    "coreIngredients": [
+      "pumpkin",
+      "cowpeas"
+    ],
+    "core_ingredients": [
+      "pumpkin",
+      "cowpeas"
+    ],
+    "requiredIngredients": [
+      "pumpkin",
+      "cowpeas"
+    ],
+    "required_ingredients": [
+      "pumpkin",
+      "cowpeas"
+    ],
+    "optionalIngredients": [
+      "coconut",
+      "cumin",
+      "curry leaves",
+      "mustard seeds",
+      "rice",
+      "avial"
+    ],
+    "optional_ingredients": [
+      "coconut",
+      "cumin",
+      "curry leaves",
+      "mustard seeds",
+      "rice",
+      "avial"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "erissery",
+    "dish_family": "erissery",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "festive"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Avial"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Pumpkin",
+        "Cowpeas",
+        "Coconut",
+        "Cumin",
+        "Curry Leaves",
+        "Mustard Seeds",
+        "Rice",
+        "Avial"
+      ],
+      "steps": [
+        "Cook pumpkin and cowpeas until soft.",
+        "Add coconut-cumin paste and simmer.",
+        "Mash lightly for body.",
+        "Temper mustard, curry leaves and coconut.",
+        "Pour over the erissery."
+      ],
+      "tip": "Roast the coconut tempering until nutty for the classic finish.",
+      "bestWith": [
+        "Rice",
+        "Avial"
+      ]
+    },
+    "tomoLine": "Roast the coconut tempering until nutty for the classic finish.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "9d0d9a32-5445-5670-baaf-40aa841ac9a1",
+    "sourceId": "kerala-wave-04-kerala-sambar",
+    "title": "Kerala Sambar",
+    "name": "Kerala Sambar",
+    "aliases": [],
+    "description": "Kerala-style sambar with vegetables, dal and a warm coconut-spice note.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 42,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3b-sambar-rice.png",
+    "image_url": "/assets/images/dishes/batch3b-sambar-rice.png",
+    "recipeRole": "soup",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "A small coconut-spice paste gives Kerala sambar its softer body.",
+    "instructions": [
+      "Cook dal until soft.",
+      "Simmer vegetables with tamarind and sambar spices.",
+      "Add dal and simmer until blended.",
+      "Temper mustard and curry leaves.",
+      "Serve hot with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "toor dal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sambar powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "avial",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "thoran",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Toor Dal",
+    "primary_ingredient_2": "Vegetables",
+    "primaryIngredient1": "Toor Dal",
+    "primaryIngredient2": "Vegetables",
+    "secondary_ingredient_1": "Tamarind",
+    "secondaryIngredient1": "Tamarind",
+    "secondary_ingredient_2": "Sambar Powder",
+    "secondaryIngredient2": "Sambar Powder",
+    "secondary_ingredient_3": "Coconut",
+    "secondaryIngredient3": "Coconut",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "toor dal",
+      "vegetables"
+    ],
+    "baseIngredient": "toor dal",
+    "base_ingredient": "toor dal",
+    "coreIngredients": [
+      "toor dal",
+      "vegetables"
+    ],
+    "core_ingredients": [
+      "toor dal",
+      "vegetables"
+    ],
+    "requiredIngredients": [
+      "toor dal",
+      "vegetables"
+    ],
+    "required_ingredients": [
+      "toor dal",
+      "vegetables"
+    ],
+    "optionalIngredients": [
+      "tamarind",
+      "sambar powder",
+      "coconut",
+      "curry leaves",
+      "rice",
+      "avial",
+      "thoran"
+    ],
+    "optional_ingredients": [
+      "tamarind",
+      "sambar powder",
+      "coconut",
+      "curry leaves",
+      "rice",
+      "avial",
+      "thoran"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "sambar",
+    "dish_family": "sambar",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Avial",
+        "Thoran"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "30 min",
+      "ingredients": [
+        "Toor Dal",
+        "Vegetables",
+        "Tamarind",
+        "Sambar Powder",
+        "Coconut",
+        "Curry Leaves",
+        "Rice",
+        "Avial"
+      ],
+      "steps": [
+        "Cook dal until soft.",
+        "Simmer vegetables with tamarind and sambar spices.",
+        "Add dal and simmer until blended.",
+        "Temper mustard and curry leaves.",
+        "Serve hot with rice."
+      ],
+      "tip": "A small coconut-spice paste gives Kerala sambar its softer body.",
+      "bestWith": [
+        "Rice",
+        "Avial",
+        "Thoran"
+      ]
+    },
+    "tomoLine": "A small coconut-spice paste gives Kerala sambar its softer body.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "b3158d29-ee0b-57d8-a856-3b0300087680",
+    "sourceId": "kerala-wave-05-kerala-rasam",
+    "title": "Kerala Rasam",
+    "name": "Kerala Rasam",
+    "aliases": [],
+    "description": "Peppery Kerala rasam with tamarind, tomato and curry leaves for light rice meals.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 42,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "soup",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "light",
+      "rainy",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "light",
+      "rainy"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Light Meal",
+    "cookingNotes": "Do not overboil rasam after it foams; the aroma stays brighter.",
+    "instructions": [
+      "Extract tamarind water.",
+      "Crush pepper, cumin and garlic.",
+      "Simmer tamarind with tomato and spices.",
+      "Temper mustard and curry leaves.",
+      "Serve hot and pourable."
+    ],
+    "ingredients": [
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "papadam",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Tamarind",
+    "primary_ingredient_2": "Tomato",
+    "primaryIngredient1": "Tamarind",
+    "primaryIngredient2": "Tomato",
+    "secondary_ingredient_1": "Pepper",
+    "secondaryIngredient1": "Pepper",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": "Garlic",
+    "secondaryIngredient3": "Garlic",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "tamarind",
+      "tomato"
+    ],
+    "baseIngredient": "tamarind",
+    "base_ingredient": "tamarind",
+    "coreIngredients": [
+      "tamarind",
+      "tomato"
+    ],
+    "core_ingredients": [
+      "tamarind",
+      "tomato"
+    ],
+    "requiredIngredients": [
+      "tamarind",
+      "tomato"
+    ],
+    "required_ingredients": [
+      "tamarind",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "pepper",
+      "cumin",
+      "garlic",
+      "curry leaves",
+      "rice",
+      "papadam"
+    ],
+    "optional_ingredients": [
+      "pepper",
+      "cumin",
+      "garlic",
+      "curry leaves",
+      "rice",
+      "papadam"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rasam",
+    "dish_family": "rasam",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "light",
+      "rainy"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Papadam"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "30 min",
+      "ingredients": [
+        "Tamarind",
+        "Tomato",
+        "Pepper",
+        "Cumin",
+        "Garlic",
+        "Curry Leaves",
+        "Rice",
+        "Papadam"
+      ],
+      "steps": [
+        "Extract tamarind water.",
+        "Crush pepper, cumin and garlic.",
+        "Simmer tamarind with tomato and spices.",
+        "Temper mustard and curry leaves.",
+        "Serve hot and pourable."
+      ],
+      "tip": "Do not overboil rasam after it foams; the aroma stays brighter.",
+      "bestWith": [
+        "Rice",
+        "Papadam"
+      ]
+    },
+    "tomoLine": "Do not overboil rasam after it foams; the aroma stays brighter.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "e73b05c1-c56e-5449-bc0d-d038dc61e7d1",
+    "sourceId": "kerala-wave-06-pazham-pori",
+    "title": "Pazham Pori",
+    "name": "Pazham Pori",
+    "aliases": [],
+    "description": "Kerala banana fritters with crisp batter and soft sweet banana inside.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "rainy",
+      "comfort",
+      "quick",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "rainy",
+      "comfort",
+      "quick"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Use ripe but firm nendran bananas for the best texture.",
+    "instructions": [
+      "Slice ripe banana lengthwise.",
+      "Make a batter with flour, sugar and turmeric.",
+      "Dip banana slices in batter.",
+      "Fry until golden.",
+      "Serve hot with tea."
+    ],
+    "ingredients": [
+      {
+        "name": "ripe banana",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "maida",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sugar",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black tea",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Ripe Banana",
+    "primary_ingredient_2": "Maida",
+    "primaryIngredient1": "Ripe Banana",
+    "primaryIngredient2": "Maida",
+    "secondary_ingredient_1": "Rice Flour",
+    "secondaryIngredient1": "Rice Flour",
+    "secondary_ingredient_2": "Turmeric",
+    "secondaryIngredient2": "Turmeric",
+    "secondary_ingredient_3": "Sugar",
+    "secondaryIngredient3": "Sugar",
+    "secondary_ingredient_4": "Oil",
+    "secondaryIngredient4": "Oil",
+    "secondary_ingredient_5": "Black Tea",
+    "secondaryIngredient5": "Black Tea",
+    "primaryIngredients": [
+      "ripe banana",
+      "maida"
+    ],
+    "baseIngredient": "ripe banana",
+    "base_ingredient": "ripe banana",
+    "coreIngredients": [
+      "ripe banana",
+      "maida"
+    ],
+    "core_ingredients": [
+      "ripe banana",
+      "maida"
+    ],
+    "requiredIngredients": [
+      "ripe banana",
+      "maida"
+    ],
+    "required_ingredients": [
+      "ripe banana",
+      "maida"
+    ],
+    "optionalIngredients": [
+      "rice flour",
+      "turmeric",
+      "sugar",
+      "oil",
+      "black tea"
+    ],
+    "optional_ingredients": [
+      "rice flour",
+      "turmeric",
+      "sugar",
+      "oil",
+      "black tea"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "banana-fritter",
+    "dish_family": "banana-fritter",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "rainy",
+      "comfort",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Black Tea"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Ripe Banana",
+        "Maida",
+        "Rice Flour",
+        "Turmeric",
+        "Sugar",
+        "Oil",
+        "Black Tea"
+      ],
+      "steps": [
+        "Slice ripe banana lengthwise.",
+        "Make a batter with flour, sugar and turmeric.",
+        "Dip banana slices in batter.",
+        "Fry until golden.",
+        "Serve hot with tea."
+      ],
+      "tip": "Use ripe but firm nendran bananas for the best texture.",
+      "bestWith": [
+        "Black Tea"
+      ]
+    },
+    "tomoLine": "Use ripe but firm nendran bananas for the best texture.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "b878bc14-949b-503a-b1b0-e05f241035da",
+    "sourceId": "kerala-wave-07-unniyappam",
+    "title": "Unniyappam",
+    "name": "Unniyappam",
+    "aliases": [],
+    "description": "Small Kerala jaggery appams with banana, coconut and cardamom, crisp outside and soft inside.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 35,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/festival-food.webp",
+    "image_url": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "festive",
+      "rainy",
+      "soul",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "festive",
+      "rainy",
+      "soul"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 7,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Festive",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "A little banana keeps unniyappam soft after cooking.",
+    "instructions": [
+      "Mix rice flour with jaggery syrup and mashed banana.",
+      "Add coconut bits and cardamom.",
+      "Rest the batter briefly.",
+      "Cook in an appe pan with ghee or oil.",
+      "Turn until browned all around."
+    ],
+    "ingredients": [
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "jaggery",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "banana",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tea",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice Flour",
+    "primary_ingredient_2": "Jaggery",
+    "primaryIngredient1": "Rice Flour",
+    "primaryIngredient2": "Jaggery",
+    "secondary_ingredient_1": "Banana",
+    "secondaryIngredient1": "Banana",
+    "secondary_ingredient_2": "Coconut",
+    "secondaryIngredient2": "Coconut",
+    "secondary_ingredient_3": "Cardamom",
+    "secondaryIngredient3": "Cardamom",
+    "secondary_ingredient_4": "Ghee",
+    "secondaryIngredient4": "Ghee",
+    "secondary_ingredient_5": "Tea",
+    "secondaryIngredient5": "Tea",
+    "primaryIngredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "baseIngredient": "rice flour",
+    "base_ingredient": "rice flour",
+    "coreIngredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "core_ingredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "requiredIngredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "required_ingredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "optionalIngredients": [
+      "banana",
+      "coconut",
+      "cardamom",
+      "ghee",
+      "tea"
+    ],
+    "optional_ingredients": [
+      "banana",
+      "coconut",
+      "cardamom",
+      "ghee",
+      "tea"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "sweet-snack",
+    "dish_family": "sweet-snack",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "rainy",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Tea"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Rice Flour",
+        "Jaggery",
+        "Banana",
+        "Coconut",
+        "Cardamom",
+        "Ghee",
+        "Tea"
+      ],
+      "steps": [
+        "Mix rice flour with jaggery syrup and mashed banana.",
+        "Add coconut bits and cardamom.",
+        "Rest the batter briefly.",
+        "Cook in an appe pan with ghee or oil.",
+        "Turn until browned all around."
+      ],
+      "tip": "A little banana keeps unniyappam soft after cooking.",
+      "bestWith": [
+        "Tea"
+      ]
+    },
+    "tomoLine": "A little banana keeps unniyappam soft after cooking.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "5d6d0a5a-1795-564b-b7d7-6888068f33af",
+    "sourceId": "kerala-wave-08-ela-ada",
+    "title": "Ela Ada",
+    "name": "Ela Ada",
+    "aliases": [],
+    "description": "Steamed Kerala rice parcels filled with coconut and jaggery in banana leaf.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/festival-food.webp",
+    "image_url": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "festive",
+      "soul",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "festive",
+      "soul"
+    ],
+    "mealTags": [
+      "dessert"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Banana leaf gives ela ada its signature aroma.",
+    "instructions": [
+      "Make a soft rice flour dough.",
+      "Mix coconut, jaggery and cardamom for filling.",
+      "Spread dough on banana leaf.",
+      "Add filling and fold.",
+      "Steam until set."
+    ],
+    "ingredients": [
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "jaggery",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "banana leaf",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tea",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice Flour",
+    "primary_ingredient_2": "Jaggery",
+    "primaryIngredient1": "Rice Flour",
+    "primaryIngredient2": "Jaggery",
+    "secondary_ingredient_1": "Coconut",
+    "secondaryIngredient1": "Coconut",
+    "secondary_ingredient_2": "Cardamom",
+    "secondaryIngredient2": "Cardamom",
+    "secondary_ingredient_3": "Banana Leaf",
+    "secondaryIngredient3": "Banana Leaf",
+    "secondary_ingredient_4": "Tea",
+    "secondaryIngredient4": "Tea",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "baseIngredient": "rice flour",
+    "base_ingredient": "rice flour",
+    "coreIngredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "core_ingredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "requiredIngredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "required_ingredients": [
+      "rice flour",
+      "jaggery"
+    ],
+    "optionalIngredients": [
+      "coconut",
+      "cardamom",
+      "banana leaf",
+      "tea"
+    ],
+    "optional_ingredients": [
+      "coconut",
+      "cardamom",
+      "banana leaf",
+      "tea"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "sweet",
+    "dish_family": "sweet",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Tea"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "20 min",
+      "cookTime": "30 min",
+      "ingredients": [
+        "Rice Flour",
+        "Jaggery",
+        "Coconut",
+        "Cardamom",
+        "Banana Leaf",
+        "Tea"
+      ],
+      "steps": [
+        "Make a soft rice flour dough.",
+        "Mix coconut, jaggery and cardamom for filling.",
+        "Spread dough on banana leaf.",
+        "Add filling and fold.",
+        "Steam until set."
+      ],
+      "tip": "Banana leaf gives ela ada its signature aroma.",
+      "bestWith": [
+        "Tea"
+      ]
+    },
+    "tomoLine": "Banana leaf gives ela ada its signature aroma.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "cdac5215-dbb0-5ce1-b7c5-32bce7249a88",
+    "sourceId": "kerala-wave-09-sambharam",
+    "title": "Sambharam",
+    "name": "Sambharam",
+    "aliases": [],
+    "description": "Kerala spiced buttermilk with ginger, chilli and curry leaves for cooling meals.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/healthy-drinks.webp",
+    "image_url": "/assets/images/collections/healthy-drinks.webp",
+    "recipeRole": "drink",
+    "tags": [
+      "drink",
+      "lunch",
+      "vegetarian",
+      "cooling",
+      "quick",
+      "light",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "cooling",
+      "quick",
+      "light"
+    ],
+    "mealTags": [
+      "drink",
+      "lunch"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": true,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Cooling",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Keep it thin and refreshing, not thick like lassi.",
+    "instructions": [
+      "Whisk buttermilk until smooth.",
+      "Crush ginger, chilli and curry leaves.",
+      "Stir into the buttermilk with salt.",
+      "Chill briefly if desired.",
+      "Serve with rice meals."
+    ],
+    "ingredients": [
+      {
+        "name": "buttermilk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "summer meals",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Buttermilk",
+    "primary_ingredient_2": "Ginger",
+    "primaryIngredient1": "Buttermilk",
+    "primaryIngredient2": "Ginger",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Coriander",
+    "secondaryIngredient3": "Coriander",
+    "secondary_ingredient_4": "Salt",
+    "secondaryIngredient4": "Salt",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "buttermilk",
+      "ginger"
+    ],
+    "baseIngredient": "buttermilk",
+    "base_ingredient": "buttermilk",
+    "coreIngredients": [
+      "buttermilk",
+      "ginger"
+    ],
+    "core_ingredients": [
+      "buttermilk",
+      "ginger"
+    ],
+    "requiredIngredients": [
+      "buttermilk",
+      "ginger"
+    ],
+    "required_ingredients": [
+      "buttermilk",
+      "ginger"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "curry leaves",
+      "coriander",
+      "salt",
+      "rice",
+      "summer meals"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "curry leaves",
+      "coriander",
+      "salt",
+      "rice",
+      "summer meals"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "buttermilk",
+    "dish_family": "buttermilk",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "cooling",
+      "quick",
+      "light"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Summer Meals"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Buttermilk",
+        "Ginger",
+        "Green Chilli",
+        "Curry Leaves",
+        "Coriander",
+        "Salt",
+        "Rice",
+        "Summer Meals"
+      ],
+      "steps": [
+        "Whisk buttermilk until smooth.",
+        "Crush ginger, chilli and curry leaves.",
+        "Stir into the buttermilk with salt.",
+        "Chill briefly if desired.",
+        "Serve with rice meals."
+      ],
+      "tip": "Keep it thin and refreshing, not thick like lassi.",
+      "bestWith": [
+        "Rice",
+        "Summer Meals"
+      ]
+    },
+    "tomoLine": "Keep it thin and refreshing, not thick like lassi.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "7b080f3d-aef2-5690-900e-1608cd3745a7",
+    "sourceId": "kerala-wave-10-kanji-payar",
+    "title": "Kanji Payar",
+    "name": "Kanji Payar",
+    "aliases": [],
+    "description": "Kerala rice kanji with payar, a soft everyday comfort meal with pickle and papadam.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "light",
+      "soul",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "light",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Light Meal",
+    "cookingNotes": "Keep the kanji loose and warm for its comforting feel.",
+    "instructions": [
+      "Cook rice with extra water until soft and soupy.",
+      "Cook green gram until tender.",
+      "Season payar with coconut and cumin if desired.",
+      "Serve kanji with payar on the side.",
+      "Add pickle and papadam."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green gram",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pickle",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "papadam",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice",
+    "primary_ingredient_2": "Green Gram",
+    "primaryIngredient1": "Rice",
+    "primaryIngredient2": "Green Gram",
+    "secondary_ingredient_1": "Coconut",
+    "secondaryIngredient1": "Coconut",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": "Pickle",
+    "secondaryIngredient3": "Pickle",
+    "secondary_ingredient_4": "Papadam",
+    "secondaryIngredient4": "Papadam",
+    "secondary_ingredient_5": "Salt",
+    "secondaryIngredient5": "Salt",
+    "primaryIngredients": [
+      "rice",
+      "green gram"
+    ],
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "green gram"
+    ],
+    "core_ingredients": [
+      "rice",
+      "green gram"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "green gram"
+    ],
+    "required_ingredients": [
+      "rice",
+      "green gram"
+    ],
+    "optionalIngredients": [
+      "coconut",
+      "cumin",
+      "pickle",
+      "papadam",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "coconut",
+      "cumin",
+      "pickle",
+      "papadam",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "kanji",
+    "dish_family": "kanji",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "light",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "pickles": [
+        "Pickle"
+      ],
+      "sides": [
+        "Papadam"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Rice",
+        "Green Gram",
+        "Coconut",
+        "Cumin",
+        "Pickle",
+        "Papadam",
+        "Salt"
+      ],
+      "steps": [
+        "Cook rice with extra water until soft and soupy.",
+        "Cook green gram until tender.",
+        "Season payar with coconut and cumin if desired.",
+        "Serve kanji with payar on the side.",
+        "Add pickle and papadam."
+      ],
+      "tip": "Keep the kanji loose and warm for its comforting feel.",
+      "bestWith": [
+        "Pickle",
+        "Papadam"
+      ]
+    },
+    "tomoLine": "Keep the kanji loose and warm for its comforting feel.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "e0206888-cfb7-5005-8171-dd82b54e2435",
+    "sourceId": "kerala-wave-11-malabar-chicken-curry",
+    "title": "Malabar Chicken Curry",
+    "name": "Malabar Chicken Curry",
+    "aliases": [],
+    "description": "A Malabar-style chicken curry with coconut milk, spices and curry leaves.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch5-chicken-stew.png",
+    "image_url": "/assets/images/dishes/batch5-chicken-stew.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "soul",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Add coconut milk at the end to keep the curry rounded and fragrant.",
+    "instructions": [
+      "Brown onion with curry leaves and spices.",
+      "Add chicken and sear lightly.",
+      "Add tomato and masala.",
+      "Simmer until chicken is tender.",
+      "Finish with coconut milk."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut milk",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "appam",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "parotta",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Coconut Milk",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Coconut Milk",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": "Ginger Garlic",
+    "secondaryIngredient3": "Ginger Garlic",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Garam Masala",
+    "secondaryIngredient5": "Garam Masala",
+    "primaryIngredients": [
+      "chicken",
+      "coconut milk"
+    ],
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "coconut milk"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "coconut milk"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "coconut milk"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "coconut milk"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "tomato",
+      "ginger garlic",
+      "curry leaves",
+      "garam masala",
+      "appam",
+      "parotta"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "ginger garlic",
+      "curry leaves",
+      "garam masala",
+      "appam",
+      "parotta"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chicken-curry",
+    "dish_family": "chicken-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Appam",
+        "Parotta"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Chicken",
+        "Coconut Milk",
+        "Onion",
+        "Tomato",
+        "Ginger Garlic",
+        "Curry Leaves",
+        "Garam Masala",
+        "Appam"
+      ],
+      "steps": [
+        "Brown onion with curry leaves and spices.",
+        "Add chicken and sear lightly.",
+        "Add tomato and masala.",
+        "Simmer until chicken is tender.",
+        "Finish with coconut milk."
+      ],
+      "tip": "Add coconut milk at the end to keep the curry rounded and fragrant.",
+      "bestWith": [
+        "Appam",
+        "Parotta"
+      ]
+    },
+    "tomoLine": "Add coconut milk at the end to keep the curry rounded and fragrant.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "a766da27-5b96-529e-aa1c-1e1572adf7ab",
+    "sourceId": "kerala-wave-12-kerala-beef-fry",
+    "title": "Kerala Beef Fry",
+    "name": "Kerala Beef Fry",
+    "aliases": [],
+    "description": "Kerala beef fry with pepper, coconut slices and curry leaves, roasted until dark and dry.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "soul",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Roast patiently until the masala clings to the beef.",
+    "instructions": [
+      "Cook beef with spices until tender.",
+      "Fry onion, coconut slices and curry leaves.",
+      "Add cooked beef and roast.",
+      "Finish with black pepper.",
+      "Serve hot with parotta."
+    ],
+    "ingredients": [
+      {
+        "name": "beef",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut slices",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "kerala parotta",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Beef",
+    "primary_ingredient_2": "Coconut Slices",
+    "primaryIngredient1": "Beef",
+    "primaryIngredient2": "Coconut Slices",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Black Pepper",
+    "secondaryIngredient2": "Black Pepper",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Garam Masala",
+    "secondaryIngredient4": "Garam Masala",
+    "secondary_ingredient_5": "Kerala Parotta",
+    "secondaryIngredient5": "Kerala Parotta",
+    "primaryIngredients": [
+      "beef",
+      "coconut slices"
+    ],
+    "baseIngredient": "beef",
+    "base_ingredient": "beef",
+    "coreIngredients": [
+      "beef",
+      "coconut slices"
+    ],
+    "core_ingredients": [
+      "beef",
+      "coconut slices"
+    ],
+    "requiredIngredients": [
+      "beef",
+      "coconut slices"
+    ],
+    "required_ingredients": [
+      "beef",
+      "coconut slices"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "black pepper",
+      "curry leaves",
+      "garam masala",
+      "kerala parotta"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "black pepper",
+      "curry leaves",
+      "garam masala",
+      "kerala parotta"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "beef-fry",
+    "dish_family": "beef-fry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Kerala Parotta"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Beef",
+        "Coconut Slices",
+        "Onion",
+        "Black Pepper",
+        "Curry Leaves",
+        "Garam Masala",
+        "Kerala Parotta"
+      ],
+      "steps": [
+        "Cook beef with spices until tender.",
+        "Fry onion, coconut slices and curry leaves.",
+        "Add cooked beef and roast.",
+        "Finish with black pepper.",
+        "Serve hot with parotta."
+      ],
+      "tip": "Roast patiently until the masala clings to the beef.",
+      "bestWith": [
+        "Kerala Parotta"
+      ]
+    },
+    "tomoLine": "Roast patiently until the masala clings to the beef.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "8eedd6c2-ae9b-5503-a6fc-edf705fd2673",
+    "sourceId": "kerala-wave-13-kerala-parotta-beef-fry",
+    "title": "Kerala Parotta Beef Fry",
+    "name": "Kerala Parotta Beef Fry",
+    "aliases": [],
+    "description": "A Kerala street-style plate of flaky parotta with spicy beef fry.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "comfort",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Serve immediately while the parotta is flaky and the beef is hot.",
+    "instructions": [
+      "Warm flaky Kerala parottas.",
+      "Prepare or reheat beef fry until dry and spicy.",
+      "Separate parotta layers by clapping gently.",
+      "Serve beef fry alongside.",
+      "Add onion and pickle."
+    ],
+    "ingredients": [
+      {
+        "name": "kerala parotta",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "beef fry",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pickle",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Kerala Parotta",
+    "primary_ingredient_2": "Beef Fry",
+    "primaryIngredient1": "Kerala Parotta",
+    "primaryIngredient2": "Beef Fry",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Pickle",
+    "secondaryIngredient2": "Pickle",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "kerala parotta",
+      "beef fry"
+    ],
+    "baseIngredient": "kerala parotta",
+    "base_ingredient": "kerala parotta",
+    "coreIngredients": [
+      "kerala parotta",
+      "beef fry"
+    ],
+    "core_ingredients": [
+      "kerala parotta",
+      "beef fry"
+    ],
+    "requiredIngredients": [
+      "kerala parotta",
+      "beef fry"
+    ],
+    "required_ingredients": [
+      "kerala parotta",
+      "beef fry"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "pickle",
+      "curry leaves"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "pickle",
+      "curry leaves"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "parotta-beef",
+    "dish_family": "parotta-beef",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Onion",
+        "Pickle"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Kerala Parotta",
+        "Beef Fry",
+        "Onion",
+        "Pickle",
+        "Curry Leaves"
+      ],
+      "steps": [
+        "Warm flaky Kerala parottas.",
+        "Prepare or reheat beef fry until dry and spicy.",
+        "Separate parotta layers by clapping gently.",
+        "Serve beef fry alongside.",
+        "Add onion and pickle."
+      ],
+      "tip": "Serve immediately while the parotta is flaky and the beef is hot.",
+      "bestWith": [
+        "Onion",
+        "Pickle"
+      ]
+    },
+    "tomoLine": "Serve immediately while the parotta is flaky and the beef is hot.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "6181b249-05b3-5ddb-a0bc-92b39c4c6873",
+    "sourceId": "kerala-wave-14-meen-moilee",
+    "title": "Meen Moilee",
+    "name": "Meen Moilee",
+    "aliases": [],
+    "description": "A gentle Kerala fish moilee with coconut milk, ginger and green chilli.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-stew.png",
+    "image_url": "/assets/images/dishes/fish-stew.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "light",
+      "protein",
+      "comfort",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "light",
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Keep the heat low so the fish stays tender and the coconut milk stays smooth.",
+    "instructions": [
+      "Season fish lightly.",
+      "Saute ginger, chilli and curry leaves.",
+      "Add thin coconut milk and simmer.",
+      "Add fish and cook gently.",
+      "Finish with thick coconut milk."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut milk",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "appam",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Coconut Milk",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Coconut Milk",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Ginger",
+    "secondaryIngredient2": "Ginger",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Tomato",
+    "secondaryIngredient4": "Tomato",
+    "secondary_ingredient_5": "Appam",
+    "secondaryIngredient5": "Appam",
+    "primaryIngredients": [
+      "fish",
+      "coconut milk"
+    ],
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "coreIngredients": [
+      "fish",
+      "coconut milk"
+    ],
+    "core_ingredients": [
+      "fish",
+      "coconut milk"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "coconut milk"
+    ],
+    "required_ingredients": [
+      "fish",
+      "coconut milk"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "ginger",
+      "curry leaves",
+      "tomato",
+      "appam",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "ginger",
+      "curry leaves",
+      "tomato",
+      "appam",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fish-curry",
+    "dish_family": "fish-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "light",
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Appam"
+      ],
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Fish",
+        "Coconut Milk",
+        "Green Chilli",
+        "Ginger",
+        "Curry Leaves",
+        "Tomato",
+        "Appam",
+        "Rice"
+      ],
+      "steps": [
+        "Season fish lightly.",
+        "Saute ginger, chilli and curry leaves.",
+        "Add thin coconut milk and simmer.",
+        "Add fish and cook gently.",
+        "Finish with thick coconut milk."
+      ],
+      "tip": "Keep the heat low so the fish stays tender and the coconut milk stays smooth.",
+      "bestWith": [
+        "Appam",
+        "Rice"
+      ]
+    },
+    "tomoLine": "Keep the heat low so the fish stays tender and the coconut milk stays smooth.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "b28fcffb-5be9-57e1-b309-3f9b66eef166",
+    "sourceId": "kerala-wave-15-chemmeen-theeyal",
+    "title": "Chemmeen Theeyal",
+    "name": "Chemmeen Theeyal",
+    "aliases": [],
+    "description": "Kerala prawn theeyal with roasted coconut, tamarind and shallots.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch4-chingri-malai-curry.png",
+    "image_url": "/assets/images/dishes/batch4-chingri-malai-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "soul",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Roast coconut slowly for the deep theeyal flavor.",
+    "instructions": [
+      "Roast coconut and spices until deep brown.",
+      "Grind into a paste.",
+      "Simmer tamarind, shallots and the paste.",
+      "Add prawns and cook briefly.",
+      "Finish with curry leaves."
+    ],
+    "ingredients": [
+      {
+        "name": "prawns",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "roasted coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "shallots",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "red chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Prawns",
+    "primary_ingredient_2": "Roasted Coconut",
+    "primaryIngredient1": "Prawns",
+    "primaryIngredient2": "Roasted Coconut",
+    "secondary_ingredient_1": "Tamarind",
+    "secondaryIngredient1": "Tamarind",
+    "secondary_ingredient_2": "Shallots",
+    "secondaryIngredient2": "Shallots",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Red Chilli",
+    "secondaryIngredient4": "Red Chilli",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "prawns",
+      "roasted coconut"
+    ],
+    "baseIngredient": "prawns",
+    "base_ingredient": "prawns",
+    "coreIngredients": [
+      "prawns",
+      "roasted coconut"
+    ],
+    "core_ingredients": [
+      "prawns",
+      "roasted coconut"
+    ],
+    "requiredIngredients": [
+      "prawns",
+      "roasted coconut"
+    ],
+    "required_ingredients": [
+      "prawns",
+      "roasted coconut"
+    ],
+    "optionalIngredients": [
+      "tamarind",
+      "shallots",
+      "curry leaves",
+      "red chilli",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "tamarind",
+      "shallots",
+      "curry leaves",
+      "red chilli",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "theeyal",
+    "dish_family": "theeyal",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Prawns",
+        "Roasted Coconut",
+        "Tamarind",
+        "Shallots",
+        "Curry Leaves",
+        "Red Chilli",
+        "Rice"
+      ],
+      "steps": [
+        "Roast coconut and spices until deep brown.",
+        "Grind into a paste.",
+        "Simmer tamarind, shallots and the paste.",
+        "Add prawns and cook briefly.",
+        "Finish with curry leaves."
+      ],
+      "tip": "Roast coconut slowly for the deep theeyal flavor.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Roast coconut slowly for the deep theeyal flavor.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "fe53eea3-9e5f-57ea-991a-6dd7e41d4dd3",
+    "sourceId": "kerala-wave-16-malabar-fish-curry",
+    "title": "Malabar Fish Curry",
+    "name": "Malabar Fish Curry",
+    "aliases": [],
+    "description": "A Malabar fish curry with coconut, tang and curry leaves for rice or kappa.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "comfort",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Avoid stirring after adding fish; swirl the pan instead.",
+    "instructions": [
+      "Grind coconut with spices.",
+      "Simmer tamarind water with shallots and chilli.",
+      "Add coconut paste and curry leaves.",
+      "Slide in fish pieces gently.",
+      "Cook until fish is just done."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "shallots",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "kappa",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Tamarind",
+    "secondaryIngredient1": "Tamarind",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Shallots",
+    "secondaryIngredient4": "Shallots",
+    "secondary_ingredient_5": "Kappa",
+    "secondaryIngredient5": "Kappa",
+    "primaryIngredients": [
+      "fish",
+      "coconut"
+    ],
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "coreIngredients": [
+      "fish",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "fish",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "fish",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "tamarind",
+      "green chilli",
+      "curry leaves",
+      "shallots",
+      "kappa",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "tamarind",
+      "green chilli",
+      "curry leaves",
+      "shallots",
+      "kappa",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fish-curry",
+    "dish_family": "fish-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Kappa"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Fish",
+        "Coconut",
+        "Tamarind",
+        "Green Chilli",
+        "Curry Leaves",
+        "Shallots",
+        "Kappa",
+        "Rice"
+      ],
+      "steps": [
+        "Grind coconut with spices.",
+        "Simmer tamarind water with shallots and chilli.",
+        "Add coconut paste and curry leaves.",
+        "Slide in fish pieces gently.",
+        "Cook until fish is just done."
+      ],
+      "tip": "Avoid stirring after adding fish; swirl the pan instead.",
+      "bestWith": [
+        "Rice",
+        "Kappa"
+      ]
+    },
+    "tomoLine": "Avoid stirring after adding fish; swirl the pan instead.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "94c08319-2e6b-5383-bdf3-2b8291ee5864",
+    "sourceId": "kerala-wave-17-nadan-kozhi-curry",
+    "title": "Nadan Kozhi Curry",
+    "name": "Nadan Kozhi Curry",
+    "aliases": [],
+    "description": "A homestyle Kerala chicken curry with coconut, roasted spices and curry leaves.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch5-chicken-stew.png",
+    "image_url": "/assets/images/dishes/batch5-chicken-stew.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "soul",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Let the curry rest for a few minutes so the coconut masala settles.",
+    "instructions": [
+      "Saute onion, curry leaves and spices.",
+      "Add chicken and brown lightly.",
+      "Add tomato and coconut masala.",
+      "Simmer until chicken is tender.",
+      "Serve with appam or rice."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "appam",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Garam Masala",
+    "secondaryIngredient4": "Garam Masala",
+    "secondary_ingredient_5": "Appam",
+    "secondaryIngredient5": "Appam",
+    "primaryIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "tomato",
+      "curry leaves",
+      "garam masala",
+      "appam",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "tomato",
+      "curry leaves",
+      "garam masala",
+      "appam",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chicken-curry",
+    "dish_family": "chicken-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Appam"
+      ],
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Chicken",
+        "Coconut",
+        "Onion",
+        "Tomato",
+        "Curry Leaves",
+        "Garam Masala",
+        "Appam",
+        "Rice"
+      ],
+      "steps": [
+        "Saute onion, curry leaves and spices.",
+        "Add chicken and brown lightly.",
+        "Add tomato and coconut masala.",
+        "Simmer until chicken is tender.",
+        "Serve with appam or rice."
+      ],
+      "tip": "Let the curry rest for a few minutes so the coconut masala settles.",
+      "bestWith": [
+        "Appam",
+        "Rice"
+      ]
+    },
+    "tomoLine": "Let the curry rest for a few minutes so the coconut masala settles.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "99dee2bc-490d-57a4-9722-a46dc5e50ceb",
+    "sourceId": "kerala-wave-18-cherupayar-curry",
+    "title": "Cherupayar Curry",
+    "name": "Cherupayar Curry",
+    "aliases": [],
+    "description": "A simple Kerala green gram curry for kanji, rice and everyday protein comfort.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3b-kadala-curry.png",
+    "image_url": "/assets/images/dishes/batch3b-kadala-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "protein",
+      "comfort",
+      "light",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "protein",
+      "comfort",
+      "light"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Keep the curry mild so the green gram flavor stays clear.",
+    "instructions": [
+      "Cook green gram until tender.",
+      "Grind coconut with cumin and garlic.",
+      "Simmer cooked payar with the coconut paste.",
+      "Temper curry leaves.",
+      "Serve with kanji or rice."
+    ],
+    "ingredients": [
+      {
+        "name": "green gram",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "kanji",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Green Gram",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Green Gram",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Cumin",
+    "secondaryIngredient1": "Cumin",
+    "secondary_ingredient_2": "Garlic",
+    "secondaryIngredient2": "Garlic",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Kanji",
+    "secondaryIngredient4": "Kanji",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "green gram",
+      "coconut"
+    ],
+    "baseIngredient": "green gram",
+    "base_ingredient": "green gram",
+    "coreIngredients": [
+      "green gram",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "green gram",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "green gram",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "green gram",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "cumin",
+      "garlic",
+      "curry leaves",
+      "kanji",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "cumin",
+      "garlic",
+      "curry leaves",
+      "kanji",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "payar-curry",
+    "dish_family": "payar-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "comfort",
+      "light"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Kanji"
+      ],
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Green Gram",
+        "Coconut",
+        "Cumin",
+        "Garlic",
+        "Curry Leaves",
+        "Kanji",
+        "Rice"
+      ],
+      "steps": [
+        "Cook green gram until tender.",
+        "Grind coconut with cumin and garlic.",
+        "Simmer cooked payar with the coconut paste.",
+        "Temper curry leaves.",
+        "Serve with kanji or rice."
+      ],
+      "tip": "Keep the curry mild so the green gram flavor stays clear.",
+      "bestWith": [
+        "Kanji",
+        "Rice"
+      ]
+    },
+    "tomoLine": "Keep the curry mild so the green gram flavor stays clear.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "d562341b-a1cd-52e7-8608-eb28acb124a7",
+    "sourceId": "kerala-wave-19-kappa-meen-curry",
+    "title": "Kappa Meen Curry",
+    "name": "Kappa Meen Curry",
+    "aliases": [],
+    "description": "Kerala kappa with meen curry, a beloved tapioca and spicy fish curry pairing.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "soul",
+      "comfort",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "soul",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Drain tapioca well before seasoning so it stays fluffy.",
+    "instructions": [
+      "Boil tapioca until soft and drain.",
+      "Mash lightly with coconut, chilli and curry leaves.",
+      "Prepare a spicy fish curry separately.",
+      "Serve kappa hot with the curry.",
+      "Mix at the table if desired."
+    ],
+    "ingredients": [
+      {
+        "name": "tapioca",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "fish curry",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "fish curry",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Tapioca",
+    "primary_ingredient_2": "Fish Curry",
+    "primaryIngredient1": "Tapioca",
+    "primaryIngredient2": "Fish Curry",
+    "secondary_ingredient_1": "Coconut",
+    "secondaryIngredient1": "Coconut",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Fish Curry",
+    "secondaryIngredient4": "Fish Curry",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "tapioca",
+      "fish curry"
+    ],
+    "baseIngredient": "tapioca",
+    "base_ingredient": "tapioca",
+    "coreIngredients": [
+      "tapioca",
+      "fish curry"
+    ],
+    "core_ingredients": [
+      "tapioca",
+      "fish curry"
+    ],
+    "requiredIngredients": [
+      "tapioca",
+      "fish curry"
+    ],
+    "required_ingredients": [
+      "tapioca",
+      "fish curry"
+    ],
+    "optionalIngredients": [
+      "coconut",
+      "green chilli",
+      "curry leaves",
+      "fish curry"
+    ],
+    "optional_ingredients": [
+      "coconut",
+      "green chilli",
+      "curry leaves",
+      "fish curry"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "kappa-fish",
+    "dish_family": "kappa-fish",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Fish Curry"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Tapioca",
+        "Fish Curry",
+        "Coconut",
+        "Green Chilli",
+        "Curry Leaves",
+        "Fish Curry"
+      ],
+      "steps": [
+        "Boil tapioca until soft and drain.",
+        "Mash lightly with coconut, chilli and curry leaves.",
+        "Prepare a spicy fish curry separately.",
+        "Serve kappa hot with the curry.",
+        "Mix at the table if desired."
+      ],
+      "tip": "Drain tapioca well before seasoning so it stays fluffy.",
+      "bestWith": [
+        "Fish Curry"
+      ]
+    },
+    "tomoLine": "Drain tapioca well before seasoning so it stays fluffy.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "34a6847c-40ca-5781-a3fd-1ff8d8c275b8",
+    "sourceId": "kerala-wave-20-ulli-theeyal",
+    "title": "Ulli Theeyal",
+    "name": "Ulli Theeyal",
+    "aliases": [],
+    "description": "Kerala shallot theeyal with roasted coconut and tamarind for rice plates.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "spicy",
+      "soul",
+      "comfort",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "soul",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Theeyal needs deep roasted coconut, not pale coconut paste.",
+    "instructions": [
+      "Roast coconut and spices until dark brown.",
+      "Grind into a paste.",
+      "Saute shallots until glossy.",
+      "Simmer with tamarind and coconut paste.",
+      "Finish with curry leaves."
+    ],
+    "ingredients": [
+      {
+        "name": "shallots",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "roasted coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "red chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Shallots",
+    "primary_ingredient_2": "Roasted Coconut",
+    "primaryIngredient1": "Shallots",
+    "primaryIngredient2": "Roasted Coconut",
+    "secondary_ingredient_1": "Tamarind",
+    "secondaryIngredient1": "Tamarind",
+    "secondary_ingredient_2": "Red Chilli",
+    "secondaryIngredient2": "Red Chilli",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "shallots",
+      "roasted coconut"
+    ],
+    "baseIngredient": "shallots",
+    "base_ingredient": "shallots",
+    "coreIngredients": [
+      "shallots",
+      "roasted coconut"
+    ],
+    "core_ingredients": [
+      "shallots",
+      "roasted coconut"
+    ],
+    "requiredIngredients": [
+      "shallots",
+      "roasted coconut"
+    ],
+    "required_ingredients": [
+      "shallots",
+      "roasted coconut"
+    ],
+    "optionalIngredients": [
+      "tamarind",
+      "red chilli",
+      "curry leaves",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "tamarind",
+      "red chilli",
+      "curry leaves",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "theeyal",
+    "dish_family": "theeyal",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Shallots",
+        "Roasted Coconut",
+        "Tamarind",
+        "Red Chilli",
+        "Curry Leaves",
+        "Rice"
+      ],
+      "steps": [
+        "Roast coconut and spices until dark brown.",
+        "Grind into a paste.",
+        "Saute shallots until glossy.",
+        "Simmer with tamarind and coconut paste.",
+        "Finish with curry leaves."
+      ],
+      "tip": "Theeyal needs deep roasted coconut, not pale coconut paste.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Theeyal needs deep roasted coconut, not pale coconut paste.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "807ebef7-fb18-5848-a483-0883bdb82292",
+    "sourceId": "kerala-wave-21-beetroot-pachadi",
+    "title": "Beetroot Pachadi",
+    "name": "Beetroot Pachadi",
+    "aliases": [],
+    "description": "A pink Kerala beetroot pachadi with curd and coconut for sadya and rice meals.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "cooling",
+      "festive",
+      "comfort",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "cooling",
+      "festive",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": true,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Cooling",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Cool slightly before adding curd to keep the pachadi smooth.",
+    "instructions": [
+      "Cook grated beetroot until soft.",
+      "Grind coconut with mustard or cumin.",
+      "Mix beetroot with the coconut paste.",
+      "Fold in curd on low heat or off heat.",
+      "Temper curry leaves and mustard."
+    ],
+    "ingredients": [
+      {
+        "name": "beetroot",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sadya",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Beetroot",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Beetroot",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": "Coconut",
+    "secondaryIngredient1": "Coconut",
+    "secondary_ingredient_2": "Mustard Seeds",
+    "secondaryIngredient2": "Mustard Seeds",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Sadya",
+    "secondaryIngredient4": "Sadya",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "beetroot",
+      "curd"
+    ],
+    "baseIngredient": "beetroot",
+    "base_ingredient": "beetroot",
+    "coreIngredients": [
+      "beetroot",
+      "curd"
+    ],
+    "core_ingredients": [
+      "beetroot",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "beetroot",
+      "curd"
+    ],
+    "required_ingredients": [
+      "beetroot",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "coconut",
+      "mustard seeds",
+      "curry leaves",
+      "sadya",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "coconut",
+      "mustard seeds",
+      "curry leaves",
+      "sadya",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pachadi",
+    "dish_family": "pachadi",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "cooling",
+      "festive",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Sadya"
+      ],
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Beetroot",
+        "Curd",
+        "Coconut",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Sadya",
+        "Rice"
+      ],
+      "steps": [
+        "Cook grated beetroot until soft.",
+        "Grind coconut with mustard or cumin.",
+        "Mix beetroot with the coconut paste.",
+        "Fold in curd on low heat or off heat.",
+        "Temper curry leaves and mustard."
+      ],
+      "tip": "Cool slightly before adding curd to keep the pachadi smooth.",
+      "bestWith": [
+        "Sadya",
+        "Rice"
+      ]
+    },
+    "tomoLine": "Cool slightly before adding curd to keep the pachadi smooth.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
+    }
+  },
+  {
+    "id": "81759b51-92c5-587b-a24e-931428daff66",
+    "sourceId": "kerala-wave-22-kalan",
+    "title": "Kalan",
+    "name": "Kalan",
+    "aliases": [],
+    "description": "Kerala kalan with curd, coconut, raw banana and pepper for sadya plates.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Kerala",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "festive",
+      "comfort",
+      "soul",
+      "kerala",
+      "south-india"
+    ],
+    "moodTags": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Kalan should be thick and tangy, not watery.",
+    "instructions": [
+      "Cook raw banana and yam until tender.",
+      "Add pepper and turmeric.",
+      "Stir in coconut paste.",
+      "Add thick curd and simmer gently.",
+      "Finish with curry leaves."
+    ],
+    "ingredients": [
+      {
+        "name": "raw banana",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "yam",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "papadam",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Raw Banana",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Raw Banana",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": "Yam",
+    "secondaryIngredient1": "Yam",
+    "secondary_ingredient_2": "Coconut",
+    "secondaryIngredient2": "Coconut",
+    "secondary_ingredient_3": "Pepper",
+    "secondaryIngredient3": "Pepper",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "raw banana",
+      "curd"
+    ],
+    "baseIngredient": "raw banana",
+    "base_ingredient": "raw banana",
+    "coreIngredients": [
+      "raw banana",
+      "curd"
+    ],
+    "core_ingredients": [
+      "raw banana",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "raw banana",
+      "curd"
+    ],
+    "required_ingredients": [
+      "raw banana",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "yam",
+      "coconut",
+      "pepper",
+      "curry leaves",
+      "rice",
+      "papadam"
+    ],
+    "optional_ingredients": [
+      "yam",
+      "coconut",
+      "pepper",
+      "curry leaves",
+      "rice",
+      "papadam"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "kalan",
+    "dish_family": "kalan",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Kerala",
+        "Malabar",
+        "Travancore",
+        "Kochi"
+      ],
+      "cuisine": [
+        "Kerala"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Papadam"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Raw Banana",
+        "Curd",
+        "Yam",
+        "Coconut",
+        "Pepper",
+        "Curry Leaves",
+        "Rice",
+        "Papadam"
+      ],
+      "steps": [
+        "Cook raw banana and yam until tender.",
+        "Add pepper and turmeric.",
+        "Stir in coconut paste.",
+        "Add thick curd and simmer gently.",
+        "Finish with curry leaves."
+      ],
+      "tip": "Kalan should be thick and tangy, not watery.",
+      "bestWith": [
+        "Rice",
+        "Papadam"
+      ]
+    },
+    "tomoLine": "Kalan should be thick and tangy, not watery.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Kerala"
     }
   }
 ]
