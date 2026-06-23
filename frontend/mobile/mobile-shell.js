@@ -62,6 +62,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     tomoPickCursor: Number(readJson('tomo_mobile_v2_pick_cursor', 0)) || 0,
     dismissedToday: [],
     todaysPickScores: {},
+    microMealsExpanded: false,
     pantrySearch: '',
     pantryScrollY: 0,
     pantrySections: new Set(['Staples']),
@@ -3050,14 +3051,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function discoverView() {
-    return `
-      <div class="mv2-segmented" role="tablist" aria-label="Discover mode">
-        <button class="${state.discoverView === 'moods' ? 'active' : ''}" type="button" data-discover="moods">Moods</button>
-        <button class="${state.discoverView === 'collections' ? 'active' : ''}" type="button" data-discover="collections">Collections</button>
-      </div>
-      <section class="mv2-discover-view ${state.discoverView === 'moods' ? 'active' : ''}">${moodsView()}</section>
-      <section class="mv2-discover-view ${state.discoverView === 'collections' ? 'active' : ''}">${collectionsView()}</section>
-    `;
+    state.discoverView = 'moods';
+    return `<section class="mv2-discover-view active">${moodsView()}</section>`;
   }
 
   function moodsView() {
@@ -3068,32 +3063,74 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return `
       <div class="mv2-mood-dashboard">
         <div class="mv2-mood-heading">
-          <h2>Choose Your Mood</h2>
-          <p>Pick how you're feeling and Tomo will adapt.</p>
+          <h2>✨ Choose Your Mood</h2>
+          <p>Tomo will adapt today's recommendations.</p>
         </div>
         <div class="mv2-moods">${moods.map(([key, icon, label]) => `<button class="mv2-mood ${state.mood === key ? 'active' : ''}" type="button" data-mood="${key}"><span>${icon}</span><span>${label}</span></button>`).join('')}</div>
       </div>
-      <section class="mv2-todays-picks mv2-four-picks"><div class="mv2-section-title"><div><h2>Today's Picks</h2><p>${esc(mealLabel(state.meal))}${state.mood ? ` through a ${esc(selectedMoodLabel(state.mood))} lens` : ''}</p></div></div><div class="mv2-meal-tabs">${meals.map(([key, label]) => `<button class="${state.meal === key ? 'active' : ''}" type="button" data-meal="${key}">${label}</button>`).join('')}</div><div class="mv2-four-pick-grid">${pickCards.map(todayPickCard).join('') || '<p class="mv2-empty">No dishes found for this meal yet.</p>'}</div></section>
+      <section class="mv2-recommendation-panel">
+        <div class="mv2-meal-tabs">${meals.map(([key, label]) => `<button class="${state.meal === key ? 'active' : ''}" type="button" data-meal="${key}">${label}</button>`).join('')}</div>
+        <section class="mv2-todays-picks mv2-four-picks"><div class="mv2-section-title"><div><h2>Today's Picks</h2></div></div><div class="mv2-four-pick-grid">${pickCards.map(todayPickCard).join('') || '<p class="mv2-empty">No dishes found for this meal yet.</p>'}</div></section>
+      </section>
+      ${microMealsAccordion()}
     `;
   }
 
   function todayPickCard(card) {
     const recipe = card.recipe;
     const role = titleCase(recommendationRecipeRole(recipe));
+    const saved = isSaved(recipe.id, recipe.title);
+    const shortLabel = {
+      bestPick: "Tomo's Pick",
+      familiarFavorite: 'Familiar',
+      fromYourKitchen: 'From Kitchen',
+      quickEasy: 'Quick',
+      explorePick: 'Explore'
+    }[card.key] || card.label;
     return `
       <article class="mv2-today-card mv2-today-card-${esc(card.key)}">
         <button class="mv2-today-main" type="button" data-recipe="${esc(recipe.id)}">
           <span class="mv2-today-image">${imageTag(recipeImage(recipe))}</span>
           <span class="mv2-today-copy">
-            <span class="mv2-today-label"><b>${esc(card.icon)}</b>${esc(card.label)}</span>
+            <span class="mv2-today-label"><b>${esc(card.icon)}</b>${esc(shortLabel)}</span>
             <strong>${esc(recipe.title)}</strong>
             <small>${esc(card.subtitle)}</small>
             <em>⏱ ${totalTime(recipe)} min • ${esc(role)}</em>
           </span>
         </button>
-        ${dishActionButtons(recipe.id, recipe.title, 'todays-picks', 'mv2-today-actions')}
+        <div class="mv2-today-actions">
+          <button class="mv2-today-cook" type="button" data-cook-recipe="${esc(recipe.id)}" data-dish-name="${esc(recipe.title)}" data-source="todays-picks">Cook This</button>
+          <button class="mv2-today-save ${saved ? 'active' : ''}" type="button" data-save="${esc(recipe.id)}" data-dish-name="${esc(recipe.title)}" data-source="todays-picks" aria-label="${saved ? 'Saved' : 'Save'}">${saved ? '♥' : '♡'}</button>
+          <button class="mv2-today-skip" type="button" data-dismiss-today="${esc(recipe.id)}" data-dish-name="${esc(recipe.title)}" aria-label="Skip">×</button>
+        </div>
       </article>
     `;
+  }
+
+  function microMealsAccordion() {
+    const expanded = state.microMealsExpanded;
+    return `
+      <section class="mv2-micro-meals ${expanded ? 'expanded' : ''}">
+        <button class="mv2-micro-toggle" type="button" data-toggle-micro-meals aria-expanded="${expanded ? 'true' : 'false'}">
+          <span><strong>⚡ Micro Meals</strong><small>Quick ideas to fuel your day</small></span>
+          <b>${expanded ? '▴' : '▾'}</b>
+        </button>
+        ${expanded ? `<div class="mv2-micro-list">${microMealSuggestions().map(microMealCard).join('') || '<p class="mv2-empty">No micro ideas right now.</p>'}</div>` : ''}
+      </section>
+    `;
+  }
+
+  function microMealSuggestions() {
+    const dismissed = new Set(state.dismissedToday);
+    return fourCardRecommendationPool('snack', 'quick', dismissed)
+      .filter((item) => totalTime(item.recipe) <= 25)
+      .filter((item) => !['side', 'condiment'].includes(recommendationRecipeRole(item.recipe)))
+      .slice(0, 3)
+      .map((item) => item.recipe);
+  }
+
+  function microMealCard(recipe) {
+    return `<button class="mv2-micro-card" type="button" data-recipe="${esc(recipe.id)}"><span>${imageTag(recipeImage(recipe))}</span><strong>${esc(recipe.title)}</strong><small>${totalTime(recipe)} min</small></button>`;
   }
 
   function heroRecommendationReason(context = state.activeTomoPick, recipe = context?.recipe) {
@@ -5464,6 +5501,13 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (discover) {
       state.discoverView = discover.dataset.discover;
       renderWithMotion('segment');
+      return;
+    }
+
+    const microMealsToggle = event.target.closest('[data-toggle-micro-meals]');
+    if (microMealsToggle) {
+      state.microMealsExpanded = !state.microMealsExpanded;
+      renderWithMotion('recommendation');
       return;
     }
 

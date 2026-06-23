@@ -319,7 +319,7 @@ html.mobile-v2-active body {
 
   .mv2-meal-tabs {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    margin-bottom: 12px;
+    margin: 8px 0 10px;
   }
 
   .mv2-segmented button,
@@ -1483,25 +1483,26 @@ html.mobile-v2-active body {
 
   .mv2-moods {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-    margin: 10px 0 0;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 4px;
+    overflow: visible;
+    margin: 0;
+    padding: 1px 0 3px;
   }
 
   .mv2-mood-dashboard {
-    margin: 12px 0 20px;
-    padding: 9px;
-    border: 1px solid rgba(201, 106, 74, 0.24);
-    border-radius: 20px;
-    background: rgba(255, 244, 232, 0.72);
-    box-shadow:
-      0 14px 30px rgba(164, 106, 59, 0.12),
-      0 0 0 5px rgba(201, 106, 74, 0.04);
+    display: grid;
+    gap: 11px;
+    margin: 12px 0 11px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
   }
 
   .mv2-mood-heading {
     display: grid;
-    gap: 3px;
+    gap: 4px;
     margin: 0;
   }
 
@@ -1512,14 +1513,14 @@ html.mobile-v2-active body {
 
   .mv2-mood-heading h2 {
     color: #4c2f24;
-    font-size: 1.04rem;
+    font-size: 1.1rem;
     font-weight: 950;
     line-height: 1.15;
   }
 
   .mv2-mood-heading p {
     color: rgba(95, 67, 55, 0.68);
-    font-size: 0.7rem;
+    font-size: 0.74rem;
     font-weight: 700;
     line-height: 1.3;
   }
@@ -1532,11 +1533,14 @@ html.mobile-v2-active body {
 
   .mv2-mood {
     display: grid;
-    place-items: center;
-    min-height: 66px;
-    padding: 7px 6px;
+    align-content: center;
+    justify-items: center;
+    gap: 2px;
+    min-width: 0;
+    min-height: 46px;
+    padding: 5px 1px;
     border: 1px solid rgba(112, 91, 74, 0.1);
-    border-radius: 17px;
+    border-radius: 999px;
     background: rgba(255, 250, 244, 0.76);
     color: #2c2018;
     box-shadow: 0 6px 14px rgba(164, 106, 59, 0.055);
@@ -1549,9 +1553,12 @@ html.mobile-v2-active body {
   }
 
   .mv2-mood.active {
-    border-color: rgba(201, 106, 74, 0.72);
+    border-color: rgba(201, 106, 74, 0.86);
     color: #8f3f2a;
-    box-shadow: inset 0 0 0 1px rgba(201, 106, 74, 0.54), 0 10px 20px rgba(164, 106, 59, 0.14);
+    box-shadow:
+      inset 0 0 0 1px rgba(201, 106, 74, 0.72),
+      0 0 0 4px rgba(201, 106, 74, 0.1),
+      0 12px 22px rgba(164, 106, 59, 0.18);
     transform: translateY(-1px);
   }
 
@@ -1586,20 +1593,24 @@ html.mobile-v2-active body {
   .mv2-mood span:first-child {
     display: grid;
     place-items: center;
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.52);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.58), 0 4px 10px rgba(107, 55, 32, 0.06);
-    font-size: 1.15rem;
+    background: rgba(255, 255, 255, 0.34);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.42), 0 3px 8px rgba(107, 55, 32, 0.04);
+    font-size: 0.88rem;
   }
 
   .mv2-mood span:last-child {
-    margin-top: 4px;
-    font-size: 0.82rem;
+    margin-top: 0;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: clamp(0.5rem, 1.55vw, 0.58rem);
     font-weight: 980;
     line-height: 1.08;
     text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .mv2-section-title {
@@ -4384,16 +4395,62 @@ html.mobile-v2-active body {
 }
 
 .mv2-todays-picks {
-  padding-top: 10px;
+  padding-top: 0;
 }
 
 .mv2-todays-picks > .mv2-section-title {
   margin-top: 0;
 }
 
-.mv2-four-picks {
+.mv2-recommendation-panel {
   display: grid;
   gap: 10px;
+  min-width: 0;
+  margin: 0 0 10px;
+  padding: 10px;
+  border: 1px solid rgba(201, 106, 74, 0.22);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 249, 242, 0.98), rgba(255, 239, 223, 0.82)),
+    #fff4ea;
+  box-shadow:
+    0 15px 30px rgba(164, 106, 59, 0.11),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.mv2-recommendation-panel .mv2-meal-tabs {
+  margin: 0;
+  padding: 4px;
+  border-radius: 17px;
+  border-color: rgba(201, 106, 74, 0.13);
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.44);
+}
+
+.mv2-recommendation-panel .mv2-meal-tabs button {
+  min-height: 36px;
+  border-radius: 13px;
+  color: rgba(44, 32, 24, 0.78);
+  font-size: 0.74rem;
+}
+
+.mv2-recommendation-panel .mv2-meal-tabs button.active {
+  background: #c96a4a;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(159, 79, 56, 0.18);
+}
+
+.mv2-recommendation-panel .mv2-section-title {
+  margin: 2px 1px 0;
+}
+
+.mv2-recommendation-panel .mv2-section-title h2 {
+  font-size: 1.15rem;
+}
+
+.mv2-four-picks {
+  display: grid;
+  gap: 8px;
   min-width: 0;
   overflow-x: hidden;
 }
@@ -4407,28 +4464,80 @@ html.mobile-v2-active body {
 
 .mv2-four-pick-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
   min-width: 0;
 }
 
 .mv2-today-card {
+  position: relative;
   display: grid;
   min-width: 0;
   overflow: hidden;
-  border: 1px solid rgba(201, 106, 74, 0.13);
-  border-radius: 20px;
-  background: linear-gradient(145deg, #fffaf3, #fff0e3);
-  box-shadow: 0 12px 26px rgba(164, 106, 59, 0.08);
+  border: 1px solid rgba(201, 106, 74, 0.17);
+  border-radius: 18px;
+  background: linear-gradient(145deg, #fffaf6, #fff4eb);
+  box-shadow: 0 12px 22px rgba(164, 106, 59, 0.09);
+}
+
+.mv2-today-card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  content: "";
+  background: rgba(201, 106, 74, 0.32);
+}
+
+.mv2-today-card-bestPick {
+  border-color: rgba(222, 158, 47, 0.28);
+  background: linear-gradient(145deg, rgba(255, 250, 246, 0.98), rgba(255, 242, 204, 0.64));
+}
+
+.mv2-today-card-bestPick::before {
+  background: rgba(222, 158, 47, 0.52);
+}
+
+.mv2-today-card-familiarFavorite {
+  border-color: rgba(201, 106, 74, 0.26);
+  background: linear-gradient(145deg, rgba(255, 250, 246, 0.98), rgba(255, 229, 217, 0.62));
+}
+
+.mv2-today-card-familiarFavorite::before {
+  background: rgba(201, 106, 74, 0.48);
+}
+
+.mv2-today-card-fromYourKitchen,
+.mv2-today-card-quickEasy {
+  border-color: rgba(92, 151, 95, 0.22);
+  background: linear-gradient(145deg, rgba(255, 250, 246, 0.98), rgba(225, 244, 222, 0.62));
+}
+
+.mv2-today-card-fromYourKitchen::before {
+  background: rgba(92, 151, 95, 0.45);
+}
+
+.mv2-today-card-quickEasy::before {
+  background: rgba(92, 151, 95, 0.45);
+}
+
+.mv2-today-card-explorePick::before {
+  background: rgba(117, 111, 188, 0.44);
+}
+
+.mv2-today-card-explorePick {
+  border-color: rgba(117, 111, 188, 0.24);
+  background: linear-gradient(145deg, rgba(255, 250, 246, 0.98), rgba(233, 231, 255, 0.62));
 }
 
 .mv2-today-main {
   display: grid;
-  grid-template-columns: 86px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 7px;
   width: 100%;
   min-width: 0;
-  padding: 9px;
+  padding: 11px 10px 0;
   border: 0;
   background: transparent;
   color: inherit;
@@ -4438,9 +4547,9 @@ html.mobile-v2-active body {
 .mv2-today-image {
   display: block;
   overflow: hidden;
-  width: 86px;
-  height: 86px;
-  border-radius: 16px;
+  width: 100%;
+  height: 78px;
+  border-radius: 13px;
   background: linear-gradient(135deg, #ffdfbc, #fff4de);
 }
 
@@ -4452,7 +4561,7 @@ html.mobile-v2-active body {
 
 .mv2-today-copy {
   display: grid;
-  align-content: center;
+  align-content: start;
   gap: 3px;
   min-width: 0;
 }
@@ -4463,9 +4572,64 @@ html.mobile-v2-active body {
   gap: 5px;
   min-width: 0;
   color: #a9462d;
-  font-size: 0.66rem;
+  font-size: 0.61rem;
   font-weight: 950;
   letter-spacing: 0.01em;
+}
+
+.mv2-today-card-bestPick .mv2-today-label,
+.mv2-today-card-bestPick .mv2-today-save,
+.mv2-today-card-bestPick .mv2-today-skip {
+  color: #8d5a10;
+}
+
+.mv2-today-card-bestPick .mv2-today-cook {
+  border-color: rgba(195, 138, 34, 0.38);
+  background: #c38a22;
+}
+
+.mv2-today-card-familiarFavorite .mv2-today-label,
+.mv2-today-card-familiarFavorite .mv2-today-save,
+.mv2-today-card-familiarFavorite .mv2-today-skip {
+  color: #a9462d;
+}
+
+.mv2-today-card-familiarFavorite .mv2-today-cook {
+  border-color: rgba(201, 106, 74, 0.38);
+  background: #c96a4a;
+}
+
+.mv2-today-card-fromYourKitchen .mv2-today-label,
+.mv2-today-card-fromYourKitchen .mv2-today-save,
+.mv2-today-card-fromYourKitchen .mv2-today-skip {
+  color: #4f8452;
+}
+
+.mv2-today-card-fromYourKitchen .mv2-today-cook {
+  border-color: rgba(92, 151, 95, 0.38);
+  background: #5c975f;
+}
+
+.mv2-today-card-quickEasy .mv2-today-label,
+.mv2-today-card-quickEasy .mv2-today-save,
+.mv2-today-card-quickEasy .mv2-today-skip {
+  color: #4f8452;
+}
+
+.mv2-today-card-quickEasy .mv2-today-cook {
+  border-color: rgba(92, 151, 95, 0.38);
+  background: #5c975f;
+}
+
+.mv2-today-card-explorePick .mv2-today-label,
+.mv2-today-card-explorePick .mv2-today-save,
+.mv2-today-card-explorePick .mv2-today-skip {
+  color: #5f5aa6;
+}
+
+.mv2-today-card-explorePick .mv2-today-cook {
+  border-color: rgba(117, 111, 188, 0.38);
+  background: #756fbc;
 }
 
 .mv2-today-copy strong,
@@ -4478,63 +4642,201 @@ html.mobile-v2-active body {
 
 .mv2-today-copy strong {
   color: #2c2018;
-  font-size: 0.96rem;
+  font-size: 0.86rem;
   font-weight: 950;
-  line-height: 1.08;
-  white-space: nowrap;
+  line-height: 1.06;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal;
 }
 
 .mv2-today-copy small {
   color: rgba(95, 67, 55, 0.68);
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 740;
-  line-height: 1.15;
+  line-height: 1.1;
   white-space: nowrap;
 }
 
 .mv2-today-copy em {
   color: #9f5a44;
-  font-size: 0.64rem;
+  font-size: 0.59rem;
   font-style: normal;
   font-weight: 850;
   white-space: nowrap;
 }
 
 .mv2-today-actions {
-  padding: 0 9px 9px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 34px 34px;
+  gap: 5px;
+  min-width: 0;
+  padding: 8px 9px 9px;
 }
 
-.mv2-today-actions .mv2-primary,
-.mv2-today-actions .mv2-card-icon {
-  min-height: 32px;
-  border-radius: 12px;
+.mv2-today-cook,
+.mv2-today-save,
+.mv2-today-skip {
+  min-width: 0;
+  min-height: 34px;
+  border: 1px solid rgba(201, 106, 74, 0.16);
+  border-radius: 11px;
+  background: rgba(255, 250, 244, 0.78);
+  font-size: 0.64rem;
+  font-weight: 950;
+}
+
+.mv2-today-cook {
+  padding: 0 6px;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mv2-today-save,
+.mv2-today-skip {
+  display: grid;
+  place-items: center;
+  color: #a9462d;
+}
+
+.mv2-today-save.active {
+  background: #ffe2dc;
+  color: #b8342c;
+}
+
+.mv2-micro-meals {
+  margin: 10px 0 4px;
+  border: 1px solid rgba(201, 106, 74, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 250, 244, 0.74);
+  box-shadow: 0 8px 18px rgba(164, 106, 59, 0.055);
+}
+
+.mv2-micro-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-height: 52px;
+  padding: 9px 12px;
+  border: 0;
+  background: transparent;
+  color: #2c2018;
+  text-align: left;
+}
+
+.mv2-micro-toggle span {
+  display: grid;
+  gap: 2px;
+}
+
+.mv2-micro-toggle strong {
+  font-size: 0.92rem;
+  font-weight: 950;
+}
+
+.mv2-micro-toggle small {
+  color: rgba(95, 67, 55, 0.66);
   font-size: 0.68rem;
+  font-weight: 760;
+}
+
+.mv2-micro-toggle b {
+  color: #a9462d;
+  font-size: 1rem;
+}
+
+.mv2-micro-list {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 0 9px 9px;
+  scrollbar-width: none;
+}
+
+.mv2-micro-list::-webkit-scrollbar {
+  display: none;
+}
+
+.mv2-micro-card {
+  display: grid;
+  flex: 0 0 106px;
+  gap: 4px;
+  min-width: 0;
+  padding: 6px;
+  border: 1px solid rgba(201, 106, 74, 0.12);
+  border-radius: 13px;
+  background: rgba(255, 247, 234, 0.82);
+  color: #2c2018;
+  text-align: left;
+}
+
+.mv2-micro-card span {
+  overflow: hidden;
+  height: 42px;
+  border-radius: 10px;
+}
+
+.mv2-micro-card .food-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mv2-micro-card strong,
+.mv2-micro-card small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mv2-micro-card strong {
+  font-size: 0.66rem;
+  font-weight: 930;
+}
+
+.mv2-micro-card small {
+  color: #9f5a44;
+  font-size: 0.56rem;
+  font-weight: 820;
 }
 
 @media (max-width: 370px) {
   .mv2-today-main {
-    grid-template-columns: 74px minmax(0, 1fr);
-    gap: 8px;
-    padding: 8px;
+    gap: 5px;
+    padding: 7px 7px 0;
   }
 
   .mv2-today-image {
-    width: 74px;
-    height: 74px;
-    border-radius: 14px;
+    height: 70px;
+    border-radius: 12px;
   }
 
   .mv2-today-copy strong {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .mv2-today-copy small,
+  .mv2-today-copy em {
+    font-size: 0.54rem;
   }
 
   .mv2-today-actions {
-    padding: 0 8px 8px;
+    grid-template-columns: minmax(0, 1fr) 32px 32px;
+    gap: 4px;
+    padding: 6px 7px 7px;
   }
 
-  .mv2-today-actions .mv2-card-icon {
-    min-width: 34px;
-    padding-inline: 7px;
+  .mv2-today-cook,
+  .mv2-today-save,
+  .mv2-today-skip {
+    min-height: 32px;
+    font-size: 0.58rem;
   }
 }
 
