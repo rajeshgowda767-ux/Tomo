@@ -63,7 +63,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     'Everyday Cooking': ['Daily Comforts', 'Tea Time Favourites', 'Home Staples'],
     'Healthy Living': ['Healthy Plates', 'Warm & Light Bowls'],
     'Family Favorites': ['Tiny Tummy Favorites', 'Lunch Box & Tiffin'],
-    'Global Bites': ['Global Comforts'],
+    'Global Bites': ['Global Breakfasts', 'Global Bowls', 'Global Mains', 'Global Snacks', 'Global Soups', 'Global Street Food'],
     'Kitchen Essentials': ['Sides, Salads & Add-ons', 'Chutneys, Podis & Condiments'],
     'Seasonal Specials': ['Summer Cooling', 'Rainy Day Cravings'],
     'Celebrations & Traditions': ['Festival Sweets', 'Regional Sweets', 'Everyday Desserts', 'Prasadam & Temple Foods'],
@@ -85,7 +85,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     'Warm & Light Bowls': 'Soups, rasam and softer warm bowls.',
     'Tiny Tummy Favorites': 'Gentle baby and toddler-friendly foods.',
     'Lunch Box & Tiffin': 'Packable family and kid-friendly ideas.',
-    'Global Comforts': 'Global dishes with Tomo’s cozy lens.',
+    'Global Breakfasts': 'Global morning plates and egg-forward starts.',
+    'Global Bowls': 'Rice, noodle and protein bowls with global comfort.',
+    'Global Mains': 'Fried rice, Asian comforts and continental-style mains.',
+    'Global Snacks': 'Indo-Chinese starters, quick bites and shareable plates.',
+    'Global Soups': 'Clear soups, noodle soups and cozy global bowls.',
+    'Global Street Food': 'Handheld, loaded and street-style global bites.',
     'Sides, Salads & Add-ons': 'Sides, salads, palyas and meal add-ons.',
     'Chutneys, Podis & Condiments': 'Small but mighty flavour boosters.',
     'Summer Cooling': 'Cooling drinks and lighter seasonal comforts.',
@@ -112,7 +117,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     'Healthy Living::Warm & Light Bowls': ['Soups', 'Rasam & Saaru', 'Light Stews', 'Sick-Day Comfort'],
     'Family Favorites::Tiny Tummy Favorites': ['First Foods', 'Purees & Mashes', 'Growing Bites', 'Little Plates'],
     'Family Favorites::Lunch Box & Tiffin': ['Quick Morning Wins', 'Tiffin Box Favorites', 'Protein Packed', 'After School Snacks'],
-    'Global Bites::Global Comforts': ['Global Breakfasts', 'Bowls', 'Noodles & Pasta', 'Comfort Mains', 'Global Snacks'],
+    'Global Bites::Global Breakfasts': ['Egg Breakfasts', 'Toast & Bakery', 'Sweet Breakfasts', 'Healthy Breakfasts'],
+    'Global Bites::Global Bowls': ['Rice Bowls', 'Noodle Bowls', 'Protein Bowls', 'Vegetarian Bowls'],
+    'Global Bites::Global Mains': ['Fried Rice & Indo-Chinese', 'Asian Comforts', 'Mediterranean Plates', 'Continental Classics'],
+    'Global Bites::Global Snacks': ['Indo-Chinese Starters', 'Wraps & Rolls', 'Dips & Plates', 'Quick Bites'],
+    'Global Bites::Global Soups': ['Clear Soups', 'Indo-Chinese Soups', 'Veg Soups', 'Noodle Soups'],
+    'Global Bites::Global Street Food': ['Street Wraps', 'Tacos & Quesadillas', 'Loaded Snacks', 'Handheld Bites'],
     'Kitchen Essentials::Sides, Salads & Add-ons': ['Palyas, Poriyals & Thorans', 'Raitas & Cooling Sides', 'Salads & Fresh Sides', 'Sundals & Add-ons'],
     'Kitchen Essentials::Chutneys, Podis & Condiments': ['Chutneys', 'Podis', 'Pickles', 'Raitas', 'Condiments'],
     'Seasonal Specials::Summer Cooling': ['Coolers', 'Light Meals', 'Cooling Sides', 'Summer Sweets'],
@@ -3031,12 +3041,36 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         if (isProtein) return 'Protein Packed';
         if (isSnack) return 'After School Snacks';
         return 'Tiffin Box Favorites';
-      case 'Global Bites::Global Comforts':
-        if (isBreakfast) return 'Global Breakfasts';
-        if (signalHas(signal, ['bowl', 'rice'])) return 'Bowls';
-        if (signalHas(signal, ['noodle', 'pasta', 'spaghetti', 'mac'])) return 'Noodles & Pasta';
-        if (isSnack) return 'Global Snacks';
-        return 'Comfort Mains';
+      case 'Global Bites::Global Breakfasts':
+        if (signalHas(signal, ['toast', 'bakery', 'bread'])) return 'Toast & Bakery';
+        if (isSweet) return 'Sweet Breakfasts';
+        if (signalHas(signal, ['healthy', 'oats', 'porridge', 'fruit'])) return 'Healthy Breakfasts';
+        return 'Egg Breakfasts';
+      case 'Global Bites::Global Bowls':
+        if (signalHas(signal, ['noodle', 'ramen'])) return 'Noodle Bowls';
+        if (isProtein) return 'Protein Bowls';
+        if (signal.diet.includes('vegetarian') || signalHas(signal, ['veg', 'paneer', 'tofu'])) return 'Vegetarian Bowls';
+        return 'Rice Bowls';
+      case 'Global Bites::Global Mains':
+        if (signalHas(signal, ['fried rice', 'schezwan', 'indo chinese', 'chinese'])) return 'Fried Rice & Indo-Chinese';
+        if (signalHas(signal, ['asian', 'stir fry', 'garlic chicken', 'mushroom'])) return 'Asian Comforts';
+        if (signalHas(signal, ['mediterranean', 'hummus', 'falafel'])) return 'Mediterranean Plates';
+        return 'Continental Classics';
+      case 'Global Bites::Global Snacks':
+        if (signalHas(signal, ['chilli', 'manchurian', 'dragon'])) return 'Indo-Chinese Starters';
+        if (signalHas(signal, ['wrap', 'roll'])) return 'Wraps & Rolls';
+        if (signalHas(signal, ['dip', 'hummus', 'plate'])) return 'Dips & Plates';
+        return 'Quick Bites';
+      case 'Global Bites::Global Soups':
+        if (signalHas(signal, ['noodle'])) return 'Noodle Soups';
+        if (signalHas(signal, ['hot and sour', 'manchow'])) return 'Indo-Chinese Soups';
+        if (signalHas(signal, ['corn', 'veg', 'vegetable'])) return 'Veg Soups';
+        return 'Clear Soups';
+      case 'Global Bites::Global Street Food':
+        if (signalHas(signal, ['wrap', 'roll'])) return 'Street Wraps';
+        if (signalHas(signal, ['taco', 'quesadilla'])) return 'Tacos & Quesadillas';
+        if (signalHas(signal, ['loaded', 'nachos', 'fries'])) return 'Loaded Snacks';
+        return 'Handheld Bites';
       case 'Kitchen Essentials::Sides, Salads & Add-ons':
         if (signalHas(signal, ['raita', 'curd', 'yogurt'])) return 'Raitas & Cooling Sides';
         if (signalHas(signal, ['salad', 'kosambari', 'fresh'])) return 'Salads & Fresh Sides';

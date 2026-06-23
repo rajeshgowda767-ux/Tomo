@@ -11855,7 +11855,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Bowls"
     }
   },
   {
@@ -12089,7 +12089,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Mains"
     }
   },
   {
@@ -12514,7 +12514,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Mains"
     }
   },
   {
@@ -14488,7 +14488,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "image_url": "/assets/images/dishes/chilli-mushroom.png",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Snacks"
     }
   },
   {
@@ -14683,7 +14683,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Snacks"
     }
   },
   {
@@ -16599,7 +16599,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "tomoLine": "Blend only part of the corn so the soup keeps texture.",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Soups"
     }
   },
   {
@@ -18768,7 +18768,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Snacks"
     }
   },
   {
@@ -19980,7 +19980,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Mains"
     }
   },
   {
@@ -21763,7 +21763,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Mains"
     }
   },
   {
@@ -21984,7 +21984,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "beta2FillerAudit": "synthetic-combo-keep-search-pantry-only",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Mains"
     }
   },
   {
@@ -41857,7 +41857,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "image_url": "/assets/images/dishes/pulao.png",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Mains"
     }
   },
   {
@@ -49377,7 +49377,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Mains"
     }
   },
   {
@@ -50772,7 +50772,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Breakfasts"
     }
   },
   {
@@ -55098,7 +55098,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Mains"
     }
   },
   {
@@ -55392,7 +55392,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Snacks"
     }
   },
   {
@@ -67851,7 +67851,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "tomoLine": "Keep the vegetables finely chopped so every spoon feels balanced.",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Soups"
     }
   },
   {
@@ -68294,7 +68294,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "tomoLine": "Keep noodles slightly firm so they do not turn mushy.",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Soups"
     }
   },
   {
@@ -68736,7 +68736,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "tomoLine": "Add vinegar at the end so the soup stays bright.",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Soups"
     }
   },
   {
@@ -69178,7 +69178,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "tomoLine": "Add lemon after switching off the heat to keep it fresh.",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Soups"
     }
   },
   {
@@ -72538,7 +72538,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "tomoLine": "Keep the soup lightly thick, not gluey.",
     "collectionHome": {
       "hub": "Global Bites",
-      "collection": "Global Comforts"
+      "collection": "Global Soups"
     }
   },
   {

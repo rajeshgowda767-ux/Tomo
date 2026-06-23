@@ -32,7 +32,12 @@ const COLLECTIONS_BY_HUB = Object.freeze({
     'Lunch Box & Tiffin',
   ]),
   'Global Bites': Object.freeze([
-    'Global Comforts',
+    'Global Breakfasts',
+    'Global Bowls',
+    'Global Mains',
+    'Global Snacks',
+    'Global Soups',
+    'Global Street Food',
   ]),
   'Kitchen Essentials': Object.freeze([
     'Sides, Salads & Add-ons',
@@ -65,6 +70,29 @@ const MANUAL_OVERRIDES = Object.freeze({
   'Congress Kadlekai': ['Everyday Cooking', 'Tea Time Favourites'],
   'Dharwad Peda': ['Celebrations & Traditions', 'Regional Sweets'],
   'Gulab Jamun': ['Celebrations & Traditions', 'Everyday Desserts'],
+});
+
+const GLOBAL_COLLECTION_OVERRIDES = Object.freeze({
+  'Spanish Omelette': 'Global Breakfasts',
+  'Chicken Egg Rice Bowl': 'Global Bowls',
+  'Chicken Fried Rice': 'Global Mains',
+  'Chicken Mushroom Stir Fry': 'Global Mains',
+  'Egg Fried Rice': 'Global Mains',
+  'Garlic Chicken': 'Global Mains',
+  'Garlic Egg Rice': 'Global Mains',
+  'Paneer Fried Rice': 'Global Mains',
+  'Schezwan Fried Rice': 'Global Mains',
+  'Veg Fried Rice': 'Global Mains',
+  'Chilli Mushroom': 'Global Snacks',
+  'Chilli Paneer': 'Global Snacks',
+  'Dragon Chicken': 'Global Snacks',
+  'Veg Manchurian': 'Global Snacks',
+  'Corn Soup': 'Global Soups',
+  'Hot and Sour Soup': 'Global Soups',
+  'Lemon Coriander Soup': 'Global Soups',
+  'Manchow Soup': 'Global Soups',
+  'Noodle Soup': 'Global Soups',
+  'Sweet Corn Soup': 'Global Soups',
 });
 
 function normalize(value) {
@@ -272,7 +300,21 @@ function celebrationRule(recipe) {
 
 function globalRule(recipe) {
   if (!isGlobalRecipe(recipe)) return null;
-  return { hub: 'Global Bites', collection: 'Global Comforts', rule: 'globalRule' };
+  return { hub: 'Global Bites', collection: globalCollection(recipe), rule: 'globalRule' };
+}
+
+function globalCollection(recipe) {
+  const title = recipeTitle(recipe);
+  if (GLOBAL_COLLECTION_OVERRIDES[title]) return GLOBAL_COLLECTION_OVERRIDES[title];
+
+  const text = flattenRecipeText(recipe);
+  const role = normalize(recipe.recipeRole);
+  if (role === 'soup' || includesAny(text, ['soup', 'stew', 'broth', 'ramen'])) return 'Global Soups';
+  if (includesAny(text, ['breakfast', 'omelette', 'omelet', 'toast', 'pancake', 'waffle', 'oats'])) return 'Global Breakfasts';
+  if (includesAny(text, ['bowl', 'rice bowl', 'poke', 'bibimbap'])) return 'Global Bowls';
+  if (role === 'snack' && includesAny(text, ['street', 'taco', 'quesadilla', 'wrap', 'roll', 'burger', 'pizza', 'fries', 'nachos', 'falafel'])) return 'Global Street Food';
+  if (role === 'snack') return 'Global Snacks';
+  return 'Global Mains';
 }
 
 function kitchenEssentialsRule(recipe) {
