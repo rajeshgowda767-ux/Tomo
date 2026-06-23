@@ -2,9 +2,99 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   if (!root) return;
   document.documentElement.classList.add('mobile-v2-active');
 
+  const USE_GENERATED_COLLECTIONS = true;
   const recipes = (window.COOKBUDDY_LOCAL_RECIPES || []).filter((recipe) => {
     return String(recipe.recipeType || recipe.recipe_type || 'core').toLowerCase() === 'core';
   });
+  const generatedHubMeta = {
+    'Regional Journeys': {
+      icon: '🧭',
+      copy: "Explore food across India's regions.",
+      imagePath: '/assets/images/collections/festival-food.webp',
+    },
+    'Everyday Cooking': {
+      icon: '🍳',
+      copy: 'Daily comforts, tea-time favourites and home staples.',
+      imagePath: '/assets/images/dishes/home-bowl.png',
+    },
+    'Healthy Living': {
+      icon: '🥗',
+      copy: 'Protein-rich, balanced and lighter meals.',
+      imagePath: '/assets/images/collections/power-plates-collection-card.png?v=collection-card-images-68',
+    },
+    'Family Favorites': {
+      icon: '👨‍👩‍👧',
+      copy: 'Baby bowls, lunch boxes and family-friendly picks.',
+      imagePath: '/assets/images/collections/lunch-box-heroes.webp',
+    },
+    'Global Bites': {
+      icon: '🌍',
+      copy: 'Comforting dishes from around the world.',
+      imagePath: '/assets/images/dishes/noodles.png',
+    },
+    'Kitchen Essentials': {
+      icon: '🥣',
+      copy: 'Chutneys, sides, condiments and add-ons.',
+      imagePath: '/assets/images/collections/sides-addons-collection-card.png?v=collection-card-images-68',
+    },
+    'Seasonal Specials': {
+      icon: '☀️',
+      copy: 'Cooling, rainy-day and seasonal cravings.',
+      imagePath: '/assets/images/collections/healthy-drinks.webp',
+    },
+    'Celebrations & Traditions': {
+      icon: '🪔',
+      copy: 'Festival sweets, regional sweets and prasadam.',
+      imagePath: '/assets/images/collections/festival-food.webp',
+    },
+  };
+  const generatedHubOrder = [
+    'Regional Journeys',
+    'Everyday Cooking',
+    'Healthy Living',
+    'Family Favorites',
+    'Global Bites',
+    'Kitchen Essentials',
+    'Seasonal Specials',
+    'Celebrations & Traditions',
+  ];
+  const generatedCollectionOrder = {
+    'Regional Journeys': ['Karnataka', 'Andhra & Telangana', 'Tamil Nadu', 'Kerala', 'Bengal', 'Maharashtra', 'Northeast', 'North & West India', 'Jammu & Kashmir'],
+    'Everyday Cooking': ['Daily Comforts', 'Tea Time Favourites', 'Home Staples'],
+    'Healthy Living': ['Healthy Plates', 'Warm & Light Bowls'],
+    'Family Favorites': ['Tiny Tummy Favorites', 'Lunch Box & Tiffin'],
+    'Global Bites': ['Global Comforts'],
+    'Kitchen Essentials': ['Sides, Salads & Add-ons', 'Chutneys, Podis & Condiments'],
+    'Seasonal Specials': ['Summer Cooling', 'Rainy Day Cravings'],
+    'Celebrations & Traditions': ['Festival Sweets', 'Regional Sweets', 'Everyday Desserts', 'Prasadam & Temple Foods'],
+  };
+  const generatedCollectionDescriptions = {
+    Karnataka: 'Mains, saaru, snacks and sweets from Karnataka.',
+    'Andhra & Telangana': 'Spicy Telugu-region comfort and festive dishes.',
+    'Tamil Nadu': 'Breakfast staples, rasam, snacks and Tamil classics.',
+    Kerala: 'Coconut-rich breakfasts, curries and gentle meals.',
+    Bengal: 'Fish curries, sweets and Kolkata favourites.',
+    Maharashtra: 'Street snacks, coastal dishes and daily comforts.',
+    Northeast: 'Distinctive bowls, stews and regional anchors.',
+    'North & West India': 'Home classics from northern and western kitchens.',
+    'Jammu & Kashmir': 'Kashmiri and Himalayan comfort dishes.',
+    'Daily Comforts': 'Everyday mains and familiar home plates.',
+    'Tea Time Favourites': 'Snacks, drinks and local legends for small breaks.',
+    'Home Staples': 'Simple everyday dishes for the regular kitchen.',
+    'Healthy Plates': 'Balanced, protein-forward and lighter picks.',
+    'Warm & Light Bowls': 'Soups, rasam and softer warm bowls.',
+    'Tiny Tummy Favorites': 'Gentle baby and toddler-friendly foods.',
+    'Lunch Box & Tiffin': 'Packable family and kid-friendly ideas.',
+    'Global Comforts': 'Global dishes with Tomo’s cozy lens.',
+    'Sides, Salads & Add-ons': 'Sides, salads, palyas and meal add-ons.',
+    'Chutneys, Podis & Condiments': 'Small but mighty flavour boosters.',
+    'Summer Cooling': 'Cooling drinks and lighter seasonal comforts.',
+    'Rainy Day Cravings': 'Warm, cozy dishes for grey skies.',
+    'Festival Sweets': 'Sweets and treats for celebration days.',
+    'Regional Sweets': 'State-loved sweets and nostalgic classics.',
+    'Everyday Desserts': 'Small sweet endings for ordinary days.',
+    'Prasadam & Temple Foods': 'Temple-style and devotional foods.',
+  };
   const baseCollections = window.COOKBUDDY_LOCAL_COLLECTIONS?.collections || [];
   const mobileCollectionsBase = baseCollections.some((collection) => collection.key === 'gym-foods')
     ? baseCollections
@@ -15,10 +105,15 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     buildGlobalBitesCollection()
   ];
   const collectionOrder = ['baby', 'lunchbox', 'drinks', 'soups', 'salads', 'sides-addons', 'desserts', 'festival', 'gym-foods', 'global-bites'];
-  const collections = collectionOrder
+  const manualCollections = collectionOrder
     .map((key) => mobileCollections.find((collection) => collection.key === key))
     .filter(Boolean)
     .map((collection) => collection.key === 'festival' ? { ...collection, title: 'Celebrations' } : collection);
+  const generatedCollectionSystem = buildGeneratedCollectionSystem();
+  const collections = USE_GENERATED_COLLECTIONS && generatedCollectionSystem.hubs.length ? generatedCollectionSystem.hubs : manualCollections;
+  const collectionRoutes = USE_GENERATED_COLLECTIONS && generatedCollectionSystem.hubs.length
+    ? [...generatedCollectionSystem.hubs, ...generatedCollectionSystem.collections]
+    : manualCollections;
   const pantryCatalog = window.COOKBUDDY_PANTRY_CATALOG || [];
   const ingredientAvailability = window.TomoIngredientAvailability?.ingredientAvailability;
   const availabilityIngredientMatches = window.TomoIngredientAvailability?.ingredientMatches;
@@ -29,6 +124,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     mood: '',
     meal: 'breakfast',
     collectionKey: collections[0]?.key || '',
+    collectionHubKey: '',
     subcategory: '',
     activeRecipeId: '',
     expandedPairingsRecipeId: '',
@@ -2537,6 +2633,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return collectionImages[collection?.key] || collection?.imagePath || '/assets/images/dishes/home-bowl.png';
   }
 
+  function collectionByKey(key) {
+    return collectionRoutes.find((item) => item.key === key) || collections.find((item) => item.key === key);
+  }
+
   function collectionDishImageOverride(title) {
     return {
       'pepper rasam': '/assets/images/collections/soups.webp',
@@ -2680,6 +2780,117 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     console.groupEnd();
 
     return { reports, excessiveDuplicates, summary };
+  }
+
+  function generatedKey(...parts) {
+    return parts
+      .filter(Boolean)
+      .join('-')
+      .toLowerCase()
+      .replace(/&/g, 'and')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '');
+  }
+
+  function generatedRecipeGroup(recipe) {
+    const role = String(recipe?.recipeRole || recipe?.recipe_role || '').toLowerCase().trim();
+    if (role === 'main') return 'Mains';
+    if (role === 'snack') return 'Snacks';
+    if (role === 'soup') return 'Soups';
+    if (role === 'drink') return 'Drinks';
+    if (role === 'dessert') return 'Desserts';
+    if (role === 'condiment') return 'Condiments';
+    if (role === 'side') return 'Sides';
+    return 'Dishes';
+  }
+
+  function generatedRecipeItem(recipe, index = 0) {
+    const group = generatedRecipeGroup(recipe);
+    return {
+      id: recipe.id,
+      recipeId: recipe.id,
+      title: recipe.title || recipe.name || 'Untitled recipe',
+      description: recipe.description || 'A Tomo recipe from this collection.',
+      subcategory: group,
+      subCategory: group,
+      time: totalTime(recipe),
+      timeMinutes: totalTime(recipe),
+      difficulty: recipe.difficulty || 'easy',
+      dietType: recipe.dietType,
+      imagePath: recipeImage(recipe),
+      image_url: recipeImage(recipe),
+      recipe,
+      featured_priority: Math.max(0, 1000 - index),
+      discovery_score: Math.max(0, 1000 - index),
+      recipe_type: 'core',
+      recipeType: 'core',
+    };
+  }
+
+  function generatedGroupOrder(items) {
+    const preferred = ['Mains', 'Snacks', 'Soups', 'Drinks', 'Desserts', 'Sides', 'Condiments', 'Dishes'];
+    const present = new Set(items.map((item) => item.subcategory || item.subCategory || 'Dishes'));
+    return preferred.filter((name) => present.has(name));
+  }
+
+  function buildGeneratedCollectionSystem() {
+    const hubMap = new Map();
+    recipes.forEach((recipe, index) => {
+      const home = recipe.collectionHome;
+      if (!home?.hub || !home?.collection) return;
+      if (!hubMap.has(home.hub)) hubMap.set(home.hub, { hub: home.hub, recipes: [], collections: new Map() });
+      const hub = hubMap.get(home.hub);
+      hub.recipes.push(recipe);
+      if (!hub.collections.has(home.collection)) hub.collections.set(home.collection, []);
+      hub.collections.get(home.collection).push({ recipe, index });
+    });
+
+    const generatedCollections = [];
+    const hubs = generatedHubOrder
+      .filter((hubName) => hubMap.has(hubName))
+      .map((hubName) => {
+        const hub = hubMap.get(hubName);
+        const orderedCollectionNames = [
+          ...(generatedCollectionOrder[hubName] || []),
+          ...[...hub.collections.keys()].filter((name) => !(generatedCollectionOrder[hubName] || []).includes(name)).sort(),
+        ].filter((name) => hub.collections.has(name));
+        const childCollections = orderedCollectionNames.map((collectionName) => {
+          const pairs = hub.collections.get(collectionName) || [];
+          const items = pairs.map(({ recipe, index }) => generatedRecipeItem(recipe, index));
+          const firstImage = items.find((item) => item.imagePath)?.imagePath;
+          const collection = {
+            key: `generated-collection-${generatedKey(hubName, collectionName)}`,
+            generatedType: 'collection',
+            hubName,
+            hubKey: `generated-hub-${generatedKey(hubName)}`,
+            title: collectionName,
+            copy: generatedCollectionDescriptions[collectionName] || `${items.length} Tomo recipes.`,
+            subtitle: generatedCollectionDescriptions[collectionName] || `${items.length} Tomo recipes.`,
+            icon: generatedHubMeta[hubName]?.icon || '🍲',
+            imagePath: firstImage || generatedHubMeta[hubName]?.imagePath || '/assets/images/dishes/home-bowl.png',
+            count: items.length,
+            subcategory_order: generatedGroupOrder(items),
+            items,
+          };
+          generatedCollections.push(collection);
+          return collection;
+        });
+
+        return {
+          key: `generated-hub-${generatedKey(hubName)}`,
+          generatedType: 'hub',
+          title: hubName,
+          copy: generatedHubMeta[hubName]?.copy || `${hub.recipes.length} Tomo recipes.`,
+          subtitle: generatedHubMeta[hubName]?.copy || `${hub.recipes.length} Tomo recipes.`,
+          icon: generatedHubMeta[hubName]?.icon || '🍲',
+          imagePath: generatedHubMeta[hubName]?.imagePath || childCollections[0]?.imagePath || '/assets/images/dishes/home-bowl.png',
+          count: hub.recipes.length,
+          generatedCollections: childCollections,
+          items: childCollections,
+        };
+      });
+
+    return { hubs, collections: generatedCollections };
   }
 
   function buildGymFoodsCollection() {
@@ -2946,6 +3157,18 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function collectionDetail(collection) {
+    if (collection?.generatedType === 'collection') {
+      const groups = new Map((collection.subcategory_order || []).map((name) => [name, []]));
+      (collection.items || []).forEach((item) => {
+        const name = item.subcategory || item.subCategory || generatedRecipeGroup(item.recipe || item);
+        if (!groups.has(name)) groups.set(name, []);
+        groups.get(name).push(item);
+      });
+      return [...groups.entries()]
+        .filter(([, list]) => list.length)
+        .map(([name, list]) => ({ name, recipes: list, collectionKey: collection.key || '' }));
+    }
+
     const celebrationOrder = ['Festive Sweets', 'Regional Feasts', 'Traditional Favorites', 'Seasonal Celebrations'];
     const isCelebration = collection?.key === 'festival';
     const showEmptyGroups = collection?.key === 'sides-addons';
@@ -3051,6 +3274,9 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function discoverView() {
+    if (state.discoverView === 'collections') {
+      return `<section class="mv2-discover-view active">${collectionsView()}</section>`;
+    }
     state.discoverView = 'moods';
     return `<section class="mv2-discover-view active">${moodsView()}</section>`;
   }
@@ -3259,7 +3485,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const dishResults = recipes
       .filter((recipe) => [recipe.title, recipe.description, ...(recipe.tags || [])].some((value) => norm(value).includes(query)))
       .slice(0, 4);
-    const collectionResults = collections
+    const collectionResults = collectionRoutes
       .filter((collection) => [collection.title, collection.copy, collection.subtitle, collection.key].some((value) => norm(value).includes(query)))
       .slice(0, 3);
     const ingredientResults = pantryCatalog
@@ -3285,9 +3511,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function collectionsView() {
-    return `<div class="mv2-section-title"><div><p>Tomo Collections</p><h2>Curated for every kitchen</h2></div></div><div class="mv2-collections">${collections.map((collection) => {
+    return `<div class="mv2-section-title"><div><p>Collections</p><h2>${USE_GENERATED_COLLECTIONS ? 'Browse by hub' : 'Curated for every kitchen'}</h2></div></div><div class="mv2-collections">${collections.map((collection) => {
       const image = collectionImage(collection);
-      return `<button class="mv2-collection ${collection.status === 'coming-soon' ? 'is-coming-soon' : ''}" type="button" data-collection="${esc(collection.key)}"><span class="mv2-collection-image" style="--collection-image: url('${esc(image)}'); background-image: url('${esc(image)}')">${collection.status === 'coming-soon' ? '<em>Coming Soon</em>' : ''}</span><span class="mv2-collection-copy"><strong>${esc(collection.title)}</strong><span>${esc(collection.copy || collection.subtitle || 'Tomo collection')}</span><b>${collection.status === 'coming-soon' ? 'Coming Soon' : 'Explore →'}</b></span></button>`;
+      const count = Number(collection.count || collection.items?.length || 0);
+      return `<button class="mv2-collection ${collection.status === 'coming-soon' ? 'is-coming-soon' : ''}" type="button" data-collection="${esc(collection.key)}"><span class="mv2-collection-image" style="--collection-image: url('${esc(image)}'); background-image: url('${esc(image)}')">${collection.status === 'coming-soon' ? '<em>Coming Soon</em>' : ''}</span><span class="mv2-collection-copy"><strong>${esc(collection.title)}</strong><span>${esc(collection.copy || collection.subtitle || 'Tomo collection')}</span><b>${collection.status === 'coming-soon' ? 'Coming Soon' : `${count} recipes →`}</b></span></button>`;
     }).join('')}</div>`;
   }
 
@@ -3839,8 +4066,9 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function collectionDetailView() {
-    const collection = collections.find((item) => item.key === state.collectionKey) || collections[0];
+    const collection = collectionByKey(state.collectionKey) || collections[0];
     if (!collection) return '<p class="mv2-empty">Collections are loading.</p>';
+    if (collection.generatedType === 'hub') return generatedHubDetailView(collection);
     const groups = collectionDetail(collection);
     const selected = state.subcategory || groups[0]?.name || '';
     state.subcategory = selected;
@@ -3849,7 +4077,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       <div class="mv2-collection-detail">
         <div class="mv2-collection-nav">
           <div class="mv2-collection-context">
-            <button class="mv2-collection-back" type="button" data-back="collections" aria-label="Back to Collections">←</button>
+            <button class="mv2-collection-back" type="button" data-back="${collection.generatedType === 'collection' ? 'collection-hub' : 'collections'}" aria-label="Back to Collections">←</button>
             <strong>${esc(collection.title)}</strong>
           </div>
           <div class="mv2-subcategories mv2-subcategories-grid">
@@ -3868,12 +4096,38 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     `;
   }
 
+  function generatedHubDetailView(hub) {
+    const childCollections = hub.generatedCollections || [];
+    return `
+      <div class="mv2-collection-detail">
+        <div class="mv2-collection-nav">
+          <div class="mv2-collection-context">
+            <button class="mv2-collection-back" type="button" data-back="collections" aria-label="Back to Collections">←</button>
+            <strong>${esc(hub.title)}</strong>
+          </div>
+        </div>
+        <header class="mv2-collection-header" style="--collection-image: url('${esc(collectionImage(hub))}')">
+          <p>${esc(hub.icon || '🍲')} Collection Hub</p>
+          <h2>${esc(hub.title)} <small>(${Number(hub.count || 0)})</small></h2>
+          <span>${esc(hub.copy || hub.subtitle || '')}</span>
+        </header>
+        <div class="mv2-collections mv2-generated-collection-list">
+          ${childCollections.map((collection) => {
+            const image = collectionImage(collection);
+            return `<button class="mv2-collection" type="button" data-collection="${esc(collection.key)}"><span class="mv2-collection-image" style="--collection-image: url('${esc(image)}'); background-image: url('${esc(image)}')"></span><span class="mv2-collection-copy"><strong>${esc(collection.title)}</strong><span>${esc(collection.copy || collection.subtitle || '')}</span><b>${Number(collection.count || collection.items?.length || 0)} recipes →</b></span></button>`;
+          }).join('') || '<p class="mv2-empty">No generated collections here yet.</p>'}
+        </div>
+      </div>
+    `;
+  }
+
   function collectionResults(group) {
     const recipes = collectionVisibleRecipes(group);
     return `<div class="mv2-collection-dish-grid">${recipes.map(collectionCard).join('') || '<p class="mv2-empty">No dishes here yet.</p>'}</div>`;
   }
 
   function collectionVisibleRecipes(group) {
+    if (collectionByKey(group?.collectionKey)?.generatedType === 'collection') return group?.recipes || [];
     const curatedFullCollections = new Set(['sides-addons', 'lunchbox', 'gym-foods', 'drinks', 'soups', 'salads']);
     return curatedFullCollections.has(group?.collectionKey) ? (group?.recipes || []) : browseDiverseRecipes(group?.recipes || []);
   }
@@ -5045,7 +5299,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function collectionRecipeById(id) {
-    const collectionItem = collections.flatMap((collection) => collection.items || []).find((item) => collectionDishId(item) === id);
+    const collectionItem = collectionRoutes.flatMap((collection) => collection.items || []).find((item) => collectionDishId(item) === id);
     if (!collectionItem) return null;
     const recipe = findRecipe(collectionItem.title);
     const image = collectionDishImageOverride(collectionItem.title) || (recipe ? recipeImage(recipe) : '') || collectionItem.imagePath || collectionItem.image_url || collectionDishImage(collectionItem);
@@ -5438,7 +5692,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     const searchCollection = event.target.closest('[data-search-collection]');
     if (searchCollection) {
-      const selectedCollection = collections.find((item) => item.key === searchCollection.dataset.searchCollection);
+      const selectedCollection = collectionByKey(searchCollection.dataset.searchCollection);
       if (selectedCollection?.status === 'coming-soon') {
         state.searchOpen = false;
         showToast('Global Bites is coming soon.');
@@ -5447,6 +5701,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       }
       state.discoverScrollY = window.scrollY;
       state.collectionKey = searchCollection.dataset.searchCollection;
+      state.collectionHubKey = selectedCollection?.generatedType === 'collection' ? selectedCollection.hubKey || '' : selectedCollection?.key || '';
       state.subcategory = '';
       state.searchOpen = false;
       state.screen = 'collection';
@@ -5557,7 +5812,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     const collection = event.target.closest('[data-collection]');
     if (collection) {
-      const selectedCollection = collections.find((item) => item.key === collection.dataset.collection);
+      const selectedCollection = collectionByKey(collection.dataset.collection);
       if (selectedCollection?.status === 'coming-soon') {
         showToast('Global Bites is coming soon.');
         render();
@@ -5565,6 +5820,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       }
       state.discoverScrollY = window.scrollY;
       state.collectionKey = collection.dataset.collection;
+      state.collectionHubKey = selectedCollection?.generatedType === 'collection' ? selectedCollection.hubKey || '' : selectedCollection?.key || '';
       state.subcategory = '';
       state.screen = 'collection';
       trackAnalyticsEvent('collection_opened', 'discover', { collectionKey: state.collectionKey });
@@ -5576,7 +5832,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const subcategory = event.target.closest('[data-subcategory]');
     if (subcategory) {
       state.subcategory = subcategory.dataset.subcategory;
-      const collection = collections.find((item) => item.key === state.collectionKey);
+      const collection = collectionByKey(state.collectionKey);
       const active = collectionDetail(collection).find((group) => group.name === state.subcategory);
       root.querySelectorAll('[data-subcategory]').forEach((button) => {
         button.classList.toggle('active', button.dataset.subcategory === state.subcategory);
@@ -5925,6 +6181,15 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         requestAnimationFrame(() => window.scrollTo(0, state.collectionScrollY));
         return;
       }
+      if (back.dataset.back === 'collection-hub') {
+        const currentCollection = collectionByKey(state.collectionKey);
+        state.collectionKey = currentCollection?.hubKey || state.collectionHubKey || collections[0]?.key || '';
+        state.subcategory = '';
+        state.screen = 'collection';
+        renderWithMotion('back');
+        window.scrollTo(0, 0);
+        return;
+      }
       state.screen = back.dataset.back === 'collections' ? 'discover' : 'discover';
       if (back.dataset.back === 'collections') state.discoverView = 'collections';
       renderWithMotion('back');
@@ -6022,6 +6287,41 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       state.meal = previousMeal;
       state.selectedIngredients = previousIngredients;
       return cards;
+    }
+  };
+  window.__tomoMobileCollectionsAudit = {
+    enabled: USE_GENERATED_COLLECTIONS,
+    hubs() {
+      return generatedCollectionSystem.hubs.map((hub) => ({
+        key: hub.key,
+        title: hub.title,
+        count: hub.count,
+        childCollections: hub.generatedCollections.length,
+      }));
+    },
+    collections() {
+      return generatedCollectionSystem.collections.map((collection) => ({
+        key: collection.key,
+        hub: collection.hubName,
+        title: collection.title,
+        count: collection.count,
+        groups: collection.subcategory_order,
+        duplicateRecipes: collection.items.length - new Set(collection.items.map((item) => item.recipeId || item.id)).size,
+      }));
+    },
+    summary() {
+      const hubs = this.hubs();
+      const collections = this.collections();
+      return {
+        enabled: USE_GENERATED_COLLECTIONS,
+        hubCount: hubs.length,
+        collectionCount: collections.length,
+        totalRecipes: recipes.length,
+        hubRecipes: hubs.reduce((sum, hub) => sum + hub.count, 0),
+        collectionRecipes: collections.reduce((sum, collection) => sum + collection.count, 0),
+        emptyCollections: collections.filter((collection) => collection.count === 0).map((collection) => collection.title),
+        duplicateCollections: collections.filter((collection) => collection.duplicateRecipes > 0).map((collection) => collection.title),
+      };
     }
   };
   window.runTomoCollectionImageAudit = runCollectionImageAudit;

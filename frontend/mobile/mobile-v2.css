@@ -1845,6 +1845,10 @@ html.mobile-v2-active body {
     font-weight: 950;
   }
 
+  .mv2-generated-collection-list {
+    margin-top: 2px;
+  }
+
   .mv2-collection.is-coming-soon b {
     color: rgba(159, 67, 41, 0.78);
   }
@@ -3293,6 +3297,12 @@ html.mobile-v2-active body {
     font-size: 1.46rem;
     font-weight: 950;
     line-height: 1.04;
+  }
+
+  .mv2-collection-header h2 small {
+    font-size: 0.92rem;
+    font-weight: 900;
+    opacity: 0.9;
   }
 
   .mv2-collection-header span {
