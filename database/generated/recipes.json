@@ -37429,7 +37429,7 @@
     "prepTimeMinutes": 10,
     "cookTimeMinutes": 15,
     "servings": 2,
-    "cuisine": "Indian",
+    "cuisine": "Continental",
     "dietType": "vegetarian",
     "difficulty": "easy",
     "imageUrl": "/assets/images/collections/soups.webp",
@@ -37438,7 +37438,11 @@
       "soup",
       "warm-bowls",
       "comfort-soups",
-      "vegetarian"
+      "vegetarian",
+      "global-bites",
+      "global-soups",
+      "continental",
+      "global"
     ],
     "lateNight": false,
     "lowEffort": true,
@@ -37539,33 +37543,43 @@
     "base_ingredient": "mushroom",
     "coreIngredients": [
       "mushroom",
-      "onion"
+      "onion",
+      "milk"
     ],
     "core_ingredients": [
       "mushroom",
-      "onion"
+      "onion",
+      "milk"
     ],
     "requiredIngredients": [
       "mushroom",
-      "onion"
+      "onion",
+      "milk"
     ],
     "required_ingredients": [
       "mushroom",
-      "onion"
+      "onion",
+      "milk"
     ],
     "optionalIngredients": [
       "garlic",
       "milk",
       "pepper",
       "butter",
-      "salt"
+      "salt",
+      "black pepper",
+      "cream",
+      "parsley"
     ],
     "optional_ingredients": [
       "garlic",
       "milk",
       "pepper",
       "butter",
-      "salt"
+      "salt",
+      "black pepper",
+      "cream",
+      "parsley"
     ],
     "dishFamily": "soup",
     "dish_family": "soup",
@@ -37576,9 +37590,11 @@
         "Global"
       ],
       "subRegion": [
-        "Cafe / Soup"
+        "Continental",
+        "Global"
       ],
       "cuisine": [
+        "Continental",
         "Global"
       ]
     },
@@ -37649,9 +37665,13 @@
     "avoidIf": [],
     "tomoLine": "Brown the mushrooms lightly for better flavor.",
     "collectionHome": {
-      "hub": "Healthy Living",
-      "collection": "Warm & Light Bowls"
-    }
+      "hub": "Global Bites",
+      "collection": "Global Soups"
+    },
+    "aliases": [
+      "Creamy Mushroom Soup"
+    ],
+    "pantrySuitability": "medium"
   },
   {
     "id": "80fa9550-534b-53b8-a9e6-c1072ad32c55",
@@ -73677,7 +73697,7 @@
     "cookTimeMinutes": 20,
     "timeMinutes": 30,
     "servings": 2,
-    "cuisine": "Indian",
+    "cuisine": "Mediterranean",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
@@ -73689,7 +73709,11 @@
       "soup",
       "warm-bowls",
       "protein-soups",
-      "vegetarian"
+      "vegetarian",
+      "global-bites",
+      "global-soups",
+      "mediterranean",
+      "global"
     ],
     "moodTags": [
       "comfort",
@@ -73801,34 +73825,44 @@
     "baseIngredient": "masoor dal",
     "base_ingredient": "masoor dal",
     "coreIngredients": [
-      "masoor dal",
-      "carrot"
+      "lentils",
+      "carrot",
+      "onion"
     ],
     "core_ingredients": [
-      "masoor dal",
-      "carrot"
+      "lentils",
+      "carrot",
+      "onion"
     ],
     "requiredIngredients": [
-      "masoor dal",
-      "carrot"
+      "lentils",
+      "carrot",
+      "onion"
     ],
     "required_ingredients": [
-      "masoor dal",
-      "carrot"
+      "lentils",
+      "carrot",
+      "onion"
     ],
     "optionalIngredients": [
       "onion",
       "garlic",
       "cumin",
       "pepper",
-      "salt"
+      "salt",
+      "tomato",
+      "lemon",
+      "olive oil"
     ],
     "optional_ingredients": [
       "onion",
       "garlic",
       "cumin",
       "pepper",
-      "salt"
+      "salt",
+      "tomato",
+      "lemon",
+      "olive oil"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
@@ -73884,9 +73918,26 @@
     },
     "tomoLine": "Mash lightly for body while keeping the soup rustic.",
     "collectionHome": {
-      "hub": "Healthy Living",
-      "collection": "Warm & Light Bowls"
-    }
+      "hub": "Global Bites",
+      "collection": "Global Soups"
+    },
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Mediterranean",
+        "Global"
+      ],
+      "cuisine": [
+        "Mediterranean",
+        "Global"
+      ]
+    },
+    "aliases": [
+      "Mediterranean Lentil Soup"
+    ],
+    "pantrySuitability": "medium"
   },
   {
     "id": "warm-bowls-detail-paneer-soup",
@@ -134799,6 +134850,7246 @@
       "spring onion",
       "sesame oil",
       "mushroom"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Street Food"
+    }
+  },
+  {
+    "id": "31df0d2d-2191-5e46a-fa8a-c224617bd600",
+    "sourceId": "global-wave-b-avocado-toast",
+    "title": "Avocado Toast",
+    "name": "Avocado Toast",
+    "aliases": [
+      "Smashed Avocado Toast"
+    ],
+    "description": "A cafe-style breakfast toast with creamy avocado, lemon and gentle seasoning.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "American / Cafe",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-egg-sandwich.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "global-bites",
+      "quick",
+      "light",
+      "american",
+      "global",
+      "global-breakfasts"
+    ],
+    "moodTags": [
+      "quick",
+      "light"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Light Meal",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Avocado Toast simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep bread, avocado, lemon before cooking.",
+      "Build the main flavour base gently so Avocado Toast tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with olive oil and chilli flakes to taste.",
+      "Serve Avocado Toast warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "bread",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "avocado",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli flakes",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "bread",
+    "primary_ingredient_2": "avocado",
+    "primaryIngredient1": "bread",
+    "primaryIngredient2": "avocado",
+    "secondary_ingredient_1": "olive oil",
+    "secondaryIngredient1": "olive oil",
+    "secondary_ingredient_2": "chilli flakes",
+    "secondaryIngredient2": "chilli flakes",
+    "secondary_ingredient_3": "black pepper",
+    "secondaryIngredient3": "black pepper",
+    "secondary_ingredient_4": "egg",
+    "secondaryIngredient4": "egg",
+    "secondary_ingredient_5": "salt",
+    "secondaryIngredient5": "salt",
+    "primaryIngredients": [
+      "bread",
+      "avocado"
+    ],
+    "baseIngredient": "bread",
+    "base_ingredient": "bread",
+    "coreIngredients": [
+      "bread",
+      "avocado",
+      "lemon"
+    ],
+    "core_ingredients": [
+      "bread",
+      "avocado",
+      "lemon"
+    ],
+    "requiredIngredients": [
+      "bread",
+      "avocado",
+      "lemon"
+    ],
+    "required_ingredients": [
+      "bread",
+      "avocado",
+      "lemon"
+    ],
+    "optionalIngredients": [
+      "olive oil",
+      "chilli flakes",
+      "black pepper",
+      "egg",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "olive oil",
+      "chilli flakes",
+      "black pepper",
+      "egg",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "toast",
+    "dish_family": "toast",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "light"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "American",
+        "Global"
+      ],
+      "cuisine": [
+        "American",
+        "Global"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "fruit"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "chilli flakes"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "bread",
+        "avocado",
+        "lemon",
+        "olive oil",
+        "chilli flakes",
+        "black pepper",
+        "egg",
+        "salt"
+      ],
+      "steps": [
+        "Prep bread, avocado, lemon before cooking.",
+        "Build the main flavour base gently so Avocado Toast tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with olive oil and chilli flakes to taste.",
+        "Serve Avocado Toast warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Avocado Toast brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "olive oil",
+      "chilli flakes",
+      "black pepper",
+      "egg"
+    ],
+    "pantry_supporting_ingredients": [
+      "olive oil",
+      "chilli flakes",
+      "black pepper",
+      "egg"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Breakfasts"
+    }
+  },
+  {
+    "id": "0e3b5238-15f3-5777e-ab18-51e99615220e",
+    "sourceId": "global-wave-b-japanese-tamago-toast",
+    "title": "Japanese Tamago Toast",
+    "name": "Japanese Tamago Toast",
+    "aliases": [
+      "Tamago Sando Toast"
+    ],
+    "description": "A soft Japanese-inspired egg toast with creamy tamago-style filling.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Japanese",
+    "dietType": "non-vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/batch6-egg-toast.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "global-bites",
+      "quick",
+      "comfort",
+      "japanese",
+      "global-breakfasts"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 7,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Japanese Tamago Toast simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep bread, egg, mayo before cooking.",
+      "Build the main flavour base gently so Japanese Tamago Toast tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with butter and spring onion to taste.",
+      "Serve Japanese Tamago Toast warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "bread",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mayo",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "bread",
+    "primary_ingredient_2": "egg",
+    "primaryIngredient1": "bread",
+    "primaryIngredient2": "egg",
+    "secondary_ingredient_1": "butter",
+    "secondaryIngredient1": "butter",
+    "secondary_ingredient_2": "spring onion",
+    "secondaryIngredient2": "spring onion",
+    "secondary_ingredient_3": "black pepper",
+    "secondaryIngredient3": "black pepper",
+    "secondary_ingredient_4": "cheese",
+    "secondaryIngredient4": "cheese",
+    "secondary_ingredient_5": "salt",
+    "secondaryIngredient5": "salt",
+    "primaryIngredients": [
+      "bread",
+      "egg"
+    ],
+    "baseIngredient": "bread",
+    "base_ingredient": "bread",
+    "coreIngredients": [
+      "bread",
+      "egg",
+      "mayo"
+    ],
+    "core_ingredients": [
+      "bread",
+      "egg",
+      "mayo"
+    ],
+    "requiredIngredients": [
+      "bread",
+      "egg",
+      "mayo"
+    ],
+    "required_ingredients": [
+      "bread",
+      "egg",
+      "mayo"
+    ],
+    "optionalIngredients": [
+      "butter",
+      "spring onion",
+      "black pepper",
+      "cheese",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "spring onion",
+      "black pepper",
+      "cheese",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "toast",
+    "dish_family": "toast",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Japanese"
+      ],
+      "cuisine": [
+        "Japanese"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "fruit"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "green tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "spring onion"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "bread",
+        "egg",
+        "mayo",
+        "butter",
+        "spring onion",
+        "black pepper",
+        "cheese",
+        "salt"
+      ],
+      "steps": [
+        "Prep bread, egg, mayo before cooking.",
+        "Build the main flavour base gently so Japanese Tamago Toast tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with butter and spring onion to taste.",
+        "Serve Japanese Tamago Toast warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Japanese Tamago Toast brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "butter",
+      "spring onion",
+      "black pepper",
+      "cheese"
+    ],
+    "pantry_supporting_ingredients": [
+      "butter",
+      "spring onion",
+      "black pepper",
+      "cheese"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Breakfasts"
+    }
+  },
+  {
+    "id": "1c9678f6-2464-59fe1-ca26-afb92d5f2bac",
+    "sourceId": "global-wave-b-banana-pancakes",
+    "title": "Banana Pancakes",
+    "name": "Banana Pancakes",
+    "aliases": [
+      "Banana Breakfast Pancakes"
+    ],
+    "description": "Soft breakfast pancakes with banana sweetness and a warm weekend feel.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "American",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/batch6-banana-pancake.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "global-bites",
+      "comfort",
+      "quick",
+      "american",
+      "global",
+      "global-breakfasts"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Banana Pancakes simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep banana, flour, milk before cooking.",
+      "Build the main flavour base gently so Banana Pancakes tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with egg and sugar to taste.",
+      "Serve Banana Pancakes warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "banana",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sugar",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cinnamon",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "maple syrup",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "banana",
+    "primary_ingredient_2": "flour",
+    "primaryIngredient1": "banana",
+    "primaryIngredient2": "flour",
+    "secondary_ingredient_1": "egg",
+    "secondaryIngredient1": "egg",
+    "secondary_ingredient_2": "sugar",
+    "secondaryIngredient2": "sugar",
+    "secondary_ingredient_3": "butter",
+    "secondaryIngredient3": "butter",
+    "secondary_ingredient_4": "cinnamon",
+    "secondaryIngredient4": "cinnamon",
+    "secondary_ingredient_5": "maple syrup",
+    "secondaryIngredient5": "maple syrup",
+    "primaryIngredients": [
+      "banana",
+      "flour"
+    ],
+    "baseIngredient": "banana",
+    "base_ingredient": "banana",
+    "coreIngredients": [
+      "banana",
+      "flour",
+      "milk"
+    ],
+    "core_ingredients": [
+      "banana",
+      "flour",
+      "milk"
+    ],
+    "requiredIngredients": [
+      "banana",
+      "flour",
+      "milk"
+    ],
+    "required_ingredients": [
+      "banana",
+      "flour",
+      "milk"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "sugar",
+      "butter",
+      "cinnamon",
+      "maple syrup",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "egg",
+      "sugar",
+      "butter",
+      "cinnamon",
+      "maple syrup",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pancake",
+    "dish_family": "pancake",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "American",
+        "Global"
+      ],
+      "cuisine": [
+        "American",
+        "Global"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "fruit"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "maple syrup",
+        "banana slices"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "banana",
+        "flour",
+        "milk",
+        "egg",
+        "sugar",
+        "butter",
+        "cinnamon",
+        "maple syrup"
+      ],
+      "steps": [
+        "Prep banana, flour, milk before cooking.",
+        "Build the main flavour base gently so Banana Pancakes tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with egg and sugar to taste.",
+        "Serve Banana Pancakes warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Banana Pancakes brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "egg",
+      "sugar",
+      "butter",
+      "cinnamon"
+    ],
+    "pantry_supporting_ingredients": [
+      "egg",
+      "sugar",
+      "butter",
+      "cinnamon"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Breakfasts"
+    }
+  },
+  {
+    "id": "dce2c9fe-dac5-5ef5b-270f-d2d46e051341",
+    "sourceId": "global-wave-b-breakfast-quesadilla",
+    "title": "Breakfast Quesadilla",
+    "name": "Breakfast Quesadilla",
+    "aliases": [
+      "Egg Quesadilla"
+    ],
+    "description": "A breakfast quesadilla folded with egg, cheese and salsa for a quick morning plate.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Mexican-American",
+    "dietType": "non-vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/sandwich.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "global-bites",
+      "quick",
+      "protein",
+      "mexican",
+      "american",
+      "global-breakfasts"
+    ],
+    "moodTags": [
+      "quick",
+      "protein"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Breakfast Quesadilla simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep tortilla, egg, cheese before cooking.",
+      "Build the main flavour base gently so Breakfast Quesadilla tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with beans and salsa to taste.",
+      "Serve Breakfast Quesadilla warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "tortilla",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "beans",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salsa",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "capsicum",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "avocado",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "tortilla",
+    "primary_ingredient_2": "egg",
+    "primaryIngredient1": "tortilla",
+    "primaryIngredient2": "egg",
+    "secondary_ingredient_1": "beans",
+    "secondaryIngredient1": "beans",
+    "secondary_ingredient_2": "salsa",
+    "secondaryIngredient2": "salsa",
+    "secondary_ingredient_3": "capsicum",
+    "secondaryIngredient3": "capsicum",
+    "secondary_ingredient_4": "onion",
+    "secondaryIngredient4": "onion",
+    "secondary_ingredient_5": "avocado",
+    "secondaryIngredient5": "avocado",
+    "primaryIngredients": [
+      "tortilla",
+      "egg"
+    ],
+    "baseIngredient": "tortilla",
+    "base_ingredient": "tortilla",
+    "coreIngredients": [
+      "tortilla",
+      "egg",
+      "cheese"
+    ],
+    "core_ingredients": [
+      "tortilla",
+      "egg",
+      "cheese"
+    ],
+    "requiredIngredients": [
+      "tortilla",
+      "egg",
+      "cheese"
+    ],
+    "required_ingredients": [
+      "tortilla",
+      "egg",
+      "cheese"
+    ],
+    "optionalIngredients": [
+      "beans",
+      "salsa",
+      "capsicum",
+      "onion",
+      "avocado",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "beans",
+      "salsa",
+      "capsicum",
+      "onion",
+      "avocado",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "quesadilla",
+    "dish_family": "quesadilla",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "protein"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Mexican",
+        "American"
+      ],
+      "cuisine": [
+        "Mexican",
+        "American"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "salsa"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "avocado"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "tortilla",
+        "egg",
+        "cheese",
+        "beans",
+        "salsa",
+        "capsicum",
+        "onion",
+        "avocado"
+      ],
+      "steps": [
+        "Prep tortilla, egg, cheese before cooking.",
+        "Build the main flavour base gently so Breakfast Quesadilla tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with beans and salsa to taste.",
+        "Serve Breakfast Quesadilla warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Breakfast Quesadilla brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "beans",
+      "salsa",
+      "capsicum",
+      "onion"
+    ],
+    "pantry_supporting_ingredients": [
+      "beans",
+      "salsa",
+      "capsicum",
+      "onion"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Breakfasts"
+    }
+  },
+  {
+    "id": "8262002b-cf38-50c93-366d-419b687b6476",
+    "sourceId": "global-wave-b-croque-monsieur",
+    "title": "Croque Monsieur",
+    "name": "Croque Monsieur",
+    "aliases": [
+      "French Grilled Ham Cheese"
+    ],
+    "description": "A French-style toasted ham and cheese sandwich adapted as a hearty breakfast.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "French",
+    "dietType": "non-vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-egg-sandwich.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "non-vegetarian",
+      "global-bites",
+      "comfort",
+      "protein",
+      "french",
+      "continental",
+      "global-breakfasts"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep Croque Monsieur simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep bread, cheese, ham before cooking.",
+      "Build the main flavour base gently so Croque Monsieur tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with butter and milk to taste.",
+      "Serve Croque Monsieur warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "bread",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ham",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "bread",
+    "primary_ingredient_2": "cheese",
+    "primaryIngredient1": "bread",
+    "primaryIngredient2": "cheese",
+    "secondary_ingredient_1": "butter",
+    "secondaryIngredient1": "butter",
+    "secondary_ingredient_2": "milk",
+    "secondaryIngredient2": "milk",
+    "secondary_ingredient_3": "mustard",
+    "secondaryIngredient3": "mustard",
+    "secondary_ingredient_4": "black pepper",
+    "secondaryIngredient4": "black pepper",
+    "secondary_ingredient_5": "flour",
+    "secondaryIngredient5": "flour",
+    "primaryIngredients": [
+      "bread",
+      "cheese"
+    ],
+    "baseIngredient": "bread",
+    "base_ingredient": "bread",
+    "coreIngredients": [
+      "bread",
+      "cheese",
+      "ham"
+    ],
+    "core_ingredients": [
+      "bread",
+      "cheese",
+      "ham"
+    ],
+    "requiredIngredients": [
+      "bread",
+      "cheese",
+      "ham"
+    ],
+    "required_ingredients": [
+      "bread",
+      "cheese",
+      "ham"
+    ],
+    "optionalIngredients": [
+      "butter",
+      "milk",
+      "mustard",
+      "black pepper",
+      "flour",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "milk",
+      "mustard",
+      "black pepper",
+      "flour",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "toast",
+    "dish_family": "toast",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "protein"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "French",
+        "Continental"
+      ],
+      "cuisine": [
+        "French",
+        "Continental"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "salad"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "cheese"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "bread",
+        "cheese",
+        "ham",
+        "butter",
+        "milk",
+        "mustard",
+        "black pepper",
+        "flour"
+      ],
+      "steps": [
+        "Prep bread, cheese, ham before cooking.",
+        "Build the main flavour base gently so Croque Monsieur tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with butter and milk to taste.",
+        "Serve Croque Monsieur warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Croque Monsieur brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "butter",
+      "milk",
+      "mustard",
+      "black pepper"
+    ],
+    "pantry_supporting_ingredients": [
+      "butter",
+      "milk",
+      "mustard",
+      "black pepper"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Breakfasts"
+    }
+  },
+  {
+    "id": "0fb432ad-cadf-5bb31-1a99-9030944d5be3",
+    "sourceId": "global-wave-b-greek-yogurt-parfait",
+    "title": "Greek Yogurt Parfait",
+    "name": "Greek Yogurt Parfait",
+    "aliases": [
+      "Yogurt Parfait"
+    ],
+    "description": "A cool breakfast parfait layered with yogurt, fruit and crunchy granola.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Mediterranean",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/salads/fruit-bowl.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "global-bites",
+      "light",
+      "quick",
+      "mediterranean",
+      "greek",
+      "global-breakfasts"
+    ],
+    "moodTags": [
+      "light",
+      "quick"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Light Meal",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Greek Yogurt Parfait simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep yogurt, fruit, granola before cooking.",
+      "Build the main flavour base gently so Greek Yogurt Parfait tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with honey and nuts to taste.",
+      "Serve Greek Yogurt Parfait warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "yogurt",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "fruit",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "granola",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "honey",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "nuts",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chia seeds",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "berries",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "banana",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "yogurt",
+    "primary_ingredient_2": "fruit",
+    "primaryIngredient1": "yogurt",
+    "primaryIngredient2": "fruit",
+    "secondary_ingredient_1": "honey",
+    "secondaryIngredient1": "honey",
+    "secondary_ingredient_2": "nuts",
+    "secondaryIngredient2": "nuts",
+    "secondary_ingredient_3": "chia seeds",
+    "secondaryIngredient3": "chia seeds",
+    "secondary_ingredient_4": "berries",
+    "secondaryIngredient4": "berries",
+    "secondary_ingredient_5": "banana",
+    "secondaryIngredient5": "banana",
+    "primaryIngredients": [
+      "yogurt",
+      "fruit"
+    ],
+    "baseIngredient": "yogurt",
+    "base_ingredient": "yogurt",
+    "coreIngredients": [
+      "yogurt",
+      "fruit",
+      "granola"
+    ],
+    "core_ingredients": [
+      "yogurt",
+      "fruit",
+      "granola"
+    ],
+    "requiredIngredients": [
+      "yogurt",
+      "fruit",
+      "granola"
+    ],
+    "required_ingredients": [
+      "yogurt",
+      "fruit",
+      "granola"
+    ],
+    "optionalIngredients": [
+      "honey",
+      "nuts",
+      "chia seeds",
+      "berries",
+      "banana",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "honey",
+      "nuts",
+      "chia seeds",
+      "berries",
+      "banana",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "yogurt bowl",
+    "dish_family": "yogurt bowl",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "light",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Mediterranean",
+        "Greek"
+      ],
+      "cuisine": [
+        "Mediterranean",
+        "Greek"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "toast"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "honey",
+        "nuts"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "yogurt",
+        "fruit",
+        "granola",
+        "honey",
+        "nuts",
+        "chia seeds",
+        "berries",
+        "banana"
+      ],
+      "steps": [
+        "Prep yogurt, fruit, granola before cooking.",
+        "Build the main flavour base gently so Greek Yogurt Parfait tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with honey and nuts to taste.",
+        "Serve Greek Yogurt Parfait warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Greek Yogurt Parfait brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "honey",
+      "nuts",
+      "chia seeds",
+      "berries"
+    ],
+    "pantry_supporting_ingredients": [
+      "honey",
+      "nuts",
+      "chia seeds",
+      "berries"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Breakfasts"
+    }
+  },
+  {
+    "id": "46228fa7-6a97-529a1-0c08-a124710d5d40",
+    "sourceId": "global-wave-b-tofu-poke-bowl",
+    "title": "Tofu Poke Bowl",
+    "name": "Tofu Poke Bowl",
+    "aliases": [
+      "Vegetarian Poke Bowl"
+    ],
+    "description": "A fresh tofu rice bowl with cucumber, soy-sesame dressing and crisp toppings.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Hawaiian / Japanese",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "global-bites",
+      "light",
+      "protein",
+      "japanese",
+      "hawaiian",
+      "global",
+      "global-bowls"
+    ],
+    "moodTags": [
+      "light",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep Tofu Poke Bowl simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep tofu, rice, cucumber before cooking.",
+      "Build the main flavour base gently so Tofu Poke Bowl tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with soy sauce and sesame oil to taste.",
+      "Serve Tofu Poke Bowl warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "tofu",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cucumber",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "avocado",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "seaweed",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "tofu",
+    "primary_ingredient_2": "rice",
+    "primaryIngredient1": "tofu",
+    "primaryIngredient2": "rice",
+    "secondary_ingredient_1": "soy sauce",
+    "secondaryIngredient1": "soy sauce",
+    "secondary_ingredient_2": "sesame oil",
+    "secondaryIngredient2": "sesame oil",
+    "secondary_ingredient_3": "avocado",
+    "secondaryIngredient3": "avocado",
+    "secondary_ingredient_4": "carrot",
+    "secondaryIngredient4": "carrot",
+    "secondary_ingredient_5": "seaweed",
+    "secondaryIngredient5": "seaweed",
+    "primaryIngredients": [
+      "tofu",
+      "rice"
+    ],
+    "baseIngredient": "tofu",
+    "base_ingredient": "tofu",
+    "coreIngredients": [
+      "tofu",
+      "rice",
+      "cucumber"
+    ],
+    "core_ingredients": [
+      "tofu",
+      "rice",
+      "cucumber"
+    ],
+    "requiredIngredients": [
+      "tofu",
+      "rice",
+      "cucumber"
+    ],
+    "required_ingredients": [
+      "tofu",
+      "rice",
+      "cucumber"
+    ],
+    "optionalIngredients": [
+      "soy sauce",
+      "sesame oil",
+      "avocado",
+      "carrot",
+      "seaweed",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "soy sauce",
+      "sesame oil",
+      "avocado",
+      "carrot",
+      "seaweed",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rice bowl",
+    "dish_family": "rice bowl",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "light",
+      "protein"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Japanese",
+        "Hawaiian",
+        "Global"
+      ],
+      "cuisine": [
+        "Japanese",
+        "Hawaiian",
+        "Global"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "miso soup"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "green tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "sesame seeds"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "tofu",
+        "rice",
+        "cucumber",
+        "soy sauce",
+        "sesame oil",
+        "avocado",
+        "carrot",
+        "seaweed"
+      ],
+      "steps": [
+        "Prep tofu, rice, cucumber before cooking.",
+        "Build the main flavour base gently so Tofu Poke Bowl tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with soy sauce and sesame oil to taste.",
+        "Serve Tofu Poke Bowl warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Tofu Poke Bowl brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "soy sauce",
+      "sesame oil",
+      "avocado",
+      "carrot"
+    ],
+    "pantry_supporting_ingredients": [
+      "soy sauce",
+      "sesame oil",
+      "avocado",
+      "carrot"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Bowls"
+    }
+  },
+  {
+    "id": "091ca94a-72dc-57926-0432-fb38933fbcd6",
+    "sourceId": "global-wave-b-thai-peanut-noodle-bowl",
+    "title": "Thai Peanut Noodle Bowl",
+    "name": "Thai Peanut Noodle Bowl",
+    "aliases": [
+      "Peanut Noodle Bowl"
+    ],
+    "description": "A Thai-inspired noodle bowl tossed with peanut sauce, vegetables and lime.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Thai",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/batch3a-thukpa.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "global-bites",
+      "quick",
+      "comfort",
+      "thai",
+      "global-bowls"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Thai Peanut Noodle Bowl simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep noodles, peanut butter, vegetables before cooking.",
+      "Build the main flavour base gently so Thai Peanut Noodle Bowl tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with soy sauce and lime to taste.",
+      "Serve Thai Peanut Noodle Bowl warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "noodles",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanut butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lime",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "noodles",
+    "primary_ingredient_2": "peanut butter",
+    "primaryIngredient1": "noodles",
+    "primaryIngredient2": "peanut butter",
+    "secondary_ingredient_1": "soy sauce",
+    "secondaryIngredient1": "soy sauce",
+    "secondary_ingredient_2": "lime",
+    "secondaryIngredient2": "lime",
+    "secondary_ingredient_3": "garlic",
+    "secondaryIngredient3": "garlic",
+    "secondary_ingredient_4": "chilli",
+    "secondaryIngredient4": "chilli",
+    "secondary_ingredient_5": "spring onion",
+    "secondaryIngredient5": "spring onion",
+    "primaryIngredients": [
+      "noodles",
+      "peanut butter"
+    ],
+    "baseIngredient": "noodles",
+    "base_ingredient": "noodles",
+    "coreIngredients": [
+      "noodles",
+      "peanut butter",
+      "vegetables"
+    ],
+    "core_ingredients": [
+      "noodles",
+      "peanut butter",
+      "vegetables"
+    ],
+    "requiredIngredients": [
+      "noodles",
+      "peanut butter",
+      "vegetables"
+    ],
+    "required_ingredients": [
+      "noodles",
+      "peanut butter",
+      "vegetables"
+    ],
+    "optionalIngredients": [
+      "soy sauce",
+      "lime",
+      "garlic",
+      "chilli",
+      "spring onion",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "soy sauce",
+      "lime",
+      "garlic",
+      "chilli",
+      "spring onion",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "noodle bowl",
+    "dish_family": "noodle bowl",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Thai"
+      ],
+      "cuisine": [
+        "Thai"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "cucumber salad"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lime water"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "peanuts"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "noodles",
+        "peanut butter",
+        "vegetables",
+        "soy sauce",
+        "lime",
+        "garlic",
+        "chilli",
+        "spring onion"
+      ],
+      "steps": [
+        "Prep noodles, peanut butter, vegetables before cooking.",
+        "Build the main flavour base gently so Thai Peanut Noodle Bowl tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with soy sauce and lime to taste.",
+        "Serve Thai Peanut Noodle Bowl warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Thai Peanut Noodle Bowl brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "soy sauce",
+      "lime",
+      "garlic",
+      "chilli"
+    ],
+    "pantry_supporting_ingredients": [
+      "soy sauce",
+      "lime",
+      "garlic",
+      "chilli"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Bowls"
+    }
+  },
+  {
+    "id": "07bc5c55-dd48-5399f-1e09-d1d025c6b71f",
+    "sourceId": "global-wave-b-japanese-katsu-rice-bowl",
+    "title": "Japanese Katsu Rice Bowl",
+    "name": "Japanese Katsu Rice Bowl",
+    "aliases": [
+      "Katsu Don Bowl"
+    ],
+    "description": "A Japanese-style rice bowl with crisp cutlet, cabbage and savory sauce.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Japanese",
+    "dietType": "non-vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/pulao.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non-vegetarian",
+      "global-bites",
+      "protein",
+      "comfort",
+      "japanese",
+      "global-bowls"
+    ],
+    "moodTags": [
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep Japanese Katsu Rice Bowl simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep chicken cutlet, rice, cabbage before cooking.",
+      "Build the main flavour base gently so Japanese Katsu Rice Bowl tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with katsu sauce and egg to taste.",
+      "Serve Japanese Katsu Rice Bowl warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken cutlet",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cabbage",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "katsu sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame seeds",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "chicken cutlet",
+    "primary_ingredient_2": "rice",
+    "primaryIngredient1": "chicken cutlet",
+    "primaryIngredient2": "rice",
+    "secondary_ingredient_1": "katsu sauce",
+    "secondaryIngredient1": "katsu sauce",
+    "secondary_ingredient_2": "egg",
+    "secondaryIngredient2": "egg",
+    "secondary_ingredient_3": "spring onion",
+    "secondaryIngredient3": "spring onion",
+    "secondary_ingredient_4": "sesame seeds",
+    "secondaryIngredient4": "sesame seeds",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "chicken cutlet",
+      "rice"
+    ],
+    "baseIngredient": "chicken cutlet",
+    "base_ingredient": "chicken cutlet",
+    "coreIngredients": [
+      "chicken cutlet",
+      "rice",
+      "cabbage"
+    ],
+    "core_ingredients": [
+      "chicken cutlet",
+      "rice",
+      "cabbage"
+    ],
+    "requiredIngredients": [
+      "chicken cutlet",
+      "rice",
+      "cabbage"
+    ],
+    "required_ingredients": [
+      "chicken cutlet",
+      "rice",
+      "cabbage"
+    ],
+    "optionalIngredients": [
+      "katsu sauce",
+      "egg",
+      "spring onion",
+      "sesame seeds",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "katsu sauce",
+      "egg",
+      "spring onion",
+      "sesame seeds",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rice bowl",
+    "dish_family": "rice bowl",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Japanese"
+      ],
+      "cuisine": [
+        "Japanese"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "miso soup"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "green tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "katsu sauce"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "chicken cutlet",
+        "rice",
+        "cabbage",
+        "katsu sauce",
+        "egg",
+        "spring onion",
+        "sesame seeds"
+      ],
+      "steps": [
+        "Prep chicken cutlet, rice, cabbage before cooking.",
+        "Build the main flavour base gently so Japanese Katsu Rice Bowl tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with katsu sauce and egg to taste.",
+        "Serve Japanese Katsu Rice Bowl warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Japanese Katsu Rice Bowl brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "katsu sauce",
+      "egg",
+      "spring onion",
+      "sesame seeds"
+    ],
+    "pantry_supporting_ingredients": [
+      "katsu sauce",
+      "egg",
+      "spring onion",
+      "sesame seeds"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Bowls"
+    }
+  },
+  {
+    "id": "4f48654a-253d-5da44-470e-e354a2d4f991",
+    "sourceId": "global-wave-b-falafel-hummus-bowl",
+    "title": "Falafel Hummus Bowl",
+    "name": "Falafel Hummus Bowl",
+    "aliases": [
+      "Falafel Bowl"
+    ],
+    "description": "A Middle Eastern bowl with falafel, hummus, grains and fresh salad toppings.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Middle Eastern",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "global-bites",
+      "protein",
+      "light",
+      "middle-eastern",
+      "mediterranean",
+      "global-bowls"
+    ],
+    "moodTags": [
+      "protein",
+      "light"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep Falafel Hummus Bowl simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep falafel, hummus, rice before cooking.",
+      "Build the main flavour base gently so Falafel Hummus Bowl tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with cucumber and tomato to taste.",
+      "Serve Falafel Hummus Bowl warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "falafel",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "hummus",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "cucumber",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pita",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tahini",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "parsley",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "falafel",
+    "primary_ingredient_2": "hummus",
+    "primaryIngredient1": "falafel",
+    "primaryIngredient2": "hummus",
+    "secondary_ingredient_1": "cucumber",
+    "secondaryIngredient1": "cucumber",
+    "secondary_ingredient_2": "tomato",
+    "secondaryIngredient2": "tomato",
+    "secondary_ingredient_3": "pita",
+    "secondaryIngredient3": "pita",
+    "secondary_ingredient_4": "tahini",
+    "secondaryIngredient4": "tahini",
+    "secondary_ingredient_5": "parsley",
+    "secondaryIngredient5": "parsley",
+    "primaryIngredients": [
+      "falafel",
+      "hummus"
+    ],
+    "baseIngredient": "falafel",
+    "base_ingredient": "falafel",
+    "coreIngredients": [
+      "falafel",
+      "hummus",
+      "rice"
+    ],
+    "core_ingredients": [
+      "falafel",
+      "hummus",
+      "rice"
+    ],
+    "requiredIngredients": [
+      "falafel",
+      "hummus",
+      "rice"
+    ],
+    "required_ingredients": [
+      "falafel",
+      "hummus",
+      "rice"
+    ],
+    "optionalIngredients": [
+      "cucumber",
+      "tomato",
+      "pita",
+      "tahini",
+      "parsley",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "cucumber",
+      "tomato",
+      "pita",
+      "tahini",
+      "parsley",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "grain bowl",
+    "dish_family": "grain bowl",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "light"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Middle Eastern",
+        "Mediterranean"
+      ],
+      "cuisine": [
+        "Middle Eastern",
+        "Mediterranean"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "pita"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "mint lemonade"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "tahini"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "falafel",
+        "hummus",
+        "rice",
+        "cucumber",
+        "tomato",
+        "pita",
+        "tahini",
+        "parsley"
+      ],
+      "steps": [
+        "Prep falafel, hummus, rice before cooking.",
+        "Build the main flavour base gently so Falafel Hummus Bowl tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with cucumber and tomato to taste.",
+        "Serve Falafel Hummus Bowl warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Falafel Hummus Bowl brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "cucumber",
+      "tomato",
+      "pita",
+      "tahini"
+    ],
+    "pantry_supporting_ingredients": [
+      "cucumber",
+      "tomato",
+      "pita",
+      "tahini"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Bowls"
+    }
+  },
+  {
+    "id": "e2ee889c-2d0f-5899b-5b76-94e4dd8137dc",
+    "sourceId": "global-wave-b-teriyaki-tofu-bowl",
+    "title": "Teriyaki Tofu Bowl",
+    "name": "Teriyaki Tofu Bowl",
+    "aliases": [
+      "Tofu Teriyaki Bowl"
+    ],
+    "description": "A vegetarian teriyaki rice bowl with tofu, vegetables and sesame.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Japanese",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "global-bites",
+      "protein",
+      "quick",
+      "japanese",
+      "global-bowls"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Teriyaki Tofu Bowl simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep tofu, rice, teriyaki sauce before cooking.",
+      "Build the main flavour base gently so Teriyaki Tofu Bowl tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with broccoli and carrot to taste.",
+      "Serve Teriyaki Tofu Bowl warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "tofu",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "teriyaki sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "broccoli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame seeds",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "tofu",
+    "primary_ingredient_2": "rice",
+    "primaryIngredient1": "tofu",
+    "primaryIngredient2": "rice",
+    "secondary_ingredient_1": "broccoli",
+    "secondaryIngredient1": "broccoli",
+    "secondary_ingredient_2": "carrot",
+    "secondaryIngredient2": "carrot",
+    "secondary_ingredient_3": "sesame seeds",
+    "secondaryIngredient3": "sesame seeds",
+    "secondary_ingredient_4": "spring onion",
+    "secondaryIngredient4": "spring onion",
+    "secondary_ingredient_5": "garlic",
+    "secondaryIngredient5": "garlic",
+    "primaryIngredients": [
+      "tofu",
+      "rice"
+    ],
+    "baseIngredient": "tofu",
+    "base_ingredient": "tofu",
+    "coreIngredients": [
+      "tofu",
+      "rice",
+      "teriyaki sauce"
+    ],
+    "core_ingredients": [
+      "tofu",
+      "rice",
+      "teriyaki sauce"
+    ],
+    "requiredIngredients": [
+      "tofu",
+      "rice",
+      "teriyaki sauce"
+    ],
+    "required_ingredients": [
+      "tofu",
+      "rice",
+      "teriyaki sauce"
+    ],
+    "optionalIngredients": [
+      "broccoli",
+      "carrot",
+      "sesame seeds",
+      "spring onion",
+      "garlic",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "broccoli",
+      "carrot",
+      "sesame seeds",
+      "spring onion",
+      "garlic",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rice bowl",
+    "dish_family": "rice bowl",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Japanese"
+      ],
+      "cuisine": [
+        "Japanese"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "cucumber salad"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "green tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "sesame seeds"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "tofu",
+        "rice",
+        "teriyaki sauce",
+        "broccoli",
+        "carrot",
+        "sesame seeds",
+        "spring onion",
+        "garlic"
+      ],
+      "steps": [
+        "Prep tofu, rice, teriyaki sauce before cooking.",
+        "Build the main flavour base gently so Teriyaki Tofu Bowl tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with broccoli and carrot to taste.",
+        "Serve Teriyaki Tofu Bowl warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Teriyaki Tofu Bowl brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "broccoli",
+      "carrot",
+      "sesame seeds",
+      "spring onion"
+    ],
+    "pantry_supporting_ingredients": [
+      "broccoli",
+      "carrot",
+      "sesame seeds",
+      "spring onion"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Bowls"
+    }
+  },
+  {
+    "id": "ea1f0e86-a755-5283a-5566-26f3dc00f970",
+    "sourceId": "global-wave-b-sesame-tofu-rice-bowl",
+    "title": "Sesame Tofu Rice Bowl",
+    "name": "Sesame Tofu Rice Bowl",
+    "aliases": [
+      "Sesame Tofu Bowl"
+    ],
+    "description": "A simple tofu rice bowl with sesame aroma, vegetables and soft savory seasoning.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Japanese / Korean",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "global-bites",
+      "protein",
+      "light",
+      "japanese",
+      "korean",
+      "global-bowls"
+    ],
+    "moodTags": [
+      "protein",
+      "light"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep Sesame Tofu Rice Bowl simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep tofu, rice, sesame oil before cooking.",
+      "Build the main flavour base gently so Sesame Tofu Rice Bowl tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with soy sauce and cucumber to taste.",
+      "Serve Sesame Tofu Rice Bowl warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "tofu",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cucumber",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "carrot",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "tofu",
+    "primary_ingredient_2": "rice",
+    "primaryIngredient1": "tofu",
+    "primaryIngredient2": "rice",
+    "secondary_ingredient_1": "soy sauce",
+    "secondaryIngredient1": "soy sauce",
+    "secondary_ingredient_2": "cucumber",
+    "secondaryIngredient2": "cucumber",
+    "secondary_ingredient_3": "carrot",
+    "secondaryIngredient3": "carrot",
+    "secondary_ingredient_4": "spring onion",
+    "secondaryIngredient4": "spring onion",
+    "secondary_ingredient_5": "chilli",
+    "secondaryIngredient5": "chilli",
+    "primaryIngredients": [
+      "tofu",
+      "rice"
+    ],
+    "baseIngredient": "tofu",
+    "base_ingredient": "tofu",
+    "coreIngredients": [
+      "tofu",
+      "rice",
+      "sesame oil"
+    ],
+    "core_ingredients": [
+      "tofu",
+      "rice",
+      "sesame oil"
+    ],
+    "requiredIngredients": [
+      "tofu",
+      "rice",
+      "sesame oil"
+    ],
+    "required_ingredients": [
+      "tofu",
+      "rice",
+      "sesame oil"
+    ],
+    "optionalIngredients": [
+      "soy sauce",
+      "cucumber",
+      "carrot",
+      "spring onion",
+      "chilli",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "soy sauce",
+      "cucumber",
+      "carrot",
+      "spring onion",
+      "chilli",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rice bowl",
+    "dish_family": "rice bowl",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "light"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Japanese",
+        "Korean"
+      ],
+      "cuisine": [
+        "Japanese",
+        "Korean"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "miso soup"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "green tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "sesame seeds"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "tofu",
+        "rice",
+        "sesame oil",
+        "soy sauce",
+        "cucumber",
+        "carrot",
+        "spring onion",
+        "chilli"
+      ],
+      "steps": [
+        "Prep tofu, rice, sesame oil before cooking.",
+        "Build the main flavour base gently so Sesame Tofu Rice Bowl tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with soy sauce and cucumber to taste.",
+        "Serve Sesame Tofu Rice Bowl warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Sesame Tofu Rice Bowl brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "soy sauce",
+      "cucumber",
+      "carrot",
+      "spring onion"
+    ],
+    "pantry_supporting_ingredients": [
+      "soy sauce",
+      "cucumber",
+      "carrot",
+      "spring onion"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Bowls"
+    }
+  },
+  {
+    "id": "0344c29d-d570-50685-52e4-3c26908676e7",
+    "sourceId": "global-wave-b-bruschetta",
+    "title": "Bruschetta",
+    "name": "Bruschetta",
+    "aliases": [
+      "Tomato Bruschetta"
+    ],
+    "description": "Crisp Italian toast topped with tomato, basil, garlic and olive oil.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Italian",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-egg-sandwich.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "quick",
+      "light",
+      "italian",
+      "global-snacks"
+    ],
+    "moodTags": [
+      "quick",
+      "light"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Light Meal",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Bruschetta simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep bread, tomato, basil before cooking.",
+      "Build the main flavour base gently so Bruschetta tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with garlic and olive oil to taste.",
+      "Serve Bruschetta warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "bread",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "basil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "balsamic vinegar",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "bread",
+    "primary_ingredient_2": "tomato",
+    "primaryIngredient1": "bread",
+    "primaryIngredient2": "tomato",
+    "secondary_ingredient_1": "garlic",
+    "secondaryIngredient1": "garlic",
+    "secondary_ingredient_2": "olive oil",
+    "secondaryIngredient2": "olive oil",
+    "secondary_ingredient_3": "black pepper",
+    "secondaryIngredient3": "black pepper",
+    "secondary_ingredient_4": "balsamic vinegar",
+    "secondaryIngredient4": "balsamic vinegar",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "bread",
+      "tomato"
+    ],
+    "baseIngredient": "bread",
+    "base_ingredient": "bread",
+    "coreIngredients": [
+      "bread",
+      "tomato",
+      "basil"
+    ],
+    "core_ingredients": [
+      "bread",
+      "tomato",
+      "basil"
+    ],
+    "requiredIngredients": [
+      "bread",
+      "tomato",
+      "basil"
+    ],
+    "required_ingredients": [
+      "bread",
+      "tomato",
+      "basil"
+    ],
+    "optionalIngredients": [
+      "garlic",
+      "olive oil",
+      "black pepper",
+      "balsamic vinegar",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "olive oil",
+      "black pepper",
+      "balsamic vinegar",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "toast",
+    "dish_family": "toast",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "light"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Italian"
+      ],
+      "cuisine": [
+        "Italian"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "soup"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lemon water"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "basil"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "bread",
+        "tomato",
+        "basil",
+        "garlic",
+        "olive oil",
+        "black pepper",
+        "balsamic vinegar"
+      ],
+      "steps": [
+        "Prep bread, tomato, basil before cooking.",
+        "Build the main flavour base gently so Bruschetta tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with garlic and olive oil to taste.",
+        "Serve Bruschetta warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Bruschetta brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "garlic",
+      "olive oil",
+      "black pepper",
+      "balsamic vinegar"
+    ],
+    "pantry_supporting_ingredients": [
+      "garlic",
+      "olive oil",
+      "black pepper",
+      "balsamic vinegar"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Snacks"
+    }
+  },
+  {
+    "id": "985de1fb-8da0-56384-584d-915c7651cfa8",
+    "sourceId": "global-wave-b-mozzarella-sticks",
+    "title": "Mozzarella Sticks",
+    "name": "Mozzarella Sticks",
+    "aliases": [
+      "Cheese Sticks"
+    ],
+    "description": "Crisp crumbed cheese sticks served warm with a tomato dip.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "American / Italian",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/batch6-chilli-paneer.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "comfort",
+      "quick",
+      "american",
+      "italian",
+      "global-snacks"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Mozzarella Sticks simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep mozzarella, bread crumbs, flour before cooking.",
+      "Build the main flavour base gently so Mozzarella Sticks tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with egg and oregano to taste.",
+      "Serve Mozzarella Sticks warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "mozzarella",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "bread crumbs",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "flour",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oregano",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "marinara sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "mozzarella",
+    "primary_ingredient_2": "bread crumbs",
+    "primaryIngredient1": "mozzarella",
+    "primaryIngredient2": "bread crumbs",
+    "secondary_ingredient_1": "egg",
+    "secondaryIngredient1": "egg",
+    "secondary_ingredient_2": "oregano",
+    "secondaryIngredient2": "oregano",
+    "secondary_ingredient_3": "marinara sauce",
+    "secondaryIngredient3": "marinara sauce",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "mozzarella",
+      "bread crumbs"
+    ],
+    "baseIngredient": "mozzarella",
+    "base_ingredient": "mozzarella",
+    "coreIngredients": [
+      "mozzarella",
+      "bread crumbs",
+      "flour"
+    ],
+    "core_ingredients": [
+      "mozzarella",
+      "bread crumbs",
+      "flour"
+    ],
+    "requiredIngredients": [
+      "mozzarella",
+      "bread crumbs",
+      "flour"
+    ],
+    "required_ingredients": [
+      "mozzarella",
+      "bread crumbs",
+      "flour"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "oregano",
+      "marinara sauce",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "egg",
+      "oregano",
+      "marinara sauce",
+      "oil",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "cheese snack",
+    "dish_family": "cheese snack",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "American",
+        "Italian"
+      ],
+      "cuisine": [
+        "American",
+        "Italian"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "marinara sauce"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lemon water"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "oregano"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "mozzarella",
+        "bread crumbs",
+        "flour",
+        "egg",
+        "oregano",
+        "marinara sauce",
+        "oil"
+      ],
+      "steps": [
+        "Prep mozzarella, bread crumbs, flour before cooking.",
+        "Build the main flavour base gently so Mozzarella Sticks tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with egg and oregano to taste.",
+        "Serve Mozzarella Sticks warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Mozzarella Sticks brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "egg",
+      "oregano",
+      "marinara sauce",
+      "oil"
+    ],
+    "pantry_supporting_ingredients": [
+      "egg",
+      "oregano",
+      "marinara sauce",
+      "oil"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Snacks"
+    }
+  },
+  {
+    "id": "bbede137-01c5-57149-35a1-229978824f38",
+    "sourceId": "global-wave-b-korean-corn-cheese",
+    "title": "Korean Corn Cheese",
+    "name": "Korean Corn Cheese",
+    "aliases": [
+      "Corn Cheese"
+    ],
+    "description": "A cozy Korean-style corn and cheese snack with creamy, melty sweetness.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Korean",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/batch5-corn-sundal.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "comfort",
+      "quick",
+      "korean",
+      "global-snacks"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Korean Corn Cheese simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep sweet corn, cheese, mayo before cooking.",
+      "Build the main flavour base gently so Korean Corn Cheese tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with butter and spring onion to taste.",
+      "Serve Korean Corn Cheese warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "sweet corn",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mayo",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli flakes",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "sweet corn",
+    "primary_ingredient_2": "cheese",
+    "primaryIngredient1": "sweet corn",
+    "primaryIngredient2": "cheese",
+    "secondary_ingredient_1": "butter",
+    "secondaryIngredient1": "butter",
+    "secondary_ingredient_2": "spring onion",
+    "secondaryIngredient2": "spring onion",
+    "secondary_ingredient_3": "black pepper",
+    "secondaryIngredient3": "black pepper",
+    "secondary_ingredient_4": "chilli flakes",
+    "secondaryIngredient4": "chilli flakes",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "sweet corn",
+      "cheese"
+    ],
+    "baseIngredient": "sweet corn",
+    "base_ingredient": "sweet corn",
+    "coreIngredients": [
+      "sweet corn",
+      "cheese",
+      "mayo"
+    ],
+    "core_ingredients": [
+      "sweet corn",
+      "cheese",
+      "mayo"
+    ],
+    "requiredIngredients": [
+      "sweet corn",
+      "cheese",
+      "mayo"
+    ],
+    "required_ingredients": [
+      "sweet corn",
+      "cheese",
+      "mayo"
+    ],
+    "optionalIngredients": [
+      "butter",
+      "spring onion",
+      "black pepper",
+      "chilli flakes",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "butter",
+      "spring onion",
+      "black pepper",
+      "chilli flakes",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "corn snack",
+    "dish_family": "corn snack",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Korean"
+      ],
+      "cuisine": [
+        "Korean"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "toast"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "iced tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "spring onion"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "sweet corn",
+        "cheese",
+        "mayo",
+        "butter",
+        "spring onion",
+        "black pepper",
+        "chilli flakes"
+      ],
+      "steps": [
+        "Prep sweet corn, cheese, mayo before cooking.",
+        "Build the main flavour base gently so Korean Corn Cheese tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with butter and spring onion to taste.",
+        "Serve Korean Corn Cheese warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Korean Corn Cheese brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "butter",
+      "spring onion",
+      "black pepper",
+      "chilli flakes"
+    ],
+    "pantry_supporting_ingredients": [
+      "butter",
+      "spring onion",
+      "black pepper",
+      "chilli flakes"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Snacks"
+    }
+  },
+  {
+    "id": "832342b3-9aee-5585a-b9a8-4c90c00355c2",
+    "sourceId": "global-wave-b-edamame",
+    "title": "Edamame",
+    "name": "Edamame",
+    "aliases": [
+      "Salted Edamame"
+    ],
+    "description": "A light Japanese snack of steamed edamame finished with salt and optional chilli.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Japanese",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/salads/salad-default.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "light",
+      "protein",
+      "japanese",
+      "global-snacks"
+    ],
+    "moodTags": [
+      "light",
+      "protein"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep Edamame simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep edamame, salt before cooking.",
+      "Build the main flavour base gently so Edamame tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with sesame oil and chilli flakes to taste.",
+      "Serve Edamame warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "edamame",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli flakes",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "edamame",
+    "primary_ingredient_2": "salt",
+    "primaryIngredient1": "edamame",
+    "primaryIngredient2": "salt",
+    "secondary_ingredient_1": "sesame oil",
+    "secondaryIngredient1": "sesame oil",
+    "secondary_ingredient_2": "chilli flakes",
+    "secondaryIngredient2": "chilli flakes",
+    "secondary_ingredient_3": "garlic",
+    "secondaryIngredient3": "garlic",
+    "secondary_ingredient_4": "lemon",
+    "secondaryIngredient4": "lemon",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "edamame",
+      "salt"
+    ],
+    "baseIngredient": "edamame",
+    "base_ingredient": "edamame",
+    "coreIngredients": [
+      "edamame",
+      "salt"
+    ],
+    "core_ingredients": [
+      "edamame",
+      "salt"
+    ],
+    "requiredIngredients": [
+      "edamame",
+      "salt"
+    ],
+    "required_ingredients": [
+      "edamame",
+      "salt"
+    ],
+    "optionalIngredients": [
+      "sesame oil",
+      "chilli flakes",
+      "garlic",
+      "lemon",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "sesame oil",
+      "chilli flakes",
+      "garlic",
+      "lemon",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "beans",
+    "dish_family": "beans",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "light",
+      "protein"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Japanese"
+      ],
+      "cuisine": [
+        "Japanese"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "miso soup"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "green tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "sea salt"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "edamame",
+        "salt",
+        "sesame oil",
+        "chilli flakes",
+        "garlic",
+        "lemon"
+      ],
+      "steps": [
+        "Prep edamame, salt before cooking.",
+        "Build the main flavour base gently so Edamame tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with sesame oil and chilli flakes to taste.",
+        "Serve Edamame warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Edamame brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "sesame oil",
+      "chilli flakes",
+      "garlic",
+      "lemon"
+    ],
+    "pantry_supporting_ingredients": [
+      "sesame oil",
+      "chilli flakes",
+      "garlic",
+      "lemon"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Snacks"
+    }
+  },
+  {
+    "id": "1f83f91f-17d0-5e97c-a522-2554495876a7",
+    "sourceId": "global-wave-b-loaded-potato-wedges",
+    "title": "Loaded Potato Wedges",
+    "name": "Loaded Potato Wedges",
+    "aliases": [
+      "Loaded Wedges"
+    ],
+    "description": "Oven-style potato wedges topped with cheese, herbs and creamy dip.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "American",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-aloo-jeera.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "comfort",
+      "quick",
+      "american",
+      "global-snacks"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Loaded Potato Wedges simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep potato, cheese, sour cream before cooking.",
+      "Build the main flavour base gently so Loaded Potato Wedges tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with spring onion and paprika to taste.",
+      "Serve Loaded Potato Wedges warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sour cream",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "paprika",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "potato",
+    "primary_ingredient_2": "cheese",
+    "primaryIngredient1": "potato",
+    "primaryIngredient2": "cheese",
+    "secondary_ingredient_1": "spring onion",
+    "secondaryIngredient1": "spring onion",
+    "secondary_ingredient_2": "paprika",
+    "secondaryIngredient2": "paprika",
+    "secondary_ingredient_3": "black pepper",
+    "secondaryIngredient3": "black pepper",
+    "secondary_ingredient_4": "butter",
+    "secondaryIngredient4": "butter",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "potato",
+      "cheese"
+    ],
+    "baseIngredient": "potato",
+    "base_ingredient": "potato",
+    "coreIngredients": [
+      "potato",
+      "cheese",
+      "sour cream"
+    ],
+    "core_ingredients": [
+      "potato",
+      "cheese",
+      "sour cream"
+    ],
+    "requiredIngredients": [
+      "potato",
+      "cheese",
+      "sour cream"
+    ],
+    "required_ingredients": [
+      "potato",
+      "cheese",
+      "sour cream"
+    ],
+    "optionalIngredients": [
+      "spring onion",
+      "paprika",
+      "black pepper",
+      "butter",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "spring onion",
+      "paprika",
+      "black pepper",
+      "butter",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "potato snack",
+    "dish_family": "potato snack",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "American"
+      ],
+      "cuisine": [
+        "American"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "dip"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lemon water"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "cheese",
+        "spring onion"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "potato",
+        "cheese",
+        "sour cream",
+        "spring onion",
+        "paprika",
+        "black pepper",
+        "butter"
+      ],
+      "steps": [
+        "Prep potato, cheese, sour cream before cooking.",
+        "Build the main flavour base gently so Loaded Potato Wedges tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with spring onion and paprika to taste.",
+        "Serve Loaded Potato Wedges warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Loaded Potato Wedges brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "spring onion",
+      "paprika",
+      "black pepper",
+      "butter"
+    ],
+    "pantry_supporting_ingredients": [
+      "spring onion",
+      "paprika",
+      "black pepper",
+      "butter"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Snacks"
+    }
+  },
+  {
+    "id": "a167b43c-ec70-549c9-681f-02f7b9b15a82",
+    "sourceId": "global-wave-b-sesame-cucumber-salad",
+    "title": "Sesame Cucumber Salad",
+    "name": "Sesame Cucumber Salad",
+    "aliases": [
+      "Asian Cucumber Salad"
+    ],
+    "description": "A crisp cucumber snack salad with sesame, soy and gentle acidity.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Japanese / Korean",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/salads/salad-default.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "light",
+      "quick",
+      "japanese",
+      "korean",
+      "global-snacks"
+    ],
+    "moodTags": [
+      "light",
+      "quick"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Light Meal",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Sesame Cucumber Salad simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep cucumber, sesame oil, soy sauce before cooking.",
+      "Build the main flavour base gently so Sesame Cucumber Salad tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with rice vinegar and chilli flakes to taste.",
+      "Serve Sesame Cucumber Salad warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "cucumber",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "rice vinegar",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli flakes",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame seeds",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "cucumber",
+    "primary_ingredient_2": "sesame oil",
+    "primaryIngredient1": "cucumber",
+    "primaryIngredient2": "sesame oil",
+    "secondary_ingredient_1": "rice vinegar",
+    "secondaryIngredient1": "rice vinegar",
+    "secondary_ingredient_2": "chilli flakes",
+    "secondaryIngredient2": "chilli flakes",
+    "secondary_ingredient_3": "sesame seeds",
+    "secondaryIngredient3": "sesame seeds",
+    "secondary_ingredient_4": "garlic",
+    "secondaryIngredient4": "garlic",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "cucumber",
+      "sesame oil"
+    ],
+    "baseIngredient": "cucumber",
+    "base_ingredient": "cucumber",
+    "coreIngredients": [
+      "cucumber",
+      "sesame oil",
+      "soy sauce"
+    ],
+    "core_ingredients": [
+      "cucumber",
+      "sesame oil",
+      "soy sauce"
+    ],
+    "requiredIngredients": [
+      "cucumber",
+      "sesame oil",
+      "soy sauce"
+    ],
+    "required_ingredients": [
+      "cucumber",
+      "sesame oil",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "rice vinegar",
+      "chilli flakes",
+      "sesame seeds",
+      "garlic",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "rice vinegar",
+      "chilli flakes",
+      "sesame seeds",
+      "garlic",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "salad",
+    "dish_family": "salad",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "light",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Japanese",
+        "Korean"
+      ],
+      "cuisine": [
+        "Japanese",
+        "Korean"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "rice bowl"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "green tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "sesame seeds"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "cucumber",
+        "sesame oil",
+        "soy sauce",
+        "rice vinegar",
+        "chilli flakes",
+        "sesame seeds",
+        "garlic"
+      ],
+      "steps": [
+        "Prep cucumber, sesame oil, soy sauce before cooking.",
+        "Build the main flavour base gently so Sesame Cucumber Salad tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with rice vinegar and chilli flakes to taste.",
+        "Serve Sesame Cucumber Salad warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Sesame Cucumber Salad brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "rice vinegar",
+      "chilli flakes",
+      "sesame seeds",
+      "garlic"
+    ],
+    "pantry_supporting_ingredients": [
+      "rice vinegar",
+      "chilli flakes",
+      "sesame seeds",
+      "garlic"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Snacks"
+    }
+  },
+  {
+    "id": "1721bc00-b5d4-5c478-0fa9-6628235b1788",
+    "sourceId": "global-wave-b-thai-tom-yum-soup",
+    "title": "Thai Tom Yum Soup",
+    "name": "Thai Tom Yum Soup",
+    "aliases": [
+      "Tom Yum Soup"
+    ],
+    "description": "A Thai-style hot and sour soup with lemongrass, lime and mushrooms.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Thai",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
+    "tags": [
+      "soup",
+      "dinner",
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "spicy",
+      "rainy",
+      "thai",
+      "global-soups"
+    ],
+    "moodTags": [
+      "spicy",
+      "rainy"
+    ],
+    "mealTags": [
+      "soup",
+      "dinner",
+      "snack"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 8,
+    "primaryMood": "Spicy Food",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep Thai Tom Yum Soup simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep mushroom, lemongrass, lime before cooking.",
+      "Build the main flavour base gently so Thai Tom Yum Soup tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with galangal and chilli to taste.",
+      "Serve Thai Tom Yum Soup warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "mushroom",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "lemongrass",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "lime",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "galangal",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "mushroom",
+    "primary_ingredient_2": "lemongrass",
+    "primaryIngredient1": "mushroom",
+    "primaryIngredient2": "lemongrass",
+    "secondary_ingredient_1": "galangal",
+    "secondaryIngredient1": "galangal",
+    "secondary_ingredient_2": "chilli",
+    "secondaryIngredient2": "chilli",
+    "secondary_ingredient_3": "coriander",
+    "secondaryIngredient3": "coriander",
+    "secondary_ingredient_4": "tomato",
+    "secondaryIngredient4": "tomato",
+    "secondary_ingredient_5": "soy sauce",
+    "secondaryIngredient5": "soy sauce",
+    "primaryIngredients": [
+      "mushroom",
+      "lemongrass"
+    ],
+    "baseIngredient": "mushroom",
+    "base_ingredient": "mushroom",
+    "coreIngredients": [
+      "mushroom",
+      "lemongrass",
+      "lime"
+    ],
+    "core_ingredients": [
+      "mushroom",
+      "lemongrass",
+      "lime"
+    ],
+    "requiredIngredients": [
+      "mushroom",
+      "lemongrass",
+      "lime"
+    ],
+    "required_ingredients": [
+      "mushroom",
+      "lemongrass",
+      "lime"
+    ],
+    "optionalIngredients": [
+      "galangal",
+      "chilli",
+      "coriander",
+      "tomato",
+      "soy sauce",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "galangal",
+      "chilli",
+      "coriander",
+      "tomato",
+      "soy sauce",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "soup",
+    "dish_family": "soup",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "rainy"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Thai"
+      ],
+      "cuisine": [
+        "Thai"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "rice"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lime water"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "coriander"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "mushroom",
+        "lemongrass",
+        "lime",
+        "galangal",
+        "chilli",
+        "coriander",
+        "tomato",
+        "soy sauce"
+      ],
+      "steps": [
+        "Prep mushroom, lemongrass, lime before cooking.",
+        "Build the main flavour base gently so Thai Tom Yum Soup tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with galangal and chilli to taste.",
+        "Serve Thai Tom Yum Soup warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Thai Tom Yum Soup brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "galangal",
+      "chilli",
+      "coriander",
+      "tomato"
+    ],
+    "pantry_supporting_ingredients": [
+      "galangal",
+      "chilli",
+      "coriander",
+      "tomato"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Soups"
+    }
+  },
+  {
+    "id": "7f27397e-e0e0-5bc9f-1c10-1e42955cf5af",
+    "sourceId": "global-wave-b-french-onion-soup",
+    "title": "French Onion Soup",
+    "name": "French Onion Soup",
+    "aliases": [
+      "Onion Soup"
+    ],
+    "description": "A French-style onion soup with slow-cooked onions and cheesy toast topping.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "French",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
+    "tags": [
+      "soup",
+      "dinner",
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "comfort",
+      "rainy",
+      "french",
+      "continental",
+      "global-soups"
+    ],
+    "moodTags": [
+      "comfort",
+      "rainy"
+    ],
+    "mealTags": [
+      "soup",
+      "dinner",
+      "snack"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 8,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep French Onion Soup simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep onion, stock, bread before cooking.",
+      "Build the main flavour base gently so French Onion Soup tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with cheese and butter to taste.",
+      "Serve French Onion Soup warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "stock",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "bread",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "thyme",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "onion",
+    "primary_ingredient_2": "stock",
+    "primaryIngredient1": "onion",
+    "primaryIngredient2": "stock",
+    "secondary_ingredient_1": "cheese",
+    "secondaryIngredient1": "cheese",
+    "secondary_ingredient_2": "butter",
+    "secondaryIngredient2": "butter",
+    "secondary_ingredient_3": "thyme",
+    "secondaryIngredient3": "thyme",
+    "secondary_ingredient_4": "black pepper",
+    "secondaryIngredient4": "black pepper",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "onion",
+      "stock"
+    ],
+    "baseIngredient": "onion",
+    "base_ingredient": "onion",
+    "coreIngredients": [
+      "onion",
+      "stock",
+      "bread"
+    ],
+    "core_ingredients": [
+      "onion",
+      "stock",
+      "bread"
+    ],
+    "requiredIngredients": [
+      "onion",
+      "stock",
+      "bread"
+    ],
+    "required_ingredients": [
+      "onion",
+      "stock",
+      "bread"
+    ],
+    "optionalIngredients": [
+      "cheese",
+      "butter",
+      "thyme",
+      "black pepper",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "cheese",
+      "butter",
+      "thyme",
+      "black pepper",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "soup",
+    "dish_family": "soup",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "rainy"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "French",
+        "Continental"
+      ],
+      "cuisine": [
+        "French",
+        "Continental"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "toast"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lemon water"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "cheese"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "onion",
+        "stock",
+        "bread",
+        "cheese",
+        "butter",
+        "thyme",
+        "black pepper"
+      ],
+      "steps": [
+        "Prep onion, stock, bread before cooking.",
+        "Build the main flavour base gently so French Onion Soup tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with cheese and butter to taste.",
+        "Serve French Onion Soup warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 French Onion Soup brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "cheese",
+      "butter",
+      "thyme",
+      "black pepper"
+    ],
+    "pantry_supporting_ingredients": [
+      "cheese",
+      "butter",
+      "thyme",
+      "black pepper"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Soups"
+    }
+  },
+  {
+    "id": "30b6f199-afa6-5c770-40b2-474f4709bc4c",
+    "sourceId": "global-wave-b-broccoli-cheddar-soup",
+    "title": "Broccoli Cheddar Soup",
+    "name": "Broccoli Cheddar Soup",
+    "aliases": [
+      "Broccoli Cheese Soup"
+    ],
+    "description": "A creamy American-style broccoli soup with cheddar and gentle pepper.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "American",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
+    "tags": [
+      "soup",
+      "dinner",
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "comfort",
+      "rainy",
+      "american",
+      "global-soups"
+    ],
+    "moodTags": [
+      "comfort",
+      "rainy"
+    ],
+    "mealTags": [
+      "soup",
+      "dinner",
+      "snack"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 8,
+    "primaryMood": "Rainy Day",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep Broccoli Cheddar Soup simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep broccoli, cheddar, milk before cooking.",
+      "Build the main flavour base gently so Broccoli Cheddar Soup tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with onion and garlic to taste.",
+      "Serve Broccoli Cheddar Soup warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "broccoli",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheddar",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "broccoli",
+    "primary_ingredient_2": "cheddar",
+    "primaryIngredient1": "broccoli",
+    "primaryIngredient2": "cheddar",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "butter",
+    "secondaryIngredient3": "butter",
+    "secondary_ingredient_4": "black pepper",
+    "secondaryIngredient4": "black pepper",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "broccoli",
+      "cheddar"
+    ],
+    "baseIngredient": "broccoli",
+    "base_ingredient": "broccoli",
+    "coreIngredients": [
+      "broccoli",
+      "cheddar",
+      "milk"
+    ],
+    "core_ingredients": [
+      "broccoli",
+      "cheddar",
+      "milk"
+    ],
+    "requiredIngredients": [
+      "broccoli",
+      "cheddar",
+      "milk"
+    ],
+    "required_ingredients": [
+      "broccoli",
+      "cheddar",
+      "milk"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "garlic",
+      "butter",
+      "black pepper",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "butter",
+      "black pepper",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "soup",
+    "dish_family": "soup",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "rainy"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "American"
+      ],
+      "cuisine": [
+        "American"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "garlic bread"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lemon water"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "cheddar"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "broccoli",
+        "cheddar",
+        "milk",
+        "onion",
+        "garlic",
+        "butter",
+        "black pepper"
+      ],
+      "steps": [
+        "Prep broccoli, cheddar, milk before cooking.",
+        "Build the main flavour base gently so Broccoli Cheddar Soup tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with onion and garlic to taste.",
+        "Serve Broccoli Cheddar Soup warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Broccoli Cheddar Soup brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "onion",
+      "garlic",
+      "butter",
+      "black pepper"
+    ],
+    "pantry_supporting_ingredients": [
+      "onion",
+      "garlic",
+      "butter",
+      "black pepper"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Soups"
+    }
+  },
+  {
+    "id": "64d30cc1-7bc5-5035c-da0c-2c66f438aa73",
+    "sourceId": "global-wave-b-korean-seaweed-soup",
+    "title": "Korean Seaweed Soup",
+    "name": "Korean Seaweed Soup",
+    "aliases": [
+      "Miyeok Guk"
+    ],
+    "description": "A gentle Korean-style seaweed soup with tofu and sesame aroma.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Korean",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/collections/soups.webp",
+    "recipeRole": "soup",
+    "tags": [
+      "soup",
+      "dinner",
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "light",
+      "comfort",
+      "korean",
+      "global-soups"
+    ],
+    "moodTags": [
+      "light",
+      "comfort"
+    ],
+    "mealTags": [
+      "soup",
+      "dinner",
+      "snack"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Light Meal",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep Korean Seaweed Soup simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep seaweed, tofu, garlic before cooking.",
+      "Build the main flavour base gently so Korean Seaweed Soup tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with soy sauce and sesame oil to taste.",
+      "Serve Korean Seaweed Soup warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "seaweed",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tofu",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mushroom",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "seaweed",
+    "primary_ingredient_2": "tofu",
+    "primaryIngredient1": "seaweed",
+    "primaryIngredient2": "tofu",
+    "secondary_ingredient_1": "soy sauce",
+    "secondaryIngredient1": "soy sauce",
+    "secondary_ingredient_2": "sesame oil",
+    "secondaryIngredient2": "sesame oil",
+    "secondary_ingredient_3": "spring onion",
+    "secondaryIngredient3": "spring onion",
+    "secondary_ingredient_4": "mushroom",
+    "secondaryIngredient4": "mushroom",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "seaweed",
+      "tofu"
+    ],
+    "baseIngredient": "seaweed",
+    "base_ingredient": "seaweed",
+    "coreIngredients": [
+      "seaweed",
+      "tofu",
+      "garlic"
+    ],
+    "core_ingredients": [
+      "seaweed",
+      "tofu",
+      "garlic"
+    ],
+    "requiredIngredients": [
+      "seaweed",
+      "tofu",
+      "garlic"
+    ],
+    "required_ingredients": [
+      "seaweed",
+      "tofu",
+      "garlic"
+    ],
+    "optionalIngredients": [
+      "soy sauce",
+      "sesame oil",
+      "spring onion",
+      "mushroom",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "soy sauce",
+      "sesame oil",
+      "spring onion",
+      "mushroom",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "soup",
+    "dish_family": "soup",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "light",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Korean"
+      ],
+      "cuisine": [
+        "Korean"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "rice"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "barley tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "spring onion"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "seaweed",
+        "tofu",
+        "garlic",
+        "soy sauce",
+        "sesame oil",
+        "spring onion",
+        "mushroom"
+      ],
+      "steps": [
+        "Prep seaweed, tofu, garlic before cooking.",
+        "Build the main flavour base gently so Korean Seaweed Soup tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with soy sauce and sesame oil to taste.",
+        "Serve Korean Seaweed Soup warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Korean Seaweed Soup brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "soy sauce",
+      "sesame oil",
+      "spring onion",
+      "mushroom"
+    ],
+    "pantry_supporting_ingredients": [
+      "soy sauce",
+      "sesame oil",
+      "spring onion",
+      "mushroom"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Soups"
+    }
+  },
+  {
+    "id": "8092f384-923f-551ed-dc9b-e2bc943ca6e6",
+    "sourceId": "global-wave-b-quesadilla",
+    "title": "Quesadilla",
+    "name": "Quesadilla",
+    "aliases": [
+      "Cheese Quesadilla"
+    ],
+    "description": "A Mexican street-food favorite with tortilla, melted cheese and beans.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Mexican",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/sandwich.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "lunch",
+      "vegetarian",
+      "global-bites",
+      "quick",
+      "comfort",
+      "mexican",
+      "global-street-food"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "snack",
+      "lunch"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Quesadilla simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep tortilla, cheese, beans before cooking.",
+      "Build the main flavour base gently so Quesadilla tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with salsa and capsicum to taste.",
+      "Serve Quesadilla warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "tortilla",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "beans",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "salsa",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "capsicum",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "corn",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "avocado",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "tortilla",
+    "primary_ingredient_2": "cheese",
+    "primaryIngredient1": "tortilla",
+    "primaryIngredient2": "cheese",
+    "secondary_ingredient_1": "salsa",
+    "secondaryIngredient1": "salsa",
+    "secondary_ingredient_2": "capsicum",
+    "secondaryIngredient2": "capsicum",
+    "secondary_ingredient_3": "onion",
+    "secondaryIngredient3": "onion",
+    "secondary_ingredient_4": "corn",
+    "secondaryIngredient4": "corn",
+    "secondary_ingredient_5": "avocado",
+    "secondaryIngredient5": "avocado",
+    "primaryIngredients": [
+      "tortilla",
+      "cheese"
+    ],
+    "baseIngredient": "tortilla",
+    "base_ingredient": "tortilla",
+    "coreIngredients": [
+      "tortilla",
+      "cheese",
+      "beans"
+    ],
+    "core_ingredients": [
+      "tortilla",
+      "cheese",
+      "beans"
+    ],
+    "requiredIngredients": [
+      "tortilla",
+      "cheese",
+      "beans"
+    ],
+    "required_ingredients": [
+      "tortilla",
+      "cheese",
+      "beans"
+    ],
+    "optionalIngredients": [
+      "salsa",
+      "capsicum",
+      "onion",
+      "corn",
+      "avocado",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "salsa",
+      "capsicum",
+      "onion",
+      "corn",
+      "avocado",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "street food",
+    "dish_family": "street food",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Mexican"
+      ],
+      "cuisine": [
+        "Mexican"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "salsa"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lime water"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "avocado"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "tortilla",
+        "cheese",
+        "beans",
+        "salsa",
+        "capsicum",
+        "onion",
+        "corn",
+        "avocado"
+      ],
+      "steps": [
+        "Prep tortilla, cheese, beans before cooking.",
+        "Build the main flavour base gently so Quesadilla tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with salsa and capsicum to taste.",
+        "Serve Quesadilla warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Quesadilla brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "salsa",
+      "capsicum",
+      "onion",
+      "corn"
+    ],
+    "pantry_supporting_ingredients": [
+      "salsa",
+      "capsicum",
+      "onion",
+      "corn"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Street Food"
+    }
+  },
+  {
+    "id": "5d4b4476-bd62-5a6d1-e845-362074433992",
+    "sourceId": "global-wave-b-falafel-wrap",
+    "title": "Falafel Wrap",
+    "name": "Falafel Wrap",
+    "aliases": [
+      "Falafel Roll"
+    ],
+    "description": "A Middle Eastern street wrap with falafel, hummus and crisp vegetables.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Middle Eastern",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/sandwich.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "lunch",
+      "vegetarian",
+      "global-bites",
+      "protein",
+      "quick",
+      "middle-eastern",
+      "global-street-food"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ],
+    "mealTags": [
+      "snack",
+      "lunch"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Falafel Wrap simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep flatbread, falafel, hummus before cooking.",
+      "Build the main flavour base gently so Falafel Wrap tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with lettuce and tomato to taste.",
+      "Serve Falafel Wrap warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "flatbread",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "falafel",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "hummus",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "lettuce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cucumber",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tahini",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pickles",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "flatbread",
+    "primary_ingredient_2": "falafel",
+    "primaryIngredient1": "flatbread",
+    "primaryIngredient2": "falafel",
+    "secondary_ingredient_1": "lettuce",
+    "secondaryIngredient1": "lettuce",
+    "secondary_ingredient_2": "tomato",
+    "secondaryIngredient2": "tomato",
+    "secondary_ingredient_3": "cucumber",
+    "secondaryIngredient3": "cucumber",
+    "secondary_ingredient_4": "tahini",
+    "secondaryIngredient4": "tahini",
+    "secondary_ingredient_5": "pickles",
+    "secondaryIngredient5": "pickles",
+    "primaryIngredients": [
+      "flatbread",
+      "falafel"
+    ],
+    "baseIngredient": "flatbread",
+    "base_ingredient": "flatbread",
+    "coreIngredients": [
+      "flatbread",
+      "falafel",
+      "hummus"
+    ],
+    "core_ingredients": [
+      "flatbread",
+      "falafel",
+      "hummus"
+    ],
+    "requiredIngredients": [
+      "flatbread",
+      "falafel",
+      "hummus"
+    ],
+    "required_ingredients": [
+      "flatbread",
+      "falafel",
+      "hummus"
+    ],
+    "optionalIngredients": [
+      "lettuce",
+      "tomato",
+      "cucumber",
+      "tahini",
+      "pickles",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "lettuce",
+      "tomato",
+      "cucumber",
+      "tahini",
+      "pickles",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "street food",
+    "dish_family": "street food",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Middle Eastern"
+      ],
+      "cuisine": [
+        "Middle Eastern"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "cucumber salad"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "mint lemonade"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "tahini"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "flatbread",
+        "falafel",
+        "hummus",
+        "lettuce",
+        "tomato",
+        "cucumber",
+        "tahini",
+        "pickles"
+      ],
+      "steps": [
+        "Prep flatbread, falafel, hummus before cooking.",
+        "Build the main flavour base gently so Falafel Wrap tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with lettuce and tomato to taste.",
+        "Serve Falafel Wrap warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Falafel Wrap brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "lettuce",
+      "tomato",
+      "cucumber",
+      "tahini"
+    ],
+    "pantry_supporting_ingredients": [
+      "lettuce",
+      "tomato",
+      "cucumber",
+      "tahini"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Street Food"
+    }
+  },
+  {
+    "id": "439fd117-90e6-57327-6e6d-5dcc6e9e0fa6",
+    "sourceId": "global-wave-b-hot-dog",
+    "title": "Hot Dog",
+    "name": "Hot Dog",
+    "aliases": [
+      "Classic Hot Dog"
+    ],
+    "description": "An American street-food classic with bun, sausage and punchy toppings.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "American",
+    "dietType": "non-vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/sandwich.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "lunch",
+      "non-vegetarian",
+      "global-bites",
+      "quick",
+      "comfort",
+      "american",
+      "global-street-food"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "snack",
+      "lunch"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 7,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Hot Dog simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep hot dog bun, sausage, mustard before cooking.",
+      "Build the main flavour base gently so Hot Dog tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with ketchup and onion to taste.",
+      "Serve Hot Dog warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "hot dog bun",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sausage",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mustard",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "ketchup",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "relish",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "hot dog bun",
+    "primary_ingredient_2": "sausage",
+    "primaryIngredient1": "hot dog bun",
+    "primaryIngredient2": "sausage",
+    "secondary_ingredient_1": "ketchup",
+    "secondaryIngredient1": "ketchup",
+    "secondary_ingredient_2": "onion",
+    "secondaryIngredient2": "onion",
+    "secondary_ingredient_3": "relish",
+    "secondaryIngredient3": "relish",
+    "secondary_ingredient_4": "cheese",
+    "secondaryIngredient4": "cheese",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "hot dog bun",
+      "sausage"
+    ],
+    "baseIngredient": "hot dog bun",
+    "base_ingredient": "hot dog bun",
+    "coreIngredients": [
+      "hot dog bun",
+      "sausage",
+      "mustard"
+    ],
+    "core_ingredients": [
+      "hot dog bun",
+      "sausage",
+      "mustard"
+    ],
+    "requiredIngredients": [
+      "hot dog bun",
+      "sausage",
+      "mustard"
+    ],
+    "required_ingredients": [
+      "hot dog bun",
+      "sausage",
+      "mustard"
+    ],
+    "optionalIngredients": [
+      "ketchup",
+      "onion",
+      "relish",
+      "cheese",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "ketchup",
+      "onion",
+      "relish",
+      "cheese",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "street food",
+    "dish_family": "street food",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "American"
+      ],
+      "cuisine": [
+        "American"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "loaded fries"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lemonade"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "mustard",
+        "onion"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "hot dog bun",
+        "sausage",
+        "mustard",
+        "ketchup",
+        "onion",
+        "relish",
+        "cheese"
+      ],
+      "steps": [
+        "Prep hot dog bun, sausage, mustard before cooking.",
+        "Build the main flavour base gently so Hot Dog tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with ketchup and onion to taste.",
+        "Serve Hot Dog warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Hot Dog brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "ketchup",
+      "onion",
+      "relish",
+      "cheese"
+    ],
+    "pantry_supporting_ingredients": [
+      "ketchup",
+      "onion",
+      "relish",
+      "cheese"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Street Food"
+    }
+  },
+  {
+    "id": "f0e285c8-ee98-57a5c-42fd-eea63db18457",
+    "sourceId": "global-wave-b-arepas",
+    "title": "Arepas",
+    "name": "Arepas",
+    "aliases": [
+      "Corn Arepas"
+    ],
+    "description": "A Latin American street-food corn cake filled with cheese, beans or avocado.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Latin American",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/snacks/snacks-default.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "lunch",
+      "vegetarian",
+      "global-bites",
+      "comfort",
+      "quick",
+      "latin-american",
+      "colombian",
+      "venezuelan",
+      "global-street-food"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
+    "mealTags": [
+      "snack",
+      "lunch"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Arepas simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep cornmeal, cheese, beans before cooking.",
+      "Build the main flavour base gently so Arepas tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with avocado and butter to taste.",
+      "Serve Arepas warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "cornmeal",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "beans",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "avocado",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salsa",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lime",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "cornmeal",
+    "primary_ingredient_2": "cheese",
+    "primaryIngredient1": "cornmeal",
+    "primaryIngredient2": "cheese",
+    "secondary_ingredient_1": "avocado",
+    "secondaryIngredient1": "avocado",
+    "secondary_ingredient_2": "butter",
+    "secondaryIngredient2": "butter",
+    "secondary_ingredient_3": "salsa",
+    "secondaryIngredient3": "salsa",
+    "secondary_ingredient_4": "lime",
+    "secondaryIngredient4": "lime",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "cornmeal",
+      "cheese"
+    ],
+    "baseIngredient": "cornmeal",
+    "base_ingredient": "cornmeal",
+    "coreIngredients": [
+      "cornmeal",
+      "cheese",
+      "beans"
+    ],
+    "core_ingredients": [
+      "cornmeal",
+      "cheese",
+      "beans"
+    ],
+    "requiredIngredients": [
+      "cornmeal",
+      "cheese",
+      "beans"
+    ],
+    "required_ingredients": [
+      "cornmeal",
+      "cheese",
+      "beans"
+    ],
+    "optionalIngredients": [
+      "avocado",
+      "butter",
+      "salsa",
+      "lime",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "avocado",
+      "butter",
+      "salsa",
+      "lime",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "street food",
+    "dish_family": "street food",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Latin American",
+        "Colombian",
+        "Venezuelan"
+      ],
+      "cuisine": [
+        "Latin American",
+        "Colombian",
+        "Venezuelan"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "salsa"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lime water"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "cheese",
+        "avocado"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "cornmeal",
+        "cheese",
+        "beans",
+        "avocado",
+        "butter",
+        "salsa",
+        "lime"
+      ],
+      "steps": [
+        "Prep cornmeal, cheese, beans before cooking.",
+        "Build the main flavour base gently so Arepas tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with avocado and butter to taste.",
+        "Serve Arepas warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Arepas brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "avocado",
+      "butter",
+      "salsa",
+      "lime"
+    ],
+    "pantry_supporting_ingredients": [
+      "avocado",
+      "butter",
+      "salsa",
+      "lime"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Street Food"
+    }
+  },
+  {
+    "id": "c8ebc639-b8bf-58603-3c59-cd9977f10462",
+    "sourceId": "global-wave-b-elote-corn",
+    "title": "Elote Corn",
+    "name": "Elote Corn",
+    "aliases": [
+      "Mexican Street Corn"
+    ],
+    "description": "Mexican street corn with creamy topping, lime, chilli and cheese.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "Mexican",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/batch5-corn-sundal.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "spicy",
+      "comfort",
+      "mexican",
+      "global-street-food"
+    ],
+    "moodTags": [
+      "spicy",
+      "comfort"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Spicy Food",
+    "secondaryMood": "Comfort Food",
+    "cookingNotes": "Keep Elote Corn simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep corn, mayo, cheese before cooking.",
+      "Build the main flavour base gently so Elote Corn tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with lime and chilli powder to taste.",
+      "Serve Elote Corn warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "corn",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mayo",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "lime",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli powder",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "butter",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "corn",
+    "primary_ingredient_2": "mayo",
+    "primaryIngredient1": "corn",
+    "primaryIngredient2": "mayo",
+    "secondary_ingredient_1": "lime",
+    "secondaryIngredient1": "lime",
+    "secondary_ingredient_2": "chilli powder",
+    "secondaryIngredient2": "chilli powder",
+    "secondary_ingredient_3": "coriander",
+    "secondaryIngredient3": "coriander",
+    "secondary_ingredient_4": "butter",
+    "secondaryIngredient4": "butter",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "corn",
+      "mayo"
+    ],
+    "baseIngredient": "corn",
+    "base_ingredient": "corn",
+    "coreIngredients": [
+      "corn",
+      "mayo",
+      "cheese"
+    ],
+    "core_ingredients": [
+      "corn",
+      "mayo",
+      "cheese"
+    ],
+    "requiredIngredients": [
+      "corn",
+      "mayo",
+      "cheese"
+    ],
+    "required_ingredients": [
+      "corn",
+      "mayo",
+      "cheese"
+    ],
+    "optionalIngredients": [
+      "lime",
+      "chilli powder",
+      "coriander",
+      "butter",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "lime",
+      "chilli powder",
+      "coriander",
+      "butter",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "street food",
+    "dish_family": "street food",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Mexican"
+      ],
+      "cuisine": [
+        "Mexican"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "tacos"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lime water"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "cheese",
+        "chilli"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "corn",
+        "mayo",
+        "cheese",
+        "lime",
+        "chilli powder",
+        "coriander",
+        "butter"
+      ],
+      "steps": [
+        "Prep corn, mayo, cheese before cooking.",
+        "Build the main flavour base gently so Elote Corn tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with lime and chilli powder to taste.",
+        "Serve Elote Corn warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Elote Corn brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "lime",
+      "chilli powder",
+      "coriander",
+      "butter"
+    ],
+    "pantry_supporting_ingredients": [
+      "lime",
+      "chilli powder",
+      "coriander",
+      "butter"
+    ],
+    "collectionHome": {
+      "hub": "Global Bites",
+      "collection": "Global Street Food"
+    }
+  },
+  {
+    "id": "7a21f347-f542-57c09-47e9-d8e28216b624",
+    "sourceId": "global-wave-b-loaded-fries",
+    "title": "Loaded Fries",
+    "name": "Loaded Fries",
+    "aliases": [
+      "Loaded French Fries"
+    ],
+    "description": "A street-style fries plate loaded with cheese, sauce and bright toppings.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
+    "servings": 2,
+    "cuisine": "American",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "easy",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-aloo-jeera.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "global-bites",
+      "comfort",
+      "quick",
+      "american",
+      "global",
+      "global-street-food"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 4,
+    "nostalgiaScore": 4,
+    "homeStyleScore": 7,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick & Easy",
+    "secondaryMood": "Quick & Easy",
+    "cookingNotes": "Keep Loaded Fries simple and home-cook friendly; adjust seasoning gently before serving.",
+    "instructions": [
+      "Prep fries, cheese, sauce before cooking.",
+      "Build the main flavour base gently so Loaded Fries tastes balanced.",
+      "Cook until the core ingredients are done and the texture feels right.",
+      "Finish with spring onion and jalapeno to taste.",
+      "Serve Loaded Fries warm or fresh with a simple pairing."
+    ],
+    "ingredients": [
+      {
+        "name": "fries",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cheese",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sauce",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jalapeno",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "beans",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sour cream",
+        "quantity": 1,
+        "unit": "portion",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "fries",
+    "primary_ingredient_2": "cheese",
+    "primaryIngredient1": "fries",
+    "primaryIngredient2": "cheese",
+    "secondary_ingredient_1": "spring onion",
+    "secondaryIngredient1": "spring onion",
+    "secondary_ingredient_2": "jalapeno",
+    "secondaryIngredient2": "jalapeno",
+    "secondary_ingredient_3": "beans",
+    "secondaryIngredient3": "beans",
+    "secondary_ingredient_4": "sour cream",
+    "secondaryIngredient4": "sour cream",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "fries",
+      "cheese"
+    ],
+    "baseIngredient": "fries",
+    "base_ingredient": "fries",
+    "coreIngredients": [
+      "fries",
+      "cheese",
+      "sauce"
+    ],
+    "core_ingredients": [
+      "fries",
+      "cheese",
+      "sauce"
+    ],
+    "requiredIngredients": [
+      "fries",
+      "cheese",
+      "sauce"
+    ],
+    "required_ingredients": [
+      "fries",
+      "cheese",
+      "sauce"
+    ],
+    "optionalIngredients": [
+      "spring onion",
+      "jalapeno",
+      "beans",
+      "sour cream",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "spring onion",
+      "jalapeno",
+      "beans",
+      "sour cream",
+      "salt"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "street food",
+    "dish_family": "street food",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "American",
+        "Global"
+      ],
+      "cuisine": [
+        "American",
+        "Global"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "hot dog"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "lemonade"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "cheese",
+        "spring onion"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "18 min",
+      "ingredients": [
+        "fries",
+        "cheese",
+        "sauce",
+        "spring onion",
+        "jalapeno",
+        "beans",
+        "sour cream"
+      ],
+      "steps": [
+        "Prep fries, cheese, sauce before cooking.",
+        "Build the main flavour base gently so Loaded Fries tastes balanced.",
+        "Cook until the core ingredients are done and the texture feels right.",
+        "Finish with spring onion and jalapeno to taste.",
+        "Serve Loaded Fries warm or fresh with a simple pairing."
+      ]
+    },
+    "tomoLine": "🍅 Loaded Fries brings a little global comfort to today's plate.",
+    "pantrySuitability": "medium",
+    "pantrySupportingIngredients": [
+      "spring onion",
+      "jalapeno",
+      "beans",
+      "sour cream"
+    ],
+    "pantry_supporting_ingredients": [
+      "spring onion",
+      "jalapeno",
+      "beans",
+      "sour cream"
     ],
     "collectionHome": {
       "hub": "Global Bites",
