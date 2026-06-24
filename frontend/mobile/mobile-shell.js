@@ -344,6 +344,18 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   const pairingTypes = ['sides', 'chutneys', 'pickles', 'drinks', 'rice', 'roti', 'toppings'];
   const regionTagTypes = ['region', 'subRegion', 'cuisine'];
   const dietaryTagTypes = ['vegetarian', 'egg', 'non_vegetarian', 'no_onion_no_garlic', 'jain'];
+  const dietaryTagAliases = {
+    eggetarian: 'egg',
+    eggitarian: 'egg',
+    egg_vegetarian: 'egg',
+    egg_veg: 'egg',
+    nonveg: 'non_vegetarian',
+    non_veg: 'non_vegetarian',
+    nonvegetarian: 'non_vegetarian',
+    non_vegetarian: 'non_vegetarian',
+    no_onion_garlic: 'no_onion_no_garlic',
+    no_onion_no_garlic: 'no_onion_no_garlic'
+  };
   const recommendationSurfaces = ['tomo_pick', 'todays_picks', 'pantry', 'related'];
   const recommendationScoreKeys = ['mood', 'memory', 'feedback', 'recency', 'dietary', 'regional', 'pantry', 'diversity'];
   const recommendationSurfaceWeights = {
@@ -485,12 +497,22 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return regionTagTypes.some((type) => regionTags[type].length > 0);
   }
 
+  function normalizeDietaryTag(value) {
+    const normalized = String(value || '')
+      .toLowerCase()
+      .trim()
+      .replace(/&/g, ' and ')
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '');
+    return dietaryTagAliases[normalized] || normalized;
+  }
+
   function normalizeDietaryTags(value) {
     const items = Array.isArray(value) ? value : typeof value === 'string' ? [value] : [];
     const allowed = new Set(dietaryTagTypes);
     const seen = new Set();
     return items
-      .map((item) => norm(item).replace(/-/g, '_'))
+      .map(normalizeDietaryTag)
       .filter((item) => {
         if (!allowed.has(item) || seen.has(item)) return false;
         seen.add(item);

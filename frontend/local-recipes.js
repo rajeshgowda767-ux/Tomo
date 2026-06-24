@@ -1299,7 +1299,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ]
   },
   {
     "id": "bcb89dfd-67a7-5a1c-bd3f-837228bd2a76",
@@ -1951,7 +1958,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy"
+    ]
   },
   {
     "id": "86c21ea4-cfdd-5212-9b78-0c53ea1d88c7",
@@ -2156,7 +2170,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy"
+    ]
   },
   {
     "id": "aef4a9e5-779b-58c1-b71d-9d7061d884d3",
@@ -2595,7 +2616,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Chutneys, Podis & Condiments"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ]
   },
   {
     "id": "e4f795dc-d29a-5733-b569-697b594e1f7b",
@@ -2964,7 +2992,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "9d3d952a-f681-581a-9e07-22acb90ae656",
@@ -3376,7 +3410,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "soul"
+    ]
   },
   {
     "id": "5ade76aa-ac77-51d8-b2bc-4e9b81e076ed",
@@ -4085,7 +4125,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "comfort",
       "quick"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
     "lateNight": false,
     "lowEffort": false,
     "sickDay": false,
@@ -4277,7 +4320,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Maharashtra"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "d73fd821-0134-5e67-9577-c4c880b3a57b",
@@ -7896,7 +7942,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "ce5bd18e-6ff0-5007-8a5e-0bd8ca569258",
@@ -8117,7 +8170,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
-    }
+    },
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "f7508d42-98e0-5d34-b6f6-eaa410e2a439",
@@ -8296,7 +8356,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "protein"
+    ]
   },
   {
     "id": "7c0d09e9-0bec-536c-ae15-6c6c91b1c107",
@@ -8465,7 +8531,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "9992bcd8-0abd-511b-ba21-e50fb04f5a9a",
@@ -8635,7 +8707,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "rainy"
+    ]
   },
   {
     "id": "c6804fce-a3d7-556d-ab31-43c484701460",
@@ -8814,7 +8892,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "protein"
+    ]
   },
   {
     "id": "7c1d5f97-d5dd-5aea-818d-5b39bfb1f1c5",
@@ -8988,7 +9072,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "rainy"
+    ]
   },
   {
     "id": "c19a76f1-3b76-50dd-9f8c-2ec9729f3094",
@@ -9185,7 +9275,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ]
   },
   {
     "id": "99e58cc9-52dc-5490-b0bd-cb2d27bef319",
@@ -9360,7 +9457,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "40a5705c-b248-5afb-875c-5fd1b65df779",
@@ -9965,7 +10069,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "ff57d15a-2f86-5e97-8bb2-d2cce46bbd36",
@@ -10182,7 +10292,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "pantry-cheese-omelette",
@@ -10375,7 +10488,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "4da817f0-d8d2-50b9-8b1a-74d88a03ddb0",
@@ -10401,7 +10521,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "pantry",
       "comfort"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
     "lateNight": false,
     "lowEffort": false,
     "sickDay": false,
@@ -10584,7 +10707,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "6611ed0d-d92c-5794-9070-fa867e35caf9",
@@ -10799,7 +10925,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "fb35172d-555d-5969-896f-102273dae010",
@@ -10997,7 +11126,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy"
+    ]
   },
   {
     "id": "0d715835-2f42-5ac9-8b5c-0d83bfad2f2b",
@@ -11195,7 +11331,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy"
+    ]
   },
   {
     "id": "313cfa85-dbd0-53b6-aa57-822e41da77d0",
@@ -11884,7 +12027,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "e72feb81-3efa-5132-9531-a980632aa29b",
@@ -12341,7 +12491,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Mains"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "269a57c4-c326-560c-b5d3-886b2e5b6a45",
@@ -12544,7 +12701,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy"
+    ]
   },
   {
     "id": "020d228a-41c9-501e-b3f3-a63e877c43b6",
@@ -12766,7 +12930,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Mains"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ]
   },
   {
     "id": "2a4b5172-e07e-54b5-99a2-09c85884f225",
@@ -13206,7 +13373,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ]
   },
   {
     "id": "bfdc43f0-6137-5901-b78f-68a18b7b38df",
@@ -13375,7 +13545,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "686a5460-0fcc-58ed-a823-56faf4d918a4",
@@ -13556,7 +13733,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "ef193ec0-58fa-5b8a-bd3e-7e44064706ca",
@@ -13725,7 +13909,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Bengal"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "protein"
+    ]
   },
   {
     "id": "ac9edd23-eae8-5e48-8dfc-c5773ed3e042",
@@ -13899,7 +14089,18 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Kerala"
-    }
+    },
+    "mealTags": [
+      "lunch",
+      "soup",
+      "dinner",
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "rainy"
+    ]
   },
   {
     "id": "b0fbc187-0b62-533b-9ba9-937fb1bf3e6c",
@@ -14095,7 +14296,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "cfeca6dc-e138-538f-b50d-55b27fe841aa",
@@ -14540,7 +14748,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Bengal"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "protein",
+      "quick",
+      "spicy"
+    ]
   },
   {
     "id": "271613bf-824d-5d19-8138-4a7d9b40a46c",
@@ -14740,7 +14956,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Snacks"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "spicy"
+    ]
   },
   {
     "id": "c57d4242-2920-566e-a41e-dee284fec172",
@@ -14935,7 +15157,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Snacks"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy"
+    ]
   },
   {
     "id": "0e857d8f-1123-5750-bcd2-f41993caa585",
@@ -15757,7 +15986,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "cc23b460-f101-5625-b654-a9b2968aaf2d",
@@ -16185,7 +16420,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "soul",
+      "quick"
+    ]
   },
   {
     "id": "c18fbf55-4162-5c03-974c-8cbf8a6fa11d",
@@ -17526,7 +17768,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "f49323cb-5f41-572a-bb9b-981f7d3b88f4",
@@ -17704,7 +17950,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ]
   },
   {
     "id": "b09b9104-29fd-56d9-b515-00d4396492dc",
@@ -17873,7 +18127,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "protein"
+    ]
   },
   {
     "id": "b48ecfe7-9569-5eeb-a715-f16c546ea927",
@@ -18719,7 +18979,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ]
   },
   {
     "id": "a4ae4f63-ca64-5a16-9f01-d8e1948f7571",
@@ -19159,7 +19426,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Snacks"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy"
+    ]
   },
   {
     "id": "0dcb753b-69b0-544f-8ff8-cec59cc10601",
@@ -19341,7 +19615,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "807985df-9a1f-579a-93ec-0c70fc903714",
@@ -19754,7 +20035,16 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "spicy"
+    ]
   },
   {
     "id": "41903499-9058-5568-bc90-781e9309d01d",
@@ -19947,7 +20237,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "pantry-egg-dosa",
@@ -20150,7 +20447,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "f4400866-c4e8-5c2b-ae4f-d72ca3cd1de0",
@@ -20371,7 +20675,16 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Mains"
-    }
+    },
+    "mealTags": [
+      "breakfast",
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "pantry-egg-paratha",
@@ -20586,7 +20899,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "7021748f-4101-50db-918c-81a438cde6bf",
@@ -20792,7 +21113,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "breakfast",
+      "snack"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "ed00b490-a746-537e-9476-a57f91c2d144",
@@ -21457,7 +21786,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "cb7a2e7a-d335-5ccd-86ef-fc429ce8faea",
@@ -21630,7 +21966,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "691e1313-b316-5d49-8749-5ac62472f7f4",
@@ -21822,7 +22165,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "7448bf61-1195-524d-9705-a4a82a0d1d1a",
@@ -21992,7 +22342,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "protein",
+      "rainy"
+    ]
   },
   {
     "id": "pantry-garlic-chicken",
@@ -22191,7 +22548,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Mains"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "8be6b38b-8eb1-55a6-a830-905b62d7dabb",
@@ -24201,7 +24565,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "sweet"
+    ]
   },
   {
     "id": "19083d74-67a6-5c24-b029-32f0ac9c0771",
@@ -24436,7 +24807,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "95752df9-b6a6-53f3-a173-ec190ec46108",
@@ -24638,7 +25012,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy"
+    ]
   },
   {
     "id": "82d6ae3d-e06d-5e1f-9784-83eaa9b50bb9",
@@ -24828,7 +25209,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy"
+    ]
   },
   {
     "id": "ba24ce79-1772-5eae-a3c5-76087510f58d",
@@ -25202,7 +25590,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ]
   },
   {
     "id": "2aaf6d66-f922-5c0b-8372-4b6d6d3e7795",
@@ -25455,7 +25850,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "quick",
       "spicy"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "quick",
+      "spicy"
+    ],
     "mealTags": [
       "snack"
     ],
@@ -25875,7 +26273,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "bc50c525-dd05-559f-9e49-f8ff33bd0d59",
@@ -26041,7 +26442,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "1c05fccc-5dd4-5e01-946a-a52f66f2c2b7",
@@ -26206,7 +26614,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Prasadam & Temple Foods"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "sweet"
+    ]
   },
   {
     "id": "pantry-kadai-paneer",
@@ -26413,7 +26828,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "c600206d-aca2-5bdb-852e-2088494553d7",
@@ -26816,7 +27239,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "3e40a9c6-7595-5eda-a148-c678d5968118",
@@ -27218,7 +27647,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "1316d32a-9caf-5564-948f-10965880baff",
@@ -27636,7 +28072,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Kerala"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "39a8a1c5-0b09-5b6c-a4ed-b9ab210d42c0",
@@ -28046,7 +28489,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Maharashtra"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "059e3c93-804f-5c2c-8fc1-a283c6ea95b1",
@@ -28233,7 +28683,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "moodTags": [
+      "comfort",
+      "protein",
+      "rainy"
+    ]
   },
   {
     "id": "585c8600-b52f-5bd8-830c-1b34632d7547",
@@ -28469,7 +28924,9 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian",
       "quick"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "quick"
+    ],
     "mealTags": [
       "snack"
     ],
@@ -29998,7 +30455,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "2521b7a1-49f9-539a-bd7f-f4fa72117f20",
@@ -30170,7 +30634,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "sweet"
+    ]
   },
   {
     "id": "efe50564-baae-5e44-bffa-52c3b9f6884c",
@@ -30567,7 +31038,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ]
   },
   {
     "id": "108c0ed1-124f-561b-b15a-bd1aff82b663",
@@ -31889,7 +32363,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "28aa7704-10fa-5b18-99af-525506f021b1",
@@ -32750,7 +33231,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "quick"
+    ]
   },
   {
     "id": "pantry-masala-omelette",
@@ -32963,7 +33450,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "bd46a130-d167-5b72-83e1-e12502fdb4d4",
@@ -33126,7 +33620,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "1fada6ce-8f4a-5d1e-9eae-66110a7bab4c",
@@ -33561,7 +34061,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "4b529cc8-757e-5ef6-b3fc-839149b57ecf",
@@ -33728,7 +34236,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "97f468ed-a953-5f84-9dc0-b34faeeceb51",
@@ -34374,7 +34888,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "7f8b0a38-0970-5f1f-a92c-1737a5dd229a",
@@ -34791,7 +35311,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "rainy",
+      "spicy"
+    ]
   },
   {
     "id": "0c52bf5a-8421-596d-98db-64e24c330eb4",
@@ -35007,7 +35534,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "moodTags": [
+      "rainy",
+      "spicy"
+    ]
   },
   {
     "id": "19b617b4-fc04-56db-9b49-98a14128cb4b",
@@ -35201,7 +35732,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "spicy"
+    ]
   },
   {
     "id": "b0322ac2-ec2e-5cc7-b2c8-d8a197edb78b",
@@ -35916,7 +36454,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "pantry",
       "comfort"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
     "lateNight": false,
     "lowEffort": false,
     "sickDay": false,
@@ -36103,7 +36644,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "23073d8f-f373-5927-a410-3708aa521292",
@@ -36981,7 +37525,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "db985b31-18be-58ff-bcf1-7e66cfa05e88",
@@ -37229,7 +37780,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "pantry",
       "comfort"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
     "lateNight": false,
     "lowEffort": false,
     "sickDay": false,
@@ -37420,7 +37974,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ]
   },
   {
     "id": "c101d168-caa7-5a38-988b-3643bac39e49",
@@ -37892,7 +38449,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ]
   },
   {
     "id": "c1f3c945-38fd-5b3f-beef-291ca5a9a91e",
@@ -38093,7 +38653,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "2c96efa2-bfe9-5c15-b217-ad3901b4065a",
@@ -38334,7 +38901,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "light",
       "soothing"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "quick",
+      "light"
+    ],
     "mealTags": [
       "snack"
     ],
@@ -38886,7 +39456,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ]
   },
   {
     "id": "e060200e-2296-582b-8f1d-b045df95ae55",
@@ -39302,7 +39879,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "quick"
+    ]
   },
   {
     "id": "38e10f97-7ec1-5410-91a6-b937e8cfe228",
@@ -39517,7 +40100,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "pantry-onion-paratha",
@@ -39726,7 +40312,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ]
   },
   {
     "id": "pantry-onion-rice",
@@ -39930,7 +40523,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "quick"
+    ]
   },
   {
     "id": "pantry-onion-uttapam",
@@ -40124,7 +40723,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "quick"
+    ]
   },
   {
     "id": "36c237f6-5860-54ec-b8ee-1b6a49d14634",
@@ -40504,7 +41109,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "rainy"
+    ]
   },
   {
     "id": "cac2330c-14ca-5e88-b0cc-7b08b9188d11",
@@ -40894,7 +41505,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "93998719-ab3a-5d42-8edd-a97a6d053534",
@@ -40920,7 +41538,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "pantry",
       "comfort"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
     "lateNight": false,
     "lowEffort": false,
     "sickDay": false,
@@ -41106,7 +41727,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "7ef194cc-8faa-52e2-9b27-19ea7f708a25",
@@ -41297,7 +41921,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "protein"
+    ]
   },
   {
     "id": "c8da13df-2cde-59bf-9a1c-ffeab08f72c4",
@@ -41950,7 +42580,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "pantry-paneer-fried-rice",
@@ -42172,7 +42809,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Mains"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "b8c0addf-df03-5bbc-9e9a-0dce8a092533",
@@ -42392,7 +43037,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ]
   },
   {
     "id": "33f0c885-d196-52a0-a0fc-83b135bab1f0",
@@ -42560,7 +43208,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "protein",
+      "rainy"
+    ]
   },
   {
     "id": "5f7465e8-6818-5d67-b192-4ae22346f1e7",
@@ -42751,7 +43406,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "pantry-paneer-pulao",
@@ -42972,7 +43634,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "f93e862f-6ef9-5068-ad4e-4528409c0a83",
@@ -43171,7 +43841,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Healthy Plates"
-    }
+    },
+    "mealTags": [
+      "breakfast",
+      "snack"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "bf541c47-19b4-5df7-a4cd-a69138c42d49",
@@ -43341,7 +44019,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "283fb5a2-8774-5aca-b3f2-30d64579bc2f",
@@ -43537,7 +44222,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "b280fe25-ecce-583a-9911-c2c33b216d8c",
@@ -44187,7 +44879,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "quick"
+    ]
   },
   {
     "id": "ea3245b2-2eb8-57e2-ac7e-a317d9302cf4",
@@ -44390,7 +45088,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "protein",
+      "quick"
+    ]
   },
   {
     "id": "57c763b2-cd03-598d-921b-e32299d39aba",
@@ -44417,7 +45122,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "pantry",
       "comfort"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ],
     "lateNight": false,
     "lowEffort": false,
     "sickDay": false,
@@ -44604,7 +45312,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ]
   },
   {
     "id": "cad7fd64-a18a-547e-ba7b-c19e96e0aaa0",
@@ -45250,7 +45961,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "pantry-plain-chapati",
@@ -45427,7 +46144,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ]
   },
   {
     "id": "dda25733-7b18-5e90-8f11-1f5fcb415e12",
@@ -46079,7 +46803,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "rainy"
+    ]
   },
   {
     "id": "41f02fad-1353-5963-9a98-d90ad65c9225",
@@ -46245,7 +46977,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Northeast"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "57797f61-0e93-5d43-ba49-b4c9150eda62",
@@ -46439,7 +47178,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "0c69f037-a5d0-5e24-b5ea-1b59a3c7c11d",
@@ -46879,7 +47625,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ]
   },
   {
     "id": "6a1064f9-3bde-5e2f-8b98-ce4f44db6c5f",
@@ -47313,7 +48066,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ]
   },
   {
     "id": "d7a0cbaa-145e-52f6-8cf8-e0b9494a5e51",
@@ -47687,7 +48447,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ]
   },
   {
     "id": "efb9c9bb-b83a-5251-ba2e-3918409559cf",
@@ -47883,7 +48650,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "96675ee8-fc7e-59f2-9a93-aca530803829",
@@ -48060,7 +48833,18 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "mealTags": [
+      "lunch",
+      "soup",
+      "dinner",
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "rainy"
+    ]
   },
   {
     "id": "1265459d-2eb0-5ef5-9a96-8b339a118ed1",
@@ -48226,7 +49010,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "e8936611-d4a4-509c-808f-2dea85fb4619",
@@ -48388,7 +49178,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ]
   },
   {
     "id": "24779303-05c4-5120-b95a-7939628684d2",
@@ -49009,7 +49806,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "9bbe62ed-ca4c-54c8-a30b-901c1af0479a",
@@ -49174,7 +49977,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "c70df58c-2d09-5b74-907d-8de346b6823c",
@@ -49819,7 +50628,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Mains"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "spicy"
+    ]
   },
   {
     "id": "4112cef7-57b1-5ecd-be12-361d79f412b3",
@@ -50651,7 +51467,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ]
   },
   {
     "id": "24186abf-a84f-5d6c-ace3-b67cb9e80ddd",
@@ -51319,7 +52142,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Breakfasts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "9927a138-c633-543e-94b4-927f1c75e5f7",
@@ -51525,7 +52351,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "5d7a89df-4ba0-521f-bf52-519540ac1cc6",
@@ -51746,7 +52575,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "8c98ad03-edf1-589a-91de-12ed7d270e07",
@@ -52561,7 +53393,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "fce23586-b793-5b67-b338-2e4e50970865",
@@ -52733,7 +53571,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein"
+    ]
   },
   {
     "id": "02d176de-fb82-58f5-a22a-076dd715c5f8",
@@ -52762,7 +53607,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "comfort",
       "soul-food"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "quick",
+      "sweet"
+    ],
     "lateNight": false,
     "lowEffort": false,
     "sickDay": false,
@@ -52948,7 +53798,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Regional Sweets"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ]
   },
   {
     "id": "5680a04f-284b-5bc1-a0b4-27b967733aa7",
@@ -53133,7 +53986,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
-    }
+    },
+    "mealTags": [
+      "breakfast",
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "rainy",
+      "sweet"
+    ]
   },
   {
     "id": "406addc8-f956-5091-bb76-f88d63d0cb2b",
@@ -53161,7 +54024,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "comfort",
       "snack"
     ],
-    "moodTags": [],
+    "moodTags": [
+      "comfort",
+      "quick",
+      "sweet"
+    ],
     "lateNight": false,
     "lowEffort": false,
     "sickDay": false,
@@ -53344,7 +54211,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ]
   },
   {
     "id": "729cf0cf-cd44-5d3f-ae47-b8fd38734d83",
@@ -54216,7 +55086,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ]
   },
   {
     "id": "e46be684-8ade-50ea-a4a7-84786329bf93",
@@ -54878,7 +55751,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ]
   },
   {
     "id": "pantry-tomato-uttapam",
@@ -55075,7 +55955,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "quick"
+    ]
   },
   {
     "id": "8a029051-cabb-5dcb-a1fb-7cb3752ac18e",
@@ -55758,7 +56644,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Mains"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ]
   },
   {
     "id": "tomo-veg-manchurian",
@@ -56272,7 +57165,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "North & West India"
-    }
+    },
+    "mealTags": [
+      "lunch"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick"
+    ]
   },
   {
     "id": "392e3ec0-23e5-5e10-b967-0a2088887a90",
@@ -56471,7 +57371,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
-    }
+    },
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "quick"
+    ]
   },
   {
     "id": "49fd478b-d305-5a27-9306-f7e99bfdae05",
@@ -56631,7 +57537,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
-    }
+    },
+    "mealTags": [
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort"
+    ]
   },
   {
     "id": "389bdc96-0ee6-5f76-8a42-1332b896f1dd",
@@ -57290,7 +58202,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Daily Comforts"
-    }
+    },
+    "mealTags": [
+      "breakfast"
+    ],
+    "moodTags": [
+      "quick"
+    ]
   },
   {
     "id": "f585fad9-5097-5321-a201-43269b7c4336",
@@ -60060,6 +60978,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "South Indian"
+      ]
     }
   },
   {
@@ -60274,6 +61201,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -60487,6 +61423,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "South Indian"
+      ]
     }
   },
   {
@@ -60701,6 +61646,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "South Indian"
+      ]
     }
   },
   {
@@ -60892,6 +61846,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "South Indian"
+      ]
     }
   },
   {
@@ -61087,6 +62050,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -61301,6 +62273,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -61515,6 +62496,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -61735,6 +62725,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -61947,6 +62946,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "North Indian"
+      ]
     }
   },
   {
@@ -62164,6 +63172,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -62378,6 +63395,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -62594,6 +63620,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Cafe Indian"
+      ]
     }
   },
   {
@@ -62802,6 +63837,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -63012,6 +64056,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -63228,6 +64281,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Lunch Box & Tiffin"
+    },
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Gujarati"
+      ]
     }
   },
   {
@@ -63417,6 +64479,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -63626,6 +64697,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -63825,6 +64905,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -64024,6 +65113,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -64213,6 +65311,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -64413,6 +65520,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -64623,6 +65739,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -64823,6 +65948,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -65023,6 +66157,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -65233,6 +66376,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -65443,6 +66595,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -65633,6 +66794,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -65820,6 +66990,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -66020,6 +67199,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -66207,6 +67395,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -66407,6 +67604,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -66607,6 +67813,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -66784,6 +67999,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -66963,6 +68187,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -67162,6 +68395,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -67341,6 +68583,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -67540,6 +68791,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -67739,6 +68999,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -67938,6 +69207,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -68137,6 +69415,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -68336,6 +69623,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Seasonal Specials",
       "collection": "Summer Cooling"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -68557,6 +69853,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Soups"
+    },
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Indo-Chinese"
+      ],
+      "cuisine": [
+        "Indo-Chinese"
+      ]
     }
   },
   {
@@ -68778,6 +70085,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -69000,6 +70316,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Soups"
+    },
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Indo-Chinese"
+      ],
+      "cuisine": [
+        "Indo-Chinese"
+      ]
     }
   },
   {
@@ -69221,6 +70548,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -69442,6 +70778,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Soups"
+    },
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Indo-Chinese"
+      ],
+      "cuisine": [
+        "Indo-Chinese"
+      ]
     }
   },
   {
@@ -69663,6 +71010,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -69884,6 +71240,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Soups"
+    },
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Indian Chinese"
+      ],
+      "cuisine": [
+        "Indian Chinese"
+      ]
     }
   },
   {
@@ -70105,6 +71472,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "South Indian"
+      ]
     }
   },
   {
@@ -70325,6 +71701,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -70546,6 +71931,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -70767,6 +72161,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -70987,6 +72390,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -71208,6 +72620,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -71428,6 +72849,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -71649,6 +73079,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -71870,6 +73309,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -72091,6 +73539,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -72577,6 +74034,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu"
+      ]
     }
   },
   {
@@ -72800,6 +74268,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu"
+      ]
     }
   },
   {
@@ -73023,6 +74502,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
     }
   },
   {
@@ -73244,6 +74734,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Global Bites",
       "collection": "Global Soups"
+    },
+    "regionTags": {
+      "region": [
+        "Global"
+      ],
+      "subRegion": [
+        "Indian Chinese"
+      ],
+      "cuisine": [
+        "Indian Chinese"
+      ]
     }
   },
   {
@@ -73465,6 +74966,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -73686,6 +75196,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -74159,6 +75678,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -74380,6 +75908,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Healthy Living",
       "collection": "Warm & Light Bowls"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -74601,6 +76138,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -74822,6 +76368,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -75044,6 +76599,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -75265,6 +76829,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -75486,6 +77059,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -75707,6 +77289,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -75928,6 +77519,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -76149,6 +77749,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -76370,6 +77979,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -76591,6 +78209,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -76812,6 +78439,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -77033,6 +78669,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -77254,6 +78899,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -77475,6 +79129,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -77696,6 +79359,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -77917,6 +79589,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -78138,6 +79819,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -78359,6 +80049,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -78580,6 +80279,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -78801,6 +80509,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -79022,6 +80739,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -79243,6 +80969,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -79464,6 +81199,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -79685,6 +81429,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -79906,6 +81659,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -80127,6 +81889,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -80348,6 +82119,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Kitchen Essentials",
       "collection": "Sides, Salads & Add-ons"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -80547,6 +82327,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -80746,6 +82535,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -80922,6 +82720,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -81098,6 +82905,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -81274,6 +83090,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -81450,6 +83275,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -81649,6 +83483,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -81825,6 +83668,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -82001,6 +83853,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -82177,6 +84038,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -82363,6 +84233,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -82562,6 +84441,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -82751,6 +84639,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -82970,6 +84867,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -83169,6 +85075,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -83370,6 +85285,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -83556,6 +85480,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -83767,6 +85700,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -83978,6 +85920,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -84187,6 +86138,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -84398,6 +86358,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -84609,6 +86578,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Family Favorites",
       "collection": "Tiny Tummy Favorites"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -84809,6 +86787,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
     }
   },
   {
@@ -85009,6 +86998,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -85209,6 +87207,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "South Indian"
+      ]
     }
   },
   {
@@ -85867,6 +87874,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "North Indian"
+      ]
     }
   },
   {
@@ -86057,6 +88073,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -86247,6 +88272,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -86437,6 +88471,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "North Indian"
+      ]
     }
   },
   {
@@ -86623,6 +88666,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -86819,6 +88871,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -87009,6 +89070,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian Fusion"
+      ]
     }
   },
   {
@@ -87205,6 +89275,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Everyday Desserts"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "North Indian"
+      ]
     }
   },
   {
@@ -87598,6 +89677,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
     }
   },
   {
@@ -87784,6 +89874,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "North Indian"
+      ]
     }
   },
   {
@@ -87974,6 +90073,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "North Indian"
+      ]
     }
   },
   {
@@ -88160,6 +90268,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -88334,6 +90451,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
     }
   },
   {
@@ -88520,6 +90648,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "North Indian"
+      ]
     }
   },
   {
@@ -88716,6 +90853,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "North Indian"
+      ]
     }
   },
   {
@@ -88912,6 +91058,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "North Indian"
+      ]
     }
   },
   {
@@ -89108,6 +91263,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Rajasthani"
+      ]
     }
   },
   {
@@ -89308,6 +91472,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
     }
   },
   {
@@ -89750,6 +91925,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -89946,6 +92130,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -90385,6 +92578,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
     }
   },
   {
@@ -90581,6 +92785,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
     }
   },
   {
@@ -90767,6 +92982,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
     }
   },
   {
@@ -90957,6 +93183,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
     }
   },
   {
@@ -91147,6 +93384,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
     }
   },
   {
@@ -91871,6 +94119,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
     }
   },
   {
@@ -92067,6 +94326,18 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Andhra"
+      ]
     }
   },
   {
@@ -92268,6 +94539,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "South Indian"
+      ]
     }
   },
   {
@@ -93436,6 +95716,18 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Hyderabadi"
+      ]
     }
   },
   {
@@ -93647,6 +95939,18 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Hyderabadi"
+      ]
     }
   },
   {
@@ -93858,6 +96162,18 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Andhra",
+        "Telangana"
+      ],
+      "cuisine": [
+        "Hyderabadi"
+      ]
     }
   },
   {
@@ -94058,6 +96374,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "Pan-Indian"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Indian"
+      ]
     }
   },
   {
@@ -94255,6 +96580,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "North India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Mughlai"
+      ]
     }
   },
   {
@@ -94445,6 +96779,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Karnataka"
+      ],
+      "cuisine": [
+        "Karnataka"
+      ]
     }
   },
   {
@@ -94876,6 +97221,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Goan"
+      ]
     }
   },
   {
@@ -95062,6 +97416,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Goan"
+      ]
     }
   },
   {
@@ -95434,6 +97797,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [],
+      "cuisine": [
+        "Goan"
+      ]
     }
   },
   {
