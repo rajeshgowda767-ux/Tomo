@@ -1726,8 +1726,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     },
     "aliases": [],
     "hardExcludeMoods": [],
@@ -4819,8 +4819,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     },
     "aliases": [],
     "image_url": "/assets/images/dishes/batch4-begun-bhaja.png",
@@ -15072,8 +15072,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "non_vegetarian"
     ],
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "aliases": [],
     "image_url": "/assets/images/dishes/batch4-chingri-malai-curry.png",
@@ -18231,8 +18231,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "aliases": [],
     "image_url": "/assets/images/dishes/batch4-dhokar-dalna.png",
@@ -28517,24 +28517,28 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "id": "1be069ab-c75e-5324-a07b-2b452d09f144",
     "sourceId": "kolhapuri-chicken",
     "title": "Kolhapuri Chicken",
-    "description": "Kolhapuri Chicken is a home-style midday idea made with chicken, kolhapuri masala, onion, and dry coconut. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 50,
+    "description": "Kolhapuri Chicken is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
     "servings": 2,
     "cuisine": "Maharashtrian",
     "dietType": "non-vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
-      "maharashtrian",
-      "high-protein",
-      "comfort"
+      "dinner",
+      "spicy",
+      "protein",
+      "comfort",
+      "non-vegetarian",
+      "maharashtra",
+      "regional-journey"
     ],
     "lateNight": false,
     "lowEffort": false,
-    "sickDay": false,
+    "sickDay": true,
     "budgetFriendly": false,
     "summerCooling": false,
     "lightMeal": false,
@@ -28542,19 +28546,19 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 8,
+    "effortScore": 5,
     "comfortScore": 8,
-    "energyScore": 6,
+    "energyScore": 7,
     "emotionalState": "comfort_craving",
     "soulFoodScore": 7,
     "rainyDayScore": 4,
-    "proteinScore": 8,
-    "nostalgiaScore": 3,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
     "stomachFeel": "medium",
     "bestTime": "dinner",
     "bestDay": "weekend",
     "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
+    "homeStyleScore": 8,
     "instructions": [
       "Prep chicken, kolhapuri masala, onion, and dry coconut so everything is ready before the pan gets hot.",
       "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
@@ -28563,90 +28567,111 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "ingredients": [
       {
-        "name": "Chicken",
+        "name": "chicken",
         "quantity": 1,
-        "unit": "g",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "Kolhapuri Masala",
+        "name": "kolhapuri masala",
         "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "Dry Coconut",
+        "name": "onion",
         "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Dry Coconut",
-    "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Dry Coconut",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Kolhapuri Masala",
-    "secondaryIngredient2": "Kolhapuri Masala",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "primary_ingredient_1": "chicken",
+    "primary_ingredient_2": "kolhapuri masala",
+    "primaryIngredient1": "chicken",
+    "primaryIngredient2": "kolhapuri masala",
+    "secondary_ingredient_1": "coconut",
+    "secondaryIngredient1": "coconut",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "ginger",
+    "secondaryIngredient3": "ginger",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food",
+    "primaryMood": "Spicy",
+    "secondaryMood": "Protein",
     "isRealDish": true,
     "name": "Kolhapuri Chicken",
     "baseIngredient": "chicken",
     "base_ingredient": "chicken",
     "coreIngredients": [
       "chicken",
-      "dry coconut"
+      "kolhapuri masala",
+      "onion"
     ],
     "core_ingredients": [
       "chicken",
-      "dry coconut"
+      "kolhapuri masala",
+      "onion"
     ],
     "requiredIngredients": [
       "chicken",
-      "dry coconut"
+      "kolhapuri masala",
+      "onion"
     ],
     "required_ingredients": [
       "chicken",
-      "dry coconut"
+      "kolhapuri masala",
+      "onion"
     ],
     "optionalIngredients": [
-      "kolhapuri masala",
-      "onion",
-      "tomato",
+      "coconut",
       "garlic",
       "ginger",
       "oil"
     ],
     "optional_ingredients": [
-      "kolhapuri masala",
-      "onion",
-      "tomato",
+      "coconut",
       "garlic",
       "ginger",
       "oil"
     ],
-    "dishFamily": "chicken-curry",
-    "dish_family": "chicken-curry",
+    "dishFamily": "chicken curry",
+    "dish_family": "chicken curry",
     "incompatibleWith": [],
     "incompatible_with": [],
     "regionTags": {
@@ -28654,7 +28679,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "West India"
       ],
       "subRegion": [
-        "Kolhapur / Maharashtra"
+        "Maharashtra"
       ],
       "cuisine": [
         "Maharashtrian"
@@ -28662,98 +28687,115 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "pairings": {
       "sides": [
-        "Onion lemon salad"
+        "Bhakri",
+        "Rice"
       ],
-      "drinks": [
-        "Sol kadhi"
-      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
       "rice": [
-        "Steamed rice"
+        "Rice"
       ],
       "roti": [
-        "Bhakri",
-        "Chapati"
-      ]
+        "Bhakri"
+      ],
+      "toppings": []
     },
     "quickGuide": {
       "serves": 2,
       "prepTime": "15 min",
-      "cookTime": "30 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "250 g chicken",
-        "1 onion chopped",
-        "1 tomato chopped",
-        "2 tbsp coconut",
-        "1 tsp sesame seeds",
-        "1 tsp chilli powder",
-        "1 tsp ginger garlic paste",
-        "1 tbsp oil"
+        "chicken",
+        "kolhapuri masala",
+        "onion",
+        "coconut",
+        "garlic",
+        "ginger",
+        "oil"
       ],
       "steps": [
-        "Roast coconut and sesame, then grind with spices.",
-        "Saute onion and ginger garlic paste.",
-        "Add tomato and cook down.",
-        "Add chicken and the ground masala.",
-        "Simmer until thick and spicy."
+        "Prep chicken and kolhapuri masala before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the chicken curry tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Kolhapuri Chicken warm with its classic pairings."
       ],
-      "tip": "Roast the masala until aromatic, not dark.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
         "Bhakri",
-        "Steamed rice"
+        "Rice"
       ]
     },
     "dietaryTags": [
-      "non_vegetarian"
+      "non-vegetarian"
     ],
     "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Maharashtra"
-    }
+    },
+    "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "comfort"
+    ],
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
   },
   {
     "id": "9bbe29b8-fca3-530d-bc82-5f7680b4cb74",
     "sourceId": "kolhapuri-misal-pav",
-    "title": "Kolhapuri Misal Pav",
-    "description": "Kolhapuri Misal Pav is a home-style snack-time idea made with matki, misal masala, onion, and pav. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 35,
+    "title": "Misal Pav",
+    "description": "Misal Pav is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
     "servings": 2,
     "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
     "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-kolhapuri-misal-pav.png",
-    "recipeRole": "snack",
+    "recipeRole": "main",
     "tags": [
+      "breakfast",
+      "lunch",
       "snack",
-      "maharashtrian",
-      "late-night-food",
-      "spicy-food",
-      "comfort"
+      "spicy",
+      "comfort",
+      "rainy",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
     ],
-    "lateNight": true,
+    "lateNight": false,
     "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
+    "sickDay": true,
+    "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
     "onePot": false,
     "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 8,
+    "effortScore": 5,
     "comfortScore": 8,
     "energyScore": 5,
     "emotionalState": "comfort_craving",
     "soulFoodScore": 7,
-    "rainyDayScore": 4,
-    "proteinScore": 6,
-    "nostalgiaScore": 3,
+    "rainyDayScore": 8,
+    "proteinScore": 3,
+    "nostalgiaScore": 6,
     "stomachFeel": "medium",
     "bestTime": "dinner",
     "bestDay": "weekend",
     "tomoLine": "🍅 Something comforting sounds right today.",
-    "homeStyleScore": 5,
+    "homeStyleScore": 8,
     "instructions": [
       "Prep matki, misal masala, onion, and pav so everything is ready before the pan gets hot.",
       "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
@@ -28762,88 +28804,111 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "ingredients": [
       {
-        "name": "Matki",
+        "name": "matki sprouts",
         "quantity": 1,
-        "unit": "g",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "Misal Masala",
+        "name": "pav",
         "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "supporting",
-        "isMain": true
-      },
-      {
-        "name": "Pav",
-        "quantity": 1,
-        "unit": "g",
+        "unit": "cup",
         "role": "required",
         "isMain": true
+      },
+      {
+        "name": "misal masala",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "farsan",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Matki",
-    "primary_ingredient_2": "Pav",
-    "primaryIngredient1": "Matki",
-    "primaryIngredient2": "Pav",
-    "secondary_ingredient_1": "Onion",
-    "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Misal Masala",
-    "secondaryIngredient2": "Misal Masala",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "primary_ingredient_1": "matki sprouts",
+    "primary_ingredient_2": "pav",
+    "primaryIngredient1": "matki sprouts",
+    "primaryIngredient2": "pav",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "lemon",
+    "secondaryIngredient2": "lemon",
+    "secondary_ingredient_3": "farsan",
+    "secondaryIngredient3": "farsan",
+    "secondary_ingredient_4": "coriander",
+    "secondaryIngredient4": "coriander",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
-    "primaryMood": "Spicy Food",
-    "secondaryMood": "Comfort Food",
+    "primaryMood": "Spicy",
+    "secondaryMood": "Comfort",
     "isRealDish": true,
-    "name": "Kolhapuri Misal Pav",
-    "baseIngredient": "matki",
-    "base_ingredient": "matki",
+    "name": "Misal Pav",
+    "baseIngredient": "matki sprouts",
+    "base_ingredient": "matki sprouts",
     "coreIngredients": [
-      "matki",
-      "pav"
+      "matki sprouts",
+      "pav",
+      "misal masala"
     ],
     "core_ingredients": [
-      "matki",
-      "pav"
+      "matki sprouts",
+      "pav",
+      "misal masala"
     ],
     "requiredIngredients": [
-      "matki",
-      "pav"
+      "matki sprouts",
+      "pav",
+      "misal masala"
     ],
     "required_ingredients": [
-      "matki",
-      "pav"
+      "matki sprouts",
+      "pav",
+      "misal masala"
     ],
     "optionalIngredients": [
-      "misal masala",
       "onion",
-      "oil",
-      "salt",
-      "spices"
+      "lemon",
+      "farsan",
+      "coriander"
     ],
     "optional_ingredients": [
-      "misal masala",
       "onion",
-      "oil",
-      "salt",
-      "spices"
+      "lemon",
+      "farsan",
+      "coriander"
     ],
-    "dishFamily": "matki",
-    "dish_family": "matki",
+    "dishFamily": "misal",
+    "dish_family": "misal",
     "incompatibleWith": [],
     "incompatible_with": [],
     "regionTags": {
@@ -28851,7 +28916,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "West India"
       ],
       "subRegion": [
-        "Kolhapur / Maharashtra"
+        "Maharashtra"
       ],
       "cuisine": [
         "Maharashtrian"
@@ -28861,46 +28926,70 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "pairings": {
-      "sides": [],
-      "chutneys": [
-        "Coriander chutney",
-        "Tamarind chutney"
+      "sides": [
+        "Pav",
+        "Onion",
+        "Lemon"
       ],
+      "chutneys": [],
       "pickles": [],
-      "drinks": [
-        "Masala chai"
-      ],
+      "drinks": [],
       "rice": [],
-      "roti": [],
-      "toppings": []
+      "roti": [
+        "Pav"
+      ],
+      "toppings": [
+        "Onion",
+        "Lemon"
+      ]
     },
     "quickGuide": {
       "serves": 2,
-      "prepTime": "10 min",
-      "cookTime": "35 min",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "1 cup cooked Matki",
-        "Misal Masala",
-        "1 Onion",
-        "Pav"
+        "matki sprouts",
+        "pav",
+        "misal masala",
+        "onion",
+        "lemon",
+        "farsan",
+        "coriander"
       ],
       "steps": [
-        "Warm the sprout curry or usal until it is hot and saucy.",
-        "Add Kolhapuri masala or chilli oil for heat.",
-        "Spoon into a bowl and top with farsan, onion, and coriander.",
-        "Serve immediately with pav and lemon."
+        "Prep matki sprouts and pav before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the misal tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Misal Pav warm with its classic pairings."
       ],
-      "tip": "Add farsan at the end so it stays crunchy over the spicy usal.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
-        "Coriander chutney",
-        "Tamarind chutney",
-        "Masala chai"
+        "Pav",
+        "Onion",
+        "Lemon"
       ]
     },
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Maharashtra"
-    }
+    },
+    "image": "/assets/images/dishes/batch4-kolhapuri-misal-pav.png",
+    "mealTags": [
+      "breakfast",
+      "lunch",
+      "snack"
+    ],
+    "moodTags": [
+      "spicy",
+      "comfort",
+      "rainy"
+    ],
+    "aliases": [
+      "Kolhapuri Misal Pav"
+    ],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
   },
   {
     "id": "c1213e0f-84e5-5d7f-b9f1-da9a1c3c4bbd",
@@ -31033,8 +31122,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "image_url": "/assets/images/dishes/batch4-luchi-aloor-dom.png",
     "hardExcludeMoods": [],
@@ -33886,50 +33975,56 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "sourceId": "expansion-pack-4-matki-usal",
     "title": "Matki Usal",
     "name": "Matki Usal",
-    "description": "A distinct moth bean usal from Maharashtra, protein-rich without repeating misal pav.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 22,
-    "timeMinutes": 32,
+    "description": "Matki Usal is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
     "servings": 2,
     "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-matki-usal.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
-      "vegetarian",
+      "snack",
       "protein",
-      "regional"
+      "comfort",
+      "spicy",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
     ],
     "moodTags": [
       "protein",
-      "comfort"
+      "comfort",
+      "spicy"
     ],
     "mealTags": [
       "lunch",
-      "dinner"
+      "dinner",
+      "snack"
     ],
     "lateNight": false,
     "lowEffort": false,
-    "sickDay": false,
+    "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
     "onePot": true,
-    "minimalCleanup": true,
+    "minimalCleanup": false,
     "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
     "proteinScore": 7,
     "nostalgiaScore": 6,
-    "homeStyleScore": 7,
+    "homeStyleScore": 8,
     "rainyDayScore": 4,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food",
+    "primaryMood": "Protein",
+    "secondaryMood": "Comfort",
     "cookingNotes": "Use cooked or sprouted matki and simmer with mild masala.",
     "instructions": [
       "Saute onion until soft.",
@@ -33940,7 +34035,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "ingredients": [
       {
-        "name": "matki",
+        "name": "matki sprouts",
         "quantity": 1,
         "unit": "cup",
         "role": "required",
@@ -33949,90 +34044,104 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       {
         "name": "onion",
         "quantity": 1,
-        "unit": "small",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      },
-      {
         "name": "goda masala",
-        "quantity": 0.5,
-        "unit": "tsp",
-        "role": "optional",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
         "isMain": false
       },
       {
         "name": "coconut",
-        "quantity": 2,
-        "unit": "tbsp",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Matki",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Matki",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "tomato",
-    "secondaryIngredient1": "tomato",
-    "secondary_ingredient_2": "goda masala",
-    "secondaryIngredient2": "goda masala",
-    "secondary_ingredient_3": "coconut",
-    "secondaryIngredient3": "coconut",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "primary_ingredient_1": "matki sprouts",
+    "primary_ingredient_2": "onion",
+    "primaryIngredient1": "matki sprouts",
+    "primaryIngredient2": "onion",
+    "secondary_ingredient_1": "coconut",
+    "secondaryIngredient1": "coconut",
+    "secondary_ingredient_2": "coriander",
+    "secondaryIngredient2": "coriander",
+    "secondary_ingredient_3": "lemon",
+    "secondaryIngredient3": "lemon",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryIngredients": [
       "matki",
       "onion"
     ],
-    "baseIngredient": "matki",
-    "base_ingredient": "matki",
+    "baseIngredient": "matki sprouts",
+    "base_ingredient": "matki sprouts",
     "coreIngredients": [
-      "matki",
-      "onion"
+      "matki sprouts",
+      "onion",
+      "goda masala"
     ],
     "core_ingredients": [
-      "matki",
-      "onion"
+      "matki sprouts",
+      "onion",
+      "goda masala"
     ],
     "requiredIngredients": [
-      "matki",
-      "onion"
+      "matki sprouts",
+      "onion",
+      "goda masala"
     ],
     "required_ingredients": [
-      "matki",
-      "onion"
+      "matki sprouts",
+      "onion",
+      "goda masala"
     ],
     "optionalIngredients": [
-      "tomato",
-      "goda masala",
       "coconut",
-      "oil",
-      "salt",
-      "spices"
+      "coriander",
+      "lemon",
+      "oil"
     ],
     "optional_ingredients": [
-      "tomato",
-      "goda masala",
       "coconut",
-      "oil",
-      "salt",
-      "spices"
+      "coriander",
+      "lemon",
+      "oil"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "chaat",
-    "dish_family": "chaat",
+    "dishFamily": "usal",
+    "dish_family": "usal",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -34050,37 +34159,45 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "pairings": {
-      "roti": [
-        "Bhakri",
-        "Chapati"
+      "sides": [
+        "Pav",
+        "Rice"
       ],
-      "toppings": [
-        "Coriander"
-      ]
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [
+        "Pav"
+      ],
+      "toppings": []
     },
     "quickGuide": {
       "serves": 2,
-      "prepTime": "10 min",
-      "cookTime": "22 min",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "1 cup cooked matki",
-        "1 onion",
-        "1 tomato",
-        "1/2 tsp goda masala",
-        "2 tbsp coconut",
-        "Salt"
+        "matki sprouts",
+        "onion",
+        "goda masala",
+        "coconut",
+        "coriander",
+        "lemon",
+        "oil"
       ],
       "steps": [
-        "Saute onion until soft.",
-        "Add tomato and masala.",
-        "Add matki and water.",
-        "Simmer until thick.",
-        "Finish with coconut."
+        "Prep matki sprouts and onion before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the usal tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Matki Usal warm with its classic pairings."
       ],
-      "tip": "Sprouted matki gives the best usal texture.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
-        "Bhakri",
-        "Chapati"
+        "Pav",
+        "Rice"
       ]
     },
     "dietaryTags": [
@@ -34089,7 +34206,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Maharashtra"
-    }
+    },
+    "image": "/assets/images/dishes/batch4-matki-usal.png",
+    "aliases": [],
+    "pantrySuitability": "medium"
   },
   {
     "id": "3ec47ac3-378d-5021-8dcd-4bd29a4c0d23",
@@ -35560,26 +35680,29 @@ window.COOKBUDDY_LOCAL_RECIPES = [
   {
     "id": "7157654a-9e2f-5004-87aa-7f0d0f8a2ad3",
     "sourceId": "modak-festival",
-    "title": "Modak",
-    "description": "Steamed rice flour modaks filled with coconut, jaggery and cardamom for Ganesh Chaturthi.",
-    "prepTimeMinutes": 35,
-    "cookTimeMinutes": 20,
-    "servings": 10,
+    "title": "Ukadiche Modak",
+    "description": "Ukadiche Modak is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
     "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-modak.png",
     "recipeRole": "dessert",
     "tags": [
-      "festival-food",
-      "collection-detail",
-      "festival-sweets",
+      "dessert",
+      "snack",
+      "festive",
+      "soul",
+      "comfort",
       "vegetarian",
-      "dessert"
+      "maharashtra",
+      "regional-journey"
     ],
     "lateNight": false,
     "lowEffort": false,
-    "sickDay": false,
+    "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
@@ -35587,7 +35710,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 3,
+    "effortScore": 7,
     "comfortScore": 8,
     "energyScore": 5,
     "instructions": [
@@ -35606,7 +35729,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "isMain": true
       },
       {
-        "name": "grated coconut",
+        "name": "coconut",
         "quantity": 1,
         "unit": "cup",
         "role": "required",
@@ -35614,29 +35737,29 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       },
       {
         "name": "jaggery",
-        "quantity": 0.75,
-        "unit": "cup",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "required",
-        "isMain": true
+        "isMain": false
       },
       {
-        "name": "cardamom powder",
-        "quantity": 0.5,
-        "unit": "tsp",
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "ghee",
         "quantity": 1,
-        "unit": "tsp",
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "salt",
         "quantity": 1,
-        "unit": "pinch",
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       }
@@ -35644,61 +35767,61 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "recipe_type": "core",
     "recipeType": "core",
     "primary_ingredient_1": "rice flour",
-    "primary_ingredient_2": "grated coconut",
+    "primary_ingredient_2": "coconut",
     "primaryIngredient1": "rice flour",
-    "primaryIngredient2": "grated coconut",
-    "secondary_ingredient_1": "Ghee",
-    "secondaryIngredient1": "Ghee",
-    "secondary_ingredient_2": "Jaggery Or Sugar",
-    "secondaryIngredient2": "Jaggery Or Sugar",
-    "secondary_ingredient_3": "Cardamom",
-    "secondaryIngredient3": "Cardamom",
-    "secondary_ingredient_4": "",
-    "secondaryIngredient4": "",
-    "secondary_ingredient_5": "",
-    "secondaryIngredient5": "",
-    "proteinScore": 2,
+    "primaryIngredient2": "coconut",
+    "secondary_ingredient_1": "cardamom",
+    "secondaryIngredient1": "cardamom",
+    "secondary_ingredient_2": "ghee",
+    "secondaryIngredient2": "ghee",
+    "secondary_ingredient_3": "salt",
+    "secondaryIngredient3": "salt",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "proteinScore": 3,
     "nostalgiaScore": 8,
     "homeStyleScore": 8,
     "rainyDayScore": 4,
-    "primaryMood": "Festival Food",
-    "secondaryMood": "Comfort Food",
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul",
     "isRealDish": true,
-    "name": "Modak",
-    "baseIngredient": "modak",
-    "base_ingredient": "modak",
+    "name": "Ukadiche Modak",
+    "baseIngredient": "rice flour",
+    "base_ingredient": "rice flour",
     "coreIngredients": [
       "rice flour",
-      "grated coconut",
+      "coconut",
       "jaggery"
     ],
     "core_ingredients": [
       "rice flour",
-      "grated coconut",
+      "coconut",
       "jaggery"
     ],
     "requiredIngredients": [
-      "1 cup rice flour",
-      "1 cup grated coconut",
-      "0.75 cup jaggery",
-      "0.5 tsp cardamom powder"
+      "rice flour",
+      "coconut",
+      "jaggery"
     ],
     "required_ingredients": [
-      "1 cup rice flour",
-      "1 cup grated coconut",
-      "0.75 cup jaggery",
-      "0.5 tsp cardamom powder"
+      "rice flour",
+      "coconut",
+      "jaggery"
     ],
     "optionalIngredients": [
-      "1 tsp ghee",
-      "1 pinch salt"
+      "cardamom",
+      "ghee",
+      "salt"
     ],
     "optional_ingredients": [
-      "1 tsp ghee",
-      "1 pinch salt"
+      "cardamom",
+      "ghee",
+      "salt"
     ],
     "dishFamily": "modak",
-    "dish_family": "rice flour",
+    "dish_family": "modak",
     "incompatibleWith": [],
     "incompatible_with": [],
     "regionTags": {
@@ -35717,48 +35840,49 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "pairings": {
       "sides": [
-        "Fresh fruit"
+        "Ghee"
       ],
       "chutneys": [],
       "pickles": [],
-      "drinks": [
-        "Masala chai"
-      ],
+      "drinks": [],
       "rice": [],
       "roti": [],
-      "toppings": []
-    },
-    "quickGuide": {
-      "serves": "10 servings",
-      "prepTime": "35 min prep",
-      "cookTime": "20 min cook",
-      "ingredients": [
-        "1 cup rice flour",
-        "1 cup grated coconut",
-        "0.75 cup jaggery",
-        "0.5 tsp cardamom powder",
-        "1 tsp ghee",
-        "1 pinch salt"
-      ],
-      "steps": [
-        "Cook coconut and jaggery together until the filling thickens and turns glossy.",
-        "Add cardamom and let the filling cool.",
-        "Make a soft rice flour dough with hot water, salt and a little ghee.",
-        "Shape small dough cups, add the filling and pleat the edges.",
-        "Steam until the modaks turn glossy and serve warm with ghee."
-      ],
-      "tip": "Keep the rice dough covered while shaping so the modaks do not crack. Best fresh; refrigerate one day and steam before serving.",
-      "bestWith": [
-        "Ghee",
-        "Panchamrit"
+      "toppings": [
+        "Ghee"
       ]
     },
-    "aliases": [],
-    "timeMinutes": 55,
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "rice flour",
+        "coconut",
+        "jaggery",
+        "cardamom",
+        "ghee",
+        "salt"
+      ],
+      "steps": [
+        "Prep rice flour and coconut before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the modak tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Ukadiche Modak warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Ghee"
+      ]
+    },
+    "aliases": [
+      "Modak"
+    ],
+    "timeMinutes": 40,
     "moodTags": [
       "festive",
-      "comfort",
-      "traditional"
+      "soul",
+      "comfort"
     ],
     "mealTags": [
       "dessert",
@@ -35784,9 +35908,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "image": "/assets/images/dishes/batch4-modak.png",
+    "pantrySuitability": "medium"
   },
   {
     "id": "bd5c342a-6ad3-51c3-a11e-26954541829f",
@@ -45940,34 +46066,39 @@ window.COOKBUDDY_LOCAL_RECIPES = [
   {
     "id": "bc627d5d-b17d-5625-bb55-77ee49ba8b6c",
     "sourceId": "poha-breakfast",
-    "title": "Poha",
-    "description": "Poha is a home-style morning idea made with poha and peanut. It comes together quickly, so it works well when you want real food without a long cooking session. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
+    "title": "Kanda Poha",
+    "description": "Kanda Poha is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
     "servings": 2,
     "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/poha.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
+      "snack",
+      "quick",
+      "comfort",
+      "soul",
       "vegetarian",
-      "soul-food"
+      "maharashtra",
+      "regional-journey"
     ],
-    "lateNight": true,
+    "lateNight": false,
     "lowEffort": true,
-    "sickDay": false,
+    "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": false,
-    "lightMeal": true,
+    "lightMeal": false,
     "onePot": false,
-    "minimalCleanup": true,
+    "minimalCleanup": false,
     "studySnack": false,
-    "weekendSpecial": false,
+    "weekendSpecial": true,
     "effortScore": 5,
-    "comfortScore": 5,
-    "energyScore": 3,
+    "comfortScore": 8,
+    "energyScore": 7,
     "instructions": [
       "Prep poha and peanut so everything is ready before the pan gets hot.",
       "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
@@ -45978,80 +46109,110 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       {
         "name": "poha",
         "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "peanut",
-        "quantity": 1,
-        "unit": "g",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "onion",
-        "quantity": 0.5,
-        "unit": "pcs",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanuts",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Poha",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Poha",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "Peanut",
-    "secondaryIngredient1": "Peanut",
-    "secondary_ingredient_2": "Curry Leaves",
-    "secondaryIngredient2": "Curry Leaves",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "primary_ingredient_1": "poha",
+    "primary_ingredient_2": "onion",
+    "primaryIngredient1": "poha",
+    "primaryIngredient2": "onion",
+    "secondary_ingredient_1": "mustard seeds",
+    "secondaryIngredient1": "mustard seeds",
+    "secondary_ingredient_2": "curry leaves",
+    "secondaryIngredient2": "curry leaves",
+    "secondary_ingredient_3": "green chilli",
+    "secondaryIngredient3": "green chilli",
+    "secondary_ingredient_4": "lemon",
+    "secondaryIngredient4": "lemon",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
-    "rainyDayScore": 3,
-    "primaryMood": "Soul Food",
-    "secondaryMood": "",
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick",
+    "secondaryMood": "Comfort",
     "isRealDish": true,
-    "name": "Poha",
+    "name": "Kanda Poha",
     "baseIngredient": "poha",
     "base_ingredient": "poha",
     "coreIngredients": [
       "poha",
-      "onion"
+      "onion",
+      "peanuts"
     ],
     "core_ingredients": [
       "poha",
-      "onion"
+      "onion",
+      "peanuts"
     ],
     "requiredIngredients": [
       "poha",
-      "onion"
+      "onion",
+      "peanuts"
     ],
     "required_ingredients": [
       "poha",
-      "onion"
+      "onion",
+      "peanuts"
     ],
     "optionalIngredients": [
-      "peanuts",
       "mustard seeds",
       "curry leaves",
       "green chilli",
-      "oil"
+      "lemon"
     ],
     "optional_ingredients": [
-      "peanuts",
       "mustard seeds",
       "curry leaves",
       "green chilli",
-      "oil"
+      "lemon"
     ],
     "dishFamily": "poha",
     "dish_family": "poha",
@@ -46062,7 +46223,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "West India"
       ],
       "subRegion": [
-        "Maharashtra / Madhya Pradesh"
+        "Maharashtra"
       ],
       "cuisine": [
         "Maharashtrian"
@@ -46070,42 +46231,39 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "quickGuide": {
       "serves": 2,
-      "prepTime": "8 min",
-      "cookTime": "10 min",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "2 cups poha",
-        "1 onion",
-        "2 tbsp peanuts",
-        "1 tsp mustard seeds",
-        "Curry leaves",
-        "1/2 tsp turmeric",
-        "1 tbsp oil",
-        "Salt"
+        "poha",
+        "onion",
+        "peanuts",
+        "mustard seeds",
+        "curry leaves",
+        "green chilli",
+        "lemon"
       ],
       "steps": [
-        "Rinse poha and drain well.",
-        "Temper mustard seeds, curry leaves and peanuts in oil.",
-        "Add onion, turmeric and salt.",
-        "Fold in poha gently.",
-        "Cover for two minutes and serve."
+        "Prep poha and onion before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the poha tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Kanda Poha warm with its classic pairings."
       ],
-      "tip": "Do not soak poha; a quick rinse is enough.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
-        "Lemon",
-        "Sev"
+        "Masala Chai"
       ]
     },
     "pairings": {
-      "sides": [
-        "Lemon wedges"
-      ],
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
       "drinks": [
-        "Masala chai"
+        "Masala Chai"
       ],
-      "toppings": [
-        "Sev",
-        "Roasted peanuts"
-      ]
+      "rice": [],
+      "roti": [],
+      "toppings": []
     },
     "dietaryTags": [
       "vegetarian"
@@ -46113,7 +46271,22 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Maharashtra"
-    }
+    },
+    "image": "/assets/images/dishes/poha.png",
+    "mealTags": [
+      "breakfast",
+      "snack"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort",
+      "soul"
+    ],
+    "aliases": [
+      "Poha"
+    ],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
   },
   {
     "id": "09545ae4-464d-59fb-ba43-ce8f08242e9e",
@@ -48838,36 +49011,39 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "id": "e2ffa180-4fa7-5da9-b1e0-2d0fc89240a2",
     "sourceId": "sabudana-khichdi-festival",
     "title": "Sabudana Khichdi",
-    "description": "Sabudana Khichdi is a home-style dinner idea made with rice and moong dal. It has the soft, familiar comfort of food you would happily eat at home on a slower day. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
+    "description": "Sabudana Khichdi is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
     "servings": 2,
     "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/khichdi.png",
     "recipeRole": "main",
     "tags": [
-      "festival",
-      "vegetarian",
-      "one-pot",
-      "rainy-day",
+      "breakfast",
+      "lunch",
+      "snack",
       "comfort",
-      "breakfast"
+      "quick",
+      "festive",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
     ],
-    "lateNight": true,
-    "lowEffort": false,
+    "lateNight": false,
+    "lowEffort": true,
     "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
+    "onePot": false,
+    "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
     "effortScore": 5,
     "comfortScore": 8,
-    "energyScore": 6,
+    "energyScore": 7,
     "instructions": [
       "Prep rice and moong dal so everything is ready before the pan gets hot.",
       "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
@@ -48876,85 +49052,115 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "ingredients": [
       {
-        "name": "rice",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "moong dal",
-        "quantity": 1,
-        "unit": "g",
-        "role": "required",
-        "isMain": true
-      },
-      {
         "name": "sabudana",
-        "quantity": 0.5,
-        "unit": "g",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanuts",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Sabudana",
-    "primary_ingredient_2": "Peanut",
-    "primaryIngredient1": "Sabudana",
-    "primaryIngredient2": "Peanut",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "rice",
-    "secondaryIngredient2": "rice",
-    "secondary_ingredient_3": "moong dal",
-    "secondaryIngredient3": "moong dal",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "primary_ingredient_1": "sabudana",
+    "primary_ingredient_2": "peanuts",
+    "primaryIngredient1": "sabudana",
+    "primaryIngredient2": "peanuts",
+    "secondary_ingredient_1": "cumin",
+    "secondaryIngredient1": "cumin",
+    "secondary_ingredient_2": "green chilli",
+    "secondaryIngredient2": "green chilli",
+    "secondary_ingredient_3": "ghee",
+    "secondaryIngredient3": "ghee",
+    "secondary_ingredient_4": "lemon",
+    "secondaryIngredient4": "lemon",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 9,
-    "primaryMood": "Rainy Day",
-    "secondaryMood": "Comfort Food",
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort",
+    "secondaryMood": "Quick",
     "isRealDish": true,
     "name": "Sabudana Khichdi",
     "baseIngredient": "sabudana",
     "base_ingredient": "sabudana",
     "coreIngredients": [
       "sabudana",
-      "peanuts"
+      "peanuts",
+      "potato"
     ],
     "core_ingredients": [
       "sabudana",
-      "peanuts"
+      "peanuts",
+      "potato"
     ],
     "requiredIngredients": [
       "sabudana",
-      "peanuts"
+      "peanuts",
+      "potato"
     ],
     "required_ingredients": [
       "sabudana",
-      "peanuts"
+      "peanuts",
+      "potato"
     ],
     "optionalIngredients": [
-      "rice",
-      "moong dal",
-      "oil",
-      "salt",
-      "spices"
+      "cumin",
+      "green chilli",
+      "ghee",
+      "lemon"
     ],
     "optional_ingredients": [
-      "rice",
-      "moong dal",
-      "oil",
-      "salt",
-      "spices"
+      "cumin",
+      "green chilli",
+      "ghee",
+      "lemon"
     ],
-    "dishFamily": "rice dal",
-    "dish_family": "rice dal",
+    "dishFamily": "sabudana",
+    "dish_family": "sabudana",
     "incompatibleWith": [],
     "incompatible_with": [],
     "regionTags": {
@@ -48970,26 +49176,25 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "quickGuide": {
       "serves": 2,
-      "prepTime": "10 min",
-      "cookTime": "12 min",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "1 cup soaked sabudana",
-        "1 potato",
-        "1/4 cup peanuts",
-        "1 green chilli",
-        "1 tsp cumin",
-        "1 tbsp ghee",
-        "Lemon juice",
-        "Salt"
+        "sabudana",
+        "peanuts",
+        "potato",
+        "cumin",
+        "green chilli",
+        "ghee",
+        "lemon"
       ],
       "steps": [
-        "Drain soaked sabudana well.",
-        "Cook potato cubes in ghee until tender.",
-        "Add cumin, chilli and peanuts.",
-        "Add sabudana and salt.",
-        "Toss until pearls turn translucent."
+        "Prep sabudana and peanuts before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the sabudana tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Sabudana Khichdi warm with its classic pairings."
       ],
-      "tip": "Well-drained sabudana prevents stickiness.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
         "Curd"
       ]
@@ -48998,23 +49203,34 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "sides": [
         "Curd"
       ],
-      "chutneys": [
-        "Peanut chutney"
-      ],
-      "drinks": [
-        "Masala chai"
-      ],
-      "toppings": [
-        "Roasted peanuts"
-      ]
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     },
     "dietaryTags": [
       "vegetarian"
     ],
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "image": "/assets/images/dishes/khichdi.png",
+    "mealTags": [
+      "breakfast",
+      "lunch",
+      "snack"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick",
+      "festive"
+    ],
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
   },
   {
     "id": "5b502a16-ead4-5ace-a8d2-953b8654d77e",
@@ -50430,8 +50646,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     },
     "aliases": [],
     "image_url": "/assets/images/dishes/batch4-shukto.png",
@@ -50789,34 +51005,40 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "sourceId": "expansion-pack-3-sol-kadhi",
     "title": "Sol Kadhi",
     "name": "Sol Kadhi",
-    "description": "A cooling coastal kokum and coconut drink-side that balances spicy rice and fish meals.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 0,
-    "timeMinutes": 10,
+    "description": "Sol Kadhi is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
     "servings": 2,
-    "cuisine": "Konkani",
+    "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/drinks/drinks-default.png",
     "recipeRole": "drink",
     "tags": [
+      "drink",
       "lunch",
       "dinner",
-      "drink",
+      "summer",
+      "light",
+      "comfort",
       "vegetarian",
-      "coastal",
-      "cooling"
+      "maharashtra",
+      "regional-journey"
     ],
     "moodTags": [
-      "quick"
+      "summer",
+      "light",
+      "comfort"
     ],
     "mealTags": [
+      "drink",
       "lunch",
       "dinner"
     ],
     "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
+    "lowEffort": false,
+    "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": true,
     "lightMeal": true,
@@ -50824,15 +51046,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "minimalCleanup": true,
     "studySnack": false,
     "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 7,
+    "effortScore": 5,
+    "comfortScore": 8,
     "energyScore": 5,
-    "proteinScore": 4,
-    "nostalgiaScore": 7,
+    "proteinScore": 3,
+    "nostalgiaScore": 6,
     "homeStyleScore": 8,
     "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "",
+    "primaryMood": "Summer",
+    "secondaryMood": "Light",
     "cookingNotes": "Soak kokum and mix with chilled coconut milk.",
     "instructions": [
       "Soak kokum in warm water.",
@@ -50844,8 +51066,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "ingredients": [
       {
         "name": "kokum",
-        "quantity": 6,
-        "unit": "pcs",
+        "quantity": 1,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
@@ -50859,39 +51081,53 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       {
         "name": "garlic",
         "quantity": 1,
-        "unit": "clove",
-        "role": "optional",
+        "unit": "to taste",
+        "role": "required",
         "isMain": false
       },
       {
         "name": "green chilli",
         "quantity": 1,
-        "unit": "pcs",
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "coriander",
         "quantity": 1,
-        "unit": "tbsp",
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Kokum",
-    "primary_ingredient_2": "Coconut Milk",
-    "primaryIngredient1": "Kokum",
-    "primaryIngredient2": "Coconut Milk",
-    "secondary_ingredient_1": "garlic",
-    "secondaryIngredient1": "garlic",
-    "secondary_ingredient_2": "green chilli",
-    "secondaryIngredient2": "green chilli",
-    "secondary_ingredient_3": "coriander",
-    "secondaryIngredient3": "coriander",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "primary_ingredient_1": "kokum",
+    "primary_ingredient_2": "coconut milk",
+    "primaryIngredient1": "kokum",
+    "primaryIngredient2": "coconut milk",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "coriander",
+    "secondaryIngredient2": "coriander",
+    "secondary_ingredient_3": "cumin",
+    "secondaryIngredient3": "cumin",
+    "secondary_ingredient_4": "salt",
+    "secondaryIngredient4": "salt",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryIngredients": [
@@ -50902,40 +51138,40 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "base_ingredient": "kokum",
     "coreIngredients": [
       "kokum",
-      "coconut milk"
+      "coconut milk",
+      "garlic"
     ],
     "core_ingredients": [
       "kokum",
-      "coconut milk"
+      "coconut milk",
+      "garlic"
     ],
     "requiredIngredients": [
       "kokum",
-      "coconut milk"
+      "coconut milk",
+      "garlic"
     ],
     "required_ingredients": [
       "kokum",
-      "coconut milk"
+      "coconut milk",
+      "garlic"
     ],
     "optionalIngredients": [
-      "garlic",
       "green chilli",
       "coriander",
-      "oil",
-      "salt",
-      "spices"
+      "cumin",
+      "salt"
     ],
     "optional_ingredients": [
-      "garlic",
       "green chilli",
       "coriander",
-      "oil",
-      "salt",
-      "spices"
+      "cumin",
+      "salt"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "drink side",
-    "dish_family": "drink side",
+    "dishFamily": "kokum drink",
+    "dish_family": "kokum drink",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -50943,48 +51179,53 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "moodExcludes": [],
     "regionTags": {
       "region": [
-        "Coastal India",
         "West India"
       ],
       "subRegion": [
-        "Konkan",
-        "Goa"
+        "Maharashtra"
       ],
       "cuisine": [
-        "Konkani"
+        "Maharashtrian"
       ]
     },
     "pairings": {
-      "rice": [
-        "Fish curry rice"
-      ],
       "sides": [
-        "Prawn sukka"
-      ]
+        "Rice",
+        "Fish Curry"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [],
+      "toppings": []
     },
     "quickGuide": {
       "serves": 2,
-      "prepTime": "10 min",
-      "cookTime": "0 min",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "6 kokum pieces",
-        "1 cup coconut milk",
-        "1 garlic clove",
-        "1 green chilli",
-        "Coriander",
-        "Salt"
+        "kokum",
+        "coconut milk",
+        "garlic",
+        "green chilli",
+        "coriander",
+        "cumin",
+        "salt"
       ],
       "steps": [
-        "Soak kokum in warm water.",
-        "Crush garlic and chilli.",
-        "Mix kokum water with coconut milk.",
-        "Add salt and coriander.",
-        "Serve chilled."
+        "Prep kokum and coconut milk before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the kokum drink tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Sol Kadhi warm with its classic pairings."
       ],
-      "tip": "Keep it chilled for the cleanest flavor.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
-        "Fish curry rice",
-        "Prawn sukka"
+        "Rice",
+        "Fish Curry"
       ]
     },
     "dietaryTags": [
@@ -50993,7 +51234,10 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Maharashtra"
-    }
+    },
+    "image": "/assets/images/drinks/drinks-default.png",
+    "aliases": [],
+    "pantrySuitability": "medium"
   },
   {
     "id": "31b3225e-4dad-5699-82fa-884a705efd87",
@@ -55323,56 +55567,62 @@ window.COOKBUDDY_LOCAL_RECIPES = [
   {
     "id": "c0e23a23-967d-500c-bdc7-9cde7dd2d6e3",
     "sourceId": "balance-tier-1-varan",
-    "title": "Varan",
-    "name": "Varan",
-    "aliases": [],
-    "description": "A simple Maharashtrian toor dal that adds West Indian home-style lunch depth.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 22,
-    "timeMinutes": 27,
+    "title": "Varan Bhaat",
+    "name": "Varan Bhaat",
+    "aliases": [
+      "Varan"
+    ],
+    "description": "Varan Bhaat is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
     "servings": 2,
     "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/varan.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
-      "vegetarian",
       "comfort",
-      "soul-food"
+      "soul",
+      "light",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
     ],
     "moodTags": [
       "comfort",
-      "soul-food"
+      "soul",
+      "light"
     ],
     "mealTags": [
       "lunch",
       "dinner"
     ],
     "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
+    "lowEffort": false,
+    "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
     "onePot": true,
-    "minimalCleanup": true,
+    "minimalCleanup": false,
     "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 9,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
     "energyScore": 5,
-    "proteinScore": 5,
-    "nostalgiaScore": 7,
-    "homeStyleScore": 9,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
     "rainyDayScore": 4,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food",
+    "primaryMood": "Comfort",
+    "secondaryMood": "Soul",
     "cookingNotes": "Keep it plain and gentle; that is the charm of varan.",
     "instructions": [
       "Cook dal with turmeric until soft.",
@@ -55384,54 +55634,68 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "ingredients": [
       {
         "name": "toor dal",
-        "quantity": 0.5,
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
         "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "turmeric",
-        "quantity": 0.25,
-        "unit": "tsp",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "required",
-        "isMain": true
+        "isMain": false
       },
       {
         "name": "ghee",
         "quantity": 1,
-        "unit": "tsp",
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "cumin",
-        "quantity": 0.5,
-        "unit": "tsp",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "asafoetida",
         "quantity": 1,
-        "unit": "pinch",
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Toor Dal",
-    "primary_ingredient_2": "Turmeric",
-    "primaryIngredient1": "Toor Dal",
-    "primaryIngredient2": "Turmeric",
+    "primary_ingredient_1": "toor dal",
+    "primary_ingredient_2": "rice",
+    "primaryIngredient1": "toor dal",
+    "primaryIngredient2": "rice",
     "secondary_ingredient_1": "ghee",
     "secondaryIngredient1": "ghee",
     "secondary_ingredient_2": "cumin",
     "secondaryIngredient2": "cumin",
     "secondary_ingredient_3": "asafoetida",
     "secondaryIngredient3": "asafoetida",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "secondary_ingredient_4": "lemon",
+    "secondaryIngredient4": "lemon",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryIngredients": [
@@ -55442,40 +55706,40 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "base_ingredient": "toor dal",
     "coreIngredients": [
       "toor dal",
+      "rice",
       "turmeric"
     ],
     "core_ingredients": [
       "toor dal",
+      "rice",
       "turmeric"
     ],
     "requiredIngredients": [
       "toor dal",
+      "rice",
       "turmeric"
     ],
     "required_ingredients": [
       "toor dal",
+      "rice",
       "turmeric"
     ],
     "optionalIngredients": [
       "ghee",
       "cumin",
       "asafoetida",
-      "oil",
-      "salt",
-      "spices"
+      "lemon"
     ],
     "optional_ingredients": [
       "ghee",
       "cumin",
       "asafoetida",
-      "oil",
-      "salt",
-      "spices"
+      "lemon"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "dal",
-    "dish_family": "dal",
+    "dishFamily": "dal rice",
+    "dish_family": "dal rice",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -55493,47 +55757,53 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "pairings": {
-      "rice": [
-        "Steamed rice"
-      ],
       "sides": [
-        "Papad",
-        "Kachumber salad"
+        "Ghee",
+        "Pickle"
       ],
-      "pickles": [],
+      "chutneys": [],
+      "pickles": [
+        "Pickle"
+      ],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
       "toppings": [
         "Ghee"
       ]
     },
     "quickGuide": {
       "serves": 2,
-      "prepTime": "5 min",
-      "cookTime": "22 min",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "1/2 cup toor dal",
-        "1/4 tsp turmeric",
-        "1 tsp ghee",
-        "1/2 tsp cumin",
-        "Pinch asafoetida",
-        "Salt"
+        "toor dal",
+        "rice",
+        "turmeric",
+        "ghee",
+        "cumin",
+        "asafoetida",
+        "lemon"
       ],
       "steps": [
-        "Cook dal with turmeric until soft.",
-        "Whisk smooth with water.",
-        "Season with salt.",
-        "Temper cumin and asafoetida in ghee.",
-        "Pour over dal and serve."
+        "Prep toor dal and rice before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the dal rice tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Varan Bhaat warm with its classic pairings."
       ],
-      "tip": "Keep it plain and gentle; that is the charm of varan.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
-        "Rice",
-        "Lemon pickle"
+        "Ghee",
+        "Pickle"
       ]
     },
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Maharashtra"
-    }
+    },
+    "image": "/assets/images/dishes/varan.png",
+    "pantrySuitability": "medium"
   },
   {
     "id": "pantry-veg-fried-rice",
@@ -57300,56 +57570,62 @@ window.COOKBUDDY_LOCAL_RECIPES = [
   {
     "id": "f585fad9-5097-5321-a201-43269b7c4336",
     "sourceId": "balance-tier-1-zunka",
-    "title": "Zunka",
-    "name": "Zunka",
-    "aliases": [],
-    "description": "A rustic Maharashtrian besan dish that adds non-rice West Indian lunch variety.",
-    "prepTimeMinutes": 8,
-    "cookTimeMinutes": 18,
-    "timeMinutes": 26,
+    "title": "Zunka Bhakri",
+    "name": "Zunka Bhakri",
+    "aliases": [
+      "Zunka"
+    ],
+    "description": "Zunka Bhakri is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
     "servings": 2,
     "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/zunka.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
+      "comfort",
+      "soul",
+      "protein",
       "vegetarian",
-      "quick",
-      "comfort"
+      "maharashtra",
+      "regional-journey"
     ],
     "moodTags": [
-      "quick",
-      "comfort"
+      "comfort",
+      "soul",
+      "protein"
     ],
     "mealTags": [
       "lunch",
       "dinner"
     ],
     "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
+    "lowEffort": false,
+    "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
     "onePot": false,
-    "minimalCleanup": true,
+    "minimalCleanup": false,
     "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "proteinScore": 6,
-    "nostalgiaScore": 7,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
     "homeStyleScore": 8,
     "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "Comfort Food",
+    "primaryMood": "Comfort",
+    "secondaryMood": "Soul",
     "cookingNotes": "Add water slowly so zunka stays crumbly, not pasty.",
     "instructions": [
       "Roast besan lightly and set aside.",
@@ -57367,55 +57643,62 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "isMain": true
       },
       {
-        "name": "onion",
+        "name": "bhakri",
         "quantity": 1,
-        "unit": "pcs",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
         "name": "green chilli",
         "quantity": 1,
-        "unit": "pcs",
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "mustard seeds",
-        "quantity": 0.5,
-        "unit": "tsp",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "turmeric",
-        "quantity": 0.25,
-        "unit": "tsp",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "coriander",
         "quantity": 1,
-        "unit": "tbsp",
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Besan",
-    "primary_ingredient_2": "Onion",
-    "primaryIngredient1": "Besan",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "green chilli",
-    "secondaryIngredient1": "green chilli",
-    "secondary_ingredient_2": "mustard seeds",
-    "secondaryIngredient2": "mustard seeds",
-    "secondary_ingredient_3": "turmeric",
-    "secondaryIngredient3": "turmeric",
-    "secondary_ingredient_4": "coriander",
-    "secondaryIngredient4": "coriander",
+    "primary_ingredient_1": "besan",
+    "primary_ingredient_2": "bhakri",
+    "primaryIngredient1": "besan",
+    "primaryIngredient2": "bhakri",
+    "secondary_ingredient_1": "garlic",
+    "secondaryIngredient1": "garlic",
+    "secondary_ingredient_2": "green chilli",
+    "secondaryIngredient2": "green chilli",
+    "secondary_ingredient_3": "mustard seeds",
+    "secondaryIngredient3": "mustard seeds",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryIngredients": [
@@ -57426,42 +57709,40 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "base_ingredient": "besan",
     "coreIngredients": [
       "besan",
+      "bhakri",
       "onion"
     ],
     "core_ingredients": [
       "besan",
+      "bhakri",
       "onion"
     ],
     "requiredIngredients": [
       "besan",
+      "bhakri",
       "onion"
     ],
     "required_ingredients": [
       "besan",
+      "bhakri",
       "onion"
     ],
     "optionalIngredients": [
+      "garlic",
       "green chilli",
       "mustard seeds",
-      "turmeric",
-      "coriander",
-      "oil",
-      "salt",
-      "spices"
+      "oil"
     ],
     "optional_ingredients": [
+      "garlic",
       "green chilli",
       "mustard seeds",
-      "turmeric",
-      "coriander",
-      "oil",
-      "salt",
-      "spices"
+      "oil"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "besan sabzi",
-    "dish_family": "besan sabzi",
+    "dishFamily": "zunka",
+    "dish_family": "zunka",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -57479,50 +57760,53 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ]
     },
     "pairings": {
-      "roti": [
-        "Bhakri",
-        "Chapati"
-      ],
       "sides": [
-        "Onion salad"
+        "Thecha",
+        "Onion"
       ],
-      "pickles": [
+      "chutneys": [
         "Thecha"
       ],
-      "drinks": [
-        "Buttermilk"
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Onion"
       ]
     },
     "quickGuide": {
       "serves": 2,
-      "prepTime": "8 min",
-      "cookTime": "18 min",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "1 cup besan",
-        "1 onion",
-        "1 green chilli",
-        "1/2 tsp mustard seeds",
-        "1/4 tsp turmeric",
-        "Coriander",
-        "Salt"
+        "besan",
+        "bhakri",
+        "onion",
+        "garlic",
+        "green chilli",
+        "mustard seeds",
+        "oil"
       ],
       "steps": [
-        "Roast besan lightly and set aside.",
-        "Saute onion, chilli and spices.",
-        "Sprinkle besan while stirring.",
-        "Add small splashes of water.",
-        "Cook until crumbly and fragrant."
+        "Prep besan and bhakri before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the zunka tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Zunka Bhakri warm with its classic pairings."
       ],
-      "tip": "Add water slowly so zunka stays crumbly, not pasty.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
-        "Bhakri",
-        "Thecha"
+        "Thecha",
+        "Onion"
       ]
     },
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Maharashtra"
-    }
+    },
+    "image": "/assets/images/dishes/zunka.png",
+    "pantrySuitability": "medium"
   },
   {
     "id": "side-addon-coconut-chutney",
@@ -57962,8 +58246,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "tomoLine": "Keep it sweet-tangy rather than hot-spicy.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "aliases": [],
     "image_url": "/assets/images/dishes/batch6-tomato-chutney.png",
@@ -85177,54 +85461,55 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "title": "Shrikhand",
     "name": "Shrikhand",
     "aliases": [],
-    "description": "Thick hung curd sweetened with sugar, cardamom and saffron for a cool festive dessert.",
+    "description": "Shrikhand is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
     "prepTimeMinutes": 15,
-    "cookTimeMinutes": 0,
-    "timeMinutes": 15,
-    "servings": 4,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
     "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/collections/desserts.webp",
     "recipeRole": "dessert",
     "tags": [
-      "quick-sweet",
-      "collection-detail",
-      "milk-desserts",
+      "dessert",
+      "festive",
+      "summer",
+      "comfort",
       "vegetarian",
-      "festival"
+      "maharashtra",
+      "regional-journey"
     ],
     "moodTags": [
       "festive",
-      "comfort",
-      "quick"
+      "summer",
+      "comfort"
     ],
     "mealTags": [
-      "dessert",
-      "snack"
+      "dessert"
     ],
     "lateNight": false,
-    "lowEffort": true,
-    "sickDay": false,
+    "lowEffort": false,
+    "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": true,
     "lightMeal": false,
     "onePot": false,
-    "minimalCleanup": true,
+    "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 3,
+    "effortScore": 7,
     "comfortScore": 8,
     "energyScore": 5,
-    "proteinScore": 5,
+    "proteinScore": 3,
     "nostalgiaScore": 8,
     "homeStyleScore": 8,
     "rainyDayScore": 4,
-    "primaryMood": "Festival Food",
-    "secondaryMood": "Quick Treat",
+    "primaryMood": "Festive",
+    "secondaryMood": "Summer",
     "cookingNotes": "Use well-drained curd so shrikhand stays thick and silky. Refrigerate and use within 2 days.",
     "instructions": [
       "Whisk hung curd until smooth and lump-free.",
@@ -85236,66 +85521,77 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "ingredients": [
       {
         "name": "hung curd",
-        "quantity": 2,
-        "unit": "cups",
+        "quantity": 1,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "powdered sugar",
-        "quantity": 0.5,
-        "unit": "cup",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "cardamom powder",
-        "quantity": 0.5,
-        "unit": "tsp",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "saffron milk",
+        "name": "sugar",
         "quantity": 1,
-        "unit": "tbsp",
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "saffron",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "pistachios",
-        "quantity": 2,
-        "unit": "tbsp",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "almonds",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Hung Curd",
-    "primary_ingredient_2": "",
-    "primaryIngredient1": "Hung Curd",
-    "primaryIngredient2": "",
-    "secondary_ingredient_1": "Powdered Sugar",
-    "secondaryIngredient1": "Powdered Sugar",
-    "secondary_ingredient_2": "Cardamom Powder",
-    "secondaryIngredient2": "Cardamom Powder",
-    "secondary_ingredient_3": "Saffron Milk",
-    "secondaryIngredient3": "Saffron Milk",
-    "secondary_ingredient_4": "Pistachios",
-    "secondaryIngredient4": "Pistachios",
-    "secondary_ingredient_5": "",
-    "secondaryIngredient5": "",
+    "primary_ingredient_1": "hung curd",
+    "primary_ingredient_2": "sugar",
+    "primaryIngredient1": "hung curd",
+    "primaryIngredient2": "sugar",
+    "secondary_ingredient_1": "saffron",
+    "secondaryIngredient1": "saffron",
+    "secondary_ingredient_2": "pistachios",
+    "secondaryIngredient2": "pistachios",
+    "secondary_ingredient_3": "almonds",
+    "secondaryIngredient3": "almonds",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
     "requiredPrimaryMatches": 1,
     "required_primary_matches": 1,
     "isRealDish": true,
     "baseIngredient": "hung curd",
     "base_ingredient": "hung curd",
     "coreIngredients": [
-      "hung curd"
+      "hung curd",
+      "sugar",
+      "cardamom"
     ],
     "core_ingredients": [
-      "hung curd"
+      "hung curd",
+      "sugar",
+      "cardamom"
     ],
     "primaryIngredients": [
       "hung curd"
@@ -85304,45 +85600,47 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "hung curd"
     ],
     "requiredIngredients": [
-      "2 cups hung curd",
-      "0.5 cup powdered sugar",
-      "0.5 tsp cardamom powder",
-      "1 tbsp saffron milk"
+      "hung curd",
+      "sugar",
+      "cardamom"
     ],
     "required_ingredients": [
-      "2 cups hung curd",
-      "0.5 cup powdered sugar",
-      "0.5 tsp cardamom powder",
-      "1 tbsp saffron milk"
+      "hung curd",
+      "sugar",
+      "cardamom"
     ],
     "optionalIngredients": [
-      "2 tbsp pistachios"
+      "saffron",
+      "pistachios",
+      "almonds"
     ],
     "optional_ingredients": [
-      "2 tbsp pistachios"
+      "saffron",
+      "pistachios",
+      "almonds"
     ],
     "quickGuide": {
-      "serves": "4 servings",
-      "prepTime": "15 min prep",
-      "cookTime": "No cook",
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "2 cups hung curd",
-        "0.5 cup powdered sugar",
-        "0.5 tsp cardamom powder",
-        "1 tbsp saffron milk",
-        "2 tbsp pistachios"
+        "hung curd",
+        "sugar",
+        "cardamom",
+        "saffron",
+        "pistachios",
+        "almonds"
       ],
       "steps": [
-        "Whisk hung curd until smooth and lump-free.",
-        "Add powdered sugar and whisk until glossy.",
-        "Mix in saffron milk and cardamom.",
-        "Chill until thick and cold.",
-        "Top with pistachios and serve with puri or as dessert."
+        "Prep hung curd and sugar before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the sweet yogurt tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Shrikhand warm with its classic pairings."
       ],
-      "tip": "Use well-drained curd so shrikhand stays thick and silky. Storage: Refrigerate and use within 2 days.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
-        "Puri",
-        "Mango slices"
+        "Puri"
       ]
     },
     "tomoLine": "Use well-drained curd so shrikhand stays thick and silky. Refrigerate and use within 2 days.",
@@ -85350,12 +85648,41 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Puri",
       "Mango slices"
     ],
-    "dishFamily": "festival-sweets",
+    "dishFamily": "sweet yogurt",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "image": "/assets/images/collections/desserts.webp",
+    "dish_family": "sweet yogurt",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Puri"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [
+        "Puri"
+      ],
+      "toppings": []
+    },
+    "pantrySuitability": "medium"
   },
   {
     "id": "collection-detail-basundi",
@@ -85363,54 +85690,55 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "title": "Basundi",
     "name": "Basundi",
     "aliases": [],
-    "description": "Reduced milk simmered with cardamom, saffron and nuts until rich but pourable.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 45,
-    "timeMinutes": 50,
-    "servings": 4,
-    "cuisine": "Gujarati",
+    "description": "Basundi is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/collections/desserts.webp",
     "recipeRole": "dessert",
     "tags": [
-      "milk-dessert",
-      "collection-detail",
-      "milk-desserts",
+      "dessert",
+      "festive",
+      "comfort",
+      "soul",
       "vegetarian",
-      "festival"
+      "maharashtra",
+      "regional-journey"
     ],
     "moodTags": [
       "festive",
       "comfort",
-      "traditional"
+      "soul"
     ],
     "mealTags": [
-      "dessert",
-      "snack"
+      "dessert"
     ],
     "lateNight": false,
     "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": false,
-    "summerCooling": true,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
     "lightMeal": false,
     "onePot": false,
     "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 6,
+    "effortScore": 7,
     "comfortScore": 8,
     "energyScore": 5,
-    "proteinScore": 5,
+    "proteinScore": 3,
     "nostalgiaScore": 8,
     "homeStyleScore": 8,
     "rainyDayScore": 4,
-    "primaryMood": "Festival Food",
-    "secondaryMood": "Comfort Food",
+    "primaryMood": "Festive",
+    "secondaryMood": "Comfort",
     "cookingNotes": "Keep scraping the milk solids back in; that is what gives basundi its body. Refrigerate in a covered bowl for up to 2 days.",
     "instructions": [
       "Boil milk in a heavy pan and reduce to a steady simmer.",
@@ -85421,74 +85749,78 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "ingredients": [
       {
-        "name": "full-fat milk",
+        "name": "milk",
         "quantity": 1,
-        "unit": "litre",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "sugar",
-        "quantity": 0.35,
+        "quantity": 1,
         "unit": "cup",
-        "role": "optional",
-        "isMain": false
+        "role": "required",
+        "isMain": true
       },
       {
-        "name": "cardamom powder",
-        "quantity": 0.5,
-        "unit": "tsp",
-        "role": "optional",
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
         "isMain": false
       },
       {
         "name": "saffron",
         "quantity": 1,
-        "unit": "pinch",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "almonds",
-        "quantity": 2,
-        "unit": "tbsp",
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "pistachios",
-        "quantity": 2,
-        "unit": "tbsp",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "almonds",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Full-fat Milk",
-    "primary_ingredient_2": "",
-    "primaryIngredient1": "Full-fat Milk",
-    "primaryIngredient2": "",
-    "secondary_ingredient_1": "Sugar",
-    "secondaryIngredient1": "Sugar",
-    "secondary_ingredient_2": "Cardamom Powder",
-    "secondaryIngredient2": "Cardamom Powder",
-    "secondary_ingredient_3": "Saffron",
-    "secondaryIngredient3": "Saffron",
-    "secondary_ingredient_4": "Almonds",
-    "secondaryIngredient4": "Almonds",
-    "secondary_ingredient_5": "Pistachios",
-    "secondaryIngredient5": "Pistachios",
+    "primary_ingredient_1": "milk",
+    "primary_ingredient_2": "sugar",
+    "primaryIngredient1": "milk",
+    "primaryIngredient2": "sugar",
+    "secondary_ingredient_1": "saffron",
+    "secondaryIngredient1": "saffron",
+    "secondary_ingredient_2": "pistachios",
+    "secondaryIngredient2": "pistachios",
+    "secondary_ingredient_3": "almonds",
+    "secondaryIngredient3": "almonds",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
     "requiredPrimaryMatches": 1,
     "required_primary_matches": 1,
     "isRealDish": true,
-    "baseIngredient": "full-fat milk",
-    "base_ingredient": "full-fat milk",
+    "baseIngredient": "milk",
+    "base_ingredient": "milk",
     "coreIngredients": [
-      "full-fat milk"
+      "milk",
+      "sugar",
+      "cardamom"
     ],
     "core_ingredients": [
-      "full-fat milk"
+      "milk",
+      "sugar",
+      "cardamom"
     ],
     "primaryIngredients": [
       "full-fat milk"
@@ -85497,48 +85829,47 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "full-fat milk"
     ],
     "requiredIngredients": [
-      "1 litre full-fat milk",
-      "0.35 cup sugar",
-      "0.5 tsp cardamom powder",
-      "1 pinch saffron"
+      "milk",
+      "sugar",
+      "cardamom"
     ],
     "required_ingredients": [
-      "1 litre full-fat milk",
-      "0.35 cup sugar",
-      "0.5 tsp cardamom powder",
-      "1 pinch saffron"
+      "milk",
+      "sugar",
+      "cardamom"
     ],
     "optionalIngredients": [
-      "2 tbsp almonds",
-      "2 tbsp pistachios"
+      "saffron",
+      "pistachios",
+      "almonds"
     ],
     "optional_ingredients": [
-      "2 tbsp almonds",
-      "2 tbsp pistachios"
+      "saffron",
+      "pistachios",
+      "almonds"
     ],
     "quickGuide": {
-      "serves": "4 servings",
-      "prepTime": "5 min prep",
-      "cookTime": "45 min cook",
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "1 litre full-fat milk",
-        "0.35 cup sugar",
-        "0.5 tsp cardamom powder",
-        "1 pinch saffron",
-        "2 tbsp almonds",
-        "2 tbsp pistachios"
+        "milk",
+        "sugar",
+        "cardamom",
+        "saffron",
+        "pistachios",
+        "almonds"
       ],
       "steps": [
-        "Boil milk in a heavy pan and reduce to a steady simmer.",
-        "Scrape the sides back into the milk as it thickens.",
-        "Add sugar, saffron and cardamom.",
-        "Simmer until creamy and lightly reduced.",
-        "Serve warm or chilled with sliced nuts."
+        "Prep milk and sugar before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the milk dessert tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Basundi warm with its classic pairings."
       ],
-      "tip": "Keep scraping the milk solids back in; that is what gives basundi its body. Storage: Refrigerate in a covered bowl for up to 2 days.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
-        "Puri",
-        "Fafda"
+        "Puri"
       ]
     },
     "tomoLine": "Keep scraping the milk solids back in; that is what gives basundi its body. Refrigerate in a covered bowl for up to 2 days.",
@@ -85546,12 +85877,41 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Puri",
       "Fafda"
     ],
-    "dishFamily": "festival-sweets",
+    "dishFamily": "milk dessert",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "image": "/assets/images/collections/desserts.webp",
+    "dish_family": "milk dessert",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Puri"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [
+        "Puri"
+      ],
+      "toppings": []
+    },
+    "pantrySuitability": "medium"
   },
   {
     "id": "collection-detail-rice-kheer",
@@ -87273,8 +87633,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dishFamily": "bengali-sweet",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "image_url": "/assets/images/collections/desserts.webp",
     "incompatibleWith": [],
@@ -89200,38 +89560,41 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "title": "Puran Poli",
     "name": "Puran Poli",
     "aliases": [],
-    "description": "Festival flatbread filled with chana dal and jaggery, served warm with ghee.",
-    "prepTimeMinutes": 35,
-    "cookTimeMinutes": 35,
-    "timeMinutes": 70,
-    "servings": 8,
+    "description": "Puran Poli is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
     "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/collections/desserts.webp",
     "recipeRole": "dessert",
     "tags": [
-      "traditional-sweet",
-      "collection-detail",
-      "traditional-favorites",
+      "dessert",
+      "lunch",
+      "festive",
+      "soul",
+      "comfort",
       "vegetarian",
-      "festival"
+      "maharashtra",
+      "regional-journey"
     ],
     "moodTags": [
       "festive",
-      "comfort",
-      "traditional"
+      "soul",
+      "comfort"
     ],
     "mealTags": [
       "dessert",
-      "snack"
+      "lunch"
     ],
     "lateNight": false,
     "lowEffort": false,
-    "sickDay": false,
+    "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
@@ -89239,15 +89602,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 6,
+    "effortScore": 7,
     "comfortScore": 8,
-    "energyScore": 8,
-    "proteinScore": 5,
+    "energyScore": 5,
+    "proteinScore": 3,
     "nostalgiaScore": 8,
     "homeStyleScore": 8,
     "rainyDayScore": 4,
-    "primaryMood": "Festival Food",
-    "secondaryMood": "Comfort Food",
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul",
     "cookingNotes": "Let the puran cool before stuffing so the poli rolls without tearing. Refrigerate for 3 days with parchment between each poli.",
     "instructions": [
       "Cook chana dal until tender and drain.",
@@ -89273,49 +89636,56 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       },
       {
         "name": "wheat flour",
-        "quantity": 1.5,
-        "unit": "cups",
-        "role": "optional",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
         "isMain": false
       },
       {
-        "name": "cardamom powder",
-        "quantity": 0.5,
-        "unit": "tsp",
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "nutmeg",
         "quantity": 1,
-        "unit": "pinch",
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "ghee",
-        "quantity": 3,
-        "unit": "tbsp",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "to taste",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Chana Dal",
-    "primary_ingredient_2": "Jaggery",
-    "primaryIngredient1": "Chana Dal",
-    "primaryIngredient2": "Jaggery",
-    "secondary_ingredient_1": "Wheat Flour",
-    "secondaryIngredient1": "Wheat Flour",
-    "secondary_ingredient_2": "Cardamom Powder",
-    "secondaryIngredient2": "Cardamom Powder",
-    "secondary_ingredient_3": "Nutmeg",
-    "secondaryIngredient3": "Nutmeg",
-    "secondary_ingredient_4": "Ghee",
-    "secondaryIngredient4": "Ghee",
-    "secondary_ingredient_5": "",
-    "secondaryIngredient5": "",
+    "primary_ingredient_1": "chana dal",
+    "primary_ingredient_2": "jaggery",
+    "primaryIngredient1": "chana dal",
+    "primaryIngredient2": "jaggery",
+    "secondary_ingredient_1": "cardamom",
+    "secondaryIngredient1": "cardamom",
+    "secondary_ingredient_2": "nutmeg",
+    "secondaryIngredient2": "nutmeg",
+    "secondary_ingredient_3": "ghee",
+    "secondaryIngredient3": "ghee",
+    "secondary_ingredient_4": "milk",
+    "secondaryIngredient4": "milk",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -89323,11 +89693,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "base_ingredient": "chana dal",
     "coreIngredients": [
       "chana dal",
-      "jaggery"
+      "jaggery",
+      "wheat flour"
     ],
     "core_ingredients": [
       "chana dal",
-      "jaggery"
+      "jaggery",
+      "wheat flour"
     ],
     "primaryIngredients": [
       "chana dal",
@@ -89338,48 +89710,51 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "jaggery"
     ],
     "requiredIngredients": [
-      "1 cup chana dal",
-      "1 cup jaggery",
-      "1.5 cups wheat flour",
-      "0.5 tsp cardamom powder"
+      "chana dal",
+      "jaggery",
+      "wheat flour"
     ],
     "required_ingredients": [
-      "1 cup chana dal",
-      "1 cup jaggery",
-      "1.5 cups wheat flour",
-      "0.5 tsp cardamom powder"
+      "chana dal",
+      "jaggery",
+      "wheat flour"
     ],
     "optionalIngredients": [
-      "1 pinch nutmeg",
-      "3 tbsp ghee"
+      "cardamom",
+      "nutmeg",
+      "ghee",
+      "milk"
     ],
     "optional_ingredients": [
-      "1 pinch nutmeg",
-      "3 tbsp ghee"
+      "cardamom",
+      "nutmeg",
+      "ghee",
+      "milk"
     ],
     "quickGuide": {
-      "serves": "8 servings",
-      "prepTime": "35 min prep",
-      "cookTime": "35 min cook",
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
       "ingredients": [
-        "1 cup chana dal",
-        "1 cup jaggery",
-        "1.5 cups wheat flour",
-        "0.5 tsp cardamom powder",
-        "1 pinch nutmeg",
-        "3 tbsp ghee"
+        "chana dal",
+        "jaggery",
+        "wheat flour",
+        "cardamom",
+        "nutmeg",
+        "ghee",
+        "milk"
       ],
       "steps": [
-        "Cook chana dal until tender and drain.",
-        "Cook dal with jaggery until thick, then flavour with cardamom and nutmeg.",
-        "Knead a soft wheat dough.",
-        "Stuff and roll each poli gently.",
-        "Roast on a tawa with ghee and serve warm."
+        "Prep chana dal and jaggery before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the sweet flatbread tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Puran Poli warm with its classic pairings."
       ],
-      "tip": "Let the puran cool before stuffing so the poli rolls without tearing. Storage: Refrigerate for 3 days with parchment between each poli.",
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
       "bestWith": [
         "Ghee",
-        "Katachi amti"
+        "Milk"
       ]
     },
     "tomoLine": "Let the puran cool before stuffing so the poli rolls without tearing. Refrigerate for 3 days with parchment between each poli.",
@@ -89387,12 +89762,43 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "Ghee",
       "Katachi amti"
     ],
-    "dishFamily": "sweet-flatbread",
+    "dishFamily": "sweet flatbread",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "image": "/assets/images/collections/desserts.webp",
+    "dish_family": "sweet flatbread",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Ghee"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Milk"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Ghee"
+      ]
+    },
+    "pantrySuitability": "medium"
   },
   {
     "id": "collection-detail-kulfi",
@@ -94518,196 +94924,6 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Sundal",
         "Payasam"
       ]
-    }
-  },
-  {
-    "id": "collection-detail-ukadiche-modak",
-    "sourceId": "collection-detail-ukadiche-modak",
-    "title": "Ukadiche Modak",
-    "name": "Ukadiche Modak",
-    "aliases": [],
-    "description": "Steamed modaks with rice flour covering and coconut-jaggery filling.",
-    "prepTimeMinutes": 35,
-    "cookTimeMinutes": 20,
-    "timeMinutes": 55,
-    "servings": 10,
-    "cuisine": "Maharashtrian",
-    "dietType": "vegetarian",
-    "dietaryTags": [
-      "vegetarian"
-    ],
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/collections/festival-food.webp",
-    "recipeRole": "dessert",
-    "tags": [
-      "festival-sweet",
-      "collection-detail",
-      "ganesh-chaturthi",
-      "vegetarian",
-      "dessert"
-    ],
-    "moodTags": [
-      "festive",
-      "comfort",
-      "traditional"
-    ],
-    "mealTags": [
-      "dessert",
-      "snack"
-    ],
-    "lateNight": false,
-    "lowEffort": false,
-    "sickDay": false,
-    "budgetFriendly": true,
-    "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
-    "studySnack": false,
-    "weekendSpecial": true,
-    "effortScore": 6,
-    "comfortScore": 8,
-    "energyScore": 5,
-    "proteinScore": 2,
-    "nostalgiaScore": 8,
-    "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Festival Food",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "A little ghee on your fingers helps shape neat pleats. Best fresh; refrigerate one day and steam before serving.",
-    "instructions": [
-      "Cook coconut and jaggery into a thick filling.",
-      "Prepare soft rice flour dough with hot water.",
-      "Shape dough into cups with pleats.",
-      "Fill and seal into modaks.",
-      "Steam and serve with ghee."
-    ],
-    "ingredients": [
-      {
-        "name": "rice flour",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "grated coconut",
-        "quantity": 1,
-        "unit": "cup",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "jaggery",
-        "quantity": 0.75,
-        "unit": "cup",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "cardamom powder",
-        "quantity": 0.5,
-        "unit": "tsp",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "ghee",
-        "quantity": 1,
-        "unit": "tsp",
-        "role": "optional",
-        "isMain": false
-      }
-    ],
-    "recipe_type": "core",
-    "recipeType": "core",
-    "primary_ingredient_1": "Rice Flour",
-    "primary_ingredient_2": "Grated Coconut",
-    "primaryIngredient1": "Rice Flour",
-    "primaryIngredient2": "Grated Coconut",
-    "secondary_ingredient_1": "Jaggery",
-    "secondaryIngredient1": "Jaggery",
-    "secondary_ingredient_2": "Cardamom Powder",
-    "secondaryIngredient2": "Cardamom Powder",
-    "secondary_ingredient_3": "Ghee",
-    "secondaryIngredient3": "Ghee",
-    "secondary_ingredient_4": "",
-    "secondaryIngredient4": "",
-    "secondary_ingredient_5": "",
-    "secondaryIngredient5": "",
-    "requiredPrimaryMatches": 2,
-    "required_primary_matches": 2,
-    "isRealDish": true,
-    "baseIngredient": "rice flour",
-    "base_ingredient": "rice flour",
-    "coreIngredients": [
-      "rice flour",
-      "grated coconut"
-    ],
-    "core_ingredients": [
-      "rice flour",
-      "grated coconut"
-    ],
-    "primaryIngredients": [
-      "rice flour",
-      "grated coconut"
-    ],
-    "primary_ingredients": [
-      "rice flour",
-      "grated coconut"
-    ],
-    "requiredIngredients": [
-      "1 cup rice flour",
-      "1 cup grated coconut",
-      "0.75 cup jaggery",
-      "0.5 tsp cardamom powder"
-    ],
-    "required_ingredients": [
-      "1 cup rice flour",
-      "1 cup grated coconut",
-      "0.75 cup jaggery",
-      "0.5 tsp cardamom powder"
-    ],
-    "optionalIngredients": [
-      "1 tsp ghee"
-    ],
-    "optional_ingredients": [
-      "1 tsp ghee"
-    ],
-    "quickGuide": {
-      "serves": "10 servings",
-      "prepTime": "35 min prep",
-      "cookTime": "20 min cook",
-      "ingredients": [
-        "1 cup rice flour",
-        "1 cup grated coconut",
-        "0.75 cup jaggery",
-        "0.5 tsp cardamom powder",
-        "1 tsp ghee"
-      ],
-      "steps": [
-        "Cook coconut and jaggery into a thick filling.",
-        "Prepare soft rice flour dough with hot water.",
-        "Shape dough into cups with pleats.",
-        "Fill and seal into modaks.",
-        "Steam and serve with ghee."
-      ],
-      "tip": "A little ghee on your fingers helps shape neat pleats. Storage: Best fresh; refrigerate one day and steam before serving.",
-      "bestWith": [
-        "Ghee",
-        "Panchamrit"
-      ]
-    },
-    "tomoLine": "A little ghee on your fingers helps shape neat pleats. Best fresh; refrigerate one day and steam before serving.",
-    "bestWith": [
-      "Ghee",
-      "Panchamrit"
-    ],
-    "dishFamily": "festival-sweets",
-    "updatedAt": "2026-06-18T00:00:00.000Z",
-    "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
     }
   },
   {
@@ -114283,8 +114499,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Keep the dal slightly thick so it sits well with luchi.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -114507,8 +114723,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Use a light hand with turmeric; basanti pulao should glow, not taste harsh.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -114719,8 +114935,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Add starter only when the milk is lukewarm, not hot.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -114931,8 +115147,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Add nolen gur off heat so the milk does not split.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -115145,8 +115361,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Keep the crepe thin so the filling stays the star.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -116253,8 +116469,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "The slow bhuno is what makes kosha mangsho special.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -116467,8 +116683,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Rezala should stay pale and fragrant, not red and fiery.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -116681,8 +116897,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Low, slow cooking keeps chicken chaap tender.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -117129,8 +117345,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Banana leaf traps the mustard aroma beautifully.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -117343,8 +117559,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Keep the mustard balanced so tender coconut sweetness comes through.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -117992,8 +118208,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Do not overstuff or the potol may split while simmering.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -118216,8 +118432,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Add chhana near the end so it stays soft.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -118430,8 +118646,3939 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Dry the pea filling well so the kochuri rolls cleanly.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Bengal"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
+  },
+  {
+    "id": "4a947153-e1d8-5c54-ba93-13c78f6577cb",
+    "sourceId": "maharashtra-wave-thalipeeth",
+    "title": "Thalipeeth",
+    "name": "Thalipeeth",
+    "description": "Thalipeeth is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/poha-homestyle.png",
+    "image": "/assets/images/dishes/poha-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "comfort",
+      "protein",
+      "soul",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "soul"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort",
+    "secondaryMood": "Protein",
+    "isRealDish": true,
+    "baseIngredient": "bhajani flour",
+    "base_ingredient": "bhajani flour",
+    "coreIngredients": [
+      "bhajani flour",
+      "onion",
+      "coriander"
+    ],
+    "core_ingredients": [
+      "bhajani flour",
+      "onion",
+      "coriander"
+    ],
+    "requiredIngredients": [
+      "bhajani flour",
+      "onion",
+      "coriander"
+    ],
+    "required_ingredients": [
+      "bhajani flour",
+      "onion",
+      "coriander"
+    ],
+    "optionalIngredients": [
+      "cumin",
+      "sesame",
+      "green chilli",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "cumin",
+      "sesame",
+      "green chilli",
+      "oil"
+    ],
+    "ingredients": [
+      {
+        "name": "bhajani flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "bhajani flour",
+    "primary_ingredient_2": "onion",
+    "primaryIngredient1": "bhajani flour",
+    "primaryIngredient2": "onion",
+    "secondary_ingredient_1": "cumin",
+    "secondaryIngredient1": "cumin",
+    "secondary_ingredient_2": "sesame",
+    "secondaryIngredient2": "sesame",
+    "secondary_ingredient_3": "green chilli",
+    "secondaryIngredient3": "green chilli",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "flatbread",
+    "dish_family": "flatbread",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Curd",
+        "Thecha"
+      ],
+      "chutneys": [
+        "Thecha"
+      ],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "bhajani flour",
+        "onion",
+        "coriander",
+        "cumin",
+        "sesame",
+        "green chilli",
+        "oil"
+      ],
+      "steps": [
+        "Prep bhajani flour and onion before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the flatbread tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Thalipeeth warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Curd",
+        "Thecha"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "6ea2daaa-36ba-51c9-ae56-7ab284ffe73c",
+    "sourceId": "maharashtra-wave-pithla-bhakri",
+    "title": "Pithla Bhakri",
+    "name": "Pithla Bhakri",
+    "description": "Pithla Bhakri is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/zunka.png",
+    "image": "/assets/images/dishes/zunka.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "comfort",
+      "soul",
+      "protein",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort",
+    "secondaryMood": "Soul",
+    "isRealDish": true,
+    "baseIngredient": "besan",
+    "base_ingredient": "besan",
+    "coreIngredients": [
+      "besan",
+      "bhakri",
+      "garlic"
+    ],
+    "core_ingredients": [
+      "besan",
+      "bhakri",
+      "garlic"
+    ],
+    "requiredIngredients": [
+      "besan",
+      "bhakri",
+      "garlic"
+    ],
+    "required_ingredients": [
+      "besan",
+      "bhakri",
+      "garlic"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "mustard seeds",
+      "turmeric",
+      "onion"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "mustard seeds",
+      "turmeric",
+      "onion"
+    ],
+    "ingredients": [
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "bhakri",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "besan",
+    "primary_ingredient_2": "bhakri",
+    "primaryIngredient1": "besan",
+    "primaryIngredient2": "bhakri",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "mustard seeds",
+    "secondaryIngredient2": "mustard seeds",
+    "secondary_ingredient_3": "turmeric",
+    "secondaryIngredient3": "turmeric",
+    "secondary_ingredient_4": "onion",
+    "secondaryIngredient4": "onion",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "pithla",
+    "dish_family": "pithla",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Thecha",
+        "Onion"
+      ],
+      "chutneys": [
+        "Thecha"
+      ],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Onion"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "besan",
+        "bhakri",
+        "garlic",
+        "green chilli",
+        "mustard seeds",
+        "turmeric",
+        "onion"
+      ],
+      "steps": [
+        "Prep besan and bhakri before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the pithla tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Pithla Bhakri warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Thecha",
+        "Onion"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "f0e43c01-cd00-5b77-9d8c-500fc919024c",
+    "sourceId": "maharashtra-wave-masale-bhaat",
+    "title": "Masale Bhaat",
+    "name": "Masale Bhaat",
+    "description": "Masale Bhaat is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3b-lemon-rice.png",
+    "image": "/assets/images/dishes/batch3b-lemon-rice.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "comfort",
+      "festive",
+      "spicy",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "festive",
+      "spicy"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort",
+    "secondaryMood": "Festive",
+    "isRealDish": true,
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "mixed vegetables",
+      "goda masala"
+    ],
+    "core_ingredients": [
+      "rice",
+      "mixed vegetables",
+      "goda masala"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "mixed vegetables",
+      "goda masala"
+    ],
+    "required_ingredients": [
+      "rice",
+      "mixed vegetables",
+      "goda masala"
+    ],
+    "optionalIngredients": [
+      "peanuts",
+      "coconut",
+      "coriander",
+      "ghee"
+    ],
+    "optional_ingredients": [
+      "peanuts",
+      "coconut",
+      "coriander",
+      "ghee"
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mixed vegetables",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "goda masala",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "peanuts",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primary_ingredient_2": "mixed vegetables",
+    "primaryIngredient1": "rice",
+    "primaryIngredient2": "mixed vegetables",
+    "secondary_ingredient_1": "peanuts",
+    "secondaryIngredient1": "peanuts",
+    "secondary_ingredient_2": "coconut",
+    "secondaryIngredient2": "coconut",
+    "secondary_ingredient_3": "coriander",
+    "secondaryIngredient3": "coriander",
+    "secondary_ingredient_4": "ghee",
+    "secondaryIngredient4": "ghee",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "rice",
+    "dish_family": "rice",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Raita",
+        "Papad"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "rice",
+        "mixed vegetables",
+        "goda masala",
+        "peanuts",
+        "coconut",
+        "coriander",
+        "ghee"
+      ],
+      "steps": [
+        "Prep rice and mixed vegetables before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the rice tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Masale Bhaat warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Raita",
+        "Papad"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "0f20fb79-d2cc-5438-a843-783d6cfe6cca",
+    "sourceId": "maharashtra-wave-bharli-vangi",
+    "title": "Bharli Vangi",
+    "name": "Bharli Vangi",
+    "description": "Bharli Vangi is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3a-baingan-bharta.png",
+    "image": "/assets/images/dishes/batch3a-baingan-bharta.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "comfort",
+      "spicy",
+      "soul",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "spicy",
+      "soul"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort",
+    "secondaryMood": "Spicy",
+    "isRealDish": true,
+    "baseIngredient": "small brinjals",
+    "base_ingredient": "small brinjals",
+    "coreIngredients": [
+      "small brinjals",
+      "peanut coconut masala"
+    ],
+    "core_ingredients": [
+      "small brinjals",
+      "peanut coconut masala"
+    ],
+    "requiredIngredients": [
+      "small brinjals",
+      "peanut coconut masala"
+    ],
+    "required_ingredients": [
+      "small brinjals",
+      "peanut coconut masala"
+    ],
+    "optionalIngredients": [
+      "goda masala",
+      "tamarind",
+      "jaggery",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "goda masala",
+      "tamarind",
+      "jaggery",
+      "oil"
+    ],
+    "ingredients": [
+      {
+        "name": "small brinjals",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanut coconut masala",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "goda masala",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "small brinjals",
+    "primary_ingredient_2": "peanut coconut masala",
+    "primaryIngredient1": "small brinjals",
+    "primaryIngredient2": "peanut coconut masala",
+    "secondary_ingredient_1": "goda masala",
+    "secondaryIngredient1": "goda masala",
+    "secondary_ingredient_2": "tamarind",
+    "secondaryIngredient2": "tamarind",
+    "secondary_ingredient_3": "jaggery",
+    "secondaryIngredient3": "jaggery",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "stuffed vegetable",
+    "dish_family": "stuffed vegetable",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Bhakri",
+        "Rice"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [
+        "Bhakri"
+      ],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "small brinjals",
+        "peanut coconut masala",
+        "goda masala",
+        "tamarind",
+        "jaggery",
+        "oil"
+      ],
+      "steps": [
+        "Prep small brinjals and peanut coconut masala before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the stuffed vegetable tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Bharli Vangi warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Bhakri",
+        "Rice"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "a08f3acf-ec07-5976-96c8-e2bdbdcb4893",
+    "sourceId": "maharashtra-wave-kothimbir-vadi",
+    "title": "Kothimbir Vadi",
+    "name": "Kothimbir Vadi",
+    "description": "Kothimbir Vadi is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "rainy",
+      "quick",
+      "comfort",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "rainy",
+      "quick",
+      "comfort"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 3,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Rainy",
+    "secondaryMood": "Quick",
+    "isRealDish": true,
+    "baseIngredient": "coriander",
+    "base_ingredient": "coriander",
+    "coreIngredients": [
+      "coriander",
+      "besan",
+      "sesame"
+    ],
+    "core_ingredients": [
+      "coriander",
+      "besan",
+      "sesame"
+    ],
+    "requiredIngredients": [
+      "coriander",
+      "besan",
+      "sesame"
+    ],
+    "required_ingredients": [
+      "coriander",
+      "besan",
+      "sesame"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "ginger",
+      "oil",
+      "turmeric"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "ginger",
+      "oil",
+      "turmeric"
+    ],
+    "ingredients": [
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sesame",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "coriander",
+    "primary_ingredient_2": "besan",
+    "primaryIngredient1": "coriander",
+    "primaryIngredient2": "besan",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "ginger",
+    "secondaryIngredient2": "ginger",
+    "secondary_ingredient_3": "oil",
+    "secondaryIngredient3": "oil",
+    "secondary_ingredient_4": "turmeric",
+    "secondaryIngredient4": "turmeric",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "fritter",
+    "dish_family": "fritter",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Chutney"
+      ],
+      "chutneys": [
+        "Chutney"
+      ],
+      "pickles": [],
+      "drinks": [
+        "Tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "coriander",
+        "besan",
+        "sesame",
+        "green chilli",
+        "ginger",
+        "oil",
+        "turmeric"
+      ],
+      "steps": [
+        "Prep coriander and besan before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the fritter tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Kothimbir Vadi warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Chutney",
+        "Tea"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "8694a591-251f-5508-9c78-f36945c264ce",
+    "sourceId": "maharashtra-wave-batata-vada",
+    "title": "Batata Vada",
+    "name": "Batata Vada",
+    "description": "Batata Vada is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "rainy",
+      "spicy",
+      "comfort",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "rainy",
+      "spicy",
+      "comfort"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Rainy",
+    "secondaryMood": "Spicy",
+    "isRealDish": true,
+    "baseIngredient": "potato",
+    "base_ingredient": "potato",
+    "coreIngredients": [
+      "potato",
+      "besan",
+      "green chilli"
+    ],
+    "core_ingredients": [
+      "potato",
+      "besan",
+      "green chilli"
+    ],
+    "requiredIngredients": [
+      "potato",
+      "besan",
+      "green chilli"
+    ],
+    "required_ingredients": [
+      "potato",
+      "besan",
+      "green chilli"
+    ],
+    "optionalIngredients": [
+      "garlic",
+      "mustard seeds",
+      "curry leaves",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "mustard seeds",
+      "curry leaves",
+      "oil"
+    ],
+    "ingredients": [
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "potato",
+    "primary_ingredient_2": "besan",
+    "primaryIngredient1": "potato",
+    "primaryIngredient2": "besan",
+    "secondary_ingredient_1": "garlic",
+    "secondaryIngredient1": "garlic",
+    "secondary_ingredient_2": "mustard seeds",
+    "secondaryIngredient2": "mustard seeds",
+    "secondary_ingredient_3": "curry leaves",
+    "secondaryIngredient3": "curry leaves",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "vada",
+    "dish_family": "vada",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Pav",
+        "Chutney"
+      ],
+      "chutneys": [
+        "Chutney"
+      ],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [
+        "Pav"
+      ],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "potato",
+        "besan",
+        "green chilli",
+        "garlic",
+        "mustard seeds",
+        "curry leaves",
+        "oil"
+      ],
+      "steps": [
+        "Prep potato and besan before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the vada tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Batata Vada warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Pav",
+        "Chutney"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "e36121ed-6294-5592-bf18-444b493a2f23",
+    "sourceId": "maharashtra-wave-malvani-fish-curry",
+    "title": "Malvani Fish Curry",
+    "name": "Malvani Fish Curry",
+    "description": "Malvani Fish Curry is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "spicy",
+      "comfort",
+      "protein",
+      "non-vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "spicy",
+      "comfort",
+      "protein"
+    ],
+    "dietaryTags": [
+      "non-vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Comfort",
+    "isRealDish": true,
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "coreIngredients": [
+      "fish",
+      "coconut",
+      "malvani masala"
+    ],
+    "core_ingredients": [
+      "fish",
+      "coconut",
+      "malvani masala"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "coconut",
+      "malvani masala"
+    ],
+    "required_ingredients": [
+      "fish",
+      "coconut",
+      "malvani masala"
+    ],
+    "optionalIngredients": [
+      "kokum",
+      "garlic",
+      "onion",
+      "coriander"
+    ],
+    "optional_ingredients": [
+      "kokum",
+      "garlic",
+      "onion",
+      "coriander"
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "malvani masala",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "kokum",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "fish",
+    "primary_ingredient_2": "coconut",
+    "primaryIngredient1": "fish",
+    "primaryIngredient2": "coconut",
+    "secondary_ingredient_1": "kokum",
+    "secondaryIngredient1": "kokum",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "onion",
+    "secondaryIngredient3": "onion",
+    "secondary_ingredient_4": "coriander",
+    "secondaryIngredient4": "coriander",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "fish curry",
+    "dish_family": "fish curry",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Rice"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Sol Kadhi"
+      ],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "fish",
+        "coconut",
+        "malvani masala",
+        "kokum",
+        "garlic",
+        "onion",
+        "coriander"
+      ],
+      "steps": [
+        "Prep fish and coconut before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the fish curry tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Malvani Fish Curry warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Rice",
+        "Sol Kadhi"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "14f39cbb-d20f-5d04-9aca-6a0fa484988f",
+    "sourceId": "maharashtra-wave-bombil-fry",
+    "title": "Bombil Fry",
+    "name": "Bombil Fry",
+    "description": "Bombil Fry is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch5-fish-fry.png",
+    "image": "/assets/images/dishes/batch5-fish-fry.png",
+    "recipeRole": "snack",
+    "tags": [
+      "lunch",
+      "dinner",
+      "snack",
+      "spicy",
+      "protein",
+      "rainy",
+      "non-vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner",
+      "snack"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "rainy"
+    ],
+    "dietaryTags": [
+      "non-vegetarian"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Protein",
+    "isRealDish": true,
+    "baseIngredient": "bombil fish",
+    "base_ingredient": "bombil fish",
+    "coreIngredients": [
+      "bombil fish",
+      "rice flour",
+      "chilli powder"
+    ],
+    "core_ingredients": [
+      "bombil fish",
+      "rice flour",
+      "chilli powder"
+    ],
+    "requiredIngredients": [
+      "bombil fish",
+      "rice flour",
+      "chilli powder"
+    ],
+    "required_ingredients": [
+      "bombil fish",
+      "rice flour",
+      "chilli powder"
+    ],
+    "optionalIngredients": [
+      "turmeric",
+      "lemon",
+      "oil",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "turmeric",
+      "lemon",
+      "oil",
+      "salt"
+    ],
+    "ingredients": [
+      {
+        "name": "bombil fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chilli powder",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "bombil fish",
+    "primary_ingredient_2": "rice flour",
+    "primaryIngredient1": "bombil fish",
+    "primaryIngredient2": "rice flour",
+    "secondary_ingredient_1": "turmeric",
+    "secondaryIngredient1": "turmeric",
+    "secondary_ingredient_2": "lemon",
+    "secondaryIngredient2": "lemon",
+    "secondary_ingredient_3": "oil",
+    "secondaryIngredient3": "oil",
+    "secondary_ingredient_4": "salt",
+    "secondaryIngredient4": "salt",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "fish fry",
+    "dish_family": "fish fry",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Rice"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Sol Kadhi"
+      ],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "bombil fish",
+        "rice flour",
+        "chilli powder",
+        "turmeric",
+        "lemon",
+        "oil",
+        "salt"
+      ],
+      "steps": [
+        "Prep bombil fish and rice flour before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the fish fry tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Bombil Fry warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Rice",
+        "Sol Kadhi"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "bc2183b8-a0d3-5563-9b65-5e9f90ef6aff",
+    "sourceId": "maharashtra-wave-chicken-sukka-maharashtrian",
+    "title": "Chicken Sukka Maharashtrian",
+    "name": "Chicken Sukka Maharashtrian",
+    "description": "Chicken Sukka Maharashtrian is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/chicken-sukka-homestyle.png",
+    "image": "/assets/images/dishes/chicken-sukka-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "spicy",
+      "protein",
+      "comfort",
+      "non-vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "comfort"
+    ],
+    "dietaryTags": [
+      "non-vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Protein",
+    "isRealDish": true,
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "dry coconut",
+      "malvani masala"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "dry coconut",
+      "malvani masala"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "dry coconut",
+      "malvani masala"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "dry coconut",
+      "malvani masala"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "garlic",
+      "coriander",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "garlic",
+      "coriander",
+      "oil"
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "dry coconut",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "malvani masala",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "chicken",
+    "primary_ingredient_2": "dry coconut",
+    "primaryIngredient1": "chicken",
+    "primaryIngredient2": "dry coconut",
+    "secondary_ingredient_1": "onion",
+    "secondaryIngredient1": "onion",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "coriander",
+    "secondaryIngredient3": "coriander",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "chicken sukka",
+    "dish_family": "chicken sukka",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Bhakri"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [
+        "Bhakri"
+      ],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "chicken",
+        "dry coconut",
+        "malvani masala",
+        "onion",
+        "garlic",
+        "coriander",
+        "oil"
+      ],
+      "steps": [
+        "Prep chicken and dry coconut before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the chicken sukka tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Chicken Sukka Maharashtrian warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Bhakri"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "e64a9d40-4643-5b7e-8273-be9233a1982f",
+    "sourceId": "maharashtra-wave-aluchi-patal-bhaji",
+    "title": "Aluchi Patal Bhaji",
+    "name": "Aluchi Patal Bhaji",
+    "description": "Aluchi Patal Bhaji is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/sarson-ka-saag.png",
+    "image": "/assets/images/dishes/sarson-ka-saag.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "comfort",
+      "soul",
+      "light",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "light"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort",
+    "secondaryMood": "Soul",
+    "isRealDish": true,
+    "baseIngredient": "colocasia leaves",
+    "base_ingredient": "colocasia leaves",
+    "coreIngredients": [
+      "colocasia leaves",
+      "peanuts",
+      "besan"
+    ],
+    "core_ingredients": [
+      "colocasia leaves",
+      "peanuts",
+      "besan"
+    ],
+    "requiredIngredients": [
+      "colocasia leaves",
+      "peanuts",
+      "besan"
+    ],
+    "required_ingredients": [
+      "colocasia leaves",
+      "peanuts",
+      "besan"
+    ],
+    "optionalIngredients": [
+      "tamarind",
+      "jaggery",
+      "green chilli",
+      "coconut"
+    ],
+    "optional_ingredients": [
+      "tamarind",
+      "jaggery",
+      "green chilli",
+      "coconut"
+    ],
+    "ingredients": [
+      {
+        "name": "colocasia leaves",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanuts",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "colocasia leaves",
+    "primary_ingredient_2": "peanuts",
+    "primaryIngredient1": "colocasia leaves",
+    "primaryIngredient2": "peanuts",
+    "secondary_ingredient_1": "tamarind",
+    "secondaryIngredient1": "tamarind",
+    "secondary_ingredient_2": "jaggery",
+    "secondaryIngredient2": "jaggery",
+    "secondary_ingredient_3": "green chilli",
+    "secondaryIngredient3": "green chilli",
+    "secondary_ingredient_4": "coconut",
+    "secondaryIngredient4": "coconut",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "leafy curry",
+    "dish_family": "leafy curry",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Rice",
+        "Bhakri"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [
+        "Bhakri"
+      ],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "colocasia leaves",
+        "peanuts",
+        "besan",
+        "tamarind",
+        "jaggery",
+        "green chilli",
+        "coconut"
+      ],
+      "steps": [
+        "Prep colocasia leaves and peanuts before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the leafy curry tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Aluchi Patal Bhaji warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Rice",
+        "Bhakri"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "f7b1fc10-e822-5c02-aed4-42088a805c5d",
+    "sourceId": "maharashtra-wave-thecha",
+    "title": "Thecha",
+    "name": "Thecha",
+    "description": "Thecha is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch6-mint-chutney.png",
+    "image": "/assets/images/dishes/batch6-mint-chutney.png",
+    "recipeRole": "condiment",
+    "tags": [
+      "lunch",
+      "dinner",
+      "spicy",
+      "quick",
+      "soul",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "spicy",
+      "quick",
+      "soul"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Quick",
+    "isRealDish": true,
+    "baseIngredient": "green chilli",
+    "base_ingredient": "green chilli",
+    "coreIngredients": [
+      "green chilli",
+      "garlic",
+      "peanuts"
+    ],
+    "core_ingredients": [
+      "green chilli",
+      "garlic",
+      "peanuts"
+    ],
+    "requiredIngredients": [
+      "green chilli",
+      "garlic",
+      "peanuts"
+    ],
+    "required_ingredients": [
+      "green chilli",
+      "garlic",
+      "peanuts"
+    ],
+    "optionalIngredients": [
+      "coriander",
+      "oil",
+      "salt",
+      "lemon"
+    ],
+    "optional_ingredients": [
+      "coriander",
+      "oil",
+      "salt",
+      "lemon"
+    ],
+    "ingredients": [
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanuts",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "green chilli",
+    "primary_ingredient_2": "garlic",
+    "primaryIngredient1": "green chilli",
+    "primaryIngredient2": "garlic",
+    "secondary_ingredient_1": "coriander",
+    "secondaryIngredient1": "coriander",
+    "secondary_ingredient_2": "oil",
+    "secondaryIngredient2": "oil",
+    "secondary_ingredient_3": "salt",
+    "secondaryIngredient3": "salt",
+    "secondary_ingredient_4": "lemon",
+    "secondaryIngredient4": "lemon",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "chutney",
+    "dish_family": "chutney",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Bhakri",
+        "Pithla"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [
+        "Bhakri"
+      ],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "green chilli",
+        "garlic",
+        "peanuts",
+        "coriander",
+        "oil",
+        "salt",
+        "lemon"
+      ],
+      "steps": [
+        "Prep green chilli and garlic before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the chutney tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Thecha warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Bhakri",
+        "Pithla"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "ee6d0a99-3ba1-57d3-a760-165d08af3e52",
+    "sourceId": "maharashtra-wave-bharli-mirchi",
+    "title": "Bharli Mirchi",
+    "name": "Bharli Mirchi",
+    "description": "Bharli Mirchi is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3a-baingan-bharta.png",
+    "image": "/assets/images/dishes/batch3a-baingan-bharta.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "spicy",
+      "comfort",
+      "soul",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "spicy",
+      "comfort",
+      "soul"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Comfort",
+    "isRealDish": true,
+    "baseIngredient": "large green chillies",
+    "base_ingredient": "large green chillies",
+    "coreIngredients": [
+      "large green chillies",
+      "peanut masala",
+      "besan"
+    ],
+    "core_ingredients": [
+      "large green chillies",
+      "peanut masala",
+      "besan"
+    ],
+    "requiredIngredients": [
+      "large green chillies",
+      "peanut masala",
+      "besan"
+    ],
+    "required_ingredients": [
+      "large green chillies",
+      "peanut masala",
+      "besan"
+    ],
+    "optionalIngredients": [
+      "coconut",
+      "tamarind",
+      "jaggery",
+      "oil"
+    ],
+    "optional_ingredients": [
+      "coconut",
+      "tamarind",
+      "jaggery",
+      "oil"
+    ],
+    "ingredients": [
+      {
+        "name": "large green chillies",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanut masala",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "besan",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "large green chillies",
+    "primary_ingredient_2": "peanut masala",
+    "primaryIngredient1": "large green chillies",
+    "primaryIngredient2": "peanut masala",
+    "secondary_ingredient_1": "coconut",
+    "secondaryIngredient1": "coconut",
+    "secondary_ingredient_2": "tamarind",
+    "secondaryIngredient2": "tamarind",
+    "secondary_ingredient_3": "jaggery",
+    "secondaryIngredient3": "jaggery",
+    "secondary_ingredient_4": "oil",
+    "secondaryIngredient4": "oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "stuffed vegetable",
+    "dish_family": "stuffed vegetable",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Bhakri"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [
+        "Bhakri"
+      ],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "large green chillies",
+        "peanut masala",
+        "besan",
+        "coconut",
+        "tamarind",
+        "jaggery",
+        "oil"
+      ],
+      "steps": [
+        "Prep large green chillies and peanut masala before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the stuffed vegetable tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Bharli Mirchi warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Bhakri"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "a2897a61-c5e6-5d8b-84a3-a801353377fc",
+    "sourceId": "maharashtra-wave-dadpe-pohe",
+    "title": "Dadpe Pohe",
+    "name": "Dadpe Pohe",
+    "description": "Dadpe Pohe is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/poha.png",
+    "image": "/assets/images/dishes/poha.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "breakfast",
+      "quick",
+      "light",
+      "summer",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "snack",
+      "breakfast"
+    ],
+    "moodTags": [
+      "quick",
+      "light",
+      "summer"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 7,
+    "proteinScore": 3,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Quick",
+    "secondaryMood": "Light",
+    "isRealDish": true,
+    "baseIngredient": "thin poha",
+    "base_ingredient": "thin poha",
+    "coreIngredients": [
+      "thin poha",
+      "coconut",
+      "onion"
+    ],
+    "core_ingredients": [
+      "thin poha",
+      "coconut",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "thin poha",
+      "coconut",
+      "onion"
+    ],
+    "required_ingredients": [
+      "thin poha",
+      "coconut",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "lemon",
+      "coriander",
+      "peanuts"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "lemon",
+      "coriander",
+      "peanuts"
+    ],
+    "ingredients": [
+      {
+        "name": "thin poha",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "peanuts",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "thin poha",
+    "primary_ingredient_2": "coconut",
+    "primaryIngredient1": "thin poha",
+    "primaryIngredient2": "coconut",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "lemon",
+    "secondaryIngredient2": "lemon",
+    "secondary_ingredient_3": "coriander",
+    "secondaryIngredient3": "coriander",
+    "secondary_ingredient_4": "peanuts",
+    "secondaryIngredient4": "peanuts",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "poha",
+    "dish_family": "poha",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "thin poha",
+        "coconut",
+        "onion",
+        "green chilli",
+        "lemon",
+        "coriander",
+        "peanuts"
+      ],
+      "steps": [
+        "Prep thin poha and coconut before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the poha tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Dadpe Pohe warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Tea"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "b7a22874-d84e-5d8d-b93c-683b521941c3",
+    "sourceId": "maharashtra-wave-sabudana-vada",
+    "title": "Sabudana Vada",
+    "name": "Sabudana Vada",
+    "description": "Sabudana Vada is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "rainy",
+      "comfort",
+      "festive",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "moodTags": [
+      "rainy",
+      "comfort",
+      "festive"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Rainy",
+    "secondaryMood": "Comfort",
+    "isRealDish": true,
+    "baseIngredient": "sabudana",
+    "base_ingredient": "sabudana",
+    "coreIngredients": [
+      "sabudana",
+      "potato",
+      "peanuts"
+    ],
+    "core_ingredients": [
+      "sabudana",
+      "potato",
+      "peanuts"
+    ],
+    "requiredIngredients": [
+      "sabudana",
+      "potato",
+      "peanuts"
+    ],
+    "required_ingredients": [
+      "sabudana",
+      "potato",
+      "peanuts"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "cumin",
+      "oil",
+      "lemon"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "cumin",
+      "oil",
+      "lemon"
+    ],
+    "ingredients": [
+      {
+        "name": "sabudana",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "peanuts",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "sabudana",
+    "primary_ingredient_2": "potato",
+    "primaryIngredient1": "sabudana",
+    "primaryIngredient2": "potato",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "cumin",
+    "secondaryIngredient2": "cumin",
+    "secondary_ingredient_3": "oil",
+    "secondaryIngredient3": "oil",
+    "secondary_ingredient_4": "lemon",
+    "secondaryIngredient4": "lemon",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "vada",
+    "dish_family": "vada",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Curd",
+        "Chutney"
+      ],
+      "chutneys": [
+        "Chutney"
+      ],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "sabudana",
+        "potato",
+        "peanuts",
+        "green chilli",
+        "cumin",
+        "oil",
+        "lemon"
+      ],
+      "steps": [
+        "Prep sabudana and potato before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the vada tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Sabudana Vada warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Curd",
+        "Chutney"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "7d2bede5-60cd-5b2e-a894-b4ad3e5f8450",
+    "sourceId": "maharashtra-wave-aamti",
+    "title": "Aamti",
+    "name": "Aamti",
+    "description": "Aamti is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/varan.png",
+    "image": "/assets/images/dishes/varan.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "comfort",
+      "soul",
+      "light",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "light"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort",
+    "secondaryMood": "Soul",
+    "isRealDish": true,
+    "baseIngredient": "toor dal",
+    "base_ingredient": "toor dal",
+    "coreIngredients": [
+      "toor dal",
+      "goda masala",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "toor dal",
+      "goda masala",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "toor dal",
+      "goda masala",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "toor dal",
+      "goda masala",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "jaggery",
+      "coconut",
+      "curry leaves",
+      "ghee"
+    ],
+    "optional_ingredients": [
+      "jaggery",
+      "coconut",
+      "curry leaves",
+      "ghee"
+    ],
+    "ingredients": [
+      {
+        "name": "toor dal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "goda masala",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "toor dal",
+    "primary_ingredient_2": "goda masala",
+    "primaryIngredient1": "toor dal",
+    "primaryIngredient2": "goda masala",
+    "secondary_ingredient_1": "jaggery",
+    "secondaryIngredient1": "jaggery",
+    "secondary_ingredient_2": "coconut",
+    "secondaryIngredient2": "coconut",
+    "secondary_ingredient_3": "curry leaves",
+    "secondaryIngredient3": "curry leaves",
+    "secondary_ingredient_4": "ghee",
+    "secondaryIngredient4": "ghee",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "dal",
+    "dish_family": "dal",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Rice"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "toor dal",
+        "goda masala",
+        "tamarind",
+        "jaggery",
+        "coconut",
+        "curry leaves",
+        "ghee"
+      ],
+      "steps": [
+        "Prep toor dal and goda masala before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the dal tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Aamti warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "8a5f3ef0-a769-51e0-888f-63aa2f4264f7",
+    "sourceId": "maharashtra-wave-katachi-amti",
+    "title": "Katachi Amti",
+    "name": "Katachi Amti",
+    "description": "Katachi Amti is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/varan.png",
+    "image": "/assets/images/dishes/varan.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "festive",
+      "comfort",
+      "soul",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Festive",
+    "secondaryMood": "Comfort",
+    "isRealDish": true,
+    "baseIngredient": "puran water",
+    "base_ingredient": "puran water",
+    "coreIngredients": [
+      "puran water",
+      "goda masala",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "puran water",
+      "goda masala",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "puran water",
+      "goda masala",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "puran water",
+      "goda masala",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "jaggery",
+      "coconut",
+      "curry leaves",
+      "ghee"
+    ],
+    "optional_ingredients": [
+      "jaggery",
+      "coconut",
+      "curry leaves",
+      "ghee"
+    ],
+    "ingredients": [
+      {
+        "name": "puran water",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "goda masala",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "puran water",
+    "primary_ingredient_2": "goda masala",
+    "primaryIngredient1": "puran water",
+    "primaryIngredient2": "goda masala",
+    "secondary_ingredient_1": "jaggery",
+    "secondaryIngredient1": "jaggery",
+    "secondary_ingredient_2": "coconut",
+    "secondaryIngredient2": "coconut",
+    "secondary_ingredient_3": "curry leaves",
+    "secondaryIngredient3": "curry leaves",
+    "secondary_ingredient_4": "ghee",
+    "secondaryIngredient4": "ghee",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "dal",
+    "dish_family": "dal",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [
+        "Puran Poli"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "puran water",
+        "goda masala",
+        "tamarind",
+        "jaggery",
+        "coconut",
+        "curry leaves",
+        "ghee"
+      ],
+      "steps": [
+        "Prep puran water and goda masala before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the dal tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Katachi Amti warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Puran Poli"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "55acc902-bc91-5e75-8695-00610801a0ce",
+    "sourceId": "maharashtra-wave-anarsa",
+    "title": "Anarsa",
+    "name": "Anarsa",
+    "description": "Anarsa is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/desserts.webp",
+    "image": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "snack",
+      "festive",
+      "soul",
+      "comfort",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "dessert",
+      "snack"
+    ],
+    "moodTags": [
+      "festive",
+      "soul",
+      "comfort"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul",
+    "isRealDish": true,
+    "baseIngredient": "rice flour",
+    "base_ingredient": "rice flour",
+    "coreIngredients": [
+      "rice flour",
+      "jaggery",
+      "poppy seeds"
+    ],
+    "core_ingredients": [
+      "rice flour",
+      "jaggery",
+      "poppy seeds"
+    ],
+    "requiredIngredients": [
+      "rice flour",
+      "jaggery",
+      "poppy seeds"
+    ],
+    "required_ingredients": [
+      "rice flour",
+      "jaggery",
+      "poppy seeds"
+    ],
+    "optionalIngredients": [
+      "ghee",
+      "cardamom",
+      "milk"
+    ],
+    "optional_ingredients": [
+      "ghee",
+      "cardamom",
+      "milk"
+    ],
+    "ingredients": [
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "poppy seeds",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice flour",
+    "primary_ingredient_2": "jaggery",
+    "primaryIngredient1": "rice flour",
+    "primaryIngredient2": "jaggery",
+    "secondary_ingredient_1": "ghee",
+    "secondaryIngredient1": "ghee",
+    "secondary_ingredient_2": "cardamom",
+    "secondaryIngredient2": "cardamom",
+    "secondary_ingredient_3": "milk",
+    "secondaryIngredient3": "milk",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "sweet snack",
+    "dish_family": "sweet snack",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "rice flour",
+        "jaggery",
+        "poppy seeds",
+        "ghee",
+        "cardamom",
+        "milk"
+      ],
+      "steps": [
+        "Prep rice flour and jaggery before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the sweet snack tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Anarsa warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Tea"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "446f3ae3-ba08-5dcc-81c8-8622afa51d94",
+    "sourceId": "maharashtra-wave-karadantu",
+    "title": "Karadantu",
+    "name": "Karadantu",
+    "description": "Karadantu is a Maharashtra favourite with the kind of regional character that makes a meal feel rooted and memorable. It fits naturally into a home-style plate, with familiar aromatics, practical pantry ingredients, and pairings that help Tomo recommend it in the right moment.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "servings": 2,
+    "cuisine": "Maharashtrian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/desserts.webp",
+    "image": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "snack",
+      "festive",
+      "protein",
+      "soul",
+      "vegetarian",
+      "maharashtra",
+      "regional-journey"
+    ],
+    "mealTags": [
+      "dessert",
+      "snack"
+    ],
+    "moodTags": [
+      "festive",
+      "protein",
+      "soul"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Festive",
+    "secondaryMood": "Protein",
+    "isRealDish": true,
+    "baseIngredient": "dry fruits",
+    "base_ingredient": "dry fruits",
+    "coreIngredients": [
+      "dry fruits",
+      "edible gum",
+      "jaggery"
+    ],
+    "core_ingredients": [
+      "dry fruits",
+      "edible gum",
+      "jaggery"
+    ],
+    "requiredIngredients": [
+      "dry fruits",
+      "edible gum",
+      "jaggery"
+    ],
+    "required_ingredients": [
+      "dry fruits",
+      "edible gum",
+      "jaggery"
+    ],
+    "optionalIngredients": [
+      "ghee",
+      "poppy seeds",
+      "cardamom"
+    ],
+    "optional_ingredients": [
+      "ghee",
+      "poppy seeds",
+      "cardamom"
+    ],
+    "ingredients": [
+      {
+        "name": "dry fruits",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "edible gum",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "poppy seeds",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "dry fruits",
+    "primary_ingredient_2": "edible gum",
+    "primaryIngredient1": "dry fruits",
+    "primaryIngredient2": "edible gum",
+    "secondary_ingredient_1": "ghee",
+    "secondaryIngredient1": "ghee",
+    "secondary_ingredient_2": "poppy seeds",
+    "secondaryIngredient2": "poppy seeds",
+    "secondary_ingredient_3": "cardamom",
+    "secondaryIngredient3": "cardamom",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "dishFamily": "dry fruit sweet",
+    "dish_family": "dry fruit sweet",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "West India"
+      ],
+      "subRegion": [
+        "Maharashtra"
+      ],
+      "cuisine": [
+        "Maharashtrian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Maharashtra"
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Tea"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "dry fruits",
+        "edible gum",
+        "jaggery",
+        "ghee",
+        "poppy seeds",
+        "cardamom"
+      ],
+      "steps": [
+        "Prep dry fruits and edible gum before cooking.",
+        "Build the flavour base with oil or ghee, spices, aromatics, and salt.",
+        "Cook gently until the dry fruit sweet tastes rounded and homely.",
+        "Adjust heat, tang, sweetness, or richness to taste.",
+        "Serve Karadantu warm with its classic pairings."
+      ],
+      "tip": "Keep the texture balanced: soft where it should be comforting, crisp where it should stay lively.",
+      "bestWith": [
+        "Tea"
+      ]
+    },
+    "aliases": [],
+    "timeMinutes": 40,
+    "pantrySuitability": "medium"
   }
 ];
