@@ -1516,14 +1516,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "sourceId": "expansion-pack-3-aloo-posto",
     "title": "Aloo Posto",
     "name": "Aloo Posto",
-    "description": "A Bengali potato dish with poppy seed paste that feels soft, simple and deeply homestyle.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 18,
-    "timeMinutes": 28,
+    "description": "A Bengali potato posto with poppy seed paste, mustard oil and green chilli.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
     "servings": 2,
-    "cuisine": "Bengali",
+    "cuisine": "Bengal",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "side",
     "tags": [
@@ -1531,7 +1531,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "dinner",
       "vegetarian",
       "comfort",
-      "soul-food"
+      "soul-food",
+      "soul",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
     ],
     "moodTags": [
       "soul",
@@ -1547,53 +1552,60 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": false,
+    "onePot": true,
     "minimalCleanup": true,
     "studySnack": false,
     "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
     "proteinScore": 4,
-    "nostalgiaScore": 7,
+    "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Soul Food",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "Grind poppy seeds smooth and cook potatoes gently.",
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Use mustard oil for the classic aloo posto aroma.",
     "instructions": [
-      "Grind soaked poppy seeds into a paste.",
-      "Cook potato cubes in mustard oil.",
-      "Add chilli, salt and a splash of water.",
-      "Stir in poppy paste.",
+      "Soak and grind poppy seeds into a paste.",
+      "Cube potatoes.",
+      "Cook potatoes in mustard oil.",
+      "Add posto paste and chilli.",
       "Simmer until potatoes are tender."
     ],
     "ingredients": [
       {
         "name": "potato",
-        "quantity": 3,
-        "unit": "pcs",
+        "quantity": 1,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "poppy seeds",
-        "quantity": 3,
-        "unit": "tbsp",
+        "quantity": 0.5,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "green chilli",
         "quantity": 1,
-        "unit": "pcs",
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "mustard oil",
         "quantity": 1,
-        "unit": "tbsp",
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       }
@@ -1604,12 +1616,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "primary_ingredient_2": "Poppy Seeds",
     "primaryIngredient1": "Potato",
     "primaryIngredient2": "Poppy Seeds",
-    "secondary_ingredient_1": "green chilli",
-    "secondaryIngredient1": "green chilli",
-    "secondary_ingredient_2": "mustard oil",
-    "secondaryIngredient2": "mustard oil",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Mustard Oil",
+    "secondaryIngredient2": "Mustard Oil",
+    "secondary_ingredient_3": "Rice",
+    "secondaryIngredient3": "Rice",
     "secondary_ingredient_4": null,
     "secondaryIngredient4": null,
     "secondary_ingredient_5": null,
@@ -1639,32 +1651,32 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "optionalIngredients": [
       "green chilli",
       "mustard oil",
-      "oil",
-      "salt",
-      "spices"
+      "rice"
     ],
     "optional_ingredients": [
       "green chilli",
       "mustard oil",
-      "oil",
-      "salt",
-      "spices"
+      "rice"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "potato sabzi",
-    "dish_family": "potato sabzi",
+    "dishFamily": "posto",
+    "dish_family": "posto",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
-    "moodIncludes": [],
+    "moodIncludes": [
+      "comfort",
+      "soul"
+    ],
     "moodExcludes": [],
     "regionTags": {
       "region": [
         "East India"
       ],
       "subRegion": [
-        "Bengal"
+        "Bengal",
+        "Kolkata"
       ],
       "cuisine": [
         "Bengali"
@@ -1672,7 +1684,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "pairings": {
       "rice": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ],
       "sides": [
         "Dal"
@@ -1687,19 +1700,25 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "3 tbsp poppy seeds",
         "1 green chilli",
         "1 tbsp mustard oil",
-        "Salt"
+        "Salt",
+        "Potato",
+        "Poppy Seeds",
+        "Green Chilli",
+        "Mustard Oil",
+        "Rice"
       ],
       "steps": [
-        "Grind soaked poppy seeds.",
-        "Cook potato cubes in oil.",
-        "Add chilli, salt and water.",
-        "Stir in poppy paste.",
-        "Simmer until tender."
+        "Soak and grind poppy seeds into a paste.",
+        "Cube potatoes.",
+        "Cook potatoes in mustard oil.",
+        "Add posto paste and chilli.",
+        "Simmer until potatoes are tender."
       ],
-      "tip": "Soak poppy seeds before grinding for a smoother paste.",
+      "tip": "Use mustard oil for the classic aloo posto aroma.",
       "bestWith": [
         "Steamed rice",
-        "Dal"
+        "Dal",
+        "Rice"
       ]
     },
     "dietaryTags": [
@@ -1707,9 +1726,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "collectionHome": {
-      "hub": "Kitchen Essentials",
-      "collection": "Sides, Salads & Add-ons"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    },
+    "aliases": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Use mustard oil for the classic aloo posto aroma."
   },
   {
     "id": "eac23e09-f8ae-56e9-b0cf-6451426f8a62",
@@ -4598,14 +4621,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "sourceId": "expansion-pack-3-begun-bhaja",
     "title": "Begun Bhaja",
     "name": "Begun Bhaja",
-    "description": "Bengali-style pan-fried brinjal slices that add a familiar side to dal and rice meals.",
-    "prepTimeMinutes": 8,
-    "cookTimeMinutes": 12,
-    "timeMinutes": 20,
+    "description": "Bengali begun bhaja, thick brinjal slices fried until golden and soft.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
     "servings": 2,
-    "cuisine": "Bengali",
+    "cuisine": "Bengal",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-begun-bhaja.png",
     "recipeRole": "side",
     "tags": [
@@ -4613,7 +4636,11 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "dinner",
       "vegetarian",
       "quick",
-      "comfort"
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
     ],
     "moodTags": [
       "quick",
@@ -4624,58 +4651,58 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "dinner"
     ],
     "lateNight": false,
-    "lowEffort": true,
+    "lowEffort": false,
     "sickDay": false,
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": false,
+    "onePot": true,
     "minimalCleanup": true,
     "studySnack": false,
     "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
     "proteinScore": 4,
-    "nostalgiaScore": 7,
+    "nostalgiaScore": 6,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "Cut thick slices and pan-fry until soft inside.",
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Salt the brinjal briefly so it fries evenly.",
     "instructions": [
-      "Slice brinjal into rounds.",
-      "Coat with salt, turmeric and rice flour.",
-      "Heat oil on a pan.",
-      "Fry both sides until golden.",
-      "Serve hot."
+      "Slice brinjal into thick rounds.",
+      "Rub with turmeric and salt.",
+      "Heat mustard oil.",
+      "Fry slices until browned on both sides.",
+      "Serve hot with rice."
     ],
     "ingredients": [
       {
         "name": "brinjal",
         "quantity": 1,
-        "unit": "pcs",
-        "role": "required",
-        "isMain": true
-      },
-      {
-        "name": "rice flour",
-        "quantity": 2,
-        "unit": "tbsp",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "turmeric",
-        "quantity": 0.25,
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mustard oil",
+        "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
-        "name": "mustard oil",
+        "name": "rice",
         "quantity": 1,
-        "unit": "tbsp",
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       }
@@ -4683,13 +4710,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "recipe_type": "core",
     "recipeType": "core",
     "primary_ingredient_1": "Brinjal",
-    "primary_ingredient_2": "Rice Flour",
+    "primary_ingredient_2": "Turmeric",
     "primaryIngredient1": "Brinjal",
-    "primaryIngredient2": "Rice Flour",
-    "secondary_ingredient_1": "turmeric",
-    "secondaryIngredient1": "turmeric",
-    "secondary_ingredient_2": "mustard oil",
-    "secondaryIngredient2": "mustard oil",
+    "primaryIngredient2": "Turmeric",
+    "secondary_ingredient_1": "Mustard Oil",
+    "secondaryIngredient1": "Mustard Oil",
+    "secondary_ingredient_2": "Rice",
+    "secondaryIngredient2": "Rice",
     "secondary_ingredient_3": null,
     "secondaryIngredient3": null,
     "secondary_ingredient_4": null,
@@ -4698,55 +4725,53 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "secondaryIngredient5": null,
     "primaryIngredients": [
       "brinjal",
-      "rice flour"
+      "turmeric"
     ],
     "baseIngredient": "brinjal",
     "base_ingredient": "brinjal",
     "coreIngredients": [
       "brinjal",
-      "rice flour"
+      "turmeric"
     ],
     "core_ingredients": [
       "brinjal",
-      "rice flour"
+      "turmeric"
     ],
     "requiredIngredients": [
       "brinjal",
-      "rice flour"
+      "turmeric"
     ],
     "required_ingredients": [
       "brinjal",
-      "rice flour"
+      "turmeric"
     ],
     "optionalIngredients": [
-      "turmeric",
       "mustard oil",
-      "oil",
-      "salt",
-      "spices"
+      "rice"
     ],
     "optional_ingredients": [
-      "turmeric",
       "mustard oil",
-      "oil",
-      "salt",
-      "spices"
+      "rice"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "vegetable fry",
-    "dish_family": "vegetable fry",
+    "dishFamily": "fried-vegetable",
+    "dish_family": "fried-vegetable",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
-    "moodIncludes": [],
+    "moodIncludes": [
+      "comfort",
+      "quick"
+    ],
     "moodExcludes": [],
     "regionTags": {
       "region": [
         "East India"
       ],
       "subRegion": [
-        "Bengal"
+        "Bengal",
+        "Kolkata"
       ],
       "cuisine": [
         "Bengali"
@@ -4754,7 +4779,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "pairings": {
       "rice": [
-        "Dal rice"
+        "Dal rice",
+        "Rice"
       ],
       "sides": [
         "Khichdi"
@@ -4769,28 +4795,38 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "2 tbsp rice flour",
         "1/4 tsp turmeric",
         "1 tbsp mustard oil",
-        "Salt"
+        "Salt",
+        "Brinjal",
+        "Turmeric",
+        "Mustard Oil",
+        "Rice"
       ],
       "steps": [
-        "Slice brinjal into rounds.",
-        "Coat with salt, turmeric and flour.",
-        "Heat oil on a pan.",
-        "Fry both sides until golden.",
-        "Serve hot."
+        "Slice brinjal into thick rounds.",
+        "Rub with turmeric and salt.",
+        "Heat mustard oil.",
+        "Fry slices until browned on both sides.",
+        "Serve hot with rice."
       ],
-      "tip": "Cut slices thick enough to stay soft inside.",
+      "tip": "Salt the brinjal briefly so it fries evenly.",
       "bestWith": [
         "Dal rice",
-        "Khichdi"
+        "Khichdi",
+        "Rice"
       ]
     },
     "dietaryTags": [
       "vegetarian"
     ],
     "collectionHome": {
-      "hub": "Kitchen Essentials",
-      "collection": "Sides, Salads & Add-ons"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    },
+    "aliases": [],
+    "image_url": "/assets/images/dishes/batch4-begun-bhaja.png",
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Salt the brinjal briefly so it fries evenly."
   },
   {
     "id": "karnataka-wave-a-ragi-mudde",
@@ -14821,14 +14857,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "sourceId": "expansion-pack-3-chingri-malai-curry",
     "title": "Chingri Malai Curry",
     "name": "Chingri Malai Curry",
-    "description": "A Bengali prawn coconut curry that adds a distinct coastal eastern staple to the database.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
-    "timeMinutes": 30,
+    "description": "Bengali chingri malai curry with prawns in coconut milk and gentle spice.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
     "servings": 2,
-    "cuisine": "Bengali",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
+    "cuisine": "Bengal",
+    "dietType": "non_vegetarian",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-chingri-malai-curry.png",
     "recipeRole": "main",
     "tags": [
@@ -14836,11 +14872,20 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "dinner",
       "non-vegetarian",
       "coastal",
-      "regional"
+      "regional",
+      "non_vegetarian",
+      "festive",
+      "protein",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
     ],
     "moodTags": [
       "comfort",
-      "protein"
+      "protein",
+      "festive"
     ],
     "mealTags": [
       "lunch",
@@ -14849,41 +14894,41 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "lateNight": false,
     "lowEffort": false,
     "sickDay": false,
-    "budgetFriendly": true,
+    "budgetFriendly": false,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": false,
+    "onePot": true,
     "minimalCleanup": true,
     "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "proteinScore": 8,
-    "nostalgiaScore": 7,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Comfort Food",
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
     "secondaryMood": "High Protein",
-    "cookingNotes": "Cook prawns briefly and finish gently in coconut milk.",
+    "cookingNotes": "Cook prawns briefly so they stay tender.",
     "instructions": [
-      "Saute onion and ginger.",
-      "Add turmeric and salt.",
-      "Add prawns and cook briefly.",
-      "Pour in coconut milk.",
-      "Simmer gently and serve."
+      "Clean prawns and season lightly.",
+      "Saute onion and whole spices.",
+      "Add prawns briefly.",
+      "Pour in coconut milk and simmer gently.",
+      "Serve with rice."
     ],
     "ingredients": [
       {
-        "name": "prawn",
-        "quantity": 250,
-        "unit": "g",
+        "name": "prawns",
+        "quantity": 1,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "coconut milk",
-        "quantity": 1,
+        "quantity": 0.5,
         "unit": "cup",
         "role": "required",
         "isMain": true
@@ -14891,20 +14936,20 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       {
         "name": "onion",
         "quantity": 1,
-        "unit": "small",
-        "role": "required",
+        "unit": "tsp",
+        "role": "optional",
         "isMain": false
       },
       {
-        "name": "ginger",
+        "name": "garam masala",
         "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
-        "name": "turmeric",
-        "quantity": 0.25,
+        "name": "rice",
+        "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
@@ -14912,74 +14957,72 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Prawn",
+    "primary_ingredient_1": "Prawns",
     "primary_ingredient_2": "Coconut Milk",
-    "primaryIngredient1": "Prawn",
+    "primaryIngredient1": "Prawns",
     "primaryIngredient2": "Coconut Milk",
-    "secondary_ingredient_1": "onion",
-    "secondaryIngredient1": "onion",
-    "secondary_ingredient_2": "ginger",
-    "secondaryIngredient2": "ginger",
-    "secondary_ingredient_3": "turmeric",
-    "secondaryIngredient3": "turmeric",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Garam Masala",
+    "secondaryIngredient2": "Garam Masala",
+    "secondary_ingredient_3": "Rice",
+    "secondaryIngredient3": "Rice",
     "secondary_ingredient_4": null,
     "secondaryIngredient4": null,
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryIngredients": [
-      "prawn",
+      "prawns",
       "coconut milk"
     ],
-    "baseIngredient": "prawn",
-    "base_ingredient": "prawn",
+    "baseIngredient": "prawns",
+    "base_ingredient": "prawns",
     "coreIngredients": [
-      "prawn",
+      "prawns",
       "coconut milk"
     ],
     "core_ingredients": [
-      "prawn",
+      "prawns",
       "coconut milk"
     ],
     "requiredIngredients": [
-      "prawn",
-      "coconut milk",
-      "onion"
+      "prawns",
+      "coconut milk"
     ],
     "required_ingredients": [
-      "prawn",
-      "coconut milk",
-      "onion"
+      "prawns",
+      "coconut milk"
     ],
     "optionalIngredients": [
-      "ginger",
-      "turmeric",
-      "oil",
-      "salt",
-      "spices"
+      "onion",
+      "garam masala",
+      "rice"
     ],
     "optional_ingredients": [
-      "ginger",
-      "turmeric",
-      "oil",
-      "salt",
-      "spices"
+      "onion",
+      "garam masala",
+      "rice"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "fish-curry",
-    "dish_family": "fish-curry",
+    "dishFamily": "prawn-curry",
+    "dish_family": "prawn-curry",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
-    "moodIncludes": [],
+    "moodIncludes": [
+      "festive",
+      "protein",
+      "comfort"
+    ],
     "moodExcludes": [],
     "regionTags": {
       "region": [
-        "East India",
-        "Coastal India"
+        "East India"
       ],
       "subRegion": [
-        "Bengal"
+        "Bengal",
+        "Kolkata"
       ],
       "cuisine": [
         "Bengali"
@@ -14988,7 +15031,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "pairings": {
       "rice": [
         "Steamed rice",
-        "Ghee rice"
+        "Ghee rice",
+        "Rice"
       ],
       "sides": [
         "Cucumber salad"
@@ -15004,18 +15048,24 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 onion",
         "1 tsp ginger",
         "1/4 tsp turmeric",
-        "Salt"
+        "Salt",
+        "Prawns",
+        "Coconut Milk",
+        "Onion",
+        "Garam Masala",
+        "Rice"
       ],
       "steps": [
-        "Saute onion and ginger.",
-        "Add turmeric and salt.",
+        "Clean prawns and season lightly.",
+        "Saute onion and whole spices.",
         "Add prawns briefly.",
-        "Pour coconut milk.",
-        "Simmer gently."
+        "Pour in coconut milk and simmer gently.",
+        "Serve with rice."
       ],
-      "tip": "Do not overcook prawns after adding coconut milk.",
+      "tip": "Cook prawns briefly so they stay tender.",
       "bestWith": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ]
     },
     "dietaryTags": [
@@ -15024,7 +15074,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Bengal"
-    }
+    },
+    "aliases": [],
+    "image_url": "/assets/images/dishes/batch4-chingri-malai-curry.png",
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Cook prawns briefly so they stay tender."
   },
   {
     "id": "fd5a77d3-0777-506a-94ab-f95245ebaef3",
@@ -17953,14 +18008,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "sourceId": "expansion-pack-3-dhokar-dalna",
     "title": "Dhokar Dalna",
     "name": "Dhokar Dalna",
-    "description": "A Bengali chana dal cake curry that brings regional variety to vegetarian comfort meals.",
-    "prepTimeMinutes": 15,
-    "cookTimeMinutes": 25,
-    "timeMinutes": 40,
+    "description": "Bengali dhokar dalna with fried lentil cakes simmered in a spiced gravy.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
     "servings": 2,
-    "cuisine": "Bengali",
+    "cuisine": "Bengal",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-dhokar-dalna.png",
     "recipeRole": "main",
     "tags": [
@@ -17968,11 +18023,19 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "dinner",
       "vegetarian",
       "comfort",
-      "regional"
+      "regional",
+      "festive",
+      "protein",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
     ],
     "moodTags": [
       "comfort",
-      "soul"
+      "soul",
+      "festive",
+      "protein"
     ],
     "mealTags": [
       "lunch",
@@ -17984,26 +18047,26 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": false,
+    "onePot": true,
     "minimalCleanup": true,
     "studySnack": false,
-    "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "proteinScore": 6,
-    "nostalgiaScore": 7,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food",
-    "cookingNotes": "Use firm steamed dal cakes and a light tomato gravy.",
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Add fried dhoka near the end so it does not break apart.",
     "instructions": [
-      "Grind soaked chana dal into a paste.",
-      "Steam or pan-set into firm cakes.",
+      "Soak and grind chana dal.",
+      "Cook the paste until thick and set it.",
+      "Cut and fry lentil cakes.",
       "Make a tomato-ginger gravy.",
-      "Add dal cakes gently.",
-      "Simmer briefly and serve."
+      "Simmer the dhoka gently in the gravy."
     ],
     "ingredients": [
       {
@@ -18014,9 +18077,9 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "isMain": true
       },
       {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
+        "name": "potato",
+        "quantity": 0.5,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
@@ -18028,16 +18091,23 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "isMain": false
       },
       {
-        "name": "cumin",
-        "quantity": 0.5,
+        "name": "tomato",
+        "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
-        "name": "oil",
+        "name": "garam masala",
         "quantity": 1,
-        "unit": "tbsp",
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       }
@@ -18045,70 +18115,73 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "recipe_type": "core",
     "recipeType": "core",
     "primary_ingredient_1": "Chana Dal",
-    "primary_ingredient_2": "Tomato",
+    "primary_ingredient_2": "Potato",
     "primaryIngredient1": "Chana Dal",
-    "primaryIngredient2": "Tomato",
-    "secondary_ingredient_1": "ginger",
-    "secondaryIngredient1": "ginger",
-    "secondary_ingredient_2": "cumin",
-    "secondaryIngredient2": "cumin",
-    "secondary_ingredient_3": "oil",
-    "secondaryIngredient3": "oil",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "primaryIngredient2": "Potato",
+    "secondary_ingredient_1": "Ginger",
+    "secondaryIngredient1": "Ginger",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": "Garam Masala",
+    "secondaryIngredient3": "Garam Masala",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryIngredients": [
       "chana dal",
-      "tomato"
+      "potato"
     ],
     "baseIngredient": "chana dal",
     "base_ingredient": "chana dal",
     "coreIngredients": [
       "chana dal",
-      "tomato"
+      "potato"
     ],
     "core_ingredients": [
       "chana dal",
-      "tomato"
+      "potato"
     ],
     "requiredIngredients": [
       "chana dal",
-      "tomato"
+      "potato"
     ],
     "required_ingredients": [
       "chana dal",
-      "tomato"
+      "potato"
     ],
     "optionalIngredients": [
       "ginger",
-      "cumin",
-      "oil",
-      "salt",
-      "spices"
+      "tomato",
+      "garam masala",
+      "rice"
     ],
     "optional_ingredients": [
       "ginger",
-      "cumin",
-      "oil",
-      "salt",
-      "spices"
+      "tomato",
+      "garam masala",
+      "rice"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "dal curry",
-    "dish_family": "dal curry",
+    "dishFamily": "dalna",
+    "dish_family": "dalna",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
-    "moodIncludes": [],
+    "moodIncludes": [
+      "festive",
+      "comfort",
+      "protein"
+    ],
     "moodExcludes": [],
     "regionTags": {
       "region": [
         "East India"
       ],
       "subRegion": [
-        "Bengal"
+        "Bengal",
+        "Kolkata"
       ],
       "cuisine": [
         "Bengali"
@@ -18116,7 +18189,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "pairings": {
       "rice": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ],
       "sides": [
         "Begun bhaja"
@@ -18132,18 +18206,25 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 tsp ginger",
         "1/2 tsp cumin",
         "1 tbsp oil",
-        "Salt"
+        "Salt",
+        "Chana Dal",
+        "Potato",
+        "Ginger",
+        "Tomato",
+        "Garam Masala",
+        "Rice"
       ],
       "steps": [
-        "Grind soaked dal into paste.",
-        "Steam or pan-set into cakes.",
-        "Make tomato-ginger gravy.",
-        "Add dal cakes gently.",
-        "Simmer briefly."
+        "Soak and grind chana dal.",
+        "Cook the paste until thick and set it.",
+        "Cut and fry lentil cakes.",
+        "Make a tomato-ginger gravy.",
+        "Simmer the dhoka gently in the gravy."
       ],
-      "tip": "Keep the dal cakes firm before adding to gravy.",
+      "tip": "Add fried dhoka near the end so it does not break apart.",
       "bestWith": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ]
     },
     "dietaryTags": [
@@ -18152,7 +18233,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Bengal"
-    }
+    },
+    "aliases": [],
+    "image_url": "/assets/images/dishes/batch4-dhokar-dalna.png",
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Add fried dhoka near the end so it does not break apart."
   },
   {
     "id": "5f687b91-2339-5486-84f0-7911d8ababd0",
@@ -22716,58 +22802,65 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "sourceId": "expansion-pack-3-ghugni",
     "title": "Ghugni",
     "name": "Ghugni",
-    "description": "An eastern Indian yellow peas curry that works as a snack or light dinner with bread.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 25,
-    "timeMinutes": 35,
+    "description": "Bengali ghugni with yellow peas, potato and tangy toppings for tea-time comfort.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 32,
     "servings": 2,
-    "cuisine": "Bengali",
+    "cuisine": "Bengal",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-ghugni.png",
-    "recipeRole": "main",
+    "recipeRole": "snack",
     "tags": [
       "snack",
       "dinner",
       "snacks",
       "vegetarian",
       "protein",
-      "regional"
+      "regional",
+      "rainy",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
     ],
     "moodTags": [
       "protein",
-      "comfort"
+      "comfort",
+      "rainy"
     ],
     "mealTags": [
       "snack",
       "dinner"
     ],
-    "lateNight": false,
-    "lowEffort": false,
+    "lateNight": true,
+    "lowEffort": true,
     "sickDay": false,
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": true,
-    "minimalCleanup": true,
-    "studySnack": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
     "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "proteinScore": 7,
-    "nostalgiaScore": 7,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "High Protein",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "Use cooked yellow peas and simmer with a simple masala.",
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Keep ghugni saucy enough for a street-snack feel.",
     "instructions": [
-      "Saute onion and ginger.",
-      "Add tomato and spices.",
-      "Add cooked yellow peas and water.",
-      "Simmer until thick.",
-      "Top with onion and lemon."
+      "Soak and cook yellow peas until tender.",
+      "Cook with potato and spices.",
+      "Simmer until thick but spoonable.",
+      "Top with onion, chilli and tamarind.",
+      "Serve hot."
     ],
     "ingredients": [
       {
@@ -22778,29 +22871,36 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "isMain": true
       },
       {
-        "name": "onion",
-        "quantity": 1,
-        "unit": "small",
+        "name": "potato",
+        "quantity": 0.5,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "tomato",
-        "quantity": 1,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "ginger",
+        "name": "onion",
         "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
-        "name": "garam masala",
-        "quantity": 0.5,
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tea",
+        "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
@@ -22809,56 +22909,52 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "recipe_type": "core",
     "recipeType": "core",
     "primary_ingredient_1": "Yellow Peas",
-    "primary_ingredient_2": "Onion",
+    "primary_ingredient_2": "Potato",
     "primaryIngredient1": "Yellow Peas",
-    "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "tomato",
-    "secondaryIngredient1": "tomato",
-    "secondary_ingredient_2": "ginger",
-    "secondaryIngredient2": "ginger",
-    "secondary_ingredient_3": "garam masala",
-    "secondaryIngredient3": "garam masala",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "primaryIngredient2": "Potato",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Tamarind",
+    "secondaryIngredient2": "Tamarind",
+    "secondary_ingredient_3": "Green Chilli",
+    "secondaryIngredient3": "Green Chilli",
+    "secondary_ingredient_4": "Tea",
+    "secondaryIngredient4": "Tea",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryIngredients": [
       "yellow peas",
-      "onion"
+      "potato"
     ],
     "baseIngredient": "yellow peas",
     "base_ingredient": "yellow peas",
     "coreIngredients": [
       "yellow peas",
-      "onion"
+      "potato"
     ],
     "core_ingredients": [
       "yellow peas",
-      "onion"
+      "potato"
     ],
     "requiredIngredients": [
       "yellow peas",
-      "onion"
+      "potato"
     ],
     "required_ingredients": [
       "yellow peas",
-      "onion"
+      "potato"
     ],
     "optionalIngredients": [
-      "tomato",
-      "ginger",
-      "garam masala",
-      "oil",
-      "salt",
-      "spices"
+      "onion",
+      "tamarind",
+      "green chilli",
+      "tea"
     ],
     "optional_ingredients": [
-      "tomato",
-      "ginger",
-      "garam masala",
-      "oil",
-      "salt",
-      "spices"
+      "onion",
+      "tamarind",
+      "green chilli",
+      "tea"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
@@ -22867,14 +22963,19 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
-    "moodIncludes": [],
+    "moodIncludes": [
+      "rainy",
+      "comfort",
+      "protein"
+    ],
     "moodExcludes": [],
     "regionTags": {
       "region": [
         "East India"
       ],
       "subRegion": [
-        "Bengal"
+        "Bengal",
+        "Kolkata"
       ],
       "cuisine": [
         "Bengali"
@@ -22888,6 +22989,9 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "toppings": [
         "Onion",
         "Lemon"
+      ],
+      "drinks": [
+        "Tea"
       ]
     },
     "quickGuide": {
@@ -22901,19 +23005,26 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 tsp ginger",
         "1/2 tsp garam masala",
         "Salt",
-        "Lemon"
+        "Lemon",
+        "Yellow Peas",
+        "Potato",
+        "Onion",
+        "Tamarind",
+        "Green Chilli",
+        "Tea"
       ],
       "steps": [
-        "Saute onion and ginger.",
-        "Add tomato and spices.",
-        "Add peas and water.",
-        "Simmer until thick.",
-        "Top with lemon."
+        "Soak and cook yellow peas until tender.",
+        "Cook with potato and spices.",
+        "Simmer until thick but spoonable.",
+        "Top with onion, chilli and tamarind.",
+        "Serve hot."
       ],
-      "tip": "Mash a spoon of peas to thicken the curry.",
+      "tip": "Keep ghugni saucy enough for a street-snack feel.",
       "bestWith": [
         "Toast",
-        "Pav"
+        "Pav",
+        "Tea"
       ]
     },
     "dietaryTags": [
@@ -22922,7 +23033,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Bengal"
-    }
+    },
+    "aliases": [],
+    "image_url": "/assets/images/dishes/batch4-ghugni.png",
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Keep ghugni saucy enough for a street-snack feel."
   },
   {
     "id": "2d56b091-f071-53bf-a111-356b22b441e1",
@@ -30691,17 +30807,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "title": "Luchi Aloor Dom",
     "name": "Luchi Aloor Dom",
     "aliases": [],
-    "description": "A Bengali breakfast plate with luchi and potato curry, added to improve East Indian breakfast coverage.",
-    "prepTimeMinutes": 15,
-    "cookTimeMinutes": 25,
-    "timeMinutes": 40,
+    "description": "Bengali luchi with spiced aloor dom, a festive breakfast and Sunday comfort plate.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
     "servings": 2,
-    "cuisine": "Bengali",
+    "cuisine": "Bengal",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-luchi-aloor-dom.png",
     "recipeRole": "main",
     "tags": [
@@ -30709,11 +30825,19 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "lunch",
       "vegetarian",
       "comfort",
-      "soul-food"
+      "soul-food",
+      "soul",
+      "festive",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
     ],
     "moodTags": [
       "comfort",
-      "soul-food"
+      "soul-food",
+      "soul",
+      "festive"
     ],
     "mealTags": [
       "breakfast",
@@ -30725,30 +30849,30 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
+    "onePot": true,
+    "minimalCleanup": true,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "proteinScore": 5,
-    "nostalgiaScore": 7,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Soul Food",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "Fry luchis on steady medium-high heat so they puff quickly.",
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Serve luchi immediately while puffed and soft.",
     "instructions": [
-      "Knead maida with salt and water.",
-      "Boil and cube potatoes.",
-      "Cook potato curry with tomato and spices.",
-      "Roll and fry luchis.",
-      "Serve hot with aloor dom."
+      "Make a soft dough for luchi.",
+      "Boil potatoes and cube them.",
+      "Cook tomato, ginger and spices into a masala.",
+      "Simmer potatoes until coated.",
+      "Fry luchi puffed and serve hot."
     ],
     "ingredients": [
       {
-        "name": "maida",
+        "name": "luchi",
         "quantity": 1,
         "unit": "cup",
         "role": "required",
@@ -30756,15 +30880,15 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       },
       {
         "name": "potato",
-        "quantity": 3,
-        "unit": "pcs",
+        "quantity": 0.5,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "tomato",
         "quantity": 1,
-        "unit": "pcs",
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
@@ -30777,7 +30901,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       },
       {
         "name": "cumin",
-        "quantity": 0.5,
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cholar dal",
+        "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
@@ -30785,73 +30916,74 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Maida",
+    "primary_ingredient_1": "Luchi",
     "primary_ingredient_2": "Potato",
-    "primaryIngredient1": "Maida",
+    "primaryIngredient1": "Luchi",
     "primaryIngredient2": "Potato",
-    "secondary_ingredient_1": "tomato",
-    "secondaryIngredient1": "tomato",
-    "secondary_ingredient_2": "ginger",
-    "secondaryIngredient2": "ginger",
-    "secondary_ingredient_3": "cumin",
-    "secondaryIngredient3": "cumin",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Ginger",
+    "secondaryIngredient2": "Ginger",
+    "secondary_ingredient_3": "Cumin",
+    "secondaryIngredient3": "Cumin",
+    "secondary_ingredient_4": "Cholar Dal",
+    "secondaryIngredient4": "Cholar Dal",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryIngredients": [
-      "maida",
+      "luchi",
       "potato"
     ],
-    "baseIngredient": "maida",
-    "base_ingredient": "maida",
+    "baseIngredient": "luchi",
+    "base_ingredient": "luchi",
     "coreIngredients": [
-      "maida",
+      "luchi",
       "potato"
     ],
     "core_ingredients": [
-      "maida",
+      "luchi",
       "potato"
     ],
     "requiredIngredients": [
-      "maida",
+      "luchi",
       "potato"
     ],
     "required_ingredients": [
-      "maida",
+      "luchi",
       "potato"
     ],
     "optionalIngredients": [
       "tomato",
       "ginger",
       "cumin",
-      "oil",
-      "salt",
-      "spices"
+      "cholar dal"
     ],
     "optional_ingredients": [
       "tomato",
       "ginger",
       "cumin",
-      "oil",
-      "salt",
-      "spices"
+      "cholar dal"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "fried bread curry",
-    "dish_family": "fried bread curry",
+    "dishFamily": "luchi-curry",
+    "dish_family": "luchi-curry",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
-    "moodIncludes": [],
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "festive"
+    ],
     "moodExcludes": [],
     "regionTags": {
       "region": [
         "East India"
       ],
       "subRegion": [
-        "Bengal"
+        "Bengal",
+        "Kolkata"
       ],
       "cuisine": [
         "Bengali"
@@ -30860,7 +30992,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "pairings": {
       "sides": [
         "Mishti doi",
-        "Kachumber salad"
+        "Kachumber salad",
+        "Cholar Dal"
       ],
       "drinks": [
         "Tea"
@@ -30877,25 +31010,36 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 tomato",
         "1 tsp ginger",
         "1/2 tsp cumin",
-        "Salt"
+        "Salt",
+        "Luchi",
+        "Potato",
+        "Tomato",
+        "Ginger",
+        "Cumin",
+        "Cholar Dal"
       ],
       "steps": [
-        "Knead maida with salt and water.",
-        "Boil and cube potatoes.",
-        "Cook potato curry with tomato and spices.",
-        "Roll and fry luchis.",
-        "Serve hot with aloor dom."
+        "Make a soft dough for luchi.",
+        "Boil potatoes and cube them.",
+        "Cook tomato, ginger and spices into a masala.",
+        "Simmer potatoes until coated.",
+        "Fry luchi puffed and serve hot."
       ],
-      "tip": "Fry luchis on steady medium-high heat so they puff quickly.",
+      "tip": "Serve luchi immediately while puffed and soft.",
       "bestWith": [
         "Mishti doi",
-        "Tea"
+        "Tea",
+        "Cholar Dal"
       ]
     },
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Bengal"
-    }
+    },
+    "image_url": "/assets/images/dishes/batch4-luchi-aloor-dom.png",
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Serve luchi immediately while puffed and soft."
   },
   {
     "id": "cfd9033a-2917-5e76-99ff-ee9b71df4888",
@@ -35184,22 +35328,27 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "sourceId": "expansion-pack-4-mochar-ghonto",
     "title": "Mochar Ghonto",
     "name": "Mochar Ghonto",
-    "description": "A Bengali banana blossom stir-curry that adds a unique vegetarian regional experience.",
-    "prepTimeMinutes": 15,
-    "cookTimeMinutes": 25,
-    "timeMinutes": 40,
+    "description": "Bengali mochar ghonto with banana blossom, potato, coconut and warm spices.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
     "servings": 2,
-    "cuisine": "Bengali",
+    "cuisine": "Bengal",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-mochar-ghonto.png",
-    "recipeRole": "side",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "dinner",
       "vegetarian",
       "regional",
-      "comfort"
+      "comfort",
+      "soul",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
     ],
     "moodTags": [
       "comfort",
@@ -35215,46 +35364,46 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": false,
+    "onePot": true,
     "minimalCleanup": true,
     "studySnack": false,
     "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "proteinScore": 5,
-    "nostalgiaScore": 6,
-    "homeStyleScore": 7,
-    "rainyDayScore": 4,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
     "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food",
-    "cookingNotes": "Use cleaned banana blossom and cook until tender.",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Clean mocha well to avoid bitterness and toughness.",
     "instructions": [
-      "Boil cleaned banana blossom until tender.",
-      "Saute potato and ginger.",
-      "Add banana blossom and salt.",
-      "Cook until dry and soft.",
-      "Finish with coconut or ghee."
+      "Clean and chop banana blossom.",
+      "Boil until tender and drain.",
+      "Cook potato with ginger and spices.",
+      "Add mocha and simmer together.",
+      "Finish with coconut and garam masala."
     ],
     "ingredients": [
       {
         "name": "banana blossom",
-        "quantity": 2,
-        "unit": "cups",
+        "quantity": 1,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "potato",
-        "quantity": 1,
-        "unit": "pcs",
+        "quantity": 0.5,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "coconut",
-        "quantity": 2,
-        "unit": "tbsp",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
@@ -35266,7 +35415,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "isMain": false
       },
       {
-        "name": "ghee",
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
         "quantity": 1,
         "unit": "tsp",
         "role": "optional",
@@ -35279,14 +35435,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "primary_ingredient_2": "Potato",
     "primaryIngredient1": "Banana Blossom",
     "primaryIngredient2": "Potato",
-    "secondary_ingredient_1": "coconut",
-    "secondaryIngredient1": "coconut",
-    "secondary_ingredient_2": "ginger",
-    "secondaryIngredient2": "ginger",
-    "secondary_ingredient_3": "ghee",
-    "secondaryIngredient3": "ghee",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "secondary_ingredient_1": "Coconut",
+    "secondaryIngredient1": "Coconut",
+    "secondary_ingredient_2": "Ginger",
+    "secondaryIngredient2": "Ginger",
+    "secondary_ingredient_3": "Garam Masala",
+    "secondaryIngredient3": "Garam Masala",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryIngredients": [
@@ -35314,34 +35470,34 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "optionalIngredients": [
       "coconut",
       "ginger",
-      "ghee",
-      "oil",
-      "salt",
-      "spices"
+      "garam masala",
+      "rice"
     ],
     "optional_ingredients": [
       "coconut",
       "ginger",
-      "ghee",
-      "oil",
-      "salt",
-      "spices"
+      "garam masala",
+      "rice"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "vegetable curry",
-    "dish_family": "vegetable curry",
+    "dishFamily": "banana-blossom",
+    "dish_family": "banana-blossom",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
-    "moodIncludes": [],
+    "moodIncludes": [
+      "soul",
+      "comfort"
+    ],
     "moodExcludes": [],
     "regionTags": {
       "region": [
         "East India"
       ],
       "subRegion": [
-        "Bengal"
+        "Bengal",
+        "Kolkata"
       ],
       "cuisine": [
         "Bengali"
@@ -35349,7 +35505,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "pairings": {
       "rice": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ],
       "sides": [
         "Dal"
@@ -35365,28 +35522,40 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "2 tbsp coconut",
         "1 tsp ginger",
         "1 tsp ghee",
-        "Salt"
+        "Salt",
+        "Banana Blossom",
+        "Potato",
+        "Coconut",
+        "Ginger",
+        "Garam Masala",
+        "Rice"
       ],
       "steps": [
-        "Boil cleaned banana blossom.",
-        "Saute potato and ginger.",
-        "Add blossom and salt.",
-        "Cook until dry and soft.",
-        "Finish with coconut or ghee."
+        "Clean and chop banana blossom.",
+        "Boil until tender and drain.",
+        "Cook potato with ginger and spices.",
+        "Add mocha and simmer together.",
+        "Finish with coconut and garam masala."
       ],
-      "tip": "Pre-boil banana blossom to reduce bitterness.",
+      "tip": "Clean mocha well to avoid bitterness and toughness.",
       "bestWith": [
         "Steamed rice",
-        "Dal"
+        "Dal",
+        "Rice"
       ]
     },
     "dietaryTags": [
       "vegetarian"
     ],
     "collectionHome": {
-      "hub": "Kitchen Essentials",
-      "collection": "Sides, Salads & Add-ons"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    },
+    "aliases": [],
+    "image_url": "/assets/images/dishes/batch4-mochar-ghonto.png",
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Clean mocha well to avoid bitterness and toughness."
   },
   {
     "id": "7157654a-9e2f-5004-87aa-7f0d0f8a2ad3",
@@ -50039,14 +50208,14 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "sourceId": "expansion-pack-3-shukto",
     "title": "Shukto",
     "name": "Shukto",
-    "description": "A gentle Bengali mixed vegetable dish with a bittersweet edge for homestyle lunch plates.",
+    "description": "A gentle Bengali shukto with mixed vegetables, bitter notes and a soft creamy finish.",
     "prepTimeMinutes": 12,
-    "cookTimeMinutes": 22,
-    "timeMinutes": 34,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
     "servings": 2,
-    "cuisine": "Bengali",
+    "cuisine": "Bengal",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch4-shukto.png",
     "recipeRole": "side",
     "tags": [
@@ -50054,73 +50223,87 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian",
       "soul-food",
       "regional",
-      "comfort"
+      "comfort",
+      "light",
+      "soul",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
     ],
     "moodTags": [
       "soul",
-      "comfort"
+      "comfort",
+      "light"
     ],
     "mealTags": [
       "lunch"
     ],
     "lateNight": false,
     "lowEffort": false,
-    "sickDay": false,
+    "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": false,
-    "lightMeal": false,
-    "onePot": false,
+    "lightMeal": true,
+    "onePot": true,
     "minimalCleanup": true,
     "studySnack": false,
     "weekendSpecial": false,
-    "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
     "proteinScore": 4,
-    "nostalgiaScore": 7,
+    "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Soul Food",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "Cook vegetables gently and keep the seasoning mild.",
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Shukto should be mild and slightly bitter, not spicy.",
     "instructions": [
-      "Cut vegetables into similar pieces.",
-      "Temper mustard seeds and ginger.",
-      "Add vegetables, salt and water.",
-      "Simmer until tender.",
-      "Finish with milk or ghee."
+      "Cut vegetables into even pieces.",
+      "Temper panch phoron lightly.",
+      "Cook vegetables with a little water.",
+      "Add mustard paste and milk.",
+      "Simmer gently and serve first with rice."
     ],
     "ingredients": [
       {
-        "name": "vegetables",
-        "quantity": 2,
-        "unit": "cups",
+        "name": "mixed vegetables",
+        "quantity": 1,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "mustard seeds",
-        "quantity": 1,
-        "unit": "tsp",
+        "name": "bitter gourd",
+        "quantity": 0.5,
+        "unit": "cup",
         "role": "required",
         "isMain": true
+      },
+      {
+        "name": "mustard paste",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
       },
       {
         "name": "milk",
-        "quantity": 0.25,
-        "unit": "cup",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "ginger",
         "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
-        "name": "ghee",
+        "name": "panch phoron",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
         "quantity": 1,
         "unit": "tsp",
         "role": "optional",
@@ -50129,73 +50312,74 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Vegetables",
-    "primary_ingredient_2": "Mustard Seeds",
-    "primaryIngredient1": "Vegetables",
-    "primaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_1": "milk",
-    "secondaryIngredient1": "milk",
-    "secondary_ingredient_2": "ginger",
-    "secondaryIngredient2": "ginger",
-    "secondary_ingredient_3": "ghee",
-    "secondaryIngredient3": "ghee",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "primary_ingredient_1": "Mixed Vegetables",
+    "primary_ingredient_2": "Bitter Gourd",
+    "primaryIngredient1": "Mixed Vegetables",
+    "primaryIngredient2": "Bitter Gourd",
+    "secondary_ingredient_1": "Mustard Paste",
+    "secondaryIngredient1": "Mustard Paste",
+    "secondary_ingredient_2": "Milk",
+    "secondaryIngredient2": "Milk",
+    "secondary_ingredient_3": "Panch Phoron",
+    "secondaryIngredient3": "Panch Phoron",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
     "primaryIngredients": [
-      "vegetables",
-      "mustard seeds"
+      "mixed vegetables",
+      "bitter gourd"
     ],
-    "baseIngredient": "vegetables",
-    "base_ingredient": "vegetables",
+    "baseIngredient": "mixed vegetables",
+    "base_ingredient": "mixed vegetables",
     "coreIngredients": [
-      "vegetables",
-      "mustard seeds"
+      "mixed vegetables",
+      "bitter gourd"
     ],
     "core_ingredients": [
-      "vegetables",
-      "mustard seeds"
+      "mixed vegetables",
+      "bitter gourd"
     ],
     "requiredIngredients": [
-      "vegetables",
-      "mustard seeds"
+      "mixed vegetables",
+      "bitter gourd"
     ],
     "required_ingredients": [
-      "vegetables",
-      "mustard seeds"
+      "mixed vegetables",
+      "bitter gourd"
     ],
     "optionalIngredients": [
+      "mustard paste",
       "milk",
-      "ginger",
-      "ghee",
-      "oil",
-      "salt",
-      "spices"
+      "panch phoron",
+      "rice"
     ],
     "optional_ingredients": [
+      "mustard paste",
       "milk",
-      "ginger",
-      "ghee",
-      "oil",
-      "salt",
-      "spices"
+      "panch phoron",
+      "rice"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "mixed vegetable",
-    "dish_family": "mixed vegetable",
+    "dishFamily": "shukto",
+    "dish_family": "shukto",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
-    "moodIncludes": [],
+    "moodIncludes": [
+      "light",
+      "soul",
+      "comfort"
+    ],
     "moodExcludes": [],
     "regionTags": {
       "region": [
         "East India"
       ],
       "subRegion": [
-        "Bengal"
+        "Bengal",
+        "Kolkata"
       ],
       "cuisine": [
         "Bengali"
@@ -50203,7 +50387,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "pairings": {
       "rice": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ],
       "sides": [
         "Dal"
@@ -50219,28 +50404,40 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 tsp ginger",
         "1/4 cup milk",
         "1 tsp ghee",
-        "Salt"
+        "Salt",
+        "Mixed Vegetables",
+        "Bitter Gourd",
+        "Mustard Paste",
+        "Milk",
+        "Panch Phoron",
+        "Rice"
       ],
       "steps": [
-        "Cut vegetables evenly.",
-        "Temper mustard and ginger.",
-        "Add vegetables, salt and water.",
-        "Simmer until tender.",
-        "Finish with milk or ghee."
+        "Cut vegetables into even pieces.",
+        "Temper panch phoron lightly.",
+        "Cook vegetables with a little water.",
+        "Add mustard paste and milk.",
+        "Simmer gently and serve first with rice."
       ],
-      "tip": "Keep the seasoning mild so the vegetables stay central.",
+      "tip": "Shukto should be mild and slightly bitter, not spicy.",
       "bestWith": [
         "Steamed rice",
-        "Dal"
+        "Dal",
+        "Rice"
       ]
     },
     "dietaryTags": [
       "vegetarian"
     ],
     "collectionHome": {
-      "hub": "Kitchen Essentials",
-      "collection": "Sides, Salads & Add-ons"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    },
+    "aliases": [],
+    "image_url": "/assets/images/dishes/batch4-shukto.png",
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Shukto should be mild and slightly bitter, not spicy."
   },
   {
     "id": "08f2865a-8ff3-50b2-8f0e-086b3f4b3a36",
@@ -57541,25 +57738,34 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "sourceId": "side-addon-tomato-chutney",
     "title": "Tomato Chutney",
     "name": "Tomato Chutney",
-    "description": "A tangy tomato chutney with onion, chilli and gentle spice for breakfasts, dosas and quick tiffin plates.",
-    "prepTimeMinutes": 8,
-    "cookTimeMinutes": 10,
-    "timeMinutes": 18,
+    "description": "Bengali tomato chutney with dates and raisins, served near the end of a meal.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
     "servings": 2,
-    "cuisine": "South Indian",
+    "cuisine": "Bengal",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch6-tomato-chutney.png",
-    "recipeRole": "condiment",
+    "recipeRole": "side",
     "tags": [
       "side-dish",
       "sides-addons",
       "chutney",
-      "vegetarian"
+      "vegetarian",
+      "lunch",
+      "dinner",
+      "festive",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
     ],
     "moodTags": [
       "quick",
-      "comfort"
+      "comfort",
+      "festive"
     ],
     "mealTags": [
       "lunch",
@@ -57567,143 +57773,150 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "snack"
     ],
     "lateNight": false,
-    "lowEffort": true,
+    "lowEffort": false,
     "sickDay": false,
     "budgetFriendly": true,
     "summerCooling": false,
-    "lightMeal": true,
-    "onePot": false,
+    "lightMeal": false,
+    "onePot": true,
     "minimalCleanup": true,
-    "studySnack": true,
-    "weekendSpecial": false,
-    "effortScore": 2,
-    "comfortScore": 6,
-    "energyScore": 4,
-    "proteinScore": 3,
-    "nostalgiaScore": 6,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Quick Fix",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "Cook the tomatoes down well so the chutney tastes bright, not raw.",
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Keep it sweet-tangy rather than hot-spicy.",
     "instructions": [
-      "Saute onion, garlic and chillies until fragrant.",
-      "Add tomatoes and cook until soft.",
-      "Cool slightly and blend to a coarse chutney.",
-      "Temper with mustard seeds and curry leaves."
+      "Cook tomatoes until soft.",
+      "Add dates, raisins and sugar.",
+      "Temper panch phoron lightly.",
+      "Simmer until glossy and jammy.",
+      "Cool slightly before serving."
     ],
     "ingredients": [
       {
-        "name": "3 tomatoes",
+        "name": "tomato",
         "quantity": 1,
-        "unit": "",
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "dates",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "raisins",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
-        "name": "1 onion",
+        "name": "panch phoron",
         "quantity": 1,
-        "unit": "",
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
-        "name": "2 dry red chillies",
+        "name": "sugar",
         "quantity": 1,
-        "unit": "",
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
-        "name": "2 garlic cloves",
+        "name": "bengali meal",
         "quantity": 1,
-        "unit": "",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "1 tsp mustard seeds",
-        "quantity": 1,
-        "unit": "",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "Curry leaves",
-        "quantity": 1,
-        "unit": "",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "Salt",
-        "quantity": 1,
-        "unit": "",
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "tomato",
-    "primary_ingredient_2": "onion",
-    "primaryIngredient1": "tomato",
-    "primaryIngredient2": "onion",
-    "secondary_ingredient_1": "dry red chilli",
-    "secondaryIngredient1": "dry red chilli",
-    "secondary_ingredient_2": "garlic",
-    "secondaryIngredient2": "garlic",
-    "secondary_ingredient_3": "mustard seeds",
-    "secondaryIngredient3": "mustard seeds",
+    "primary_ingredient_1": "Tomato",
+    "primary_ingredient_2": "Dates",
+    "primaryIngredient1": "Tomato",
+    "primaryIngredient2": "Dates",
+    "secondary_ingredient_1": "Raisins",
+    "secondaryIngredient1": "Raisins",
+    "secondary_ingredient_2": "Panch Phoron",
+    "secondaryIngredient2": "Panch Phoron",
+    "secondary_ingredient_3": "Sugar",
+    "secondaryIngredient3": "Sugar",
     "primaryIngredients": [
       "tomato",
-      "onion"
+      "dates"
     ],
     "baseIngredient": "tomato",
     "base_ingredient": "tomato",
     "coreIngredients": [
       "tomato",
-      "onion"
+      "dates"
     ],
     "core_ingredients": [
       "tomato",
-      "onion"
+      "dates"
     ],
     "requiredIngredients": [
       "tomato",
-      "onion"
+      "dates"
     ],
     "required_ingredients": [
       "tomato",
-      "onion"
+      "dates"
     ],
     "optionalIngredients": [
-      "dry red chilli",
-      "garlic",
-      "mustard seeds"
+      "raisins",
+      "panch phoron",
+      "sugar",
+      "bengali meal"
     ],
     "optional_ingredients": [
-      "dry red chilli",
-      "garlic",
-      "mustard seeds"
+      "raisins",
+      "panch phoron",
+      "sugar",
+      "bengali meal"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
     "dishFamily": "chutney",
     "dish_family": "chutney",
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
     "isRealDish": true,
     "moodIncludes": [
-      "quick",
+      "festive",
       "comfort"
     ],
     "moodExcludes": [],
-    "regionTags": [
-      "South Indian"
-    ],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
     "pairings": {
-      "sides": [],
+      "sides": [
+        "Bengali Meal"
+      ],
       "chutneys": [],
       "pickles": [],
       "drinks": [
@@ -57721,29 +57934,45 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "2 garlic cloves",
         "1 tsp mustard seeds",
         "Curry leaves",
-        "Salt"
+        "Salt",
+        "Tomato",
+        "Dates",
+        "Raisins",
+        "Panch Phoron",
+        "Sugar",
+        "Bengali Meal"
       ],
       "steps": [
-        "Saute onion, garlic and chillies until fragrant.",
-        "Add tomatoes and cook until soft.",
-        "Cool slightly and blend to a coarse chutney.",
-        "Temper with mustard seeds and curry leaves."
+        "Cook tomatoes until soft.",
+        "Add dates, raisins and sugar.",
+        "Temper panch phoron lightly.",
+        "Simmer until glossy and jammy.",
+        "Cool slightly before serving."
       ],
-      "tip": "Cook the tomatoes down well so the chutney tastes bright, not raw.",
+      "tip": "Keep it sweet-tangy rather than hot-spicy.",
       "bestWith": [
         "Dosa",
         "Kuzhi Paniyaram",
-        "Set Dosa"
+        "Set Dosa",
+        "Bengali Meal"
       ]
     },
     "dietaryTags": [
       "vegetarian"
     ],
-    "tomoLine": "Cook the tomatoes down well so the chutney tastes bright, not raw.",
+    "tomoLine": "Keep it sweet-tangy rather than hot-spicy.",
     "collectionHome": {
-      "hub": "Family Favorites",
-      "collection": "Lunch Box & Tiffin"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    },
+    "aliases": [],
+    "image_url": "/assets/images/dishes/batch6-tomato-chutney.png",
+    "secondary_ingredient_4": "Bengali Meal",
+    "secondaryIngredient4": "Bengali Meal",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "hardExcludeMoods": [],
+    "avoidIf": []
   },
   {
     "id": "side-addon-peanut-chutney",
@@ -86865,20 +87094,23 @@ window.COOKBUDDY_LOCAL_RECIPES = [
   {
     "id": "collection-detail-rasgulla",
     "sourceId": "collection-detail-rasgulla",
-    "title": "Rasgulla",
-    "name": "Rasgulla",
-    "aliases": [],
-    "description": "Spongy chenna balls simmered in light sugar syrup until airy and soft.",
-    "prepTimeMinutes": 25,
-    "cookTimeMinutes": 25,
+    "title": "Roshogolla",
+    "name": "Roshogolla",
+    "aliases": [
+      "Rasgulla",
+      "Rosogolla"
+    ],
+    "description": "Bengali roshogolla with soft chhana balls simmered in light sugar syrup.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
     "timeMinutes": 50,
-    "servings": 12,
-    "cuisine": "Bengali",
+    "servings": 2,
+    "cuisine": "Bengal",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/collections/desserts.webp",
     "recipeRole": "dessert",
     "tags": [
@@ -86886,12 +87118,20 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "collection-detail",
       "traditional-favorites",
       "vegetarian",
-      "dessert"
+      "dessert",
+      "festive",
+      "soul",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
     ],
     "moodTags": [
       "festive",
       "comfort",
-      "traditional"
+      "traditional",
+      "soul"
     ],
     "mealTags": [
       "dessert",
@@ -86907,110 +87147,95 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 6,
+    "effortScore": 7,
     "comfortScore": 8,
-    "energyScore": 5,
-    "proteinScore": 5,
+    "energyScore": 6,
+    "proteinScore": 4,
     "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Festival Food",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "Kneading chenna well is what gives rasgulla its bounce. Keep chilled in syrup and use within 3 days.",
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Smooth kneading helps roshogolla turn soft and springy.",
     "instructions": [
-      "Curdle milk with lemon juice and strain the chenna.",
-      "Rinse, drain and knead chenna until smooth.",
-      "Shape small balls without cracks.",
-      "Boil sugar syrup and add the balls.",
-      "Cover and cook until doubled and spongy."
+      "Make fresh chhana and drain well.",
+      "Knead until smooth.",
+      "Shape into small balls.",
+      "Simmer in light sugar syrup until spongy.",
+      "Cool in syrup before serving."
     ],
     "ingredients": [
       {
-        "name": "milk",
+        "name": "chhana",
         "quantity": 1,
-        "unit": "litre",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "lemon juice",
-        "quantity": 2,
-        "unit": "tbsp",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "sugar",
-        "quantity": 1,
+        "name": "sugar syrup",
+        "quantity": 0.5,
         "unit": "cup",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "water",
-        "quantity": 4,
-        "unit": "cups",
-        "role": "optional",
-        "isMain": false
+        "role": "required",
+        "isMain": true
       },
       {
         "name": "cardamom",
-        "quantity": 2,
-        "unit": "pods",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
-    "primary_ingredient_1": "Milk",
-    "primary_ingredient_2": "",
-    "primaryIngredient1": "Milk",
-    "primaryIngredient2": "",
-    "secondary_ingredient_1": "Lemon Juice",
-    "secondaryIngredient1": "Lemon Juice",
-    "secondary_ingredient_2": "Sugar",
-    "secondaryIngredient2": "Sugar",
-    "secondary_ingredient_3": "Water",
-    "secondaryIngredient3": "Water",
-    "secondary_ingredient_4": "Cardamom",
-    "secondaryIngredient4": "Cardamom",
-    "secondary_ingredient_5": "",
-    "secondaryIngredient5": "",
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
+    "primary_ingredient_1": "Chhana",
+    "primary_ingredient_2": "Sugar Syrup",
+    "primaryIngredient1": "Chhana",
+    "primaryIngredient2": "Sugar Syrup",
+    "secondary_ingredient_1": "Cardamom",
+    "secondaryIngredient1": "Cardamom",
+    "secondary_ingredient_2": null,
+    "secondaryIngredient2": null,
+    "secondary_ingredient_3": null,
+    "secondaryIngredient3": null,
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
     "isRealDish": true,
-    "baseIngredient": "milk",
-    "base_ingredient": "milk",
+    "baseIngredient": "chhana",
+    "base_ingredient": "chhana",
     "coreIngredients": [
-      "milk"
+      "chhana",
+      "sugar syrup"
     ],
     "core_ingredients": [
-      "milk"
+      "chhana",
+      "sugar syrup"
     ],
     "primaryIngredients": [
-      "milk"
+      "chhana",
+      "sugar syrup"
     ],
     "primary_ingredients": [
       "milk"
     ],
     "requiredIngredients": [
-      "1 litre milk",
-      "2 tbsp lemon juice",
-      "1 cup sugar",
-      "4 cups water"
+      "chhana",
+      "sugar syrup"
     ],
     "required_ingredients": [
-      "1 litre milk",
-      "2 tbsp lemon juice",
-      "1 cup sugar",
-      "4 cups water"
+      "chhana",
+      "sugar syrup"
     ],
     "optionalIngredients": [
-      "2 pods cardamom"
+      "cardamom"
     ],
     "optional_ingredients": [
-      "2 pods cardamom"
+      "cardamom"
     ],
     "quickGuide": {
       "serves": "12 servings",
@@ -87021,31 +87246,64 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "2 tbsp lemon juice",
         "1 cup sugar",
         "4 cups water",
-        "2 pods cardamom"
+        "2 pods cardamom",
+        "Chhana",
+        "Sugar Syrup",
+        "Cardamom"
       ],
       "steps": [
-        "Curdle milk with lemon juice and strain the chenna.",
-        "Rinse, drain and knead chenna until smooth.",
-        "Shape small balls without cracks.",
-        "Boil sugar syrup and add the balls.",
-        "Cover and cook until doubled and spongy."
+        "Make fresh chhana and drain well.",
+        "Knead until smooth.",
+        "Shape into small balls.",
+        "Simmer in light sugar syrup until spongy.",
+        "Cool in syrup before serving."
       ],
-      "tip": "Kneading chenna well is what gives rasgulla its bounce. Storage: Keep chilled in syrup and use within 3 days.",
+      "tip": "Smooth kneading helps roshogolla turn soft and springy.",
       "bestWith": [
         "Light namkeen",
-        "Fresh fruit"
+        "Fresh fruit",
+        "Dessert"
       ]
     },
-    "tomoLine": "Kneading chenna well is what gives rasgulla its bounce. Keep chilled in syrup and use within 3 days.",
+    "tomoLine": "Smooth kneading helps roshogolla turn soft and springy.",
     "bestWith": [
       "Light namkeen",
       "Fresh fruit"
     ],
-    "dishFamily": "festival-sweets",
+    "dishFamily": "bengali-sweet",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    },
+    "image_url": "/assets/images/collections/desserts.webp",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dish_family": "bengali-sweet",
+    "moodIncludes": [
+      "festive",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Dessert"
+      ]
     }
   },
   {
@@ -89736,8 +89994,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dishFamily": "kesari",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Tamil Nadu"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "image_url": "/assets/images/collections/desserts.webp",
     "incompatibleWith": [],
@@ -90938,8 +91196,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dishFamily": "sweet-pongal",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Tamil Nadu"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "image_url": "/assets/images/collections/festival-food.webp",
     "incompatibleWith": [],
@@ -91215,8 +91473,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dishFamily": "pongal",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Tamil Nadu"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "image_url": "/assets/images/dishes/recommendation-pack-pongal.png",
     "incompatibleWith": [],
@@ -94226,8 +94484,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dishFamily": "kozhukattai",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Tamil Nadu"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "image_url": "/assets/images/collections/festival-food.webp",
     "incompatibleWith": [],
@@ -109258,8 +109516,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "The seasoning should be visible and aromatic, not hidden in the batter.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Tamil Nadu"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -110647,8 +110905,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Keep poriyal dry and bright, not overcooked.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Tamil Nadu"
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -111098,8 +111356,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Serve very cold; jigarthanda is meant to cool you down.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Tamil Nadu"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -113801,8 +114059,4379 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Keep it chilled and lightly sweet so tender coconut stays fresh.",
     "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
+  },
+  {
+    "id": "b6f9af31-282c-5cc3-b4fe-ecfa61e2f068",
+    "sourceId": "bengal-wave-01-cholar-dal",
+    "title": "Cholar Dal",
+    "name": "Cholar Dal",
+    "aliases": [],
+    "description": "Bengali cholar dal with coconut, ghee and gentle sweetness, made for luchi.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "festive",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "festive"
+    ],
+    "mealTags": [
+      "lunch",
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Keep the dal slightly thick so it sits well with luchi.",
+    "instructions": [
+      "Cook chana dal until soft but not mushy.",
+      "Temper bay leaf, cumin and whole spices in ghee.",
+      "Add coconut pieces and fry lightly.",
+      "Simmer dal with the tempering.",
+      "Serve warm with luchi."
+    ],
+    "ingredients": [
+      {
+        "name": "chana dal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "bay leaf",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "luchi",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chana Dal",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Chana Dal",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Ghee",
+    "secondaryIngredient1": "Ghee",
+    "secondary_ingredient_2": "Bay Leaf",
+    "secondaryIngredient2": "Bay Leaf",
+    "secondary_ingredient_3": "Cumin",
+    "secondaryIngredient3": "Cumin",
+    "secondary_ingredient_4": "Luchi",
+    "secondaryIngredient4": "Luchi",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "chana dal",
+      "coconut"
+    ],
+    "baseIngredient": "chana dal",
+    "base_ingredient": "chana dal",
+    "coreIngredients": [
+      "chana dal",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "chana dal",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "chana dal",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "chana dal",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "ghee",
+      "bay leaf",
+      "cumin",
+      "luchi"
+    ],
+    "optional_ingredients": [
+      "ghee",
+      "bay leaf",
+      "cumin",
+      "luchi"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "dal",
+    "dish_family": "dal",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "festive"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Luchi"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Chana Dal",
+        "Coconut",
+        "Ghee",
+        "Bay Leaf",
+        "Cumin",
+        "Luchi"
+      ],
+      "steps": [
+        "Cook chana dal until soft but not mushy.",
+        "Temper bay leaf, cumin and whole spices in ghee.",
+        "Add coconut pieces and fry lightly.",
+        "Simmer dal with the tempering.",
+        "Serve warm with luchi."
+      ],
+      "tip": "Keep the dal slightly thick so it sits well with luchi.",
+      "bestWith": [
+        "Luchi"
+      ]
+    },
+    "tomoLine": "Keep the dal slightly thick so it sits well with luchi.",
+    "collectionHome": {
       "hub": "Regional Journeys",
-      "collection": "Tamil Nadu"
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "43a25e9f-56ea-5888-a89a-c75f18053795",
+    "sourceId": "bengal-wave-02-basanti-pulao",
+    "title": "Basanti Pulao",
+    "name": "Basanti Pulao",
+    "aliases": [],
+    "description": "Golden Bengali basanti pulao with ghee, nuts and gentle sweetness.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "festive",
+      "comfort",
+      "soul",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Use a light hand with turmeric; basanti pulao should glow, not taste harsh.",
+    "instructions": [
+      "Wash and drain fragrant rice.",
+      "Fry cashews and raisins in ghee.",
+      "Toast rice with turmeric and spices.",
+      "Cook with measured water until fluffy.",
+      "Rest before serving."
+    ],
+    "ingredients": [
+      {
+        "name": "gobindobhog rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ghee",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cashews",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "raisins",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "kosha mangsho",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Gobindobhog Rice",
+    "primary_ingredient_2": "Ghee",
+    "primaryIngredient1": "Gobindobhog Rice",
+    "primaryIngredient2": "Ghee",
+    "secondary_ingredient_1": "Turmeric",
+    "secondaryIngredient1": "Turmeric",
+    "secondary_ingredient_2": "Cashews",
+    "secondaryIngredient2": "Cashews",
+    "secondary_ingredient_3": "Raisins",
+    "secondaryIngredient3": "Raisins",
+    "secondary_ingredient_4": "Kosha Mangsho",
+    "secondaryIngredient4": "Kosha Mangsho",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "gobindobhog rice",
+      "ghee"
+    ],
+    "baseIngredient": "gobindobhog rice",
+    "base_ingredient": "gobindobhog rice",
+    "coreIngredients": [
+      "gobindobhog rice",
+      "ghee"
+    ],
+    "core_ingredients": [
+      "gobindobhog rice",
+      "ghee"
+    ],
+    "requiredIngredients": [
+      "gobindobhog rice",
+      "ghee"
+    ],
+    "required_ingredients": [
+      "gobindobhog rice",
+      "ghee"
+    ],
+    "optionalIngredients": [
+      "turmeric",
+      "cashews",
+      "raisins",
+      "kosha mangsho"
+    ],
+    "optional_ingredients": [
+      "turmeric",
+      "cashews",
+      "raisins",
+      "kosha mangsho"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pulao",
+    "dish_family": "pulao",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Kosha Mangsho"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Gobindobhog Rice",
+        "Ghee",
+        "Turmeric",
+        "Cashews",
+        "Raisins",
+        "Kosha Mangsho"
+      ],
+      "steps": [
+        "Wash and drain fragrant rice.",
+        "Fry cashews and raisins in ghee.",
+        "Toast rice with turmeric and spices.",
+        "Cook with measured water until fluffy.",
+        "Rest before serving."
+      ],
+      "tip": "Use a light hand with turmeric; basanti pulao should glow, not taste harsh.",
+      "bestWith": [
+        "Kosha Mangsho"
+      ]
+    },
+    "tomoLine": "Use a light hand with turmeric; basanti pulao should glow, not taste harsh.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "29cbcbc3-4479-5340-a249-f179ce07c445",
+    "sourceId": "bengal-wave-03-mishti-doi",
+    "title": "Mishti Doi",
+    "name": "Mishti Doi",
+    "aliases": [],
+    "description": "Bengali mishti doi, caramel-sweet set curd with a mellow festive finish.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/desserts.webp",
+    "image_url": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "festive",
+      "comfort",
+      "soul",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "dessert"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Add starter only when the milk is lukewarm, not hot.",
+    "instructions": [
+      "Reduce milk slightly.",
+      "Sweeten with caramelized sugar or jaggery.",
+      "Cool until lukewarm.",
+      "Mix in curd starter.",
+      "Set undisturbed until firm."
+    ],
+    "ingredients": [
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sugar",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "bengali sweets",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Milk",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Milk",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": "Jaggery",
+    "secondaryIngredient1": "Jaggery",
+    "secondary_ingredient_2": "Sugar",
+    "secondaryIngredient2": "Sugar",
+    "secondary_ingredient_3": "Bengali Sweets",
+    "secondaryIngredient3": "Bengali Sweets",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "milk",
+      "curd"
+    ],
+    "baseIngredient": "milk",
+    "base_ingredient": "milk",
+    "coreIngredients": [
+      "milk",
+      "curd"
+    ],
+    "core_ingredients": [
+      "milk",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "milk",
+      "curd"
+    ],
+    "required_ingredients": [
+      "milk",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "jaggery",
+      "sugar",
+      "bengali sweets"
+    ],
+    "optional_ingredients": [
+      "jaggery",
+      "sugar",
+      "bengali sweets"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "sweet-curd",
+    "dish_family": "sweet-curd",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Bengali Sweets"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "20 min",
+      "cookTime": "30 min",
+      "ingredients": [
+        "Milk",
+        "Curd",
+        "Jaggery",
+        "Sugar",
+        "Bengali Sweets"
+      ],
+      "steps": [
+        "Reduce milk slightly.",
+        "Sweeten with caramelized sugar or jaggery.",
+        "Cool until lukewarm.",
+        "Mix in curd starter.",
+        "Set undisturbed until firm."
+      ],
+      "tip": "Add starter only when the milk is lukewarm, not hot.",
+      "bestWith": [
+        "Bengali Sweets"
+      ]
+    },
+    "tomoLine": "Add starter only when the milk is lukewarm, not hot.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "93778eb2-cd72-5c88-93bc-53ddff0500cc",
+    "sourceId": "bengal-wave-04-nolen-gurer-payesh",
+    "title": "Nolen Gurer Payesh",
+    "name": "Nolen Gurer Payesh",
+    "aliases": [],
+    "description": "Winter Bengali payesh with gobindobhog rice, milk and nolen gur.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/desserts.webp",
+    "image_url": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "festive",
+      "soul",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "festive",
+      "soul",
+      "comfort"
+    ],
+    "mealTags": [
+      "dessert"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Add nolen gur off heat so the milk does not split.",
+    "instructions": [
+      "Wash and drain rice.",
+      "Simmer rice slowly in milk.",
+      "Cook until creamy.",
+      "Cool slightly before adding nolen gur.",
+      "Serve warm or chilled."
+    ],
+    "ingredients": [
+      {
+        "name": "gobindobhog rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "nolen gur",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cashews",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Gobindobhog Rice",
+    "primary_ingredient_2": "Nolen Gur",
+    "primaryIngredient1": "Gobindobhog Rice",
+    "primaryIngredient2": "Nolen Gur",
+    "secondary_ingredient_1": "Milk",
+    "secondaryIngredient1": "Milk",
+    "secondary_ingredient_2": "Cardamom",
+    "secondaryIngredient2": "Cardamom",
+    "secondary_ingredient_3": "Cashews",
+    "secondaryIngredient3": "Cashews",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "gobindobhog rice",
+      "nolen gur"
+    ],
+    "baseIngredient": "gobindobhog rice",
+    "base_ingredient": "gobindobhog rice",
+    "coreIngredients": [
+      "gobindobhog rice",
+      "nolen gur"
+    ],
+    "core_ingredients": [
+      "gobindobhog rice",
+      "nolen gur"
+    ],
+    "requiredIngredients": [
+      "gobindobhog rice",
+      "nolen gur"
+    ],
+    "required_ingredients": [
+      "gobindobhog rice",
+      "nolen gur"
+    ],
+    "optionalIngredients": [
+      "milk",
+      "cardamom",
+      "cashews"
+    ],
+    "optional_ingredients": [
+      "milk",
+      "cardamom",
+      "cashews"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "payesh",
+    "dish_family": "payesh",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Bengali Sweets"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "20 min",
+      "cookTime": "30 min",
+      "ingredients": [
+        "Gobindobhog Rice",
+        "Nolen Gur",
+        "Milk",
+        "Cardamom",
+        "Cashews"
+      ],
+      "steps": [
+        "Wash and drain rice.",
+        "Simmer rice slowly in milk.",
+        "Cook until creamy.",
+        "Cool slightly before adding nolen gur.",
+        "Serve warm or chilled."
+      ],
+      "tip": "Add nolen gur off heat so the milk does not split.",
+      "bestWith": [
+        "Bengali Sweets"
+      ]
+    },
+    "tomoLine": "Add nolen gur off heat so the milk does not split.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "d573894a-a33d-590a-b69b-24e4619c1b53",
+    "sourceId": "bengal-wave-05-patishapta",
+    "title": "Patishapta",
+    "name": "Patishapta",
+    "aliases": [],
+    "description": "Bengali patishapta crepes filled with coconut and jaggery for winter festivals.",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 30,
+    "timeMinutes": 50,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/festival-food.webp",
+    "image_url": "/assets/images/collections/festival-food.webp",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "snack",
+      "vegetarian",
+      "festive",
+      "soul",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "festive",
+      "soul",
+      "comfort"
+    ],
+    "mealTags": [
+      "dessert",
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Keep the crepe thin so the filling stays the star.",
+    "instructions": [
+      "Make a thin batter with rice flour and milk.",
+      "Cook coconut and jaggery filling.",
+      "Spread a thin crepe on a tawa.",
+      "Place filling and roll.",
+      "Serve warm."
+    ],
+    "ingredients": [
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tea",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Rice Flour",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Rice Flour",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Jaggery",
+    "secondaryIngredient1": "Jaggery",
+    "secondary_ingredient_2": "Milk",
+    "secondaryIngredient2": "Milk",
+    "secondary_ingredient_3": "Tea",
+    "secondaryIngredient3": "Tea",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "rice flour",
+      "coconut"
+    ],
+    "baseIngredient": "rice flour",
+    "base_ingredient": "rice flour",
+    "coreIngredients": [
+      "rice flour",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "rice flour",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "rice flour",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "rice flour",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "jaggery",
+      "milk",
+      "tea"
+    ],
+    "optional_ingredients": [
+      "jaggery",
+      "milk",
+      "tea"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "pitha",
+    "dish_family": "pitha",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Tea"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "20 min",
+      "cookTime": "30 min",
+      "ingredients": [
+        "Rice Flour",
+        "Coconut",
+        "Jaggery",
+        "Milk",
+        "Tea"
+      ],
+      "steps": [
+        "Make a thin batter with rice flour and milk.",
+        "Cook coconut and jaggery filling.",
+        "Spread a thin crepe on a tawa.",
+        "Place filling and roll.",
+        "Serve warm."
+      ],
+      "tip": "Keep the crepe thin so the filling stays the star.",
+      "bestWith": [
+        "Tea"
+      ]
+    },
+    "tomoLine": "Keep the crepe thin so the filling stays the star.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "76d3e84b-e0da-5729-b2a6-e3b1a2d9c50b",
+    "sourceId": "bengal-wave-06-jhalmuri",
+    "title": "Jhalmuri",
+    "name": "Jhalmuri",
+    "aliases": [],
+    "description": "Kolkata jhalmuri with puffed rice, mustard oil, chilli and crunchy mix-ins.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 32,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "quick",
+      "rainy",
+      "spicy",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "quick",
+      "rainy",
+      "spicy"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 6,
+    "energyScore": 7,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Rainy Day",
+    "cookingNotes": "Mix only just before eating to keep the muri crisp.",
+    "instructions": [
+      "Chop onion, chilli and coriander.",
+      "Mix puffed rice with peanuts and chanachur.",
+      "Add mustard oil and spices.",
+      "Toss quickly.",
+      "Serve immediately before it softens."
+    ],
+    "ingredients": [
+      {
+        "name": "puffed rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mustard oil",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "peanuts",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chanachur",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tea",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Puffed Rice",
+    "primary_ingredient_2": "Mustard Oil",
+    "primaryIngredient1": "Puffed Rice",
+    "primaryIngredient2": "Mustard Oil",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Peanuts",
+    "secondaryIngredient3": "Peanuts",
+    "secondary_ingredient_4": "Chanachur",
+    "secondaryIngredient4": "Chanachur",
+    "secondary_ingredient_5": "Tea",
+    "secondaryIngredient5": "Tea",
+    "primaryIngredients": [
+      "puffed rice",
+      "mustard oil"
+    ],
+    "baseIngredient": "puffed rice",
+    "base_ingredient": "puffed rice",
+    "coreIngredients": [
+      "puffed rice",
+      "mustard oil"
+    ],
+    "core_ingredients": [
+      "puffed rice",
+      "mustard oil"
+    ],
+    "requiredIngredients": [
+      "puffed rice",
+      "mustard oil"
+    ],
+    "required_ingredients": [
+      "puffed rice",
+      "mustard oil"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "green chilli",
+      "peanuts",
+      "chanachur",
+      "tea"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "green chilli",
+      "peanuts",
+      "chanachur",
+      "tea"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "muri",
+    "dish_family": "muri",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "rainy",
+      "spicy"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Tea"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Puffed Rice",
+        "Mustard Oil",
+        "Onion",
+        "Green Chilli",
+        "Peanuts",
+        "Chanachur",
+        "Tea"
+      ],
+      "steps": [
+        "Chop onion, chilli and coriander.",
+        "Mix puffed rice with peanuts and chanachur.",
+        "Add mustard oil and spices.",
+        "Toss quickly.",
+        "Serve immediately before it softens."
+      ],
+      "tip": "Mix only just before eating to keep the muri crisp.",
+      "bestWith": [
+        "Tea"
+      ]
+    },
+    "tomoLine": "Mix only just before eating to keep the muri crisp.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "5e2df0f7-f2dd-5954-b9a5-52e3802931ba",
+    "sourceId": "bengal-wave-07-telebhaja",
+    "title": "Telebhaja",
+    "name": "Telebhaja",
+    "aliases": [],
+    "description": "Bengali telebhaja, crisp vegetable fritters for rainy evenings and tea.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 32,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "snack",
+      "vegetarian",
+      "rainy",
+      "comfort",
+      "spicy",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "rainy",
+      "comfort",
+      "spicy"
+    ],
+    "mealTags": [
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "A little rice flour keeps telebhaja crisp.",
+    "instructions": [
+      "Slice vegetables thinly.",
+      "Make a spiced besan batter.",
+      "Dip vegetables in batter.",
+      "Fry until crisp and golden.",
+      "Serve hot with tea."
+    ],
+    "ingredients": [
+      {
+        "name": "vegetables",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "besan",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tea",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Vegetables",
+    "primary_ingredient_2": "Besan",
+    "primaryIngredient1": "Vegetables",
+    "primaryIngredient2": "Besan",
+    "secondary_ingredient_1": "Rice Flour",
+    "secondaryIngredient1": "Rice Flour",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Mustard Oil",
+    "secondaryIngredient3": "Mustard Oil",
+    "secondary_ingredient_4": "Tea",
+    "secondaryIngredient4": "Tea",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "vegetables",
+      "besan"
+    ],
+    "baseIngredient": "vegetables",
+    "base_ingredient": "vegetables",
+    "coreIngredients": [
+      "vegetables",
+      "besan"
+    ],
+    "core_ingredients": [
+      "vegetables",
+      "besan"
+    ],
+    "requiredIngredients": [
+      "vegetables",
+      "besan"
+    ],
+    "required_ingredients": [
+      "vegetables",
+      "besan"
+    ],
+    "optionalIngredients": [
+      "rice flour",
+      "green chilli",
+      "mustard oil",
+      "tea"
+    ],
+    "optional_ingredients": [
+      "rice flour",
+      "green chilli",
+      "mustard oil",
+      "tea"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fritter",
+    "dish_family": "fritter",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "rainy",
+      "comfort",
+      "spicy"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Tea"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Vegetables",
+        "Besan",
+        "Rice Flour",
+        "Green Chilli",
+        "Mustard Oil",
+        "Tea"
+      ],
+      "steps": [
+        "Slice vegetables thinly.",
+        "Make a spiced besan batter.",
+        "Dip vegetables in batter.",
+        "Fry until crisp and golden.",
+        "Serve hot with tea."
+      ],
+      "tip": "A little rice flour keeps telebhaja crisp.",
+      "bestWith": [
+        "Tea"
+      ]
+    },
+    "tomoLine": "A little rice flour keeps telebhaja crisp.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "b70b6798-172c-5330-9e76-743a3b7768cd",
+    "sourceId": "bengal-wave-08-shorshe-ilish",
+    "title": "Shorshe Ilish",
+    "name": "Shorshe Ilish",
+    "aliases": [],
+    "description": "Iconic Bengali shorshe ilish with mustard paste, green chilli and mustard oil.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "soul",
+      "protein",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "soul",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Do not overcook ilish; keep the mustard sharp and aromatic.",
+    "instructions": [
+      "Rub fish with turmeric and salt.",
+      "Make a mustard paste with green chilli.",
+      "Place fish with mustard paste and oil.",
+      "Steam or simmer gently.",
+      "Serve hot with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "ilish fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mustard paste",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Ilish Fish",
+    "primary_ingredient_2": "Mustard Paste",
+    "primaryIngredient1": "Ilish Fish",
+    "primaryIngredient2": "Mustard Paste",
+    "secondary_ingredient_1": "Green Chilli",
+    "secondaryIngredient1": "Green Chilli",
+    "secondary_ingredient_2": "Mustard Oil",
+    "secondaryIngredient2": "Mustard Oil",
+    "secondary_ingredient_3": "Rice",
+    "secondaryIngredient3": "Rice",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "ilish fish",
+      "mustard paste"
+    ],
+    "baseIngredient": "ilish fish",
+    "base_ingredient": "ilish fish",
+    "coreIngredients": [
+      "ilish fish",
+      "mustard paste"
+    ],
+    "core_ingredients": [
+      "ilish fish",
+      "mustard paste"
+    ],
+    "requiredIngredients": [
+      "ilish fish",
+      "mustard paste"
+    ],
+    "required_ingredients": [
+      "ilish fish",
+      "mustard paste"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "mustard oil",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "mustard oil",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fish-curry",
+    "dish_family": "fish-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "soul",
+      "protein"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Ilish Fish",
+        "Mustard Paste",
+        "Green Chilli",
+        "Mustard Oil",
+        "Rice"
+      ],
+      "steps": [
+        "Rub fish with turmeric and salt.",
+        "Make a mustard paste with green chilli.",
+        "Place fish with mustard paste and oil.",
+        "Steam or simmer gently.",
+        "Serve hot with rice."
+      ],
+      "tip": "Do not overcook ilish; keep the mustard sharp and aromatic.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Do not overcook ilish; keep the mustard sharp and aromatic.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "f0d7d46a-32ec-532d-bc5f-36b92dd86e16",
+    "sourceId": "bengal-wave-09-doi-maach",
+    "title": "Doi Maach",
+    "name": "Doi Maach",
+    "aliases": [],
+    "description": "Bengali doi maach with fish in a mellow yogurt gravy.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "comfort",
+      "protein",
+      "soul",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Keep heat low after adding curd so the gravy stays smooth.",
+    "instructions": [
+      "Marinate fish with turmeric and salt.",
+      "Fry fish lightly.",
+      "Whisk curd with spices.",
+      "Simmer the curd gravy gently.",
+      "Add fish and finish on low heat."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": "Ginger",
+    "secondaryIngredient1": "Ginger",
+    "secondary_ingredient_2": "Garam Masala",
+    "secondaryIngredient2": "Garam Masala",
+    "secondary_ingredient_3": "Rice",
+    "secondaryIngredient3": "Rice",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "fish",
+      "curd"
+    ],
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "coreIngredients": [
+      "fish",
+      "curd"
+    ],
+    "core_ingredients": [
+      "fish",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "curd"
+    ],
+    "required_ingredients": [
+      "fish",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "ginger",
+      "garam masala",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "ginger",
+      "garam masala",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fish-curry",
+    "dish_family": "fish-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Fish",
+        "Curd",
+        "Ginger",
+        "Garam Masala",
+        "Rice"
+      ],
+      "steps": [
+        "Marinate fish with turmeric and salt.",
+        "Fry fish lightly.",
+        "Whisk curd with spices.",
+        "Simmer the curd gravy gently.",
+        "Add fish and finish on low heat."
+      ],
+      "tip": "Keep heat low after adding curd so the gravy stays smooth.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Keep heat low after adding curd so the gravy stays smooth.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "909c420d-0337-58ed-97c7-f0d69bc6993b",
+    "sourceId": "bengal-wave-10-kosha-mangsho",
+    "title": "Kosha Mangsho",
+    "name": "Kosha Mangsho",
+    "aliases": [],
+    "description": "Slow-cooked Bengali kosha mangsho, dark, rich and perfect with luchi or pulao.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/mutton-pulao-homestyle.png",
+    "image_url": "/assets/images/dishes/mutton-pulao-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "festive",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "festive"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "The slow bhuno is what makes kosha mangsho special.",
+    "instructions": [
+      "Marinate mutton with curd and spices.",
+      "Brown onions slowly.",
+      "Add mutton and bhuno patiently.",
+      "Cook until tender and dark.",
+      "Finish thick and glossy."
+    ],
+    "ingredients": [
+      {
+        "name": "mutton",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "basanti pulao",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "luchi",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Mutton",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Mutton",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Ginger Garlic",
+    "secondaryIngredient1": "Ginger Garlic",
+    "secondary_ingredient_2": "Garam Masala",
+    "secondaryIngredient2": "Garam Masala",
+    "secondary_ingredient_3": "Basanti Pulao",
+    "secondaryIngredient3": "Basanti Pulao",
+    "secondary_ingredient_4": "Luchi",
+    "secondaryIngredient4": "Luchi",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "mutton",
+      "onion"
+    ],
+    "baseIngredient": "mutton",
+    "base_ingredient": "mutton",
+    "coreIngredients": [
+      "mutton",
+      "onion"
+    ],
+    "core_ingredients": [
+      "mutton",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "mutton",
+      "onion"
+    ],
+    "required_ingredients": [
+      "mutton",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "ginger garlic",
+      "garam masala",
+      "basanti pulao",
+      "luchi"
+    ],
+    "optional_ingredients": [
+      "ginger garlic",
+      "garam masala",
+      "basanti pulao",
+      "luchi"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "mutton-curry",
+    "dish_family": "mutton-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "festive"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Luchi",
+        "Pulao"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Mutton",
+        "Onion",
+        "Ginger Garlic",
+        "Garam Masala",
+        "Basanti Pulao",
+        "Luchi"
+      ],
+      "steps": [
+        "Marinate mutton with curd and spices.",
+        "Brown onions slowly.",
+        "Add mutton and bhuno patiently.",
+        "Cook until tender and dark.",
+        "Finish thick and glossy."
+      ],
+      "tip": "The slow bhuno is what makes kosha mangsho special.",
+      "bestWith": [
+        "Luchi",
+        "Pulao"
+      ]
+    },
+    "tomoLine": "The slow bhuno is what makes kosha mangsho special.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "308af515-2d6f-549d-81ff-85b87e23bfff",
+    "sourceId": "bengal-wave-11-mutton-rezala",
+    "title": "Mutton Rezala",
+    "name": "Mutton Rezala",
+    "aliases": [],
+    "description": "Kolkata-style mutton rezala with a pale, aromatic curd and nut gravy.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/mutton-pulao-homestyle.png",
+    "image_url": "/assets/images/dishes/mutton-pulao-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "festive",
+      "protein",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "festive",
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Rezala should stay pale and fragrant, not red and fiery.",
+    "instructions": [
+      "Marinate mutton with curd and spices.",
+      "Cook gently with whole spices.",
+      "Add nut paste for body.",
+      "Simmer until tender.",
+      "Serve with paratha."
+    ],
+    "ingredients": [
+      {
+        "name": "mutton",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cashew",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "white pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "paratha",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Mutton",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Mutton",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": "Cashew",
+    "secondaryIngredient1": "Cashew",
+    "secondary_ingredient_2": "White Pepper",
+    "secondaryIngredient2": "White Pepper",
+    "secondary_ingredient_3": "Paratha",
+    "secondaryIngredient3": "Paratha",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "mutton",
+      "curd"
+    ],
+    "baseIngredient": "mutton",
+    "base_ingredient": "mutton",
+    "coreIngredients": [
+      "mutton",
+      "curd"
+    ],
+    "core_ingredients": [
+      "mutton",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "mutton",
+      "curd"
+    ],
+    "required_ingredients": [
+      "mutton",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "cashew",
+      "white pepper",
+      "paratha"
+    ],
+    "optional_ingredients": [
+      "cashew",
+      "white pepper",
+      "paratha"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "mutton-curry",
+    "dish_family": "mutton-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "roti": [
+        "Paratha"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Mutton",
+        "Curd",
+        "Cashew",
+        "White Pepper",
+        "Paratha"
+      ],
+      "steps": [
+        "Marinate mutton with curd and spices.",
+        "Cook gently with whole spices.",
+        "Add nut paste for body.",
+        "Simmer until tender.",
+        "Serve with paratha."
+      ],
+      "tip": "Rezala should stay pale and fragrant, not red and fiery.",
+      "bestWith": [
+        "Paratha"
+      ]
+    },
+    "tomoLine": "Rezala should stay pale and fragrant, not red and fiery.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "b24e3687-699a-5424-af58-965e91f330a7",
+    "sourceId": "bengal-wave-12-kolkata-chicken-chaap",
+    "title": "Kolkata Chicken Chaap",
+    "name": "Kolkata Chicken Chaap",
+    "aliases": [],
+    "description": "Kolkata chicken chaap with rich Mughlai-style gravy and slow-cooked chicken.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/chicken-curry.png",
+    "image_url": "/assets/images/dishes/chicken-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "festive",
+      "protein",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "festive",
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Low, slow cooking keeps chicken chaap tender.",
+    "instructions": [
+      "Marinate chicken with curd and spices.",
+      "Sear gently in oil or ghee.",
+      "Add nut paste and aromatics.",
+      "Cook covered until tender.",
+      "Reduce to a rich gravy."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "curd",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "cashew",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "paratha",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Curd",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Curd",
+    "secondary_ingredient_1": "Cashew",
+    "secondaryIngredient1": "Cashew",
+    "secondary_ingredient_2": "Garam Masala",
+    "secondaryIngredient2": "Garam Masala",
+    "secondary_ingredient_3": "Paratha",
+    "secondaryIngredient3": "Paratha",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "chicken",
+      "curd"
+    ],
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "curd"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "curd"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "curd"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "curd"
+    ],
+    "optionalIngredients": [
+      "cashew",
+      "garam masala",
+      "paratha"
+    ],
+    "optional_ingredients": [
+      "cashew",
+      "garam masala",
+      "paratha"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chicken-curry",
+    "dish_family": "chicken-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "roti": [
+        "Paratha"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Chicken",
+        "Curd",
+        "Cashew",
+        "Garam Masala",
+        "Paratha"
+      ],
+      "steps": [
+        "Marinate chicken with curd and spices.",
+        "Sear gently in oil or ghee.",
+        "Add nut paste and aromatics.",
+        "Cook covered until tender.",
+        "Reduce to a rich gravy."
+      ],
+      "tip": "Low, slow cooking keeps chicken chaap tender.",
+      "bestWith": [
+        "Paratha"
+      ]
+    },
+    "tomoLine": "Low, slow cooking keeps chicken chaap tender.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "56ed095f-f56f-5cfc-b734-55f3eee9f1e0",
+    "sourceId": "bengal-wave-13-chicken-kosha",
+    "title": "Chicken Kosha",
+    "name": "Chicken Kosha",
+    "aliases": [],
+    "description": "Bengali chicken kosha with a dark, thick onion-spice masala.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/chicken-curry.png",
+    "image_url": "/assets/images/dishes/chicken-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Take time with the bhuno for a proper kosha texture.",
+    "instructions": [
+      "Marinate chicken with spices.",
+      "Brown onions deeply.",
+      "Add ginger garlic and tomato.",
+      "Bhuno chicken until masala darkens.",
+      "Cook covered until tender."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Onion",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Onion",
+    "secondary_ingredient_1": "Ginger Garlic",
+    "secondaryIngredient1": "Ginger Garlic",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": "Garam Masala",
+    "secondaryIngredient3": "Garam Masala",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "chicken",
+      "onion"
+    ],
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "onion"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "onion"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "onion"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "ginger garlic",
+      "tomato",
+      "garam masala",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "ginger garlic",
+      "tomato",
+      "garam masala",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chicken-curry",
+    "dish_family": "chicken-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Chicken",
+        "Onion",
+        "Ginger Garlic",
+        "Tomato",
+        "Garam Masala",
+        "Rice"
+      ],
+      "steps": [
+        "Marinate chicken with spices.",
+        "Brown onions deeply.",
+        "Add ginger garlic and tomato.",
+        "Bhuno chicken until masala darkens.",
+        "Cook covered until tender."
+      ],
+      "tip": "Take time with the bhuno for a proper kosha texture.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Take time with the bhuno for a proper kosha texture.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "70e9d992-c3fa-52de-9fef-4fd133a752ad",
+    "sourceId": "bengal-wave-14-bhetki-paturi",
+    "title": "Bhetki Paturi",
+    "name": "Bhetki Paturi",
+    "aliases": [],
+    "description": "Bengali bhetki paturi wrapped in banana leaf with mustard and green chilli.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "festive",
+      "protein",
+      "soul",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "festive",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Banana leaf traps the mustard aroma beautifully.",
+    "instructions": [
+      "Coat fish with mustard paste, chilli and oil.",
+      "Wrap in banana leaf.",
+      "Tie or fold securely.",
+      "Steam or pan-cook until done.",
+      "Serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "bhetki fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mustard paste",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "banana leaf",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Bhetki Fish",
+    "primary_ingredient_2": "Mustard Paste",
+    "primaryIngredient1": "Bhetki Fish",
+    "primaryIngredient2": "Mustard Paste",
+    "secondary_ingredient_1": "Banana Leaf",
+    "secondaryIngredient1": "Banana Leaf",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Mustard Oil",
+    "secondaryIngredient3": "Mustard Oil",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "bhetki fish",
+      "mustard paste"
+    ],
+    "baseIngredient": "bhetki fish",
+    "base_ingredient": "bhetki fish",
+    "coreIngredients": [
+      "bhetki fish",
+      "mustard paste"
+    ],
+    "core_ingredients": [
+      "bhetki fish",
+      "mustard paste"
+    ],
+    "requiredIngredients": [
+      "bhetki fish",
+      "mustard paste"
+    ],
+    "required_ingredients": [
+      "bhetki fish",
+      "mustard paste"
+    ],
+    "optionalIngredients": [
+      "banana leaf",
+      "green chilli",
+      "mustard oil",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "banana leaf",
+      "green chilli",
+      "mustard oil",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fish-paturi",
+    "dish_family": "fish-paturi",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Bhetki Fish",
+        "Mustard Paste",
+        "Banana Leaf",
+        "Green Chilli",
+        "Mustard Oil",
+        "Rice"
+      ],
+      "steps": [
+        "Coat fish with mustard paste, chilli and oil.",
+        "Wrap in banana leaf.",
+        "Tie or fold securely.",
+        "Steam or pan-cook until done.",
+        "Serve with rice."
+      ],
+      "tip": "Banana leaf traps the mustard aroma beautifully.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Banana leaf traps the mustard aroma beautifully.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "280ff4dc-7cf9-5a04-9df9-7d363c357296",
+    "sourceId": "bengal-wave-15-daab-chingri",
+    "title": "Daab Chingri",
+    "name": "Daab Chingri",
+    "aliases": [],
+    "description": "Festive Bengali daab chingri with prawns cooked in tender coconut.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch4-chingri-malai-curry.png",
+    "image_url": "/assets/images/dishes/batch4-chingri-malai-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "festive",
+      "protein",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "festive",
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Keep the mustard balanced so tender coconut sweetness comes through.",
+    "instructions": [
+      "Clean prawns and season.",
+      "Mix with coconut, mustard and spices.",
+      "Place inside tender coconut or a covered bowl.",
+      "Steam until prawns cook through.",
+      "Serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "prawns",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tender coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mustard paste",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut milk",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Prawns",
+    "primary_ingredient_2": "Tender Coconut",
+    "primaryIngredient1": "Prawns",
+    "primaryIngredient2": "Tender Coconut",
+    "secondary_ingredient_1": "Mustard Paste",
+    "secondaryIngredient1": "Mustard Paste",
+    "secondary_ingredient_2": "Coconut Milk",
+    "secondaryIngredient2": "Coconut Milk",
+    "secondary_ingredient_3": "Rice",
+    "secondaryIngredient3": "Rice",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "prawns",
+      "tender coconut"
+    ],
+    "baseIngredient": "prawns",
+    "base_ingredient": "prawns",
+    "coreIngredients": [
+      "prawns",
+      "tender coconut"
+    ],
+    "core_ingredients": [
+      "prawns",
+      "tender coconut"
+    ],
+    "requiredIngredients": [
+      "prawns",
+      "tender coconut"
+    ],
+    "required_ingredients": [
+      "prawns",
+      "tender coconut"
+    ],
+    "optionalIngredients": [
+      "mustard paste",
+      "coconut milk",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "mustard paste",
+      "coconut milk",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "prawn-curry",
+    "dish_family": "prawn-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Prawns",
+        "Tender Coconut",
+        "Mustard Paste",
+        "Coconut Milk",
+        "Rice"
+      ],
+      "steps": [
+        "Clean prawns and season.",
+        "Mix with coconut, mustard and spices.",
+        "Place inside tender coconut or a covered bowl.",
+        "Steam until prawns cook through.",
+        "Serve with rice."
+      ],
+      "tip": "Keep the mustard balanced so tender coconut sweetness comes through.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Keep the mustard balanced so tender coconut sweetness comes through.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "a35a9b3f-f62b-55a1-9a9a-f56456b5e853",
+    "sourceId": "bengal-wave-16-pabda-jhol",
+    "title": "Pabda Jhol",
+    "name": "Pabda Jhol",
+    "aliases": [],
+    "description": "Light Bengali pabda jhol with tomato, nigella and green chilli.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "light",
+      "protein",
+      "comfort",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "light",
+      "protein",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 7,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Keep the jhol light so the fish stays delicate.",
+    "instructions": [
+      "Season fish with turmeric and salt.",
+      "Fry fish lightly.",
+      "Temper nigella seeds and chilli.",
+      "Make a light tomato jhol.",
+      "Return fish and simmer gently."
+    ],
+    "ingredients": [
+      {
+        "name": "pabda fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "nigella seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Pabda Fish",
+    "primary_ingredient_2": "Tomato",
+    "primaryIngredient1": "Pabda Fish",
+    "primaryIngredient2": "Tomato",
+    "secondary_ingredient_1": "Nigella Seeds",
+    "secondaryIngredient1": "Nigella Seeds",
+    "secondary_ingredient_2": "Green Chilli",
+    "secondaryIngredient2": "Green Chilli",
+    "secondary_ingredient_3": "Rice",
+    "secondaryIngredient3": "Rice",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "pabda fish",
+      "tomato"
+    ],
+    "baseIngredient": "pabda fish",
+    "base_ingredient": "pabda fish",
+    "coreIngredients": [
+      "pabda fish",
+      "tomato"
+    ],
+    "core_ingredients": [
+      "pabda fish",
+      "tomato"
+    ],
+    "requiredIngredients": [
+      "pabda fish",
+      "tomato"
+    ],
+    "required_ingredients": [
+      "pabda fish",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "nigella seeds",
+      "green chilli",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "nigella seeds",
+      "green chilli",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fish-jhol",
+    "dish_family": "fish-jhol",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "light",
+      "protein",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Pabda Fish",
+        "Tomato",
+        "Nigella Seeds",
+        "Green Chilli",
+        "Rice"
+      ],
+      "steps": [
+        "Season fish with turmeric and salt.",
+        "Fry fish lightly.",
+        "Temper nigella seeds and chilli.",
+        "Make a light tomato jhol.",
+        "Return fish and simmer gently."
+      ],
+      "tip": "Keep the jhol light so the fish stays delicate.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Keep the jhol light so the fish stays delicate.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "67684452-fbd2-5fc8-ad30-246dace4ce9b",
+    "sourceId": "bengal-wave-17-aloo-potol-posto",
+    "title": "Aloo Potol Posto",
+    "name": "Aloo Potol Posto",
+    "aliases": [],
+    "description": "Bengali aloo potol posto with potatoes, pointed gourd and poppy seed paste.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Keep the posto paste thick so it clings to the vegetables.",
+    "instructions": [
+      "Cut potato and potol.",
+      "Grind poppy seeds into paste.",
+      "Cook vegetables in mustard oil.",
+      "Add posto paste and chilli.",
+      "Simmer until coated and tender."
+    ],
+    "ingredients": [
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "pointed gourd",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "poppy seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "mustard oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Potato",
+    "primary_ingredient_2": "Pointed Gourd",
+    "primaryIngredient1": "Potato",
+    "primaryIngredient2": "Pointed Gourd",
+    "secondary_ingredient_1": "Poppy Seeds",
+    "secondaryIngredient1": "Poppy Seeds",
+    "secondary_ingredient_2": "Mustard Oil",
+    "secondaryIngredient2": "Mustard Oil",
+    "secondary_ingredient_3": "Rice",
+    "secondaryIngredient3": "Rice",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "potato",
+      "pointed gourd"
+    ],
+    "baseIngredient": "potato",
+    "base_ingredient": "potato",
+    "coreIngredients": [
+      "potato",
+      "pointed gourd"
+    ],
+    "core_ingredients": [
+      "potato",
+      "pointed gourd"
+    ],
+    "requiredIngredients": [
+      "potato",
+      "pointed gourd"
+    ],
+    "required_ingredients": [
+      "potato",
+      "pointed gourd"
+    ],
+    "optionalIngredients": [
+      "poppy seeds",
+      "mustard oil",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "poppy seeds",
+      "mustard oil",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "posto",
+    "dish_family": "posto",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Potato",
+        "Pointed Gourd",
+        "Poppy Seeds",
+        "Mustard Oil",
+        "Rice"
+      ],
+      "steps": [
+        "Cut potato and potol.",
+        "Grind poppy seeds into paste.",
+        "Cook vegetables in mustard oil.",
+        "Add posto paste and chilli.",
+        "Simmer until coated and tender."
+      ],
+      "tip": "Keep the posto paste thick so it clings to the vegetables.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Keep the posto paste thick so it clings to the vegetables.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "e631a7e1-901d-53ec-80a6-5b84910b2062",
+    "sourceId": "bengal-wave-18-potol-dorma",
+    "title": "Potol Dorma",
+    "name": "Potol Dorma",
+    "aliases": [],
+    "description": "Bengali potol dorma with stuffed pointed gourd simmered in gravy.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "festive",
+      "comfort",
+      "soul",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Do not overstuff or the potol may split while simmering.",
+    "instructions": [
+      "Scrape and hollow pointed gourds.",
+      "Prepare a paneer-potato filling.",
+      "Stuff potol and fry lightly.",
+      "Make a tomato-ginger gravy.",
+      "Simmer stuffed potol gently."
+    ],
+    "ingredients": [
+      {
+        "name": "pointed gourd",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "paneer",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Pointed Gourd",
+    "primary_ingredient_2": "Paneer",
+    "primaryIngredient1": "Pointed Gourd",
+    "primaryIngredient2": "Paneer",
+    "secondary_ingredient_1": "Potato",
+    "secondaryIngredient1": "Potato",
+    "secondary_ingredient_2": "Ginger",
+    "secondaryIngredient2": "Ginger",
+    "secondary_ingredient_3": "Tomato",
+    "secondaryIngredient3": "Tomato",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "pointed gourd",
+      "paneer"
+    ],
+    "baseIngredient": "pointed gourd",
+    "base_ingredient": "pointed gourd",
+    "coreIngredients": [
+      "pointed gourd",
+      "paneer"
+    ],
+    "core_ingredients": [
+      "pointed gourd",
+      "paneer"
+    ],
+    "requiredIngredients": [
+      "pointed gourd",
+      "paneer"
+    ],
+    "required_ingredients": [
+      "pointed gourd",
+      "paneer"
+    ],
+    "optionalIngredients": [
+      "potato",
+      "ginger",
+      "tomato",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "potato",
+      "ginger",
+      "tomato",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "stuffed-vegetable",
+    "dish_family": "stuffed-vegetable",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Pointed Gourd",
+        "Paneer",
+        "Potato",
+        "Ginger",
+        "Tomato",
+        "Rice"
+      ],
+      "steps": [
+        "Scrape and hollow pointed gourds.",
+        "Prepare a paneer-potato filling.",
+        "Stuff potol and fry lightly.",
+        "Make a tomato-ginger gravy.",
+        "Simmer stuffed potol gently."
+      ],
+      "tip": "Do not overstuff or the potol may split while simmering.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Do not overstuff or the potol may split while simmering.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "fffe48be-a23d-50f4-adc0-1981cd041542",
+    "sourceId": "bengal-wave-19-chhanar-dalna",
+    "title": "Chhanar Dalna",
+    "name": "Chhanar Dalna",
+    "aliases": [],
+    "description": "Bengali chhanar dalna with paneer-like chhana cubes in a light gravy.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 32,
+    "timeMinutes": 44,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "protein",
+      "comfort",
+      "festive",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "protein",
+      "comfort",
+      "festive"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Add chhana near the end so it stays soft.",
+    "instructions": [
+      "Shape chhana into small cakes or cubes.",
+      "Fry lightly until set.",
+      "Cook potato with tomato and spices.",
+      "Add chhana pieces gently.",
+      "Simmer briefly and serve."
+    ],
+    "ingredients": [
+      {
+        "name": "chhana",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chhana",
+    "primary_ingredient_2": "Potato",
+    "primaryIngredient1": "Chhana",
+    "primaryIngredient2": "Potato",
+    "secondary_ingredient_1": "Tomato",
+    "secondaryIngredient1": "Tomato",
+    "secondary_ingredient_2": "Ginger",
+    "secondaryIngredient2": "Ginger",
+    "secondary_ingredient_3": "Garam Masala",
+    "secondaryIngredient3": "Garam Masala",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "chhana",
+      "potato"
+    ],
+    "baseIngredient": "chhana",
+    "base_ingredient": "chhana",
+    "coreIngredients": [
+      "chhana",
+      "potato"
+    ],
+    "core_ingredients": [
+      "chhana",
+      "potato"
+    ],
+    "requiredIngredients": [
+      "chhana",
+      "potato"
+    ],
+    "required_ingredients": [
+      "chhana",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "ginger",
+      "garam masala",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "tomato",
+      "ginger",
+      "garam masala",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "dalna",
+    "dish_family": "dalna",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "comfort",
+      "festive"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "32 min",
+      "ingredients": [
+        "Chhana",
+        "Potato",
+        "Tomato",
+        "Ginger",
+        "Garam Masala",
+        "Rice"
+      ],
+      "steps": [
+        "Shape chhana into small cakes or cubes.",
+        "Fry lightly until set.",
+        "Cook potato with tomato and spices.",
+        "Add chhana pieces gently.",
+        "Simmer briefly and serve."
+      ],
+      "tip": "Add chhana near the end so it stays soft.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Add chhana near the end so it stays soft.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
+    }
+  },
+  {
+    "id": "cc1b8ffc-bffb-5b6f-a266-c1c3e098baa5",
+    "sourceId": "bengal-wave-20-koraishutir-kochuri",
+    "title": "Koraishutir Kochuri",
+    "name": "Koraishutir Kochuri",
+    "aliases": [],
+    "description": "Bengali koraishutir kochuri stuffed with spiced green peas, often served with aloor dom.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 20,
+    "timeMinutes": 32,
+    "servings": 2,
+    "cuisine": "Bengal",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "snack",
+    "tags": [
+      "breakfast",
+      "snack",
+      "vegetarian",
+      "festive",
+      "comfort",
+      "soul",
+      "bengal",
+      "bengali",
+      "kolkata",
+      "east-india"
+    ],
+    "moodTags": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "breakfast",
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Dry the pea filling well so the kochuri rolls cleanly.",
+    "instructions": [
+      "Grind green peas with ginger and spices.",
+      "Cook the filling until dry.",
+      "Stuff into small dough balls.",
+      "Roll gently.",
+      "Fry until puffed and golden."
+    ],
+    "ingredients": [
+      {
+        "name": "green peas",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "maida",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "fennel",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "aloor dom",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Green Peas",
+    "primary_ingredient_2": "Maida",
+    "primaryIngredient1": "Green Peas",
+    "primaryIngredient2": "Maida",
+    "secondary_ingredient_1": "Ginger",
+    "secondaryIngredient1": "Ginger",
+    "secondary_ingredient_2": "Fennel",
+    "secondaryIngredient2": "Fennel",
+    "secondary_ingredient_3": "Aloor Dom",
+    "secondaryIngredient3": "Aloor Dom",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "green peas",
+      "maida"
+    ],
+    "baseIngredient": "green peas",
+    "base_ingredient": "green peas",
+    "coreIngredients": [
+      "green peas",
+      "maida"
+    ],
+    "core_ingredients": [
+      "green peas",
+      "maida"
+    ],
+    "requiredIngredients": [
+      "green peas",
+      "maida"
+    ],
+    "required_ingredients": [
+      "green peas",
+      "maida"
+    ],
+    "optionalIngredients": [
+      "ginger",
+      "fennel",
+      "aloor dom"
+    ],
+    "optional_ingredients": [
+      "ginger",
+      "fennel",
+      "aloor dom"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "kochuri",
+    "dish_family": "kochuri",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "festive",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "East India"
+      ],
+      "subRegion": [
+        "Bengal",
+        "Kolkata"
+      ],
+      "cuisine": [
+        "Bengali"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Aloor Dom"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "12 min",
+      "cookTime": "20 min",
+      "ingredients": [
+        "Green Peas",
+        "Maida",
+        "Ginger",
+        "Fennel",
+        "Aloor Dom"
+      ],
+      "steps": [
+        "Grind green peas with ginger and spices.",
+        "Cook the filling until dry.",
+        "Stuff into small dough balls.",
+        "Roll gently.",
+        "Fry until puffed and golden."
+      ],
+      "tip": "Dry the pea filling well so the kochuri rolls cleanly.",
+      "bestWith": [
+        "Aloor Dom"
+      ]
+    },
+    "tomoLine": "Dry the pea filling well so the kochuri rolls cleanly.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Bengal"
     }
   }
 ];
