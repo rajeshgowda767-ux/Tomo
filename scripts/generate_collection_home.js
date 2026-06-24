@@ -341,6 +341,12 @@ function seasonalRule(recipe) {
   return { hub: 'Seasonal Specials', collection, rule: 'seasonalRule' };
 }
 
+function existingGlobalBitesRule(recipe) {
+  const home = recipe.collectionHome;
+  if (home?.hub !== 'Global Bites' || !isValidCollectionHome(home)) return null;
+  return { hub: home.hub, collection: home.collection, rule: 'existingGlobalBitesRule' };
+}
+
 function everydayFallback(recipe) {
   const role = normalize(recipe.recipeRole);
   if (role === 'drink') return { hub: 'Everyday Cooking', collection: 'Tea Time Favourites', rule: 'everydayFallback' };
@@ -350,6 +356,7 @@ function everydayFallback(recipe) {
 }
 
 const RULES = Object.freeze([
+  existingGlobalBitesRule,
   manualOverride,
   familyRule,
   celebrationRule,
@@ -363,6 +370,7 @@ const RULES = Object.freeze([
 
 function collectionSignals(recipe) {
   return [
+    existingGlobalBitesRule(recipe) && 'existingGlobalBitesRule',
     manualOverride(recipe) && 'manualOverride',
     isFamilyRecipe(recipe) && 'familyRule',
     isCelebrationRecipe(recipe) && 'celebrationRule',
