@@ -3527,8 +3527,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "aliases": [],
     "image_url": "/assets/images/dishes/avial.png",
@@ -11303,22 +11303,29 @@ window.COOKBUDDY_LOCAL_RECIPES = [
   {
     "id": "cdc3f903-37f6-57d0-83cf-902475244c0f",
     "sourceId": "chicken-chettinad",
-    "title": "Chicken Chettinad",
-    "description": "Chicken Chettinad is a home-style midday idea made with chicken, black pepper, coconut, and onion. It brings a lively chilli warmth without losing that familiar home-cooked comfort. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "title": "Chettinad Chicken Curry",
+    "description": "Chettinad chicken curry with roasted spices, coconut, pepper and fennel.",
     "prepTimeMinutes": 10,
-    "cookTimeMinutes": 50,
+    "cookTimeMinutes": 28,
     "servings": 2,
-    "cuisine": "Chettinad",
-    "dietType": "non-vegetarian",
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "cuisine": "Tamil Nadu",
+    "dietType": "non_vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/chicken-chettinad-homestyle.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
       "south-indian",
       "tamil-nadu",
       "comfort",
-      "high-protein"
+      "high-protein",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "soul",
+      "tamil",
+      "south-india"
     ],
     "lateNight": false,
     "lowEffort": false,
@@ -11326,120 +11333,159 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "budgetFriendly": false,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": false,
-    "minimalCleanup": false,
+    "onePot": true,
+    "minimalCleanup": true,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 8,
-    "comfortScore": 8,
+    "effortScore": 6,
+    "comfortScore": 6,
     "energyScore": 6,
     "emotionalState": "spicy_craving, indulgent",
     "soulFoodScore": 7,
     "rainyDayScore": 5,
-    "proteinScore": 8,
-    "nostalgiaScore": 5,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
     "stomachFeel": "heavy",
     "bestTime": "dinner",
     "bestDay": "weekend",
-    "tomoLine": "🍅 Peppery comfort sounds perfect tonight.",
+    "tomoLine": "Freshly roasted pepper gives the best Chettinad flavor.",
     "homeStyleScore": 8,
     "instructions": [
-      "Prep chicken, black pepper, coconut, and onion so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Chicken Chettinad with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
+      "Roast coconut, pepper and fennel, then grind.",
+      "Saute onion, curry leaves and ginger garlic.",
+      "Add tomato and cook until soft.",
+      "Add chicken and ground masala.",
+      "Simmer until chicken is tender and coated."
     ],
     "ingredients": [
       {
-        "name": "Chicken",
+        "name": "chicken",
         "quantity": 1,
-        "unit": "g",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "Black Pepper",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Coconut",
-        "quantity": 1,
-        "unit": "g",
-        "role": "flavor-base",
-        "isMain": true
-      },
-      {
-        "name": "Onion",
-        "quantity": 1,
-        "unit": "pcs",
+        "name": "chettinad masala",
+        "quantity": 0.5,
+        "unit": "cup",
         "role": "required",
         "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "fennel",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "dosa",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
       }
     ],
     "recipe_type": "core",
     "recipeType": "core",
     "primary_ingredient_1": "Chicken",
-    "primary_ingredient_2": "Coconut",
+    "primary_ingredient_2": "Chettinad Masala",
     "primaryIngredient1": "Chicken",
-    "primaryIngredient2": "Coconut",
+    "primaryIngredient2": "Chettinad Masala",
     "secondary_ingredient_1": "Onion",
     "secondaryIngredient1": "Onion",
-    "secondary_ingredient_2": "Black Pepper",
-    "secondaryIngredient2": "Black Pepper",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
-    "primaryMood": "Comfort Food",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": "Coconut",
+    "secondaryIngredient3": "Coconut",
+    "secondary_ingredient_4": "Pepper",
+    "secondaryIngredient4": "Pepper",
+    "secondary_ingredient_5": "Fennel",
+    "secondaryIngredient5": "Fennel",
+    "primaryMood": "Spicy",
     "secondaryMood": "High Protein",
     "isRealDish": true,
-    "name": "Chicken Chettinad",
+    "name": "Chettinad Chicken Curry",
     "baseIngredient": "chicken",
     "base_ingredient": "chicken",
     "coreIngredients": [
       "chicken",
-      "coconut"
+      "chettinad masala"
     ],
     "core_ingredients": [
       "chicken",
-      "coconut"
+      "chettinad masala"
     ],
     "requiredIngredients": [
       "chicken",
-      "coconut"
+      "chettinad masala"
     ],
     "required_ingredients": [
       "chicken",
-      "coconut"
+      "chettinad masala"
     ],
     "optionalIngredients": [
-      "black pepper",
       "onion",
       "tomato",
-      "garlic",
-      "ginger",
-      "oil"
+      "coconut",
+      "pepper",
+      "fennel",
+      "rice",
+      "dosa"
     ],
     "optional_ingredients": [
-      "black pepper",
       "onion",
       "tomato",
-      "garlic",
-      "ginger",
-      "oil"
+      "coconut",
+      "pepper",
+      "fennel",
+      "rice",
+      "dosa"
     ],
     "dishFamily": "chicken-curry",
     "dish_family": "chicken-curry",
     "incompatibleWith": [],
     "incompatible_with": [],
     "moodIncludes": [
+      "spicy",
       "protein",
-      "spicy"
+      "soul"
     ],
     "moodExcludes": [],
     "regionTags": {
@@ -11447,20 +11493,25 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "South India"
       ],
       "subRegion": [
-        "Tamil Nadu / Chettinad"
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
       ],
       "cuisine": [
-        "Chettinad"
+        "Tamil Nadu",
+        "Tamil"
       ]
     },
     "pairings": {
       "sides": [
         "Onion salad",
-        "Cucumber pachadi"
+        "Cucumber pachadi",
+        "Dosa"
       ],
       "rice": [
         "Steamed rice",
-        "Ghee rice"
+        "Ghee rice",
+        "Rice"
       ],
       "roti": [
         "Parotta"
@@ -11481,19 +11532,29 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "2 tbsp coconut",
         "1 tsp pepper",
         "1 tsp fennel",
-        "Curry leaves"
+        "Curry leaves",
+        "Chicken",
+        "Chettinad Masala",
+        "Onion",
+        "Tomato",
+        "Coconut",
+        "Pepper",
+        "Fennel",
+        "Rice"
       ],
       "steps": [
-        "Roast coconut, pepper and fennel, then grind coarsely.",
-        "Saute onion, curry leaves and ginger garlic paste.",
+        "Roast coconut, pepper and fennel, then grind.",
+        "Saute onion, curry leaves and ginger garlic.",
         "Add tomato and cook until soft.",
-        "Add chicken and the ground masala.",
+        "Add chicken and ground masala.",
         "Simmer until chicken is tender and coated."
       ],
       "tip": "Freshly roasted pepper gives the best Chettinad flavor.",
       "bestWith": [
         "Parotta",
-        "Steamed rice"
+        "Steamed rice",
+        "Rice",
+        "Dosa"
       ]
     },
     "dietaryTags": [
@@ -11502,7 +11563,30 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "aliases": [
+      "Chicken Chettinad"
+    ],
+    "timeMinutes": 38,
+    "image_url": "/assets/images/dishes/chicken-chettinad-homestyle.png",
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "cookingNotes": "Freshly roasted pepper gives the best Chettinad flavor.",
+    "primaryIngredients": [
+      "chicken",
+      "chettinad masala"
+    ],
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "hardExcludeMoods": [],
+    "avoidIf": []
   },
   {
     "id": "45290fa8-aa46-559c-9ff6-24066c1e6302",
@@ -16863,55 +16947,90 @@ window.COOKBUDDY_LOCAL_RECIPES = [
   {
     "id": "1f0252b6-fd53-56f8-9281-bbd2cede4830",
     "sourceId": "curd-rice-lunch",
-    "title": "Curd Rice",
-    "description": "Curd Rice is a home-style midday idea made with rice and curd. It feels especially right on a rainy day, when you want something warm, crisp, or soothing. Serve it warm, adjust the spice to your mood, and pair it with a simple side if you want the plate to feel complete.",
+    "title": "Thayir Sadam",
+    "description": "Tamil thayir sadam, a cooling curd rice finished with tempering and pickle.",
     "prepTimeMinutes": 10,
-    "cookTimeMinutes": 20,
+    "cookTimeMinutes": 28,
     "servings": 2,
-    "cuisine": "South Indian",
+    "cuisine": "Tamil Nadu",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch3b-curd-rice.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
       "comfort",
-      "soul-food"
+      "soul-food",
+      "dinner",
+      "cooling",
+      "quick",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
     ],
     "lateNight": false,
     "lowEffort": false,
     "sickDay": true,
     "budgetFriendly": true,
     "summerCooling": true,
-    "lightMeal": true,
+    "lightMeal": false,
     "onePot": true,
     "minimalCleanup": true,
     "studySnack": false,
     "weekendSpecial": false,
-    "effortScore": 5,
+    "effortScore": 4,
     "comfortScore": 8,
-    "energyScore": 3,
+    "energyScore": 6,
     "instructions": [
-      "Prep rice and curd so everything is ready before the pan gets hot.",
-      "Start with the usual home base of oil or ghee, onion, tomato, herbs, or spices as the dish needs.",
-      "Cook gently until the flavours come together, then finish the Curd Rice with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and comforting."
+      "Cook rice until soft and mash lightly.",
+      "Cool slightly and mix with curd.",
+      "Temper mustard, ginger and curry leaves.",
+      "Stir tempering into the curd rice.",
+      "Serve with pickle."
     ],
     "ingredients": [
       {
         "name": "rice",
         "quantity": 1,
-        "unit": "g",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "curd",
-        "quantity": 1,
+        "quantity": 0.5,
         "unit": "cup",
         "role": "required",
         "isMain": true
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pickle",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
       }
     ],
     "recipe_type": "core",
@@ -16924,20 +17043,20 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "secondaryIngredient1": "Mustard Seeds",
     "secondary_ingredient_2": "Curry Leaves",
     "secondaryIngredient2": "Curry Leaves",
-    "secondary_ingredient_3": null,
-    "secondaryIngredient3": null,
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
+    "secondary_ingredient_3": "Ginger",
+    "secondaryIngredient3": "Ginger",
+    "secondary_ingredient_4": "Pickle",
+    "secondaryIngredient4": "Pickle",
     "secondary_ingredient_5": null,
     "secondaryIngredient5": null,
-    "proteinScore": 2,
-    "nostalgiaScore": 9,
-    "homeStyleScore": 9,
-    "rainyDayScore": 8,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
     "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food",
+    "secondaryMood": "Home Style",
     "isRealDish": true,
-    "name": "Curd Rice",
+    "name": "Thayir Sadam",
     "baseIngredient": "rice",
     "base_ingredient": "rice",
     "coreIngredients": [
@@ -16957,17 +17076,19 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "curd"
     ],
     "optionalIngredients": [
-      "oil",
-      "salt",
-      "spices"
+      "mustard seeds",
+      "curry leaves",
+      "ginger",
+      "pickle"
     ],
     "optional_ingredients": [
-      "oil",
-      "salt",
-      "spices"
+      "mustard seeds",
+      "curry leaves",
+      "ginger",
+      "pickle"
     ],
-    "dishFamily": "rice",
-    "dish_family": "rice",
+    "dishFamily": "curd-rice",
+    "dish_family": "curd-rice",
     "incompatibleWith": [],
     "incompatible_with": [],
     "regionTags": {
@@ -16975,10 +17096,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "South India"
       ],
       "subRegion": [
-        "Tamil Nadu / South India"
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
       ],
       "cuisine": [
-        "South Indian"
+        "Tamil Nadu",
+        "Tamil"
       ]
     },
     "quickGuide": {
@@ -16993,16 +17117,22 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 tsp urad dal",
         "8 curry leaves",
         "1 tbsp grated carrot",
-        "Salt"
+        "Salt",
+        "Rice",
+        "Curd",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Ginger",
+        "Pickle"
       ],
       "steps": [
-        "Mash cooked rice lightly.",
-        "Mix in curd, milk and salt.",
-        "Temper mustard seeds, urad dal and curry leaves.",
-        "Pour tempering over the rice.",
-        "Top with grated carrot and serve."
+        "Cook rice until soft and mash lightly.",
+        "Cool slightly and mix with curd.",
+        "Temper mustard, ginger and curry leaves.",
+        "Stir tempering into the curd rice.",
+        "Serve with pickle."
       ],
-      "tip": "Use milk to keep the curd rice creamy and not sour.",
+      "tip": "Let rice cool before adding curd so it stays creamy.",
       "bestWith": [
         "Pickle",
         "Papad"
@@ -17016,7 +17146,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "chutneys": [],
       "pickles": [
         "Mango pickle",
-        "Lemon pickle"
+        "Lemon pickle",
+        "Pickle"
       ],
       "drinks": [],
       "rice": [],
@@ -17032,7 +17163,37 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "aliases": [
+      "Curd Rice"
+    ],
+    "timeMinutes": 38,
+    "image_url": "/assets/images/dishes/batch3b-curd-rice.png",
+    "moodTags": [
+      "comfort",
+      "cooling",
+      "quick"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "cookingNotes": "Let rice cool before adding curd so it stays creamy.",
+    "primaryIngredients": [
+      "rice",
+      "curd"
+    ],
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "moodIncludes": [
+      "comfort",
+      "cooling",
+      "quick"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Let rice cool before adding curd so it stays creamy."
   },
   {
     "id": "7e1672ca-2f34-5085-8a63-dc65d434e274",
@@ -29052,17 +29213,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "title": "Kuzhi Paniyaram",
     "name": "Kuzhi Paniyaram",
     "aliases": [],
-    "description": "A Tamil paniyaram made from idli/dosa batter, adding breakfast-snack variety without a new dosa variant.",
-    "prepTimeMinutes": 8,
-    "cookTimeMinutes": 15,
-    "timeMinutes": 23,
+    "description": "Tamil kuzhi paniyaram made in a paniyaram pan with crisp edges and soft centers.",
+    "prepTimeMinutes": 12,
+    "cookTimeMinutes": 18,
+    "timeMinutes": 30,
     "servings": 2,
-    "cuisine": "Tamil",
+    "cuisine": "Tamil Nadu",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/kuzhi-paniyaram.png",
     "recipeRole": "snack",
     "tags": [
@@ -29070,17 +29231,22 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "snack",
       "vegetarian",
       "comfort",
-      "quick"
+      "quick",
+      "rainy",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
     ],
     "moodTags": [
       "comfort",
-      "quick"
+      "quick",
+      "rainy"
     ],
     "mealTags": [
       "breakfast",
       "snack"
     ],
-    "lateNight": false,
+    "lateNight": true,
     "lowEffort": true,
     "sickDay": false,
     "budgetFriendly": true,
@@ -29091,55 +29257,69 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "studySnack": true,
     "weekendSpecial": false,
     "effortScore": 4,
-    "comfortScore": 7,
-    "energyScore": 5,
-    "proteinScore": 5,
-    "nostalgiaScore": 7,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
+    "rainyDayScore": 8,
     "primaryMood": "Comfort Food",
-    "secondaryMood": "Quick & Easy",
-    "cookingNotes": "Use slightly thick batter so the paniyaram holds shape.",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Thick batter gives paniyaram its round, soft-centered shape.",
     "instructions": [
-      "Temper mustard seeds, curry leaves and onion.",
-      "Mix tempering into batter.",
-      "Heat paniyaram pan.",
+      "Temper mustard, curry leaves, onion and chilli.",
+      "Mix tempering into thick idli batter.",
+      "Heat the paniyaram pan with a little oil.",
       "Pour batter into each cavity.",
-      "Cook until golden on both sides."
+      "Turn until golden on both sides."
     ],
     "ingredients": [
       {
         "name": "idli batter",
-        "quantity": 1.5,
-        "unit": "cups",
+        "quantity": 1,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "onion",
-        "quantity": 1,
-        "unit": "small",
+        "quantity": 0.5,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "mustard seeds",
-        "quantity": 0.5,
+        "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "curry leaves",
-        "quantity": 6,
-        "unit": "leaves",
+        "quantity": 1,
+        "unit": "handful",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "green chilli",
         "quantity": 1,
-        "unit": "pcs",
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut chutney",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sambar",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       }
@@ -29150,16 +29330,16 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "primary_ingredient_2": "Onion",
     "primaryIngredient1": "Idli Batter",
     "primaryIngredient2": "Onion",
-    "secondary_ingredient_1": "mustard seeds",
-    "secondaryIngredient1": "mustard seeds",
-    "secondary_ingredient_2": "curry leaves",
-    "secondaryIngredient2": "curry leaves",
-    "secondary_ingredient_3": "green chilli",
-    "secondaryIngredient3": "green chilli",
-    "secondary_ingredient_4": null,
-    "secondaryIngredient4": null,
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
+    "secondary_ingredient_1": "Mustard Seeds",
+    "secondaryIngredient1": "Mustard Seeds",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Green Chilli",
+    "secondaryIngredient3": "Green Chilli",
+    "secondary_ingredient_4": "Coconut Chutney",
+    "secondaryIngredient4": "Coconut Chutney",
+    "secondary_ingredient_5": "Sambar",
+    "secondaryIngredient5": "Sambar",
     "primaryIngredients": [
       "idli batter",
       "onion"
@@ -29186,42 +29366,49 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "mustard seeds",
       "curry leaves",
       "green chilli",
-      "oil",
-      "salt",
-      "spices"
+      "coconut chutney",
+      "sambar"
     ],
     "optional_ingredients": [
       "mustard seeds",
       "curry leaves",
       "green chilli",
-      "oil",
-      "salt",
-      "spices"
+      "coconut chutney",
+      "sambar"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "steamed snack",
-    "dish_family": "steamed snack",
+    "dishFamily": "paniyaram",
+    "dish_family": "paniyaram",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
-    "moodIncludes": [],
+    "moodIncludes": [
+      "comfort",
+      "quick",
+      "rainy"
+    ],
     "moodExcludes": [],
     "regionTags": {
       "region": [
         "South India"
       ],
       "subRegion": [
-        "Tamil Nadu"
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
       ],
       "cuisine": [
+        "Tamil Nadu",
         "Tamil"
       ]
     },
     "pairings": {
       "chutneys": [
         "Coconut chutney",
-        "Tomato chutney"
+        "Tomato chutney",
+        "Coconut Chutney",
+        "Tomato Chutney"
       ],
       "sides": [
         "Sambar"
@@ -29240,24 +29427,38 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1/2 tsp mustard seeds",
         "Curry leaves",
         "1 green chilli",
-        "Salt"
+        "Salt",
+        "Idli Batter",
+        "Onion",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Green Chilli",
+        "Coconut Chutney",
+        "Sambar"
       ],
       "steps": [
-        "Temper mustard seeds, curry leaves and onion.",
-        "Mix tempering into batter.",
-        "Heat paniyaram pan.",
+        "Temper mustard, curry leaves, onion and chilli.",
+        "Mix tempering into thick idli batter.",
+        "Heat the paniyaram pan with a little oil.",
         "Pour batter into each cavity.",
-        "Cook until golden on both sides."
+        "Turn until golden on both sides."
       ],
-      "tip": "Use slightly thick batter so the paniyaram holds shape.",
+      "tip": "Thick batter gives paniyaram its round, soft-centered shape.",
       "bestWith": [
-        "Coconut chutney"
+        "Coconut chutney",
+        "Coconut Chutney",
+        "Tomato Chutney",
+        "Sambar"
       ]
     },
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "image_url": "/assets/images/dishes/kuzhi-paniyaram.png",
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Thick batter gives paniyaram its round, soft-centered shape."
   },
   {
     "id": "ea5ea5ab-b18e-544c-bb1f-28b61a7ca6c0",
@@ -30010,75 +30211,95 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "id": "108c0ed1-124f-561b-b15a-bd1aff82b663",
     "sourceId": "lemon-sevai",
     "title": "Lemon Sevai",
-    "description": "Lemon Sevai is a quick home-style idea made with Sevai and Lemon. It is built for low-effort cooking when you want something practical without losing the comfort of a familiar Indian kitchen. Tomo would keep this close for busy mornings, simple lunches, or snack-time fixes.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 15,
-    "timeMinutes": 20,
+    "description": "Bright Tamil lemon sevai tossed with mustard, peanuts, curry leaves and lemon.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
     "servings": 2,
-    "cuisine": "Tamil",
+    "cuisine": "Tamil Nadu",
     "dietType": "vegetarian",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/batch3b-lemon-rice.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
       "vegetarian",
       "quick",
-      "soul-food"
+      "soul-food",
+      "snack",
+      "comfort",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
     ],
-    "lateNight": false,
-    "lowEffort": true,
+    "lateNight": true,
+    "lowEffort": false,
     "sickDay": false,
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": false,
+    "onePot": true,
     "minimalCleanup": true,
-    "studySnack": false,
+    "studySnack": true,
     "weekendSpecial": false,
-    "effortScore": 3,
-    "comfortScore": 6,
-    "energyScore": 5,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
     "instructions": [
-      "Prep Sevai and Lemon so the cooking stays smooth.",
-      "Start with a simple Indian home base of oil, onion, herbs, or spices as needed.",
-      "Cook until the flavours come together, then finish Lemon Sevai with salt, heat, and texture adjusted to taste.",
-      "Serve warm while it still feels fresh and satisfying."
+      "Cook or loosen sevai.",
+      "Temper mustard, peanuts, curry leaves and chilli.",
+      "Add sevai and salt.",
+      "Switch off heat and add lemon juice.",
+      "Toss gently and serve."
     ],
     "ingredients": [
       {
-        "name": "Sevai",
+        "name": "sevai",
         "quantity": 1,
-        "unit": "portion",
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "Lemon",
-        "quantity": 1,
-        "unit": "portion",
+        "name": "lemon",
+        "quantity": 0.5,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "Curry Leaves",
+        "name": "mustard seeds",
         "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
+        "unit": "tsp",
+        "role": "optional",
         "isMain": false
       },
       {
-        "name": "Mustard Seeds",
+        "name": "peanuts",
         "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
+        "unit": "tsp",
+        "role": "optional",
         "isMain": false
       },
       {
-        "name": "Onion",
+        "name": "curry leaves",
         "quantity": 1,
-        "unit": "small",
-        "role": "flavor-base",
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut chutney",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
         "isMain": false
       }
     ],
@@ -30088,26 +30309,26 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "primary_ingredient_2": "Lemon",
     "primaryIngredient1": "Sevai",
     "primaryIngredient2": "Lemon",
-    "secondary_ingredient_1": "Curry Leaves",
-    "secondaryIngredient1": "Curry Leaves",
-    "secondary_ingredient_2": "Mustard Seeds",
-    "secondaryIngredient2": "Mustard Seeds",
-    "secondary_ingredient_3": "Onion",
-    "secondaryIngredient3": "Onion",
-    "secondary_ingredient_4": "Oil",
-    "secondaryIngredient4": "Oil",
-    "secondary_ingredient_5": "Coriander",
-    "secondaryIngredient5": "Coriander",
+    "secondary_ingredient_1": "Mustard Seeds",
+    "secondaryIngredient1": "Mustard Seeds",
+    "secondary_ingredient_2": "Peanuts",
+    "secondaryIngredient2": "Peanuts",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Green Chilli",
+    "secondaryIngredient4": "Green Chilli",
+    "secondary_ingredient_5": "Coconut Chutney",
+    "secondaryIngredient5": "Coconut Chutney",
     "primaryIngredients": [
-      "Sevai",
-      "Lemon"
+      "sevai",
+      "lemon"
     ],
-    "proteinScore": 2,
+    "proteinScore": 4,
     "nostalgiaScore": 6,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Quick & Easy",
-    "secondaryMood": "Soul Food",
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
     "isRealDish": true,
     "name": "Lemon Sevai",
     "baseIngredient": "sevai",
@@ -30129,23 +30350,21 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "lemon"
     ],
     "optionalIngredients": [
-      "curry leaves",
       "mustard seeds",
-      "onion",
-      "oil",
-      "salt",
-      "spices"
+      "peanuts",
+      "curry leaves",
+      "green chilli",
+      "coconut chutney"
     ],
     "optional_ingredients": [
-      "curry leaves",
       "mustard seeds",
-      "onion",
-      "oil",
-      "salt",
-      "spices"
+      "peanuts",
+      "curry leaves",
+      "green chilli",
+      "coconut chutney"
     ],
-    "dishFamily": "upma",
-    "dish_family": "upma",
+    "dishFamily": "sevai",
+    "dish_family": "sevai",
     "incompatibleWith": [],
     "incompatible_with": [],
     "regionTags": {
@@ -30153,9 +30372,12 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "South India"
       ],
       "subRegion": [
-        "Tamil Nadu"
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
       ],
       "cuisine": [
+        "Tamil Nadu",
         "Tamil"
       ]
     },
@@ -30165,7 +30387,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Kachumber salad"
       ],
       "chutneys": [
-        "Coconut chutney"
+        "Coconut chutney",
+        "Coconut Chutney"
       ],
       "pickles": [],
       "drinks": [
@@ -30192,25 +30415,54 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Curry leaves",
         "Green chilli",
         "1 tbsp oil",
-        "Salt"
+        "Salt",
+        "Sevai",
+        "Lemon",
+        "Mustard Seeds",
+        "Peanuts",
+        "Curry Leaves",
+        "Green Chilli",
+        "Coconut Chutney"
       ],
       "steps": [
-        "Heat oil and crackle mustard seeds.",
-        "Add peanuts, curry leaves and chilli.",
+        "Cook or loosen sevai.",
+        "Temper mustard, peanuts, curry leaves and chilli.",
         "Add sevai and salt.",
-        "Switch off heat and squeeze lemon.",
+        "Switch off heat and add lemon juice.",
         "Toss gently and serve."
       ],
-      "tip": "Add lemon after switching off heat to keep it bright.",
+      "tip": "Add lemon after switching off heat to keep it fresh.",
       "bestWith": [
         "Coconut chutney",
-        "Filter coffee"
+        "Filter coffee",
+        "Coconut Chutney"
       ]
     },
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Tamil Nadu"
-    }
+    },
+    "aliases": [],
+    "image_url": "/assets/images/dishes/batch3b-lemon-rice.png",
+    "moodTags": [
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "breakfast",
+      "snack"
+    ],
+    "cookingNotes": "Add lemon after switching off heat to keep it fresh.",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "moodIncludes": [
+      "quick",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Add lemon after switching off heat to keep it fresh."
   },
   {
     "id": "ae0ebd1c-443c-5e7f-a7a0-c2ff0ff3ee26",
@@ -36198,59 +36450,66 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "title": "Mor Kuzhambu",
     "name": "Mor Kuzhambu",
     "aliases": [],
-    "description": "A Tamil yogurt curry that adds a South Indian kadhi-style lunch archetype.",
+    "description": "Tamil mor kuzhambu with curd, coconut and vegetables for soothing rice meals.",
     "prepTimeMinutes": 10,
-    "cookTimeMinutes": 18,
-    "timeMinutes": 28,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
     "servings": 2,
-    "cuisine": "Tamil",
+    "cuisine": "Tamil Nadu",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/dishes/mor-kuzhambu.png",
-    "recipeRole": "side",
+    "recipeRole": "main",
     "tags": [
       "lunch",
       "vegetarian",
       "comfort",
       "soul-food",
-      "quick"
+      "quick",
+      "dinner",
+      "light",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
     ],
     "moodTags": [
       "comfort",
       "soul-food",
-      "quick"
+      "quick",
+      "light"
     ],
     "mealTags": [
-      "lunch"
+      "lunch",
+      "dinner"
     ],
     "lateNight": false,
-    "lowEffort": true,
+    "lowEffort": false,
     "sickDay": false,
     "budgetFriendly": true,
-    "summerCooling": true,
+    "summerCooling": false,
     "lightMeal": true,
-    "onePot": false,
-    "minimalCleanup": false,
+    "onePot": true,
+    "minimalCleanup": true,
     "studySnack": false,
     "weekendSpecial": false,
     "effortScore": 4,
     "comfortScore": 8,
-    "energyScore": 5,
-    "proteinScore": 5,
-    "nostalgiaScore": 7,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
+    "rainyDayScore": 5,
     "primaryMood": "Comfort Food",
-    "secondaryMood": "Soul Food",
+    "secondaryMood": "Home Style",
     "cookingNotes": "Keep the flame low after adding curd to avoid splitting.",
     "instructions": [
       "Cook ash gourd until tender.",
       "Grind coconut, cumin and chilli.",
       "Whisk curd with the paste.",
-      "Simmer gently without boiling hard.",
+      "Warm gently without boiling hard.",
       "Temper curry leaves and add."
     ],
     "ingredients": [
@@ -36262,37 +36521,51 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "isMain": true
       },
       {
-        "name": "coconut",
-        "quantity": 2,
-        "unit": "tbsp",
+        "name": "ash gourd",
+        "quantity": 0.5,
+        "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
-        "name": "ash gourd",
+        "name": "coconut",
         "quantity": 1,
-        "unit": "cup",
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "green chilli",
         "quantity": 1,
-        "unit": "pcs",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "cumin",
-        "quantity": 0.5,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "curry leaves",
-        "quantity": 6,
-        "unit": "leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "poriyal",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       }
@@ -36300,87 +36573,94 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "recipe_type": "core",
     "recipeType": "core",
     "primary_ingredient_1": "Curd",
-    "primary_ingredient_2": "Coconut",
+    "primary_ingredient_2": "Ash Gourd",
     "primaryIngredient1": "Curd",
-    "primaryIngredient2": "Coconut",
-    "secondary_ingredient_1": "ash gourd",
-    "secondaryIngredient1": "ash gourd",
-    "secondary_ingredient_2": "green chilli",
-    "secondaryIngredient2": "green chilli",
-    "secondary_ingredient_3": "cumin",
-    "secondaryIngredient3": "cumin",
-    "secondary_ingredient_4": "curry leaves",
-    "secondaryIngredient4": "curry leaves",
-    "secondary_ingredient_5": null,
-    "secondaryIngredient5": null,
+    "primaryIngredient2": "Ash Gourd",
+    "secondary_ingredient_1": "Coconut",
+    "secondaryIngredient1": "Coconut",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": "Green Chilli",
+    "secondaryIngredient3": "Green Chilli",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
     "primaryIngredients": [
       "curd",
-      "coconut"
+      "ash gourd"
     ],
     "baseIngredient": "curd",
     "base_ingredient": "curd",
     "coreIngredients": [
       "curd",
-      "coconut"
+      "ash gourd"
     ],
     "core_ingredients": [
       "curd",
-      "coconut"
+      "ash gourd"
     ],
     "requiredIngredients": [
       "curd",
-      "coconut"
+      "ash gourd"
     ],
     "required_ingredients": [
       "curd",
-      "coconut"
+      "ash gourd"
     ],
     "optionalIngredients": [
-      "ash gourd",
-      "green chilli",
+      "coconut",
       "cumin",
+      "green chilli",
       "curry leaves",
-      "oil",
-      "salt",
-      "spices"
+      "rice",
+      "poriyal"
     ],
     "optional_ingredients": [
-      "ash gourd",
-      "green chilli",
+      "coconut",
       "cumin",
+      "green chilli",
       "curry leaves",
-      "oil",
-      "salt",
-      "spices"
+      "rice",
+      "poriyal"
     ],
     "incompatibleWith": [],
     "incompatible_with": [],
-    "dishFamily": "kadhi",
-    "dish_family": "kadhi",
+    "dishFamily": "mor-kuzhambu",
+    "dish_family": "mor-kuzhambu",
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
-    "moodIncludes": [],
+    "moodIncludes": [
+      "comfort",
+      "quick",
+      "light"
+    ],
     "moodExcludes": [],
     "regionTags": {
       "region": [
         "South India"
       ],
       "subRegion": [
-        "Tamil Nadu"
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
       ],
       "cuisine": [
+        "Tamil Nadu",
         "Tamil"
       ]
     },
     "pairings": {
       "rice": [
-        "Steamed rice"
+        "Steamed rice",
+        "Rice"
       ],
       "sides": [
         "Potato fry",
         "Beans poriyal",
-        "Papad"
+        "Papad",
+        "Poriyal"
       ],
       "pickles": []
     },
@@ -36395,25 +36675,38 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 green chilli",
         "1/2 tsp cumin",
         "Curry leaves",
-        "Salt"
+        "Salt",
+        "Curd",
+        "Ash Gourd",
+        "Coconut",
+        "Cumin",
+        "Green Chilli",
+        "Curry Leaves",
+        "Rice",
+        "Poriyal"
       ],
       "steps": [
         "Cook ash gourd until tender.",
         "Grind coconut, cumin and chilli.",
         "Whisk curd with the paste.",
-        "Simmer gently without boiling hard.",
+        "Warm gently without boiling hard.",
         "Temper curry leaves and add."
       ],
       "tip": "Keep the flame low after adding curd to avoid splitting.",
       "bestWith": [
         "Rice",
-        "Potato fry"
+        "Potato fry",
+        "Poriyal"
       ]
     },
     "collectionHome": {
-      "hub": "Kitchen Essentials",
-      "collection": "Sides, Salads & Add-ons"
-    }
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    },
+    "image_url": "/assets/images/dishes/mor-kuzhambu.png",
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "tomoLine": "Keep the flame low after adding curd to avoid splitting."
   },
   {
     "id": "pantry-mushroom-omelette",
@@ -89241,17 +89534,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "title": "Rava Kesari",
     "name": "Rava Kesari",
     "aliases": [],
-    "description": "Golden semolina sweet with ghee, sugar, cardamom and cashews.",
-    "prepTimeMinutes": 5,
-    "cookTimeMinutes": 15,
-    "timeMinutes": 20,
-    "servings": 4,
-    "cuisine": "South Indian",
+    "description": "Tamil rava kesari with ghee, cashews and cardamom, quick and festive.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/collections/desserts.webp",
     "recipeRole": "dessert",
     "tags": [
@@ -89259,7 +89552,13 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "collection-detail",
       "quick-treats",
       "vegetarian",
-      "dessert"
+      "dessert",
+      "festive",
+      "quick",
+      "comfort",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
     ],
     "moodTags": [
       "festive",
@@ -89271,31 +89570,31 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "snack"
     ],
     "lateNight": false,
-    "lowEffort": true,
+    "lowEffort": false,
     "sickDay": false,
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
     "onePot": false,
-    "minimalCleanup": true,
+    "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 3,
+    "effortScore": 6,
     "comfortScore": 8,
-    "energyScore": 5,
-    "proteinScore": 5,
+    "energyScore": 6,
+    "proteinScore": 4,
     "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 7,
-    "primaryMood": "Festival Food",
-    "secondaryMood": "Quick Treat",
-    "cookingNotes": "Add hot water carefully and stir constantly to avoid lumps. Refrigerate for 2 days and reheat with a spoon of water.",
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Add hot water slowly and stir constantly to avoid lumps.",
     "instructions": [
       "Roast rava in ghee until fragrant.",
-      "Boil water separately and add it slowly to the rava.",
-      "Cook until the rava absorbs water.",
+      "Add hot water carefully while stirring.",
+      "Cook until rava absorbs water.",
       "Add sugar and cardamom.",
-      "Finish with ghee-fried cashews and serve warm."
+      "Finish with fried cashews."
     ],
     "ingredients": [
       {
@@ -89307,36 +89606,36 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       },
       {
         "name": "sugar",
-        "quantity": 0.75,
+        "quantity": 0.5,
         "unit": "cup",
-        "role": "optional",
-        "isMain": false
+        "role": "required",
+        "isMain": true
       },
       {
         "name": "ghee",
-        "quantity": 0.25,
-        "unit": "cup",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "water",
-        "quantity": 2.5,
-        "unit": "cups",
-        "role": "optional",
-        "isMain": false
-      },
-      {
-        "name": "cardamom powder",
-        "quantity": 0.5,
+        "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "cashews",
-        "quantity": 2,
-        "unit": "tbsp",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "filter coffee",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       }
@@ -89344,55 +89643,58 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "recipe_type": "core",
     "recipeType": "core",
     "primary_ingredient_1": "Rava",
-    "primary_ingredient_2": "",
+    "primary_ingredient_2": "Sugar",
     "primaryIngredient1": "Rava",
-    "primaryIngredient2": "",
-    "secondary_ingredient_1": "Sugar",
-    "secondaryIngredient1": "Sugar",
-    "secondary_ingredient_2": "Ghee",
-    "secondaryIngredient2": "Ghee",
-    "secondary_ingredient_3": "Water",
-    "secondaryIngredient3": "Water",
-    "secondary_ingredient_4": "Cardamom Powder",
-    "secondaryIngredient4": "Cardamom Powder",
-    "secondary_ingredient_5": "Cashews",
-    "secondaryIngredient5": "Cashews",
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
+    "primaryIngredient2": "Sugar",
+    "secondary_ingredient_1": "Ghee",
+    "secondaryIngredient1": "Ghee",
+    "secondary_ingredient_2": "Cashews",
+    "secondaryIngredient2": "Cashews",
+    "secondary_ingredient_3": "Cardamom",
+    "secondaryIngredient3": "Cardamom",
+    "secondary_ingredient_4": "Filter Coffee",
+    "secondaryIngredient4": "Filter Coffee",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
     "isRealDish": true,
     "baseIngredient": "rava",
     "base_ingredient": "rava",
     "coreIngredients": [
-      "rava"
+      "rava",
+      "sugar"
     ],
     "core_ingredients": [
-      "rava"
+      "rava",
+      "sugar"
     ],
     "primaryIngredients": [
-      "rava"
+      "rava",
+      "sugar"
     ],
     "primary_ingredients": [
       "rava"
     ],
     "requiredIngredients": [
-      "1 cup rava",
-      "0.75 cup sugar",
-      "0.25 cup ghee",
-      "2.5 cups water"
+      "rava",
+      "sugar"
     ],
     "required_ingredients": [
-      "1 cup rava",
-      "0.75 cup sugar",
-      "0.25 cup ghee",
-      "2.5 cups water"
+      "rava",
+      "sugar"
     ],
     "optionalIngredients": [
-      "0.5 tsp cardamom powder",
-      "2 tbsp cashews"
+      "ghee",
+      "cashews",
+      "cardamom",
+      "filter coffee"
     ],
     "optional_ingredients": [
-      "0.5 tsp cardamom powder",
-      "2 tbsp cashews"
+      "ghee",
+      "cashews",
+      "cardamom",
+      "filter coffee"
     ],
     "quickGuide": {
       "serves": "4 servings",
@@ -89404,31 +89706,69 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "0.25 cup ghee",
         "2.5 cups water",
         "0.5 tsp cardamom powder",
-        "2 tbsp cashews"
+        "2 tbsp cashews",
+        "Rava",
+        "Sugar",
+        "Ghee",
+        "Cashews",
+        "Cardamom",
+        "Filter Coffee"
       ],
       "steps": [
         "Roast rava in ghee until fragrant.",
-        "Boil water separately and add it slowly to the rava.",
-        "Cook until the rava absorbs water.",
+        "Add hot water carefully while stirring.",
+        "Cook until rava absorbs water.",
         "Add sugar and cardamom.",
-        "Finish with ghee-fried cashews and serve warm."
+        "Finish with fried cashews."
       ],
-      "tip": "Add hot water carefully and stir constantly to avoid lumps. Storage: Refrigerate for 2 days and reheat with a spoon of water.",
+      "tip": "Add hot water slowly and stir constantly to avoid lumps.",
       "bestWith": [
         "Filter coffee",
-        "Upma"
+        "Upma",
+        "Filter Coffee"
       ]
     },
-    "tomoLine": "Add hot water carefully and stir constantly to avoid lumps. Refrigerate for 2 days and reheat with a spoon of water.",
+    "tomoLine": "Add hot water slowly and stir constantly to avoid lumps.",
     "bestWith": [
       "Filter coffee",
       "Upma"
     ],
-    "dishFamily": "festival-sweets",
+    "dishFamily": "kesari",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    },
+    "image_url": "/assets/images/collections/desserts.webp",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dish_family": "kesari",
+    "moodIncludes": [
+      "festive",
+      "quick",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "drinks": [
+        "Filter Coffee"
+      ]
     }
   },
   {
@@ -90395,17 +90735,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "title": "Sakkarai Pongal",
     "name": "Sakkarai Pongal",
     "aliases": [],
-    "description": "Sweet pongal made with rice, moong dal, jaggery, ghee and cardamom.",
-    "prepTimeMinutes": 10,
-    "cookTimeMinutes": 30,
+    "description": "Tamil sakkarai pongal with jaggery, ghee and soft rice-dal texture.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
     "timeMinutes": 40,
-    "servings": 4,
-    "cuisine": "Tamil",
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/collections/festival-food.webp",
     "recipeRole": "dessert",
     "tags": [
@@ -90413,12 +90753,20 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "collection-detail",
       "harvest-favorites",
       "vegetarian",
-      "festival"
+      "festival",
+      "dessert",
+      "festive",
+      "soul",
+      "comfort",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
     ],
     "moodTags": [
       "festive",
       "comfort",
-      "traditional"
+      "traditional",
+      "soul"
     ],
     "mealTags": [
       "dessert",
@@ -90430,66 +90778,66 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "budgetFriendly": true,
     "summerCooling": false,
     "lightMeal": false,
-    "onePot": true,
+    "onePot": false,
     "minimalCleanup": false,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 3,
+    "effortScore": 6,
     "comfortScore": 8,
-    "energyScore": 8,
-    "proteinScore": 5,
+    "energyScore": 6,
+    "proteinScore": 4,
     "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Festival Food",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "Cook rice and dal extra soft for temple-style sakkarai pongal texture. Refrigerate and reheat with a spoon of ghee.",
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Cook the rice-dal extra soft for temple-style texture.",
     "instructions": [
-      "Roast moong dal lightly.",
-      "Cook rice and dal until very soft.",
-      "Melt jaggery with a little water and strain.",
+      "Cook rice and moong dal until very soft.",
+      "Melt jaggery and strain.",
       "Mix jaggery syrup into the cooked rice-dal.",
-      "Finish with ghee, cardamom and fried cashews."
+      "Add cardamom and ghee.",
+      "Finish with fried cashews."
     ],
     "ingredients": [
       {
         "name": "rice",
-        "quantity": 0.5,
+        "quantity": 1,
         "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "moong dal",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "cup",
-        "role": "optional",
-        "isMain": false
+        "role": "required",
+        "isMain": true
       },
       {
         "name": "jaggery",
-        "quantity": 0.75,
-        "unit": "cup",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "ghee",
-        "quantity": 3,
-        "unit": "tbsp",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "cashews",
-        "quantity": 2,
-        "unit": "tbsp",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
-        "name": "cardamom powder",
-        "quantity": 0.5,
+        "name": "cardamom",
+        "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
@@ -90498,55 +90846,58 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "recipe_type": "core",
     "recipeType": "core",
     "primary_ingredient_1": "Rice",
-    "primary_ingredient_2": "",
+    "primary_ingredient_2": "Moong Dal",
     "primaryIngredient1": "Rice",
-    "primaryIngredient2": "",
-    "secondary_ingredient_1": "Moong Dal",
-    "secondaryIngredient1": "Moong Dal",
-    "secondary_ingredient_2": "Jaggery",
-    "secondaryIngredient2": "Jaggery",
-    "secondary_ingredient_3": "Ghee",
-    "secondaryIngredient3": "Ghee",
-    "secondary_ingredient_4": "Cashews",
-    "secondaryIngredient4": "Cashews",
-    "secondary_ingredient_5": "Cardamom Powder",
-    "secondaryIngredient5": "Cardamom Powder",
-    "requiredPrimaryMatches": 1,
-    "required_primary_matches": 1,
+    "primaryIngredient2": "Moong Dal",
+    "secondary_ingredient_1": "Jaggery",
+    "secondaryIngredient1": "Jaggery",
+    "secondary_ingredient_2": "Ghee",
+    "secondaryIngredient2": "Ghee",
+    "secondary_ingredient_3": "Cashews",
+    "secondaryIngredient3": "Cashews",
+    "secondary_ingredient_4": "Cardamom",
+    "secondaryIngredient4": "Cardamom",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
     "isRealDish": true,
     "baseIngredient": "rice",
     "base_ingredient": "rice",
     "coreIngredients": [
-      "rice"
+      "rice",
+      "moong dal"
     ],
     "core_ingredients": [
-      "rice"
+      "rice",
+      "moong dal"
     ],
     "primaryIngredients": [
-      "rice"
+      "rice",
+      "moong dal"
     ],
     "primary_ingredients": [
       "rice"
     ],
     "requiredIngredients": [
-      "0.5 cup rice",
-      "0.25 cup moong dal",
-      "0.75 cup jaggery",
-      "3 tbsp ghee"
+      "rice",
+      "moong dal"
     ],
     "required_ingredients": [
-      "0.5 cup rice",
-      "0.25 cup moong dal",
-      "0.75 cup jaggery",
-      "3 tbsp ghee"
+      "rice",
+      "moong dal"
     ],
     "optionalIngredients": [
-      "2 tbsp cashews",
-      "0.5 tsp cardamom powder"
+      "jaggery",
+      "ghee",
+      "cashews",
+      "cardamom"
     ],
     "optional_ingredients": [
-      "2 tbsp cashews",
-      "0.5 tsp cardamom powder"
+      "jaggery",
+      "ghee",
+      "cashews",
+      "cardamom"
     ],
     "quickGuide": {
       "serves": "4 servings",
@@ -90558,31 +90909,68 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "0.75 cup jaggery",
         "3 tbsp ghee",
         "2 tbsp cashews",
-        "0.5 tsp cardamom powder"
+        "0.5 tsp cardamom powder",
+        "Rice",
+        "Moong Dal",
+        "Jaggery",
+        "Ghee",
+        "Cashews",
+        "Cardamom"
       ],
       "steps": [
-        "Roast moong dal lightly.",
-        "Cook rice and dal until very soft.",
-        "Melt jaggery with a little water and strain.",
+        "Cook rice and moong dal until very soft.",
+        "Melt jaggery and strain.",
         "Mix jaggery syrup into the cooked rice-dal.",
-        "Finish with ghee, cardamom and fried cashews."
+        "Add cardamom and ghee.",
+        "Finish with fried cashews."
       ],
-      "tip": "Cook rice and dal extra soft for temple-style sakkarai pongal texture. Storage: Refrigerate and reheat with a spoon of ghee.",
+      "tip": "Cook the rice-dal extra soft for temple-style texture.",
       "bestWith": [
         "Ven Pongal",
         "Coconut chutney"
       ]
     },
-    "tomoLine": "Cook rice and dal extra soft for temple-style sakkarai pongal texture. Refrigerate and reheat with a spoon of ghee.",
+    "tomoLine": "Cook the rice-dal extra soft for temple-style texture.",
     "bestWith": [
       "Ven Pongal",
       "Coconut chutney"
     ],
-    "dishFamily": "festival-meal",
+    "dishFamily": "sweet-pongal",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    },
+    "image_url": "/assets/images/collections/festival-food.webp",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dish_family": "sweet-pongal",
+    "moodIncludes": [
+      "festive",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Ven Pongal"
+      ]
     }
   },
   {
@@ -90591,34 +90979,43 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "title": "Ven Pongal",
     "name": "Ven Pongal",
     "aliases": [],
-    "description": "Savory rice and moong dal pongal tempered with pepper, cumin, ginger and ghee.",
+    "description": "Creamy Tamil ven pongal with rice, moong dal, pepper, cumin and ghee.",
     "prepTimeMinutes": 10,
-    "cookTimeMinutes": 25,
-    "timeMinutes": 35,
-    "servings": 4,
-    "cuisine": "Tamil",
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
-    "imageUrl": "/assets/images/collections/festival-food.webp",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pongal.png",
     "recipeRole": "main",
     "tags": [
       "festival-meal",
       "collection-detail",
       "harvest-favorites",
       "vegetarian",
-      "festival"
+      "festival",
+      "breakfast",
+      "comfort",
+      "soul",
+      "festive",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
     ],
     "moodTags": [
       "festive",
       "comfort",
-      "traditional"
+      "traditional",
+      "soul"
     ],
     "mealTags": [
       "lunch",
-      "snack"
+      "snack",
+      "breakfast"
     ],
     "lateNight": false,
     "lowEffort": false,
@@ -90627,45 +91024,45 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "summerCooling": false,
     "lightMeal": false,
     "onePot": true,
-    "minimalCleanup": false,
+    "minimalCleanup": true,
     "studySnack": false,
     "weekendSpecial": true,
-    "effortScore": 3,
+    "effortScore": 4,
     "comfortScore": 8,
-    "energyScore": 8,
-    "proteinScore": 5,
+    "energyScore": 6,
+    "proteinScore": 4,
     "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Festival Food",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "A loose, creamy texture is ideal because pongal thickens as it cools. Refrigerate and reheat with hot water to loosen.",
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Keep pongal loose and creamy because it thickens as it cools.",
     "instructions": [
       "Roast moong dal lightly and rinse with rice.",
-      "Pressure cook rice and dal until soft.",
-      "Mash gently to a creamy texture.",
+      "Cook rice and dal until very soft.",
+      "Mash to a creamy texture.",
       "Temper pepper, cumin, ginger and cashews in ghee.",
-      "Mix tempering into pongal and serve hot."
+      "Mix into pongal and serve hot."
     ],
     "ingredients": [
       {
         "name": "rice",
-        "quantity": 0.75,
+        "quantity": 1,
         "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "moong dal",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "ghee",
-        "quantity": 3,
-        "unit": "tbsp",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
@@ -90686,14 +91083,28 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       {
         "name": "ginger",
         "quantity": 1,
-        "unit": "tbsp",
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
         "name": "cashews",
-        "quantity": 2,
-        "unit": "tbsp",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut chutney",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sambar",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       }
@@ -90736,26 +91147,30 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "moong dal"
     ],
     "requiredIngredients": [
-      "0.75 cup rice",
-      "0.25 cup moong dal",
-      "3 tbsp ghee",
-      "1 tsp black pepper"
+      "rice",
+      "moong dal"
     ],
     "required_ingredients": [
-      "0.75 cup rice",
-      "0.25 cup moong dal",
-      "3 tbsp ghee",
-      "1 tsp black pepper"
+      "rice",
+      "moong dal"
     ],
     "optionalIngredients": [
-      "1 tsp cumin",
-      "1 tbsp ginger",
-      "2 tbsp cashews"
+      "ghee",
+      "black pepper",
+      "cumin",
+      "ginger",
+      "cashews",
+      "coconut chutney",
+      "sambar"
     ],
     "optional_ingredients": [
-      "1 tsp cumin",
-      "1 tbsp ginger",
-      "2 tbsp cashews"
+      "ghee",
+      "black pepper",
+      "cumin",
+      "ginger",
+      "cashews",
+      "coconut chutney",
+      "sambar"
     ],
     "quickGuide": {
       "serves": "4 servings",
@@ -90768,31 +91183,74 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 tsp black pepper",
         "1 tsp cumin",
         "1 tbsp ginger",
-        "2 tbsp cashews"
+        "2 tbsp cashews",
+        "Rice",
+        "Moong Dal",
+        "Ghee",
+        "Black Pepper",
+        "Cumin",
+        "Ginger",
+        "Cashews",
+        "Coconut Chutney"
       ],
       "steps": [
         "Roast moong dal lightly and rinse with rice.",
-        "Pressure cook rice and dal until soft.",
-        "Mash gently to a creamy texture.",
+        "Cook rice and dal until very soft.",
+        "Mash to a creamy texture.",
         "Temper pepper, cumin, ginger and cashews in ghee.",
-        "Mix tempering into pongal and serve hot."
+        "Mix into pongal and serve hot."
       ],
-      "tip": "A loose, creamy texture is ideal because pongal thickens as it cools. Storage: Refrigerate and reheat with hot water to loosen.",
+      "tip": "Keep pongal loose and creamy because it thickens as it cools.",
       "bestWith": [
         "Coconut chutney",
-        "Sambar"
+        "Sambar",
+        "Coconut Chutney"
       ]
     },
-    "tomoLine": "A loose, creamy texture is ideal because pongal thickens as it cools. Refrigerate and reheat with hot water to loosen.",
+    "tomoLine": "Keep pongal loose and creamy because it thickens as it cools.",
     "bestWith": [
       "Coconut chutney",
       "Sambar"
     ],
-    "dishFamily": "festival-meal",
+    "dishFamily": "pongal",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    },
+    "image_url": "/assets/images/dishes/recommendation-pack-pongal.png",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dish_family": "pongal",
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "festive"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "chutneys": [
+        "Coconut Chutney"
+      ],
+      "sides": [
+        "Sambar"
+      ]
     }
   },
   {
@@ -91616,8 +92074,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "regionTags": {
       "region": [
@@ -91858,8 +92316,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "image_url": "/assets/images/dishes/batch5-beans-thoran.png",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "regionTags": {
       "region": [
@@ -92099,8 +92557,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "regionTags": {
       "region": [
@@ -92334,8 +92792,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dishFamily": "payasam",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     },
     "image_url": "/assets/images/collections/festival-food.webp",
     "regionTags": {
@@ -93575,17 +94033,17 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "title": "Kozhukattai",
     "name": "Kozhukattai",
     "aliases": [],
-    "description": "Steamed rice flour dumplings with sweet coconut-jaggery filling.",
-    "prepTimeMinutes": 30,
-    "cookTimeMinutes": 20,
-    "timeMinutes": 50,
-    "servings": 8,
-    "cuisine": "Tamil",
+    "description": "Tamil kozhukattai with rice flour shell and coconut-jaggery filling.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
     "dietType": "vegetarian",
     "dietaryTags": [
       "vegetarian"
     ],
-    "difficulty": "easy",
+    "difficulty": "medium",
     "imageUrl": "/assets/images/collections/festival-food.webp",
     "recipeRole": "dessert",
     "tags": [
@@ -93593,12 +94051,20 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "collection-detail",
       "ganesh-chaturthi",
       "vegetarian",
-      "festival"
+      "festival",
+      "dessert",
+      "festive",
+      "soul",
+      "comfort",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
     ],
     "moodTags": [
       "festive",
       "comfort",
-      "traditional"
+      "traditional",
+      "soul"
     ],
     "mealTags": [
       "dessert",
@@ -93616,20 +94082,20 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "weekendSpecial": true,
     "effortScore": 6,
     "comfortScore": 8,
-    "energyScore": 5,
-    "proteinScore": 2,
+    "energyScore": 6,
+    "proteinScore": 4,
     "nostalgiaScore": 8,
     "homeStyleScore": 8,
-    "rainyDayScore": 4,
-    "primaryMood": "Festival Food",
-    "secondaryMood": "Comfort Food",
-    "cookingNotes": "Use warm dough for smooth kozhukattai without cracks. Best same day; steam briefly to refresh leftovers.",
+    "rainyDayScore": 5,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Use warm dough to avoid cracks while shaping.",
     "instructions": [
-      "Make a soft rice flour dough with hot water and oil.",
+      "Make soft rice flour dough with hot water.",
       "Cook coconut and jaggery to a moist filling.",
-      "Shape small cups with the dough.",
-      "Fill, seal and shape the kozhukattai.",
-      "Steam until cooked through."
+      "Shape cups with the dough.",
+      "Fill, seal and steam.",
+      "Serve warm."
     ],
     "ingredients": [
       {
@@ -93640,22 +94106,22 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "isMain": true
       },
       {
-        "name": "grated coconut",
-        "quantity": 1,
+        "name": "coconut",
+        "quantity": 0.5,
         "unit": "cup",
         "role": "required",
         "isMain": true
       },
       {
         "name": "jaggery",
-        "quantity": 0.75,
-        "unit": "cup",
+        "quantity": 1,
+        "unit": "tsp",
         "role": "optional",
         "isMain": false
       },
       {
-        "name": "cardamom powder",
-        "quantity": 0.5,
+        "name": "cardamom",
+        "quantity": 1,
         "unit": "tsp",
         "role": "optional",
         "isMain": false
@@ -93671,19 +94137,19 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "recipe_type": "core",
     "recipeType": "core",
     "primary_ingredient_1": "Rice Flour",
-    "primary_ingredient_2": "Grated Coconut",
+    "primary_ingredient_2": "Coconut",
     "primaryIngredient1": "Rice Flour",
-    "primaryIngredient2": "Grated Coconut",
+    "primaryIngredient2": "Coconut",
     "secondary_ingredient_1": "Jaggery",
     "secondaryIngredient1": "Jaggery",
-    "secondary_ingredient_2": "Cardamom Powder",
-    "secondaryIngredient2": "Cardamom Powder",
+    "secondary_ingredient_2": "Cardamom",
+    "secondaryIngredient2": "Cardamom",
     "secondary_ingredient_3": "Sesame Oil",
     "secondaryIngredient3": "Sesame Oil",
-    "secondary_ingredient_4": "",
-    "secondaryIngredient4": "",
-    "secondary_ingredient_5": "",
-    "secondaryIngredient5": "",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
     "requiredPrimaryMatches": 2,
     "required_primary_matches": 2,
     "isRealDish": true,
@@ -93691,37 +94157,37 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "base_ingredient": "rice flour",
     "coreIngredients": [
       "rice flour",
-      "grated coconut"
+      "coconut"
     ],
     "core_ingredients": [
       "rice flour",
-      "grated coconut"
+      "coconut"
     ],
     "primaryIngredients": [
       "rice flour",
-      "grated coconut"
+      "coconut"
     ],
     "primary_ingredients": [
       "rice flour",
       "grated coconut"
     ],
     "requiredIngredients": [
-      "1 cup rice flour",
-      "1 cup grated coconut",
-      "0.75 cup jaggery",
-      "0.5 tsp cardamom powder"
+      "rice flour",
+      "coconut"
     ],
     "required_ingredients": [
-      "1 cup rice flour",
-      "1 cup grated coconut",
-      "0.75 cup jaggery",
-      "0.5 tsp cardamom powder"
+      "rice flour",
+      "coconut"
     ],
     "optionalIngredients": [
-      "1 tsp sesame oil"
+      "jaggery",
+      "cardamom",
+      "sesame oil"
     ],
     "optional_ingredients": [
-      "1 tsp sesame oil"
+      "jaggery",
+      "cardamom",
+      "sesame oil"
     ],
     "quickGuide": {
       "serves": "8 servings",
@@ -93732,31 +94198,68 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "1 cup grated coconut",
         "0.75 cup jaggery",
         "0.5 tsp cardamom powder",
-        "1 tsp sesame oil"
+        "1 tsp sesame oil",
+        "Rice Flour",
+        "Coconut",
+        "Jaggery",
+        "Cardamom",
+        "Sesame Oil"
       ],
       "steps": [
-        "Make a soft rice flour dough with hot water and oil.",
+        "Make soft rice flour dough with hot water.",
         "Cook coconut and jaggery to a moist filling.",
-        "Shape small cups with the dough.",
-        "Fill, seal and shape the kozhukattai.",
-        "Steam until cooked through."
+        "Shape cups with the dough.",
+        "Fill, seal and steam.",
+        "Serve warm."
       ],
-      "tip": "Use warm dough for smooth kozhukattai without cracks. Storage: Best same day; steam briefly to refresh leftovers.",
+      "tip": "Use warm dough to avoid cracks while shaping.",
       "bestWith": [
         "Sundal",
         "Payasam"
       ]
     },
-    "tomoLine": "Use warm dough for smooth kozhukattai without cracks. Best same day; steam briefly to refresh leftovers.",
+    "tomoLine": "Use warm dough to avoid cracks while shaping.",
     "bestWith": [
       "Sundal",
       "Payasam"
     ],
-    "dishFamily": "festival-sweets",
+    "dishFamily": "kozhukattai",
     "updatedAt": "2026-06-18T00:00:00.000Z",
     "collectionHome": {
-      "hub": "Celebrations & Traditions",
-      "collection": "Festival Sweets"
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    },
+    "image_url": "/assets/images/collections/festival-food.webp",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dish_family": "kozhukattai",
+    "moodIncludes": [
+      "festive",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Sundal",
+        "Payasam"
+      ]
     }
   },
   {
@@ -103971,8 +104474,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Roast the coconut tempering until nutty for the classic finish.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -104476,7 +104979,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "tomoLine": "Do not overboil rasam after it foams; the aroma stays brighter.",
     "collectionHome": {
       "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "collection": "Tamil Nadu"
     }
   },
   {
@@ -104939,8 +105442,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "A little banana keeps unniyappam soft after cooking.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -105158,8 +105661,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Banana leaf gives ela ada its signature aroma.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -108013,8 +108516,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Theeyal needs deep roasted coconut, not pale coconut paste.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "hub": "Kitchen Essentials",
+      "collection": "Sides, Salads & Add-ons"
     }
   },
   {
@@ -108251,8 +108754,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Cool slightly before adding curd to keep the pachadi smooth.",
     "collectionHome": {
-      "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
     }
   },
   {
@@ -108499,8 +109002,4807 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "tomoLine": "Kalan should be thick and tangy, not watery.",
     "collectionHome": {
+      "hub": "Celebrations & Traditions",
+      "collection": "Festival Sweets"
+    }
+  },
+  {
+    "id": "3ed065e5-ea93-5e33-9fac-25a716ef0dbb",
+    "sourceId": "tamil-nadu-wave-01-kanchipuram-idli",
+    "title": "Kanchipuram Idli",
+    "name": "Kanchipuram Idli",
+    "aliases": [],
+    "description": "Spiced temple-style Kanchipuram idli with pepper, cumin, ginger and curry leaves.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-idli.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-idli.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "festive",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "festive"
+    ],
+    "mealTags": [
+      "breakfast"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "The seasoning should be visible and aromatic, not hidden in the batter.",
+    "instructions": [
+      "Soak rice and dal, then grind into batter.",
+      "Ferment until airy.",
+      "Season with pepper, cumin, ginger and curry leaves.",
+      "Steam in cups or plates until set.",
+      "Serve warm with sambar and chutney."
+    ],
+    "ingredients": [
+      {
+        "name": "idli rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "urad dal",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cashews",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sambar",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chutney",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Idli Rice",
+    "primary_ingredient_2": "Urad Dal",
+    "primaryIngredient1": "Idli Rice",
+    "primaryIngredient2": "Urad Dal",
+    "secondary_ingredient_1": "Pepper",
+    "secondaryIngredient1": "Pepper",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": "Ginger",
+    "secondaryIngredient3": "Ginger",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Cashews",
+    "secondaryIngredient5": "Cashews",
+    "primaryIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "baseIngredient": "idli rice",
+    "base_ingredient": "idli rice",
+    "coreIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "core_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "requiredIngredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "required_ingredients": [
+      "idli rice",
+      "urad dal"
+    ],
+    "optionalIngredients": [
+      "pepper",
+      "cumin",
+      "ginger",
+      "curry leaves",
+      "cashews",
+      "sambar",
+      "chutney"
+    ],
+    "optional_ingredients": [
+      "pepper",
+      "cumin",
+      "ginger",
+      "curry leaves",
+      "cashews",
+      "sambar",
+      "chutney"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "idli",
+    "dish_family": "idli",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "festive"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Sambar"
+      ],
+      "chutneys": [
+        "Coconut Chutney"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Idli Rice",
+        "Urad Dal",
+        "Pepper",
+        "Cumin",
+        "Ginger",
+        "Curry Leaves",
+        "Cashews",
+        "Sambar"
+      ],
+      "steps": [
+        "Soak rice and dal, then grind into batter.",
+        "Ferment until airy.",
+        "Season with pepper, cumin, ginger and curry leaves.",
+        "Steam in cups or plates until set.",
+        "Serve warm with sambar and chutney."
+      ],
+      "tip": "The seasoning should be visible and aromatic, not hidden in the batter.",
+      "bestWith": [
+        "Sambar",
+        "Coconut Chutney"
+      ]
+    },
+    "tomoLine": "The seasoning should be visible and aromatic, not hidden in the batter.",
+    "collectionHome": {
       "hub": "Regional Journeys",
-      "collection": "Kerala"
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "a8741448-14fc-5f0f-804d-edbd12f65a79",
+    "sourceId": "tamil-nadu-wave-02-adai",
+    "title": "Adai",
+    "name": "Adai",
+    "aliases": [],
+    "description": "Protein-rich Tamil adai made with mixed dals and rice, hearty enough for breakfast or dinner.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "image_url": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "dinner",
+      "vegetarian",
+      "protein",
+      "comfort",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "protein",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "breakfast",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "A coarse batter makes adai more rustic and satisfying.",
+    "instructions": [
+      "Soak rice and mixed dals.",
+      "Grind coarsely with red chilli.",
+      "Fold in onion and curry leaves if using.",
+      "Spread thick on a hot tawa.",
+      "Cook with oil until crisp and golden."
+    ],
+    "ingredients": [
+      {
+        "name": "mixed dals",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "red chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut chutney",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "avial",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Mixed Dals",
+    "primary_ingredient_2": "Rice",
+    "primaryIngredient1": "Mixed Dals",
+    "primaryIngredient2": "Rice",
+    "secondary_ingredient_1": "Red Chilli",
+    "secondaryIngredient1": "Red Chilli",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Onion",
+    "secondaryIngredient3": "Onion",
+    "secondary_ingredient_4": "Coconut Chutney",
+    "secondaryIngredient4": "Coconut Chutney",
+    "secondary_ingredient_5": "Avial",
+    "secondaryIngredient5": "Avial",
+    "primaryIngredients": [
+      "mixed dals",
+      "rice"
+    ],
+    "baseIngredient": "mixed dals",
+    "base_ingredient": "mixed dals",
+    "coreIngredients": [
+      "mixed dals",
+      "rice"
+    ],
+    "core_ingredients": [
+      "mixed dals",
+      "rice"
+    ],
+    "requiredIngredients": [
+      "mixed dals",
+      "rice"
+    ],
+    "required_ingredients": [
+      "mixed dals",
+      "rice"
+    ],
+    "optionalIngredients": [
+      "red chilli",
+      "curry leaves",
+      "onion",
+      "coconut chutney",
+      "avial"
+    ],
+    "optional_ingredients": [
+      "red chilli",
+      "curry leaves",
+      "onion",
+      "coconut chutney",
+      "avial"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "adai",
+    "dish_family": "adai",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Avial"
+      ],
+      "chutneys": [
+        "Coconut Chutney"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Mixed Dals",
+        "Rice",
+        "Red Chilli",
+        "Curry Leaves",
+        "Onion",
+        "Coconut Chutney",
+        "Avial"
+      ],
+      "steps": [
+        "Soak rice and mixed dals.",
+        "Grind coarsely with red chilli.",
+        "Fold in onion and curry leaves if using.",
+        "Spread thick on a hot tawa.",
+        "Cook with oil until crisp and golden."
+      ],
+      "tip": "A coarse batter makes adai more rustic and satisfying.",
+      "bestWith": [
+        "Avial",
+        "Coconut Chutney"
+      ]
+    },
+    "tomoLine": "A coarse batter makes adai more rustic and satisfying.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "07492915-0366-5647-88c4-5822c8bc7def",
+    "sourceId": "tamil-nadu-wave-03-adai-avial",
+    "title": "Adai Avial",
+    "name": "Adai Avial",
+    "aliases": [],
+    "description": "A classic Tamil pairing of hearty adai with coconut-rich avial.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/avial.png",
+    "image_url": "/assets/images/dishes/avial.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "dinner",
+      "vegetarian",
+      "protein",
+      "comfort",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "protein",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "breakfast",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Keep the adai bold and the avial soft; the contrast is the point.",
+    "instructions": [
+      "Prepare thick adai batter from rice and dals.",
+      "Cook adai on a tawa until crisp.",
+      "Make avial with vegetables, coconut and curd.",
+      "Serve adai hot with avial.",
+      "Add chutney if desired."
+    ],
+    "ingredients": [
+      {
+        "name": "adai",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "avial",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mixed dals",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curd",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Adai",
+    "primary_ingredient_2": "Avial",
+    "primaryIngredient1": "Adai",
+    "primaryIngredient2": "Avial",
+    "secondary_ingredient_1": "Mixed Dals",
+    "secondaryIngredient1": "Mixed Dals",
+    "secondary_ingredient_2": "Rice",
+    "secondaryIngredient2": "Rice",
+    "secondary_ingredient_3": "Coconut",
+    "secondaryIngredient3": "Coconut",
+    "secondary_ingredient_4": "Curd",
+    "secondaryIngredient4": "Curd",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "adai",
+      "avial"
+    ],
+    "baseIngredient": "adai",
+    "base_ingredient": "adai",
+    "coreIngredients": [
+      "adai",
+      "avial"
+    ],
+    "core_ingredients": [
+      "adai",
+      "avial"
+    ],
+    "requiredIngredients": [
+      "adai",
+      "avial"
+    ],
+    "required_ingredients": [
+      "adai",
+      "avial"
+    ],
+    "optionalIngredients": [
+      "mixed dals",
+      "rice",
+      "coconut",
+      "curd"
+    ],
+    "optional_ingredients": [
+      "mixed dals",
+      "rice",
+      "coconut",
+      "curd"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "adai",
+    "dish_family": "adai",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Avial"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Adai",
+        "Avial",
+        "Mixed Dals",
+        "Rice",
+        "Coconut",
+        "Curd"
+      ],
+      "steps": [
+        "Prepare thick adai batter from rice and dals.",
+        "Cook adai on a tawa until crisp.",
+        "Make avial with vegetables, coconut and curd.",
+        "Serve adai hot with avial.",
+        "Add chutney if desired."
+      ],
+      "tip": "Keep the adai bold and the avial soft; the contrast is the point.",
+      "bestWith": [
+        "Avial"
+      ]
+    },
+    "tomoLine": "Keep the adai bold and the avial soft; the contrast is the point.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "4dbb95dd-f539-5d06-b828-d761074b0537",
+    "sourceId": "tamil-nadu-wave-04-vatha-kuzhambu",
+    "title": "Vatha Kuzhambu",
+    "name": "Vatha Kuzhambu",
+    "aliases": [],
+    "description": "Tangy Tamil vatha kuzhambu with sun-dried vathal, tamarind and sesame oil.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "spicy",
+      "comfort",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Simmer until the oil separates slightly for true kuzhambu depth.",
+    "instructions": [
+      "Soak tamarind and extract thick water.",
+      "Fry vathal in sesame oil.",
+      "Simmer tamarind with spices until glossy.",
+      "Add fried vathal and curry leaves.",
+      "Serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vathal",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sambar powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "appalam",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Tamarind",
+    "primary_ingredient_2": "Vathal",
+    "primaryIngredient1": "Tamarind",
+    "primaryIngredient2": "Vathal",
+    "secondary_ingredient_1": "Sambar Powder",
+    "secondaryIngredient1": "Sambar Powder",
+    "secondary_ingredient_2": "Sesame Oil",
+    "secondaryIngredient2": "Sesame Oil",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": "Appalam",
+    "secondaryIngredient5": "Appalam",
+    "primaryIngredients": [
+      "tamarind",
+      "vathal"
+    ],
+    "baseIngredient": "tamarind",
+    "base_ingredient": "tamarind",
+    "coreIngredients": [
+      "tamarind",
+      "vathal"
+    ],
+    "core_ingredients": [
+      "tamarind",
+      "vathal"
+    ],
+    "requiredIngredients": [
+      "tamarind",
+      "vathal"
+    ],
+    "required_ingredients": [
+      "tamarind",
+      "vathal"
+    ],
+    "optionalIngredients": [
+      "sambar powder",
+      "sesame oil",
+      "curry leaves",
+      "rice",
+      "appalam"
+    ],
+    "optional_ingredients": [
+      "sambar powder",
+      "sesame oil",
+      "curry leaves",
+      "rice",
+      "appalam"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "kuzhambu",
+    "dish_family": "kuzhambu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Appalam"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Tamarind",
+        "Vathal",
+        "Sambar Powder",
+        "Sesame Oil",
+        "Curry Leaves",
+        "Rice",
+        "Appalam"
+      ],
+      "steps": [
+        "Soak tamarind and extract thick water.",
+        "Fry vathal in sesame oil.",
+        "Simmer tamarind with spices until glossy.",
+        "Add fried vathal and curry leaves.",
+        "Serve with rice."
+      ],
+      "tip": "Simmer until the oil separates slightly for true kuzhambu depth.",
+      "bestWith": [
+        "Rice",
+        "Appalam"
+      ]
+    },
+    "tomoLine": "Simmer until the oil separates slightly for true kuzhambu depth.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "9b9415cc-18c9-5e8b-8252-22ec3666117f",
+    "sourceId": "tamil-nadu-wave-05-puli-kuzhambu",
+    "title": "Puli Kuzhambu",
+    "name": "Puli Kuzhambu",
+    "aliases": [],
+    "description": "Everyday Tamil puli kuzhambu with tamarind, vegetables and sesame oil warmth.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "spicy",
+      "comfort",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "A short rest after cooking makes puli kuzhambu taste deeper.",
+    "instructions": [
+      "Extract tamarind water.",
+      "Saute shallots and vegetables in sesame oil.",
+      "Add spice powder and tamarind.",
+      "Simmer until thick and tangy.",
+      "Serve hot with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "tamarind",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sambar powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "shallots",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Tamarind",
+    "primary_ingredient_2": "Vegetables",
+    "primaryIngredient1": "Tamarind",
+    "primaryIngredient2": "Vegetables",
+    "secondary_ingredient_1": "Sambar Powder",
+    "secondaryIngredient1": "Sambar Powder",
+    "secondary_ingredient_2": "Shallots",
+    "secondaryIngredient2": "Shallots",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Sesame Oil",
+    "secondaryIngredient4": "Sesame Oil",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "tamarind",
+      "vegetables"
+    ],
+    "baseIngredient": "tamarind",
+    "base_ingredient": "tamarind",
+    "coreIngredients": [
+      "tamarind",
+      "vegetables"
+    ],
+    "core_ingredients": [
+      "tamarind",
+      "vegetables"
+    ],
+    "requiredIngredients": [
+      "tamarind",
+      "vegetables"
+    ],
+    "required_ingredients": [
+      "tamarind",
+      "vegetables"
+    ],
+    "optionalIngredients": [
+      "sambar powder",
+      "shallots",
+      "curry leaves",
+      "sesame oil",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "sambar powder",
+      "shallots",
+      "curry leaves",
+      "sesame oil",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "kuzhambu",
+    "dish_family": "kuzhambu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Tamarind",
+        "Vegetables",
+        "Sambar Powder",
+        "Shallots",
+        "Curry Leaves",
+        "Sesame Oil",
+        "Rice"
+      ],
+      "steps": [
+        "Extract tamarind water.",
+        "Saute shallots and vegetables in sesame oil.",
+        "Add spice powder and tamarind.",
+        "Simmer until thick and tangy.",
+        "Serve hot with rice."
+      ],
+      "tip": "A short rest after cooking makes puli kuzhambu taste deeper.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "A short rest after cooking makes puli kuzhambu taste deeper.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "59f214b3-b5ea-5cdb-8b11-9e09293f2782",
+    "sourceId": "tamil-nadu-wave-06-kootu",
+    "title": "Kootu",
+    "name": "Kootu",
+    "aliases": [],
+    "description": "Tamil vegetable kootu with dal and coconut, soft enough for everyday rice plates.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3b-chow-chow-kootu.png",
+    "image_url": "/assets/images/dishes/batch3b-chow-chow-kootu.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "soul",
+      "protein",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Kootu should be thick and spoonable, not watery.",
+    "instructions": [
+      "Cook dal until soft.",
+      "Cook vegetables separately until tender.",
+      "Grind coconut with cumin.",
+      "Simmer dal, vegetables and coconut paste together.",
+      "Temper curry leaves and serve."
+    ],
+    "ingredients": [
+      {
+        "name": "vegetables",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "moong dal",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Vegetables",
+    "primary_ingredient_2": "Moong Dal",
+    "primaryIngredient1": "Vegetables",
+    "primaryIngredient2": "Moong Dal",
+    "secondary_ingredient_1": "Coconut",
+    "secondaryIngredient1": "Coconut",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "vegetables",
+      "moong dal"
+    ],
+    "baseIngredient": "vegetables",
+    "base_ingredient": "vegetables",
+    "coreIngredients": [
+      "vegetables",
+      "moong dal"
+    ],
+    "core_ingredients": [
+      "vegetables",
+      "moong dal"
+    ],
+    "requiredIngredients": [
+      "vegetables",
+      "moong dal"
+    ],
+    "required_ingredients": [
+      "vegetables",
+      "moong dal"
+    ],
+    "optionalIngredients": [
+      "coconut",
+      "cumin",
+      "curry leaves",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "coconut",
+      "cumin",
+      "curry leaves",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "kootu",
+    "dish_family": "kootu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Vegetables",
+        "Moong Dal",
+        "Coconut",
+        "Cumin",
+        "Curry Leaves",
+        "Rice"
+      ],
+      "steps": [
+        "Cook dal until soft.",
+        "Cook vegetables separately until tender.",
+        "Grind coconut with cumin.",
+        "Simmer dal, vegetables and coconut paste together.",
+        "Temper curry leaves and serve."
+      ],
+      "tip": "Kootu should be thick and spoonable, not watery.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Kootu should be thick and spoonable, not watery.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "a95f0395-42af-580e-a00d-2f907eec8682",
+    "sourceId": "tamil-nadu-wave-07-poriyal",
+    "title": "Poriyal",
+    "name": "Poriyal",
+    "aliases": [],
+    "description": "Simple Tamil poriyal with vegetables, coconut and a mustard-curry leaf tempering.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch5-beans-poriyal.png",
+    "image_url": "/assets/images/dishes/batch5-beans-poriyal.png",
+    "recipeRole": "side",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Keep poriyal dry and bright, not overcooked.",
+    "instructions": [
+      "Chop vegetables small and even.",
+      "Temper mustard, urad dal and curry leaves.",
+      "Add vegetables and cook until tender-crisp.",
+      "Fold in coconut.",
+      "Serve as a rice side."
+    ],
+    "ingredients": [
+      {
+        "name": "vegetables",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "urad dal",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Vegetables",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Vegetables",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Mustard Seeds",
+    "secondaryIngredient1": "Mustard Seeds",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Urad Dal",
+    "secondaryIngredient3": "Urad Dal",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "vegetables",
+      "coconut"
+    ],
+    "baseIngredient": "vegetables",
+    "base_ingredient": "vegetables",
+    "coreIngredients": [
+      "vegetables",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "vegetables",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "vegetables",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "vegetables",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "mustard seeds",
+      "curry leaves",
+      "urad dal",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "mustard seeds",
+      "curry leaves",
+      "urad dal",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "poriyal",
+    "dish_family": "poriyal",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Sambar"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Vegetables",
+        "Coconut",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Urad Dal",
+        "Rice"
+      ],
+      "steps": [
+        "Chop vegetables small and even.",
+        "Temper mustard, urad dal and curry leaves.",
+        "Add vegetables and cook until tender-crisp.",
+        "Fold in coconut.",
+        "Serve as a rice side."
+      ],
+      "tip": "Keep poriyal dry and bright, not overcooked.",
+      "bestWith": [
+        "Rice",
+        "Sambar"
+      ]
+    },
+    "tomoLine": "Keep poriyal dry and bright, not overcooked.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "a1a61b9d-a385-5eff-bc41-a4f54bf6412c",
+    "sourceId": "tamil-nadu-wave-08-coconut-sevai",
+    "title": "Coconut Sevai",
+    "name": "Coconut Sevai",
+    "aliases": [],
+    "description": "Mild Tamil coconut sevai with fresh coconut and gentle tempering.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch5-coconut-rice.png",
+    "image_url": "/assets/images/dishes/batch5-coconut-rice.png",
+    "recipeRole": "main",
+    "tags": [
+      "breakfast",
+      "snack",
+      "vegetarian",
+      "quick",
+      "comfort",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "quick",
+      "comfort"
+    ],
+    "mealTags": [
+      "breakfast",
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Do not brown the coconut; keep the flavor fresh.",
+    "instructions": [
+      "Cook or loosen sevai.",
+      "Temper mustard, curry leaves and chilli.",
+      "Add sevai and salt.",
+      "Fold in fresh coconut.",
+      "Serve savory or with a little jaggery on the side."
+    ],
+    "ingredients": [
+      {
+        "name": "sevai",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mustard seeds",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chutney",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Sevai",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Sevai",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Mustard Seeds",
+    "secondaryIngredient1": "Mustard Seeds",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Green Chilli",
+    "secondaryIngredient3": "Green Chilli",
+    "secondary_ingredient_4": "Jaggery",
+    "secondaryIngredient4": "Jaggery",
+    "secondary_ingredient_5": "Chutney",
+    "secondaryIngredient5": "Chutney",
+    "primaryIngredients": [
+      "sevai",
+      "coconut"
+    ],
+    "baseIngredient": "sevai",
+    "base_ingredient": "sevai",
+    "coreIngredients": [
+      "sevai",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "sevai",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "sevai",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "sevai",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "mustard seeds",
+      "curry leaves",
+      "green chilli",
+      "jaggery",
+      "chutney"
+    ],
+    "optional_ingredients": [
+      "mustard seeds",
+      "curry leaves",
+      "green chilli",
+      "jaggery",
+      "chutney"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "sevai",
+    "dish_family": "sevai",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "quick",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "toppings": [
+        "Jaggery"
+      ],
+      "chutneys": [
+        "Coconut Chutney"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Sevai",
+        "Coconut",
+        "Mustard Seeds",
+        "Curry Leaves",
+        "Green Chilli",
+        "Jaggery",
+        "Chutney"
+      ],
+      "steps": [
+        "Cook or loosen sevai.",
+        "Temper mustard, curry leaves and chilli.",
+        "Add sevai and salt.",
+        "Fold in fresh coconut.",
+        "Serve savory or with a little jaggery on the side."
+      ],
+      "tip": "Do not brown the coconut; keep the flavor fresh.",
+      "bestWith": [
+        "Jaggery",
+        "Coconut Chutney"
+      ]
+    },
+    "tomoLine": "Do not brown the coconut; keep the flavor fresh.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "92dd04ed-9766-5a09-88e5-db23b920ad8a",
+    "sourceId": "tamil-nadu-wave-09-jigarthanda",
+    "title": "Jigarthanda",
+    "name": "Jigarthanda",
+    "aliases": [],
+    "description": "Madurai-style jigarthanda, a rich cooling drink with milk, nannari and badam pisin.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 5,
+    "timeMinutes": 15,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/healthy-drinks.webp",
+    "image_url": "/assets/images/collections/healthy-drinks.webp",
+    "recipeRole": "drink",
+    "tags": [
+      "drink",
+      "snack",
+      "vegetarian",
+      "cooling",
+      "festive",
+      "comfort",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "cooling",
+      "festive",
+      "comfort"
+    ],
+    "mealTags": [
+      "drink",
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": true,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Cooling",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Serve very cold; jigarthanda is meant to cool you down.",
+    "instructions": [
+      "Soak badam pisin until bloomed.",
+      "Chill reduced milk.",
+      "Add nannari syrup to a glass.",
+      "Layer milk, badam pisin and ice cream.",
+      "Serve cold."
+    ],
+    "ingredients": [
+      {
+        "name": "milk",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "nannari syrup",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "badam pisin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ice cream",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "summer cooler",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Milk",
+    "primary_ingredient_2": "Nannari Syrup",
+    "primaryIngredient1": "Milk",
+    "primaryIngredient2": "Nannari Syrup",
+    "secondary_ingredient_1": "Badam Pisin",
+    "secondaryIngredient1": "Badam Pisin",
+    "secondary_ingredient_2": "Ice Cream",
+    "secondaryIngredient2": "Ice Cream",
+    "secondary_ingredient_3": "Summer Cooler",
+    "secondaryIngredient3": "Summer Cooler",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "milk",
+      "nannari syrup"
+    ],
+    "baseIngredient": "milk",
+    "base_ingredient": "milk",
+    "coreIngredients": [
+      "milk",
+      "nannari syrup"
+    ],
+    "core_ingredients": [
+      "milk",
+      "nannari syrup"
+    ],
+    "requiredIngredients": [
+      "milk",
+      "nannari syrup"
+    ],
+    "required_ingredients": [
+      "milk",
+      "nannari syrup"
+    ],
+    "optionalIngredients": [
+      "badam pisin",
+      "ice cream",
+      "summer cooler"
+    ],
+    "optional_ingredients": [
+      "badam pisin",
+      "ice cream",
+      "summer cooler"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "cooler",
+    "dish_family": "cooler",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "cooling",
+      "festive",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Summer Cooler"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "5 min",
+      "ingredients": [
+        "Milk",
+        "Nannari Syrup",
+        "Badam Pisin",
+        "Ice Cream",
+        "Summer Cooler"
+      ],
+      "steps": [
+        "Soak badam pisin until bloomed.",
+        "Chill reduced milk.",
+        "Add nannari syrup to a glass.",
+        "Layer milk, badam pisin and ice cream.",
+        "Serve cold."
+      ],
+      "tip": "Serve very cold; jigarthanda is meant to cool you down.",
+      "bestWith": [
+        "Summer Cooler"
+      ]
+    },
+    "tomoLine": "Serve very cold; jigarthanda is meant to cool you down.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "adcb948d-477f-57b5-ac4e-42cbdb57dede",
+    "sourceId": "tamil-nadu-wave-10-chettinad-pepper-chicken",
+    "title": "Chettinad Pepper Chicken",
+    "name": "Chettinad Pepper Chicken",
+    "aliases": [],
+    "description": "Dry Chettinad pepper chicken with black pepper, curry leaves and roasted spice warmth.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/chicken-chettinad-homestyle.png",
+    "image_url": "/assets/images/dishes/chicken-chettinad-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Add fresh pepper at the end for a sharper Chettinad finish.",
+    "instructions": [
+      "Marinate chicken with pepper, chilli and salt.",
+      "Saute onion, curry leaves and ginger garlic.",
+      "Add chicken and cook covered.",
+      "Open and roast until dry.",
+      "Finish with crushed pepper."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "fennel",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Black Pepper",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Black Pepper",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Fennel",
+    "secondaryIngredient3": "Fennel",
+    "secondary_ingredient_4": "Ginger Garlic",
+    "secondaryIngredient4": "Ginger Garlic",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "chicken",
+      "black pepper"
+    ],
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "black pepper"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "black pepper"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "black pepper"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "black pepper"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "curry leaves",
+      "fennel",
+      "ginger garlic",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "curry leaves",
+      "fennel",
+      "ginger garlic",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chicken-fry",
+    "dish_family": "chicken-fry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Dosa"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Chicken",
+        "Black Pepper",
+        "Onion",
+        "Curry Leaves",
+        "Fennel",
+        "Ginger Garlic",
+        "Rice"
+      ],
+      "steps": [
+        "Marinate chicken with pepper, chilli and salt.",
+        "Saute onion, curry leaves and ginger garlic.",
+        "Add chicken and cook covered.",
+        "Open and roast until dry.",
+        "Finish with crushed pepper."
+      ],
+      "tip": "Add fresh pepper at the end for a sharper Chettinad finish.",
+      "bestWith": [
+        "Rice",
+        "Dosa"
+      ]
+    },
+    "tomoLine": "Add fresh pepper at the end for a sharper Chettinad finish.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "1eb33d9a-3b3a-5045-b749-ad69045384ce",
+    "sourceId": "tamil-nadu-wave-11-kari-dosa",
+    "title": "Kari Dosa",
+    "name": "Kari Dosa",
+    "aliases": [],
+    "description": "Madurai kari dosa topped with spiced meat, onion and egg-style richness.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
+    "image_url": "/assets/images/dishes/dosa-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "dinner",
+      "snack",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "rainy",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "rainy"
+    ],
+    "mealTags": [
+      "dinner",
+      "snack"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": true,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Keep the dosa slightly thick so it can hold the kari topping.",
+    "instructions": [
+      "Spread dosa batter on a hot tawa.",
+      "Top with cooked spiced keema.",
+      "Add egg if using and spread lightly.",
+      "Cook until the dosa crisps underneath.",
+      "Serve hot with salna."
+    ],
+    "ingredients": [
+      {
+        "name": "dosa batter",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "mutton keema",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salna",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Dosa Batter",
+    "primary_ingredient_2": "Mutton Keema",
+    "primaryIngredient1": "Dosa Batter",
+    "primaryIngredient2": "Mutton Keema",
+    "secondary_ingredient_1": "Egg",
+    "secondaryIngredient1": "Egg",
+    "secondary_ingredient_2": "Onion",
+    "secondaryIngredient2": "Onion",
+    "secondary_ingredient_3": "Pepper",
+    "secondaryIngredient3": "Pepper",
+    "secondary_ingredient_4": "Salna",
+    "secondaryIngredient4": "Salna",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "dosa batter",
+      "mutton keema"
+    ],
+    "baseIngredient": "dosa batter",
+    "base_ingredient": "dosa batter",
+    "coreIngredients": [
+      "dosa batter",
+      "mutton keema"
+    ],
+    "core_ingredients": [
+      "dosa batter",
+      "mutton keema"
+    ],
+    "requiredIngredients": [
+      "dosa batter",
+      "mutton keema"
+    ],
+    "required_ingredients": [
+      "dosa batter",
+      "mutton keema"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "onion",
+      "pepper",
+      "salna"
+    ],
+    "optional_ingredients": [
+      "egg",
+      "onion",
+      "pepper",
+      "salna"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "dosa",
+    "dish_family": "dosa",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "rainy"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Salna"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Dosa Batter",
+        "Mutton Keema",
+        "Egg",
+        "Onion",
+        "Pepper",
+        "Salna"
+      ],
+      "steps": [
+        "Spread dosa batter on a hot tawa.",
+        "Top with cooked spiced keema.",
+        "Add egg if using and spread lightly.",
+        "Cook until the dosa crisps underneath.",
+        "Serve hot with salna."
+      ],
+      "tip": "Keep the dosa slightly thick so it can hold the kari topping.",
+      "bestWith": [
+        "Salna"
+      ]
+    },
+    "tomoLine": "Keep the dosa slightly thick so it can hold the kari topping.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "63f77462-69b1-596f-84a5-ce31763ebf4f",
+    "sourceId": "tamil-nadu-wave-12-mutton-chukka",
+    "title": "Mutton Chukka",
+    "name": "Mutton Chukka",
+    "aliases": [],
+    "description": "Tamil mutton chukka roasted dry with pepper, onion and curry leaves.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Roast until the masala clings tightly to the mutton.",
+    "instructions": [
+      "Cook mutton with spices until tender.",
+      "Saute onion and curry leaves.",
+      "Add cooked mutton and roast dry.",
+      "Finish with black pepper.",
+      "Serve with parotta."
+    ],
+    "ingredients": [
+      {
+        "name": "mutton",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "parotta",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Mutton",
+    "primary_ingredient_2": "Black Pepper",
+    "primaryIngredient1": "Mutton",
+    "primaryIngredient2": "Black Pepper",
+    "secondary_ingredient_1": "Onion",
+    "secondaryIngredient1": "Onion",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Ginger Garlic",
+    "secondaryIngredient3": "Ginger Garlic",
+    "secondary_ingredient_4": "Parotta",
+    "secondaryIngredient4": "Parotta",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "mutton",
+      "black pepper"
+    ],
+    "baseIngredient": "mutton",
+    "base_ingredient": "mutton",
+    "coreIngredients": [
+      "mutton",
+      "black pepper"
+    ],
+    "core_ingredients": [
+      "mutton",
+      "black pepper"
+    ],
+    "requiredIngredients": [
+      "mutton",
+      "black pepper"
+    ],
+    "required_ingredients": [
+      "mutton",
+      "black pepper"
+    ],
+    "optionalIngredients": [
+      "onion",
+      "curry leaves",
+      "ginger garlic",
+      "parotta"
+    ],
+    "optional_ingredients": [
+      "onion",
+      "curry leaves",
+      "ginger garlic",
+      "parotta"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "mutton-fry",
+    "dish_family": "mutton-fry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Parotta"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Mutton",
+        "Black Pepper",
+        "Onion",
+        "Curry Leaves",
+        "Ginger Garlic",
+        "Parotta"
+      ],
+      "steps": [
+        "Cook mutton with spices until tender.",
+        "Saute onion and curry leaves.",
+        "Add cooked mutton and roast dry.",
+        "Finish with black pepper.",
+        "Serve with parotta."
+      ],
+      "tip": "Roast until the masala clings tightly to the mutton.",
+      "bestWith": [
+        "Parotta"
+      ]
+    },
+    "tomoLine": "Roast until the masala clings tightly to the mutton.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "1c05ae5d-065c-542c-adea-c1056b9177d2",
+    "sourceId": "tamil-nadu-wave-13-nandu-rasam",
+    "title": "Nandu Rasam",
+    "name": "Nandu Rasam",
+    "aliases": [],
+    "description": "Tamil crab rasam with pepper, cumin and tamarind, warming and deeply coastal.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "rainy",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "rainy"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": true,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Crack crab shells slightly so the rasam gets more flavor.",
+    "instructions": [
+      "Clean crab pieces well.",
+      "Crush pepper, cumin and garlic.",
+      "Simmer tamarind water with spices.",
+      "Add crab and cook until flavorful.",
+      "Serve hot with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "crab",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Crab",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Crab",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Pepper",
+    "secondaryIngredient1": "Pepper",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": "Garlic",
+    "secondaryIngredient3": "Garlic",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": "Rice",
+    "secondaryIngredient5": "Rice",
+    "primaryIngredients": [
+      "crab",
+      "tamarind"
+    ],
+    "baseIngredient": "crab",
+    "base_ingredient": "crab",
+    "coreIngredients": [
+      "crab",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "crab",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "crab",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "crab",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "pepper",
+      "cumin",
+      "garlic",
+      "curry leaves",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "pepper",
+      "cumin",
+      "garlic",
+      "curry leaves",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "rasam",
+    "dish_family": "rasam",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "rainy"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Crab",
+        "Tamarind",
+        "Pepper",
+        "Cumin",
+        "Garlic",
+        "Curry Leaves",
+        "Rice"
+      ],
+      "steps": [
+        "Clean crab pieces well.",
+        "Crush pepper, cumin and garlic.",
+        "Simmer tamarind water with spices.",
+        "Add crab and cook until flavorful.",
+        "Serve hot with rice."
+      ],
+      "tip": "Crack crab shells slightly so the rasam gets more flavor.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Crack crab shells slightly so the rasam gets more flavor.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "7a9e8ef9-1222-5d3e-8859-f840a8fff633",
+    "sourceId": "tamil-nadu-wave-14-meen-kuzhambu",
+    "title": "Meen Kuzhambu",
+    "name": "Meen Kuzhambu",
+    "aliases": [],
+    "description": "Tamil meen kuzhambu with tamarind, shallots and fish simmered gently.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/fish-curry.png",
+    "image_url": "/assets/images/dishes/fish-curry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "soul",
+      "comfort",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "soul",
+      "comfort"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Soul Food",
+    "cookingNotes": "Resting helps the fish absorb the kuzhambu.",
+    "instructions": [
+      "Make a tamarind base with shallots and spices.",
+      "Simmer until the raw smell leaves.",
+      "Add fish pieces gently.",
+      "Cook without stirring too much.",
+      "Rest before serving with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "shallots",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Shallots",
+    "secondaryIngredient1": "Shallots",
+    "secondary_ingredient_2": "Tomato",
+    "secondaryIngredient2": "Tomato",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "fish",
+      "tamarind"
+    ],
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "coreIngredients": [
+      "fish",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "fish",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "fish",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "shallots",
+      "tomato",
+      "curry leaves",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "shallots",
+      "tomato",
+      "curry leaves",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fish-curry",
+    "dish_family": "fish-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "soul",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Fish",
+        "Tamarind",
+        "Shallots",
+        "Tomato",
+        "Curry Leaves",
+        "Rice"
+      ],
+      "steps": [
+        "Make a tamarind base with shallots and spices.",
+        "Simmer until the raw smell leaves.",
+        "Add fish pieces gently.",
+        "Cook without stirring too much.",
+        "Rest before serving with rice."
+      ],
+      "tip": "Resting helps the fish absorb the kuzhambu.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Resting helps the fish absorb the kuzhambu.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "f826be90-a084-58d9-a1dd-d02576afa8d2",
+    "sourceId": "tamil-nadu-wave-15-fish-fry-tamil-style",
+    "title": "Fish Fry Tamil Style",
+    "name": "Fish Fry Tamil Style",
+    "aliases": [],
+    "description": "Tamil-style fish fry with chilli, turmeric and crisp pan-fried edges.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch5-fish-fry.png",
+    "image_url": "/assets/images/dishes/batch5-fish-fry.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "A light rice flour dusting gives a crisp edge.",
+    "instructions": [
+      "Mix chilli, turmeric, lemon and salt.",
+      "Coat fish pieces evenly.",
+      "Rest briefly.",
+      "Pan fry until crisp on both sides.",
+      "Serve hot with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "fish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "red chilli",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "turmeric",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice flour",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Fish",
+    "primary_ingredient_2": "Red Chilli",
+    "primaryIngredient1": "Fish",
+    "primaryIngredient2": "Red Chilli",
+    "secondary_ingredient_1": "Turmeric",
+    "secondaryIngredient1": "Turmeric",
+    "secondary_ingredient_2": "Lemon",
+    "secondaryIngredient2": "Lemon",
+    "secondary_ingredient_3": "Rice Flour",
+    "secondaryIngredient3": "Rice Flour",
+    "secondary_ingredient_4": "Curry Leaves",
+    "secondaryIngredient4": "Curry Leaves",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "fish",
+      "red chilli"
+    ],
+    "baseIngredient": "fish",
+    "base_ingredient": "fish",
+    "coreIngredients": [
+      "fish",
+      "red chilli"
+    ],
+    "core_ingredients": [
+      "fish",
+      "red chilli"
+    ],
+    "requiredIngredients": [
+      "fish",
+      "red chilli"
+    ],
+    "required_ingredients": [
+      "fish",
+      "red chilli"
+    ],
+    "optionalIngredients": [
+      "turmeric",
+      "lemon",
+      "rice flour",
+      "curry leaves"
+    ],
+    "optional_ingredients": [
+      "turmeric",
+      "lemon",
+      "rice flour",
+      "curry leaves"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "fish-fry",
+    "dish_family": "fish-fry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ],
+      "sides": [
+        "Rasam"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Fish",
+        "Red Chilli",
+        "Turmeric",
+        "Lemon",
+        "Rice Flour",
+        "Curry Leaves"
+      ],
+      "steps": [
+        "Mix chilli, turmeric, lemon and salt.",
+        "Coat fish pieces evenly.",
+        "Rest briefly.",
+        "Pan fry until crisp on both sides.",
+        "Serve hot with rice."
+      ],
+      "tip": "A light rice flour dusting gives a crisp edge.",
+      "bestWith": [
+        "Rice",
+        "Rasam"
+      ]
+    },
+    "tomoLine": "A light rice flour dusting gives a crisp edge.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "17837c07-c240-592b-96d4-51d23dd9e461",
+    "sourceId": "tamil-nadu-wave-16-kongunadu-chicken-curry",
+    "title": "Kongunadu Chicken Curry",
+    "name": "Kongunadu Chicken Curry",
+    "aliases": [],
+    "description": "Kongunadu chicken curry with coconut, shallots and earthy Tamil spice.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "non_vegetarian",
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/chicken-chettinad-homestyle.png",
+    "image_url": "/assets/images/dishes/chicken-chettinad-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "non_vegetarian",
+      "spicy",
+      "protein",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 6,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "High Protein",
+    "cookingNotes": "Shallots give Kongunadu curry its sweet-spicy base.",
+    "instructions": [
+      "Roast coconut and spices lightly.",
+      "Saute shallots and curry leaves.",
+      "Add chicken and brown.",
+      "Add ground masala and simmer.",
+      "Serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "coconut",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "shallots",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "fennel",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Chicken",
+    "primary_ingredient_2": "Coconut",
+    "primaryIngredient1": "Chicken",
+    "primaryIngredient2": "Coconut",
+    "secondary_ingredient_1": "Shallots",
+    "secondaryIngredient1": "Shallots",
+    "secondary_ingredient_2": "Fennel",
+    "secondaryIngredient2": "Fennel",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "baseIngredient": "chicken",
+    "base_ingredient": "chicken",
+    "coreIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "core_ingredients": [
+      "chicken",
+      "coconut"
+    ],
+    "requiredIngredients": [
+      "chicken",
+      "coconut"
+    ],
+    "required_ingredients": [
+      "chicken",
+      "coconut"
+    ],
+    "optionalIngredients": [
+      "shallots",
+      "fennel",
+      "curry leaves",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "shallots",
+      "fennel",
+      "curry leaves",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "chicken-curry",
+    "dish_family": "chicken-curry",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "protein",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Chicken",
+        "Coconut",
+        "Shallots",
+        "Fennel",
+        "Curry Leaves",
+        "Rice"
+      ],
+      "steps": [
+        "Roast coconut and spices lightly.",
+        "Saute shallots and curry leaves.",
+        "Add chicken and brown.",
+        "Add ground masala and simmer.",
+        "Serve with rice."
+      ],
+      "tip": "Shallots give Kongunadu curry its sweet-spicy base.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Shallots give Kongunadu curry its sweet-spicy base.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "dc342cbb-9f63-524a-bb22-613d9868ed7b",
+    "sourceId": "tamil-nadu-wave-17-paruppu-urundai-kuzhambu",
+    "title": "Paruppu Urundai Kuzhambu",
+    "name": "Paruppu Urundai Kuzhambu",
+    "aliases": [],
+    "description": "Tamil kuzhambu with steamed lentil balls simmered in tamarind gravy.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "protein",
+      "comfort",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "protein",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "High Protein",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Steam the dal balls first so they hold shape in the kuzhambu.",
+    "instructions": [
+      "Soak and grind dal with chilli.",
+      "Shape into small balls and steam.",
+      "Prepare tamarind kuzhambu base.",
+      "Add lentil balls and simmer gently.",
+      "Serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "toor dal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "red chilli",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Toor Dal",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Toor Dal",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Red Chilli",
+    "secondaryIngredient1": "Red Chilli",
+    "secondary_ingredient_2": "Curry Leaves",
+    "secondaryIngredient2": "Curry Leaves",
+    "secondary_ingredient_3": "Rice",
+    "secondaryIngredient3": "Rice",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "toor dal",
+      "tamarind"
+    ],
+    "baseIngredient": "toor dal",
+    "base_ingredient": "toor dal",
+    "coreIngredients": [
+      "toor dal",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "toor dal",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "toor dal",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "toor dal",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "red chilli",
+      "curry leaves",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "red chilli",
+      "curry leaves",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "kuzhambu",
+    "dish_family": "kuzhambu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "protein",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Toor Dal",
+        "Tamarind",
+        "Red Chilli",
+        "Curry Leaves",
+        "Rice"
+      ],
+      "steps": [
+        "Soak and grind dal with chilli.",
+        "Shape into small balls and steam.",
+        "Prepare tamarind kuzhambu base.",
+        "Add lentil balls and simmer gently.",
+        "Serve with rice."
+      ],
+      "tip": "Steam the dal balls first so they hold shape in the kuzhambu.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Steam the dal balls first so they hold shape in the kuzhambu.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "210bc57e-3c27-5a92-8b59-4078142dc240",
+    "sourceId": "tamil-nadu-wave-18-poondu-kuzhambu",
+    "title": "Poondu Kuzhambu",
+    "name": "Poondu Kuzhambu",
+    "aliases": [],
+    "description": "Garlic-rich Tamil poondu kuzhambu with tamarind and sesame oil.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "spicy",
+      "comfort",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Let garlic soften fully so the kuzhambu turns mellow, not harsh.",
+    "instructions": [
+      "Peel garlic cloves and saute in sesame oil.",
+      "Add shallots and curry leaves.",
+      "Pour in tamarind water and spices.",
+      "Simmer until thick and glossy.",
+      "Serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "shallots",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Garlic",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Garlic",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Shallots",
+    "secondaryIngredient1": "Shallots",
+    "secondary_ingredient_2": "Sesame Oil",
+    "secondaryIngredient2": "Sesame Oil",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "garlic",
+      "tamarind"
+    ],
+    "baseIngredient": "garlic",
+    "base_ingredient": "garlic",
+    "coreIngredients": [
+      "garlic",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "garlic",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "garlic",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "garlic",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "shallots",
+      "sesame oil",
+      "curry leaves",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "shallots",
+      "sesame oil",
+      "curry leaves",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "kuzhambu",
+    "dish_family": "kuzhambu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Garlic",
+        "Tamarind",
+        "Shallots",
+        "Sesame Oil",
+        "Curry Leaves",
+        "Rice"
+      ],
+      "steps": [
+        "Peel garlic cloves and saute in sesame oil.",
+        "Add shallots and curry leaves.",
+        "Pour in tamarind water and spices.",
+        "Simmer until thick and glossy.",
+        "Serve with rice."
+      ],
+      "tip": "Let garlic soften fully so the kuzhambu turns mellow, not harsh.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Let garlic soften fully so the kuzhambu turns mellow, not harsh.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "3498424e-f9f1-59ae-bd1a-ee06241b14ce",
+    "sourceId": "tamil-nadu-wave-19-keerai-masiyal",
+    "title": "Keerai Masiyal",
+    "name": "Keerai Masiyal",
+    "aliases": [],
+    "description": "Tamil mashed greens with dal, garlic and cumin for soft rice meals.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "comfort",
+      "light",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "comfort",
+      "light",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Comfort Food",
+    "secondaryMood": "Light Meal",
+    "cookingNotes": "Mash gently; keep the greens bright and soft.",
+    "instructions": [
+      "Cook greens with a little dal until soft.",
+      "Mash with cumin and garlic.",
+      "Simmer briefly with salt.",
+      "Temper if desired.",
+      "Serve with rice and ghee."
+    ],
+    "ingredients": [
+      {
+        "name": "keerai",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "moong dal",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ghee",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Keerai",
+    "primary_ingredient_2": "Moong Dal",
+    "primaryIngredient1": "Keerai",
+    "primaryIngredient2": "Moong Dal",
+    "secondary_ingredient_1": "Garlic",
+    "secondaryIngredient1": "Garlic",
+    "secondary_ingredient_2": "Cumin",
+    "secondaryIngredient2": "Cumin",
+    "secondary_ingredient_3": "Ghee",
+    "secondaryIngredient3": "Ghee",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "keerai",
+      "moong dal"
+    ],
+    "baseIngredient": "keerai",
+    "base_ingredient": "keerai",
+    "coreIngredients": [
+      "keerai",
+      "moong dal"
+    ],
+    "core_ingredients": [
+      "keerai",
+      "moong dal"
+    ],
+    "requiredIngredients": [
+      "keerai",
+      "moong dal"
+    ],
+    "required_ingredients": [
+      "keerai",
+      "moong dal"
+    ],
+    "optionalIngredients": [
+      "garlic",
+      "cumin",
+      "ghee",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "garlic",
+      "cumin",
+      "ghee",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "greens",
+    "dish_family": "greens",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "comfort",
+      "light",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Keerai",
+        "Moong Dal",
+        "Garlic",
+        "Cumin",
+        "Ghee",
+        "Rice"
+      ],
+      "steps": [
+        "Cook greens with a little dal until soft.",
+        "Mash with cumin and garlic.",
+        "Simmer briefly with salt.",
+        "Temper if desired.",
+        "Serve with rice and ghee."
+      ],
+      "tip": "Mash gently; keep the greens bright and soft.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Mash gently; keep the greens bright and soft.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "c701f669-115f-5d9f-9c87-2e1d0cfb7f2f",
+    "sourceId": "tamil-nadu-wave-20-sundakkai-vathal-kuzhambu",
+    "title": "Sundakkai Vathal Kuzhambu",
+    "name": "Sundakkai Vathal Kuzhambu",
+    "aliases": [],
+    "description": "Tamil sundakkai vathal kuzhambu with bitter-salty berries and tamarind depth.",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 28,
+    "timeMinutes": 38,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "image_url": "/assets/images/dishes/recommendation-pack-pepper-rasam.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetarian",
+      "spicy",
+      "comfort",
+      "soul",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "spicy",
+      "comfort",
+      "soul"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Fry vathal first so the bitterness rounds out.",
+    "instructions": [
+      "Fry sundakkai vathal in sesame oil.",
+      "Add tamarind water and spices.",
+      "Simmer until thick.",
+      "Finish with curry leaves.",
+      "Serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "sundakkai vathal",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tamarind",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "sesame oil",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "sambar powder",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": 1,
+        "unit": "handful",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Sundakkai Vathal",
+    "primary_ingredient_2": "Tamarind",
+    "primaryIngredient1": "Sundakkai Vathal",
+    "primaryIngredient2": "Tamarind",
+    "secondary_ingredient_1": "Sesame Oil",
+    "secondaryIngredient1": "Sesame Oil",
+    "secondary_ingredient_2": "Sambar Powder",
+    "secondaryIngredient2": "Sambar Powder",
+    "secondary_ingredient_3": "Curry Leaves",
+    "secondaryIngredient3": "Curry Leaves",
+    "secondary_ingredient_4": "Rice",
+    "secondaryIngredient4": "Rice",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "sundakkai vathal",
+      "tamarind"
+    ],
+    "baseIngredient": "sundakkai vathal",
+    "base_ingredient": "sundakkai vathal",
+    "coreIngredients": [
+      "sundakkai vathal",
+      "tamarind"
+    ],
+    "core_ingredients": [
+      "sundakkai vathal",
+      "tamarind"
+    ],
+    "requiredIngredients": [
+      "sundakkai vathal",
+      "tamarind"
+    ],
+    "required_ingredients": [
+      "sundakkai vathal",
+      "tamarind"
+    ],
+    "optionalIngredients": [
+      "sesame oil",
+      "sambar powder",
+      "curry leaves",
+      "rice"
+    ],
+    "optional_ingredients": [
+      "sesame oil",
+      "sambar powder",
+      "curry leaves",
+      "rice"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "kuzhambu",
+    "dish_family": "kuzhambu",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "spicy",
+      "comfort",
+      "soul"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "rice": [
+        "Rice"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "10 min",
+      "cookTime": "28 min",
+      "ingredients": [
+        "Sundakkai Vathal",
+        "Tamarind",
+        "Sesame Oil",
+        "Sambar Powder",
+        "Curry Leaves",
+        "Rice"
+      ],
+      "steps": [
+        "Fry sundakkai vathal in sesame oil.",
+        "Add tamarind water and spices.",
+        "Simmer until thick.",
+        "Finish with curry leaves.",
+        "Serve with rice."
+      ],
+      "tip": "Fry vathal first so the bitterness rounds out.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "tomoLine": "Fry vathal first so the bitterness rounds out.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
+    }
+  },
+  {
+    "id": "31c84c44-e8ce-56d8-a2b1-82fbe4f5095a",
+    "sourceId": "tamil-nadu-wave-21-elaneer-payasam",
+    "title": "Elaneer Payasam",
+    "name": "Elaneer Payasam",
+    "aliases": [],
+    "description": "Cooling Tamil elaneer payasam with tender coconut, milk and coconut water.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Tamil Nadu",
+    "dietType": "vegetarian",
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/collections/desserts.webp",
+    "image_url": "/assets/images/collections/desserts.webp",
+    "recipeRole": "dessert",
+    "tags": [
+      "dessert",
+      "vegetarian",
+      "cooling",
+      "festive",
+      "comfort",
+      "tamil-nadu",
+      "tamil",
+      "south-india"
+    ],
+    "moodTags": [
+      "cooling",
+      "festive",
+      "comfort"
+    ],
+    "mealTags": [
+      "dessert"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": true,
+    "lightMeal": false,
+    "onePot": false,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 6,
+    "comfortScore": 8,
+    "energyScore": 6,
+    "proteinScore": 4,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 5,
+    "primaryMood": "Cooling",
+    "secondaryMood": "Home Style",
+    "cookingNotes": "Keep it chilled and lightly sweet so tender coconut stays fresh.",
+    "instructions": [
+      "Chop tender coconut flesh.",
+      "Blend a small portion with milk.",
+      "Mix with chilled milk and coconut water.",
+      "Sweeten gently.",
+      "Serve cold."
+    ],
+    "ingredients": [
+      {
+        "name": "tender coconut",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "milk",
+        "quantity": 0.5,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "condensed milk",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "cardamom",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "coconut water",
+        "quantity": 1,
+        "unit": "tsp",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "Tender Coconut",
+    "primary_ingredient_2": "Milk",
+    "primaryIngredient1": "Tender Coconut",
+    "primaryIngredient2": "Milk",
+    "secondary_ingredient_1": "Condensed Milk",
+    "secondaryIngredient1": "Condensed Milk",
+    "secondary_ingredient_2": "Cardamom",
+    "secondaryIngredient2": "Cardamom",
+    "secondary_ingredient_3": "Coconut Water",
+    "secondaryIngredient3": "Coconut Water",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "primaryIngredients": [
+      "tender coconut",
+      "milk"
+    ],
+    "baseIngredient": "tender coconut",
+    "base_ingredient": "tender coconut",
+    "coreIngredients": [
+      "tender coconut",
+      "milk"
+    ],
+    "core_ingredients": [
+      "tender coconut",
+      "milk"
+    ],
+    "requiredIngredients": [
+      "tender coconut",
+      "milk"
+    ],
+    "required_ingredients": [
+      "tender coconut",
+      "milk"
+    ],
+    "optionalIngredients": [
+      "condensed milk",
+      "cardamom",
+      "coconut water"
+    ],
+    "optional_ingredients": [
+      "condensed milk",
+      "cardamom",
+      "coconut water"
+    ],
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "dishFamily": "payasam",
+    "dish_family": "payasam",
+    "requiredPrimaryMatches": 2,
+    "required_primary_matches": 2,
+    "isRealDish": true,
+    "moodIncludes": [
+      "cooling",
+      "festive",
+      "comfort"
+    ],
+    "moodExcludes": [],
+    "hardExcludeMoods": [],
+    "avoidIf": [],
+    "regionTags": {
+      "region": [
+        "South India"
+      ],
+      "subRegion": [
+        "Tamil Nadu",
+        "Chettinad",
+        "Kongu Nadu"
+      ],
+      "cuisine": [
+        "Tamil Nadu",
+        "Tamil"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Festival Meal"
+      ]
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "Tender Coconut",
+        "Milk",
+        "Condensed Milk",
+        "Cardamom",
+        "Coconut Water"
+      ],
+      "steps": [
+        "Chop tender coconut flesh.",
+        "Blend a small portion with milk.",
+        "Mix with chilled milk and coconut water.",
+        "Sweeten gently.",
+        "Serve cold."
+      ],
+      "tip": "Keep it chilled and lightly sweet so tender coconut stays fresh.",
+      "bestWith": [
+        "Festival Meal"
+      ]
+    },
+    "tomoLine": "Keep it chilled and lightly sweet so tender coconut stays fresh.",
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Tamil Nadu"
     }
   }
 ];
