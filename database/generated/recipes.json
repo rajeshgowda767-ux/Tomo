@@ -3869,7 +3869,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "non-vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/bamboo-shoot-pork.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -4085,7 +4085,7 @@
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/bamboo-shoot-pork.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Northeast"
@@ -51085,7 +51085,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "non-vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/smoked-pork-rice.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -51272,7 +51272,7 @@
         "Chilli Pickle"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/smoked-pork-rice.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Northeast"
@@ -53025,7 +53025,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/sticky-rice.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
@@ -53196,7 +53196,7 @@
         "Pork Curry"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/sticky-rice.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Northeast"
@@ -124721,7 +124721,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/khar.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -125373,7 +125373,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/tungrymbai.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -126908,7 +126908,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "non-vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/smoked-pork-curry.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -127998,7 +127998,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/galho.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -128678,7 +128678,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/zan.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -129328,7 +129328,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "non-vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/wahan-mosdeng.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -129546,7 +129546,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "non-vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/phagshapa.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -130421,7 +130421,7 @@
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/tripuri-berma-curry.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [

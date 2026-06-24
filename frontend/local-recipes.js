@@ -1,4 +1,3 @@
-// TODO(Beta 3): Replace temporary shared fallback images with dedicated recipe images when approved assets are available.
 window.COOKBUDDY_LOCAL_RECIPES = [
   {
     "id": "5a3123e7-4ede-580b-af1b-7b0a5a58cf0e",
@@ -3870,7 +3869,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "non-vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/bamboo-shoot-pork.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -4086,7 +4085,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "non_vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/bamboo-shoot-pork.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Northeast"
@@ -51086,7 +51085,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "non-vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/smoked-pork-rice.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -51273,7 +51272,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Chilli Pickle"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/smoked-pork-rice.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Northeast"
@@ -53026,7 +53025,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/sticky-rice.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
@@ -53197,7 +53196,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Pork Curry"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/sticky-rice.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Northeast"
@@ -124722,7 +124721,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/khar.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -125374,7 +125373,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/tungrymbai.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -126909,7 +126908,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "non-vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/smoked-pork-curry.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -127999,7 +127998,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/galho.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -128679,7 +128678,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/zan.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -129329,7 +129328,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "non-vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/wahan-mosdeng.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -129547,7 +129546,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "non-vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/phagshapa.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
@@ -130422,7 +130421,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/tripuri-berma-curry.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "main",
     "tags": [
