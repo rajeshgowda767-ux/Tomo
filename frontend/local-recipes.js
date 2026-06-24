@@ -127337,5 +127337,2192 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     },
     "aliases": [],
     "pantrySuitability": "medium"
+  },
+  {
+    "id": "24c4bec4-37e0-575a-90b1-8f7397d67b76",
+    "sourceId": "northeast-quality-zan",
+    "title": "Zan",
+    "name": "Zan",
+    "description": "Arunachal-style zan is a soft millet porridge eaten with chutney, greens or cheese-based sides.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Northeast Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "comfort",
+      "soul",
+      "light",
+      "vegetarian",
+      "northeast",
+      "northeast-india",
+      "arunachal-pradesh"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "light"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort",
+    "secondaryMood": "Soul",
+    "isRealDish": true,
+    "instructions": [
+      "Toast millet flour lightly if desired.",
+      "Whisk it into simmering water with salt.",
+      "Cook slowly until thick and smooth.",
+      "Add greens or a little fermented cheese if using.",
+      "Serve warm with chhurpi chutney."
+    ],
+    "ingredients": [
+      {
+        "name": "millet flour",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "water",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "greens",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "fermented cheese",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "millet flour",
+    "primary_ingredient_2": "water",
+    "primaryIngredient1": "millet flour",
+    "primaryIngredient2": "water",
+    "secondary_ingredient_1": "greens",
+    "secondaryIngredient1": "greens",
+    "secondary_ingredient_2": "fermented cheese",
+    "secondaryIngredient2": "fermented cheese",
+    "secondary_ingredient_3": "chilli",
+    "secondaryIngredient3": "chilli",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "millet flour",
+    "base_ingredient": "millet flour",
+    "coreIngredients": [
+      "millet flour",
+      "water",
+      "salt"
+    ],
+    "core_ingredients": [
+      "millet flour",
+      "water",
+      "salt"
+    ],
+    "requiredIngredients": [
+      "millet flour",
+      "water",
+      "salt"
+    ],
+    "required_ingredients": [
+      "millet flour",
+      "water",
+      "salt"
+    ],
+    "optionalIngredients": [
+      "greens",
+      "fermented cheese",
+      "chilli"
+    ],
+    "optional_ingredients": [
+      "greens",
+      "fermented cheese",
+      "chilli"
+    ],
+    "dishFamily": "millet porridge",
+    "dish_family": "millet porridge",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "Northeast India"
+      ],
+      "subRegion": [
+        "Arunachal Pradesh",
+        "Northeast India"
+      ],
+      "cuisine": [
+        "Northeast Indian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [
+        "Chhurpi Chutney"
+      ],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "millet flour",
+        "water",
+        "salt",
+        "greens",
+        "fermented cheese",
+        "chilli"
+      ],
+      "steps": [
+        "Toast millet flour lightly if desired.",
+        "Whisk it into simmering water with salt.",
+        "Cook slowly until thick and smooth.",
+        "Add greens or a little fermented cheese if using.",
+        "Serve warm with chhurpi chutney."
+      ],
+      "tip": "Keep the regional character clear and adjust chilli, smoke, sourness, or fermented notes gently.",
+      "bestWith": [
+        "Chhurpi Chutney"
+      ]
+    },
+    "aliases": [],
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "5f133a34-19cf-55b7-b41e-f40ce985cfec",
+    "sourceId": "northeast-quality-bai",
+    "title": "Bai",
+    "name": "Bai",
+    "description": "Mizo bai is a gentle vegetable stew with greens and simple aromatics, built for everyday rice plates.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Northeast Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/soup-bowls.png",
+    "image": "/assets/images/dishes/soup-bowls.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "light",
+      "comfort",
+      "soul",
+      "vegetarian",
+      "northeast",
+      "northeast-india",
+      "mizoram"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "light",
+      "comfort",
+      "soul"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Light",
+    "secondaryMood": "Comfort",
+    "isRealDish": true,
+    "instructions": [
+      "Simmer rice water or light stock.",
+      "Add chopped vegetables and greens.",
+      "Season with ginger, chilli and salt.",
+      "Cook until the vegetables are soft but still fresh.",
+      "Serve hot with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "seasonal greens",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "rice water",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "bamboo shoot",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "seasonal greens",
+    "primary_ingredient_2": "vegetables",
+    "primaryIngredient1": "seasonal greens",
+    "primaryIngredient2": "vegetables",
+    "secondary_ingredient_1": "bamboo shoot",
+    "secondaryIngredient1": "bamboo shoot",
+    "secondary_ingredient_2": "ginger",
+    "secondaryIngredient2": "ginger",
+    "secondary_ingredient_3": "green chilli",
+    "secondaryIngredient3": "green chilli",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "seasonal greens",
+    "base_ingredient": "seasonal greens",
+    "coreIngredients": [
+      "seasonal greens",
+      "vegetables",
+      "rice water"
+    ],
+    "core_ingredients": [
+      "seasonal greens",
+      "vegetables",
+      "rice water"
+    ],
+    "requiredIngredients": [
+      "seasonal greens",
+      "vegetables",
+      "rice water"
+    ],
+    "required_ingredients": [
+      "seasonal greens",
+      "vegetables",
+      "rice water"
+    ],
+    "optionalIngredients": [
+      "bamboo shoot",
+      "ginger",
+      "green chilli"
+    ],
+    "optional_ingredients": [
+      "bamboo shoot",
+      "ginger",
+      "green chilli"
+    ],
+    "dishFamily": "vegetable stew",
+    "dish_family": "vegetable stew",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "Northeast India"
+      ],
+      "subRegion": [
+        "Mizoram",
+        "Northeast India"
+      ],
+      "cuisine": [
+        "Northeast Indian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    },
+    "pairings": {
+      "sides": [
+        "Rice"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "seasonal greens",
+        "vegetables",
+        "rice water",
+        "bamboo shoot",
+        "ginger",
+        "green chilli"
+      ],
+      "steps": [
+        "Simmer rice water or light stock.",
+        "Add chopped vegetables and greens.",
+        "Season with ginger, chilli and salt.",
+        "Cook until the vegetables are soft but still fresh.",
+        "Serve hot with rice."
+      ],
+      "tip": "Keep the regional character clear and adjust chilli, smoke, sourness, or fermented notes gently.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "aliases": [],
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "074f75b7-a93d-5558-a9df-ec4c81ba9187",
+    "sourceId": "northeast-quality-sanpiau",
+    "title": "Sanpiau",
+    "name": "Sanpiau",
+    "description": "Sanpiau is a Mizo rice porridge bowl finished with chicken, herbs and crunchy toppings.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Northeast Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/rice-moong-khichdi-homestyle.png",
+    "image": "/assets/images/dishes/rice-moong-khichdi-homestyle.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "comfort",
+      "quick",
+      "soul",
+      "non_vegetarian",
+      "northeast",
+      "northeast-india",
+      "mizoram"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "quick",
+      "soul"
+    ],
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 8,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort",
+    "secondaryMood": "Quick",
+    "isRealDish": true,
+    "instructions": [
+      "Cook rice in chicken broth until soft.",
+      "Shred cooked chicken and add it back.",
+      "Season with pepper and salt.",
+      "Top with spring onion and fried garlic.",
+      "Serve warm with chilli pickle."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chicken broth",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "shredded chicken",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "fried garlic",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "pepper",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primary_ingredient_2": "chicken broth",
+    "primaryIngredient1": "rice",
+    "primaryIngredient2": "chicken broth",
+    "secondary_ingredient_1": "spring onion",
+    "secondaryIngredient1": "spring onion",
+    "secondary_ingredient_2": "fried garlic",
+    "secondaryIngredient2": "fried garlic",
+    "secondary_ingredient_3": "pepper",
+    "secondaryIngredient3": "pepper",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "chicken broth",
+      "shredded chicken"
+    ],
+    "core_ingredients": [
+      "rice",
+      "chicken broth",
+      "shredded chicken"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "chicken broth",
+      "shredded chicken"
+    ],
+    "required_ingredients": [
+      "rice",
+      "chicken broth",
+      "shredded chicken"
+    ],
+    "optionalIngredients": [
+      "spring onion",
+      "fried garlic",
+      "pepper"
+    ],
+    "optional_ingredients": [
+      "spring onion",
+      "fried garlic",
+      "pepper"
+    ],
+    "dishFamily": "rice porridge",
+    "dish_family": "rice porridge",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "Northeast India"
+      ],
+      "subRegion": [
+        "Mizoram",
+        "Northeast India"
+      ],
+      "cuisine": [
+        "Northeast Indian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [
+        "Chilli Pickle"
+      ],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "rice",
+        "chicken broth",
+        "shredded chicken",
+        "spring onion",
+        "fried garlic",
+        "pepper"
+      ],
+      "steps": [
+        "Cook rice in chicken broth until soft.",
+        "Shred cooked chicken and add it back.",
+        "Season with pepper and salt.",
+        "Top with spring onion and fried garlic.",
+        "Serve warm with chilli pickle."
+      ],
+      "tip": "Keep the regional character clear and adjust chilli, smoke, sourness, or fermented notes gently.",
+      "bestWith": [
+        "Chilli Pickle"
+      ]
+    },
+    "aliases": [],
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "314e0c84-829f-57a5-8610-47c547292dec",
+    "sourceId": "northeast-quality-wahan-mosdeng",
+    "title": "Wahan Mosdeng",
+    "name": "Wahan Mosdeng",
+    "description": "Tripuri wahan mosdeng is a punchy pork preparation with onion, chilli and fresh aromatics.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Northeast Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "protein",
+      "spicy",
+      "soul",
+      "non_vegetarian",
+      "northeast",
+      "northeast-india",
+      "tripura"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "protein",
+      "spicy",
+      "soul"
+    ],
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 6,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Protein",
+    "secondaryMood": "Spicy",
+    "isRealDish": true,
+    "instructions": [
+      "Boil or roast pork until tender.",
+      "Shred or chop it into bite-size pieces.",
+      "Mix with onion, chilli, ginger and coriander.",
+      "Adjust salt and lemon to taste.",
+      "Serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "pork",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "onion",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "pork",
+    "primary_ingredient_2": "onion",
+    "primaryIngredient1": "pork",
+    "primaryIngredient2": "onion",
+    "secondary_ingredient_1": "coriander",
+    "secondaryIngredient1": "coriander",
+    "secondary_ingredient_2": "ginger",
+    "secondaryIngredient2": "ginger",
+    "secondary_ingredient_3": "lemon",
+    "secondaryIngredient3": "lemon",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "pork",
+    "base_ingredient": "pork",
+    "coreIngredients": [
+      "pork",
+      "onion",
+      "green chilli"
+    ],
+    "core_ingredients": [
+      "pork",
+      "onion",
+      "green chilli"
+    ],
+    "requiredIngredients": [
+      "pork",
+      "onion",
+      "green chilli"
+    ],
+    "required_ingredients": [
+      "pork",
+      "onion",
+      "green chilli"
+    ],
+    "optionalIngredients": [
+      "coriander",
+      "ginger",
+      "lemon"
+    ],
+    "optional_ingredients": [
+      "coriander",
+      "ginger",
+      "lemon"
+    ],
+    "dishFamily": "pork salad",
+    "dish_family": "pork salad",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "Northeast India"
+      ],
+      "subRegion": [
+        "Tripura",
+        "Northeast India"
+      ],
+      "cuisine": [
+        "Northeast Indian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    },
+    "pairings": {
+      "sides": [
+        "Rice"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "pork",
+        "onion",
+        "green chilli",
+        "coriander",
+        "ginger",
+        "lemon"
+      ],
+      "steps": [
+        "Boil or roast pork until tender.",
+        "Shred or chop it into bite-size pieces.",
+        "Mix with onion, chilli, ginger and coriander.",
+        "Adjust salt and lemon to taste.",
+        "Serve with rice."
+      ],
+      "tip": "Keep the regional character clear and adjust chilli, smoke, sourness, or fermented notes gently.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "aliases": [],
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "357aa0c3-c9d8-5fce-87ee-88e484f1bb19",
+    "sourceId": "northeast-quality-phagshapa",
+    "title": "Phagshapa",
+    "name": "Phagshapa",
+    "description": "Sikkimese phagshapa pairs pork with radish and dry chilli for a clean, hearty mountain-style stew.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Northeast Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "protein",
+      "soul",
+      "comfort",
+      "non_vegetarian",
+      "northeast",
+      "northeast-india",
+      "sikkim"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "protein",
+      "soul",
+      "comfort"
+    ],
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Protein",
+    "secondaryMood": "Soul",
+    "isRealDish": true,
+    "instructions": [
+      "Simmer pork until partly tender.",
+      "Add radish slices, dry chilli and ginger.",
+      "Cook until the pork and radish soften.",
+      "Adjust salt and chilli.",
+      "Serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "pork",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "radish",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "dry chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "greens",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "pork",
+    "primary_ingredient_2": "radish",
+    "primaryIngredient1": "pork",
+    "primaryIngredient2": "radish",
+    "secondary_ingredient_1": "ginger",
+    "secondaryIngredient1": "ginger",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "greens",
+    "secondaryIngredient3": "greens",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "pork",
+    "base_ingredient": "pork",
+    "coreIngredients": [
+      "pork",
+      "radish",
+      "dry chilli"
+    ],
+    "core_ingredients": [
+      "pork",
+      "radish",
+      "dry chilli"
+    ],
+    "requiredIngredients": [
+      "pork",
+      "radish",
+      "dry chilli"
+    ],
+    "required_ingredients": [
+      "pork",
+      "radish",
+      "dry chilli"
+    ],
+    "optionalIngredients": [
+      "ginger",
+      "garlic",
+      "greens"
+    ],
+    "optional_ingredients": [
+      "ginger",
+      "garlic",
+      "greens"
+    ],
+    "dishFamily": "pork radish stew",
+    "dish_family": "pork radish stew",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "Northeast India"
+      ],
+      "subRegion": [
+        "Sikkim",
+        "Northeast India"
+      ],
+      "cuisine": [
+        "Northeast Indian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    },
+    "pairings": {
+      "sides": [
+        "Rice"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "pork",
+        "radish",
+        "dry chilli",
+        "ginger",
+        "garlic",
+        "greens"
+      ],
+      "steps": [
+        "Simmer pork until partly tender.",
+        "Add radish slices, dry chilli and ginger.",
+        "Cook until the pork and radish soften.",
+        "Adjust salt and chilli.",
+        "Serve with rice."
+      ],
+      "tip": "Keep the regional character clear and adjust chilli, smoke, sourness, or fermented notes gently.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "aliases": [],
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "345d1d3d-2b8e-574a-9df5-2027a78fa9ad",
+    "sourceId": "northeast-quality-gyapa-khazi",
+    "title": "Gyapa Khazi",
+    "name": "Gyapa Khazi",
+    "description": "Gyapa khazi is a Sikkim-style fried rice with egg, vegetables and optional meat for a filling plate.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Northeast Indian",
+    "dietType": "non-vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/egg-fried-rice.png",
+    "image": "/assets/images/dishes/egg-fried-rice.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "comfort",
+      "soul",
+      "protein",
+      "non_vegetarian",
+      "northeast",
+      "northeast-india",
+      "sikkim"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "comfort",
+      "soul",
+      "protein"
+    ],
+    "dietaryTags": [
+      "non_vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": false,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 7,
+    "proteinScore": 7,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Comfort",
+    "secondaryMood": "Soul",
+    "isRealDish": true,
+    "instructions": [
+      "Cook aromatics and vegetables in a hot pan.",
+      "Add egg and scramble lightly.",
+      "Toss in cooked rice.",
+      "Season with soy sauce, salt and pepper.",
+      "Serve hot with chilli chutney."
+    ],
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "egg",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "chicken",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "rice",
+    "primary_ingredient_2": "egg",
+    "primaryIngredient1": "rice",
+    "primaryIngredient2": "egg",
+    "secondary_ingredient_1": "chicken",
+    "secondaryIngredient1": "chicken",
+    "secondary_ingredient_2": "spring onion",
+    "secondaryIngredient2": "spring onion",
+    "secondary_ingredient_3": "soy sauce",
+    "secondaryIngredient3": "soy sauce",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "rice",
+    "base_ingredient": "rice",
+    "coreIngredients": [
+      "rice",
+      "egg",
+      "vegetables"
+    ],
+    "core_ingredients": [
+      "rice",
+      "egg",
+      "vegetables"
+    ],
+    "requiredIngredients": [
+      "rice",
+      "egg",
+      "vegetables"
+    ],
+    "required_ingredients": [
+      "rice",
+      "egg",
+      "vegetables"
+    ],
+    "optionalIngredients": [
+      "chicken",
+      "spring onion",
+      "soy sauce"
+    ],
+    "optional_ingredients": [
+      "chicken",
+      "spring onion",
+      "soy sauce"
+    ],
+    "dishFamily": "fried rice",
+    "dish_family": "fried rice",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "Northeast India"
+      ],
+      "subRegion": [
+        "Sikkim",
+        "Northeast India"
+      ],
+      "cuisine": [
+        "Northeast Indian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [
+        "Chilli Chutney"
+      ],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "rice",
+        "egg",
+        "vegetables",
+        "chicken",
+        "spring onion",
+        "soy sauce"
+      ],
+      "steps": [
+        "Cook aromatics and vegetables in a hot pan.",
+        "Add egg and scramble lightly.",
+        "Toss in cooked rice.",
+        "Season with soy sauce, salt and pepper.",
+        "Serve hot with chilli chutney."
+      ],
+      "tip": "Keep the regional character clear and adjust chilli, smoke, sourness, or fermented notes gently.",
+      "bestWith": [
+        "Chilli Chutney"
+      ]
+    },
+    "aliases": [],
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "10d83eea-32b7-5771-8b9b-fcf4a97b3a3a",
+    "sourceId": "northeast-quality-chhurpi-chutney",
+    "title": "Chhurpi Chutney",
+    "name": "Chhurpi Chutney",
+    "description": "Chhurpi chutney is a sharp, spicy cheese chutney used as a small but memorable mountain-style side.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Northeast Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/salads/salad-default.png",
+    "image": "/assets/images/salads/salad-default.png",
+    "recipeRole": "condiment",
+    "tags": [
+      "lunch",
+      "dinner",
+      "spicy",
+      "soul",
+      "quick",
+      "vegetarian",
+      "northeast",
+      "northeast-india",
+      "sikkim",
+      "arunachal-pradesh"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "spicy",
+      "soul",
+      "quick"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": true,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 4,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Spicy",
+    "secondaryMood": "Soul",
+    "isRealDish": true,
+    "instructions": [
+      "Soften or crumble chhurpi.",
+      "Mash with tomato and chilli.",
+      "Add garlic and coriander if using.",
+      "Adjust salt and texture.",
+      "Serve as a condiment with zan or momo."
+    ],
+    "ingredients": [
+      {
+        "name": "chhurpi",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "tomato",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "coriander",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "chhurpi",
+    "primary_ingredient_2": "tomato",
+    "primaryIngredient1": "chhurpi",
+    "primaryIngredient2": "tomato",
+    "secondary_ingredient_1": "coriander",
+    "secondaryIngredient1": "coriander",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "salt",
+    "secondaryIngredient3": "salt",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "chhurpi",
+    "base_ingredient": "chhurpi",
+    "coreIngredients": [
+      "chhurpi",
+      "tomato",
+      "chilli"
+    ],
+    "core_ingredients": [
+      "chhurpi",
+      "tomato",
+      "chilli"
+    ],
+    "requiredIngredients": [
+      "chhurpi",
+      "tomato",
+      "chilli"
+    ],
+    "required_ingredients": [
+      "chhurpi",
+      "tomato",
+      "chilli"
+    ],
+    "optionalIngredients": [
+      "coriander",
+      "garlic",
+      "salt"
+    ],
+    "optional_ingredients": [
+      "coriander",
+      "garlic",
+      "salt"
+    ],
+    "dishFamily": "chutney",
+    "dish_family": "chutney",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "Northeast India"
+      ],
+      "subRegion": [
+        "Sikkim",
+        "Arunachal Pradesh",
+        "Northeast India"
+      ],
+      "cuisine": [
+        "Northeast Indian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    },
+    "pairings": {
+      "sides": [
+        "Zan",
+        "Momo"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "chhurpi",
+        "tomato",
+        "chilli",
+        "coriander",
+        "garlic",
+        "salt"
+      ],
+      "steps": [
+        "Soften or crumble chhurpi.",
+        "Mash with tomato and chilli.",
+        "Add garlic and coriander if using.",
+        "Adjust salt and texture.",
+        "Serve as a condiment with zan or momo."
+      ],
+      "tip": "Keep the regional character clear and adjust chilli, smoke, sourness, or fermented notes gently.",
+      "bestWith": [
+        "Zan",
+        "Momo"
+      ]
+    },
+    "aliases": [],
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "6fff36df-55e0-5679-830a-8db35832beea",
+    "sourceId": "northeast-quality-apong-rice-drink",
+    "title": "Apong Rice Drink",
+    "name": "Apong Rice Drink",
+    "description": "A non-alcoholic rice drink inspired by apong traditions, made as a gentle roasted-rice cooler for Tomo.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Northeast Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/drinks/drinks-default.png",
+    "image": "/assets/images/drinks/drinks-default.png",
+    "recipeRole": "drink",
+    "tags": [
+      "drink",
+      "snack",
+      "festive",
+      "soul",
+      "light",
+      "vegetarian",
+      "northeast",
+      "northeast-india",
+      "arunachal-pradesh",
+      "assam"
+    ],
+    "mealTags": [
+      "drink",
+      "snack"
+    ],
+    "moodTags": [
+      "festive",
+      "soul",
+      "light"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": true,
+    "lightMeal": true,
+    "onePot": false,
+    "minimalCleanup": true,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 3,
+    "comfortScore": 6,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Festive",
+    "secondaryMood": "Soul",
+    "isRealDish": true,
+    "instructions": [
+      "Toast a little rice powder until nutty.",
+      "Blend with cooked rice and water.",
+      "Strain for a smoother drink.",
+      "Sweeten lightly with jaggery if desired.",
+      "Serve chilled or at room temperature."
+    ],
+    "ingredients": [
+      {
+        "name": "cooked rice",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "roasted rice powder",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "water",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "jaggery",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "lemon",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "cooked rice",
+    "primary_ingredient_2": "roasted rice powder",
+    "primaryIngredient1": "cooked rice",
+    "primaryIngredient2": "roasted rice powder",
+    "secondary_ingredient_1": "jaggery",
+    "secondaryIngredient1": "jaggery",
+    "secondary_ingredient_2": "ginger",
+    "secondaryIngredient2": "ginger",
+    "secondary_ingredient_3": "lemon",
+    "secondaryIngredient3": "lemon",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "cooked rice",
+    "base_ingredient": "cooked rice",
+    "coreIngredients": [
+      "cooked rice",
+      "roasted rice powder",
+      "water"
+    ],
+    "core_ingredients": [
+      "cooked rice",
+      "roasted rice powder",
+      "water"
+    ],
+    "requiredIngredients": [
+      "cooked rice",
+      "roasted rice powder",
+      "water"
+    ],
+    "required_ingredients": [
+      "cooked rice",
+      "roasted rice powder",
+      "water"
+    ],
+    "optionalIngredients": [
+      "jaggery",
+      "ginger",
+      "lemon"
+    ],
+    "optional_ingredients": [
+      "jaggery",
+      "ginger",
+      "lemon"
+    ],
+    "dishFamily": "rice drink",
+    "dish_family": "rice drink",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "Northeast India"
+      ],
+      "subRegion": [
+        "Arunachal Pradesh",
+        "Assam",
+        "Northeast India"
+      ],
+      "cuisine": [
+        "Northeast Indian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    },
+    "pairings": {
+      "sides": [
+        "Northeast Snacks"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "cooked rice",
+        "roasted rice powder",
+        "water",
+        "jaggery",
+        "ginger",
+        "lemon"
+      ],
+      "steps": [
+        "Toast a little rice powder until nutty.",
+        "Blend with cooked rice and water.",
+        "Strain for a smoother drink.",
+        "Sweeten lightly with jaggery if desired.",
+        "Serve chilled or at room temperature."
+      ],
+      "tip": "Keep the regional character clear and adjust chilli, smoke, sourness, or fermented notes gently.",
+      "bestWith": [
+        "Northeast Snacks"
+      ]
+    },
+    "aliases": [
+      "Apong",
+      "Non-Alcoholic Rice Drink"
+    ],
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "305123f6-7f1d-5585-9808-78ab70620476",
+    "sourceId": "northeast-quality-tripuri-berma-curry",
+    "title": "Tripuri Berma Curry",
+    "name": "Tripuri Berma Curry",
+    "description": "Tripuri berma curry brings fermented depth into a vegetable curry for a distinct Tripura-style rice pairing.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Northeast Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "recipeRole": "main",
+    "tags": [
+      "lunch",
+      "dinner",
+      "soul",
+      "spicy",
+      "comfort",
+      "vegetarian",
+      "northeast",
+      "northeast-india",
+      "tripura"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "soul",
+      "spicy",
+      "comfort"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": false,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": false,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": true,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 8,
+    "homeStyleScore": 8,
+    "rainyDayScore": 4,
+    "primaryMood": "Soul",
+    "secondaryMood": "Spicy",
+    "isRealDish": true,
+    "instructions": [
+      "Simmer vegetables and potato until nearly tender.",
+      "Add berma-style fermented seasoning carefully.",
+      "Add chilli, ginger and salt.",
+      "Cook until the curry comes together.",
+      "Serve with rice."
+    ],
+    "ingredients": [
+      {
+        "name": "vegetables",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "berma style fermented seasoning",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "potato",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "green chilli",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "bamboo shoot",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "vegetables",
+    "primary_ingredient_2": "berma style fermented seasoning",
+    "primaryIngredient1": "vegetables",
+    "primaryIngredient2": "berma style fermented seasoning",
+    "secondary_ingredient_1": "green chilli",
+    "secondaryIngredient1": "green chilli",
+    "secondary_ingredient_2": "ginger",
+    "secondaryIngredient2": "ginger",
+    "secondary_ingredient_3": "bamboo shoot",
+    "secondaryIngredient3": "bamboo shoot",
+    "secondary_ingredient_4": null,
+    "secondaryIngredient4": null,
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "vegetables",
+    "base_ingredient": "vegetables",
+    "coreIngredients": [
+      "vegetables",
+      "berma style fermented seasoning",
+      "potato"
+    ],
+    "core_ingredients": [
+      "vegetables",
+      "berma style fermented seasoning",
+      "potato"
+    ],
+    "requiredIngredients": [
+      "vegetables",
+      "berma style fermented seasoning",
+      "potato"
+    ],
+    "required_ingredients": [
+      "vegetables",
+      "berma style fermented seasoning",
+      "potato"
+    ],
+    "optionalIngredients": [
+      "green chilli",
+      "ginger",
+      "bamboo shoot"
+    ],
+    "optional_ingredients": [
+      "green chilli",
+      "ginger",
+      "bamboo shoot"
+    ],
+    "dishFamily": "fermented curry",
+    "dish_family": "fermented curry",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "Northeast India"
+      ],
+      "subRegion": [
+        "Tripura",
+        "Northeast India"
+      ],
+      "cuisine": [
+        "Northeast Indian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    },
+    "pairings": {
+      "sides": [
+        "Rice"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Rice"
+      ],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "vegetables",
+        "berma style fermented seasoning",
+        "potato",
+        "green chilli",
+        "ginger",
+        "bamboo shoot"
+      ],
+      "steps": [
+        "Simmer vegetables and potato until nearly tender.",
+        "Add berma-style fermented seasoning carefully.",
+        "Add chilli, ginger and salt.",
+        "Cook until the curry comes together.",
+        "Serve with rice."
+      ],
+      "tip": "Keep the regional character clear and adjust chilli, smoke, sourness, or fermented notes gently.",
+      "bestWith": [
+        "Rice"
+      ]
+    },
+    "aliases": [],
+    "pantrySuitability": "medium"
+  },
+  {
+    "id": "1b0d193e-d1e8-520c-a8c0-cb05cc87c2d6",
+    "sourceId": "northeast-quality-arunachal-thukpa",
+    "title": "Arunachal Thukpa",
+    "name": "Arunachal Thukpa",
+    "description": "Arunachal thukpa is a warm noodle soup variation with vegetables, broth and gentle mountain-style aromatics.",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 25,
+    "timeMinutes": 40,
+    "servings": 2,
+    "cuisine": "Northeast Indian",
+    "dietType": "vegetarian",
+    "difficulty": "medium",
+    "imageUrl": "/assets/images/dishes/batch3a-thukpa.png",
+    "image": "/assets/images/dishes/batch3a-thukpa.png",
+    "recipeRole": "soup",
+    "tags": [
+      "lunch",
+      "dinner",
+      "rainy",
+      "comfort",
+      "light",
+      "vegetarian",
+      "northeast",
+      "northeast-india",
+      "arunachal-pradesh"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
+    ],
+    "moodTags": [
+      "rainy",
+      "comfort",
+      "light"
+    ],
+    "dietaryTags": [
+      "vegetarian"
+    ],
+    "lateNight": false,
+    "lowEffort": false,
+    "sickDay": true,
+    "budgetFriendly": true,
+    "summerCooling": false,
+    "lightMeal": true,
+    "onePot": true,
+    "minimalCleanup": false,
+    "studySnack": false,
+    "weekendSpecial": false,
+    "effortScore": 5,
+    "comfortScore": 8,
+    "energyScore": 5,
+    "proteinScore": 3,
+    "nostalgiaScore": 6,
+    "homeStyleScore": 8,
+    "rainyDayScore": 8,
+    "primaryMood": "Rainy",
+    "secondaryMood": "Comfort",
+    "isRealDish": true,
+    "instructions": [
+      "Simmer broth with ginger and garlic.",
+      "Add vegetables and cook until tender.",
+      "Add noodles and cook through.",
+      "Season with salt and chilli oil if desired.",
+      "Serve hot with momo."
+    ],
+    "ingredients": [
+      {
+        "name": "noodles",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "vegetables",
+        "quantity": 1,
+        "unit": "cup",
+        "role": "required",
+        "isMain": true
+      },
+      {
+        "name": "broth",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "required",
+        "isMain": false
+      },
+      {
+        "name": "ginger",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "garlic",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "spring onion",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      },
+      {
+        "name": "chilli oil",
+        "quantity": 1,
+        "unit": "to taste",
+        "role": "optional",
+        "isMain": false
+      }
+    ],
+    "recipe_type": "core",
+    "recipeType": "core",
+    "primary_ingredient_1": "noodles",
+    "primary_ingredient_2": "vegetables",
+    "primaryIngredient1": "noodles",
+    "primaryIngredient2": "vegetables",
+    "secondary_ingredient_1": "ginger",
+    "secondaryIngredient1": "ginger",
+    "secondary_ingredient_2": "garlic",
+    "secondaryIngredient2": "garlic",
+    "secondary_ingredient_3": "spring onion",
+    "secondaryIngredient3": "spring onion",
+    "secondary_ingredient_4": "chilli oil",
+    "secondaryIngredient4": "chilli oil",
+    "secondary_ingredient_5": null,
+    "secondaryIngredient5": null,
+    "baseIngredient": "noodles",
+    "base_ingredient": "noodles",
+    "coreIngredients": [
+      "noodles",
+      "vegetables",
+      "broth"
+    ],
+    "core_ingredients": [
+      "noodles",
+      "vegetables",
+      "broth"
+    ],
+    "requiredIngredients": [
+      "noodles",
+      "vegetables",
+      "broth"
+    ],
+    "required_ingredients": [
+      "noodles",
+      "vegetables",
+      "broth"
+    ],
+    "optionalIngredients": [
+      "ginger",
+      "garlic",
+      "spring onion",
+      "chilli oil"
+    ],
+    "optional_ingredients": [
+      "ginger",
+      "garlic",
+      "spring onion",
+      "chilli oil"
+    ],
+    "dishFamily": "noodle soup",
+    "dish_family": "noodle soup",
+    "incompatibleWith": [],
+    "incompatible_with": [],
+    "regionTags": {
+      "region": [
+        "Northeast India"
+      ],
+      "subRegion": [
+        "Arunachal Pradesh",
+        "Northeast India"
+      ],
+      "cuisine": [
+        "Northeast Indian"
+      ]
+    },
+    "collectionHome": {
+      "hub": "Regional Journeys",
+      "collection": "Northeast"
+    },
+    "pairings": {
+      "sides": [
+        "Momo"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": []
+    },
+    "quickGuide": {
+      "serves": 2,
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "ingredients": [
+        "noodles",
+        "vegetables",
+        "broth",
+        "ginger",
+        "garlic",
+        "spring onion",
+        "chilli oil"
+      ],
+      "steps": [
+        "Simmer broth with ginger and garlic.",
+        "Add vegetables and cook until tender.",
+        "Add noodles and cook through.",
+        "Season with salt and chilli oil if desired.",
+        "Serve hot with momo."
+      ],
+      "tip": "Keep the regional character clear and adjust chilli, smoke, sourness, or fermented notes gently.",
+      "bestWith": [
+        "Momo"
+      ]
+    },
+    "aliases": [],
+    "pantrySuitability": "medium"
   }
 ];
