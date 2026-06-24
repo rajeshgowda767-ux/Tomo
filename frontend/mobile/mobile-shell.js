@@ -132,6 +132,18 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     'Celebrations & Traditions::Everyday Desserts': ['Quick Sweets', 'Milk Sweets', 'Fruit Desserts'],
     'Celebrations & Traditions::Prasadam & Temple Foods': ['Prasadam', 'Temple Foods', 'Festival Offerings'],
   };
+  const allowedRecipeRoles = ['main', 'side', 'condiment', 'snack', 'drink', 'dessert', 'soup'];
+  const generatedRegionalCoverageRules = {
+    Karnataka: ['karnataka', 'old mysore', 'bengaluru', 'bangalore', 'udupi', 'mangalorean', 'mangalore', 'mangaluru', 'kodagu', 'coorg', 'malnad', 'dharwad', 'mandya', 'mysore', 'mysuru'],
+    'Andhra & Telangana': ['andhra', 'telangana', 'telugu', 'hyderabad', 'hyderabadi', 'guntur'],
+    'Tamil Nadu': ['tamil nadu', 'tamil', 'chettinad', 'kongu nadu', 'kongunadu', 'chennai', 'madras'],
+    Kerala: ['kerala', 'malabar', 'travancore', 'kochi', 'cochin'],
+    Bengal: ['bengal', 'bengali', 'kolkata'],
+    Maharashtra: ['maharashtra', 'maharashtrian', 'kolhapur', 'malvan', 'malvani', 'konkan', 'konkani', 'mumbai', 'pune'],
+    Northeast: ['northeast', 'north east', 'assam', 'assamese', 'manipur', 'manipuri', 'nagaland', 'meghalaya', 'khasi', 'tibet', 'himalayan'],
+    'North & West India': [],
+    'Jammu & Kashmir': ['jammu', 'kashmir', 'kashmiri'],
+  };
   const baseCollections = window.COOKBUDDY_LOCAL_COLLECTIONS?.collections || [];
   const mobileCollectionsBase = baseCollections.some((collection) => collection.key === 'gym-foods')
     ? baseCollections
@@ -334,7 +346,6 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   const dietaryTagTypes = ['vegetarian', 'egg', 'non_vegetarian', 'no_onion_no_garlic', 'jain'];
   const recommendationSurfaces = ['tomo_pick', 'todays_picks', 'pantry', 'related'];
   const recommendationScoreKeys = ['mood', 'memory', 'feedback', 'recency', 'dietary', 'regional', 'pantry', 'diversity'];
-  const allowedRecipeRoles = ['main', 'side', 'condiment', 'snack', 'drink', 'dessert', 'soup'];
   const recommendationSurfaceWeights = {
     tomo_pick: { mood: 0.30, memory: 0.12, feedback: 0.08, recency: 0.18, dietary: 0.075, regional: 0.075, pantry: 0.05, diversity: 0.12 },
     todays_picks: { mood: 0.60, memory: 0.08, feedback: 0.07, recency: 0.08, dietary: 0.05, regional: 0.04, pantry: 0.01, diversity: 0.07 },
@@ -2881,6 +2892,45 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return [];
   }
 
+  function generatedRegionalCoverageText(recipe) {
+    const ingredients = generatedSignalList(recipe?.ingredients)
+      .map((ingredient) => typeof ingredient === 'string' ? ingredient : ingredient?.name);
+    return norm([
+      recipe?.title,
+      recipe?.name,
+      recipe?.sourceId,
+      recipe?.description,
+      recipe?.cuisine,
+      recipe?.region,
+      recipe?.dishFamily,
+      recipe?.dish_family,
+      ...generatedSignalList(recipe?.regionTags),
+      ...generatedSignalList(recipe?.tags),
+      ...generatedSignalList(recipe?.aliases),
+      ...generatedSignalList(recipe?.mealTags),
+      ...generatedSignalList(recipe?.moodTags),
+      ...generatedSignalList(recipe?.coreIngredients),
+      ...generatedSignalList(recipe?.requiredIngredients),
+      ...generatedSignalList(recipe?.optionalIngredients),
+      ...ingredients
+    ].filter(Boolean).join(' '));
+  }
+
+  function generatedCoverageHasAlias(text, alias) {
+    const normalizedAlias = norm(alias);
+    if (!normalizedAlias) return false;
+    const pattern = new RegExp(`(^|\\s)${normalizedAlias.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')}(\\s|$)`);
+    return pattern.test(text);
+  }
+
+  function generatedRegionalCoverageMatches(recipe, collectionName) {
+    if (recipe?.collectionHome?.hub === 'Regional Journeys' && recipe.collectionHome.collection === collectionName) return true;
+    const aliases = generatedRegionalCoverageRules[collectionName] || [];
+    if (!aliases.length) return false;
+    const text = generatedRegionalCoverageText(recipe);
+    return aliases.some((alias) => generatedCoverageHasAlias(text, alias));
+  }
+
   function generatedRecipeSignals(recipe) {
     const values = [
       recipe?.title,
@@ -3146,14 +3196,34 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
   function buildGeneratedCollectionSystem() {
     const hubMap = new Map();
+    const addRecipeToGeneratedCollection = (hubName, collectionName, recipe, index) => {
+      if (!hubName || !collectionName || !recipe) return;
+      if (!hubMap.has(hubName)) hubMap.set(hubName, { hub: hubName, recipes: [], recipeIds: new Set(), collections: new Map() });
+      const hub = hubMap.get(hubName);
+      const recipeKey = recipe.id || recipe.sourceId || norm(recipe.title || recipe.name);
+      if (!hub.recipeIds.has(recipeKey)) {
+        hub.recipeIds.add(recipeKey);
+        hub.recipes.push(recipe);
+      }
+      if (!hub.collections.has(collectionName)) hub.collections.set(collectionName, []);
+      const collectionItems = hub.collections.get(collectionName);
+      if (!collectionItems.some(({ recipe: item }) => (item.id || item.sourceId || norm(item.title || item.name)) === recipeKey)) {
+        collectionItems.push({ recipe, index });
+      }
+    };
+
     recipes.forEach((recipe, index) => {
       const home = recipe.collectionHome;
       if (!home?.hub || !home?.collection) return;
-      if (!hubMap.has(home.hub)) hubMap.set(home.hub, { hub: home.hub, recipes: [], collections: new Map() });
-      const hub = hubMap.get(home.hub);
-      hub.recipes.push(recipe);
-      if (!hub.collections.has(home.collection)) hub.collections.set(home.collection, []);
-      hub.collections.get(home.collection).push({ recipe, index });
+      addRecipeToGeneratedCollection(home.hub, home.collection, recipe, index);
+    });
+
+    (generatedCollectionOrder['Regional Journeys'] || []).forEach((collectionName) => {
+      recipes.forEach((recipe, index) => {
+        if (generatedRegionalCoverageMatches(recipe, collectionName)) {
+          addRecipeToGeneratedCollection('Regional Journeys', collectionName, recipe, index);
+        }
+      });
     });
 
     const generatedCollections = [];
