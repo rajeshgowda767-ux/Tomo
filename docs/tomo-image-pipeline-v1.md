@@ -149,19 +149,43 @@ The importer automates the safe mechanical steps:
 Dry-run first:
 
 ```bash
-node scripts/import_recipe_images.js --batch=karnataka-final-wave-2 --review-dir=frontend/assets/images/_generated-review/karnataka-final-wave-2 --dry-run
+node scripts/import_recipe_images.js --batch=p0-wave-2 --dry-run
 ```
 
 Real import:
 
 ```bash
-node scripts/import_recipe_images.js --batch=karnataka-final-wave-2 --review-dir=frontend/assets/images/_generated-review/karnataka-final-wave-2
+node scripts/import_recipe_images.js --batch=p0-wave-2
+```
+
+When `--review-dir` is omitted, the importer automatically reads from:
+
+```text
+frontend/assets/images/_generated-review/<batch-name>
+```
+
+For example:
+
+```bash
+node scripts/import_recipe_images.js --batch=p0-wave-2
+```
+
+uses:
+
+```text
+frontend/assets/images/_generated-review/p0-wave-2
+```
+
+You can still override the review folder when needed:
+
+```bash
+node scripts/import_recipe_images.js --batch=p0-wave-2 --review-dir=frontend/assets/images/_generated-review/custom-folder --dry-run
 ```
 
 Expected report:
 
 ```text
-notes/backlog/karnataka-final-wave-2-image-import-report.md
+notes/backlog/p0-wave-2-image-import-report.md
 ```
 
 Safety rules:
@@ -181,7 +205,7 @@ Use `--force` only when a human has explicitly approved replacing an existing de
 Example force import:
 
 ```bash
-node scripts/import_recipe_images.js --batch=karnataka-replacement --review-dir=frontend/assets/images/_generated-review/karnataka-replacement --force
+node scripts/import_recipe_images.js --batch=karnataka-replacement --force
 ```
 
 After a non-dry-run import with imported files, the importer automatically runs:

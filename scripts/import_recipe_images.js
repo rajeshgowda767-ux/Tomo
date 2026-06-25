@@ -8,6 +8,7 @@ const ROOT = path.resolve(__dirname, '..');
 const BACKEND_RECIPES = 'database/generated/recipes.json';
 const FRONTEND_RECIPES = 'frontend/local-recipes.js';
 const DISH_DIR = 'frontend/assets/images/dishes';
+const DEFAULT_REVIEW_DIR = 'frontend/assets/images/_generated-review';
 const REPORT_DIR = 'notes/backlog';
 const IMAGE_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.webp']);
 
@@ -279,12 +280,12 @@ function writeReport({ batchName, reviewDir, dryRun, force, rows, importedRows, 
 
 function main() {
   const batchName = argValue('batch');
-  const reviewDir = argValue('review-dir');
+  const reviewDir = argValue('review-dir') || (batchName ? path.join(DEFAULT_REVIEW_DIR, batchName) : '');
   const dryRun = hasFlag('dry-run');
   const force = hasFlag('force');
 
-  if (!batchName || !reviewDir) {
-    console.error('Usage: node scripts/import_recipe_images.js --batch=<batch-name> --review-dir=<review-dir> [--dry-run] [--force]');
+  if (!batchName) {
+    console.error('Usage: node scripts/import_recipe_images.js --batch=<batch-name> [--review-dir=<review-dir>] [--dry-run] [--force]');
     process.exit(1);
   }
 
