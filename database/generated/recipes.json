@@ -12,7 +12,7 @@
     "cuisine": "Karnataka",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/batch3b-akki-roti.png",
+    "imageUrl": "/assets/images/dishes/akki-rotti.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
@@ -8189,7 +8189,7 @@
     "cuisine": "Karnataka",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/batch3b-bisibelebath.png",
+    "imageUrl": "/assets/images/dishes/bisi-bele-bath.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -30870,7 +30870,7 @@
     "cuisine": "South Indian",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/batch3b-lemon-rice.png",
+    "imageUrl": "/assets/images/dishes/chitranna-lemon-rice.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -31982,7 +31982,7 @@
     "cuisine": "Karnataka",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/batch3b-maddur-vada.png",
+    "imageUrl": "/assets/images/dishes/maddur-vada.png",
     "recipeRole": "snack",
     "tags": [
       "snack",
@@ -32384,7 +32384,7 @@
     "cuisine": "Mangalorean",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/mangalore-buns.png",
     "recipeRole": "snack",
     "tags": [
       "breakfast",
@@ -32575,7 +32575,7 @@
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/mangalore-buns.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
@@ -99957,8 +99957,8 @@
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/batch7-peanut-chutney.png",
-    "image_url": "/assets/images/dishes/batch7-peanut-chutney.png",
+    "imageUrl": "/assets/images/dishes/shenga-chutney.png",
+    "image_url": "/assets/images/dishes/shenga-chutney.png",
     "recipeRole": "condiment",
     "tags": [
       "lunch",
