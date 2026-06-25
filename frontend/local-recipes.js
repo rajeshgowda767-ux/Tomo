@@ -4975,8 +4975,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/ragi-mudde.png",
+    "image_url": "/assets/images/dishes/ragi-mudde.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -5275,8 +5275,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/ragi-rotti.png",
+    "image_url": "/assets/images/dishes/ragi-rotti.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
@@ -5872,8 +5872,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/vangi-bath.png",
+    "image_url": "/assets/images/dishes/vangi-bath.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -7284,8 +7284,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/collections/soups.webp",
-    "image_url": "/assets/images/collections/soups.webp",
+    "imageUrl": "/assets/images/dishes/bassaru.png",
+    "image_url": "/assets/images/dishes/bassaru.png",
     "recipeRole": "soup",
     "tags": [
       "lunch",
@@ -23012,7 +23012,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Karnataka",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/ghee-rice.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -23276,7 +23276,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/ghee-rice.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
@@ -38674,7 +38674,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Mangalorean",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/neer-dosa.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
@@ -38868,7 +38868,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/neer-dosa.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
@@ -73569,8 +73569,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/collections/soups.webp",
-    "image_url": "/assets/images/collections/soups.webp",
+    "imageUrl": "/assets/images/dishes/soppu-saaru.png",
+    "image_url": "/assets/images/dishes/soppu-saaru.png",
     "recipeRole": "soup",
     "tags": [
       "lunch",
@@ -98238,8 +98238,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "non-vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/chicken-curry.png",
-    "image_url": "/assets/images/dishes/chicken-curry.png",
+    "imageUrl": "/assets/images/dishes/coorg-koli-curry.png",
+    "image_url": "/assets/images/dishes/coorg-koli-curry.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -98468,8 +98468,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "non-vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/fish-curry.png",
-    "image_url": "/assets/images/dishes/fish-curry.png",
+    "imageUrl": "/assets/images/dishes/mangalorean-fish-curry.png",
+    "image_url": "/assets/images/dishes/mangalorean-fish-curry.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -100169,8 +100169,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/bamboo-shoot-curry.png",
+    "image_url": "/assets/images/dishes/bamboo-shoot-curry.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
