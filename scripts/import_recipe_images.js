@@ -10,6 +10,8 @@ const FRONTEND_RECIPES = 'frontend/local-recipes.js';
 const DISH_DIR = 'frontend/assets/images/dishes';
 const DEFAULT_REVIEW_DIR = 'frontend/assets/images/_generated-review';
 const REPORT_DIR = 'notes/backlog';
+const P0_IMAGE_PLAN = 'notes/backlog/beta-3-p0-image-production-plan.md';
+const CATALOG_HEALTH_AUDIT = 'notes/backlog/beta-3-catalog-health-audit.json';
 const IMAGE_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.webp']);
 
 const KNOWN_GENERIC_IMAGES = new Set([
@@ -139,13 +141,130 @@ function imageUsageCounts(recipes) {
   return counts;
 }
 
-function isGenericImage(imageUrl, usageCounts) {
+function loadP0ImageDebtSlugs() {
+  const planPath = relativeFromRoot(P0_IMAGE_PLAN);
+  const slugs = new Set();
+  if (!fs.existsSync(planPath)) return slugs;
+
+  const text = fs.readFileSync(planPath, 'utf8');
+  text.split('\n').forEach((line) => {
+    if (!line.includes('|')) return;
+    const columns = line.split('|').slice(1, -1).map((column) => column.trim());
+    if (columns.length < 2) return;
+    const firstColumn = String(columns[0] || '').toLowerCase();
+    const secondColumn = String(columns[1] || '').toLowerCase();
+    if (firstColumn === 'title' || firstColumn === 'recipe' || secondColumn === 'slug') return;
+    if (/^-+$/.test(firstColumn) || /^-+$/.test(secondColumn)) return;
+
+    const slug = slugify(columns[1]);
+    if (slug) slugs.add(slug);
+  });
+
+  return slugs;
+}
+
+function loadCatalogHealthDebtImages() {
+  const auditPath = relativeFromRoot(CATALOG_HEALTH_AUDIT);
+  const images = new Set();
+  if (!fs.existsSync(auditPath)) return images;
+
+  try {
+    const audit = JSON.parse(fs.readFileSync(auditPath, 'utf8'));
+    const priorities = Array.isArray(audit.topImageReplacementPriorities)
+      ? audit.topImageReplacementPriorities
+      : [];
+    priorities.forEach((entry) => {
+      const imageType = String(entry.imageType || '').toLowerCase();
+      if (['placeholder', 'generic', 'shared'].includes(imageType) && entry.imageUrl) {
+        images.add(entry.imageUrl);
+      }
+    });
+  } catch (error) {
+    console.warn(`Warning: could not read ${CATALOG_HEALTH_AUDIT}: ${error.message}`);
+  }
+
+  return images;
+}
+
+function imageDebtClassification(imageUrl, usageCounts, catalogHealthDebtImages, isP0DebtRecipe) {
   const image = String(imageUrl || '');
-  if (!image) return true;
-  if (KNOWN_GENERIC_IMAGES.has(image)) return true;
-  if (/placeholder|default|home-bowl|common-kitchen/i.test(image)) return true;
-  if (/\/assets\/images\/collections\/(soups|desserts|festival-food)\.webp$/i.test(image)) return true;
-  return (usageCounts.get(image) || 0) >= 8;
+  const usageCount = usageCounts.get(image) || 0;
+
+  if (!image) {
+    return {
+      importable: true,
+      status: 'IMPORTABLE_PLACEHOLDER',
+      reason: 'Recipe has no current image path; treating as placeholder debt.',
+    };
+  }
+  if (/placeholder/i.test(image)) {
+    return {
+      importable: true,
+      status: 'IMPORTABLE_PLACEHOLDER',
+      reason: 'Current image is a placeholder; safe to replace.',
+    };
+  }
+  if (/default|home-bowl|common-kitchen/i.test(image)) {
+    return {
+      importable: true,
+      status: 'IMPORTABLE_GENERIC',
+      reason: 'Current image is a generic/default fallback; safe to replace.',
+    };
+  }
+  if (/\/assets\/images\/collections\/(soups|desserts|festival-food)\.webp$/i.test(image)) {
+    return {
+      importable: true,
+      status: 'IMPORTABLE_GENERIC',
+      reason: 'Current image is a generic collection fallback; safe to replace.',
+    };
+  }
+  if (KNOWN_GENERIC_IMAGES.has(image)) {
+    return {
+      importable: true,
+      status: 'IMPORTABLE_GENERIC',
+      reason: 'Current image is on the known generic/shared debt list; safe to replace.',
+    };
+  }
+  if (catalogHealthDebtImages.has(image)) {
+    return {
+      importable: true,
+      status: 'IMPORTABLE_GENERIC',
+      reason: 'Catalog health audit classified this image as shared/generic debt.',
+    };
+  }
+  if (usageCount > 10) {
+    return {
+      importable: true,
+      status: 'IMPORTABLE_SHARED_REUSE',
+      reason: `Current image is reused by ${usageCount} active recipes; safe to replace shared image debt.`,
+    };
+  }
+  if (isP0DebtRecipe && usageCount > 1) {
+    return {
+      importable: true,
+      status: 'IMPORTABLE_P0_DEBT',
+      reason: `Recipe is in the P0 production plan and current image is shared by ${usageCount} recipes.`,
+    };
+  }
+
+  return {
+    importable: false,
+    status: 'SKIP_DEDICATED_PROTECTED',
+    reason: isP0DebtRecipe
+      ? 'Recipe is in the P0 production plan, but current image appears to be a unique dedicated image. Use --force to replace.'
+      : 'Current image appears to be a unique dedicated image. Use --force to replace.',
+  };
+}
+
+function isImportableStatus(status) {
+  return String(status || '').startsWith('IMPORTABLE_') || status === 'IMPORTABLE';
+}
+
+function groupedStatusCounts(rows) {
+  return rows.reduce((counts, row) => {
+    counts.set(row.status, (counts.get(row.status) || 0) + 1);
+    return counts;
+  }, new Map());
 }
 
 function findMatches(recipes, slug) {
@@ -199,6 +318,21 @@ function writeReport({ batchName, reviewDir, dryRun, force, rows, importedRows, 
   lines.push(`- Skipped count: ${skippedRows.length}`);
   lines.push(`- Recipe mappings updated: ${importedRows.length}`);
   lines.push('');
+  lines.push('## Status Breakdown');
+  lines.push('');
+  const statusCounts = groupedStatusCounts(rows);
+  if (statusCounts.size) {
+    lines.push('| Status | Count |');
+    lines.push('|---|---:|');
+    [...statusCounts.entries()]
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .forEach(([status, count]) => {
+        lines.push(`| ${markdownEscape(status)} | ${count} |`);
+      });
+  } else {
+    lines.push('No files found.');
+  }
+  lines.push('');
   lines.push('## Files Found');
   lines.push('');
   lines.push('| File | Slug | Status | Recipe | Reason |');
@@ -222,13 +356,39 @@ function writeReport({ batchName, reviewDir, dryRun, force, rows, importedRows, 
   lines.push('## Skipped Files');
   lines.push('');
   if (skippedRows.length) {
-    lines.push('| File | Reason |');
-    lines.push('|---|---|');
+    lines.push('| File | Status | Recipe | Reason |');
+    lines.push('|---|---|---|---|');
     skippedRows.forEach((row) => {
-      lines.push(`| \`${markdownEscape(row.file)}\` | ${markdownEscape(row.reason)} |`);
+      lines.push(`| \`${markdownEscape(row.file)}\` | ${markdownEscape(row.status)} | ${markdownEscape(row.recipeTitle || '—')} | ${markdownEscape(row.reason)} |`);
     });
   } else {
     lines.push('No files skipped.');
+  }
+  lines.push('');
+  const protectedRows = skippedRows.filter((row) => row.status === 'SKIP_DEDICATED_PROTECTED');
+  lines.push('## Protected Dedicated Images');
+  lines.push('');
+  if (protectedRows.length) {
+    lines.push('| Recipe | Current image | Reason |');
+    lines.push('|---|---|---|');
+    protectedRows.forEach((row) => {
+      lines.push(`| ${markdownEscape(row.recipeTitle || row.slug)} | \`${markdownEscape(row.beforeImage || '—')}\` | ${markdownEscape(row.reason)} |`);
+    });
+  } else {
+    lines.push('No dedicated images were protected in this run.');
+  }
+  lines.push('');
+  const missingRows = skippedRows.filter((row) => row.status === 'SKIP_RECIPE_NOT_FOUND');
+  lines.push('## Missing Recipe Matches');
+  lines.push('');
+  if (missingRows.length) {
+    lines.push('| File | Slug | Reason |');
+    lines.push('|---|---|---|');
+    missingRows.forEach((row) => {
+      lines.push(`| \`${markdownEscape(row.file)}\` | \`${markdownEscape(row.slug)}\` | ${markdownEscape(row.reason)} |`);
+    });
+  } else {
+    lines.push('No missing recipe matches.');
   }
   lines.push('');
   lines.push('## Validation');
@@ -291,6 +451,8 @@ function main() {
 
   const catalogs = readCatalogs();
   const backendUsage = imageUsageCounts(catalogs.backend);
+  const p0ImageDebtSlugs = loadP0ImageDebtSlugs();
+  const catalogHealthDebtImages = loadCatalogHealthDebtImages();
   const files = reviewFiles(reviewDir);
   const slugCounts = files.reduce((counts, file) => {
     counts.set(file.slug, (counts.get(file.slug) || 0) + 1);
@@ -319,17 +481,22 @@ function main() {
       recipeTitle: '',
       beforeImage: '',
       currentFrontendImage: '',
+      currentImageUsage: 0,
+      isP0DebtRecipe: false,
     };
 
     if (duplicateSlug) {
+      row.status = 'SKIP_DUPLICATE_REVIEW_FILE';
       row.reason = 'Duplicate filename/slug in review folder.';
       return row;
     }
     if (backendMatches.length !== 1) {
+      row.status = 'SKIP_RECIPE_NOT_FOUND';
       row.reason = backendMatches.length === 0 ? 'No matching backend recipe slug.' : 'Multiple backend recipe matches.';
       return row;
     }
     if (frontendMatches.length !== 1) {
+      row.status = 'SKIP_RECIPE_NOT_FOUND';
       row.reason = frontendMatches.length === 0 ? 'No matching frontend recipe slug.' : 'Multiple frontend recipe matches.';
       return row;
     }
@@ -339,42 +506,58 @@ function main() {
     row.recipeTitle = recipeTitle(backendRecipe);
     row.beforeImage = recipeImage(backendRecipe);
     row.currentFrontendImage = recipeImage(frontendRecipe);
+    row.currentImageUsage = backendUsage.get(row.beforeImage) || 0;
+    row.isP0DebtRecipe = p0ImageDebtSlugs.has(file.slug);
 
     if (row.beforeImage !== row.currentFrontendImage) {
+      row.status = 'SKIP_BACKEND_FRONTEND_MISMATCH';
       row.reason = `Backend/frontend image mismatch: ${row.beforeImage || 'blank'} vs ${row.currentFrontendImage || 'blank'}.`;
       return row;
     }
 
-    const currentIsGeneric = isGenericImage(row.beforeImage, backendUsage);
     const destinationExists = fs.existsSync(destinationAbsolute);
     const alreadyUsingDestination = row.beforeImage === nextImage;
 
     if (alreadyUsingDestination) {
+      row.status = 'SKIP_DESTINATION_EXISTS';
       row.reason = 'Recipe already uses this destination image.';
       return row;
     }
-    if (!currentIsGeneric && !force) {
-      row.reason = 'Recipe already uses a dedicated/non-generic image. Use --force to replace.';
-      return row;
-    }
     if (destinationExists && !force) {
+      row.status = 'SKIP_DESTINATION_EXISTS';
       row.reason = 'Destination file already exists. Use --force to overwrite.';
       return row;
     }
     if (!imageExists(row.beforeImage)) {
+      row.status = 'SKIP_CURRENT_IMAGE_MISSING';
       row.reason = 'Current recipe image path does not exist; manual review required.';
       return row;
     }
 
-    row.status = dryRun ? 'DRY_RUN_IMPORTABLE' : 'IMPORTABLE';
-    row.reason = currentIsGeneric ? 'Current image is placeholder/generic; safe to replace.' : 'Force enabled for dedicated image replacement.';
+    const classification = imageDebtClassification(
+      row.beforeImage,
+      backendUsage,
+      catalogHealthDebtImages,
+      row.isP0DebtRecipe,
+    );
+
+    if (!classification.importable && !force) {
+      row.status = classification.status;
+      row.reason = classification.reason;
+      return row;
+    }
+
+    row.status = force && !classification.importable ? 'IMPORTABLE_P0_DEBT' : classification.status;
+    row.reason = force && !classification.importable
+      ? 'Force enabled for dedicated image replacement.'
+      : classification.reason;
     row.backendRecipe = backendRecipe;
     row.frontendRecipe = frontendRecipe;
     return row;
   });
 
-  const importableRows = rows.filter((row) => row.status === 'IMPORTABLE' || row.status === 'DRY_RUN_IMPORTABLE');
-  const skippedRows = rows.filter((row) => row.status === 'SKIP');
+  const importableRows = rows.filter((row) => isImportableStatus(row.status));
+  const skippedRows = rows.filter((row) => !isImportableStatus(row.status));
   const importedRows = [];
   const validationResults = [];
 
@@ -413,6 +596,36 @@ function main() {
   console.log(`Importable${dryRun ? ' (dry-run)' : ''}: ${importableRows.length}`);
   console.log(`Imported: ${dryRun ? 0 : importedRows.length}`);
   console.log(`Skipped: ${skippedRows.length}`);
+  if (importableRows.length) {
+    console.log('');
+    console.log(dryRun ? 'Importable files:' : 'Imported files:');
+    importableRows.forEach((row) => {
+      console.log(`- ${row.recipeTitle} (${row.status})`);
+    });
+  }
+  if (skippedRows.length) {
+    console.log('');
+    console.log('Skipped files:');
+    skippedRows.forEach((row) => {
+      console.log(`- ${row.file}: ${row.status} — ${row.reason}`);
+    });
+  }
+  const protectedRows = skippedRows.filter((row) => row.status === 'SKIP_DEDICATED_PROTECTED');
+  if (protectedRows.length) {
+    console.log('');
+    console.log('Protected dedicated images:');
+    protectedRows.forEach((row) => {
+      console.log(`- ${row.recipeTitle || row.slug}: ${row.beforeImage || 'blank'}`);
+    });
+  }
+  const missingRows = skippedRows.filter((row) => row.status === 'SKIP_RECIPE_NOT_FOUND');
+  if (missingRows.length) {
+    console.log('');
+    console.log('Missing recipe matches:');
+    missingRows.forEach((row) => {
+      console.log(`- ${row.file}: ${row.reason}`);
+    });
+  }
   console.log(`Report: ${path.relative(ROOT, reportPath)}`);
   if (failedValidation) {
     console.error('Validation failed. See report for details.');

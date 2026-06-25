@@ -195,12 +195,26 @@ Safety rules:
 - It skips backend/frontend image mismatches.
 - It skips missing recipe matches.
 - It skips duplicate slugs in the review folder.
-- It skips recipes already using dedicated/non-generic imagery unless `--force` is passed.
+- It replaces placeholder/default images by default.
+- It replaces known generic/shared debt by default, including `lunch-default.png`, `soups.webp`, `desserts.webp`, `festival-food.webp`, and images reused by more than 10 active recipes.
+- It uses `notes/backlog/beta-3-p0-image-production-plan.md` as an allow-list for P0 image debt, but still protects unique dedicated images.
+- It uses `notes/backlog/beta-3-catalog-health-audit.json` to recognize images already classified as shared/generic debt.
+- It skips unique dedicated imagery unless `--force` is passed.
 - It skips destination overwrites unless `--force` is passed.
 - It does not modify recipe metadata, collections, recommendation logic, or Global Bites.
 - It does not delete review images.
 
 Use `--force` only when a human has explicitly approved replacing an existing dedicated image or overwriting an existing destination file.
+
+Dry-run status meanings:
+
+- `IMPORTABLE_PLACEHOLDER` — current image is blank or a placeholder.
+- `IMPORTABLE_GENERIC` — current image is a known default/generic/shared-debt image.
+- `IMPORTABLE_SHARED_REUSE` — current image is reused by more than 10 active recipes.
+- `IMPORTABLE_P0_DEBT` — recipe appears in the P0 production plan and the current image is shared image debt.
+- `SKIP_DEDICATED_PROTECTED` — current image appears to be unique dedicated artwork.
+- `SKIP_RECIPE_NOT_FOUND` — filename slug did not match exactly one backend and frontend recipe.
+- `SKIP_DESTINATION_EXISTS` — target file already exists or recipe already uses that target image.
 
 Example force import:
 
