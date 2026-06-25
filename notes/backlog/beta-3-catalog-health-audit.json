@@ -1,0 +1,713 @@
+{
+  "generatedAt": "2026-06-25T11:46:28.163Z",
+  "activeRecipeCount": 658,
+  "backendRecipeCount": 660,
+  "frontendActiveRecipeCount": 658,
+  "frontendParityCount": 658,
+  "totalCollections": 30,
+  "totalHubs": 8,
+  "totalRegions": 9,
+  "totalImageFiles": 407,
+  "totalUniqueImagePathsUsed": 274,
+  "imageHealthCounts": {
+    "dedicated": 197,
+    "placeholder": 231,
+    "shared": 230
+  },
+  "roleCounts": {
+    "condiment": 11,
+    "dessert": 62,
+    "drink": 37,
+    "main": 318,
+    "side": 70,
+    "snack": 107,
+    "soup": 53
+  },
+  "dietaryCounts": {
+    "eggitarian": 3,
+    "non_vegetarian": 140,
+    "vegetarian": 515
+  },
+  "hubCounts": {
+    "Celebrations & Traditions": 110,
+    "Everyday Cooking": 49,
+    "Family Favorites": 46,
+    "Global Bites": 74,
+    "Healthy Living": 41,
+    "Kitchen Essentials": 73,
+    "Regional Journeys": 247,
+    "Seasonal Specials": 18
+  },
+  "categoryCounts": {
+    "Breakfast": {
+      "total": 133,
+      "dedicatedImages": 46,
+      "sharedImages": 77,
+      "placeholderImages": 10,
+      "missingImages": 0,
+      "missingRecipeData": 0
+    },
+    "Lunch": {
+      "total": 262,
+      "dedicatedImages": 74,
+      "sharedImages": 116,
+      "placeholderImages": 72,
+      "missingImages": 0,
+      "missingRecipeData": 4
+    },
+    "Dinner": {
+      "total": 283,
+      "dedicatedImages": 68,
+      "sharedImages": 112,
+      "placeholderImages": 103,
+      "missingImages": 0,
+      "missingRecipeData": 1
+    },
+    "Snacks": {
+      "total": 317,
+      "dedicatedImages": 113,
+      "sharedImages": 68,
+      "placeholderImages": 136,
+      "missingImages": 0,
+      "missingRecipeData": 41
+    },
+    "Rice": {
+      "total": 219,
+      "dedicatedImages": 57,
+      "sharedImages": 82,
+      "placeholderImages": 80,
+      "missingImages": 0,
+      "missingRecipeData": 10
+    },
+    "Curry": {
+      "total": 227,
+      "dedicatedImages": 59,
+      "sharedImages": 116,
+      "placeholderImages": 52,
+      "missingImages": 0,
+      "missingRecipeData": 2
+    },
+    "Chutneys": {
+      "total": 54,
+      "dedicatedImages": 19,
+      "sharedImages": 25,
+      "placeholderImages": 10,
+      "missingImages": 0,
+      "missingRecipeData": 1
+    },
+    "Sides & Add-ons": {
+      "total": 90,
+      "dedicatedImages": 39,
+      "sharedImages": 24,
+      "placeholderImages": 27,
+      "missingImages": 0,
+      "missingRecipeData": 1
+    },
+    "Soups": {
+      "total": 61,
+      "dedicatedImages": 9,
+      "sharedImages": 10,
+      "placeholderImages": 42,
+      "missingImages": 0,
+      "missingRecipeData": 0
+    },
+    "Drinks": {
+      "total": 37,
+      "dedicatedImages": 29,
+      "sharedImages": 4,
+      "placeholderImages": 4,
+      "missingImages": 0,
+      "missingRecipeData": 0
+    },
+    "Desserts": {
+      "total": 62,
+      "dedicatedImages": 3,
+      "sharedImages": 1,
+      "placeholderImages": 58,
+      "missingImages": 0,
+      "missingRecipeData": 32
+    },
+    "Baby Food / Tiny Tummy": {
+      "total": 35,
+      "dedicatedImages": 24,
+      "sharedImages": 5,
+      "placeholderImages": 6,
+      "missingImages": 0,
+      "missingRecipeData": 0
+    },
+    "Global Bites": {
+      "total": 74,
+      "dedicatedImages": 4,
+      "sharedImages": 40,
+      "placeholderImages": 30,
+      "missingImages": 0,
+      "missingRecipeData": 0
+    },
+    "Power Plates": {
+      "total": 216,
+      "dedicatedImages": 57,
+      "sharedImages": 99,
+      "placeholderImages": 60,
+      "missingImages": 0,
+      "missingRecipeData": 2
+    },
+    "Fresh Plates": {
+      "total": 143,
+      "dedicatedImages": 62,
+      "sharedImages": 33,
+      "placeholderImages": 48,
+      "missingImages": 0,
+      "missingRecipeData": 5
+    }
+  },
+  "regionCounts": {
+    "Karnataka": {
+      "total": 59,
+      "dedicatedImages": 36,
+      "sharedImages": 3,
+      "placeholderImages": 20,
+      "missingImages": 0,
+      "missingRecipeData": 5,
+      "collectionHomeCount": 40,
+      "roleCounts": {
+        "condiment": 1,
+        "dessert": 7,
+        "drink": 1,
+        "main": 27,
+        "side": 6,
+        "snack": 10,
+        "soup": 7
+      }
+    },
+    "Andhra & Telangana": {
+      "total": 48,
+      "dedicatedImages": 6,
+      "sharedImages": 26,
+      "placeholderImages": 16,
+      "missingImages": 0,
+      "missingRecipeData": 5,
+      "collectionHomeCount": 30,
+      "roleCounts": {
+        "condiment": 1,
+        "dessert": 4,
+        "main": 26,
+        "side": 5,
+        "snack": 11,
+        "soup": 1
+      }
+    },
+    "Tamil Nadu": {
+      "total": 52,
+      "dedicatedImages": 11,
+      "sharedImages": 29,
+      "placeholderImages": 12,
+      "missingImages": 0,
+      "missingRecipeData": 0,
+      "collectionHomeCount": 37,
+      "roleCounts": {
+        "dessert": 5,
+        "drink": 2,
+        "main": 33,
+        "side": 3,
+        "snack": 5,
+        "soup": 4
+      }
+    },
+    "Kerala": {
+      "total": 37,
+      "dedicatedImages": 3,
+      "sharedImages": 16,
+      "placeholderImages": 18,
+      "missingImages": 0,
+      "missingRecipeData": 0,
+      "collectionHomeCount": 23,
+      "roleCounts": {
+        "dessert": 2,
+        "drink": 1,
+        "main": 19,
+        "side": 9,
+        "snack": 2,
+        "soup": 4
+      }
+    },
+    "Bengal": {
+      "total": 37,
+      "dedicatedImages": 9,
+      "sharedImages": 12,
+      "placeholderImages": 16,
+      "missingImages": 0,
+      "missingRecipeData": 2,
+      "collectionHomeCount": 13,
+      "roleCounts": {
+        "dessert": 6,
+        "main": 20,
+        "side": 4,
+        "snack": 7
+      }
+    },
+    "Maharashtra": {
+      "total": 41,
+      "dedicatedImages": 6,
+      "sharedImages": 19,
+      "placeholderImages": 16,
+      "missingImages": 0,
+      "missingRecipeData": 4,
+      "collectionHomeCount": 21,
+      "roleCounts": {
+        "condiment": 1,
+        "dessert": 9,
+        "drink": 2,
+        "main": 17,
+        "side": 3,
+        "snack": 9
+      }
+    },
+    "Northeast": {
+      "total": 41,
+      "dedicatedImages": 13,
+      "sharedImages": 17,
+      "placeholderImages": 11,
+      "missingImages": 0,
+      "missingRecipeData": 0,
+      "collectionHomeCount": 31,
+      "roleCounts": {
+        "condiment": 1,
+        "dessert": 1,
+        "drink": 1,
+        "main": 25,
+        "side": 4,
+        "snack": 5,
+        "soup": 4
+      }
+    },
+    "North India": {
+      "total": 75,
+      "dedicatedImages": 26,
+      "sharedImages": 23,
+      "placeholderImages": 26,
+      "missingImages": 0,
+      "missingRecipeData": 11,
+      "collectionHomeCount": 52,
+      "roleCounts": {
+        "dessert": 11,
+        "drink": 2,
+        "main": 43,
+        "side": 5,
+        "snack": 14
+      }
+    },
+    "Global": {
+      "total": 86,
+      "dedicatedImages": 8,
+      "sharedImages": 44,
+      "placeholderImages": 34,
+      "missingImages": 0,
+      "missingRecipeData": 0,
+      "collectionHomeCount": 74,
+      "roleCounts": {
+        "dessert": 1,
+        "main": 40,
+        "snack": 28,
+        "soup": 17
+      }
+    }
+  },
+  "duplicateCounts": {
+    "ids": 0,
+    "sourceIds": 0,
+    "titles": 0,
+    "slugs": 0
+  },
+  "missingCounts": {
+    "quickGuides": 0,
+    "pairings": 41,
+    "ingredients": 0,
+    "mealTags": 3,
+    "moodTags": 0,
+    "regionTagsOrCuisine": 0,
+    "dietaryTags": 0,
+    "invalidCollectionHomes": 0
+  },
+  "readinessScores": {
+    "recipeCompleteness": 93,
+    "imageQuality": 46,
+    "regionalCoverage": 100,
+    "collectionQuality": 40,
+    "recommendationReadiness": 60,
+    "pantryReadiness": 100,
+    "userFacingPolish": 49
+  },
+  "overallCatalogHealthScore": 70,
+  "topRisks": [
+    "461 recipes still use placeholder/shared/generic imagery; 461 are visible in primary collection/journey/recommendation surfaces.",
+    "0 broken image paths and 0 missing imageUrl records detected.",
+    "0 Global Bites recipes also match regional journey rules; review isolation before freeze.",
+    "12 non-Global recipes match Global keyword rules; review if browse filters use global text matching later.",
+    "0 recipes have missing or invalid collectionHome values.",
+    "0 backend/frontend image path mismatches.",
+    "0 exact duplicate title keys, 0 duplicate slug keys, 0 duplicate sourceIds.",
+    "0 missing quick guides; 41 missing pairings; 0 missing ingredient structures.",
+    "North India/North & West India remains weaker than the expanded South/East/Northeast journeys.",
+    "Several category collections are image-heavy on shared fallbacks, especially soups, desserts, sides and older recommendation-pack dishes."
+  ],
+  "addList": [
+    "Global Bites: African, Latin American and Southeast Asian coverage beyond current Wave A/B comfort set.",
+    "North India / North & West India: more Delhi, Punjabi, Rajasthani and Kashmiri anchors.",
+    "Karnataka: remaining desserts, drinks and a few North Karnataka festival foods.",
+    "Regional drinks: Kerala, Bengal, Maharashtra and Northeast are still comparatively thin.",
+    "Everyday vegetarian sides with dedicated images for high-visibility journeys.",
+    "More collection-card-safe soups and light bowls with dedicated imagery.",
+    "Tiny Tummy / family lunchbox breadth if Beta 3 wants stronger family positioning.",
+    "More pantry-first “few ingredient” dishes with clean required ingredient metadata."
+  ],
+  "excludeList": [],
+  "reviewList": [
+    "Aloo Potol Posto: placeholder image on visible surfaces (/assets/images/dishes/homestyle-kitchen-placeholder.png)",
+    "Andhra Egg Fry: placeholder image on visible surfaces (/assets/images/dishes/homestyle-kitchen-placeholder.png)",
+    "Appam: placeholder image on visible surfaces (/assets/images/dishes/homestyle-kitchen-placeholder.png)",
+    "Apple Puree: placeholder image on visible surfaces (/assets/images/dishes/dinner-default.png)",
+    "Arepas: placeholder image on visible surfaces (/assets/images/snacks/snacks-default.png)",
+    "Bai: placeholder image on visible surfaces (/assets/images/dishes/soup-bowls.png)",
+    "Basanti Pulao: placeholder image on visible surfaces (/assets/images/dishes/homestyle-kitchen-placeholder.png)",
+    "Batata Vada: placeholder image on visible surfaces (/assets/images/dishes/homestyle-kitchen-placeholder.png)",
+    "Bibimbap Bowl: placeholder image on visible surfaces (/assets/images/dishes/homestyle-kitchen-placeholder.png)",
+    "Bread Pakora: placeholder image on visible surfaces (/assets/images/dishes/homestyle-kitchen-placeholder.png)",
+    "Broccoli Cheddar Soup: placeholder image on visible surfaces (/assets/images/collections/soups.webp)",
+    "Butter Chicken: placeholder image on visible surfaces (/assets/images/dishes/lunch-default.png)",
+    "Chaat: placeholder image on visible surfaces (/assets/images/dishes/dinner-default.png)",
+    "Chakli: placeholder image on visible surfaces (/assets/images/collections/festival-food.webp)",
+    "Chamthong: placeholder image on visible surfaces (/assets/images/dishes/soup-bowls.png)"
+  ],
+  "topImageReplacementPriorities": [
+    {
+      "title": "Aloo Potol Posto",
+      "slug": "aloo-potol-posto",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / Bengal",
+      "journeyRegions": [
+        "Bengal"
+      ]
+    },
+    {
+      "title": "Andhra Egg Fry",
+      "slug": "andhra-egg-fry",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / Andhra & Telangana",
+      "journeyRegions": [
+        "Andhra & Telangana"
+      ]
+    },
+    {
+      "title": "Appam",
+      "slug": "appam",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / Kerala",
+      "journeyRegions": [
+        "Kerala"
+      ]
+    },
+    {
+      "title": "Apple Puree",
+      "slug": "apple-puree",
+      "imageUrl": "/assets/images/dishes/dinner-default.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Family Favorites / Tiny Tummy Favorites",
+      "journeyRegions": [
+        "Global"
+      ]
+    },
+    {
+      "title": "Arepas",
+      "slug": "arepas",
+      "imageUrl": "/assets/images/snacks/snacks-default.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Global Bites / Global Street Food",
+      "journeyRegions": [
+        "Global"
+      ]
+    },
+    {
+      "title": "Bai",
+      "slug": "bai",
+      "imageUrl": "/assets/images/dishes/soup-bowls.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / Northeast",
+      "journeyRegions": [
+        "Northeast"
+      ]
+    },
+    {
+      "title": "Basanti Pulao",
+      "slug": "basanti-pulao",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Celebrations & Traditions / Festival Sweets",
+      "journeyRegions": [
+        "Bengal"
+      ]
+    },
+    {
+      "title": "Batata Vada",
+      "slug": "batata-vada",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / Maharashtra",
+      "journeyRegions": [
+        "Maharashtra"
+      ]
+    },
+    {
+      "title": "Bibimbap Bowl",
+      "slug": "bibimbap-bowl",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Global Bites / Global Bowls",
+      "journeyRegions": [
+        "Global"
+      ]
+    },
+    {
+      "title": "Bread Pakora",
+      "slug": "bread-pakora",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / North & West India",
+      "journeyRegions": [
+        "North India"
+      ]
+    },
+    {
+      "title": "Broccoli Cheddar Soup",
+      "slug": "broccoli-cheddar-soup",
+      "imageUrl": "/assets/images/collections/soups.webp",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Global Bites / Global Soups",
+      "journeyRegions": [
+        "Global"
+      ]
+    },
+    {
+      "title": "Butter Chicken",
+      "slug": "butter-chicken",
+      "imageUrl": "/assets/images/dishes/lunch-default.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / North & West India",
+      "journeyRegions": [
+        "North India"
+      ]
+    },
+    {
+      "title": "Chaat",
+      "slug": "chaat",
+      "imageUrl": "/assets/images/dishes/dinner-default.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Everyday Cooking / Tea Time Favourites",
+      "journeyRegions": [
+        "North India"
+      ]
+    },
+    {
+      "title": "Chakli",
+      "slug": "chakli",
+      "imageUrl": "/assets/images/collections/festival-food.webp",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Celebrations & Traditions / Festival Sweets",
+      "journeyRegions": [
+        "Maharashtra"
+      ]
+    },
+    {
+      "title": "Chamthong",
+      "slug": "chamthong",
+      "imageUrl": "/assets/images/dishes/soup-bowls.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / Northeast",
+      "journeyRegions": [
+        "Northeast"
+      ]
+    },
+    {
+      "title": "Chhanar Dalna",
+      "slug": "chhanar-dalna",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Celebrations & Traditions / Festival Sweets",
+      "journeyRegions": [
+        "Bengal"
+      ]
+    },
+    {
+      "title": "Chhurpi Soup",
+      "slug": "chhurpi-soup",
+      "imageUrl": "/assets/images/dishes/soup-bowls.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / Northeast",
+      "journeyRegions": [
+        "Northeast"
+      ]
+    },
+    {
+      "title": "Chicken Biryani",
+      "slug": "chicken-biryani",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Celebrations & Traditions / Festival Sweets",
+      "journeyRegions": [
+        "Andhra & Telangana"
+      ]
+    },
+    {
+      "title": "Chicken Egg Rice Bowl",
+      "slug": "chicken-egg-rice-bowl",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Global Bites / Global Bowls",
+      "journeyRegions": [
+        "Global"
+      ]
+    },
+    {
+      "title": "Cholar Dal",
+      "slug": "cholar-dal",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Celebrations & Traditions / Festival Sweets",
+      "journeyRegions": [
+        "Bengal"
+      ]
+    },
+    {
+      "title": "Chow Chow Bath",
+      "slug": "chow-chow-bath",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / Karnataka",
+      "journeyRegions": [
+        "Karnataka"
+      ]
+    },
+    {
+      "title": "Congress Kadlekai",
+      "slug": "congress-kadlekai",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Everyday Cooking / Tea Time Favourites",
+      "journeyRegions": [
+        "Karnataka"
+      ]
+    },
+    {
+      "title": "Coorg Pandi Curry",
+      "slug": "coorg-pandi-curry",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Celebrations & Traditions / Festival Sweets",
+      "journeyRegions": [
+        "Karnataka"
+      ]
+    },
+    {
+      "title": "Corn Paneer Bhurji Bowl",
+      "slug": "corn-paneer-bhurji-bowl",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / North & West India",
+      "journeyRegions": [
+        "North India"
+      ]
+    },
+    {
+      "title": "Corn Soup",
+      "slug": "corn-soup",
+      "imageUrl": "/assets/images/collections/soups.webp",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Global Bites / Global Soups",
+      "journeyRegions": [
+        "Global"
+      ]
+    },
+    {
+      "title": "Dal Roti",
+      "slug": "dal-roti",
+      "imageUrl": "/assets/images/dishes/lunch-default.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / North & West India",
+      "journeyRegions": [
+        "North India"
+      ]
+    },
+    {
+      "title": "Davangere Benne Dosa",
+      "slug": "davangere-benne-dosa",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / Karnataka",
+      "journeyRegions": [
+        "Karnataka"
+      ]
+    },
+    {
+      "title": "Dohneiiong",
+      "slug": "dohneiiong",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Regional Journeys / Northeast",
+      "journeyRegions": [
+        "Northeast"
+      ]
+    },
+    {
+      "title": "Edamame",
+      "slug": "edamame",
+      "imageUrl": "/assets/images/salads/salad-default.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Global Bites / Global Snacks",
+      "journeyRegions": [
+        "Global"
+      ]
+    },
+    {
+      "title": "Falafel Hummus Bowl",
+      "slug": "falafel-hummus-bowl",
+      "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+      "imageType": "placeholder",
+      "priorityScore": 113,
+      "collectionHome": "Global Bites / Global Bowls",
+      "journeyRegions": [
+        "Global"
+      ]
+    }
+  ]
+}

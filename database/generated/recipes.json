@@ -17771,6 +17771,10 @@
     "moodTags": [
       "comfort",
       "protein"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
     ]
   },
   {
@@ -28687,6 +28691,10 @@
       "comfort",
       "protein",
       "rainy"
+    ],
+    "mealTags": [
+      "lunch",
+      "dinner"
     ]
   },
   {
@@ -35537,6 +35545,9 @@
     "moodTags": [
       "rainy",
       "spicy"
+    ],
+    "mealTags": [
+      "snack"
     ]
   },
   {
@@ -86797,6 +86808,19 @@
       "cuisine": [
         "Bengali"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Chopped pistachios"
+      ]
     }
   },
   {
@@ -87006,6 +87030,19 @@
       "cuisine": [
         "Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Nuts"
+      ]
     }
   },
   {
@@ -87214,6 +87251,19 @@
       "subRegion": [],
       "cuisine": [
         "South Indian"
+      ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Filter coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Cashews"
       ]
     }
   },
@@ -87882,6 +87932,19 @@
       "cuisine": [
         "North Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Nuts"
+      ]
     }
   },
   {
@@ -88081,6 +88144,17 @@
       "cuisine": [
         "Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -88280,6 +88354,17 @@
       "cuisine": [
         "Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -88479,6 +88564,17 @@
       "cuisine": [
         "North Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -88674,6 +88770,17 @@
       "cuisine": [
         "Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -88879,6 +88986,17 @@
       "cuisine": [
         "Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -89078,6 +89196,17 @@
       "cuisine": [
         "Indian Fusion"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -89283,6 +89412,17 @@
       "cuisine": [
         "North Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -89687,6 +89827,17 @@
       "cuisine": [
         "Karnataka"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Filter coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -89882,6 +90033,17 @@
       "cuisine": [
         "North Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -90081,6 +90243,19 @@
       "cuisine": [
         "North Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Nuts"
+      ]
     }
   },
   {
@@ -90276,6 +90451,17 @@
       "cuisine": [
         "Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -90461,6 +90647,17 @@
       "cuisine": [
         "Bengali"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -90656,6 +90853,17 @@
       "cuisine": [
         "North Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -90861,6 +91069,17 @@
       "cuisine": [
         "North Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -91066,6 +91285,19 @@
       "cuisine": [
         "North Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Nuts"
+      ]
     }
   },
   {
@@ -91270,6 +91502,19 @@
       "subRegion": [],
       "cuisine": [
         "Rajasthani"
+      ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Nuts"
       ]
     }
   },
@@ -91481,6 +91726,19 @@
       ],
       "cuisine": [
         "Karnataka"
+      ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Filter coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Ghee"
       ]
     }
   },
@@ -91933,6 +92191,17 @@
       "cuisine": [
         "Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Nuts"
+      ]
     }
   },
   {
@@ -92137,6 +92406,17 @@
       "subRegion": [],
       "cuisine": [
         "Indian"
+      ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Nuts"
       ]
     }
   },
@@ -92588,6 +92868,19 @@
       "cuisine": [
         "Maharashtrian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Nuts"
+      ]
     }
   },
   {
@@ -92795,6 +93088,17 @@
       "cuisine": [
         "Maharashtrian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -92992,6 +93296,17 @@
       "cuisine": [
         "Maharashtrian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -93193,6 +93508,17 @@
       "cuisine": [
         "Maharashtrian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -93394,6 +93720,17 @@
       "cuisine": [
         "Karnataka"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Filter coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -94129,6 +94466,19 @@
       "cuisine": [
         "Karnataka"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Filter coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Ghee"
+      ]
     }
   },
   {
@@ -94337,6 +94687,19 @@
       "cuisine": [
         "Andhra"
       ]
+    },
+    "pairings": {
+      "sides": [
+        "Festival meal"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Mango Rice"
+      ],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -94547,6 +94910,22 @@
       "cuisine": [
         "South Indian"
       ]
+    },
+    "pairings": {
+      "sides": [
+        "Papad",
+        "Ugadi Pachadi"
+      ],
+      "chutneys": [],
+      "pickles": [
+        "Mango pickle"
+      ],
+      "drinks": [
+        "Neer Mor"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -95727,6 +96106,19 @@
       "cuisine": [
         "Hyderabadi"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Nuts"
+      ]
     }
   },
   {
@@ -95949,6 +96341,21 @@
       ],
       "cuisine": [
         "Hyderabadi"
+      ]
+    },
+    "pairings": {
+      "sides": [
+        "Onion salad"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [],
+      "roti": [
+        "Naan"
+      ],
+      "toppings": [
+        "Lemon wedges"
       ]
     }
   },
@@ -96173,6 +96580,21 @@
       "cuisine": [
         "Hyderabadi"
       ]
+    },
+    "pairings": {
+      "sides": [
+        "Raita"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Buttermilk"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Fried onions"
+      ]
     }
   },
   {
@@ -96382,6 +96804,19 @@
       "cuisine": [
         "Indian"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Nuts"
+      ]
     }
   },
   {
@@ -96588,6 +97023,21 @@
       "cuisine": [
         "Mughlai"
       ]
+    },
+    "pairings": {
+      "sides": [
+        "Onion salad"
+      ],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [],
+      "rice": [
+        "Steamed rice"
+      ],
+      "roti": [
+        "Naan"
+      ],
+      "toppings": []
     }
   },
   {
@@ -96788,6 +97238,19 @@
       ],
       "cuisine": [
         "Karnataka"
+      ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Filter coffee"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": [
+        "Ghee"
       ]
     }
   },
@@ -97229,6 +97692,17 @@
       "cuisine": [
         "Goan"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -97424,6 +97898,17 @@
       "cuisine": [
         "Goan"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -97610,6 +98095,17 @@
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
@@ -97805,6 +98301,17 @@
       "cuisine": [
         "Goan"
       ]
+    },
+    "pairings": {
+      "sides": [],
+      "chutneys": [],
+      "pickles": [],
+      "drinks": [
+        "Masala chai"
+      ],
+      "rice": [],
+      "roti": [],
+      "toppings": []
     }
   },
   {
