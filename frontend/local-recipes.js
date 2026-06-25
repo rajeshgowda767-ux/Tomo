@@ -1978,7 +1978,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Andhra",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/andhra-egg-fry.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -2165,7 +2165,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       ],
       "toppings": []
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/andhra-egg-fry.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Andhra & Telangana"
@@ -5718,8 +5718,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/chow-chow-bath.png",
+    "image_url": "/assets/images/dishes/chow-chow-bath.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
@@ -7142,8 +7142,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/congress-kadlekai.png",
+    "image_url": "/assets/images/dishes/congress-kadlekai.png",
     "recipeRole": "snack",
     "tags": [
       "snack",
@@ -14536,7 +14536,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Indo-Chinese",
     "dietType": "non-vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/batch3a-chilli-chicken.png",
+    "imageUrl": "/assets/images/dishes/chilli-chicken.png",
     "recipeRole": "main",
     "tags": [
       "dinner",
@@ -15178,7 +15178,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Bengal",
     "dietType": "non_vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/batch4-chingri-malai-curry.png",
+    "imageUrl": "/assets/images/dishes/chingri-malai-curry.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -15389,7 +15389,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "collection": "Festival Sweets"
     },
     "aliases": [],
-    "image_url": "/assets/images/dishes/batch4-chingri-malai-curry.png",
+    "image_url": "/assets/images/dishes/chingri-malai-curry.png",
     "hardExcludeMoods": [],
     "avoidIf": [],
     "tomoLine": "Cook prawns briefly so they stay tender."
@@ -92900,7 +92900,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/collections/festival-food.webp",
+    "imageUrl": "/assets/images/dishes/chakli.png",
     "recipeRole": "snack",
     "tags": [
       "festival-snack",
@@ -96376,7 +96376,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "non-vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/chicken-biryani.png",
     "recipeRole": "main",
     "tags": [
       "festival-meal",
@@ -96564,7 +96564,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     ],
     "dishFamily": "festival-meal",
     "updatedAt": "2026-06-18T00:00:00.000Z",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/chicken-biryani.png",
     "collectionHome": {
       "hub": "Celebrations & Traditions",
       "collection": "Festival Sweets"
@@ -98334,8 +98334,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "non-vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/coorg-pandi-curry.png",
+    "image_url": "/assets/images/dishes/coorg-pandi-curry.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -104456,8 +104456,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "non_vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/fish-curry.png",
-    "image_url": "/assets/images/dishes/fish-curry.png",
+    "imageUrl": "/assets/images/dishes/chepala-pulusu.png",
+    "image_url": "/assets/images/dishes/chepala-pulusu.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -112387,8 +112387,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/dosa-homestyle.png",
-    "image_url": "/assets/images/dishes/dosa-homestyle.png",
+    "imageUrl": "/assets/images/dishes/adai.png",
+    "image_url": "/assets/images/dishes/adai.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
@@ -116930,8 +116930,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/cholar-dal.png",
+    "image_url": "/assets/images/dishes/cholar-dal.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -117154,8 +117154,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/basanti-pulao.png",
+    "image_url": "/assets/images/dishes/basanti-pulao.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -119552,8 +119552,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "non_vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/chicken-curry.png",
-    "image_url": "/assets/images/dishes/chicken-curry.png",
+    "imageUrl": "/assets/images/dishes/chicken-kosha.png",
+    "image_url": "/assets/images/dishes/chicken-kosha.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -119776,8 +119776,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "non_vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/fish-curry.png",
-    "image_url": "/assets/images/dishes/fish-curry.png",
+    "imageUrl": "/assets/images/dishes/bhetki-paturi.png",
+    "image_url": "/assets/images/dishes/bhetki-paturi.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -120000,8 +120000,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "non_vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/batch4-chingri-malai-curry.png",
-    "image_url": "/assets/images/dishes/batch4-chingri-malai-curry.png",
+    "imageUrl": "/assets/images/dishes/daab-chingri.png",
+    "image_url": "/assets/images/dishes/daab-chingri.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -120428,8 +120428,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/aloo-potol-posto.png",
+    "image_url": "/assets/images/dishes/aloo-potol-posto.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -120863,8 +120863,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/chhanar-dalna.png",
+    "image_url": "/assets/images/dishes/chhanar-dalna.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -122392,7 +122392,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Maharashtrian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/batata-vada.png",
     "image": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
     "recipeRole": "snack",
     "tags": [
@@ -131146,7 +131146,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Northeast Indian",
     "dietType": "vegetarian",
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/batch3a-thukpa.png",
+    "imageUrl": "/assets/images/dishes/arunachal-thukpa.png",
     "image": "/assets/images/dishes/batch3a-thukpa.png",
     "recipeRole": "soup",
     "tags": [
