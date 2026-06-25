@@ -6202,8 +6202,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/collections/soups.webp",
-    "image_url": "/assets/images/collections/soups.webp",
+    "imageUrl": "/assets/images/dishes/udupi-sambar.png",
+    "image_url": "/assets/images/dishes/udupi-sambar.png",
     "recipeRole": "soup",
     "tags": [
       "lunch",
@@ -14112,7 +14112,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Mangalorean",
     "dietType": "non-vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "imageUrl": "/assets/images/dishes/chicken-sukka.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -46996,7 +46996,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Mangalorean",
     "dietType": "non-vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "imageUrl": "/assets/images/dishes/prawn-ghee-roast.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -47199,7 +47199,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Mangalorean",
     "dietType": "non-vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/lunch-default.png",
+    "imageUrl": "/assets/images/dishes/prawn-sukka.png",
     "recipeRole": "main",
     "tags": [
       "dinner",
@@ -50649,7 +50649,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "Karnataka",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/set-dosa.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
@@ -50832,7 +50832,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "dietaryTags": [
       "vegetarian"
     ],
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/set-dosa.png",
     "collectionHome": {
       "hub": "Regional Journeys",
       "collection": "Karnataka"
@@ -74296,7 +74296,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "easy",
-    "imageUrl": "/assets/images/collections/soups.webp",
+    "imageUrl": "/assets/images/dishes/mysore-rasam.png",
     "recipeRole": "soup",
     "tags": [
       "soup",
@@ -98052,8 +98052,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/kadambuttu.png",
+    "image_url": "/assets/images/dishes/kadambuttu.png",
     "recipeRole": "main",
     "tags": [
       "lunch",
@@ -98904,8 +98904,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/kotte-kadubu.png",
+    "image_url": "/assets/images/dishes/kotte-kadubu.png",
     "recipeRole": "main",
     "tags": [
       "breakfast",
@@ -99103,8 +99103,8 @@ window.COOKBUDDY_LOCAL_RECIPES = [
       "vegetarian"
     ],
     "difficulty": "medium",
-    "imageUrl": "/assets/images/collections/soups.webp",
-    "image_url": "/assets/images/collections/soups.webp",
+    "imageUrl": "/assets/images/dishes/tambuli.png",
+    "image_url": "/assets/images/dishes/tambuli.png",
     "recipeRole": "soup",
     "tags": [
       "lunch",
