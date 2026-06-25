@@ -131,6 +131,66 @@ Only `APPROVED` images may be copied into `frontend/assets/images/dishes/`.
    npm run audit:banter
    ```
 
+## Automated Importer Workflow
+
+Use the importer after candidate images have already been visually reviewed and approved.
+
+The importer automates the safe mechanical steps:
+
+- read approved image files from a review folder
+- match filenames to recipe slugs
+- copy importable files to `frontend/assets/images/dishes/` using normalized `recipe-slug.ext` filenames
+- update `imageUrl` / mirrored image fields in:
+  - `database/generated/recipes.json`
+  - `frontend/local-recipes.js`
+- write an import report in `notes/backlog/`
+- run validation after a real import
+
+Dry-run first:
+
+```bash
+node scripts/import_recipe_images.js --batch=karnataka-final-wave-2 --review-dir=frontend/assets/images/_generated-review/karnataka-final-wave-2 --dry-run
+```
+
+Real import:
+
+```bash
+node scripts/import_recipe_images.js --batch=karnataka-final-wave-2 --review-dir=frontend/assets/images/_generated-review/karnataka-final-wave-2
+```
+
+Expected report:
+
+```text
+notes/backlog/karnataka-final-wave-2-image-import-report.md
+```
+
+Safety rules:
+
+- The importer matches image filename slug to recipe slug and writes the approved file as `recipe-slug.ext`.
+- It requires exactly one matching backend recipe and exactly one matching frontend recipe.
+- It skips backend/frontend image mismatches.
+- It skips missing recipe matches.
+- It skips duplicate slugs in the review folder.
+- It skips recipes already using dedicated/non-generic imagery unless `--force` is passed.
+- It skips destination overwrites unless `--force` is passed.
+- It does not modify recipe metadata, collections, recommendation logic, or Global Bites.
+- It does not delete review images.
+
+Use `--force` only when a human has explicitly approved replacing an existing dedicated image or overwriting an existing destination file.
+
+Example force import:
+
+```bash
+node scripts/import_recipe_images.js --batch=karnataka-replacement --review-dir=frontend/assets/images/_generated-review/karnataka-replacement --force
+```
+
+After a non-dry-run import with imported files, the importer automatically runs:
+
+```bash
+node scripts/validate_recipe_data.js
+npm run audit:banter
+```
+
 ## Validation requirements
 
 For every approved recipe:
@@ -173,4 +233,3 @@ Report must include:
 - Prefer holding a candidate over polluting recipe data.
 - Keep generated review files separate from approved dish images.
 - Keep original review files until the batch is accepted or archived.
-
