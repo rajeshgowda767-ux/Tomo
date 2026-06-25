@@ -8549,7 +8549,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
     "cuisine": "South Indian",
     "dietType": "vegetarian",
     "difficulty": "easy",
-    "imageUrl": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "imageUrl": "/assets/images/dishes/bonda.png",
     "recipeRole": "snack",
     "tags": [
       "snacks",
@@ -8702,7 +8702,7 @@ window.COOKBUDDY_LOCAL_RECIPES = [
         "Masala chai"
       ]
     },
-    "image_url": "/assets/images/dishes/homestyle-kitchen-placeholder.png",
+    "image_url": "/assets/images/dishes/bonda.png",
     "collectionHome": {
       "hub": "Everyday Cooking",
       "collection": "Tea Time Favourites"
