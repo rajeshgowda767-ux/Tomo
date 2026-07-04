@@ -11,6 +11,7 @@ const DISH_DIR = 'frontend/assets/images/dishes';
 const DEFAULT_REVIEW_DIR = 'frontend/assets/images/_generated-review';
 const REPORT_DIR = 'notes/backlog';
 const P0_IMAGE_PLAN = 'notes/backlog/beta-3-p0-image-production-plan.md';
+const P0_IMAGE_BRIEFS = 'notes/backlog/p0-image-generation-briefs.json';
 const CATALOG_HEALTH_AUDIT = 'notes/backlog/beta-3-catalog-health-audit.json';
 const IMAGE_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.webp']);
 
@@ -55,7 +56,16 @@ function recipeTitle(recipe) {
 }
 
 function recipeSlug(recipe) {
-  return slugify(recipe.slug || recipeTitle(recipe));
+  return slugify(recipe.slug || recipe.sourceId || recipe.id || recipeTitle(recipe));
+}
+
+function recipeMatchKeys(recipe) {
+  return [
+    recipe.slug,
+    recipe.sourceId,
+    recipe.id,
+    recipeTitle(recipe),
+  ].map(slugify).filter(Boolean);
 }
 
 function recipeImage(recipe) {
@@ -186,6 +196,41 @@ function loadCatalogHealthDebtImages() {
   return images;
 }
 
+function loadBriefMappings(batchName) {
+  const briefsPath = relativeFromRoot(P0_IMAGE_BRIEFS);
+  const byFileName = new Map();
+  const bySlug = new Map();
+  if (!fs.existsSync(briefsPath)) return { byFileName, bySlug };
+
+  try {
+    const data = JSON.parse(fs.readFileSync(briefsPath, 'utf8'));
+    const batches = Array.isArray(data.batches) ? data.batches : [];
+    batches.forEach((batch) => {
+      const items = Array.isArray(batch.items) ? batch.items : [];
+      items.forEach((item) => {
+        const recipeSlugValue = slugify(item.recipeSlug || item.slug || item.sourceId || item.id || item.title);
+        const destinationPath = item.intendedDestinationImagePath || item.destinationImagePath || item.destination || '';
+        const destinationFile = path.basename(destinationPath);
+        const destinationSlug = slugify(path.basename(destinationFile, path.extname(destinationFile)));
+        const mapping = {
+          batch: batch.id || '',
+          title: item.title || '',
+          recipeSlug: recipeSlugValue,
+          fileName: destinationFile,
+          fileSlug: destinationSlug,
+        };
+        if (!recipeSlugValue) return;
+        if (destinationFile) byFileName.set(destinationFile, mapping);
+        if (destinationSlug) bySlug.set(destinationSlug, mapping);
+      });
+    });
+  } catch (error) {
+    console.warn(`Warning: could not read ${P0_IMAGE_BRIEFS}: ${error.message}`);
+  }
+
+  return { byFileName, bySlug };
+}
+
 function imageDebtClassification(imageUrl, usageCounts, catalogHealthDebtImages, isP0DebtRecipe) {
   const image = String(imageUrl || '');
   const usageCount = usageCounts.get(image) || 0;
@@ -268,7 +313,8 @@ function groupedStatusCounts(rows) {
 }
 
 function findMatches(recipes, slug) {
-  return recipes.filter((recipe) => recipeSlug(recipe) === slug);
+  const normalized = slugify(slug);
+  return recipes.filter((recipe) => recipeMatchKeys(recipe).includes(normalized));
 }
 
 function setRecipeImage(recipe, nextImage) {
@@ -453,6 +499,7 @@ function main() {
   const backendUsage = imageUsageCounts(catalogs.backend);
   const p0ImageDebtSlugs = loadP0ImageDebtSlugs();
   const catalogHealthDebtImages = loadCatalogHealthDebtImages();
+  const briefMappings = loadBriefMappings(batchName);
   const files = reviewFiles(reviewDir);
   const slugCounts = files.reduce((counts, file) => {
     counts.set(file.slug, (counts.get(file.slug) || 0) + 1);
@@ -460,9 +507,12 @@ function main() {
   }, new Map());
 
   const rows = files.map((file) => {
-    const backendMatches = findMatches(catalogs.backend, file.slug);
-    const frontendMatches = findMatches(catalogs.frontend.recipes, file.slug);
-    const finalFileName = `${file.slug}${file.extension}`;
+    const briefMapping = briefMappings.byFileName.get(file.name) || briefMappings.bySlug.get(file.slug) || null;
+    const recipeLookupSlug = briefMapping?.recipeSlug || file.slug;
+    const finalFileName = briefMapping?.fileName || `${file.slug}${file.extension}`;
+    const finalSlug = slugify(path.basename(finalFileName, path.extname(finalFileName)));
+    const backendMatches = findMatches(catalogs.backend, recipeLookupSlug);
+    const frontendMatches = findMatches(catalogs.frontend.recipes, recipeLookupSlug);
     const destinationRelative = path.join(DISH_DIR, finalFileName);
     const destinationAbsolute = relativeFromRoot(destinationRelative);
     const nextImage = `/assets/images/dishes/${finalFileName}`;
@@ -470,7 +520,11 @@ function main() {
 
     const row = {
       file: file.relativePath,
-      slug: file.slug,
+      slug: recipeLookupSlug,
+      fileSlug: file.slug,
+      finalSlug,
+      briefTitle: briefMapping?.title || '',
+      briefBatch: briefMapping?.batch || '',
       finalFileName,
       sourceAbsolute: file.absolutePath,
       destinationRelative,
@@ -507,7 +561,7 @@ function main() {
     row.beforeImage = recipeImage(backendRecipe);
     row.currentFrontendImage = recipeImage(frontendRecipe);
     row.currentImageUsage = backendUsage.get(row.beforeImage) || 0;
-    row.isP0DebtRecipe = p0ImageDebtSlugs.has(file.slug);
+    row.isP0DebtRecipe = p0ImageDebtSlugs.has(recipeLookupSlug) || p0ImageDebtSlugs.has(file.slug);
 
     if (row.beforeImage !== row.currentFrontendImage) {
       row.status = 'SKIP_BACKEND_FRONTEND_MISMATCH';

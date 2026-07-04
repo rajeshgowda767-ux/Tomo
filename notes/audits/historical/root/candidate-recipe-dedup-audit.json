@@ -1,0 +1,1911 @@
+{
+  "generatedAt": "2026-06-10T18:21:56.480Z",
+  "databasePath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/database/generated/recipes.json",
+  "totalDatabaseRecipes": 148,
+  "candidateCount": 20,
+  "summary": {
+    "SAFE_TO_CREATE": 17,
+    "ALREADY_EXISTS": 0,
+    "MERGE_AS_ALIAS": 3
+  },
+  "mutationPerformed": false,
+  "note": "Audit only. No recipes or aliases were created or modified.",
+  "SAFE_TO_CREATE": [
+    {
+      "name": "Peas Pulao",
+      "coreIngredients": [
+        "rice",
+        "green peas"
+      ],
+      "dishFamily": "rice-meal",
+      "cuisine": "Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Veg Pulao, Chicken Pulao, and Paneer Pulao exist, but none represents green-pea pulao as a core ingredient identity.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "pantry-paneer-pulao",
+          "sourceId": "pantry-paneer-pulao",
+          "title": "Paneer Pulao",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "paneer"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 9
+        },
+        {
+          "id": "pantry-veg-pulao",
+          "sourceId": "pantry-veg-pulao",
+          "title": "Veg Pulao",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "potato"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 9
+        },
+        {
+          "id": "bfdc43f0-6137-5901-b78f-68a18b7b38df",
+          "sourceId": "chicken-pulao-dinner",
+          "title": "Chicken Pulao",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "chicken"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "ce5bd18e-6ff0-5007-8a5e-0bd8ca569258",
+          "sourceId": "biryani-festival",
+          "title": "Biryani",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "chicken"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 5
+        },
+        {
+          "id": "686a5460-0fcc-58ed-a823-56faf4d918a4",
+          "sourceId": "chicken-rice-dinner",
+          "title": "Chicken Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "rice"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 5
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Mushroom Rice",
+      "coreIngredients": [
+        "rice",
+        "mushroom"
+      ],
+      "dishFamily": "rice-meal",
+      "cuisine": "Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "The catalog has mushroom dishes and rice dishes, but no rice-and-mushroom recipe.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "686a5460-0fcc-58ed-a823-56faf4d918a4",
+          "sourceId": "chicken-rice-dinner",
+          "title": "Chicken Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "rice"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "095af1fd-982c-500f-96c5-a360f48ec7b3",
+          "sourceId": "coconut-rice",
+          "title": "Coconut Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "coconut"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "41903499-9058-5568-bc90-781e9309d01d",
+          "sourceId": "egg-curry-rice-lunch",
+          "title": "Egg Curry Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "rice"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "cb7a2e7a-d335-5ccd-86ef-fc429ce8faea",
+          "sourceId": "fish-curry-rice-lunch",
+          "title": "Fish Curry Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "fish",
+            "rice"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "52da8b63-1678-5f99-be66-7f288f1fdf41",
+          "sourceId": "lemon-rice-lunch",
+          "title": "Lemon Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "lemon"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Mutton Pulao",
+      "coreIngredients": [
+        "rice",
+        "mutton"
+      ],
+      "dishFamily": "rice-meal",
+      "cuisine": "Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Gongura Mutton and other pulaos exist, but no mutton pulao or equivalent rice-and-mutton preparation exists.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "bfdc43f0-6137-5901-b78f-68a18b7b38df",
+          "sourceId": "chicken-pulao-dinner",
+          "title": "Chicken Pulao",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "chicken"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-paneer-pulao",
+          "sourceId": "pantry-paneer-pulao",
+          "title": "Paneer Pulao",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "paneer"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-veg-pulao",
+          "sourceId": "pantry-veg-pulao",
+          "title": "Veg Pulao",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "potato"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "ce5bd18e-6ff0-5007-8a5e-0bd8ca569258",
+          "sourceId": "biryani-festival",
+          "title": "Biryani",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "chicken"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 5
+        },
+        {
+          "id": "686a5460-0fcc-58ed-a823-56faf4d918a4",
+          "sourceId": "chicken-rice-dinner",
+          "title": "Chicken Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "rice"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 5
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Palak Paratha",
+      "coreIngredients": [
+        "wheat flour",
+        "spinach"
+      ],
+      "dishFamily": "paratha",
+      "cuisine": "North Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Palak Paneer and several parathas exist, but no spinach paratha is represented.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "7f5cea1c-ca9d-5adb-a77b-ddab3402bdee",
+          "sourceId": "aloo-paratha-breakfast",
+          "title": "Aloo Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "potato"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-egg-paratha",
+          "sourceId": "pantry-egg-paratha",
+          "title": "Egg Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "egg"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "0166c0c5-a7fd-57a6-8eba-fb7e19aae86f",
+          "sourceId": "methi-paratha-breakfast",
+          "title": "Methi Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "methi"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-onion-paratha",
+          "sourceId": "pantry-onion-paratha",
+          "title": "Onion Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "onion"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "5f7465e8-6818-5d67-b192-4ae22346f1e7",
+          "sourceId": "paneer-paratha-breakfast",
+          "title": "Paneer Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "paneer"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Mooli Paratha",
+      "coreIngredients": [
+        "wheat flour",
+        "radish"
+      ],
+      "dishFamily": "paratha",
+      "cuisine": "North Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Generic Stuffed Paratha is potato-based; no radish-centered paratha exists.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "7f5cea1c-ca9d-5adb-a77b-ddab3402bdee",
+          "sourceId": "aloo-paratha-breakfast",
+          "title": "Aloo Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "potato"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-egg-paratha",
+          "sourceId": "pantry-egg-paratha",
+          "title": "Egg Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "egg"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "0166c0c5-a7fd-57a6-8eba-fb7e19aae86f",
+          "sourceId": "methi-paratha-breakfast",
+          "title": "Methi Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "methi"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-onion-paratha",
+          "sourceId": "pantry-onion-paratha",
+          "title": "Onion Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "onion"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "5f7465e8-6818-5d67-b192-4ae22346f1e7",
+          "sourceId": "paneer-paratha-breakfast",
+          "title": "Paneer Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "paneer"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Cheese Paratha",
+      "coreIngredients": [
+        "wheat flour",
+        "cheese"
+      ],
+      "dishFamily": "paratha",
+      "cuisine": "Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Cheese Omelette exists, but no cheese-filled paratha or equivalent flatbread exists.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "7f5cea1c-ca9d-5adb-a77b-ddab3402bdee",
+          "sourceId": "aloo-paratha-breakfast",
+          "title": "Aloo Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "potato"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-egg-paratha",
+          "sourceId": "pantry-egg-paratha",
+          "title": "Egg Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "egg"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "0166c0c5-a7fd-57a6-8eba-fb7e19aae86f",
+          "sourceId": "methi-paratha-breakfast",
+          "title": "Methi Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "methi"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-onion-paratha",
+          "sourceId": "pantry-onion-paratha",
+          "title": "Onion Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "onion"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "5f7465e8-6818-5d67-b192-4ae22346f1e7",
+          "sourceId": "paneer-paratha-breakfast",
+          "title": "Paneer Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "paneer"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Sweet Holige",
+      "coreIngredients": [
+        "wheat flour",
+        "jaggery",
+        "chana dal"
+      ],
+      "dishFamily": "sweet-flatbread",
+      "cuisine": "Karnataka / South Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "No Holige, Obbattu, Puran Poli, or equivalent jaggery-lentil stuffed flatbread exists.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "5680a04f-284b-5bc1-a0b4-27b967733aa7",
+          "sourceId": "sweet-pongal-festival",
+          "title": "Sweet Pongal",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "moong dal"
+          ],
+          "dishFamily": "rice-dal",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        },
+        {
+          "id": "7f5cea1c-ca9d-5adb-a77b-ddab3402bdee",
+          "sourceId": "aloo-paratha-breakfast",
+          "title": "Aloo Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "potato"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 3
+        },
+        {
+          "id": "9904ca6a-c778-5c30-bb05-0f444ac5c5d7",
+          "sourceId": "chaat-snack",
+          "title": "Chaat",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "potato",
+            "wheat flour"
+          ],
+          "dishFamily": "wheat flour",
+          "cuisine": "Indian",
+          "comparisonScore": 3
+        },
+        {
+          "id": "b09b9104-29fd-56d9-b515-00d4396492dc",
+          "sourceId": "dal-roti-lunch",
+          "title": "Dal Roti",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "toor dal",
+            "wheat flour"
+          ],
+          "dishFamily": "wheat flour",
+          "cuisine": "Indian",
+          "comparisonScore": 3
+        },
+        {
+          "id": "pantry-egg-paratha",
+          "sourceId": "pantry-egg-paratha",
+          "title": "Egg Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "egg"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 3
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Cheese Dosa",
+      "coreIngredients": [
+        "dosa batter",
+        "cheese"
+      ],
+      "dishFamily": "dosa",
+      "cuisine": "South Indian / Fusion",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Several dosa variants exist, but none has cheese as a core ingredient.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "pantry-egg-dosa",
+          "sourceId": "pantry-egg-dosa",
+          "title": "Egg Dosa",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "dosa batter",
+            "egg"
+          ],
+          "dishFamily": "dosa",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-masala-dosa",
+          "sourceId": "pantry-masala-dosa",
+          "title": "Masala Dosa",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "dosa batter",
+            "potato"
+          ],
+          "dishFamily": "dosa",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-onion-dosa",
+          "sourceId": "pantry-onion-dosa",
+          "title": "Onion Dosa",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "dosa batter",
+            "onion"
+          ],
+          "dishFamily": "dosa",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-paneer-dosa",
+          "sourceId": "pantry-paneer-dosa",
+          "title": "Paneer Dosa",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "dosa batter",
+            "paneer"
+          ],
+          "dishFamily": "dosa",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-cheese-omelette",
+          "sourceId": "pantry-cheese-omelette",
+          "title": "Cheese Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "cheese"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Cheese Uttapam",
+      "coreIngredients": [
+        "idli batter",
+        "cheese"
+      ],
+      "dishFamily": "uttapam",
+      "cuisine": "South Indian / Fusion",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Onion, Tomato, and Vegetable Uttapam exist, but no cheese uttapam exists.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "pantry-onion-uttapam",
+          "sourceId": "pantry-onion-uttapam",
+          "title": "Onion Uttapam",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "idli batter",
+            "onion"
+          ],
+          "dishFamily": "uttapam",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-tomato-uttapam",
+          "sourceId": "pantry-tomato-uttapam",
+          "title": "Tomato Uttapam",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "idli batter",
+            "tomato"
+          ],
+          "dishFamily": "uttapam",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-vegetable-uttapam",
+          "sourceId": "pantry-vegetable-uttapam",
+          "title": "Vegetable Uttapam",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "idli batter",
+            "vegetable mix"
+          ],
+          "dishFamily": "uttapam",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-cheese-omelette",
+          "sourceId": "pantry-cheese-omelette",
+          "title": "Cheese Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "cheese"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        },
+        {
+          "id": "48e908cd-ad9d-5c8c-8496-83f522dca7d6",
+          "sourceId": "andhra-podi-idli",
+          "title": "Andhra Podi Idli",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "idli batter",
+            "gunpowder"
+          ],
+          "dishFamily": "idli",
+          "cuisine": "Indian",
+          "comparisonScore": 3
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Paneer Mushroom Masala",
+      "coreIngredients": [
+        "paneer",
+        "mushroom"
+      ],
+      "dishFamily": "paneer-curry",
+      "cuisine": "North Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Paneer curries and Chilli Mushroom exist separately; no recipe combines paneer and mushroom as core ingredients.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "283fb5a2-8774-5aca-b3f2-30d64579bc2f",
+          "sourceId": "paneer-tikka-masala",
+          "title": "Paneer Tikka Masala",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "paneer",
+            "tomato"
+          ],
+          "dishFamily": "paneer-curry",
+          "cuisine": "Indian",
+          "comparisonScore": 7
+        },
+        {
+          "id": "c57d4242-2920-566e-a41e-dee284fec172",
+          "sourceId": "chilli-paneer",
+          "title": "Chilli Paneer",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "paneer",
+            "capsicum"
+          ],
+          "dishFamily": "paneer-curry",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-kadai-paneer",
+          "sourceId": "pantry-kadai-paneer",
+          "title": "Kadai Paneer",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "paneer",
+            "capsicum"
+          ],
+          "dishFamily": "paneer-curry",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-matar-paneer",
+          "sourceId": "pantry-matar-paneer",
+          "title": "Matar Paneer",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "paneer",
+            "green peas"
+          ],
+          "dishFamily": "paneer-curry",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "3d2cf73e-481d-5561-9873-4420c5c4c895",
+          "sourceId": "palak-paneer-lunch",
+          "title": "Palak Paneer",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "paneer",
+            "spinach"
+          ],
+          "dishFamily": "paneer-curry",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Onion Omelette",
+      "coreIngredients": [
+        "egg",
+        "onion"
+      ],
+      "dishFamily": "omelette",
+      "cuisine": "Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Existing omelettes use bread, cheese, capsicum, or mushroom as their second core ingredient; onion omelette is not represented.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "c6804fce-a3d7-556d-ab31-43c484701460",
+          "sourceId": "bread-omelette-breakfast",
+          "title": "Bread Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "bread"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 9
+        },
+        {
+          "id": "pantry-cheese-omelette",
+          "sourceId": "pantry-cheese-omelette",
+          "title": "Cheese Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "cheese"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 9
+        },
+        {
+          "id": "pantry-masala-omelette",
+          "sourceId": "pantry-masala-omelette",
+          "title": "Masala Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "capsicum"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 9
+        },
+        {
+          "id": "pantry-mushroom-omelette",
+          "sourceId": "pantry-mushroom-omelette",
+          "title": "Mushroom Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "mushroom"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 9
+        },
+        {
+          "id": "86c21ea4-cfdd-5212-9b78-0c53ea1d88c7",
+          "sourceId": "andhra-egg-fry",
+          "title": "Andhra Egg Fry",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "chilli"
+          ],
+          "dishFamily": "egg",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Tomato Omelette",
+      "coreIngredients": [
+        "egg",
+        "tomato"
+      ],
+      "dishFamily": "omelette",
+      "cuisine": "Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "No egg-and-tomato omelette exists. Tomato Rice and Tomato Uttapam are different dish families.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "pantry-masala-omelette",
+          "sourceId": "pantry-masala-omelette",
+          "title": "Masala Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "capsicum"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 9
+        },
+        {
+          "id": "c6804fce-a3d7-556d-ab31-43c484701460",
+          "sourceId": "bread-omelette-breakfast",
+          "title": "Bread Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "bread"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-cheese-omelette",
+          "sourceId": "pantry-cheese-omelette",
+          "title": "Cheese Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "cheese"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "0dcb753b-69b0-544f-8ff8-cec59cc10601",
+          "sourceId": "egg-bhurji-dinner",
+          "title": "Egg Bhurji",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "onion"
+          ],
+          "dishFamily": "egg",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "1b1433fd-3930-5976-b740-44d5de04a5d5",
+          "sourceId": "egg-curry",
+          "title": "Egg Curry",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "onion"
+          ],
+          "dishFamily": "egg",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Spanish Omelette",
+      "coreIngredients": [
+        "egg",
+        "potato"
+      ],
+      "dishFamily": "omelette",
+      "cuisine": "Spanish",
+      "status": "SAFE_TO_CREATE",
+      "reason": "No potato-and-egg tortilla/Spanish omelette exists; existing omelettes have different core ingredients and cuisine intent.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "c6804fce-a3d7-556d-ab31-43c484701460",
+          "sourceId": "bread-omelette-breakfast",
+          "title": "Bread Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "bread"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-cheese-omelette",
+          "sourceId": "pantry-cheese-omelette",
+          "title": "Cheese Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "cheese"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-masala-omelette",
+          "sourceId": "pantry-masala-omelette",
+          "title": "Masala Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "capsicum"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "pantry-mushroom-omelette",
+          "sourceId": "pantry-mushroom-omelette",
+          "title": "Mushroom Omelette",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "mushroom"
+          ],
+          "dishFamily": "omelette",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "7f5cea1c-ca9d-5adb-a77b-ddab3402bdee",
+          "sourceId": "aloo-paratha-breakfast",
+          "title": "Aloo Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "potato"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 3
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Chicken Potato Curry",
+      "coreIngredients": [
+        "chicken",
+        "potato"
+      ],
+      "dishFamily": "chicken-curry",
+      "cuisine": "Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Chicken Curry exists, but potato is not represented in its core or optional ingredients; the candidate has a distinct pantry and recipe identity.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "eac23e09-f8ae-56e9-b0cf-6451426f8a62",
+          "sourceId": "andhra-chicken-curry",
+          "title": "Andhra Chicken Curry",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "onion"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 5
+        },
+        {
+          "id": "45290fa8-aa46-559c-9ff6-24066c1e6302",
+          "sourceId": "chicken-curry-dinner",
+          "title": "Chicken Curry",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "tomato"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 5
+        },
+        {
+          "id": "99e58cc9-52dc-5490-b0bd-cb2d27bef319",
+          "sourceId": "butter-chicken-lunch",
+          "title": "Butter Chicken",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "tomato"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        },
+        {
+          "id": "fb35172d-555d-5969-896f-102273dae010",
+          "sourceId": "chicken-555",
+          "title": "Chicken 555",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "chilli"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        },
+        {
+          "id": "0d715835-2f42-5ac9-8b5c-0d83bfad2f2b",
+          "sourceId": "chicken-65",
+          "title": "Chicken 65",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "curd"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Chicken Mushroom Stir Fry",
+      "coreIngredients": [
+        "chicken",
+        "mushroom"
+      ],
+      "dishFamily": "stir-fry",
+      "cuisine": "Asian / Indo-Chinese",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Chicken and mushroom recipes exist separately, but no chicken-mushroom stir fry or equivalent preparation exists.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "95752df9-b6a6-53f3-a173-ec190ec46108",
+          "sourceId": "guntur-chicken-fry",
+          "title": "Guntur Chicken Fry",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "guntur chilli"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Andhra",
+          "comparisonScore": 5
+        },
+        {
+          "id": "eac23e09-f8ae-56e9-b0cf-6451426f8a62",
+          "sourceId": "andhra-chicken-curry",
+          "title": "Andhra Chicken Curry",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "onion"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        },
+        {
+          "id": "99e58cc9-52dc-5490-b0bd-cb2d27bef319",
+          "sourceId": "butter-chicken-lunch",
+          "title": "Butter Chicken",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "tomato"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        },
+        {
+          "id": "fb35172d-555d-5969-896f-102273dae010",
+          "sourceId": "chicken-555",
+          "title": "Chicken 555",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "chilli"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        },
+        {
+          "id": "0d715835-2f42-5ac9-8b5c-0d83bfad2f2b",
+          "sourceId": "chicken-65",
+          "title": "Chicken 65",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "curd"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Batata Poha",
+      "coreIngredients": [
+        "poha",
+        "potato"
+      ],
+      "dishFamily": "poha",
+      "cuisine": "Maharashtrian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Existing Poha is onion/peanut-centered and does not contain potato. Batata Poha is a distinct recognized variant, not merely a synonym.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "bc627d5d-b17d-5625-bb55-77ee49ba8b6c",
+          "sourceId": "poha-breakfast",
+          "title": "Poha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "poha",
+            "onion"
+          ],
+          "dishFamily": "poha",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "cb7e1bda-4c58-563b-bcd3-3dde4ce33b3f",
+          "sourceId": "avalakki-breakfast",
+          "title": "Avalakki",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "poha",
+            "onion"
+          ],
+          "dishFamily": "poha",
+          "cuisine": "Indian",
+          "comparisonScore": 5
+        },
+        {
+          "id": "7f5cea1c-ca9d-5adb-a77b-ddab3402bdee",
+          "sourceId": "aloo-paratha-breakfast",
+          "title": "Aloo Paratha",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "wheat flour",
+            "potato"
+          ],
+          "dishFamily": "paratha",
+          "cuisine": "Indian",
+          "comparisonScore": 3
+        },
+        {
+          "id": "9992bcd8-0abd-511b-ba21-e50fb04f5a9a",
+          "sourceId": "bonda-snack",
+          "title": "Bonda",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "potato",
+            "besan"
+          ],
+          "dishFamily": "potato",
+          "cuisine": "Indian",
+          "comparisonScore": 3
+        },
+        {
+          "id": "9904ca6a-c778-5c30-bb05-0f444ac5c5d7",
+          "sourceId": "chaat-snack",
+          "title": "Chaat",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "potato",
+            "wheat flour"
+          ],
+          "dishFamily": "wheat flour",
+          "cuisine": "Indian",
+          "comparisonScore": 3
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Sweet Rice",
+      "coreIngredients": [
+        "rice",
+        "jaggery"
+      ],
+      "dishFamily": "sweet-rice",
+      "cuisine": "Indian",
+      "status": "SAFE_TO_CREATE",
+      "reason": "Sweet Pongal uses rice and moong dal and is not semantically equivalent; no jaggery sweet-rice recipe exists.",
+      "exactNameMatch": null,
+      "matchedRecipe": null,
+      "relatedRecipes": [
+        {
+          "id": "5680a04f-284b-5bc1-a0b4-27b967733aa7",
+          "sourceId": "sweet-pongal-festival",
+          "title": "Sweet Pongal",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "moong dal"
+          ],
+          "dishFamily": "rice-dal",
+          "cuisine": "Indian",
+          "comparisonScore": 7
+        },
+        {
+          "id": "pantry-chicken-fried-rice",
+          "sourceId": "pantry-chicken-fried-rice",
+          "title": "Chicken Fried Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "chicken"
+          ],
+          "dishFamily": "fried-rice",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        },
+        {
+          "id": "686a5460-0fcc-58ed-a823-56faf4d918a4",
+          "sourceId": "chicken-rice-dinner",
+          "title": "Chicken Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "rice"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        },
+        {
+          "id": "095af1fd-982c-500f-96c5-a360f48ec7b3",
+          "sourceId": "coconut-rice",
+          "title": "Coconut Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "coconut"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        },
+        {
+          "id": "1f0252b6-fd53-56f8-9281-bbd2cede4830",
+          "sourceId": "curd-rice-lunch",
+          "title": "Curd Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "curd"
+          ],
+          "dishFamily": "rice-dal",
+          "cuisine": "Indian",
+          "comparisonScore": 4
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    }
+  ],
+  "ALREADY_EXISTS": [],
+  "MERGE_AS_ALIAS": [
+    {
+      "name": "Chicken Fry",
+      "coreIngredients": [
+        "chicken",
+        "chilli"
+      ],
+      "dishFamily": "chicken",
+      "cuisine": "Indian",
+      "status": "MERGE_AS_ALIAS",
+      "match": "Andhra Kodi Vepudu",
+      "aliases": [
+        "Chicken Fry",
+        "Andhra Chicken Fry"
+      ],
+      "reason": "Andhra Kodi Vepudu is an existing dry-fried chicken preparation with matching chicken/chilli core ingredients and the same dish family. Guntur Chicken Fry remains a more specific regional variant.",
+      "exactNameMatch": null,
+      "matchedRecipe": {
+        "id": "aef4a9e5-779b-58c1-b71d-9d7061d884d3",
+        "sourceId": "andhra-kodi-vepudu",
+        "title": "Andhra Kodi Vepudu",
+        "aliases": [],
+        "mergedSourceIds": [],
+        "coreIngredients": [
+          "chicken",
+          "chilli"
+        ],
+        "dishFamily": "chicken",
+        "cuisine": "Andhra"
+      },
+      "relatedRecipes": [
+        {
+          "id": "fb35172d-555d-5969-896f-102273dae010",
+          "sourceId": "chicken-555",
+          "title": "Chicken 555",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "chilli"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 9
+        },
+        {
+          "id": "f8b6e544-d1b7-5b21-90f7-fb0bd0870c28",
+          "sourceId": "dragon-chicken",
+          "title": "Dragon Chicken",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "chilli"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 9
+        },
+        {
+          "id": "aef4a9e5-779b-58c1-b71d-9d7061d884d3",
+          "sourceId": "andhra-kodi-vepudu",
+          "title": "Andhra Kodi Vepudu",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "chilli"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Andhra",
+          "comparisonScore": 8
+        },
+        {
+          "id": "95752df9-b6a6-53f3-a173-ec190ec46108",
+          "sourceId": "guntur-chicken-fry",
+          "title": "Guntur Chicken Fry",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "guntur chilli"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Andhra",
+          "comparisonScore": 7
+        },
+        {
+          "id": "eac23e09-f8ae-56e9-b0cf-6451426f8a62",
+          "sourceId": "andhra-chicken-curry",
+          "title": "Andhra Chicken Curry",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "onion"
+          ],
+          "dishFamily": "chicken",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Chicken Egg Fried Rice",
+      "coreIngredients": [
+        "rice",
+        "chicken",
+        "egg"
+      ],
+      "dishFamily": "fried-rice",
+      "cuisine": "Indo-Chinese / Asian",
+      "status": "MERGE_AS_ALIAS",
+      "match": "Chicken Fried Rice",
+      "aliases": [
+        "Chicken Egg Fried Rice",
+        "Chicken and Egg Fried Rice"
+      ],
+      "reason": "Existing Chicken Fried Rice already includes egg in its ingredient list and optional ingredients, with the same fried-rice family and preparation intent.",
+      "exactNameMatch": null,
+      "matchedRecipe": {
+        "id": "pantry-chicken-fried-rice",
+        "sourceId": "pantry-chicken-fried-rice",
+        "title": "Chicken Fried Rice",
+        "aliases": [],
+        "mergedSourceIds": [],
+        "coreIngredients": [
+          "rice",
+          "chicken"
+        ],
+        "dishFamily": "fried-rice",
+        "cuisine": "Indian"
+      },
+      "relatedRecipes": [
+        {
+          "id": "pantry-chicken-fried-rice",
+          "sourceId": "pantry-chicken-fried-rice",
+          "title": "Chicken Fried Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "chicken"
+          ],
+          "dishFamily": "fried-rice",
+          "cuisine": "Indian",
+          "comparisonScore": 14
+        },
+        {
+          "id": "f4400866-c4e8-5c2b-ae4f-d72ca3cd1de0",
+          "sourceId": "egg-fried-rice-breakfast",
+          "title": "Egg Fried Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "egg"
+          ],
+          "dishFamily": "fried-rice",
+          "cuisine": "Indo-Chinese / Asian",
+          "comparisonScore": 11
+        },
+        {
+          "id": "686a5460-0fcc-58ed-a823-56faf4d918a4",
+          "sourceId": "chicken-rice-dinner",
+          "title": "Chicken Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "chicken",
+            "rice"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 8
+        },
+        {
+          "id": "41903499-9058-5568-bc90-781e9309d01d",
+          "sourceId": "egg-curry-rice-lunch",
+          "title": "Egg Curry Rice",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "egg",
+            "rice"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 8
+        },
+        {
+          "id": "bfdc43f0-6137-5901-b78f-68a18b7b38df",
+          "sourceId": "chicken-pulao-dinner",
+          "title": "Chicken Pulao",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rice",
+            "chicken"
+          ],
+          "dishFamily": "rice-meal",
+          "cuisine": "Indian",
+          "comparisonScore": 7
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    },
+    {
+      "name": "Vegetable Upma",
+      "coreIngredients": [
+        "rava",
+        "mixed vegetables"
+      ],
+      "dishFamily": "upma",
+      "cuisine": "South Indian",
+      "status": "MERGE_AS_ALIAS",
+      "match": "Upma",
+      "aliases": [
+        "Vegetable Upma",
+        "Vegetable Rava Upma"
+      ],
+      "reason": "Existing Upma is described as rava with vegetables and already includes carrot as a supporting ingredient. The candidate is the same preparation under a more explicit name.",
+      "exactNameMatch": null,
+      "matchedRecipe": {
+        "id": "8a029051-cabb-5dcb-a1fb-7cb3752ac18e",
+        "sourceId": "upma-breakfast",
+        "title": "Upma",
+        "aliases": [],
+        "mergedSourceIds": [],
+        "coreIngredients": [
+          "rava",
+          "onion"
+        ],
+        "dishFamily": "upma",
+        "cuisine": "Indian"
+      },
+      "relatedRecipes": [
+        {
+          "id": "b0aaaa44-3a13-5365-b80f-d4c7994f5df3",
+          "sourceId": "instant-rava-upma",
+          "title": "Instant Rava Upma",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rava",
+            "onion"
+          ],
+          "dishFamily": "upma",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "8a029051-cabb-5dcb-a1fb-7cb3752ac18e",
+          "sourceId": "upma-breakfast",
+          "title": "Upma",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "rava",
+            "onion"
+          ],
+          "dishFamily": "upma",
+          "cuisine": "Indian",
+          "comparisonScore": 6
+        },
+        {
+          "id": "c19a76f1-3b76-50dd-9f8c-2ec9729f3094",
+          "sourceId": "bread-upma",
+          "title": "Bread Upma",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "bread",
+            "onion"
+          ],
+          "dishFamily": "upma",
+          "cuisine": "Indian",
+          "comparisonScore": 3
+        },
+        {
+          "id": "49fd478b-d305-5a27-9306-f7e99bfdae05",
+          "sourceId": "vegetable-puree-dinner",
+          "title": "Vegetable Puree",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "carrot",
+            "milk"
+          ],
+          "dishFamily": "carrot",
+          "cuisine": "Indian",
+          "comparisonScore": 1
+        },
+        {
+          "id": "389bdc96-0ee6-5f76-8a42-1332b896f1dd",
+          "sourceId": "vegetable-soup-dinner",
+          "title": "Vegetable Soup",
+          "aliases": [],
+          "mergedSourceIds": [],
+          "coreIngredients": [
+            "carrot",
+            "onion"
+          ],
+          "dishFamily": "carrot",
+          "cuisine": "Indian",
+          "comparisonScore": 1
+        }
+      ],
+      "checkedFields": [
+        "name",
+        "aliases",
+        "coreIngredients",
+        "dishFamily",
+        "cuisine"
+      ]
+    }
+  ]
+}

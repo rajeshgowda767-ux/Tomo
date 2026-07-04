@@ -1,0 +1,1527 @@
+{
+  "generatedAt": "2026-06-26T13:28:43.885Z",
+  "targetRoot": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype",
+  "catalog": {
+    "activeRecipes": 658
+  },
+  "weights": {
+    "images": 15,
+    "collections": 15,
+    "knowledge": 15,
+    "pantryIntelligence": 20,
+    "recipeAuthoring": 15,
+    "pairings": 10,
+    "metadata": 10
+  },
+  "audits": {
+    "images": {
+      "key": "images",
+      "label": "Images",
+      "score": 53,
+      "status": "WARNING",
+      "failures": 0,
+      "warnings": 118,
+      "reportPath": "",
+      "issues": [
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Aloo Rice still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Aloo Pitika still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Aloo Posto still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Appam still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Apple Puree still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Jolada Rotti still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Thatte Idli still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Davangere Benne Dosa still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Majjige Huli still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Mangalore Goli Baje still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Dharwad Peda still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Badanekayi Ennegayi still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Masala Bun still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Iyengar Bakery Toast still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Boiled Corn still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Chaat still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Chicken Capsicum Stir Fry Bowl still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Chicken Egg Rice Bowl still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Chicken Pepper Rice Bowl still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Chicken Pulao still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Chicken Tomato Rice still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Dal Rice still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Dal Roti still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Dalma still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Egg Capsicum Bhurji still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Egg Curry Rice still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Egg Tomato Rice Bowl still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Fish Curry still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Fish Curry Rice still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Fish Pakora still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Garlic Egg Rice still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Garlic Paneer Roti Wrap still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Goan Fish Curry still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Goan Prawn Balchao still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Gujiya still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Guntur Chilli Chicken still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Kada Prasad still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Kadhi Pakora still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Keema Fry still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Kerala Egg Roast still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Kerala Fish Curry still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Kheema Pav still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Kolhapuri Chicken still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Laal Maas still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Ladoo still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Macher Jhol still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Madras Curry still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Mirapakaya Bajji still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Mirchi Bajji still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Mirchi Ka Salan still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Mushroom Pepper Rice Bowl still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Nattu Kozhi Curry still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Palak Paneer still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Paneer Capsicum Rice Bowl still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Paneer Corn Rice Bowl still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Paneer Pakora still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Paneer Pulao still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Pork Curry still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Rice Cakes still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Images",
+          "message": "Rice Porridge still uses placeholder imagery.",
+          "recommendation": "Replace placeholder imagery."
+        }
+      ],
+      "details": {
+        "activeRecipes": 658,
+        "brokenImages": 0,
+        "missingImages": 0,
+        "placeholderImages": 118
+      }
+    },
+    "collections": {
+      "key": "collections",
+      "label": "Collections",
+      "score": 85,
+      "status": "WARNING",
+      "failures": 0,
+      "warnings": 111,
+      "reportPath": "collections-integrity-audit.md",
+      "issues": [
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Family Favorites / Tiny Tummy Favorites has empty subcategory \"Purees & Mashes\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Family Favorites / Tiny Tummy Favorites has empty subcategory \"Growing Bites\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Family Favorites / Tiny Tummy Favorites has empty subcategory \"Little Plates\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Diversity",
+          "message": "Family Favorites / Tiny Tummy Favorites needs stronger protein diversity for lifestyle.",
+          "recommendation": "Add or surface a broader mix of egg, dairy, plant and meat/seafood protein."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Family Favorites / Tiny Tummy Favorites has 4 consecutive sweet recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Family Favorites / Tiny Tummy Favorites has 4 consecutive baby food recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Family Favorites / Lunch Box & Tiffin has empty subcategory \"Tiffin Box Favorites\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Balance",
+          "message": "Family Favorites / Lunch Box & Tiffin is imbalanced for packable-family: largest subcategory 16, smallest 1.",
+          "recommendation": "Rebalance the collection because its declared intent depends on visible variety."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Family Favorites / Lunch Box & Tiffin has 4 consecutive bread recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Intent",
+          "message": "Healthy Living has 88 recipes, above target 35-70.",
+          "recommendation": "Tighten matching rules or split the hub if content no longer feels focused."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Balance",
+          "message": "Healthy Living / Healthy Plates is imbalanced for nutrition: largest subcategory 35, smallest 9.",
+          "recommendation": "Rebalance the collection because its declared intent depends on visible variety."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Healthy Living / Healthy Plates has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Healthy Living / Healthy Plates has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Healthy Living / Healthy Plates has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Healthy Living / Warm & Light Bowls has empty subcategory \"Rasam & Saaru\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Healthy Living / Warm & Light Bowls has empty subcategory \"Light Stews\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Healthy Living / Warm & Light Bowls has empty subcategory \"Sick-Day Comfort\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Healthy Living / Warm & Light Bowls has 7 consecutive soup recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Everyday Cooking / Daily Comforts has empty subcategory \"Quick Comforts\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Balance",
+          "message": "Everyday Cooking / Daily Comforts has a watch-level imbalance: largest subcategory 20, smallest 2.",
+          "recommendation": "Keep the larger lane if useful, but add depth to smaller utility lanes over time."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Everyday Cooking / Daily Comforts has 3 consecutive dosa recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Everyday Cooking / Tea Time Favourites has empty subcategory \"Bakery Bites\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Everyday Cooking / Tea Time Favourites has empty subcategory \"Street Bites\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Everyday Cooking / Tea Time Favourites has 8 consecutive drink recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Everyday Cooking / Home Staples has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Everyday Cooking / Home Staples has 5 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Everyday Cooking / Home Staples has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Karnataka has empty subcategory \"Mains & Meals\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Karnataka has empty subcategory \"Snacks & Street Bites\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Karnataka has empty subcategory \"Sweets & Drinks\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Karnataka has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Karnataka has 8 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Andhra & Telangana has empty subcategory \"Spicy Mains\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Andhra & Telangana has empty subcategory \"Pappu, Pulusu & Rasam\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Andhra & Telangana has empty subcategory \"Sweets\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Andhra & Telangana has 3 consecutive green chilli recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Andhra & Telangana has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Andhra & Telangana has 5 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Tamil Nadu has empty subcategory \"Meals & Mains\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Tamil Nadu has empty subcategory \"Rasam, Kuzhambu & Kootu\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Tamil Nadu has empty subcategory \"Sweets & Drinks\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Tamil Nadu has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Tamil Nadu has 11 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Tamil Nadu has 8 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Kerala has empty subcategory \"Curries & Mains\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Kerala has empty subcategory \"Seafood\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Kerala has empty subcategory \"Sweets & Drinks\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Kerala has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Kerala has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Kerala has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Kerala has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Bengal has empty subcategory \"Comfort Plates\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Bengal has empty subcategory \"Street Snacks\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Bengal has empty subcategory \"Sweets\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Bengal has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Bengal has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Bengal has 3 consecutive sweet recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Bengal has 7 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Bengal has 7 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Maharashtra has empty subcategory \"Mains & Bhakri Plates\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Maharashtra has empty subcategory \"Seafood & Konkan\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Maharashtra has empty subcategory \"Sweets & Drinks\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Northeast has empty subcategory \"Smoked & Fermented\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Northeast has empty subcategory \"Greens & Sides\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Northeast has empty subcategory \"Sweets\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Northeast has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / North & West India has empty subcategory \"Street Food & Snacks\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / North & West India has empty subcategory \"Sweets\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / North & West India has 3 consecutive bread recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / North & West India has 3 consecutive bread recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Regional Journeys / Jammu & Kashmir has empty subcategory \"Sweets\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Regional Gap",
+          "message": "Regional Journeys / Jammu & Kashmir should not be balance-scored yet because explicit coverage is weak.",
+          "recommendation": "Add real Kashmiri/Jammu recipes before treating balance as meaningful."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Regional Gap",
+          "message": "Regional Journeys / Jammu & Kashmir lacks explicit authenticity signals for its declared intent.",
+          "recommendation": "Add recipes or metadata with clear regional names, cuisine tags and descriptions."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Regional Gap",
+          "message": "Regional Journeys / Jammu & Kashmir is populated with best-current adjacent matches, but has no explicit Kashmiri or Jammu recipes yet.",
+          "recommendation": "Add real Kashmiri/Jammu recipes such as kahwa, haak, nadru yakhni, rogan josh, yakhni pulao or modur pulao before treating this hub as strong coverage."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Regional Journeys / Jammu & Kashmir has 5 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Balance",
+          "message": "Kitchen Essentials / Sides, Salads & Add-ons has a watch-level imbalance: largest subcategory 28, smallest 5.",
+          "recommendation": "Keep the larger lane if useful, but add depth to smaller utility lanes over time."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Kitchen Essentials / Sides, Salads & Add-ons has 11 consecutive salad recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Kitchen Essentials / Sides, Salads & Add-ons has 8 consecutive salad recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Kitchen Essentials / Sides, Salads & Add-ons has 6 consecutive salad recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Kitchen Essentials / Sides, Salads & Add-ons has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Kitchen Essentials / Chutneys, Podis & Condiments has empty subcategory \"Pickles\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Kitchen Essentials / Chutneys, Podis & Condiments has empty subcategory \"Raitas\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Coverage",
+          "message": "Kitchen Essentials / Chutneys, Podis & Condiments has empty subcategory \"Condiments\".",
+          "recommendation": "Populate it, remove it, or mark it Coming Soon."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Kitchen Essentials / Chutneys, Podis & Condiments has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Seasonal Specials / Summer Cooling has 18 consecutive drink recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Seasonal Specials / Rainy Day Cravings has 5 consecutive drink recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Seasonal Specials / Rainy Day Cravings has 3 consecutive rasam recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Seasonal Specials / Rainy Day Cravings has 8 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 7 consecutive sweet recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 3 consecutive sweet recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 3 consecutive sweet recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 5 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 3 consecutive sweet recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 3 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Celebrations & Traditions / Festival Sweets has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Global Bites / Global Breakfasts has 3 consecutive bread recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Balance",
+          "message": "Global Bites / Global Bowls is imbalanced for global-bowl-variety: largest subcategory 10, smallest 1.",
+          "recommendation": "Rebalance the collection because its declared intent depends on visible variety."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Global Bites / Global Bowls has 6 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Global Bites / Global Bowls has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Global Bites / Global Mains has 4 consecutive rice recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Global Bites / Global Soups has 5 consecutive soup recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Global Bites / Global Soups has 6 consecutive soup recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Ordering",
+          "message": "Global Bites / Global Street Food has 3 consecutive street food recipes.",
+          "recommendation": "Interleave visually and culinarily different recipes."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Exposure",
+          "message": "186 recipes have no meaningful secondary discovery path.",
+          "recommendation": "Add only semantically appropriate secondary discovery paths; do not add random memberships for score."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Diversity",
+          "message": "Rice-based recipes dominate bread/millet bases.",
+          "recommendation": "Add or surface more underrepresented recipe types in hub rules."
+        }
+      ],
+      "details": {
+        "recipeCount": 658,
+        "hubCount": 8,
+        "collectionCount": 30,
+        "failCount": 0,
+        "warningCount": 111,
+        "orphanCount": 0,
+        "overExposureCount": 0,
+        "lowExposureCount": 186
+      }
+    },
+    "knowledge": {
+      "key": "knowledge",
+      "label": "Knowledge",
+      "score": 92,
+      "status": "WARNING",
+      "failures": 0,
+      "warnings": 17,
+      "reportPath": "knowledge-coverage-audit.md",
+      "issues": [
+        {
+          "severity": "WARNING",
+          "area": "Recipe Paths",
+          "message": "squid has no active linked recipe path.",
+          "recommendation": "Add links only when matching active local recipes exist."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Recipe Paths",
+          "message": "mussels and clams has no active linked recipe path.",
+          "recommendation": "Add links only when matching active local recipes exist."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Potato appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Carrot appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Vegetables appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Wheat appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Besan appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Peanut appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Bread appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Egg appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Curd appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Curry Leaves appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Garlic appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Ginger appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Coriander appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Green Chilli appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        },
+        {
+          "severity": "WARNING",
+          "area": "Pantry Coverage",
+          "message": "Red Chilli appears in pantry but has no knowledge record.",
+          "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations."
+        }
+      ],
+      "details": {
+        "ingredientRecordCount": 31,
+        "seafoodRecordCount": 14,
+        "requiredSeafoodCount": 13,
+        "coveredSeafoodCount": 13,
+        "recipesLinkedToKnowledge": 100,
+        "pantryIngredientsWithoutKnowledge": 33,
+        "knowledgeRecordsWithoutRecipePaths": 2,
+        "missingAliasCount": 0,
+        "weakRegionalMappingCount": 0,
+        "failCount": 0,
+        "warningCount": 17
+      }
+    },
+    "pantryIntelligence": {
+      "key": "pantryIntelligence",
+      "label": "Pantry Intelligence",
+      "score": 100,
+      "status": "PASS",
+      "failures": 0,
+      "warnings": 0,
+      "reportPath": "pantry-intelligence-v3-audit.md",
+      "issues": [],
+      "details": {
+        "scenarios": 10,
+        "passCount": 10,
+        "warningCount": 0,
+        "knowledgeBridgeFailures": 0,
+        "repetitiveRows": 0,
+        "tomatoOnionStatus": "PASS",
+        "horseGramStatus": "PASS"
+      }
+    },
+    "recipeAuthoring": {
+      "key": "recipeAuthoring",
+      "label": "Recipe Authoring",
+      "score": 100,
+      "status": "PASS",
+      "failures": 0,
+      "warnings": 0,
+      "reportPath": "recipe-authoring-summary.md",
+      "issues": [],
+      "details": {
+        "summary": {
+          "generatedAt": "2026-06-26T08:54:18.432Z",
+          "activeRecipes": 658,
+          "recipesUpdated": 658,
+          "missingInstructionsFixed": 33,
+          "remainingMissingInstructions": 0,
+          "fiveStepRecipesBefore": 469,
+          "fiveStepRecipesAfter": 172,
+          "averageStepCount": 5.9,
+          "recipesWith3To4Steps": 91,
+          "recipesWith5To7Steps": 465,
+          "recipesWith8PlusSteps": 102,
+          "beforeStepCounts": {
+            "3": 72,
+            "4": 19,
+            "5": 172,
+            "6": 197,
+            "7": 96,
+            "8": 21,
+            "9": 81
+          },
+          "afterStepCounts": {
+            "3": 72,
+            "4": 19,
+            "5": 172,
+            "6": 197,
+            "7": 96,
+            "8": 21,
+            "9": 81
+          },
+          "samples": [
+            {
+              "title": "Akki Roti",
+              "beforeStepCount": 5,
+              "afterStepCount": 5,
+              "instructions": [
+                "Bring together rice flour and onion with salt, spice, and just enough moisture for the dough or bread base.",
+                "Knead or fold until it feels soft, then rest briefly so it rolls without tearing.",
+                "Shape into even portions and roll or pat them without making the edges too thick.",
+                "Roast on a hot tawa or toast in a pan, adding ghee or oil only as needed.",
+                "Turn until both sides are cooked through, then finish hot with curd, chutney, or pickle."
+              ]
+            },
+            {
+              "title": "Milk Toast",
+              "beforeStepCount": 5,
+              "afterStepCount": 5,
+              "instructions": [
+                "Bring together bread, milk and sugar or jaggery with salt, spice, and just enough moisture for the dough or bread base.",
+                "Knead or fold until it feels soft, then rest briefly so it rolls without tearing.",
+                "Assemble the filling evenly and press or roll it so every bite is balanced.",
+                "Roast on a hot tawa or toast in a pan, adding ghee or oil only as needed.",
+                "Turn until both sides are cooked through, then finish hot with curd, chutney, or pickle."
+              ]
+            },
+            {
+              "title": "Aloo Paratha",
+              "beforeStepCount": 5,
+              "afterStepCount": 5,
+              "instructions": [
+                "Bring together wheat and potato with salt, spice, and just enough moisture for the dough or bread base.",
+                "Knead or fold until it feels soft, then rest briefly so it rolls without tearing.",
+                "Shape into even portions and roll or pat them without making the edges too thick.",
+                "Roast on a hot tawa or toast in a pan, adding ghee or oil only as needed.",
+                "Turn until both sides are cooked through, then finish hot with curd, chutney, or pickle."
+              ]
+            },
+            {
+              "title": "Andhra Chicken Curry",
+              "beforeStepCount": 9,
+              "afterStepCount": 9,
+              "instructions": [
+                "Prep Chicken, Onion and Red Chilli and keep Curry Leaves ready before heating the pan.",
+                "Heat oil or ghee, then sauté the aromatics until they soften and turn fragrant.",
+                "Roast the spices or masala paste until the raw smell fades.",
+                "Build the masala patiently; this is where the regional flavor deepens.",
+                "Add the main ingredients and turn them through the masala so they are well coated.",
+                "Pour in the liquid, cover, and simmer gently until the curry cooks through.",
+                "Keep the simmer gentle so the sauce thickens without breaking.",
+                "Adjust salt, sourness, and heat, then let the gravy rest for a few minutes.",
+                "Garnish and serve Andhra Chicken Curry with the pairing that best suits its Andhra style character."
+              ]
+            },
+            {
+              "title": "Andhra Egg Fry",
+              "beforeStepCount": 5,
+              "afterStepCount": 5,
+              "instructions": [
+                "Prep Egg and Chilli and keep Onion, Curry Leaves, Garlic and Ginger ready so the snack comes together quickly.",
+                "Toss the ingredients with the spice mix until everything is evenly coated.",
+                "Fry or shallow-fry in steady heat until the outside turns crisp and golden.",
+                "Drain or rest briefly, then sprinkle the final seasoning while it is still warm.",
+                "Serve immediately so Andhra Egg Fry keeps its best texture."
+              ]
+            },
+            {
+              "title": "Andhra Kodi Vepudu",
+              "beforeStepCount": 5,
+              "afterStepCount": 5,
+              "instructions": [
+                "Prep Chicken and Chilli and keep Onion, Curry Leaves, Garlic and Ginger ready so the snack comes together quickly.",
+                "Toss the ingredients with the spice mix until everything is evenly coated.",
+                "Fry or shallow-fry in steady heat until the outside turns crisp and golden.",
+                "Drain or rest briefly, then sprinkle the final seasoning while it is still warm.",
+                "Serve immediately so Andhra Kodi Vepudu keeps its best texture."
+              ]
+            },
+            {
+              "title": "Andhra Podi Idli",
+              "beforeStepCount": 5,
+              "afterStepCount": 5,
+              "instructions": [
+                "Bring the batter or grain base to a soft, workable consistency for Andhra Podi Idli.",
+                "Prepare Idli Rice and Urad Dal and keep Podi and Ghee ready for filling, topping, or tempering.",
+                "Grease the moulds and steam until the centers feel set.",
+                "Cook until the edges lift cleanly and the surface is tender or crisp as intended.",
+                "Rest for a minute, then serve with chutney, sambar, or a simple side."
+              ]
+            },
+            {
+              "title": "Appam",
+              "beforeStepCount": 5,
+              "afterStepCount": 5,
+              "instructions": [
+                "Bring the fermented rice-coconut batter to a loose, pourable consistency for Appam.",
+                "Keep rice, coconut and yeast and sugar ready so the batter tastes balanced before it hits the pan.",
+                "Heat the tawa well, spread the batter evenly, and drizzle a little oil around the edges.",
+                "Cook until the edges lift cleanly and the surface is tender or crisp as intended.",
+                "Rest for a minute, then serve with chutney, sambar, or a simple side."
+              ]
+            },
+            {
+              "title": "Apple Puree",
+              "beforeStepCount": 5,
+              "afterStepCount": 5,
+              "instructions": [
+                "Prep apple and milk and keep the aromatics ready so the snack comes together quickly.",
+                "Toss the ingredients with the spice mix until everything is evenly coated.",
+                "Roast, sauté, or steam until the texture matches the dish.",
+                "Drain or rest briefly, then sprinkle the final seasoning while it is still warm.",
+                "Serve immediately so Apple Puree keeps its best texture."
+              ]
+            },
+            {
+              "title": "Assamese Duck Curry",
+              "beforeStepCount": 9,
+              "afterStepCount": 9,
+              "instructions": [
+                "Prep duck and ginger and keep onion, black pepper and mustard oil ready before heating the pan.",
+                "Heat oil or ghee, then sauté the aromatics until they soften and turn fragrant.",
+                "Roast the spices or masala paste until the raw smell fades.",
+                "Build the masala patiently; this is where the regional flavor deepens.",
+                "Add the main ingredients and turn them through the masala so they are well coated.",
+                "Pour in the liquid, cover, and simmer gently until the curry cooks through.",
+                "Keep the simmer gentle so the sauce thickens without breaking.",
+                "Adjust salt, sourness, and heat, then let the gravy rest for a few minutes.",
+                "Garnish and serve Assamese Duck Curry with the pairing that best suits its Assamese style character."
+              ]
+            },
+            {
+              "title": "Avial",
+              "beforeStepCount": 7,
+              "afterStepCount": 7,
+              "instructions": [
+                "Prep vegetables and coconut and keep curd, curry leaves, coconut oil and Green Chilli ready before the pan goes on the heat.",
+                "Warm oil and let the tempering or aromatics turn fragrant.",
+                "Add the main ingredients and coat them well in the spice base.",
+                "Cook gently so the vegetables stay distinct instead of turning mushy.",
+                "Take a moment to check the texture before moving to the finish.",
+                "Adjust salt and heat, then finish with the remaining aromatics as the dish calls for.",
+                "Serve Avial warm as a side, keeping its Kerala style character intact."
+              ]
+            },
+            {
+              "title": "Bamboo Shoot Pork",
+              "beforeStepCount": 9,
+              "afterStepCount": 9,
+              "instructions": [
+                "Prep pork, bamboo shoot and naga chilli and keep ginger, garlic, smoked chilli and mustard oil ready before heating the pan.",
+                "Heat oil or ghee, then sauté the aromatics until they soften and turn fragrant.",
+                "Roast the spices or masala paste until the raw smell fades.",
+                "Build the masala patiently; this is where the regional flavor deepens.",
+                "Add the main ingredients and turn them through the masala so they are well coated.",
+                "Pour in the liquid, cover, and simmer gently until the curry cooks through.",
+                "Keep the simmer gentle so the sauce thickens without breaking.",
+                "Adjust salt, sourness, and heat, then let the gravy rest for a few minutes.",
+                "Garnish and serve Bamboo Shoot Pork with the pairing that best suits its Northeast Indian style character."
+              ]
+            }
+          ]
+        },
+        "missingInstructions": 0,
+        "exactlyFiveStepRecipes": 172
+      }
+    },
+    "pairings": {
+      "key": "pairings",
+      "label": "Pairings",
+      "score": 100,
+      "status": "PASS",
+      "failures": 0,
+      "warnings": 0,
+      "reportPath": "",
+      "issues": [],
+      "details": {
+        "recipesWithPairings": 658,
+        "missingPairings": 0,
+        "duplicatePairingRecipes": 0
+      }
+    },
+    "metadata": {
+      "key": "metadata",
+      "label": "Metadata",
+      "score": 100,
+      "status": "WARNING",
+      "failures": 0,
+      "warnings": 105,
+      "reportPath": "database/generated/reports/recipe_metadata_quality_audit.json",
+      "issues": [
+        {
+          "severity": "WARNING",
+          "area": "Editorial Metadata",
+          "message": "105 editorial metadata warning(s) remain.",
+          "recommendation": "Review subjective scores separately; do not block integrity freeze."
+        }
+      ],
+      "details": {
+        "metadataIntegrityScore": 100,
+        "editorialMetadataScore": 69,
+        "metadataIntegrityIssues": 0,
+        "editorialMetadataWarnings": 105,
+        "integrityCounts": {},
+        "editorialCounts": {
+          "Home-style score audit": 14,
+          "Nostalgia score audit": 91
+        },
+        "external": {
+          "checkedCoreRecipes": 658,
+          "metadataIntegrityScore": 100,
+          "editorialMetadataScore": 69,
+          "integrityIssues": 0,
+          "editorialWarnings": 105,
+          "issues": 105,
+          "csv": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/database/generated/reports/recipe_metadata_quality_audit.csv",
+          "json": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/database/generated/reports/recipe_metadata_quality_audit.json"
+        }
+      }
+    }
+  },
+  "overallScore": 90,
+  "overallStatus": "READY WITH WARNINGS",
+  "releaseChecklist": [
+    {
+      "item": "No broken images",
+      "ok": true
+    },
+    {
+      "item": "No orphan recipes",
+      "ok": true
+    },
+    {
+      "item": "Pantry bridges pass",
+      "ok": true
+    },
+    {
+      "item": "Knowledge bridges pass",
+      "ok": true
+    },
+    {
+      "item": "Recipe instructions complete",
+      "ok": true
+    },
+    {
+      "item": "Collections structurally valid",
+      "ok": true
+    },
+    {
+      "item": "Recommendation engine validated",
+      "ok": true
+    },
+    {
+      "item": "Metadata validated",
+      "ok": true
+    }
+  ],
+  "recommendedNextActions": [
+    "Images: Replace placeholder imagery.",
+    "Collections: Populate it, remove it, or mark it Coming Soon.",
+    "Knowledge: Add links only when matching active local recipes exist.",
+    "Metadata: Review subjective scores separately; do not block integrity freeze."
+  ]
+}

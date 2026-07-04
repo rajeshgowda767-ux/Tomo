@@ -12,7 +12,13 @@ validation/recipe-validation-report.*
 
 /reference-builds/
 /outputs/
+/work/
+/tmp-*/
 /database/generated/reports/
+
+# Patch handoff artifacts
+*.patch
+*.diff
 
 # Generated top-level audits and reports
 /*-audit.md
@@ -25,3 +31,9 @@ validation/recipe-validation-report.*
 /docs/*-audit.md
 /docs/*-report.md
 /docs/*-validation.md
+
+# Editor workspace artifacts
+*.swp
+*.swo
+.vscode/
+.idea/

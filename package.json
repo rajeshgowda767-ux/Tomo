@@ -9,8 +9,21 @@
     "db:init": "psql \"$DATABASE_URL\" -f database/schema.sql",
     "db:seed": "psql \"$DATABASE_URL\" -f database/seed.sql",
     "audit:pantry": "node scripts/pantry-recommendation-audit.js",
+    "audit:pantry:v3": "node scripts/pantry-intelligence-v3-audit.js",
+    "audit:collections": "node scripts/collections-integrity-audit.js",
+    "audit:knowledge": "node scripts/knowledge-coverage-audit.js",
+    "audit:substitutions": "node scripts/substitution-audit.js",
+    "audit:regional-ingredients": "node scripts/regional-ingredient-audit.js",
+    "audit:flavor": "node scripts/flavor-graph-audit.js",
+    "audit:relationships": "node scripts/ingredient-relationship-audit.js",
+    "audit:seasonal": "node scripts/seasonal-intelligence-audit.js",
+    "audit:explainability": "node scripts/explainability-audit.js",
+    "audit:intelligence": "node scripts/unified-intelligence-audit.js",
     "audit:banter": "node scripts/tomo-banter-audit.js",
-    "audit:missing-recipes": "node scripts/review-missing-recipe-backlog.js"
+    "audit:missing-recipes": "node scripts/review-missing-recipe-backlog.js",
+    "audit:release": "node scripts/master-release-audit.js",
+    "audit:beta3": "npm run audit:release",
+    "audit:beta": "npm run audit:release"
   },
   "engines": {
     "node": ">=20"

@@ -1,0 +1,12 @@
+{
+  "chickenRice": {
+    "existsAsRecipe": true,
+    "existsAsAlias": true,
+    "actionTaken": "Marked standalone Chicken Rice inactive/excluded from recommendations. Added Chicken Rice as alias to Chicken Fried Rice.",
+    "canonicalReplacement": "Chicken Fried Rice"
+  },
+  "cheeseDosa": {
+    "found": true,
+    "actionTaken": "Kept in database/search/pantry, excluded from default meal and mood feeds."
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "generatedAt": "2026-06-26T14:49:10.690Z",
+  "flavorGraphScore": 100,
+  "status": "PASS",
+  "ingredientRecords": 61,
+  "recordsWithFlavorGraph": 61,
+  "summary": {
+    "failures": 0,
+    "warnings": 0,
+    "contentGaps": 22,
+    "missingFlavorGraph": 0,
+    "missingPrimaryFlavors": 0,
+    "brokenIngredientReferences": 0,
+    "invalidStrengths": 0,
+    "duplicatePairs": 0,
+    "missingPairData": 0,
+    "asymmetricStrongPairings": 0,
+    "missingRequiredFlavorPairs": 0,
+    "overusedGenericPairings": 0
+  },
+  "missingFlavorGraph": [],
+  "missingPrimaryFlavors": [],
+  "brokenIngredientReferences": [],
+  "invalidStrengths": [],
+  "duplicatePairs": [],
+  "missingPairData": [],
+  "asymmetricStrongPairings": [],
+  "missingRequiredFlavorPairs": [],
+  "overusedGenericPairings": [],
+  "flavorClusters": [
+    [
+      "bamboo shoot",
+      "bread",
+      "capsicum",
+      "cashew",
+      "coconut",
+      "cream",
+      "curd",
+      "curry leaves",
+      "egg",
+      "fish",
+      "garlic",
+      "ghee",
+      "ginger",
+      "gongura",
+      "green chilli",
+      "greens",
+      "horse gram",
+      "jaggery",
+      "kokum",
+      "moong dal",
+      "mustard oil",
+      "mustard seeds",
+      "onion",
+      "palak",
+      "paneer",
+      "peas",
+      "pepper",
+      "potato",
+      "prawns",
+      "ragi",
+      "raw mango",
+      "rice",
+      "tamarind",
+      "tomato",
+      "toor dal"
+    ],
+    [
+      "seer fish"
+    ],
+    [
+      "pomfret"
+    ],
+    [
+      "mackerel"
+    ],
+    [
+      "sardine"
+    ],
+    [
+      "anchovy"
+    ],
+    [
+      "rohu"
+    ],
+    [
+      "catla"
+    ]
+  ],
+  "contentGaps": [
+    {
+      "ingredient": "seer fish",
+      "opportunity": "Add curated flavor pairings for seer fish."
+    },
+    {
+      "ingredient": "pomfret",
+      "opportunity": "Add curated flavor pairings for pomfret."
+    },
+    {
+      "ingredient": "mackerel",
+      "opportunity": "Add curated flavor pairings for mackerel."
+    },
+    {
+      "ingredient": "sardine",
+      "opportunity": "Add curated flavor pairings for sardine."
+    },
+    {
+      "ingredient": "anchovy",
+      "opportunity": "Add curated flavor pairings for anchovy."
+    },
+    {
+      "ingredient": "rohu",
+      "opportunity": "Add curated flavor pairings for rohu."
+    },
+    {
+      "ingredient": "catla",
+      "opportunity": "Add curated flavor pairings for catla."
+    },
+    {
+      "ingredient": "tilapia",
+      "opportunity": "Add curated flavor pairings for tilapia."
+    },
+    {
+      "ingredient": "basa",
+      "opportunity": "Add curated flavor pairings for basa."
+    },
+    {
+      "ingredient": "crab",
+      "opportunity": "Add curated flavor pairings for crab."
+    },
+    {
+      "ingredient": "squid",
+      "opportunity": "Add curated flavor pairings for squid."
+    },
+    {
+      "ingredient": "mussels and clams",
+      "opportunity": "Add curated flavor pairings for mussels and clams."
+    },
+    {
+      "ingredient": "urad dal",
+      "opportunity": "Add curated flavor pairings for urad dal."
+    },
+    {
+      "ingredient": "millets",
+      "opportunity": "Add curated flavor pairings for millets."
+    },
+    {
+      "ingredient": "chicken",
+      "opportunity": "Add curated flavor pairings for chicken."
+    },
+    {
+      "ingredient": "lemon",
+      "opportunity": "Add curated flavor pairings for lemon."
+    },
+    {
+      "ingredient": "tofu",
+      "opportunity": "Add curated flavor pairings for tofu."
+    },
+    {
+      "ingredient": "jowar",
+      "opportunity": "Add curated flavor pairings for jowar."
+    },
+    {
+      "ingredient": "bajra",
+      "opportunity": "Add curated flavor pairings for bajra."
+    },
+    {
+      "ingredient": "green gram",
+      "opportunity": "Add curated flavor pairings for green gram."
+    },
+    {
+      "ingredient": "black gram",
+      "opportunity": "Add curated flavor pairings for black gram."
+    },
+    {
+      "ingredient": "coconut oil",
+      "opportunity": "Add curated flavor pairings for coconut oil."
+    }
+  ],
+  "bridgeChecks": [
+    {
+      "name": "Tomato",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "Coconut",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "Tamarind",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "Paneer",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "Egg",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "Fish",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "Horse Gram",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "Raw Mango",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "Kokum",
+      "status": "PASS",
+      "missing": []
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "generatedAt": "2026-06-26T14:49:11.753Z",
+  "title": "TOMO INTELLIGENCE PLATFORM AUDIT",
+  "overallIntelligenceScore": 94,
+  "status": "INTELLIGENCE READY WITH GAPS",
+  "summary": {
+    "systemsRun": 6,
+    "systemsNotRun": 3,
+    "failures": 0,
+    "warnings": 74,
+    "contentGaps": 40
+  },
+  "systems": [
+    {
+      "name": "Ingredient Knowledge",
+      "scriptName": "audit:knowledge",
+      "score": 80,
+      "status": "WARNING",
+      "failures": 0,
+      "warnings": 61,
+      "contentGaps": 7,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/knowledge-coverage-audit.json"
+    },
+    {
+      "name": "Relationship Graph",
+      "scriptName": "audit:relationships",
+      "score": null,
+      "status": "NOT RUN",
+      "failures": 0,
+      "warnings": 0,
+      "contentGaps": 0,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/ingredient-relationship-audit.json",
+      "reason": "npm script audit:relationships is not defined."
+    },
+    {
+      "name": "Flavor Graph",
+      "scriptName": "audit:flavor",
+      "score": 100,
+      "status": "PASS",
+      "failures": 0,
+      "warnings": 0,
+      "contentGaps": 22,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/flavor-graph-audit.json"
+    },
+    {
+      "name": "Regional Matrix",
+      "scriptName": "audit:regional-ingredients",
+      "score": 100,
+      "status": "PASS",
+      "failures": 0,
+      "warnings": 0,
+      "contentGaps": 11,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/regional-ingredient-audit.json"
+    },
+    {
+      "name": "Seasonal Intelligence",
+      "scriptName": "audit:seasonal",
+      "score": null,
+      "status": "NOT RUN",
+      "failures": 0,
+      "warnings": 0,
+      "contentGaps": 0,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/seasonal-intelligence-audit.json",
+      "reason": "npm script audit:seasonal is not defined."
+    },
+    {
+      "name": "Substitutions",
+      "scriptName": "audit:substitutions",
+      "score": 81,
+      "status": "WARNING",
+      "failures": 0,
+      "warnings": 13,
+      "contentGaps": 0,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/substitution-audit.json"
+    },
+    {
+      "name": "Explainability",
+      "scriptName": "audit:explainability",
+      "score": null,
+      "status": "NOT RUN",
+      "failures": 0,
+      "warnings": 0,
+      "contentGaps": 0,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/explainability-audit.json",
+      "reason": "npm script audit:explainability is not defined."
+    },
+    {
+      "name": "Pantry Intelligence",
+      "scriptName": "audit:pantry:v3",
+      "score": 100,
+      "status": "PASS",
+      "failures": 0,
+      "warnings": 0,
+      "contentGaps": 0,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/pantry-intelligence-v3-audit.json"
+    },
+    {
+      "name": "Knowledge Bridges",
+      "scriptName": "audit:knowledge",
+      "score": 100,
+      "status": "PASS",
+      "failures": 0,
+      "warnings": 0,
+      "contentGaps": 0,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/knowledge-coverage-audit.json"
+    }
+  ],
+  "systemsNotRun": [
+    {
+      "name": "Relationship Graph",
+      "scriptName": "audit:relationships",
+      "score": null,
+      "status": "NOT RUN",
+      "failures": 0,
+      "warnings": 0,
+      "contentGaps": 0,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/ingredient-relationship-audit.json",
+      "reason": "npm script audit:relationships is not defined."
+    },
+    {
+      "name": "Seasonal Intelligence",
+      "scriptName": "audit:seasonal",
+      "score": null,
+      "status": "NOT RUN",
+      "failures": 0,
+      "warnings": 0,
+      "contentGaps": 0,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/seasonal-intelligence-audit.json",
+      "reason": "npm script audit:seasonal is not defined."
+    },
+    {
+      "name": "Explainability",
+      "scriptName": "audit:explainability",
+      "score": null,
+      "status": "NOT RUN",
+      "failures": 0,
+      "warnings": 0,
+      "contentGaps": 0,
+      "reportPath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/explainability-audit.json",
+      "reason": "npm script audit:explainability is not defined."
+    }
+  ],
+  "recommendedNextActions": [
+    "Add audit:relationships so Relationship Graph can be included in the unified lock decision.",
+    "Add audit:seasonal so Seasonal Intelligence can be included in the unified lock decision.",
+    "Add audit:explainability so Explainability can be included in the unified lock decision.",
+    "Review warning items in the underlying intelligence audit reports.",
+    "Use content gaps as future recipe/knowledge expansion opportunities; they are reported separately from warnings."
+  ]
+}

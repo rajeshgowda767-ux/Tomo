@@ -1,0 +1,2723 @@
+{
+  "generatedAt": "2026-06-26T14:49:11.738Z",
+  "status": "PASS",
+  "pantryIntelligenceScore": 100,
+  "summary": {
+    "scenarios": 10,
+    "passCount": 10,
+    "warningCount": 0,
+    "knowledgeBridgeFailures": 0,
+    "repetitiveRows": 0,
+    "tomatoOnionStatus": "PASS",
+    "horseGramStatus": "PASS"
+  },
+  "scenarios": [
+    {
+      "name": "Rice + Tomato + Onion",
+      "selected": [
+        "rice",
+        "tomato",
+        "onion"
+      ],
+      "status": "PASS",
+      "expectedHits": 2,
+      "repetitive": false,
+      "topRecommendations": [
+        {
+          "rank": 1,
+          "title": "Egg Curry Rice",
+          "slug": "egg-curry-rice-lunch",
+          "finalScore": 61760,
+          "pantryMatchScore": 3000,
+          "ingredientStrengthScore": 1560,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "tomato",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "onion",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 42000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rice",
+              "ingredients": [
+                "rice",
+                "tomato",
+                "onion"
+              ],
+              "score": 18000
+            },
+            {
+              "family": "curry base",
+              "ingredients": [
+                "tomato",
+                "onion"
+              ],
+              "score": 18000
+            },
+            {
+              "family": "egg",
+              "ingredients": [
+                "onion"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 3600,
+          "families": [
+            "rice",
+            "curry",
+            "egg"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Egg Tomato Rice Bowl",
+          "slug": "expansion-pack-1-egg-tomato-rice-bowl",
+          "finalScore": 57360,
+          "pantryMatchScore": 3000,
+          "ingredientStrengthScore": 1560,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "tomato",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "onion",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 35000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rice",
+              "ingredients": [
+                "rice",
+                "tomato",
+                "onion"
+              ],
+              "score": 18000
+            },
+            {
+              "family": "egg",
+              "ingredients": [
+                "onion"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 3600,
+          "families": [
+            "rice",
+            "egg"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Kerala Rasam",
+          "slug": "kerala-wave-05-kerala-rasam",
+          "finalScore": 39275,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 575,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "optional",
+              "score": 55
+            },
+            {
+              "ingredient": "tomato",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "onion",
+              "strength": "unused",
+              "score": 0
+            }
+          ],
+          "familyScore": 42000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rasam",
+              "ingredients": [
+                "tomato"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "soup",
+              "ingredients": [
+                "tomato"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "saaru",
+              "ingredients": [
+                "curry base"
+              ],
+              "score": 8000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rasam",
+            "soup"
+          ]
+        },
+        {
+          "rank": 4,
+          "title": "Tomato Rasam",
+          "slug": "warm-bowls-detail-tomato-rasam",
+          "finalScore": 34320,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "tomato",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "onion",
+              "strength": "unused",
+              "score": 0
+            }
+          ],
+          "familyScore": 42000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rasam",
+              "ingredients": [
+                "tomato"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "soup",
+              "ingredients": [
+                "tomato"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "saaru",
+              "ingredients": [
+                "curry base"
+              ],
+              "score": 8000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rasam",
+            "soup"
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "Egg Curry",
+          "slug": "egg-curry",
+          "finalScore": 27140,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 1040,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "tomato",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "onion",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "curry base",
+              "ingredients": [
+                "tomato",
+                "onion"
+              ],
+              "score": 18000
+            },
+            {
+              "family": "egg",
+              "ingredients": [
+                "onion"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 3600,
+          "families": [
+            "curry",
+            "egg"
+          ]
+        },
+        {
+          "rank": 6,
+          "title": "Masala Omelette",
+          "slug": "pantry-masala-omelette",
+          "finalScore": 26540,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 440,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "tomato",
+              "strength": "support",
+              "score": 220
+            },
+            {
+              "ingredient": "onion",
+              "strength": "support",
+              "score": 220
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "curry base",
+              "ingredients": [
+                "tomato",
+                "onion"
+              ],
+              "score": 18000
+            },
+            {
+              "family": "egg",
+              "ingredients": [
+                "onion"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 3600,
+          "families": [
+            "curry",
+            "egg"
+          ]
+        },
+        {
+          "rank": 7,
+          "title": "Tomato Soup",
+          "slug": "warm-bowls-detail-tomato-soup",
+          "finalScore": 19740,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 1040,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "tomato",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "onion",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 17000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "soup",
+              "ingredients": [
+                "tomato"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 3600,
+          "families": [
+            "soup"
+          ]
+        },
+        {
+          "rank": 8,
+          "title": "Tomato Basil Soup",
+          "slug": "global-wave-a-tomato-basil-soup",
+          "finalScore": 16140,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 1040,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "tomato",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "onion",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 17000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "soup",
+              "ingredients": [
+                "tomato"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "soup"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Horse Gram",
+      "selected": [
+        "horse gram"
+      ],
+      "status": "PASS",
+      "expectedHits": 2,
+      "repetitive": false,
+      "topRecommendations": [
+        {
+          "rank": 1,
+          "title": "Kollu Rasam",
+          "slug": "warm-bowls-detail-kollu-rasam",
+          "finalScore": 38720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "horse gram",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "kollu rasam",
+              "ingredients": [
+                "horse gram"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "saaru",
+              "ingredients": [
+                "horse gram"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "rasam",
+              "ingredients": [
+                "horse gram"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rasam",
+            "soup"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Ulavacharu",
+          "slug": "andhra-telangana-wave-16-ulavacharu",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "horse gram",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "ulavacharu",
+              "ingredients": [
+                "horse gram"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "soup"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Palak",
+      "selected": [
+        "palak"
+      ],
+      "status": "PASS",
+      "expectedHits": 3,
+      "repetitive": false,
+      "topRecommendations": [
+        {
+          "rank": 1,
+          "title": "One Pot Dal Palak Rice",
+          "slug": "expansion-pack-1-one-pot-dal-palak-rice",
+          "finalScore": 48920,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "palak",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 36000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "dal palak",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "palak rice",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "dal",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "rice",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rice"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Palak Paratha",
+          "slug": "approved-palak-paratha",
+          "finalScore": 32320,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "palak",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "palak paratha",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "paratha",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "bread"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Palak Dal",
+          "slug": "balance-tier-1-palak-dal",
+          "finalScore": 23320,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "palak",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "dal",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": []
+        },
+        {
+          "rank": 4,
+          "title": "Palak Paneer",
+          "slug": "palak-paneer-lunch",
+          "finalScore": 23320,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "palak",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "palak paneer",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "curry"
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "Bassaru",
+          "slug": "karnataka-pack-1-bassaru",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "palak",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "dal",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rasam",
+            "soup"
+          ]
+        },
+        {
+          "rank": 6,
+          "title": "Sarson Ka Saag",
+          "slug": "balance-tier-1-sarson-ka-saag",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "palak",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "saag",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "greens"
+          ]
+        },
+        {
+          "rank": 7,
+          "title": "Soppu Saaru",
+          "slug": "karnataka-pack-1-soppu-saaru",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "palak",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "soppu saaru",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rasam",
+            "greens",
+            "soup"
+          ]
+        },
+        {
+          "rank": 8,
+          "title": "Galho",
+          "slug": "northeast-wave-galho",
+          "finalScore": 19520,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "palak",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rice",
+              "ingredients": [
+                "palak"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "rice",
+            "curry"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Coconut",
+      "selected": [
+        "coconut"
+      ],
+      "status": "PASS",
+      "expectedHits": 4,
+      "repetitive": false,
+      "topRecommendations": [
+        {
+          "rank": 1,
+          "title": "Coconut Rice",
+          "slug": "coconut-rice",
+          "finalScore": 32320,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "coconut",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "coconut rice",
+              "ingredients": [
+                "coconut"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "rice",
+              "ingredients": [
+                "coconut"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rice"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Coconut Chutney",
+          "slug": "side-addon-coconut-chutney",
+          "finalScore": 31120,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "coconut",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "coconut chutney",
+              "ingredients": [
+                "coconut"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "chutney",
+              "ingredients": [
+                "coconut"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "chutney"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Appam",
+          "slug": "expansion-pack-2-appam",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "coconut",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rice",
+              "ingredients": [
+                "coconut"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rice"
+          ]
+        },
+        {
+          "rank": 4,
+          "title": "Appam Stew",
+          "slug": "kerala-wave-01-appam-stew",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "coconut",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "curry",
+              "ingredients": [
+                "coconut"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "curry"
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "Avial",
+          "slug": "expansion-pack-3-avial",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "coconut",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "avial",
+              "ingredients": [
+                "coconut"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "avial"
+          ]
+        },
+        {
+          "rank": 6,
+          "title": "Beans Thoran",
+          "slug": "expansion-pack-3-beans-thoran",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "coconut",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "thoran",
+              "ingredients": [
+                "coconut"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "bhaji"
+          ]
+        },
+        {
+          "rank": 7,
+          "title": "Cabbage Thoran",
+          "slug": "balance-tier-1-cabbage-thoran",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "coconut",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "thoran",
+              "ingredients": [
+                "coconut"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "bhaji"
+          ]
+        },
+        {
+          "rank": 8,
+          "title": "Cherupayar Curry",
+          "slug": "kerala-wave-18-cherupayar-curry",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "coconut",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "curry",
+              "ingredients": [
+                "coconut"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "greens",
+            "curry"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tamarind",
+      "selected": [
+        "tamarind"
+      ],
+      "status": "PASS",
+      "expectedHits": 4,
+      "repetitive": false,
+      "topRecommendations": [
+        {
+          "rank": 1,
+          "title": "Puliyogare",
+          "slug": "pantry-puliyogare",
+          "finalScore": 29720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "tamarind",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "puliyogare",
+              "ingredients": [
+                "tamarind"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "rice",
+              "ingredients": [
+                "tamarind"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rice"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Rasam Rice",
+          "slug": "rasam-rice-lunch",
+          "finalScore": 29255,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 55,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "tamarind",
+              "strength": "optional",
+              "score": 55
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rasam",
+              "ingredients": [
+                "tamarind"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "rice",
+              "ingredients": [
+                "tamarind"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rice",
+            "rasam"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Bele Saaru",
+          "slug": "balance-tier-1-bele-saaru",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "tamarind",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rasam",
+              "ingredients": [
+                "tamarind"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rasam",
+            "soup"
+          ]
+        },
+        {
+          "rank": 4,
+          "title": "Bendakaya Pulusu",
+          "slug": "andhra-telangana-wave-10-bendakaya-pulusu",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "tamarind",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "pulusu",
+              "ingredients": [
+                "tamarind"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "pulusu"
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "Kayi Saaru",
+          "slug": "karnataka-wave-b-kayi-saaru",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "tamarind",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rasam",
+              "ingredients": [
+                "tamarind"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rasam",
+            "soup"
+          ]
+        },
+        {
+          "rank": 6,
+          "title": "Pachi Pulusu",
+          "slug": "andhra-telangana-wave-28-pachi-pulusu",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "tamarind",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "pulusu",
+              "ingredients": [
+                "tamarind"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "pulusu"
+          ]
+        },
+        {
+          "rank": 7,
+          "title": "Kerala Sambar",
+          "slug": "kerala-wave-04-kerala-sambar",
+          "finalScore": 20255,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 55,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "tamarind",
+              "strength": "optional",
+              "score": 55
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "sambar",
+              "ingredients": [
+                "tamarind"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "sambar",
+            "soup"
+          ]
+        },
+        {
+          "rank": 8,
+          "title": "Udupi Sambar",
+          "slug": "karnataka-wave-a-udupi-sambar",
+          "finalScore": 20255,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 55,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "tamarind",
+              "strength": "optional",
+              "score": 55
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "sambar",
+              "ingredients": [
+                "tamarind"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "sambar",
+            "soup"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rice + Egg",
+      "selected": [
+        "rice",
+        "egg"
+      ],
+      "status": "PASS",
+      "expectedHits": 2,
+      "repetitive": false,
+      "topRecommendations": [
+        {
+          "rank": 1,
+          "title": "Egg Curry Rice",
+          "slug": "egg-curry-rice-lunch",
+          "finalScore": 61640,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 1040,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "egg",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 42000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rice",
+              "ingredients": [
+                "rice",
+                "egg"
+              ],
+              "score": 18000
+            },
+            {
+              "family": "egg",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "egg curry",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 2400,
+          "families": [
+            "rice",
+            "curry",
+            "egg"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Egg Fried Rice",
+          "slug": "egg-fried-rice-breakfast",
+          "finalScore": 53240,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 1040,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "egg",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 36000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rice",
+              "ingredients": [
+                "rice",
+                "egg"
+              ],
+              "score": 18000
+            },
+            {
+              "family": "egg",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "egg fried rice",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "rice",
+            "egg",
+            "fry"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Egg Curry",
+          "slug": "egg-curry",
+          "finalScore": 27020,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "egg",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "egg",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "egg curry",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 2400,
+          "families": [
+            "curry",
+            "egg"
+          ]
+        },
+        {
+          "rank": 4,
+          "title": "Egg Bhurji",
+          "slug": "egg-bhurji-dinner",
+          "finalScore": 24620,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "egg",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "egg",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "bhurji",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "egg bhurji",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "egg"
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "Idiyappam Egg Curry",
+          "slug": "kerala-wave-02-idiyappam-egg-curry",
+          "finalScore": 24620,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "egg",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "egg",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "egg curry",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "curry",
+            "egg"
+          ]
+        },
+        {
+          "rank": 6,
+          "title": "Egg Capsicum Bhurji",
+          "slug": "expansion-pack-1-egg-capsicum-bhurji",
+          "finalScore": 18020,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "egg",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "egg",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "bhurji",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 2400,
+          "families": [
+            "egg"
+          ]
+        },
+        {
+          "rank": 7,
+          "title": "Breakfast Burrito",
+          "slug": "global-wave-a-breakfast-burrito",
+          "finalScore": 4020,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "egg",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "breakfast",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": []
+        },
+        {
+          "rank": 8,
+          "title": "Breakfast Quesadilla",
+          "slug": "global-wave-b-breakfast-quesadilla",
+          "finalScore": 4020,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "rice",
+              "strength": "unused",
+              "score": 0
+            },
+            {
+              "ingredient": "egg",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "breakfast",
+              "ingredients": [
+                "egg"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": []
+        }
+      ]
+    },
+    {
+      "name": "Paneer + Capsicum",
+      "selected": [
+        "paneer",
+        "capsicum"
+      ],
+      "status": "PASS",
+      "expectedHits": 2,
+      "repetitive": false,
+      "topRecommendations": [
+        {
+          "rank": 1,
+          "title": "Paneer Tikka Masala",
+          "slug": "paneer-tikka-masala",
+          "finalScore": 57540,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 740,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "paneer",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "capsicum",
+              "strength": "support",
+              "score": 220
+            }
+          ],
+          "familyScore": 42000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "paneer tikka",
+              "ingredients": [
+                "paneer"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "paneer",
+                "capsicum"
+              ],
+              "score": 18000
+            },
+            {
+              "family": "tikka",
+              "ingredients": [
+                "paneer"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "paneer curry",
+              "ingredients": [
+                "capsicum"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "curry"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Chilli Paneer",
+          "slug": "chilli-paneer",
+          "finalScore": 43740,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 740,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "paneer",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "capsicum",
+              "strength": "support",
+              "score": 220
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "curry",
+              "ingredients": [
+                "paneer",
+                "capsicum"
+              ],
+              "score": 18000
+            },
+            {
+              "family": "paneer curry",
+              "ingredients": [
+                "capsicum"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 2400,
+          "families": [
+            "curry"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Paneer Bhurji Wrap",
+          "slug": "lunchbox-detail-paneer-bhurji-wrap",
+          "finalScore": 43575,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 575,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "paneer",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "capsicum",
+              "strength": "optional",
+              "score": 55
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "paneer bhurji",
+              "ingredients": [
+                "paneer"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "bhurji",
+              "ingredients": [
+                "paneer",
+                "capsicum"
+              ],
+              "score": 18000
+            }
+          ],
+          "regionalScore": 2400,
+          "families": [
+            "egg",
+            "bread"
+          ]
+        },
+        {
+          "rank": 4,
+          "title": "Paneer Capsicum Rice Bowl",
+          "slug": "expansion-pack-1-paneer-capsicum-rice-bowl",
+          "finalScore": 37640,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 1040,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "paneer",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "capsicum",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rice",
+              "ingredients": [
+                "paneer",
+                "capsicum"
+              ],
+              "score": 18000
+            }
+          ],
+          "regionalScore": 2400,
+          "families": [
+            "rice"
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "Garlic Paneer Roti Wrap",
+          "slug": "expansion-pack-1-garlic-paneer-roti-wrap",
+          "finalScore": 24375,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 575,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "paneer",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "capsicum",
+              "strength": "optional",
+              "score": 55
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "paratha",
+              "ingredients": [
+                "paneer"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "bread"
+          ]
+        },
+        {
+          "rank": 6,
+          "title": "Paneer Roll",
+          "slug": "lunchbox-detail-paneer-roll",
+          "finalScore": 16575,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 575,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "paneer",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "capsicum",
+              "strength": "optional",
+              "score": 55
+            }
+          ],
+          "familyScore": 0,
+          "knowledgeBridgeUsed": [],
+          "regionalScore": 2400,
+          "families": [
+            "bread"
+          ]
+        },
+        {
+          "rank": 7,
+          "title": "Paneer Dosa",
+          "slug": "pantry-paneer-dosa",
+          "finalScore": 14340,
+          "pantryMatchScore": 2000,
+          "ingredientStrengthScore": 740,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "paneer",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "capsicum",
+              "strength": "support",
+              "score": 220
+            }
+          ],
+          "familyScore": 0,
+          "knowledgeBridgeUsed": [],
+          "regionalScore": 0,
+          "families": []
+        },
+        {
+          "rank": 8,
+          "title": "Paneer Corn Rice Bowl",
+          "slug": "expansion-pack-1-paneer-corn-rice-bowl",
+          "finalScore": 9020,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "paneer",
+              "strength": "core",
+              "score": 520
+            },
+            {
+              "ingredient": "capsicum",
+              "strength": "unused",
+              "score": 0
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rice",
+              "ingredients": [
+                "paneer"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 2400,
+          "families": [
+            "rice"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fish",
+      "selected": [
+        "fish"
+      ],
+      "status": "PASS",
+      "expectedHits": 2,
+      "repetitive": false,
+      "topRecommendations": [
+        {
+          "rank": 1,
+          "title": "Fish Curry Rice",
+          "slug": "fish-curry-rice-lunch",
+          "finalScore": 40120,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "fish",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "fish curry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "rice",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "rice",
+            "curry"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Fish Fry",
+          "slug": "fish-fry-dinner",
+          "finalScore": 40120,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "fish",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "fish fry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "fish curry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "curry",
+            "fry"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Goan Fish Curry",
+          "slug": "expansion-pack-4-goan-fish-curry",
+          "finalScore": 32320,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "fish",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "fish curry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "curry"
+          ]
+        },
+        {
+          "rank": 4,
+          "title": "Chepala Pulusu",
+          "slug": "andhra-telangana-wave-19-chepala-pulusu",
+          "finalScore": 28520,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "fish",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "fish curry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "pulusu",
+            "curry"
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "Fish Fry Tamil Style",
+          "slug": "tamil-nadu-wave-15-fish-fry-tamil-style",
+          "finalScore": 23320,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "fish",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "fish fry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "fry"
+          ]
+        },
+        {
+          "rank": 6,
+          "title": "Andhra Fish Fry",
+          "slug": "andhra-telangana-wave-20-andhra-fish-fry",
+          "finalScore": 22120,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "fish",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "fish fry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "fry"
+          ]
+        },
+        {
+          "rank": 7,
+          "title": "Kerala Fish Pollichathu",
+          "slug": "expansion-pack-3-meen-pollichathu",
+          "finalScore": 14320,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "fish",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 0,
+          "knowledgeBridgeUsed": [],
+          "regionalScore": 1200,
+          "families": []
+        },
+        {
+          "rank": 8,
+          "title": "Kerala Fish Curry",
+          "slug": "kerala-fish-curry",
+          "finalScore": 32320,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "fish",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "fish curry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "fish"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "curry"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Prawns",
+      "selected": [
+        "prawns"
+      ],
+      "status": "PASS",
+      "expectedHits": 3,
+      "repetitive": false,
+      "topRecommendations": [
+        {
+          "rank": 1,
+          "title": "Chingri Malai Curry",
+          "slug": "expansion-pack-3-chingri-malai-curry",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "prawns",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "prawn curry",
+              "ingredients": [
+                "prawns"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "curry"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Daab Chingri",
+          "slug": "bengal-wave-15-daab-chingri",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "prawns",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "prawn curry",
+              "ingredients": [
+                "prawns"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "curry"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Chemmeen Theeyal",
+          "slug": "kerala-wave-15-chemmeen-theeyal",
+          "finalScore": 11720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "prawns",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 0,
+          "knowledgeBridgeUsed": [],
+          "regionalScore": 1200,
+          "families": [
+            "theeyal",
+            "curry"
+          ]
+        },
+        {
+          "rank": 4,
+          "title": "Chingri Xaak",
+          "slug": "northeast-wave-chingri-xaak",
+          "finalScore": 10520,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "prawns",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 0,
+          "knowledgeBridgeUsed": [],
+          "regionalScore": 0,
+          "families": [
+            "greens"
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "Royyala Iguru",
+          "slug": "andhra-telangana-wave-11-royyala-iguru",
+          "finalScore": 20720,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "prawns",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "prawn curry",
+              "ingredients": [
+                "prawns"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "curry"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chicken",
+      "selected": [
+        "chicken"
+      ],
+      "status": "PASS",
+      "expectedHits": 2,
+      "repetitive": false,
+      "topRecommendations": [
+        {
+          "rank": 1,
+          "title": "Guntur Chicken Fry",
+          "slug": "guntur-chicken-fry",
+          "finalScore": 49120,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "chicken",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 36000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "chicken curry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "chicken fry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "fry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "curry",
+            "fry"
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "Chicken Mushroom Stir Fry",
+          "slug": "approved-chicken-mushroom-stir-fry",
+          "finalScore": 40120,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "chicken",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "chicken curry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "fry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "curry",
+            "fry"
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "Chicken Stew",
+          "slug": "chicken-stew-lunch",
+          "finalScore": 40120,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "chicken",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 27000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "chicken curry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "chicken stew",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "soup",
+            "curry"
+          ]
+        },
+        {
+          "rank": 4,
+          "title": "Chettinad Pepper Chicken",
+          "slug": "tamil-nadu-wave-10-chettinad-pepper-chicken",
+          "finalScore": 31120,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "chicken",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "chicken fry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "fry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "fry"
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "Chicken Biryani",
+          "slug": "collection-detail-chicken-biryani",
+          "finalScore": 31120,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "chicken",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "biryani",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "rice",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "rice"
+          ]
+        },
+        {
+          "rank": 6,
+          "title": "Andhra Kodi Vepudu",
+          "slug": "andhra-kodi-vepudu",
+          "finalScore": 28520,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "chicken",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "chicken fry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "fry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "fry"
+          ]
+        },
+        {
+          "rank": 7,
+          "title": "Natu Kodi Pulusu",
+          "slug": "andhra-telangana-wave-18-natu-kodi-pulusu",
+          "finalScore": 28520,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "chicken",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 18000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "chicken curry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            },
+            {
+              "family": "curry",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 0,
+          "families": [
+            "pulusu",
+            "curry"
+          ]
+        },
+        {
+          "rank": 8,
+          "title": "Chicken Pepper Rice Bowl",
+          "slug": "expansion-pack-1-chicken-pepper-rice-bowl",
+          "finalScore": 23320,
+          "pantryMatchScore": 1000,
+          "ingredientStrengthScore": 520,
+          "ingredientStrengthBreakdown": [
+            {
+              "ingredient": "chicken",
+              "strength": "core",
+              "score": 520
+            }
+          ],
+          "familyScore": 9000,
+          "knowledgeBridgeUsed": [
+            {
+              "family": "rice",
+              "ingredients": [
+                "chicken"
+              ],
+              "score": 9000
+            }
+          ],
+          "regionalScore": 1200,
+          "families": [
+            "rice"
+          ]
+        }
+      ]
+    }
+  ]
+}

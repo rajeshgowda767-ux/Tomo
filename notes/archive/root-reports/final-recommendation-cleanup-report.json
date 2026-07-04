@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-06-11T07:57:05.256Z",
+  "chickenRice": {
+    "existsAsRecipe": true,
+    "recipeType": "inactive",
+    "isActive": false,
+    "existsAsAliasUnder": [
+      "Chicken Fried Rice"
+    ],
+    "actionTaken": "Marked standalone Chicken Rice inactive/excluded from recommendations. Added Chicken Rice as alias to Chicken Fried Rice.",
+    "canonicalReplacement": "Chicken Fried Rice"
+  },
+  "cheeseDosa": {
+    "exists": true,
+    "breakfastFeedHidden": true,
+    "moodFeedHiddenUnlessExplicitMoodTags": true,
+    "pantrySearchAllowed": true,
+    "moodTags": [],
+    "hardExcludeFromFeeds": true,
+    "feedVisibility": "pantry-search-only"
+  },
+  "comfortBreakfast": {
+    "finalVisibleList": [
+      "Spicy Aloo Paratha",
+      "Masala Dosa",
+      "Onion Uttapam",
+      "Tomato Uttapam",
+      "Dosa",
+      "Aloo Paratha",
+      "Andhra Podi Idli",
+      "Idli",
+      "Pongal",
+      "Ragi Porridge",
+      "Rice Porridge",
+      "Cheese Omelette"
+    ],
+    "dosaFamilyCount": 2,
+    "dosaFamilyDishes": [
+      "Masala Dosa",
+      "Dosa"
+    ],
+    "maxTwoDosaVariants": true,
+    "canonicalDosaPreference": true
+  },
+  "regression": {
+    "pantryAuditFail": 0,
+    "moodAuditRegenerated": true,
+    "syntaxErrors": false
+  }
+}

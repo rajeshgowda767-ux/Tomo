@@ -1,0 +1,408 @@
+{
+  "generatedAt": "2026-06-26T14:49:11.016Z",
+  "regionalIngredientScore": 100,
+  "status": "PASS",
+  "ingredientRecords": 61,
+  "recordsWithRegionalStrength": 61,
+  "regionsCovered": [
+    "All India",
+    "Andhra & Telangana",
+    "Assam",
+    "Bengal",
+    "Bihar",
+    "Coastal Karnataka",
+    "Coorg",
+    "East India",
+    "Goa",
+    "Gujarat",
+    "Indo-Chinese",
+    "Karnataka",
+    "Kerala",
+    "Maharashtra",
+    "Maharashtra coast",
+    "North India",
+    "Northeast",
+    "Odisha",
+    "Rajasthan",
+    "South India",
+    "Tamil Nadu",
+    "Urban India"
+  ],
+  "ingredientsPerRegion": {
+    "All India": [
+      "basa",
+      "bread",
+      "butter",
+      "capsicum",
+      "chicken",
+      "cream",
+      "curd",
+      "curry leaves",
+      "egg",
+      "garlic",
+      "ghee",
+      "ginger",
+      "green chilli",
+      "jaggery",
+      "lemon",
+      "mustard seeds",
+      "onion",
+      "palak",
+      "paneer",
+      "peas",
+      "pepper",
+      "potato",
+      "rice",
+      "tilapia",
+      "tomato"
+    ],
+    "Andhra & Telangana": [
+      "anchovy",
+      "black gram",
+      "chicken",
+      "gongura",
+      "green gram",
+      "horse gram",
+      "moong dal",
+      "prawns",
+      "ragi",
+      "raw mango",
+      "tamarind",
+      "toor dal",
+      "urad dal"
+    ],
+    "Assam": [
+      "mustard oil"
+    ],
+    "Bengal": [
+      "catla",
+      "fish",
+      "mustard oil",
+      "prawns",
+      "rohu"
+    ],
+    "Bihar": [
+      "mustard oil"
+    ],
+    "Coastal Karnataka": [
+      "coconut",
+      "coconut oil",
+      "fish",
+      "mackerel",
+      "prawns",
+      "sardine",
+      "seer fish"
+    ],
+    "Coorg": [
+      "bamboo shoot"
+    ],
+    "East India": [
+      "catla"
+    ],
+    "Goa": [
+      "cashew",
+      "coconut",
+      "fish",
+      "kokum",
+      "mackerel",
+      "mussels and clams",
+      "pomfret",
+      "prawns",
+      "squid"
+    ],
+    "Gujarat": [
+      "bajra",
+      "buttermilk",
+      "groundnut oil"
+    ],
+    "Indo-Chinese": [
+      "capsicum"
+    ],
+    "Karnataka": [
+      "ghee",
+      "green gram",
+      "greens",
+      "horse gram",
+      "jowar",
+      "millets",
+      "moong dal",
+      "palak",
+      "peanut",
+      "ragi",
+      "raw mango",
+      "rice",
+      "tamarind",
+      "toor dal",
+      "urad dal"
+    ],
+    "Kerala": [
+      "chicken",
+      "coconut",
+      "coconut oil",
+      "crab",
+      "fish",
+      "kokum",
+      "mackerel",
+      "mussels and clams",
+      "pomfret",
+      "prawns",
+      "sardine",
+      "seer fish",
+      "squid"
+    ],
+    "Maharashtra": [
+      "groundnut oil",
+      "jowar",
+      "peanut",
+      "raw mango"
+    ],
+    "Maharashtra coast": [
+      "kokum",
+      "pomfret"
+    ],
+    "North India": [
+      "butter",
+      "cashew",
+      "greens",
+      "moong dal",
+      "onion",
+      "palak",
+      "paneer"
+    ],
+    "Northeast": [
+      "bamboo shoot",
+      "greens"
+    ],
+    "Odisha": [
+      "mustard oil",
+      "rohu"
+    ],
+    "Rajasthan": [
+      "bajra",
+      "millets"
+    ],
+    "South India": [
+      "buttermilk",
+      "curd",
+      "egg",
+      "lemon",
+      "onion",
+      "tomato"
+    ],
+    "Tamil Nadu": [
+      "anchovy",
+      "black gram",
+      "chicken",
+      "coconut",
+      "crab",
+      "fish",
+      "horse gram",
+      "millets",
+      "ragi",
+      "seer fish",
+      "tamarind",
+      "toor dal",
+      "urad dal"
+    ],
+    "Urban India": [
+      "basa",
+      "tilapia",
+      "tofu"
+    ]
+  },
+  "summary": {
+    "failures": 0,
+    "warnings": 0,
+    "contentGaps": 11,
+    "missingRegionalStrength": 0,
+    "invalidRegionalStrength": 0,
+    "brokenSignatureDishReferences": 0,
+    "highValueRegionalIngredientsMissing": 0,
+    "bridgeWarnings": 0,
+    "broadOnlyMappings": 11,
+    "recordsWithoutRecipePath": 7
+  },
+  "missingRegionalStrength": [],
+  "invalidRegionalStrength": [],
+  "brokenSignatureDishReferences": [],
+  "highValueRegionalIngredientsMissing": [],
+  "bridgeChecks": [
+    {
+      "name": "Horse Gram",
+      "status": "PASS",
+      "missing": [],
+      "weak": []
+    },
+    {
+      "name": "Coconut",
+      "status": "PASS",
+      "missing": [],
+      "weak": []
+    },
+    {
+      "name": "Tamarind",
+      "status": "PASS",
+      "missing": [],
+      "weak": []
+    },
+    {
+      "name": "Ragi",
+      "status": "PASS",
+      "missing": [],
+      "weak": []
+    },
+    {
+      "name": "Fish",
+      "status": "PASS",
+      "missing": [],
+      "weak": []
+    },
+    {
+      "name": "Prawns",
+      "status": "PASS",
+      "missing": [],
+      "weak": []
+    },
+    {
+      "name": "Bamboo Shoot",
+      "status": "PASS",
+      "missing": [],
+      "weak": []
+    },
+    {
+      "name": "Kokum",
+      "status": "PASS",
+      "missing": [],
+      "weak": []
+    },
+    {
+      "name": "Mustard Oil",
+      "status": "PASS",
+      "missing": [],
+      "weak": []
+    }
+  ],
+  "contentGaps": [
+    {
+      "ingredient": "squid",
+      "region": "Kerala",
+      "strength": "strong",
+      "opportunity": "Add an active Kerala recipe that showcases squid."
+    },
+    {
+      "ingredient": "squid",
+      "region": "Goa",
+      "strength": "strong",
+      "opportunity": "Add an active Goa recipe that showcases squid."
+    },
+    {
+      "ingredient": "mussels and clams",
+      "region": "Kerala",
+      "strength": "primary",
+      "opportunity": "Add an active Kerala recipe that showcases mussels and clams."
+    },
+    {
+      "ingredient": "mussels and clams",
+      "region": "Goa",
+      "strength": "strong",
+      "opportunity": "Add an active Goa recipe that showcases mussels and clams."
+    },
+    {
+      "ingredient": "millets",
+      "region": "Rajasthan",
+      "strength": "strong",
+      "opportunity": "Add an active Rajasthan recipe that showcases millets."
+    },
+    {
+      "ingredient": "cashew",
+      "region": "Goa",
+      "strength": "strong",
+      "opportunity": "Add an active Goa recipe that showcases cashew."
+    },
+    {
+      "ingredient": "jowar",
+      "region": "Maharashtra",
+      "strength": "primary",
+      "opportunity": "Add an active Maharashtra recipe that showcases jowar."
+    },
+    {
+      "ingredient": "jowar",
+      "region": "Karnataka",
+      "strength": "strong",
+      "opportunity": "Add an active Karnataka recipe that showcases jowar."
+    },
+    {
+      "ingredient": "bajra",
+      "region": "Rajasthan",
+      "strength": "primary",
+      "opportunity": "Add an active Rajasthan recipe that showcases bajra."
+    },
+    {
+      "ingredient": "bajra",
+      "region": "Gujarat",
+      "strength": "strong",
+      "opportunity": "Add an active Gujarat recipe that showcases bajra."
+    },
+    {
+      "ingredient": "groundnut oil",
+      "region": "Gujarat",
+      "strength": "strong",
+      "opportunity": "Add an active Gujarat recipe that showcases groundnut oil."
+    }
+  ],
+  "broadOnlyMappings": [
+    {
+      "ingredient": "garlic",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    },
+    {
+      "ingredient": "ginger",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    },
+    {
+      "ingredient": "curry leaves",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    },
+    {
+      "ingredient": "mustard seeds",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    },
+    {
+      "ingredient": "green chilli",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    },
+    {
+      "ingredient": "jaggery",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    },
+    {
+      "ingredient": "peas",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    },
+    {
+      "ingredient": "pepper",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    },
+    {
+      "ingredient": "bread",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    },
+    {
+      "ingredient": "potato",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    },
+    {
+      "ingredient": "cream",
+      "reason": "Broad mapping is acceptable only when the ingredient is universal or mainly a substitute in the current catalog."
+    }
+  ],
+  "recordsWithoutRecipePath": [
+    "squid",
+    "mussels and clams",
+    "tofu",
+    "jowar",
+    "bajra",
+    "groundnut oil",
+    "coconut oil"
+  ]
+}

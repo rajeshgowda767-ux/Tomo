@@ -1,0 +1,171 @@
+{
+  "date": "2026-06-11",
+  "dataModified": false,
+  "method": {
+    "recipeSource": "database/generated/recipes.json",
+    "moodLogicSource": "frontend/app.js",
+    "priorityScoreContext": "Breakfast meal context, no pantry boost",
+    "appearanceRule": "CORE or SUPPORT tier with final score >= 65"
+  },
+  "identityNotes": {
+    "Plain Dosa": "Mapped to active recipe Dosa",
+    "Plain Uttapam": "No active recipe or alias found"
+  },
+  "dishes": [
+    {
+      "dishName": "Plain Dosa",
+      "activeIdentity": "Dosa",
+      "moods": [
+        {"name": "Soul Food", "score": 73.6},
+        {"name": "Comfort Food", "score": 71.0}
+      ],
+      "mealTypes": ["Breakfast"],
+      "collections": [],
+      "reason": "Explicit Soul support title plus Comfort/Soul metadata and high nostalgia/home-style scores.",
+      "priorityScore": 73.6,
+      "recommendation": "KEEP",
+      "flags": []
+    },
+    {
+      "dishName": "Masala Dosa",
+      "moods": [
+        {"name": "Comfort Food", "score": 71.4},
+        {"name": "Soul Food", "score": 71.2}
+      ],
+      "mealTypes": ["Breakfast"],
+      "collections": [],
+      "reason": "Comfort membership and generic dosa Soul support.",
+      "priorityScore": 71.4,
+      "recommendation": "KEEP",
+      "flags": []
+    },
+    {
+      "dishName": "Onion Dosa",
+      "moods": [
+        {"name": "Comfort Food", "score": 71.4},
+        {"name": "Soul Food", "score": 71.2},
+        {"name": "Spicy Food", "score": 66.8}
+      ],
+      "mealTypes": ["Breakfast"],
+      "collections": [],
+      "reason": "Comfort metadata, generic dosa Soul support, and green chilli Spicy support.",
+      "priorityScore": 71.4,
+      "recommendation": "MOVE",
+      "flags": ["Spicy Food placement is driven by a supporting green chilli."]
+    },
+    {
+      "dishName": "Paneer Dosa",
+      "moods": [
+        {"name": "Comfort Food", "score": 71.5},
+        {"name": "Soul Food", "score": 71.4},
+        {"name": "High Protein", "score": 70.0},
+        {"name": "Spicy Food", "score": 66.9}
+      ],
+      "mealTypes": ["Breakfast"],
+      "collections": [],
+      "reason": "Comfort metadata, generic dosa Soul support, paneer protein, and green chilli Spicy support.",
+      "priorityScore": 71.5,
+      "recommendation": "MOVE",
+      "flags": ["Soul Food is questionable.", "Spicy Food is driven by a supporting ingredient."]
+    },
+    {
+      "dishName": "Egg Dosa",
+      "moods": [
+        {"name": "Comfort Food", "score": 71.5},
+        {"name": "Soul Food", "score": 71.4},
+        {"name": "High Protein", "score": 70.0},
+        {"name": "Spicy Food", "score": 66.9}
+      ],
+      "mealTypes": ["Breakfast"],
+      "collections": [],
+      "reason": "Comfort metadata, generic dosa Soul support, egg protein, and pepper Spicy support.",
+      "priorityScore": 71.5,
+      "recommendation": "MOVE",
+      "flags": ["Soul Food is questionable.", "Spicy Food is driven by pepper rather than dish identity."]
+    },
+    {
+      "dishName": "Cheese Dosa",
+      "moods": [],
+      "mealTypes": ["Breakfast"],
+      "collections": [],
+      "reason": "Explicit empty moodTags exclude the dish from every mood feed.",
+      "priorityScore": 0,
+      "recommendation": "KEEP",
+      "flags": []
+    },
+    {
+      "dishName": "Plain Uttapam",
+      "status": "NOT_FOUND",
+      "moods": [],
+      "mealTypes": [],
+      "collections": [],
+      "reason": "No active recipe or alias found.",
+      "priorityScore": null,
+      "recommendation": "REMOVE",
+      "flags": ["Requested identity is absent from the active recipe database."]
+    },
+    {
+      "dishName": "Onion Uttapam",
+      "moods": [
+        {"name": "Comfort Food", "score": 71.4},
+        {"name": "Soul Food", "score": 71.2},
+        {"name": "Spicy Food", "score": 66.8}
+      ],
+      "mealTypes": ["Breakfast"],
+      "collections": [],
+      "reason": "Comfort metadata, generic South Indian batter Soul support, and green chilli Spicy support.",
+      "priorityScore": 71.4,
+      "recommendation": "MOVE",
+      "flags": ["Soul Food should be explicitly curated if kept.", "Spicy Food is driven by a supporting ingredient."]
+    },
+    {
+      "dishName": "Tomato Uttapam",
+      "moods": [
+        {"name": "Comfort Food", "score": 71.4},
+        {"name": "Soul Food", "score": 71.2},
+        {"name": "Spicy Food", "score": 66.8}
+      ],
+      "mealTypes": ["Breakfast"],
+      "collections": [],
+      "reason": "Comfort metadata plus broad Soul and Spicy term matching.",
+      "priorityScore": 71.4,
+      "recommendation": "MOVE",
+      "flags": ["Soul Food is questionable.", "Spicy Food is driven by green chilli."]
+    },
+    {
+      "dishName": "Vegetable Uttapam",
+      "moods": [
+        {"name": "Comfort Food", "score": 71.4},
+        {"name": "Soul Food", "score": 71.2}
+      ],
+      "mealTypes": ["Breakfast"],
+      "collections": [],
+      "reason": "Comfort metadata and broad South Indian batter Soul matching.",
+      "priorityScore": 71.4,
+      "recommendation": "MOVE",
+      "flags": ["Soul Food is questionable."]
+    },
+    {
+      "dishName": "Cheese Uttapam",
+      "moods": [],
+      "mealTypes": ["Breakfast"],
+      "collections": [],
+      "reason": "Explicit empty moodTags exclude the dish from every mood feed.",
+      "priorityScore": 0,
+      "recommendation": "KEEP",
+      "flags": []
+    }
+  ],
+  "rainyDay": [],
+  "questionablePlacements": [
+    "Paneer Dosa -> Soul Food",
+    "Egg Dosa -> Soul Food",
+    "Vegetable Uttapam -> Soul Food",
+    "Tomato Uttapam -> Soul Food",
+    "Onion Dosa -> Spicy Food",
+    "Paneer Dosa -> Spicy Food",
+    "Egg Dosa -> Spicy Food",
+    "Onion Uttapam -> Spicy Food",
+    "Tomato Uttapam -> Spicy Food"
+  ]
+}

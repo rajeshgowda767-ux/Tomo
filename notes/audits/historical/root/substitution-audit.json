@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-06-26T14:49:11.254Z",
+  "substitutionScore": 81,
+  "status": "WARNING",
+  "ingredientRecords": 61,
+  "ingredientsWithSubstitutions": 48,
+  "coverage": 79,
+  "summary": {
+    "failures": 0,
+    "warnings": 13,
+    "brokenReferences": 0,
+    "duplicateSubstitutions": 0,
+    "missingConfidence": 0,
+    "missingReason": 0,
+    "missingSuitableFor": 0,
+    "missingAvoidFor": 0,
+    "missingSubstitutions": 13
+  },
+  "ingredientsMissingSubstitutions": [
+    "garlic",
+    "ginger",
+    "curry leaves",
+    "mustard seeds",
+    "green chilli",
+    "jaggery",
+    "peas",
+    "pepper",
+    "bread",
+    "potato",
+    "cream",
+    "bamboo shoot",
+    "gongura"
+  ],
+  "brokenReferences": [],
+  "duplicateSubstitutions": [],
+  "missingConfidence": [],
+  "missingReason": [],
+  "missingSuitableFor": [],
+  "missingAvoidFor": [],
+  "bridgeChecks": [
+    {
+      "name": "tamarind",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "coconut",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "paneer",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "ragi",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "name": "horse gram",
+      "status": "PASS",
+      "missing": []
+    }
+  ]
+}

@@ -77,6 +77,8 @@ CREATE TABLE IF NOT EXISTS recipes (
   best_time TEXT,
   best_day TEXT,
   tomo_line TEXT,
+  food_heritage TEXT NOT NULL DEFAULT '',
+  regional_notes TEXT NOT NULL DEFAULT '',
   home_style_score NUMERIC(4, 2),
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
@@ -119,6 +121,8 @@ ALTER TABLE recipes
   ADD COLUMN IF NOT EXISTS best_time TEXT,
   ADD COLUMN IF NOT EXISTS best_day TEXT,
   ADD COLUMN IF NOT EXISTS tomo_line TEXT,
+  ADD COLUMN IF NOT EXISTS food_heritage TEXT NOT NULL DEFAULT '',
+  ADD COLUMN IF NOT EXISTS regional_notes TEXT NOT NULL DEFAULT '',
   ADD COLUMN IF NOT EXISTS home_style_score INTEGER;
 
 ALTER TABLE recipes

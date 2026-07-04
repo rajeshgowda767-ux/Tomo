@@ -1,0 +1,818 @@
+{
+  "generatedAt": "2026-06-11T03:29:15.594Z",
+  "databasePath": "/Users/apple/Documents/Codex/CookBuddy-latest-local/web-backend-prototype/database/generated/recipes.json",
+  "auditCommand": "node scripts/pantry-recommendation-audit.js",
+  "npmCommandAttempted": "npm run audit:pantry",
+  "npmAvailable": false,
+  "auditSummary": {
+    "total": 103,
+    "PASS": 72,
+    "PASS_WITH_METADATA_FIX": 0,
+    "MISSING_RECIPE": 28,
+    "RANKING_IMPROVEMENT": 2,
+    "LOW_CONFIDENCE": 1,
+    "FAIL": 0
+  },
+  "createdDishes": [
+    {
+      "name": "Peas Pulao",
+      "aliases": [
+        "Matar Pulao",
+        "Green Peas Pulao"
+      ],
+      "baseIngredient": "rice",
+      "coreIngredients": [
+        "rice",
+        "green peas"
+      ],
+      "requiredIngredients": [
+        "rice",
+        "green peas"
+      ],
+      "optionalIngredients": [
+        "onion",
+        "cumin",
+        "whole spices",
+        "ghee",
+        "mint",
+        "coriander",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "pulao",
+      "cuisine": "Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Cook the rice with green peas and mild whole spices. Keep the grains separate and avoid overcooking the peas."
+    },
+    {
+      "name": "Mushroom Pulao",
+      "aliases": [
+        "Mushroom Rice",
+        "Mushroom Pilaf"
+      ],
+      "baseIngredient": "rice",
+      "coreIngredients": [
+        "rice",
+        "mushroom"
+      ],
+      "requiredIngredients": [
+        "rice",
+        "mushroom"
+      ],
+      "optionalIngredients": [
+        "onion",
+        "garlic",
+        "green peas",
+        "whole spices",
+        "ghee",
+        "mint",
+        "coriander",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "pulao",
+      "cuisine": "Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Brown the mushrooms first so they release excess moisture, then cook with rice and aromatic whole spices."
+    },
+    {
+      "name": "Onion Omelette",
+      "aliases": [
+        "Onion Omelet",
+        "Pyaz Omelette"
+      ],
+      "baseIngredient": "egg",
+      "coreIngredients": [
+        "egg",
+        "onion"
+      ],
+      "requiredIngredients": [
+        "egg",
+        "onion"
+      ],
+      "optionalIngredients": [
+        "green chilli",
+        "coriander",
+        "black pepper",
+        "turmeric",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "omelette",
+      "cuisine": "Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Chop the onion finely so it softens while the egg sets. Cook until just firm to keep the omelette tender."
+    },
+    {
+      "name": "Tomato Omelette",
+      "aliases": [
+        "Tomato Omelet"
+      ],
+      "baseIngredient": "egg",
+      "coreIngredients": [
+        "egg",
+        "tomato"
+      ],
+      "requiredIngredients": [
+        "egg",
+        "tomato"
+      ],
+      "optionalIngredients": [
+        "onion",
+        "green chilli",
+        "coriander",
+        "black pepper",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "omelette",
+      "cuisine": "Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Use deseeded, finely chopped tomato to prevent excess moisture, then cook the egg mixture until just set."
+    },
+    {
+      "name": "Batata Poha",
+      "aliases": [
+        "Potato Poha",
+        "Aloo Poha"
+      ],
+      "baseIngredient": "poha",
+      "coreIngredients": [
+        "poha",
+        "potato"
+      ],
+      "requiredIngredients": [
+        "poha",
+        "potato"
+      ],
+      "optionalIngredients": [
+        "onion",
+        "peanuts",
+        "mustard seeds",
+        "turmeric",
+        "curry leaves",
+        "green chilli",
+        "lemon",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "poha",
+      "cuisine": "Maharashtrian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Rinse the poha briefly. Cook small potato cubes until tender before folding in the poha, then finish with lemon."
+    },
+    {
+      "name": "Paneer Mushroom Masala",
+      "aliases": [
+        "Mushroom Paneer Masala",
+        "Paneer Mushroom Curry"
+      ],
+      "baseIngredient": "paneer",
+      "coreIngredients": [
+        "paneer",
+        "mushroom"
+      ],
+      "requiredIngredients": [
+        "paneer",
+        "mushroom"
+      ],
+      "optionalIngredients": [
+        "onion",
+        "tomato",
+        "ginger",
+        "garlic",
+        "cream",
+        "garam masala",
+        "coriander",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "paneer-curry",
+      "cuisine": "North Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Brown mushrooms separately to remove moisture, then finish the paneer and mushrooms in an onion-tomato masala."
+    },
+    {
+      "name": "Chicken Potato Curry",
+      "aliases": [
+        "Chicken Aloo Curry",
+        "Chicken and Potato Curry"
+      ],
+      "baseIngredient": "chicken",
+      "coreIngredients": [
+        "chicken",
+        "potato"
+      ],
+      "requiredIngredients": [
+        "chicken",
+        "potato"
+      ],
+      "optionalIngredients": [
+        "onion",
+        "tomato",
+        "ginger",
+        "garlic",
+        "green chilli",
+        "garam masala",
+        "coriander",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "chicken-curry",
+      "cuisine": "Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Cut potatoes evenly and simmer them with the chicken until both are tender in a medium-thick gravy."
+    },
+    {
+      "name": "Chicken Mushroom Stir Fry",
+      "aliases": [
+        "Mushroom Chicken Stir Fry",
+        "Chicken and Mushroom Stir Fry"
+      ],
+      "baseIngredient": "chicken",
+      "coreIngredients": [
+        "chicken",
+        "mushroom"
+      ],
+      "requiredIngredients": [
+        "chicken",
+        "mushroom"
+      ],
+      "optionalIngredients": [
+        "garlic",
+        "soy sauce",
+        "black pepper",
+        "capsicum",
+        "spring onion",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "stir-fry",
+      "cuisine": "Asian / Indo-Chinese",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Cook over high heat in batches so the mushrooms brown and the chicken stays tender instead of steaming."
+    },
+    {
+      "name": "Mutton Pulao",
+      "aliases": [
+        "Mutton Pilaf",
+        "Gosht Pulao"
+      ],
+      "baseIngredient": "rice",
+      "coreIngredients": [
+        "rice",
+        "mutton"
+      ],
+      "requiredIngredients": [
+        "rice",
+        "mutton"
+      ],
+      "optionalIngredients": [
+        "onion",
+        "yogurt",
+        "ginger",
+        "garlic",
+        "whole spices",
+        "mint",
+        "ghee",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "pulao",
+      "cuisine": "Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Tenderize the mutton before adding rice. Use the cooking stock for flavor and keep the rice grains separate."
+    },
+    {
+      "name": "Palak Paratha",
+      "aliases": [
+        "Spinach Paratha"
+      ],
+      "baseIngredient": "wheat flour",
+      "coreIngredients": [
+        "wheat flour",
+        "spinach"
+      ],
+      "requiredIngredients": [
+        "wheat flour",
+        "spinach"
+      ],
+      "optionalIngredients": [
+        "green chilli",
+        "cumin",
+        "ginger",
+        "ajwain",
+        "ghee",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "paratha",
+      "cuisine": "North Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Use chopped or pureed spinach in the dough and rest it briefly before rolling. Cook on a hot tawa."
+    },
+    {
+      "name": "Mooli Paratha",
+      "aliases": [
+        "Radish Paratha"
+      ],
+      "baseIngredient": "wheat flour",
+      "coreIngredients": [
+        "wheat flour",
+        "radish"
+      ],
+      "requiredIngredients": [
+        "wheat flour",
+        "radish"
+      ],
+      "optionalIngredients": [
+        "radish leaves",
+        "green chilli",
+        "ajwain",
+        "coriander",
+        "ghee",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "paratha",
+      "cuisine": "North Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Salt and squeeze grated radish thoroughly before stuffing so the filling does not make the dough wet."
+    },
+    {
+      "name": "Cheese Paratha",
+      "aliases": [
+        "Cheesy Paratha"
+      ],
+      "baseIngredient": "wheat flour",
+      "coreIngredients": [
+        "wheat flour",
+        "cheese"
+      ],
+      "requiredIngredients": [
+        "wheat flour",
+        "cheese"
+      ],
+      "optionalIngredients": [
+        "chilli flakes",
+        "coriander",
+        "black pepper",
+        "ghee",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "paratha",
+      "cuisine": "Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Seal grated cheese inside the dough and cook over medium heat so the filling melts without burning the paratha."
+    },
+    {
+      "name": "Sweet Holige",
+      "aliases": [
+        "Holige",
+        "Obbattu",
+        "Puran Poli"
+      ],
+      "baseIngredient": "wheat flour",
+      "coreIngredients": [
+        "wheat flour",
+        "jaggery"
+      ],
+      "requiredIngredients": [
+        "wheat flour",
+        "jaggery"
+      ],
+      "optionalIngredients": [
+        "chana dal",
+        "coconut",
+        "cardamom",
+        "turmeric",
+        "ghee",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "sweet-flatbread",
+      "cuisine": "Karnataka / South Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Cook the jaggery-lentil filling until dry, cool it fully, then roll gently and cook the filled flatbread with ghee."
+    },
+    {
+      "name": "Cheese Dosa",
+      "aliases": [
+        "Cheesy Dosa"
+      ],
+      "baseIngredient": "dosa batter",
+      "coreIngredients": [
+        "dosa batter",
+        "cheese"
+      ],
+      "requiredIngredients": [
+        "dosa batter",
+        "cheese"
+      ],
+      "optionalIngredients": [
+        "onion",
+        "chilli flakes",
+        "coriander",
+        "oil",
+        "chutney",
+        "sambar",
+        "salt"
+      ],
+      "dishFamily": "dosa",
+      "cuisine": "South Indian / Fusion",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Spread the batter thinly, cook until crisp, add cheese near the end, and fold once the cheese melts."
+    },
+    {
+      "name": "Cheese Uttapam",
+      "aliases": [
+        "Cheesy Uttapam"
+      ],
+      "baseIngredient": "idli batter",
+      "coreIngredients": [
+        "idli batter",
+        "cheese"
+      ],
+      "requiredIngredients": [
+        "idli batter",
+        "cheese"
+      ],
+      "optionalIngredients": [
+        "onion",
+        "tomato",
+        "capsicum",
+        "green chilli",
+        "coriander",
+        "oil",
+        "salt"
+      ],
+      "dishFamily": "uttapam",
+      "cuisine": "South Indian / Fusion",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Cook a thick uttapam, add toppings and cheese, then cover briefly so the cheese melts while the base browns."
+    },
+    {
+      "name": "Spanish Omelette",
+      "aliases": [
+        "Spanish Tortilla",
+        "Tortilla Espanola",
+        "Potato Omelette"
+      ],
+      "baseIngredient": "egg",
+      "coreIngredients": [
+        "egg",
+        "potato"
+      ],
+      "requiredIngredients": [
+        "egg",
+        "potato"
+      ],
+      "optionalIngredients": [
+        "onion",
+        "black pepper",
+        "parsley",
+        "paprika",
+        "olive oil",
+        "salt"
+      ],
+      "dishFamily": "omelette",
+      "cuisine": "Spanish",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Cook sliced potatoes and onion gently before setting them in beaten eggs. Finish slowly for a tender center."
+    },
+    {
+      "name": "Sweet Rice",
+      "aliases": [
+        "Meetha Chawal",
+        "Jaggery Rice"
+      ],
+      "baseIngredient": "rice",
+      "coreIngredients": [
+        "rice",
+        "jaggery"
+      ],
+      "requiredIngredients": [
+        "rice",
+        "jaggery"
+      ],
+      "optionalIngredients": [
+        "ghee",
+        "cardamom",
+        "coconut",
+        "cashew",
+        "raisins",
+        "saffron"
+      ],
+      "dishFamily": "sweet-rice",
+      "cuisine": "Indian",
+      "moodTags": [],
+      "isRealDish": true,
+      "cookingNotes": "Cook rice until tender, dissolve jaggery separately, then combine and finish with cardamom and ghee."
+    }
+  ],
+  "aliasesAdded": [
+    {
+      "recipe": "Andhra Kodi Vepudu",
+      "aliases": [
+        "Chicken Fry",
+        "Andhra Chicken Fry"
+      ]
+    },
+    {
+      "recipe": "Chicken Fried Rice",
+      "aliases": [
+        "Chicken Egg Fried Rice",
+        "Chicken and Egg Fried Rice"
+      ]
+    },
+    {
+      "recipe": "Upma",
+      "aliases": [
+        "Vegetable Upma",
+        "Vegetable Rava Upma"
+      ]
+    }
+  ],
+  "remainingMissingRecipes": [
+    {
+      "pantry": [
+        "Rice",
+        "Carrot"
+      ],
+      "expected": "Carrot Rice",
+      "topRecommendation": "Veg Fried Rice",
+      "reason": "primary expected recipe missing from database: Carrot Rice"
+    },
+    {
+      "pantry": [
+        "Rice",
+        "Beans"
+      ],
+      "expected": "Veg Rice",
+      "topRecommendation": "Veg Fried Rice",
+      "reason": "primary expected recipe missing from database: Veg Rice; weak candidate Veg Fried Rice ignores selected ingredient beans"
+    },
+    {
+      "pantry": [
+        "Rice",
+        "Garlic"
+      ],
+      "expected": "Garlic Rice",
+      "topRecommendation": "Veg Fried Rice",
+      "reason": "primary expected recipe missing from database: Garlic Rice"
+    },
+    {
+      "pantry": [
+        "Rice",
+        "Coriander"
+      ],
+      "expected": "Coriander Rice",
+      "topRecommendation": "Veg Fried Rice",
+      "reason": "primary expected recipe missing from database: Coriander Rice; weak candidate Veg Fried Rice ignores selected ingredient coriander"
+    },
+    {
+      "pantry": [
+        "Rice",
+        "Mint"
+      ],
+      "expected": "Mint Rice",
+      "topRecommendation": "Veg Fried Rice",
+      "reason": "primary expected recipe missing from database: Mint Rice; weak candidate Veg Fried Rice ignores selected ingredient mint"
+    },
+    {
+      "pantry": [
+        "Rice",
+        "Spinach"
+      ],
+      "expected": "Spinach Rice",
+      "topRecommendation": "Veg Fried Rice",
+      "reason": "primary expected recipe missing from database: Spinach Rice; weak candidate Veg Fried Rice ignores selected ingredient spinach"
+    },
+    {
+      "pantry": [
+        "Rice",
+        "Beetroot"
+      ],
+      "expected": "Beetroot Rice",
+      "topRecommendation": "Veg Fried Rice",
+      "reason": "primary expected recipe missing from database: Beetroot Rice; weak candidate Veg Fried Rice ignores selected ingredient beetroot"
+    },
+    {
+      "pantry": [
+        "Rice",
+        "Corn"
+      ],
+      "expected": "Corn Rice",
+      "topRecommendation": "Veg Fried Rice",
+      "reason": "primary expected recipe missing from database: Corn Rice; weak candidate Veg Fried Rice ignores selected ingredient corn"
+    },
+    {
+      "pantry": [
+        "Rice",
+        "Soya Chunks"
+      ],
+      "expected": "Soya Fried Rice",
+      "topRecommendation": "Veg Fried Rice",
+      "reason": "primary expected recipe missing from database: Soya Fried Rice; weak candidate Veg Fried Rice ignores selected ingredient soya chunks"
+    },
+    {
+      "pantry": [
+        "Wheat Flour",
+        "Garlic"
+      ],
+      "expected": "Garlic Paratha",
+      "topRecommendation": "Plain Chapati",
+      "reason": "primary expected recipe missing from database: Garlic Paratha; weak candidate Plain Chapati ignores selected ingredient garlic"
+    },
+    {
+      "pantry": [
+        "Wheat Flour",
+        "Beetroot"
+      ],
+      "expected": "Beetroot Paratha",
+      "topRecommendation": "Plain Chapati",
+      "reason": "primary expected recipe missing from database: Beetroot Paratha; weak candidate Plain Chapati ignores selected ingredient beetroot"
+    },
+    {
+      "pantry": [
+        "Wheat Flour",
+        "Carrot"
+      ],
+      "expected": "Carrot Paratha",
+      "topRecommendation": "Momos",
+      "reason": "primary expected recipe missing from database: Carrot Paratha"
+    },
+    {
+      "pantry": [
+        "Wheat Flour",
+        "Cabbage"
+      ],
+      "expected": "Cabbage Paratha",
+      "topRecommendation": "Plain Chapati",
+      "reason": "primary expected recipe missing from database: Cabbage Paratha; weak candidate Plain Chapati ignores selected ingredient cabbage"
+    },
+    {
+      "pantry": [
+        "Wheat Flour",
+        "Corn"
+      ],
+      "expected": "Corn Paratha",
+      "topRecommendation": "Plain Chapati",
+      "reason": "primary expected recipe missing from database: Corn Paratha; weak candidate Plain Chapati ignores selected ingredient corn"
+    },
+    {
+      "pantry": [
+        "Wheat Flour",
+        "Peas"
+      ],
+      "expected": "Peas Paratha",
+      "topRecommendation": "Plain Chapati",
+      "reason": "primary expected recipe missing from database: Peas Paratha; weak candidate Plain Chapati ignores selected ingredient green peas"
+    },
+    {
+      "pantry": [
+        "Paneer",
+        "Corn"
+      ],
+      "expected": "Corn Paneer Masala",
+      "topRecommendation": "None",
+      "reason": "primary expected recipe missing from database: Corn Paneer Masala"
+    },
+    {
+      "pantry": [
+        "Paneer",
+        "Cheese"
+      ],
+      "expected": "Cheesy Paneer Tikka",
+      "topRecommendation": "None",
+      "reason": "primary expected recipe missing from database: Cheesy Paneer Tikka"
+    },
+    {
+      "pantry": [
+        "Paneer",
+        "Garlic"
+      ],
+      "expected": "Garlic Paneer",
+      "topRecommendation": "None",
+      "reason": "primary expected recipe missing from database: Garlic Paneer"
+    },
+    {
+      "pantry": [
+        "Egg",
+        "Spinach"
+      ],
+      "expected": "Spinach Omelette",
+      "topRecommendation": "None",
+      "reason": "primary expected recipe missing from database: Spinach Omelette"
+    },
+    {
+      "pantry": [
+        "Egg",
+        "Paneer"
+      ],
+      "expected": "Paneer Omelette",
+      "topRecommendation": "None",
+      "reason": "primary expected recipe missing from database: Paneer Omelette"
+    },
+    {
+      "pantry": [
+        "Chicken",
+        "Coriander"
+      ],
+      "expected": "Coriander Chicken",
+      "topRecommendation": "None",
+      "reason": "primary expected recipe missing from database: Coriander Chicken"
+    },
+    {
+      "pantry": [
+        "Chicken",
+        "Mint"
+      ],
+      "expected": "Mint Chicken",
+      "topRecommendation": "None",
+      "reason": "primary expected recipe missing from database: Mint Chicken"
+    },
+    {
+      "pantry": [
+        "Poha",
+        "Onion"
+      ],
+      "expected": "Kanda Poha",
+      "topRecommendation": "Avalakki",
+      "reason": "primary expected recipe missing from database: Kanda Poha"
+    },
+    {
+      "pantry": [
+        "Poha",
+        "Peanuts"
+      ],
+      "expected": "Peanut Poha",
+      "topRecommendation": "None",
+      "reason": "primary expected recipe missing from database: Peanut Poha"
+    },
+    {
+      "pantry": [
+        "Rava",
+        "Onion"
+      ],
+      "expected": "Rava Upma",
+      "topRecommendation": "Instant Rava Upma",
+      "reason": "primary expected recipe missing from database: Rava Upma"
+    },
+    {
+      "pantry": [
+        "Rava",
+        "Tomato"
+      ],
+      "expected": "Tomato Upma",
+      "topRecommendation": "Upma",
+      "reason": "primary expected recipe missing from database: Tomato Upma; weak candidate Upma ignores selected ingredient tomato"
+    },
+    {
+      "pantry": [
+        "Avalakki",
+        "Coconut"
+      ],
+      "expected": "Coconut Avalakki",
+      "topRecommendation": "None",
+      "reason": "primary expected recipe missing from database: Coconut Avalakki"
+    },
+    {
+      "pantry": [
+        "Avalakki",
+        "Onion"
+      ],
+      "expected": "Avalakki Uppittu",
+      "topRecommendation": "Avalakki",
+      "reason": "primary expected recipe missing from database: Avalakki Uppittu"
+    }
+  ],
+  "remainingLowConfidence": [
+    {
+      "pantry": [
+        "Wheat Flour",
+        "Urad Dal"
+      ],
+      "expected": "NO_STRONG_MATCH",
+      "topRecommendation": "None",
+      "reason": "No confident recommendation forced.; weak candidate Plain Chapati ignores selected ingredient urad dal"
+    }
+  ]
+}

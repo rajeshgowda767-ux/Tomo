@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-06-11T07:56:27.676Z",
+  "hardExcludes": {
+    "soul": [
+      "Spicy Aloo Paratha",
+      "Spicy Masala Dosa",
+      "Gunpowder Idli",
+      "Kaaram Dosa"
+    ],
+    "protein": [
+      "Ladoo",
+      "Bonda",
+      "Pakora",
+      "Bread Pakora",
+      "Mirchi Bajji",
+      "Mirapakaya Bajji"
+    ]
+  },
+  "rainyDayVisiblePakoraFamilyMaximum": 2,
+  "dishesRemoved": {
+    "soul": [
+      "Spicy Aloo Paratha",
+      "Spicy Masala Dosa",
+      "Gunpowder Idli",
+      "Kaaram Dosa"
+    ],
+    "protein": [
+      "Ladoo",
+      "Bonda",
+      "Pakora",
+      "Bread Pakora",
+      "Mirchi Bajji",
+      "Mirapakaya Bajji"
+    ]
+  },
+  "dishesAdded": {
+    "soul": [],
+    "protein": []
+  },
+  "dishesRemovedFromTop20": {
+    "soul": [],
+    "protein": []
+  },
+  "dishesAddedToTop20": {
+    "soul": [],
+    "protein": []
+  },
+  "updatedTop20": {
+    "soul": [
+      "Curd Rice",
+      "Dal Rice",
+      "Rasam Rice",
+      "Rice Porridge",
+      "Soft Idli",
+      "Idli",
+      "Khichdi",
+      "Aloo Paratha",
+      "Chole Chawal",
+      "Coconut Rice",
+      "Dosa",
+      "Masala Dosa",
+      "Pongal",
+      "Puliyogare",
+      "Rajma Chawal",
+      "Sambar Rice",
+      "Oats Porridge",
+      "Ragi Porridge",
+      "Andhra Podi Idli",
+      "Sabudana Khichdi"
+    ],
+    "protein": [
+      "Egg Curry",
+      "Egg Bhurji",
+      "Egg Toast",
+      "Egg Fried Rice",
+      "Chicken Curry",
+      "Chicken Fried Rice",
+      "Chilli Chicken",
+      "Chicken Chettinad",
+      "Chicken Stew",
+      "Chole Chawal",
+      "Dal Makhani",
+      "Egg Dosa",
+      "Fish Curry",
+      "Fish Fry",
+      "Kadai Paneer",
+      "Matar Paneer",
+      "Palak Paneer",
+      "Paneer Bhurji",
+      "Paneer Dosa",
+      "Paneer Paratha"
+    ]
+  },
+  "note": "Empty Top 20 diffs mean prior metadata already hid the dish; HARD_EXCLUDE now prevents scoring or metadata from restoring it."
+}

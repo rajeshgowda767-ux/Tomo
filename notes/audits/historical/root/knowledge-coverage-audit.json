@@ -1,0 +1,3019 @@
+{
+  "generatedAt": "2026-06-26T14:49:10.490Z",
+  "status": "WARNING",
+  "knowledgeScore": 80,
+  "dimensionScores": {
+    "seafoodCoverage": 100,
+    "bridgeCoverage": 100,
+    "recipeLinkCoverage": 29,
+    "structure": 100,
+    "pantryCoverage": 82
+  },
+  "summary": {
+    "ingredientRecordCount": 61,
+    "seafoodRecordCount": 14,
+    "requiredSeafoodCount": 13,
+    "coveredSeafoodCount": 13,
+    "recipesLinkedToKnowledge": 136,
+    "pantryIngredientsWithoutKnowledge": 21,
+    "knowledgeRecordsWithoutRecipePaths": 7,
+    "missingAliasCount": 8,
+    "weakRegionalMappingCount": 28,
+    "failCount": 0,
+    "warningCount": 61
+  },
+  "seafood": {
+    "required": [
+      "seer fish",
+      "pomfret",
+      "mackerel",
+      "sardine",
+      "anchovy",
+      "rohu",
+      "catla",
+      "tilapia",
+      "basa",
+      "prawns",
+      "crab",
+      "squid",
+      "mussels and clams"
+    ],
+    "covered": [
+      "seer fish",
+      "pomfret",
+      "mackerel",
+      "sardine",
+      "anchovy",
+      "rohu",
+      "catla",
+      "tilapia",
+      "basa",
+      "prawns",
+      "crab",
+      "squid",
+      "mussels and clams"
+    ],
+    "missing": [],
+    "score": 100
+  },
+  "records": [
+    {
+      "canonicalName": "seer fish",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 5,
+      "regionalNameCount": 5,
+      "activeRecipeLinks": [
+        {
+          "title": "Fish Fry",
+          "slug": "fish-fry-dinner"
+        },
+        {
+          "title": "Fish Curry",
+          "slug": "fish-curry-dinner"
+        },
+        {
+          "title": "Kerala Fish Curry",
+          "slug": "kerala-fish-curry"
+        },
+        {
+          "title": "Mangalorean Fish Curry",
+          "slug": "karnataka-wave-b-mangalorean-fish-curry"
+        },
+        {
+          "title": "Malvani Fish Curry",
+          "slug": "maharashtra-wave-malvani-fish-curry"
+        },
+        {
+          "title": "Fish Fry Tamil Style",
+          "slug": "tamil-nadu-wave-15-fish-fry-tamil-style"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "pomfret",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 4,
+      "activeRecipeLinks": [
+        {
+          "title": "Fish Fry",
+          "slug": "fish-fry-dinner"
+        },
+        {
+          "title": "Goan Fish Curry",
+          "slug": "expansion-pack-4-goan-fish-curry"
+        },
+        {
+          "title": "Kerala Fish Pollichathu",
+          "slug": "expansion-pack-3-meen-pollichathu"
+        },
+        {
+          "title": "Malvani Fish Curry",
+          "slug": "maharashtra-wave-malvani-fish-curry"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "mackerel",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 4,
+      "activeRecipeLinks": [
+        {
+          "title": "Goan Fish Curry",
+          "slug": "expansion-pack-4-goan-fish-curry"
+        },
+        {
+          "title": "Mangalorean Fish Curry",
+          "slug": "karnataka-wave-b-mangalorean-fish-curry"
+        },
+        {
+          "title": "Malabar Fish Curry",
+          "slug": "kerala-wave-16-malabar-fish-curry"
+        },
+        {
+          "title": "Malvani Fish Curry",
+          "slug": "maharashtra-wave-malvani-fish-curry"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "sardine",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 3,
+      "activeRecipeLinks": [
+        {
+          "title": "Kerala Fish Curry",
+          "slug": "kerala-fish-curry"
+        },
+        {
+          "title": "Malabar Fish Curry",
+          "slug": "kerala-wave-16-malabar-fish-curry"
+        },
+        {
+          "title": "Mangalorean Fish Curry",
+          "slug": "karnataka-wave-b-mangalorean-fish-curry"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "anchovy",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 3,
+      "activeRecipeLinks": [
+        {
+          "title": "Fish Fry Tamil Style",
+          "slug": "tamil-nadu-wave-15-fish-fry-tamil-style"
+        },
+        {
+          "title": "Meen Kuzhambu",
+          "slug": "tamil-nadu-wave-14-meen-kuzhambu"
+        },
+        {
+          "title": "Andhra Fish Fry",
+          "slug": "andhra-telangana-wave-20-andhra-fish-fry"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "rohu",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 2,
+      "activeRecipeLinks": [
+        {
+          "title": "Macher Jhol",
+          "slug": "expansion-pack-4-macher-jhol"
+        },
+        {
+          "title": "Fish Curry",
+          "slug": "fish-curry-dinner"
+        },
+        {
+          "title": "Fish Fry",
+          "slug": "fish-fry-dinner"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "catla",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 2,
+      "activeRecipeLinks": [
+        {
+          "title": "Macher Jhol",
+          "slug": "expansion-pack-4-macher-jhol"
+        },
+        {
+          "title": "Fish Curry Rice",
+          "slug": "fish-curry-rice-lunch"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "tilapia",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 2,
+      "activeRecipeLinks": [
+        {
+          "title": "Fish Fry",
+          "slug": "fish-fry-dinner"
+        },
+        {
+          "title": "Fish Curry",
+          "slug": "fish-curry-dinner"
+        },
+        {
+          "title": "Fish Curry Rice",
+          "slug": "fish-curry-rice-lunch"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "basa",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 2,
+      "activeRecipeLinks": [
+        {
+          "title": "Fish Pakora",
+          "slug": "fish-pakora-snack"
+        },
+        {
+          "title": "Fish Fry",
+          "slug": "fish-fry-dinner"
+        },
+        {
+          "title": "Fish Curry",
+          "slug": "fish-curry-dinner"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "prawns",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 5,
+      "regionalNameCount": 4,
+      "activeRecipeLinks": [
+        {
+          "title": "Prawn Ghee Roast",
+          "slug": "prawn-ghee-roast"
+        },
+        {
+          "title": "Prawn Sukka",
+          "slug": "expansion-pack-3-prawn-sukka"
+        },
+        {
+          "title": "Goan Prawn Balchao",
+          "slug": "expansion-pack-4-goan-prawn-balchao"
+        },
+        {
+          "title": "Royyala Iguru",
+          "slug": "andhra-telangana-wave-11-royyala-iguru"
+        },
+        {
+          "title": "Chemmeen Theeyal",
+          "slug": "kerala-wave-15-chemmeen-theeyal"
+        },
+        {
+          "title": "Daab Chingri",
+          "slug": "bengal-wave-15-daab-chingri"
+        },
+        {
+          "title": "Chingri Malai Curry",
+          "slug": "expansion-pack-3-chingri-malai-curry"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "crab",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 2,
+      "activeRecipeLinks": [
+        {
+          "title": "Nandu Rasam",
+          "slug": "tamil-nadu-wave-13-nandu-rasam"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "squid",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 1,
+      "activeRecipeLinks": [],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "mussels and clams",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 5,
+      "regionalNameCount": 2,
+      "activeRecipeLinks": [],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "toor dal",
+      "category": "dals and pulses",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 3,
+      "activeRecipeLinks": [
+        {
+          "title": "Udupi Sambar",
+          "slug": "karnataka-wave-a-udupi-sambar"
+        },
+        {
+          "title": "Bele Saaru",
+          "slug": "balance-tier-1-bele-saaru"
+        },
+        {
+          "title": "Sambar Rice",
+          "slug": "sambar-rice-lunch"
+        },
+        {
+          "title": "Tomato Pappu",
+          "slug": "balance-tier-1-tomato-pappu"
+        },
+        {
+          "title": "Palak Dal",
+          "slug": "balance-tier-1-palak-dal"
+        },
+        {
+          "title": "Mysore Rasam",
+          "slug": "warm-bowls-detail-mysore-rasam"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "moong dal",
+      "category": "dals and pulses",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 3,
+      "activeRecipeLinks": [
+        {
+          "title": "Moong Dal Chilla",
+          "slug": "balance-sprint-2-moong-dal-chilla"
+        },
+        {
+          "title": "Pesarattu",
+          "slug": "expansion-pack-2-pesarattu"
+        },
+        {
+          "title": "One Pot Dal Palak Rice",
+          "slug": "expansion-pack-1-one-pot-dal-palak-rice"
+        },
+        {
+          "title": "Kosambari",
+          "slug": "expansion-pack-2-kosambari"
+        },
+        {
+          "title": "Moong Dal Vegetable Khichdi",
+          "slug": "expansion-pack-1-moong-dal-vegetable-khichdi"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "urad dal",
+      "category": "dals and pulses",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 3,
+      "activeRecipeLinks": [
+        {
+          "title": "Idli",
+          "slug": "idli-breakfast"
+        },
+        {
+          "title": "Dosa",
+          "slug": "dosa-breakfast"
+        },
+        {
+          "title": "Gunpowder Idli",
+          "slug": "gunpowder-idli"
+        },
+        {
+          "title": "Minapa Garelu",
+          "slug": "andhra-telangana-wave-25-minapa-garelu"
+        },
+        {
+          "title": "Kotte Kadubu",
+          "slug": "karnataka-wave-b-kotte-kadubu"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "horse gram",
+      "category": "dals and pulses",
+      "pantryRole": "core",
+      "aliasCount": 4,
+      "regionalNameCount": 4,
+      "activeRecipeLinks": [
+        {
+          "title": "Bassaru",
+          "slug": "karnataka-pack-1-bassaru"
+        },
+        {
+          "title": "Kollu Rasam",
+          "slug": "warm-bowls-detail-kollu-rasam"
+        },
+        {
+          "title": "Ulavacharu",
+          "slug": "andhra-telangana-wave-16-ulavacharu"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "rice",
+      "category": "rice",
+      "pantryRole": "core",
+      "aliasCount": 4,
+      "regionalNameCount": 4,
+      "activeRecipeLinks": [
+        {
+          "title": "Akki Roti",
+          "slug": "expansion-pack-2-akki-roti"
+        },
+        {
+          "title": "Bisibelebath",
+          "slug": "bisibelebath-lunch"
+        },
+        {
+          "title": "Puliyogare",
+          "slug": "pantry-puliyogare"
+        },
+        {
+          "title": "Coconut Rice",
+          "slug": "coconut-rice"
+        },
+        {
+          "title": "Sambar Rice",
+          "slug": "sambar-rice-lunch"
+        },
+        {
+          "title": "Rasam Rice",
+          "slug": "rasam-rice-lunch"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "ragi",
+      "category": "millets",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 3,
+      "activeRecipeLinks": [
+        {
+          "title": "Ragi Mudde",
+          "slug": "karnataka-wave-a-ragi-mudde"
+        },
+        {
+          "title": "Ragi Rotti",
+          "slug": "karnataka-wave-a-ragi-rotti"
+        },
+        {
+          "title": "Ragi Malt",
+          "slug": "balance-tier-1-ragi-malt"
+        },
+        {
+          "title": "Ragi Dosa",
+          "slug": "pantry-ragi-dosa"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "millets",
+      "category": "millets",
+      "pantryRole": "core",
+      "aliasCount": 5,
+      "regionalNameCount": 2,
+      "activeRecipeLinks": [
+        {
+          "title": "Millet Soup",
+          "slug": "warm-bowls-detail-millet-soup"
+        },
+        {
+          "title": "Millet Salad",
+          "slug": "fresh-plates-detail-millet-salad"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "palak",
+      "category": "greens",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 3,
+      "activeRecipeLinks": [
+        {
+          "title": "Soppu Saaru",
+          "slug": "karnataka-pack-1-soppu-saaru"
+        },
+        {
+          "title": "Palak Dal",
+          "slug": "balance-tier-1-palak-dal"
+        },
+        {
+          "title": "One Pot Dal Palak Rice",
+          "slug": "expansion-pack-1-one-pot-dal-palak-rice"
+        },
+        {
+          "title": "Palak Paratha",
+          "slug": "approved-palak-paratha"
+        },
+        {
+          "title": "Palak Paneer",
+          "slug": "palak-paneer-lunch"
+        },
+        {
+          "title": "Spinach Soup",
+          "slug": "warm-bowls-detail-spinach-soup"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "greens",
+      "category": "greens",
+      "pantryRole": "core",
+      "aliasCount": 4,
+      "regionalNameCount": 3,
+      "activeRecipeLinks": [
+        {
+          "title": "Soppu Saaru",
+          "slug": "karnataka-pack-1-soppu-saaru"
+        },
+        {
+          "title": "Bassaru",
+          "slug": "karnataka-pack-1-bassaru"
+        },
+        {
+          "title": "Sarson Ka Saag",
+          "slug": "balance-tier-1-sarson-ka-saag"
+        },
+        {
+          "title": "Chingri Xaak",
+          "slug": "northeast-wave-chingri-xaak"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "chicken",
+      "category": "chicken cuts",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 3,
+      "activeRecipeLinks": [
+        {
+          "title": "Chicken Curry",
+          "slug": "chicken-curry-dinner"
+        },
+        {
+          "title": "Chicken Sukka",
+          "slug": "chicken-sukka"
+        },
+        {
+          "title": "Chicken Stew",
+          "slug": "chicken-stew-lunch"
+        },
+        {
+          "title": "Natu Kodi Pulusu",
+          "slug": "andhra-telangana-wave-18-natu-kodi-pulusu"
+        },
+        {
+          "title": "Kongunadu Chicken Curry",
+          "slug": "tamil-nadu-wave-16-kongunadu-chicken-curry"
+        },
+        {
+          "title": "Malabar Chicken Curry",
+          "slug": "kerala-wave-11-malabar-chicken-curry"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "paneer",
+      "category": "paneer",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 1,
+      "activeRecipeLinks": [
+        {
+          "title": "Palak Paneer",
+          "slug": "palak-paneer-lunch"
+        },
+        {
+          "title": "Paneer Tikka",
+          "slug": "paneer-tikka-snack"
+        },
+        {
+          "title": "Paneer Pakora",
+          "slug": "paneer-pakora-snack"
+        },
+        {
+          "title": "Paneer Paratha",
+          "slug": "paneer-paratha-breakfast"
+        },
+        {
+          "title": "Paneer Bhurji",
+          "slug": "paneer-bhurji-dinner"
+        },
+        {
+          "title": "Paneer Dosa",
+          "slug": "pantry-paneer-dosa"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "coconut",
+      "category": "coconut",
+      "pantryRole": "flavor",
+      "aliasCount": 5,
+      "regionalNameCount": 4,
+      "activeRecipeLinks": [
+        {
+          "title": "Coconut Chutney",
+          "slug": "side-addon-coconut-chutney"
+        },
+        {
+          "title": "Avial",
+          "slug": "expansion-pack-3-avial"
+        },
+        {
+          "title": "Beans Thoran",
+          "slug": "expansion-pack-3-beans-thoran"
+        },
+        {
+          "title": "Cabbage Thoran",
+          "slug": "balance-tier-1-cabbage-thoran"
+        },
+        {
+          "title": "Coconut Rice",
+          "slug": "coconut-rice"
+        },
+        {
+          "title": "Goan Fish Curry",
+          "slug": "expansion-pack-4-goan-fish-curry"
+        },
+        {
+          "title": "Prawn Sukka",
+          "slug": "expansion-pack-3-prawn-sukka"
+        },
+        {
+          "title": "Kayi Saaru",
+          "slug": "karnataka-wave-b-kayi-saaru"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "tamarind",
+      "category": "tamarind",
+      "pantryRole": "flavor",
+      "aliasCount": 4,
+      "regionalNameCount": 4,
+      "activeRecipeLinks": [
+        {
+          "title": "Puliyogare",
+          "slug": "pantry-puliyogare"
+        },
+        {
+          "title": "Pepper Rasam",
+          "slug": "pepper-rasam"
+        },
+        {
+          "title": "Tomato Rasam",
+          "slug": "warm-bowls-detail-tomato-rasam"
+        },
+        {
+          "title": "Kerala Rasam",
+          "slug": "kerala-wave-05-kerala-rasam"
+        },
+        {
+          "title": "Bendakaya Pulusu",
+          "slug": "andhra-telangana-wave-10-bendakaya-pulusu"
+        },
+        {
+          "title": "Chepala Pulusu",
+          "slug": "andhra-telangana-wave-19-chepala-pulusu"
+        },
+        {
+          "title": "Meen Kuzhambu",
+          "slug": "tamil-nadu-wave-14-meen-kuzhambu"
+        },
+        {
+          "title": "Sambar Rice",
+          "slug": "sambar-rice-lunch"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "raw mango",
+      "category": "raw mango",
+      "pantryRole": "flavor",
+      "aliasCount": 4,
+      "regionalNameCount": 4,
+      "activeRecipeLinks": [
+        {
+          "title": "Ugadi Pachadi",
+          "slug": "collection-detail-ugadi-pachadi"
+        },
+        {
+          "title": "Mamidikaya Pappu",
+          "slug": "andhra-telangana-wave-07-mamidikaya-pappu"
+        },
+        {
+          "title": "Mango Rice",
+          "slug": "collection-detail-mango-rice"
+        },
+        {
+          "title": "Mango Salad",
+          "slug": "fresh-plates-detail-mango-salad"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "tomato",
+      "category": "vegetables",
+      "pantryRole": "core",
+      "aliasCount": 4,
+      "regionalNameCount": 4,
+      "activeRecipeLinks": [
+        {
+          "title": "Tomato Rice",
+          "slug": "tomato-rice"
+        },
+        {
+          "title": "Tomato Chutney",
+          "slug": "side-addon-tomato-chutney"
+        },
+        {
+          "title": "Tomato Rasam",
+          "slug": "warm-bowls-detail-tomato-rasam"
+        },
+        {
+          "title": "Rasam Rice",
+          "slug": "rasam-rice-lunch"
+        },
+        {
+          "title": "Tomato Pappu",
+          "slug": "balance-tier-1-tomato-pappu"
+        },
+        {
+          "title": "Tomato Soup",
+          "slug": "warm-bowls-detail-tomato-soup"
+        },
+        {
+          "title": "Tomato Basil Soup",
+          "slug": "global-wave-a-tomato-basil-soup"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "onion",
+      "category": "vegetables",
+      "pantryRole": "core",
+      "aliasCount": 6,
+      "regionalNameCount": 5,
+      "activeRecipeLinks": [
+        {
+          "title": "Onion Rice",
+          "slug": "pantry-onion-rice"
+        },
+        {
+          "title": "Onion Raita",
+          "slug": "side-addon-onion-raita"
+        },
+        {
+          "title": "Onion Tomato Salad",
+          "slug": "fresh-plates-detail-onion-tomato-salad"
+        },
+        {
+          "title": "Onion Dosa",
+          "slug": "pantry-onion-dosa"
+        },
+        {
+          "title": "Onion Paratha",
+          "slug": "pantry-onion-paratha"
+        },
+        {
+          "title": "Onion Uttapam",
+          "slug": "pantry-onion-uttapam"
+        },
+        {
+          "title": "Bread Pakora",
+          "slug": "bread-pakora-snack"
+        },
+        {
+          "title": "Egg Bhurji",
+          "slug": "egg-bhurji-dinner"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "fish",
+      "category": "fish and seafood",
+      "pantryRole": "core",
+      "aliasCount": 5,
+      "regionalNameCount": 4,
+      "activeRecipeLinks": [
+        {
+          "title": "Fish Fry",
+          "slug": "fish-fry-dinner"
+        },
+        {
+          "title": "Fish Curry",
+          "slug": "fish-curry-dinner"
+        },
+        {
+          "title": "Fish Curry Rice",
+          "slug": "fish-curry-rice-lunch"
+        },
+        {
+          "title": "Goan Fish Curry",
+          "slug": "expansion-pack-4-goan-fish-curry"
+        },
+        {
+          "title": "Kerala Fish Curry",
+          "slug": "kerala-fish-curry"
+        },
+        {
+          "title": "Mangalorean Fish Curry",
+          "slug": "karnataka-wave-b-mangalorean-fish-curry"
+        },
+        {
+          "title": "Fish Fry Tamil Style",
+          "slug": "tamil-nadu-wave-15-fish-fry-tamil-style"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "capsicum",
+      "category": "vegetables",
+      "pantryRole": "support",
+      "aliasCount": 3,
+      "regionalNameCount": 2,
+      "activeRecipeLinks": [
+        {
+          "title": "Kadai Paneer",
+          "slug": "pantry-kadai-paneer"
+        },
+        {
+          "title": "Chilli Paneer",
+          "slug": "chilli-paneer"
+        },
+        {
+          "title": "Paneer Capsicum Rice Bowl",
+          "slug": "expansion-pack-1-paneer-capsicum-rice-bowl"
+        },
+        {
+          "title": "Paneer Tikka Masala",
+          "slug": "paneer-tikka-masala"
+        },
+        {
+          "title": "Egg Capsicum Bhurji",
+          "slug": "expansion-pack-1-egg-capsicum-bhurji"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "egg",
+      "category": "egg",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Egg Bhurji",
+          "slug": "egg-bhurji-dinner"
+        },
+        {
+          "title": "Egg Curry",
+          "slug": "egg-curry"
+        },
+        {
+          "title": "Egg Fried Rice",
+          "slug": "egg-fried-rice-breakfast"
+        },
+        {
+          "title": "Egg Dosa",
+          "slug": "pantry-egg-dosa"
+        },
+        {
+          "title": "Egg Toast",
+          "slug": "egg-toast"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [
+        {
+          "slug": "egg-curry-lunch",
+          "status": "missing",
+          "title": ""
+        },
+        {
+          "slug": "egg-dosa-breakfast",
+          "status": "missing",
+          "title": ""
+        },
+        {
+          "slug": "egg-toast-breakfast",
+          "status": "missing",
+          "title": ""
+        }
+      ],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "kokum",
+      "category": "flavor",
+      "pantryRole": "flavor",
+      "aliasCount": 1,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Kokum Sharbat",
+          "slug": "balance-sprint-2-kokum-sharbat"
+        },
+        {
+          "title": "Goan Fish Curry",
+          "slug": "expansion-pack-4-goan-fish-curry"
+        },
+        {
+          "title": "Sol Kadhi",
+          "slug": "expansion-pack-3-sol-kadhi"
+        },
+        {
+          "title": "Malvani Fish Curry",
+          "slug": "maharashtra-wave-malvani-fish-curry"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [
+        {
+          "slug": "kokum-sharbat",
+          "status": "missing",
+          "title": ""
+        }
+      ],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "lemon",
+      "category": "flavor",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Lemon Rice",
+          "slug": "lemon-rice-lunch"
+        },
+        {
+          "title": "Jal Jeera",
+          "slug": "balance-sprint-2-jal-jeera"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [
+        {
+          "slug": "jal-jeera",
+          "status": "missing",
+          "title": ""
+        }
+      ],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "cashew",
+      "category": "nuts and seeds",
+      "pantryRole": "support",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Paneer Tikka Masala",
+          "slug": "paneer-tikka-masala"
+        }
+      ],
+      "missingTitleLinks": [
+        {
+          "title": "Korma",
+          "status": "missing",
+          "slug": ""
+        }
+      ],
+      "missingSlugLinks": [
+        {
+          "slug": "veg-korma",
+          "status": "missing",
+          "title": ""
+        }
+      ],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "peanut",
+      "category": "nuts and seeds",
+      "pantryRole": "support",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Peanut Chutney",
+          "slug": "side-addon-peanut-chutney"
+        },
+        {
+          "title": "Peanut Sundal",
+          "slug": "peanut-sundal"
+        },
+        {
+          "title": "Shenga Chutney",
+          "slug": "karnataka-wave-b-shenga-chutney"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [
+        {
+          "slug": "peanut-chutney",
+          "status": "missing",
+          "title": ""
+        },
+        {
+          "slug": "shenga-chutney",
+          "status": "missing",
+          "title": ""
+        }
+      ],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "tofu",
+      "category": "plant protein",
+      "pantryRole": "core",
+      "aliasCount": 1,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "jowar",
+      "category": "millets",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "bajra",
+      "category": "millets",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "green gram",
+      "category": "dals/pulses",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Sprouted Moong Salad",
+          "slug": "balance-tier-1-sprouted-moong-salad"
+        }
+      ],
+      "missingTitleLinks": [
+        {
+          "title": "Moong Dal",
+          "status": "missing",
+          "slug": ""
+        }
+      ],
+      "missingSlugLinks": [
+        {
+          "slug": "sprouted-moong-salad",
+          "status": "missing",
+          "title": ""
+        },
+        {
+          "slug": "moong-dal",
+          "status": "missing",
+          "title": ""
+        }
+      ],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "black gram",
+      "category": "dals/pulses",
+      "pantryRole": "core",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Idli",
+          "slug": "idli-breakfast"
+        },
+        {
+          "title": "Dosa",
+          "slug": "dosa-breakfast"
+        },
+        {
+          "title": "Dal Makhani",
+          "slug": "dal-makhani"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "curd",
+      "category": "dairy",
+      "pantryRole": "support",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Onion Raita",
+          "slug": "side-addon-onion-raita"
+        },
+        {
+          "title": "Thayir Sadam",
+          "slug": "curd-rice-lunch"
+        }
+      ],
+      "missingTitleLinks": [
+        {
+          "title": "Curd Rice",
+          "status": "missing",
+          "slug": ""
+        }
+      ],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "buttermilk",
+      "category": "dairy",
+      "pantryRole": "support",
+      "aliasCount": 3,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Buttermilk",
+          "slug": "balance-sprint-2-buttermilk"
+        },
+        {
+          "title": "Masala Chaas",
+          "slug": "sips-detail-masala-chaas"
+        },
+        {
+          "title": "Majjiga Pulusu",
+          "slug": "andhra-telangana-wave-08-majjiga-pulusu"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [
+        {
+          "slug": "buttermilk",
+          "status": "missing",
+          "title": ""
+        },
+        {
+          "slug": "masala-chaas",
+          "status": "missing",
+          "title": ""
+        },
+        {
+          "slug": "andhra-telangana-wave-09-majjiga-pulusu",
+          "status": "missing",
+          "title": ""
+        }
+      ],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "butter",
+      "category": "fat",
+      "pantryRole": "support",
+      "aliasCount": 1,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Butter Chicken",
+          "slug": "butter-chicken-lunch"
+        },
+        {
+          "title": "Bread Omelette",
+          "slug": "bread-omelette-breakfast"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [
+        {
+          "slug": "butter-chicken-dinner",
+          "status": "missing",
+          "title": ""
+        }
+      ],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "ghee",
+      "category": "fat",
+      "pantryRole": "flavor",
+      "aliasCount": 1,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Dal Rice",
+          "slug": "dal-rice-lunch"
+        },
+        {
+          "title": "Ghee Rice",
+          "slug": "expansion-pack-2-ghee-rice"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [
+        {
+          "slug": "ghee-rice",
+          "status": "missing",
+          "title": ""
+        }
+      ],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "mustard oil",
+      "category": "oil",
+      "pantryRole": "flavor",
+      "aliasCount": 1,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Macher Jhol",
+          "slug": "expansion-pack-4-macher-jhol"
+        },
+        {
+          "title": "Shorshe Ilish",
+          "slug": "bengal-wave-08-shorshe-ilish"
+        },
+        {
+          "title": "Bhetki Paturi",
+          "slug": "bengal-wave-14-bhetki-paturi"
+        },
+        {
+          "title": "Aloo Pitika",
+          "slug": "expansion-pack-3-aloo-pitika"
+        },
+        {
+          "title": "Masor Tenga",
+          "slug": "expansion-pack-3-masor-tenga"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "groundnut oil",
+      "category": "oil",
+      "pantryRole": "support",
+      "aliasCount": 1,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "coconut oil",
+      "category": "oil",
+      "pantryRole": "flavor",
+      "aliasCount": 1,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "garlic",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Bassaru",
+          "slug": "karnataka-pack-1-bassaru"
+        },
+        {
+          "title": "Chicken Fried Rice",
+          "slug": "pantry-chicken-fried-rice"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "ginger",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Bamboo Shoot Pork",
+          "slug": "expansion-pack-3-bamboo-shoot-pork"
+        },
+        {
+          "title": "Chicken Potato Curry",
+          "slug": "approved-chicken-potato-curry"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "curry leaves",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Coconut Rice",
+          "slug": "coconut-rice"
+        },
+        {
+          "title": "Beans Thoran",
+          "slug": "expansion-pack-3-beans-thoran"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "mustard seeds",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Coconut Rice",
+          "slug": "coconut-rice"
+        },
+        {
+          "title": "Bassaru",
+          "slug": "karnataka-pack-1-bassaru"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "green chilli",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Akki Roti",
+          "slug": "expansion-pack-2-akki-roti"
+        },
+        {
+          "title": "Aloo Pitika",
+          "slug": "expansion-pack-3-aloo-pitika"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "jaggery",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Ragi Malt",
+          "slug": "balance-tier-1-ragi-malt"
+        },
+        {
+          "title": "Sweet Holige",
+          "slug": "approved-sweet-holige"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "peas",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Matar Paneer",
+          "slug": "pantry-matar-paneer"
+        },
+        {
+          "title": "Peas Pulao",
+          "slug": "approved-peas-pulao"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "pepper",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Pepper Rasam",
+          "slug": "pepper-rasam"
+        },
+        {
+          "title": "Chicken Pepper Rice Bowl",
+          "slug": "expansion-pack-1-chicken-pepper-rice-bowl"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "bread",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Bread Omelette",
+          "slug": "bread-omelette-breakfast"
+        },
+        {
+          "title": "Bread Pakora",
+          "slug": "bread-pakora-snack"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "potato",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 2,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Aloo Jeera",
+          "slug": "expansion-pack-2-aloo-jeera"
+        },
+        {
+          "title": "Aloo Pitika",
+          "slug": "expansion-pack-3-aloo-pitika"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "cream",
+      "category": "flavor support",
+      "pantryRole": "flavor",
+      "aliasCount": 1,
+      "regionalNameCount": 0,
+      "activeRecipeLinks": [
+        {
+          "title": "Tomato Basil Soup",
+          "slug": "global-wave-a-tomato-basil-soup"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "bamboo shoot",
+      "category": "vegetables",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 2,
+      "activeRecipeLinks": [
+        {
+          "title": "Bamboo Shoot Pork",
+          "slug": "expansion-pack-3-bamboo-shoot-pork"
+        },
+        {
+          "title": "Bamboo Shoot Curry",
+          "slug": "karnataka-wave-b-bamboo-shoot-curry"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    },
+    {
+      "canonicalName": "gongura",
+      "category": "greens",
+      "pantryRole": "core",
+      "aliasCount": 3,
+      "regionalNameCount": 2,
+      "activeRecipeLinks": [
+        {
+          "title": "Gongura Pappu",
+          "slug": "andhra-telangana-wave-06-gongura-pappu"
+        },
+        {
+          "title": "Gongura Mutton",
+          "slug": "gongura-mutton"
+        }
+      ],
+      "missingTitleLinks": [],
+      "missingSlugLinks": [],
+      "missingFields": []
+    }
+  ],
+  "bridgeChecks": [
+    {
+      "name": "Horse Gram -> Bassaru / Huruli recipes",
+      "ingredient": "horse gram",
+      "status": "PASS",
+      "linkedRecipeTitles": [
+        "Bassaru",
+        "Kollu Rasam",
+        "Ulavacharu"
+      ],
+      "activeRecipeMatches": [
+        {
+          "title": "Bassaru",
+          "slug": "karnataka-pack-1-bassaru"
+        },
+        {
+          "title": "Kollu Rasam",
+          "slug": "warm-bowls-detail-kollu-rasam"
+        },
+        {
+          "title": "Ulavacharu",
+          "slug": "andhra-telangana-wave-16-ulavacharu"
+        }
+      ],
+      "matchedPatternCount": 3,
+      "expectedPatternCount": 4
+    },
+    {
+      "name": "Palak / Spinach -> Soppu Saaru / Dal Palak / Palak Rice / Palak Paratha",
+      "ingredient": "palak",
+      "status": "PASS",
+      "linkedRecipeTitles": [
+        "Soppu Saaru",
+        "Palak Dal",
+        "One Pot Dal Palak Rice",
+        "Palak Paratha",
+        "Palak Paneer",
+        "Spinach Soup"
+      ],
+      "activeRecipeMatches": [
+        {
+          "title": "One Pot Dal Palak Rice",
+          "slug": "expansion-pack-1-one-pot-dal-palak-rice"
+        },
+        {
+          "title": "Palak Dal",
+          "slug": "balance-tier-1-palak-dal"
+        },
+        {
+          "title": "Palak Paratha",
+          "slug": "approved-palak-paratha"
+        },
+        {
+          "title": "Soppu Saaru",
+          "slug": "karnataka-pack-1-soppu-saaru"
+        }
+      ],
+      "matchedPatternCount": 4,
+      "expectedPatternCount": 4
+    },
+    {
+      "name": "Tamarind -> Rasam / Sambar / Pulusu / Puliyogare",
+      "ingredient": "tamarind",
+      "status": "PASS",
+      "linkedRecipeTitles": [
+        "Puliyogare",
+        "Pepper Rasam",
+        "Tomato Rasam",
+        "Kerala Rasam",
+        "Bendakaya Pulusu",
+        "Chepala Pulusu",
+        "Meen Kuzhambu",
+        "Sambar Rice"
+      ],
+      "activeRecipeMatches": [
+        {
+          "title": "Udupi Sambar",
+          "slug": "karnataka-wave-a-udupi-sambar"
+        },
+        {
+          "title": "Bele Saaru",
+          "slug": "balance-tier-1-bele-saaru"
+        },
+        {
+          "title": "Fish Curry",
+          "slug": "fish-curry-dinner"
+        },
+        {
+          "title": "Fish Curry Rice",
+          "slug": "fish-curry-rice-lunch"
+        },
+        {
+          "title": "Goan Fish Curry",
+          "slug": "expansion-pack-4-goan-fish-curry"
+        },
+        {
+          "title": "Kerala Fish Curry",
+          "slug": "kerala-fish-curry"
+        },
+        {
+          "title": "Kosambari",
+          "slug": "expansion-pack-2-kosambari"
+        },
+        {
+          "title": "Kuzhi Paniyaram",
+          "slug": "balance-sprint-2-kuzhi-paniyaram"
+        },
+        {
+          "title": "Macher Jhol",
+          "slug": "expansion-pack-4-macher-jhol"
+        },
+        {
+          "title": "Pepper Rasam",
+          "slug": "pepper-rasam"
+        },
+        {
+          "title": "Puliyogare",
+          "slug": "pantry-puliyogare"
+        },
+        {
+          "title": "Rasam Rice",
+          "slug": "rasam-rice-lunch"
+        },
+        {
+          "title": "Sambar Rice",
+          "slug": "sambar-rice-lunch"
+        },
+        {
+          "title": "Mini Idli",
+          "slug": "lunchbox-detail-mini-idli"
+        },
+        {
+          "title": "Tomato Rasam",
+          "slug": "warm-bowls-detail-tomato-rasam"
+        },
+        {
+          "title": "Kollu Rasam",
+          "slug": "warm-bowls-detail-kollu-rasam"
+        },
+        {
+          "title": "Mysore Rasam",
+          "slug": "warm-bowls-detail-mysore-rasam"
+        },
+        {
+          "title": "Mini Idli Sambar",
+          "slug": "tiny-tummy-detail-mini-idli-sambar"
+        },
+        {
+          "title": "Ven Pongal",
+          "slug": "collection-detail-ven-pongal"
+        },
+        {
+          "title": "Thoran",
+          "slug": "collection-detail-thoran"
+        },
+        {
+          "title": "Mangalorean Fish Curry",
+          "slug": "karnataka-wave-b-mangalorean-fish-curry"
+        },
+        {
+          "title": "Kotte Kadubu",
+          "slug": "karnataka-wave-b-kotte-kadubu"
+        },
+        {
+          "title": "Kayi Saaru",
+          "slug": "karnataka-wave-b-kayi-saaru"
+        },
+        {
+          "title": "Majjiga Pulusu",
+          "slug": "andhra-telangana-wave-08-majjiga-pulusu"
+        },
+        {
+          "title": "Bendakaya Pulusu",
+          "slug": "andhra-telangana-wave-10-bendakaya-pulusu"
+        },
+        {
+          "title": "Ragi Sangati",
+          "slug": "andhra-telangana-wave-17-ragi-sangati"
+        },
+        {
+          "title": "Natu Kodi Pulusu",
+          "slug": "andhra-telangana-wave-18-natu-kodi-pulusu"
+        },
+        {
+          "title": "Chepala Pulusu",
+          "slug": "andhra-telangana-wave-19-chepala-pulusu"
+        },
+        {
+          "title": "Minapa Garelu",
+          "slug": "andhra-telangana-wave-25-minapa-garelu"
+        },
+        {
+          "title": "Pachi Pulusu",
+          "slug": "andhra-telangana-wave-28-pachi-pulusu"
+        },
+        {
+          "title": "Kerala Sambar",
+          "slug": "kerala-wave-04-kerala-sambar"
+        },
+        {
+          "title": "Kerala Rasam",
+          "slug": "kerala-wave-05-kerala-rasam"
+        },
+        {
+          "title": "Malabar Fish Curry",
+          "slug": "kerala-wave-16-malabar-fish-curry"
+        },
+        {
+          "title": "Kappa Meen Curry",
+          "slug": "kerala-wave-19-kappa-meen-curry"
+        },
+        {
+          "title": "Kanchipuram Idli",
+          "slug": "tamil-nadu-wave-01-kanchipuram-idli"
+        },
+        {
+          "title": "Vatha Kuzhambu",
+          "slug": "tamil-nadu-wave-04-vatha-kuzhambu"
+        },
+        {
+          "title": "Puli Kuzhambu",
+          "slug": "tamil-nadu-wave-05-puli-kuzhambu"
+        },
+        {
+          "title": "Nandu Rasam",
+          "slug": "tamil-nadu-wave-13-nandu-rasam"
+        },
+        {
+          "title": "Meen Kuzhambu",
+          "slug": "tamil-nadu-wave-14-meen-kuzhambu"
+        },
+        {
+          "title": "Sundakkai Vathal Kuzhambu",
+          "slug": "tamil-nadu-wave-20-sundakkai-vathal-kuzhambu"
+        },
+        {
+          "title": "Malvani Fish Curry",
+          "slug": "maharashtra-wave-malvani-fish-curry"
+        },
+        {
+          "title": "Ngari Fish Curry",
+          "slug": "northeast-wave-ngari-fish-curry"
+        }
+      ],
+      "matchedPatternCount": 5,
+      "expectedPatternCount": 5
+    },
+    {
+      "name": "Coconut -> Chutney / Avial / Thoran / Coastal Curry",
+      "ingredient": "coconut",
+      "status": "PASS",
+      "linkedRecipeTitles": [
+        "Coconut Chutney",
+        "Avial",
+        "Beans Thoran",
+        "Cabbage Thoran",
+        "Coconut Rice",
+        "Goan Fish Curry",
+        "Prawn Sukka",
+        "Kayi Saaru"
+      ],
+      "activeRecipeMatches": [
+        {
+          "title": "Avial",
+          "slug": "expansion-pack-3-avial"
+        },
+        {
+          "title": "Beans Thoran",
+          "slug": "expansion-pack-3-beans-thoran"
+        },
+        {
+          "title": "Udupi Sambar",
+          "slug": "karnataka-wave-a-udupi-sambar"
+        },
+        {
+          "title": "Mangalore Goli Baje",
+          "slug": "karnataka-wave-a-mangalore-goli-baje"
+        },
+        {
+          "title": "Masala Bun",
+          "slug": "karnataka-wave-a-masala-bun"
+        },
+        {
+          "title": "Iyengar Bakery Toast",
+          "slug": "karnataka-wave-a-iyengar-bakery-toast"
+        },
+        {
+          "title": "Besan Chilla",
+          "slug": "besan-chilla-breakfast"
+        },
+        {
+          "title": "Cabbage Thoran",
+          "slug": "balance-tier-1-cabbage-thoran"
+        },
+        {
+          "title": "Cheese Dosa",
+          "slug": "approved-cheese-dosa"
+        },
+        {
+          "title": "Chicken Sukka",
+          "slug": "chicken-sukka"
+        },
+        {
+          "title": "Chingri Malai Curry",
+          "slug": "expansion-pack-3-chingri-malai-curry"
+        },
+        {
+          "title": "Chingudi Chhecha",
+          "slug": "expansion-pack-4-chingudi-chhecha"
+        },
+        {
+          "title": "Coconut Rice",
+          "slug": "coconut-rice"
+        },
+        {
+          "title": "Fish Curry",
+          "slug": "fish-curry-dinner"
+        },
+        {
+          "title": "Fish Curry Rice",
+          "slug": "fish-curry-rice-lunch"
+        },
+        {
+          "title": "Fish Fry",
+          "slug": "fish-fry-dinner"
+        },
+        {
+          "title": "Goan Fish Curry",
+          "slug": "expansion-pack-4-goan-fish-curry"
+        },
+        {
+          "title": "Goan Prawn Balchao",
+          "slug": "expansion-pack-4-goan-prawn-balchao"
+        },
+        {
+          "title": "Kerala Fish Curry",
+          "slug": "kerala-fish-curry"
+        },
+        {
+          "title": "Kokum Sharbat",
+          "slug": "balance-sprint-2-kokum-sharbat"
+        },
+        {
+          "title": "Kori Rotti",
+          "slug": "expansion-pack-4-kori-rotti"
+        },
+        {
+          "title": "Kuzhi Paniyaram",
+          "slug": "balance-sprint-2-kuzhi-paniyaram"
+        },
+        {
+          "title": "Lemon Sevai",
+          "slug": "lemon-sevai"
+        },
+        {
+          "title": "Macher Jhol",
+          "slug": "expansion-pack-4-macher-jhol"
+        },
+        {
+          "title": "Mangalore Buns",
+          "slug": "expansion-pack-2-mangalore-buns"
+        },
+        {
+          "title": "Kerala Fish Pollichathu",
+          "slug": "expansion-pack-3-meen-pollichathu"
+        },
+        {
+          "title": "Neer Dosa",
+          "slug": "expansion-pack-2-neer-dosa"
+        },
+        {
+          "title": "Prawn Ghee Roast",
+          "slug": "prawn-ghee-roast"
+        },
+        {
+          "title": "Prawn Sukka",
+          "slug": "expansion-pack-3-prawn-sukka"
+        },
+        {
+          "title": "Set Dosa",
+          "slug": "expansion-pack-2-set-dosa"
+        },
+        {
+          "title": "Coconut Chutney",
+          "slug": "side-addon-coconut-chutney"
+        },
+        {
+          "title": "Tomato Chutney",
+          "slug": "side-addon-tomato-chutney"
+        },
+        {
+          "title": "Peanut Chutney",
+          "slug": "side-addon-peanut-chutney"
+        },
+        {
+          "title": "Mint Chutney",
+          "slug": "side-addon-mint-chutney"
+        },
+        {
+          "title": "Dosa Roll",
+          "slug": "lunchbox-detail-dosa-roll"
+        },
+        {
+          "title": "Paneer Roll",
+          "slug": "lunchbox-detail-paneer-roll"
+        },
+        {
+          "title": "Sweet Potato Chaat",
+          "slug": "lunchbox-detail-sweet-potato-chaat"
+        },
+        {
+          "title": "Ven Pongal",
+          "slug": "collection-detail-ven-pongal"
+        },
+        {
+          "title": "Thoran",
+          "slug": "collection-detail-thoran"
+        },
+        {
+          "title": "Mangalorean Fish Curry",
+          "slug": "karnataka-wave-b-mangalorean-fish-curry"
+        },
+        {
+          "title": "Pathrode",
+          "slug": "karnataka-wave-b-pathrode"
+        },
+        {
+          "title": "Kotte Kadubu",
+          "slug": "karnataka-wave-b-kotte-kadubu"
+        },
+        {
+          "title": "Tambuli",
+          "slug": "karnataka-wave-b-tambuli"
+        },
+        {
+          "title": "Kayi Saaru",
+          "slug": "karnataka-wave-b-kayi-saaru"
+        },
+        {
+          "title": "Girmit",
+          "slug": "karnataka-wave-b-girmit"
+        },
+        {
+          "title": "Shenga Chutney",
+          "slug": "karnataka-wave-b-shenga-chutney"
+        },
+        {
+          "title": "Bamboo Shoot Curry",
+          "slug": "karnataka-wave-b-bamboo-shoot-curry"
+        },
+        {
+          "title": "Punugulu",
+          "slug": "andhra-telangana-wave-03-punugulu"
+        },
+        {
+          "title": "Royyala Iguru",
+          "slug": "andhra-telangana-wave-11-royyala-iguru"
+        },
+        {
+          "title": "Minapa Garelu",
+          "slug": "andhra-telangana-wave-25-minapa-garelu"
+        },
+        {
+          "title": "Appam Stew",
+          "slug": "kerala-wave-01-appam-stew"
+        },
+        {
+          "title": "Erissery",
+          "slug": "kerala-wave-03-erissery"
+        },
+        {
+          "title": "Kerala Sambar",
+          "slug": "kerala-wave-04-kerala-sambar"
+        },
+        {
+          "title": "Meen Moilee",
+          "slug": "kerala-wave-14-meen-moilee"
+        },
+        {
+          "title": "Chemmeen Theeyal",
+          "slug": "kerala-wave-15-chemmeen-theeyal"
+        },
+        {
+          "title": "Malabar Fish Curry",
+          "slug": "kerala-wave-16-malabar-fish-curry"
+        },
+        {
+          "title": "Kappa Meen Curry",
+          "slug": "kerala-wave-19-kappa-meen-curry"
+        },
+        {
+          "title": "Kanchipuram Idli",
+          "slug": "tamil-nadu-wave-01-kanchipuram-idli"
+        },
+        {
+          "title": "Adai",
+          "slug": "tamil-nadu-wave-02-adai"
+        },
+        {
+          "title": "Adai Avial",
+          "slug": "tamil-nadu-wave-03-adai-avial"
+        },
+        {
+          "title": "Coconut Sevai",
+          "slug": "tamil-nadu-wave-08-coconut-sevai"
+        },
+        {
+          "title": "Nandu Rasam",
+          "slug": "tamil-nadu-wave-13-nandu-rasam"
+        },
+        {
+          "title": "Daab Chingri",
+          "slug": "bengal-wave-15-daab-chingri"
+        },
+        {
+          "title": "Malvani Fish Curry",
+          "slug": "maharashtra-wave-malvani-fish-curry"
+        },
+        {
+          "title": "Chicken Sukka Maharashtrian",
+          "slug": "maharashtra-wave-chicken-sukka-maharashtrian"
+        },
+        {
+          "title": "Ngari Fish Curry",
+          "slug": "northeast-wave-ngari-fish-curry"
+        },
+        {
+          "title": "Galho",
+          "slug": "northeast-wave-galho"
+        },
+        {
+          "title": "Chingri Xaak",
+          "slug": "northeast-wave-chingri-xaak"
+        },
+        {
+          "title": "Zan",
+          "slug": "northeast-quality-zan"
+        },
+        {
+          "title": "Chhurpi Chutney",
+          "slug": "northeast-quality-chhurpi-chutney"
+        }
+      ],
+      "matchedPatternCount": 5,
+      "expectedPatternCount": 5
+    },
+    {
+      "name": "Seer Fish -> Fish Fry / Fish Curry / Tawa Fish / coastal curries",
+      "ingredient": "seer fish",
+      "status": "PASS",
+      "linkedRecipeTitles": [
+        "Fish Fry",
+        "Fish Curry",
+        "Kerala Fish Curry",
+        "Mangalorean Fish Curry",
+        "Malvani Fish Curry",
+        "Fish Fry Tamil Style"
+      ],
+      "activeRecipeMatches": [
+        {
+          "title": "Fish Curry",
+          "slug": "fish-curry-dinner"
+        },
+        {
+          "title": "Fish Curry Rice",
+          "slug": "fish-curry-rice-lunch"
+        },
+        {
+          "title": "Fish Fry",
+          "slug": "fish-fry-dinner"
+        },
+        {
+          "title": "Goan Fish Curry",
+          "slug": "expansion-pack-4-goan-fish-curry"
+        },
+        {
+          "title": "Kerala Fish Curry",
+          "slug": "kerala-fish-curry"
+        },
+        {
+          "title": "Macher Jhol",
+          "slug": "expansion-pack-4-macher-jhol"
+        },
+        {
+          "title": "Kerala Fish Pollichathu",
+          "slug": "expansion-pack-3-meen-pollichathu"
+        },
+        {
+          "title": "Mangalorean Fish Curry",
+          "slug": "karnataka-wave-b-mangalorean-fish-curry"
+        },
+        {
+          "title": "Andhra Fish Fry",
+          "slug": "andhra-telangana-wave-20-andhra-fish-fry"
+        },
+        {
+          "title": "Meen Moilee",
+          "slug": "kerala-wave-14-meen-moilee"
+        },
+        {
+          "title": "Malabar Fish Curry",
+          "slug": "kerala-wave-16-malabar-fish-curry"
+        },
+        {
+          "title": "Kappa Meen Curry",
+          "slug": "kerala-wave-19-kappa-meen-curry"
+        },
+        {
+          "title": "Meen Kuzhambu",
+          "slug": "tamil-nadu-wave-14-meen-kuzhambu"
+        },
+        {
+          "title": "Fish Fry Tamil Style",
+          "slug": "tamil-nadu-wave-15-fish-fry-tamil-style"
+        },
+        {
+          "title": "Malvani Fish Curry",
+          "slug": "maharashtra-wave-malvani-fish-curry"
+        },
+        {
+          "title": "Ngari Fish Curry",
+          "slug": "northeast-wave-ngari-fish-curry"
+        }
+      ],
+      "matchedPatternCount": 3,
+      "expectedPatternCount": 4
+    },
+    {
+      "name": "Prawns -> Prawn Curry / Prawn Fry / Prawn Ghee Roast",
+      "ingredient": "prawns",
+      "status": "PASS",
+      "linkedRecipeTitles": [
+        "Prawn Ghee Roast",
+        "Prawn Sukka",
+        "Goan Prawn Balchao",
+        "Royyala Iguru",
+        "Chemmeen Theeyal",
+        "Daab Chingri",
+        "Chingri Malai Curry"
+      ],
+      "activeRecipeMatches": [
+        {
+          "title": "Andhra Egg Fry",
+          "slug": "andhra-egg-fry"
+        },
+        {
+          "title": "Beans Poriyal",
+          "slug": "balance-tier-1-beans-poriyal"
+        },
+        {
+          "title": "Beans Thoran",
+          "slug": "expansion-pack-3-beans-thoran"
+        },
+        {
+          "title": "Cabbage Thoran",
+          "slug": "balance-tier-1-cabbage-thoran"
+        },
+        {
+          "title": "Chicken Capsicum Stir Fry Bowl",
+          "slug": "expansion-pack-1-chicken-capsicum-stir-fry-bowl"
+        },
+        {
+          "title": "Chicken Mushroom Stir Fry",
+          "slug": "approved-chicken-mushroom-stir-fry"
+        },
+        {
+          "title": "Chingri Malai Curry",
+          "slug": "expansion-pack-3-chingri-malai-curry"
+        },
+        {
+          "title": "Chingudi Chhecha",
+          "slug": "expansion-pack-4-chingudi-chhecha"
+        },
+        {
+          "title": "Fish Fry",
+          "slug": "fish-fry-dinner"
+        },
+        {
+          "title": "Goan Prawn Balchao",
+          "slug": "expansion-pack-4-goan-prawn-balchao"
+        },
+        {
+          "title": "Guntur Chicken Fry",
+          "slug": "guntur-chicken-fry"
+        },
+        {
+          "title": "Keema Fry",
+          "slug": "keema-fry"
+        },
+        {
+          "title": "Prawn Ghee Roast",
+          "slug": "prawn-ghee-roast"
+        },
+        {
+          "title": "Prawn Sukka",
+          "slug": "expansion-pack-3-prawn-sukka"
+        },
+        {
+          "title": "Thoran",
+          "slug": "collection-detail-thoran"
+        },
+        {
+          "title": "Royyala Iguru",
+          "slug": "andhra-telangana-wave-11-royyala-iguru"
+        },
+        {
+          "title": "Andhra Fish Fry",
+          "slug": "andhra-telangana-wave-20-andhra-fish-fry"
+        },
+        {
+          "title": "Kerala Beef Fry",
+          "slug": "kerala-wave-12-kerala-beef-fry"
+        },
+        {
+          "title": "Kerala Parotta Beef Fry",
+          "slug": "kerala-wave-13-kerala-parotta-beef-fry"
+        },
+        {
+          "title": "Chemmeen Theeyal",
+          "slug": "kerala-wave-15-chemmeen-theeyal"
+        },
+        {
+          "title": "Fish Fry Tamil Style",
+          "slug": "tamil-nadu-wave-15-fish-fry-tamil-style"
+        },
+        {
+          "title": "Daab Chingri",
+          "slug": "bengal-wave-15-daab-chingri"
+        },
+        {
+          "title": "Bombil Fry",
+          "slug": "maharashtra-wave-bombil-fry"
+        },
+        {
+          "title": "Chingri Xaak",
+          "slug": "northeast-wave-chingri-xaak"
+        }
+      ],
+      "matchedPatternCount": 2,
+      "expectedPatternCount": 3
+    }
+  ],
+  "pantryIngredientsWithoutKnowledge": [
+    {
+      "name": "Carrot",
+      "key": "carrot",
+      "count": 6,
+      "category": "Vegetables"
+    },
+    {
+      "name": "Vegetables",
+      "key": "vegetables",
+      "count": 5,
+      "category": "Vegetables"
+    },
+    {
+      "name": "Corn",
+      "key": "corn",
+      "count": 3,
+      "category": "Vegetables"
+    },
+    {
+      "name": "Cabbage",
+      "key": "cabbage",
+      "count": 2,
+      "category": "Vegetables"
+    },
+    {
+      "name": "Methi",
+      "key": "methi",
+      "count": 2,
+      "category": "Vegetables"
+    },
+    {
+      "name": "Mushroom",
+      "key": "mushroom",
+      "count": 2,
+      "category": "Vegetables"
+    },
+    {
+      "name": "Banana",
+      "key": "banana",
+      "count": 2,
+      "category": "Fruits"
+    },
+    {
+      "name": "Wheat",
+      "key": "wheat",
+      "count": 11,
+      "category": "Grains & Dals"
+    },
+    {
+      "name": "Besan",
+      "key": "besan",
+      "count": 10,
+      "category": "Grains & Dals"
+    },
+    {
+      "name": "Maida",
+      "key": "maida",
+      "count": 4,
+      "category": "Grains & Dals"
+    },
+    {
+      "name": "Poha",
+      "key": "poha",
+      "count": 2,
+      "category": "Grains & Dals"
+    },
+    {
+      "name": "Rajma",
+      "key": "rajma",
+      "count": 2,
+      "category": "Grains & Dals"
+    },
+    {
+      "name": "Rava",
+      "key": "rava",
+      "count": 2,
+      "category": "Grains & Dals"
+    },
+    {
+      "name": "Keema",
+      "key": "keema",
+      "count": 2,
+      "category": "Proteins"
+    },
+    {
+      "name": "Mutton",
+      "key": "mutton",
+      "count": 2,
+      "category": "Proteins"
+    },
+    {
+      "name": "Pork",
+      "key": "pork",
+      "count": 2,
+      "category": "Proteins"
+    },
+    {
+      "name": "Coriander",
+      "key": "coriander",
+      "count": 10,
+      "category": "Spices & Seasonings"
+    },
+    {
+      "name": "Garam Masala",
+      "key": "garam masala",
+      "count": 2,
+      "category": "Spices & Seasonings"
+    },
+    {
+      "name": "Podi",
+      "key": "podi",
+      "count": 2,
+      "category": "Spices & Seasonings"
+    },
+    {
+      "name": "Red Chilli",
+      "key": "red chilli",
+      "count": 13,
+      "category": "Chillies"
+    },
+    {
+      "name": "Guntur Chilli",
+      "key": "guntur chilli",
+      "count": 2,
+      "category": "Chillies"
+    }
+  ],
+  "highPriorityMissingKnowledgeAreas": [
+    {
+      "name": "Carrot",
+      "key": "carrot",
+      "count": 6,
+      "category": "Vegetables"
+    },
+    {
+      "name": "Vegetables",
+      "key": "vegetables",
+      "count": 5,
+      "category": "Vegetables"
+    },
+    {
+      "name": "Wheat",
+      "key": "wheat",
+      "count": 11,
+      "category": "Grains & Dals"
+    },
+    {
+      "name": "Besan",
+      "key": "besan",
+      "count": 10,
+      "category": "Grains & Dals"
+    },
+    {
+      "name": "Coriander",
+      "key": "coriander",
+      "count": 10,
+      "category": "Spices & Seasonings"
+    },
+    {
+      "name": "Red Chilli",
+      "key": "red chilli",
+      "count": 13,
+      "category": "Chillies"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "squid has no active linked recipe path.",
+      "recommendation": "Add links only when matching active local recipes exist.",
+      "record": "squid"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "mussels and clams has no active linked recipe path.",
+      "recommendation": "Add links only when matching active local recipes exist.",
+      "record": "mussels and clams"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "egg links missing slug(s): egg-curry-lunch, egg-dosa-breakfast, egg-toast-breakfast.",
+      "recommendation": "Use only sourceId/id values from active local recipes.",
+      "record": "egg"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "egg has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "egg"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "kokum links missing slug(s): kokum-sharbat.",
+      "recommendation": "Use only sourceId/id values from active local recipes.",
+      "record": "kokum"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Aliases",
+      "message": "kokum has fewer than two aliases.",
+      "recommendation": "Add common market, English, Hindi or regional aliases where useful.",
+      "record": "kokum"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "kokum has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "kokum"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "lemon links missing slug(s): jal-jeera.",
+      "recommendation": "Use only sourceId/id values from active local recipes.",
+      "record": "lemon"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "lemon has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "lemon"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "cashew links missing recipe title(s): Korma.",
+      "recommendation": "Remove the title or add the real active recipe later.",
+      "record": "cashew"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "cashew links missing slug(s): veg-korma.",
+      "recommendation": "Use only sourceId/id values from active local recipes.",
+      "record": "cashew"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "cashew has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "cashew"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "peanut links missing slug(s): peanut-chutney, shenga-chutney.",
+      "recommendation": "Use only sourceId/id values from active local recipes.",
+      "record": "peanut"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "peanut has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "peanut"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "tofu has no active linked recipe path.",
+      "recommendation": "Add links only when matching active local recipes exist.",
+      "record": "tofu"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Aliases",
+      "message": "tofu has fewer than two aliases.",
+      "recommendation": "Add common market, English, Hindi or regional aliases where useful.",
+      "record": "tofu"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "tofu has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "tofu"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "jowar has no active linked recipe path.",
+      "recommendation": "Add links only when matching active local recipes exist.",
+      "record": "jowar"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "jowar has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "jowar"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "bajra has no active linked recipe path.",
+      "recommendation": "Add links only when matching active local recipes exist.",
+      "record": "bajra"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "bajra has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "bajra"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "green gram links missing recipe title(s): Moong Dal.",
+      "recommendation": "Remove the title or add the real active recipe later.",
+      "record": "green gram"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "green gram links missing slug(s): sprouted-moong-salad, moong-dal.",
+      "recommendation": "Use only sourceId/id values from active local recipes.",
+      "record": "green gram"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "green gram has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "green gram"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "black gram has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "black gram"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "curd links missing recipe title(s): Curd Rice.",
+      "recommendation": "Remove the title or add the real active recipe later.",
+      "record": "curd"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "curd has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "curd"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "buttermilk links missing slug(s): buttermilk, masala-chaas, andhra-telangana-wave-09-majjiga-pulusu.",
+      "recommendation": "Use only sourceId/id values from active local recipes.",
+      "record": "buttermilk"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "buttermilk has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "buttermilk"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "butter links missing slug(s): butter-chicken-dinner.",
+      "recommendation": "Use only sourceId/id values from active local recipes.",
+      "record": "butter"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Aliases",
+      "message": "butter has fewer than two aliases.",
+      "recommendation": "Add common market, English, Hindi or regional aliases where useful.",
+      "record": "butter"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "butter has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "butter"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "ghee links missing slug(s): ghee-rice.",
+      "recommendation": "Use only sourceId/id values from active local recipes.",
+      "record": "ghee"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Aliases",
+      "message": "ghee has fewer than two aliases.",
+      "recommendation": "Add common market, English, Hindi or regional aliases where useful.",
+      "record": "ghee"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "ghee has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "ghee"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Aliases",
+      "message": "mustard oil has fewer than two aliases.",
+      "recommendation": "Add common market, English, Hindi or regional aliases where useful.",
+      "record": "mustard oil"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "mustard oil has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "mustard oil"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "groundnut oil has no active linked recipe path.",
+      "recommendation": "Add links only when matching active local recipes exist.",
+      "record": "groundnut oil"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Aliases",
+      "message": "groundnut oil has fewer than two aliases.",
+      "recommendation": "Add common market, English, Hindi or regional aliases where useful.",
+      "record": "groundnut oil"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "groundnut oil has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "groundnut oil"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Recipe Paths",
+      "message": "coconut oil has no active linked recipe path.",
+      "recommendation": "Add links only when matching active local recipes exist.",
+      "record": "coconut oil"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Aliases",
+      "message": "coconut oil has fewer than two aliases.",
+      "recommendation": "Add common market, English, Hindi or regional aliases where useful.",
+      "record": "coconut oil"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "coconut oil has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "coconut oil"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "garlic has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "garlic"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "ginger has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "ginger"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "curry leaves has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "curry leaves"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "mustard seeds has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "mustard seeds"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "green chilli has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "green chilli"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "jaggery has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "jaggery"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "peas has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "peas"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "pepper has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "pepper"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "bread has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "bread"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "potato has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "potato"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Aliases",
+      "message": "cream has fewer than two aliases.",
+      "recommendation": "Add common market, English, Hindi or regional aliases where useful.",
+      "record": "cream"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Regional Mapping",
+      "message": "cream has weak regional mapping.",
+      "recommendation": "Add regional names or regional relevance so pantry/search can understand local usage.",
+      "record": "cream"
+    },
+    {
+      "severity": "WARNING",
+      "area": "Pantry Coverage",
+      "message": "Carrot appears in pantry but has no knowledge record.",
+      "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations.",
+      "ingredient": "Carrot",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "area": "Pantry Coverage",
+      "message": "Vegetables appears in pantry but has no knowledge record.",
+      "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations.",
+      "ingredient": "Vegetables",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "area": "Pantry Coverage",
+      "message": "Wheat appears in pantry but has no knowledge record.",
+      "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations.",
+      "ingredient": "Wheat",
+      "count": 11
+    },
+    {
+      "severity": "WARNING",
+      "area": "Pantry Coverage",
+      "message": "Besan appears in pantry but has no knowledge record.",
+      "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations.",
+      "ingredient": "Besan",
+      "count": 10
+    },
+    {
+      "severity": "WARNING",
+      "area": "Pantry Coverage",
+      "message": "Coriander appears in pantry but has no knowledge record.",
+      "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations.",
+      "ingredient": "Coriander",
+      "count": 10
+    },
+    {
+      "severity": "WARNING",
+      "area": "Pantry Coverage",
+      "message": "Red Chilli appears in pantry but has no knowledge record.",
+      "recommendation": "Add a knowledge record if this ingredient affects pantry/search recommendations.",
+      "ingredient": "Red Chilli",
+      "count": 13
+    }
+  ]
+}

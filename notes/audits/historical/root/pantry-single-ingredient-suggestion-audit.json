@@ -1,0 +1,650 @@
+{
+  "generatedAt": "2026-06-11T08:02:44.534Z",
+  "summary": {
+    "PASS": 30,
+    "WARN": 6
+  },
+  "rows": [
+    {
+      "selectedIngredient": "Rice",
+      "suggestedUnlockIngredients": [
+        "Onion",
+        "Moong Dal",
+        "Chicken"
+      ],
+      "dishesUnlocked": {
+        "Onion": [
+          "Onion Rice",
+          "Veg Fried Rice"
+        ],
+        "Moong Dal": [
+          "Khichdi",
+          "Pongal",
+          "Sweet Pongal"
+        ],
+        "Chicken": [
+          "Biryani",
+          "Chicken Pulao",
+          "Chicken Fried Rice"
+        ]
+      },
+      "messageShown": "Try Onion, Moong Dal or Chicken to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Wheat Flour",
+      "suggestedUnlockIngredients": [
+        "Potato",
+        "Onion",
+        "Methi"
+      ],
+      "dishesUnlocked": {
+        "Potato": [
+          "Chaat",
+          "Samosa",
+          "Spicy Aloo Paratha",
+          "Stuffed Paratha"
+        ],
+        "Onion": [
+          "Onion Paratha"
+        ],
+        "Methi": [
+          "Mathri",
+          "Methi Paratha"
+        ]
+      },
+      "messageShown": "Try Potato, Onion or Methi to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Ragi",
+      "suggestedUnlockIngredients": [
+        "Milk"
+      ],
+      "dishesUnlocked": {
+        "Milk": [
+          "Ragi Porridge"
+        ]
+      },
+      "messageShown": "Try Milk to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Millets",
+      "suggestedUnlockIngredients": [],
+      "dishesUnlocked": {},
+      "messageShown": "No strong match yet. Try another ingredient from your pantry.",
+      "status": "WARN"
+    },
+    {
+      "selectedIngredient": "Poha",
+      "suggestedUnlockIngredients": [
+        "Onion",
+        "Potato"
+      ],
+      "dishesUnlocked": {
+        "Onion": [
+          "Avalakki",
+          "Poha"
+        ],
+        "Potato": [
+          "Batata Poha"
+        ]
+      },
+      "messageShown": "Try Onion or Potato to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Oats",
+      "suggestedUnlockIngredients": [
+        "Milk"
+      ],
+      "dishesUnlocked": {
+        "Milk": [
+          "Oats Porridge"
+        ]
+      },
+      "messageShown": "Try Milk to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Rava",
+      "suggestedUnlockIngredients": [
+        "Onion"
+      ],
+      "dishesUnlocked": {
+        "Onion": [
+          "Instant Rava Upma",
+          "Upma"
+        ]
+      },
+      "messageShown": "Try Onion to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Toor Dal",
+      "suggestedUnlockIngredients": [
+        "Rice",
+        "Wheat Flour"
+      ],
+      "dishesUnlocked": {
+        "Rice": [
+          "Bisibelebath",
+          "Dal Rice",
+          "Sambar Rice"
+        ],
+        "Wheat Flour": [
+          "Dal Roti"
+        ]
+      },
+      "messageShown": "Try Rice or Wheat Flour to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Moong Dal",
+      "suggestedUnlockIngredients": [
+        "Rice",
+        "Maida"
+      ],
+      "dishesUnlocked": {
+        "Rice": [
+          "Khichdi",
+          "Pongal",
+          "Sweet Pongal"
+        ],
+        "Maida": [
+          "Kachori"
+        ]
+      },
+      "messageShown": "Try Rice or Maida to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Urad Dal",
+      "suggestedUnlockIngredients": [
+        "Dosa Rice",
+        "Idli Rice",
+        "Idli"
+      ],
+      "dishesUnlocked": {
+        "Dosa Rice": [
+          "Dosa",
+          "Spicy Masala Dosa",
+          "Kaaram Dosa"
+        ],
+        "Idli Rice": [
+          "Idli",
+          "Soft Idli"
+        ],
+        "Idli": [
+          "Idli",
+          "Soft Idli"
+        ]
+      },
+      "messageShown": "Try Dosa Rice, Idli Rice or Idli to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Idli Rice",
+      "suggestedUnlockIngredients": [
+        "Urad Dal",
+        "Onion",
+        "Gunpowder"
+      ],
+      "dishesUnlocked": {
+        "Urad Dal": [
+          "Idli",
+          "Soft Idli"
+        ],
+        "Onion": [
+          "Onion Uttapam"
+        ],
+        "Gunpowder": [
+          "Andhra Podi Idli",
+          "Gunpowder Idli"
+        ]
+      },
+      "messageShown": "Try Urad Dal, Onion or Gunpowder to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Rice Flour",
+      "suggestedUnlockIngredients": [
+        "Coconut",
+        "Maida",
+        "Fish"
+      ],
+      "dishesUnlocked": {
+        "Coconut": [
+          "Modak"
+        ],
+        "Maida": [
+          "Pitha"
+        ],
+        "Fish": [
+          "Fish Fry"
+        ]
+      },
+      "messageShown": "Try Coconut, Maida or Fish to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Sabudana",
+      "suggestedUnlockIngredients": [
+        "Peanuts"
+      ],
+      "dishesUnlocked": {
+        "Peanuts": [
+          "Sabudana Khichdi"
+        ]
+      },
+      "messageShown": "Try Peanuts to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Chicken",
+      "suggestedUnlockIngredients": [
+        "Tomato",
+        "Garlic",
+        "Onion"
+      ],
+      "dishesUnlocked": {
+        "Tomato": [
+          "Chicken Curry",
+          "Chicken Roll",
+          "Chicken Stew",
+          "Butter Chicken"
+        ],
+        "Garlic": [
+          "Garlic Chicken"
+        ],
+        "Onion": [
+          "Andhra Chicken Curry"
+        ]
+      },
+      "messageShown": "Try Tomato, Garlic or Onion to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Fish",
+      "suggestedUnlockIngredients": [
+        "Besan",
+        "Rice",
+        "Rice Flour"
+      ],
+      "dishesUnlocked": {
+        "Besan": [
+          "Fish Pakora"
+        ],
+        "Rice": [
+          "Fish Curry Rice"
+        ],
+        "Rice Flour": [
+          "Fish Fry"
+        ]
+      },
+      "messageShown": "Try Besan, Rice or Rice Flour to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Egg",
+      "suggestedUnlockIngredients": [
+        "Onion",
+        "Rice",
+        "Tomato"
+      ],
+      "dishesUnlocked": {
+        "Onion": [
+          "Egg Bhurji",
+          "Egg Curry",
+          "Onion Omelette"
+        ],
+        "Rice": [
+          "Egg Curry Rice",
+          "Egg Fried Rice"
+        ],
+        "Tomato": [
+          "Tomato Omelette"
+        ]
+      },
+      "messageShown": "Try Onion, Rice or Tomato to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Paneer",
+      "suggestedUnlockIngredients": [
+        "Capsicum",
+        "Onion",
+        "Tomato"
+      ],
+      "dishesUnlocked": {
+        "Capsicum": [
+          "Chilli Paneer",
+          "Kadai Paneer"
+        ],
+        "Onion": [
+          "Paneer Bhurji"
+        ],
+        "Tomato": [
+          "Paneer Tikka Masala"
+        ]
+      },
+      "messageShown": "Try Capsicum, Onion or Tomato to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Curd",
+      "suggestedUnlockIngredients": [
+        "Chicken",
+        "Besan",
+        "Paneer"
+      ],
+      "dishesUnlocked": {
+        "Chicken": [
+          "Chicken Majestic",
+          "Chicken 65"
+        ],
+        "Besan": [
+          "Kadhi Chawal"
+        ],
+        "Paneer": [
+          "Paneer Tikka"
+        ]
+      },
+      "messageShown": "Try Chicken, Besan or Paneer to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Milk",
+      "suggestedUnlockIngredients": [
+        "Apple",
+        "Banana",
+        "Carrot"
+      ],
+      "dishesUnlocked": {
+        "Apple": [
+          "Apple Puree"
+        ],
+        "Banana": [
+          "Mashed Banana"
+        ],
+        "Carrot": [
+          "Vegetable Puree"
+        ]
+      },
+      "messageShown": "Try Apple, Banana or Carrot to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Rajma",
+      "suggestedUnlockIngredients": [
+        "Black Urad Dal",
+        "Rice"
+      ],
+      "dishesUnlocked": {
+        "Black Urad Dal": [
+          "Dal Makhani"
+        ],
+        "Rice": [
+          "Rajma Chawal"
+        ]
+      },
+      "messageShown": "Try Black Urad Dal or Rice to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Chana",
+      "suggestedUnlockIngredients": [
+        "Coconut"
+      ],
+      "dishesUnlocked": {
+        "Coconut": [
+          "Sundal"
+        ]
+      },
+      "messageShown": "Try Coconut to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Onion",
+      "suggestedUnlockIngredients": [
+        "Egg",
+        "Chicken",
+        "Rice"
+      ],
+      "dishesUnlocked": {
+        "Egg": [
+          "Egg Bhurji",
+          "Egg Curry",
+          "Onion Omelette"
+        ],
+        "Chicken": [
+          "Andhra Chicken Curry"
+        ],
+        "Rice": [
+          "Onion Rice",
+          "Veg Fried Rice"
+        ]
+      },
+      "messageShown": "Try Egg, Chicken or Rice to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Tomato",
+      "suggestedUnlockIngredients": [
+        "Chicken",
+        "Paneer",
+        "Egg"
+      ],
+      "dishesUnlocked": {
+        "Chicken": [
+          "Chicken Curry",
+          "Chicken Roll",
+          "Chicken Stew",
+          "Butter Chicken"
+        ],
+        "Paneer": [
+          "Paneer Tikka Masala"
+        ],
+        "Egg": [
+          "Tomato Omelette"
+        ]
+      },
+      "messageShown": "Try Chicken, Paneer or Egg to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Potato",
+      "suggestedUnlockIngredients": [
+        "Wheat Flour",
+        "Besan",
+        "Egg"
+      ],
+      "dishesUnlocked": {
+        "Wheat Flour": [
+          "Chaat",
+          "Samosa",
+          "Spicy Aloo Paratha",
+          "Stuffed Paratha"
+        ],
+        "Besan": [
+          "Bonda",
+          "Pakora"
+        ],
+        "Egg": [
+          "Spanish Omelette"
+        ]
+      },
+      "messageShown": "Try Wheat Flour, Besan or Egg to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Carrot",
+      "suggestedUnlockIngredients": [
+        "Onion",
+        "Milk",
+        "Corn"
+      ],
+      "dishesUnlocked": {
+        "Onion": [
+          "Vegetable Soup"
+        ],
+        "Milk": [
+          "Vegetable Puree"
+        ],
+        "Corn": [
+          "Corn Soup"
+        ]
+      },
+      "messageShown": "Try Onion, Milk or Corn to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Gobi",
+      "suggestedUnlockIngredients": [],
+      "dishesUnlocked": {},
+      "messageShown": "No strong match yet. Try another ingredient from your pantry.",
+      "status": "WARN"
+    },
+    {
+      "selectedIngredient": "Ivy Gourd",
+      "suggestedUnlockIngredients": [],
+      "dishesUnlocked": {},
+      "messageShown": "No strong match yet. Try another ingredient from your pantry.",
+      "status": "WARN"
+    },
+    {
+      "selectedIngredient": "Beans",
+      "suggestedUnlockIngredients": [],
+      "dishesUnlocked": {},
+      "messageShown": "No strong match yet. Try another ingredient from your pantry.",
+      "status": "WARN"
+    },
+    {
+      "selectedIngredient": "Capsicum",
+      "suggestedUnlockIngredients": [
+        "Paneer",
+        "Chicken",
+        "Egg"
+      ],
+      "dishesUnlocked": {
+        "Paneer": [
+          "Chilli Paneer",
+          "Kadai Paneer"
+        ],
+        "Chicken": [
+          "Chilli Chicken"
+        ],
+        "Egg": [
+          "Masala Omelette"
+        ]
+      },
+      "messageShown": "Try Paneer, Chicken or Egg to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Spinach",
+      "suggestedUnlockIngredients": [
+        "Paneer",
+        "Wheat Flour"
+      ],
+      "dishesUnlocked": {
+        "Paneer": [
+          "Palak Paneer"
+        ],
+        "Wheat Flour": [
+          "Palak Paratha"
+        ]
+      },
+      "messageShown": "Try Paneer or Wheat Flour to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Methi",
+      "suggestedUnlockIngredients": [
+        "Wheat Flour"
+      ],
+      "dishesUnlocked": {
+        "Wheat Flour": [
+          "Mathri",
+          "Methi Paratha"
+        ]
+      },
+      "messageShown": "Try Wheat Flour to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Drumstick",
+      "suggestedUnlockIngredients": [],
+      "dishesUnlocked": {},
+      "messageShown": "No strong match yet. Try another ingredient from your pantry.",
+      "status": "WARN"
+    },
+    {
+      "selectedIngredient": "Mushroom",
+      "suggestedUnlockIngredients": [
+        "Onion",
+        "Egg",
+        "Chilli"
+      ],
+      "dishesUnlocked": {
+        "Onion": [
+          "Mushroom Soup"
+        ],
+        "Egg": [
+          "Mushroom Omelette"
+        ],
+        "Chilli": [
+          "Chilli Mushroom"
+        ]
+      },
+      "messageShown": "Try Onion, Egg or Chilli to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Corn",
+      "suggestedUnlockIngredients": [
+        "Onion",
+        "Chaat Masala",
+        "Carrot"
+      ],
+      "dishesUnlocked": {
+        "Onion": [
+          "Corn Chaat"
+        ],
+        "Chaat Masala": [
+          "Boiled Corn"
+        ],
+        "Carrot": [
+          "Corn Soup"
+        ]
+      },
+      "messageShown": "Try Onion, Chaat Masala or Carrot to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Vegetable Mix",
+      "suggestedUnlockIngredients": [
+        "Bread",
+        "Idli Batter"
+      ],
+      "dishesUnlocked": {
+        "Bread": [
+          "Veg Sandwich"
+        ],
+        "Idli Batter": [
+          "Vegetable Uttapam"
+        ]
+      },
+      "messageShown": "Try Bread or Idli Batter to unlock real dishes.",
+      "status": "PASS"
+    },
+    {
+      "selectedIngredient": "Cabbage",
+      "suggestedUnlockIngredients": [],
+      "dishesUnlocked": {},
+      "messageShown": "No strong match yet. Try another ingredient from your pantry.",
+      "status": "WARN"
+    }
+  ]
+}

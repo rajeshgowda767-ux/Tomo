@@ -1,0 +1,1581 @@
+{
+  "generatedAt": "2026-06-11T07:56:27.676Z",
+  "totalRecipes": 165,
+  "distribution": {
+    "comfort": {
+      "label": "Comfort Food",
+      "count": 81,
+      "top20": [
+        {
+          "name": "Khichdi",
+          "tier": "CORE",
+          "score": 115
+        },
+        {
+          "name": "Curd Rice",
+          "tier": "CORE",
+          "score": 113.6
+        },
+        {
+          "name": "Dal Rice",
+          "tier": "CORE",
+          "score": 112.2
+        },
+        {
+          "name": "Rasam Rice",
+          "tier": "CORE",
+          "score": 110.8
+        },
+        {
+          "name": "Chicken Curry",
+          "tier": "CORE",
+          "score": 109.4
+        },
+        {
+          "name": "Chicken Stew",
+          "tier": "CORE",
+          "score": 108
+        },
+        {
+          "name": "Chole Chawal",
+          "tier": "CORE",
+          "score": 106.6
+        },
+        {
+          "name": "Dal Makhani",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Palak Paneer",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Pongal",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Rajma Chawal",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Sambar Rice",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Spicy Aloo Paratha",
+          "tier": "SUPPORT",
+          "score": 72.8
+        },
+        {
+          "name": "Egg Curry",
+          "tier": "SUPPORT",
+          "score": 72.4
+        },
+        {
+          "name": "Andhra Chicken Curry",
+          "tier": "SUPPORT",
+          "score": 71.7
+        },
+        {
+          "name": "Egg Curry Rice",
+          "tier": "SUPPORT",
+          "score": 71.7
+        },
+        {
+          "name": "Fish Curry",
+          "tier": "SUPPORT",
+          "score": 71.7
+        },
+        {
+          "name": "Kerala Fish Curry",
+          "tier": "SUPPORT",
+          "score": 71.7
+        },
+        {
+          "name": "Oats Porridge",
+          "tier": "SUPPORT",
+          "score": 71.7
+        },
+        {
+          "name": "Ragi Porridge",
+          "tier": "SUPPORT",
+          "score": 71.7
+        }
+      ]
+    },
+    "soul": {
+      "label": "Soul Food",
+      "count": 39,
+      "top20": [
+        {
+          "name": "Curd Rice",
+          "tier": "CORE",
+          "score": 115
+        },
+        {
+          "name": "Dal Rice",
+          "tier": "CORE",
+          "score": 113.6
+        },
+        {
+          "name": "Rasam Rice",
+          "tier": "CORE",
+          "score": 112.2
+        },
+        {
+          "name": "Rice Porridge",
+          "tier": "CORE",
+          "score": 110.8
+        },
+        {
+          "name": "Soft Idli",
+          "tier": "CORE",
+          "score": 109.4
+        },
+        {
+          "name": "Idli",
+          "tier": "CORE",
+          "score": 108
+        },
+        {
+          "name": "Khichdi",
+          "tier": "CORE",
+          "score": 106.6
+        },
+        {
+          "name": "Aloo Paratha",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Chole Chawal",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Coconut Rice",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Dosa",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Masala Dosa",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Pongal",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Puliyogare",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Rajma Chawal",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Sambar Rice",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Oats Porridge",
+          "tier": "SUPPORT",
+          "score": 73.8
+        },
+        {
+          "name": "Ragi Porridge",
+          "tier": "SUPPORT",
+          "score": 73.8
+        },
+        {
+          "name": "Andhra Podi Idli",
+          "tier": "SUPPORT",
+          "score": 73.7
+        },
+        {
+          "name": "Sabudana Khichdi",
+          "tier": "SUPPORT",
+          "score": 72.6
+        }
+      ]
+    },
+    "protein": {
+      "label": "High Protein",
+      "count": 63,
+      "top20": [
+        {
+          "name": "Egg Curry",
+          "tier": "CORE",
+          "score": 115
+        },
+        {
+          "name": "Egg Bhurji",
+          "tier": "CORE",
+          "score": 113.6
+        },
+        {
+          "name": "Egg Toast",
+          "tier": "CORE",
+          "score": 112.2
+        },
+        {
+          "name": "Egg Fried Rice",
+          "tier": "CORE",
+          "score": 110.8
+        },
+        {
+          "name": "Chicken Curry",
+          "tier": "CORE",
+          "score": 109.4
+        },
+        {
+          "name": "Chicken Fried Rice",
+          "tier": "CORE",
+          "score": 108
+        },
+        {
+          "name": "Chilli Chicken",
+          "tier": "CORE",
+          "score": 106.6
+        },
+        {
+          "name": "Chicken Chettinad",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Chicken Stew",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Chole Chawal",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Dal Makhani",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Egg Dosa",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Fish Curry",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Fish Fry",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Kadai Paneer",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Matar Paneer",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Palak Paneer",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Paneer Bhurji",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Paneer Dosa",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Paneer Paratha",
+          "tier": "CORE",
+          "score": 105.2
+        }
+      ]
+    },
+    "quick": {
+      "label": "Quick & Easy",
+      "count": 21,
+      "top20": [
+        {
+          "name": "Egg Toast",
+          "tier": "CORE",
+          "score": 115
+        },
+        {
+          "name": "Veg Sandwich",
+          "tier": "CORE",
+          "score": 113.6
+        },
+        {
+          "name": "Paneer Sandwich",
+          "tier": "CORE",
+          "score": 112.2
+        },
+        {
+          "name": "Corn Chaat",
+          "tier": "CORE",
+          "score": 110.8
+        },
+        {
+          "name": "Bread Upma",
+          "tier": "CORE",
+          "score": 109.4
+        },
+        {
+          "name": "Instant Rava Upma",
+          "tier": "CORE",
+          "score": 108
+        },
+        {
+          "name": "Tomato Rice",
+          "tier": "CORE",
+          "score": 106.6
+        },
+        {
+          "name": "Avalakki",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Coconut Rice",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Lemon Rice",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Lemon Sevai",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Poha",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Upma",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Andhra Podi Idli",
+          "tier": "SUPPORT",
+          "score": 68.2
+        },
+        {
+          "name": "Peanut Sundal",
+          "tier": "SUPPORT",
+          "score": 68.2
+        },
+        {
+          "name": "Masala Chai",
+          "tier": "SUPPORT",
+          "score": 68
+        },
+        {
+          "name": "Pepper Rasam",
+          "tier": "SUPPORT",
+          "score": 68
+        },
+        {
+          "name": "Chilli Paneer",
+          "tier": "SUPPORT",
+          "score": 67.9
+        },
+        {
+          "name": "Mirchi Bajji",
+          "tier": "SUPPORT",
+          "score": 67.9
+        },
+        {
+          "name": "Schezwan Fried Rice",
+          "tier": "SUPPORT",
+          "score": 67.7
+        }
+      ]
+    },
+    "spicy": {
+      "label": "Spicy Food",
+      "count": 62,
+      "top20": [
+        {
+          "name": "Andhra Chicken Curry",
+          "tier": "CORE",
+          "score": 115
+        },
+        {
+          "name": "Pepper Rasam",
+          "tier": "CORE",
+          "score": 113.6
+        },
+        {
+          "name": "Gunpowder Idli",
+          "tier": "CORE",
+          "score": 112.2
+        },
+        {
+          "name": "Kaaram Dosa",
+          "tier": "CORE",
+          "score": 110.8
+        },
+        {
+          "name": "Mirchi Bajji",
+          "tier": "CORE",
+          "score": 109.4
+        },
+        {
+          "name": "Andhra Kodi Vepudu",
+          "tier": "CORE",
+          "score": 108
+        },
+        {
+          "name": "Guntur Chicken Fry",
+          "tier": "CORE",
+          "score": 106.6
+        },
+        {
+          "name": "Andhra Egg Fry",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Chicken 555",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Chicken 65",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Chicken Chettinad",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Chicken Majestic",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Chilli Chicken",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Chilli Paneer",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Dragon Chicken",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Mirapakaya Bajji",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Spicy Aloo Paratha",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Egg Curry",
+          "tier": "SUPPORT",
+          "score": 69.6
+        },
+        {
+          "name": "Kolhapuri Misal Pav",
+          "tier": "SUPPORT",
+          "score": 69.3
+        },
+        {
+          "name": "Mirchi Ka Salan",
+          "tier": "SUPPORT",
+          "score": 69.2
+        }
+      ]
+    },
+    "rainy": {
+      "label": "Rainy Day",
+      "count": 20,
+      "top20": [
+        {
+          "name": "Khichdi",
+          "tier": "CORE",
+          "score": 115
+        },
+        {
+          "name": "Pepper Rasam",
+          "tier": "CORE",
+          "score": 113.6
+        },
+        {
+          "name": "Rasam Rice",
+          "tier": "CORE",
+          "score": 112.2
+        },
+        {
+          "name": "Sambar Rice",
+          "tier": "CORE",
+          "score": 110.8
+        },
+        {
+          "name": "Pongal",
+          "tier": "CORE",
+          "score": 109.4
+        },
+        {
+          "name": "Upma",
+          "tier": "CORE",
+          "score": 108
+        },
+        {
+          "name": "Masala Dosa",
+          "tier": "CORE",
+          "score": 106.6
+        },
+        {
+          "name": "Bonda",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Bread Pakora",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Corn Soup",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Masala Chai",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Mirchi Bajji",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Mushroom Soup",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Vegetable Soup",
+          "tier": "CORE",
+          "score": 105.2
+        },
+        {
+          "name": "Sabudana Khichdi",
+          "tier": "SUPPORT",
+          "score": 72.6
+        },
+        {
+          "name": "Sweet Pongal",
+          "tier": "SUPPORT",
+          "score": 72.6
+        }
+      ]
+    }
+  },
+  "soulFoodFinalDishList": [
+    {
+      "name": "Curd Rice",
+      "tier": "CORE",
+      "score": 115
+    },
+    {
+      "name": "Dal Rice",
+      "tier": "CORE",
+      "score": 113.6
+    },
+    {
+      "name": "Rasam Rice",
+      "tier": "CORE",
+      "score": 112.2
+    },
+    {
+      "name": "Rice Porridge",
+      "tier": "CORE",
+      "score": 110.8
+    },
+    {
+      "name": "Soft Idli",
+      "tier": "CORE",
+      "score": 109.4
+    },
+    {
+      "name": "Idli",
+      "tier": "CORE",
+      "score": 108
+    },
+    {
+      "name": "Khichdi",
+      "tier": "CORE",
+      "score": 106.6
+    },
+    {
+      "name": "Aloo Paratha",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Chole Chawal",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Coconut Rice",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Dosa",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Masala Dosa",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Pongal",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Puliyogare",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Rajma Chawal",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Sambar Rice",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Oats Porridge",
+      "tier": "SUPPORT",
+      "score": 73.8
+    },
+    {
+      "name": "Ragi Porridge",
+      "tier": "SUPPORT",
+      "score": 73.8
+    },
+    {
+      "name": "Andhra Podi Idli",
+      "tier": "SUPPORT",
+      "score": 73.7
+    },
+    {
+      "name": "Sabudana Khichdi",
+      "tier": "SUPPORT",
+      "score": 72.6
+    },
+    {
+      "name": "Sweet Pongal",
+      "tier": "SUPPORT",
+      "score": 72.6
+    },
+    {
+      "name": "Avalakki",
+      "tier": "SUPPORT",
+      "score": 72.1
+    },
+    {
+      "name": "Poha",
+      "tier": "SUPPORT",
+      "score": 72.1
+    },
+    {
+      "name": "Upma",
+      "tier": "SUPPORT",
+      "score": 72.1
+    },
+    {
+      "name": "Egg Curry Rice",
+      "tier": "SUPPORT",
+      "score": 71.7
+    },
+    {
+      "name": "Rice Cakes",
+      "tier": "SUPPORT",
+      "score": 71.6
+    },
+    {
+      "name": "Fish Curry Rice",
+      "tier": "SUPPORT",
+      "score": 71.5
+    },
+    {
+      "name": "Methi Paratha",
+      "tier": "SUPPORT",
+      "score": 71.5
+    },
+    {
+      "name": "Stuffed Paratha",
+      "tier": "SUPPORT",
+      "score": 71.5
+    },
+    {
+      "name": "Egg Paratha",
+      "tier": "SUPPORT",
+      "score": 71.2
+    },
+    {
+      "name": "Onion Dosa",
+      "tier": "SUPPORT",
+      "score": 71.2
+    },
+    {
+      "name": "Onion Rice",
+      "tier": "SUPPORT",
+      "score": 71.2
+    },
+    {
+      "name": "Paneer Pulao",
+      "tier": "SUPPORT",
+      "score": 71.2
+    },
+    {
+      "name": "Peanut Rice",
+      "tier": "SUPPORT",
+      "score": 71.2
+    },
+    {
+      "name": "Veg Pulao",
+      "tier": "SUPPORT",
+      "score": 71.1
+    },
+    {
+      "name": "Onion Paratha",
+      "tier": "SUPPORT",
+      "score": 71
+    },
+    {
+      "name": "Wheat Dosa",
+      "tier": "SUPPORT",
+      "score": 71
+    },
+    {
+      "name": "Modak",
+      "tier": "SUPPORT",
+      "score": 70.9
+    },
+    {
+      "name": "Thukpa",
+      "tier": "SUPPORT",
+      "score": 70.9
+    }
+  ],
+  "rainyDayFinalDishList": [
+    {
+      "name": "Khichdi",
+      "tier": "CORE",
+      "score": 115
+    },
+    {
+      "name": "Pepper Rasam",
+      "tier": "CORE",
+      "score": 113.6
+    },
+    {
+      "name": "Rasam Rice",
+      "tier": "CORE",
+      "score": 112.2
+    },
+    {
+      "name": "Sambar Rice",
+      "tier": "CORE",
+      "score": 110.8
+    },
+    {
+      "name": "Pongal",
+      "tier": "CORE",
+      "score": 109.4
+    },
+    {
+      "name": "Upma",
+      "tier": "CORE",
+      "score": 108
+    },
+    {
+      "name": "Masala Dosa",
+      "tier": "CORE",
+      "score": 106.6
+    },
+    {
+      "name": "Bonda",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Bread Pakora",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Corn Soup",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Masala Chai",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Mirchi Bajji",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Mushroom Soup",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Pakora",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Vegetable Soup",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Fish Pakora",
+      "tier": "SUPPORT",
+      "score": 72.6
+    },
+    {
+      "name": "Sabudana Khichdi",
+      "tier": "SUPPORT",
+      "score": 72.6
+    },
+    {
+      "name": "Sweet Pongal",
+      "tier": "SUPPORT",
+      "score": 72.6
+    },
+    {
+      "name": "Paneer Pakora",
+      "tier": "SUPPORT",
+      "score": 72.5
+    },
+    {
+      "name": "Mirapakaya Bajji",
+      "tier": "SUPPORT",
+      "score": 71.7
+    }
+  ],
+  "highProteinFinalDishList": [
+    {
+      "name": "Egg Curry",
+      "tier": "CORE",
+      "score": 115
+    },
+    {
+      "name": "Egg Bhurji",
+      "tier": "CORE",
+      "score": 113.6
+    },
+    {
+      "name": "Egg Toast",
+      "tier": "CORE",
+      "score": 112.2
+    },
+    {
+      "name": "Egg Fried Rice",
+      "tier": "CORE",
+      "score": 110.8
+    },
+    {
+      "name": "Chicken Curry",
+      "tier": "CORE",
+      "score": 109.4
+    },
+    {
+      "name": "Chicken Fried Rice",
+      "tier": "CORE",
+      "score": 108
+    },
+    {
+      "name": "Chilli Chicken",
+      "tier": "CORE",
+      "score": 106.6
+    },
+    {
+      "name": "Chicken Chettinad",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Chicken Stew",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Chole Chawal",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Dal Makhani",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Egg Dosa",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Fish Curry",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Fish Fry",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Kadai Paneer",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Matar Paneer",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Palak Paneer",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Paneer Bhurji",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Paneer Dosa",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Paneer Paratha",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Rajma Chawal",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Andhra Chicken Curry",
+      "tier": "SUPPORT",
+      "score": 70.1
+    },
+    {
+      "name": "Egg Curry Rice",
+      "tier": "SUPPORT",
+      "score": 70.1
+    },
+    {
+      "name": "Kerala Fish Curry",
+      "tier": "SUPPORT",
+      "score": 70.1
+    },
+    {
+      "name": "Butter Chicken",
+      "tier": "SUPPORT",
+      "score": 70
+    },
+    {
+      "name": "Cheese Omelette",
+      "tier": "SUPPORT",
+      "score": 70
+    },
+    {
+      "name": "Chicken Sukka",
+      "tier": "SUPPORT",
+      "score": 70
+    },
+    {
+      "name": "Fish Curry Rice",
+      "tier": "SUPPORT",
+      "score": 70
+    },
+    {
+      "name": "Garlic Chicken",
+      "tier": "SUPPORT",
+      "score": 70
+    },
+    {
+      "name": "Masala Omelette",
+      "tier": "SUPPORT",
+      "score": 70
+    },
+    {
+      "name": "Mushroom Omelette",
+      "tier": "SUPPORT",
+      "score": 70
+    },
+    {
+      "name": "Chicken Pulao",
+      "tier": "SUPPORT",
+      "score": 69.9
+    },
+    {
+      "name": "Nattu Kozhi Curry",
+      "tier": "SUPPORT",
+      "score": 69.9
+    },
+    {
+      "name": "Pork Curry",
+      "tier": "SUPPORT",
+      "score": 69.9
+    },
+    {
+      "name": "Smoked Pork Rice",
+      "tier": "SUPPORT",
+      "score": 69.9
+    },
+    {
+      "name": "Biryani",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Bread Omelette",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Chicken 65",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Chilli Paneer",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Gongura Mutton",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Guntur Chilli Chicken",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Keema Fry",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Kheema Pav",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Kolhapuri Chicken",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Laal Maas",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Madras Curry",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Paneer Tikka",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Paneer Tikka Masala",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Prawn Ghee Roast",
+      "tier": "SUPPORT",
+      "score": 69.8
+    },
+    {
+      "name": "Chicken Roll",
+      "tier": "SUPPORT",
+      "score": 69.7
+    },
+    {
+      "name": "Paneer Sandwich",
+      "tier": "SUPPORT",
+      "score": 69.7
+    },
+    {
+      "name": "Andhra Egg Fry",
+      "tier": "SUPPORT",
+      "score": 69.6
+    },
+    {
+      "name": "Andhra Kodi Vepudu",
+      "tier": "SUPPORT",
+      "score": 69.6
+    },
+    {
+      "name": "Guntur Chicken Fry",
+      "tier": "SUPPORT",
+      "score": 69.6
+    },
+    {
+      "name": "Chicken 555",
+      "tier": "SUPPORT",
+      "score": 69.5
+    },
+    {
+      "name": "Chicken Majestic",
+      "tier": "SUPPORT",
+      "score": 69.5
+    },
+    {
+      "name": "Dragon Chicken",
+      "tier": "SUPPORT",
+      "score": 69.5
+    },
+    {
+      "name": "Paneer Fried Rice",
+      "tier": "SUPPORT",
+      "score": 69.3
+    },
+    {
+      "name": "Paneer Pulao",
+      "tier": "SUPPORT",
+      "score": 69.3
+    },
+    {
+      "name": "Egg Paratha",
+      "tier": "SUPPORT",
+      "score": 69.2
+    },
+    {
+      "name": "Sundal",
+      "tier": "SUPPORT",
+      "score": 69.2
+    },
+    {
+      "name": "Kadhi Chawal",
+      "tier": "SUPPORT",
+      "score": 68.5
+    },
+    {
+      "name": "Besan Chilla",
+      "tier": "SUPPORT",
+      "score": 68.4
+    }
+  ],
+  "spicyFoodFinalDishList": [
+    {
+      "name": "Andhra Chicken Curry",
+      "tier": "CORE",
+      "score": 115
+    },
+    {
+      "name": "Pepper Rasam",
+      "tier": "CORE",
+      "score": 113.6
+    },
+    {
+      "name": "Gunpowder Idli",
+      "tier": "CORE",
+      "score": 112.2
+    },
+    {
+      "name": "Kaaram Dosa",
+      "tier": "CORE",
+      "score": 110.8
+    },
+    {
+      "name": "Mirchi Bajji",
+      "tier": "CORE",
+      "score": 109.4
+    },
+    {
+      "name": "Andhra Kodi Vepudu",
+      "tier": "CORE",
+      "score": 108
+    },
+    {
+      "name": "Guntur Chicken Fry",
+      "tier": "CORE",
+      "score": 106.6
+    },
+    {
+      "name": "Andhra Egg Fry",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Chicken 555",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Chicken 65",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Chicken Chettinad",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Chicken Majestic",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Chilli Chicken",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Chilli Paneer",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Dragon Chicken",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Mirapakaya Bajji",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Spicy Aloo Paratha",
+      "tier": "CORE",
+      "score": 105.2
+    },
+    {
+      "name": "Egg Curry",
+      "tier": "SUPPORT",
+      "score": 69.6
+    },
+    {
+      "name": "Kolhapuri Misal Pav",
+      "tier": "SUPPORT",
+      "score": 69.3
+    },
+    {
+      "name": "Mirchi Ka Salan",
+      "tier": "SUPPORT",
+      "score": 69.2
+    },
+    {
+      "name": "Schezwan Fried Rice",
+      "tier": "SUPPORT",
+      "score": 69.1
+    },
+    {
+      "name": "Chilli Mushroom",
+      "tier": "SUPPORT",
+      "score": 68.6
+    },
+    {
+      "name": "Chicken Curry",
+      "tier": "SUPPORT",
+      "score": 67
+    },
+    {
+      "name": "Kerala Fish Curry",
+      "tier": "SUPPORT",
+      "score": 67
+    },
+    {
+      "name": "Pongal",
+      "tier": "SUPPORT",
+      "score": 67
+    },
+    {
+      "name": "Rasam Rice",
+      "tier": "SUPPORT",
+      "score": 67
+    },
+    {
+      "name": "Cheese Omelette",
+      "tier": "SUPPORT",
+      "score": 66.9
+    },
+    {
+      "name": "Garlic Chicken",
+      "tier": "SUPPORT",
+      "score": 66.9
+    },
+    {
+      "name": "Masala Omelette",
+      "tier": "SUPPORT",
+      "score": 66.9
+    },
+    {
+      "name": "Mushroom Omelette",
+      "tier": "SUPPORT",
+      "score": 66.9
+    },
+    {
+      "name": "Andhra Podi Idli",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Chicken Sukka",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Corn Soup",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Egg Bhurji",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Egg Paratha",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Fish Fry",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Gongura Mutton",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Keema Fry",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Nattu Kozhi Curry",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Onion Rice",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Peanut Rice",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Pork Curry",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Spicy Masala Dosa",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Vegetable Soup",
+      "tier": "SUPPORT",
+      "score": 66.8
+    },
+    {
+      "name": "Besan Chilla",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Bread Upma",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Guntur Chilli Chicken",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Kheema Pav",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Kolhapuri Chicken",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Laal Maas",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Madras Curry",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Onion Paratha",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Paneer Tikka Masala",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Prawn Ghee Roast",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Puliyogare",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Wheat Dosa",
+      "tier": "SUPPORT",
+      "score": 66.7
+    },
+    {
+      "name": "Instant Rava Upma",
+      "tier": "SUPPORT",
+      "score": 66.6
+    },
+    {
+      "name": "Mushroom Soup",
+      "tier": "SUPPORT",
+      "score": 66.6
+    },
+    {
+      "name": "Bread Omelette",
+      "tier": "SUPPORT",
+      "score": 66.5
+    },
+    {
+      "name": "Paneer Bhurji",
+      "tier": "SUPPORT",
+      "score": 66.5
+    },
+    {
+      "name": "Paneer Sandwich",
+      "tier": "SUPPORT",
+      "score": 66.4
+    },
+    {
+      "name": "Veg Sandwich",
+      "tier": "SUPPORT",
+      "score": 66.3
+    }
+  ],
+  "removedByMood": {
+    "soul": [
+      "Spicy Masala Dosa",
+      "Kaaram Dosa",
+      "Gunpowder Idli",
+      "Spicy Aloo Paratha",
+      "Paneer Dosa",
+      "Egg Dosa",
+      "Tomato Uttapam",
+      "Vegetable Uttapam",
+      "Onion Uttapam"
+    ],
+    "protein": [
+      "Ladoo",
+      "Bonda",
+      "Bread Pakora",
+      "Pakora",
+      "Mirchi Bajji",
+      "Mirapakaya Bajji",
+      "Fish Pakora",
+      "Paneer Pakora"
+    ],
+    "spicy": [
+      "Onion Dosa",
+      "Paneer Dosa",
+      "Egg Dosa",
+      "Onion Uttapam",
+      "Tomato Uttapam"
+    ]
+  },
+  "questionableDishes": []
+}

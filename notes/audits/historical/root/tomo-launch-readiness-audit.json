@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-11",
+  "overall": "NOT READY FOR USER TESTING",
+  "firstTimeComprehensionScore": 7,
+  "codeModified": false,
+  "viewportsTested": [
+    "1280x720",
+    "390x844"
+  ],
+  "audits": {
+    "recommendationLanguage": {
+      "status": "FAIL",
+      "phraseSearch": {
+        "100% Match": 0,
+        "Perfect Match": 0,
+        "Complete Match": 0,
+        "You have all ingredients": 6
+      },
+      "findings": [
+        "Complete-ingredient claims are conditional on hasAllRecipeIngredients.",
+        "Optional ingredients normally prevent the complete claim when missing.",
+        "Coverage omits core ingredients that are absent from required and optional metadata.",
+        "Veg Fried Rice omits core ingredient onion from its coverage denominator.",
+        "Recipe detail can prioritize optional suggestions over a missing required ingredient."
+      ]
+    },
+    "pantryResultsVisibility": {
+      "status": "PASS_WITH_WARN",
+      "aboveFold": true,
+      "automaticSurface": true,
+      "selectionFeedback": true,
+      "recommendationCountVisible": true,
+      "mobileWarning": "The second result card is clipped at 390px and relies on horizontal scrolling."
+    },
+    "emptyStates": {
+      "status": "PASS_WITH_WARN",
+      "noIngredients": [
+        "What's in your kitchen today? Pick your ingredients and I'll suggest real dishes.",
+        "Selected ingredients will appear here.",
+        "Tell Tomo what's in your kitchen."
+      ],
+      "oneIngredient": [
+        "Nice start. Add one more ingredient and I can suggest better dishes."
+      ],
+      "noValidMatch": [
+        "No strong match yet. Add one more ingredient to unlock better dishes.",
+        "Add one more ingredient to unlock better dishes."
+      ],
+      "unusualCombination": [
+        "Unusual combo. These ingredients don't usually form a dish together.",
+        "These ingredients don't usually form a dish together. Try adding rice, jaggery, coconut, or curd."
+      ],
+      "warning": "Helpful messages are duplicated in several pantry states."
+    },
+    "modalClose": {
+      "status": "FAIL",
+      "bestMatchViewDish": {
+        "returnsToPantry": true,
+        "ingredientsPreserved": true,
+        "recommendationsPreserved": true
+      },
+      "curatedResultCard": {
+        "returnsToPantry": false,
+        "ingredientsPreservedInMemory": true,
+        "recommendationsVisibleAfterClose": false,
+        "returnsHome": true
+      }
+    },
+    "firstTimeUser": {
+      "status": "PASS_WITH_WARN",
+      "score": 7,
+      "understoodWithin30Seconds": "Mood-based recipe recommendations are clear; pantry-based recommendations are not explained until Pantry is opened.",
+      "confusingLabels": [
+        "Tap to reveal",
+        "Voice",
+        "Scan"
+      ],
+      "hiddenActions": [
+        "Pantry recommendation capability",
+        "Clickable curated result cards",
+        "Horizontally scrollable mobile results"
+      ],
+      "duplicateMessaging": [
+        "Pantry selection instructions",
+        "One-ingredient guidance",
+        "Unusual-combination guidance"
+      ]
+    }
+  },
+  "priorities": {
+    "launchBlockers": [
+      "Restore pantry context after closing a recipe opened from a curated result card.",
+      "Include every core ingredient in pantry coverage and complete-ingredient calculations."
+    ],
+    "highPriority": [
+      "Prioritize missing required ingredients over optional suggestions in recipe details.",
+      "Revalidate every complete-ingredient claim against the corrected ingredient denominator."
+    ],
+    "mediumPriority": [
+      "Improve mobile result-card readability.",
+      "Reduce duplicate pantry messages.",
+      "Explain both mood and pantry value on the home screen."
+    ],
+    "niceToHave": [
+      "Clarify Tap to reveal.",
+      "Improve global search empty-state guidance.",
+      "Label prototype features clearly."
+    ]
+  }
+}
