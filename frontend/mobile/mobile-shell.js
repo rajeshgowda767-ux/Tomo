@@ -3,60 +3,100 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   document.documentElement.classList.add('mobile-v2-active');
 
   const USE_GENERATED_COLLECTIONS = true;
+  const MOBILE_COLLECTIONS_ENABLED = false;
+  const FEATURED_COLLECTION_ENABLED = true;
+  const mobileDebugRequested = new URLSearchParams(window.location.search).get('tomoDebug') === '1'
+    || window.location.hash.includes('tomo-debug');
   const recipes = (window.COOKBUDDY_LOCAL_RECIPES || []).filter((recipe) => {
     return String(recipe.recipeType || recipe.recipe_type || 'core').toLowerCase() === 'core';
   });
+  const pantryMatchCache = new Map();
+  const preferenceFilterCache = new Map();
+  const todayPickRecommendationCache = new Map();
+  let recipeProteinKindsCache = new WeakMap();
+  let recipeDataVersion = 0;
+  let fullRecipeDataReady = Boolean(window.__TOMO_FULL_RECIPE_DATA_LOADED__);
+  let fullRecipeHydrationPromise = null;
+
+  function ensureFullRecipeData() {
+    if (fullRecipeDataReady) return Promise.resolve(window.COOKBUDDY_LOCAL_RECIPES || recipes);
+    if (!fullRecipeHydrationPromise) {
+      fullRecipeHydrationPromise = Promise.resolve(window.TomoLoadFullRecipeData?.())
+        .then((fullRecipes) => {
+          if (!Array.isArray(fullRecipes) || !fullRecipes.length) return recipes;
+          const compactById = new Map(recipes.map((recipe) => [String(recipe.id || recipe.sourceId), recipe]));
+          fullRecipes.forEach((fullRecipe) => {
+            const compact = compactById.get(String(fullRecipe.id || fullRecipe.sourceId));
+            if (compact) Object.assign(compact, fullRecipe);
+          });
+          recipeDataVersion += 1;
+          pantryMatchCache.clear();
+          preferenceFilterCache.clear();
+          recipeProteinKindsCache = new WeakMap();
+          todayPickRecommendationCache.clear();
+          fullRecipeDataReady = true;
+          return fullRecipes;
+        })
+        .catch(() => recipes);
+    }
+    return fullRecipeHydrationPromise;
+  }
+
+  function ensurePlanEngine() {
+    if (window.TOMO_PLAN_ENGINE) return Promise.resolve(window.TOMO_PLAN_ENGINE);
+    return Promise.resolve(window.TomoLoadPlanEngine?.()).catch(() => null);
+  }
   const generatedHubMeta = {
     'Regional Journeys': {
       icon: '🧭',
-      copy: "Explore food across India's regions.",
-      imagePath: '/assets/images/collections/festival-food.webp',
+      copy: "Regional dishes from across India's home kitchens.",
+      imagePath: '/assets/images/dishes/biryani.png',
     },
     'Everyday Cooking': {
       icon: '🍳',
-      copy: 'Daily comforts, tea-time favourites and home staples.',
-      imagePath: '/assets/images/dishes/home-bowl.png',
+      copy: 'Daily comforts, tea-time bites and simple staples.',
+      imagePath: '/assets/images/dishes/dal-rice.png',
     },
     'Healthy Living': {
       icon: '🥗',
-      copy: 'Protein-rich, balanced and lighter meals.',
+      copy: 'Balanced plates, protein picks and lighter bowls.',
       imagePath: '/assets/images/collections/power-plates-collection-card.png?v=collection-card-images-68',
     },
     'Family Favorites': {
       icon: '👨‍👩‍👧',
-      copy: 'Baby bowls, lunch boxes and family-friendly picks.',
+      copy: 'Lunch boxes, tiny bowls and family-friendly wins.',
       imagePath: '/assets/images/collections/lunch-box-heroes.webp',
     },
     'Global Bites': {
       icon: '🌍',
-      copy: 'Comforting dishes from around the world.',
-      imagePath: '/assets/images/dishes/noodles.png',
+      copy: 'Noodles, bowls, wraps and world comfort plates.',
+      imagePath: '/assets/images/dishes/batch5-chicken-fried-rice.png',
     },
     'Kitchen Essentials': {
       icon: '🥣',
-      copy: 'Chutneys, sides, condiments and add-ons.',
+      copy: 'Chutneys, sides, salads and meal add-ons.',
       imagePath: '/assets/images/collections/sides-addons-collection-card.png?v=collection-card-images-68',
     },
     'Seasonal Specials': {
       icon: '☀️',
-      copy: 'Cooling, rainy-day and seasonal cravings.',
-      imagePath: '/assets/images/collections/healthy-drinks.webp',
+      copy: 'Cooling sips, rainy cravings and seasonal comfort.',
+      imagePath: '/assets/images/drinks/watermelon-juice-homestyle.png',
     },
     'Celebrations & Traditions': {
       icon: '🪔',
-      copy: 'Festival sweets, regional sweets and prasadam.',
-      imagePath: '/assets/images/collections/festival-food.webp',
+      copy: 'Festival sweets, prasadam and nostalgic treats.',
+      imagePath: '/assets/images/desserts/gulab-jamun.png',
     },
   };
   const generatedHubOrder = [
-    'Regional Journeys',
-    'Everyday Cooking',
-    'Healthy Living',
     'Family Favorites',
-    'Global Bites',
+    'Healthy Living',
+    'Everyday Cooking',
+    'Regional Journeys',
     'Kitchen Essentials',
     'Seasonal Specials',
     'Celebrations & Traditions',
+    'Global Bites',
   ];
   const generatedCollectionOrder = {
     'Regional Journeys': ['Karnataka', 'Andhra & Telangana', 'Tamil Nadu', 'Kerala', 'Bengal', 'Maharashtra', 'Northeast', 'North & West India', 'Jammu & Kashmir'],
@@ -64,9 +104,9 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     'Healthy Living': ['Healthy Plates', 'Warm & Light Bowls'],
     'Family Favorites': ['Tiny Tummy Favorites', 'Lunch Box & Tiffin'],
     'Global Bites': ['Global Breakfasts', 'Global Bowls', 'Global Mains', 'Global Snacks', 'Global Soups', 'Global Street Food'],
-    'Kitchen Essentials': ['Sides, Salads & Add-ons', 'Chutneys, Podis & Condiments'],
+    'Kitchen Essentials': ['Sides, Salads & Add-ons', 'Chutneys, Salads & Add-ons'],
     'Seasonal Specials': ['Summer Cooling', 'Rainy Day Cravings'],
-    'Celebrations & Traditions': ['Festival Sweets', 'Regional Sweets', 'Everyday Desserts', 'Prasadam & Temple Foods'],
+    'Celebrations & Traditions': ['Festival Sweets', 'Regional Sweets', 'Prasadam & Temple Foods'],
   };
   const generatedCollectionDescriptions = {
     Karnataka: 'Mains, saaru, snacks and sweets from Karnataka.',
@@ -92,31 +132,30 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     'Global Soups': 'Clear soups, noodle soups and cozy global bowls.',
     'Global Street Food': 'Handheld, loaded and street-style global bites.',
     'Sides, Salads & Add-ons': 'Sides, salads, palyas and meal add-ons.',
-    'Chutneys, Podis & Condiments': 'Small but mighty flavour boosters.',
+    'Chutneys, Salads & Add-ons': 'Fresh sides and small but mighty flavour boosters.',
     'Summer Cooling': 'Cooling drinks and lighter seasonal comforts.',
     'Rainy Day Cravings': 'Warm, cozy dishes for grey skies.',
     'Festival Sweets': 'Sweets and treats for celebration days.',
     'Regional Sweets': 'State-loved sweets and nostalgic classics.',
-    'Everyday Desserts': 'Small sweet endings for ordinary days.',
     'Prasadam & Temple Foods': 'Temple-style and devotional foods.',
   };
   const generatedCollectionDisplaySections = {
-    'Regional Journeys::Karnataka': ['Breakfast & Tiffin', 'Mains & Meals', 'Saaru, Rasam & Soups', 'Snacks & Street Bites', 'Sweets & Drinks'],
-    'Regional Journeys::Andhra & Telangana': ['Breakfast & Tiffin', 'Spicy Mains', 'Pappu, Pulusu & Rasam', 'Snacks', 'Sweets'],
-    'Regional Journeys::Tamil Nadu': ['Breakfast & Tiffin', 'Meals & Mains', 'Rasam, Kuzhambu & Kootu', 'Snacks', 'Sweets & Drinks'],
-    'Regional Journeys::Kerala': ['Breakfast Staples', 'Curries & Mains', 'Seafood', 'Snacks', 'Sweets & Drinks'],
-    'Regional Journeys::Bengal': ['Fish & Mains', 'Comfort Plates', 'Street Snacks', 'Sweets'],
-    'Regional Journeys::Maharashtra': ['Breakfast & Street Food', 'Mains & Bhakri Plates', 'Seafood & Konkan', 'Snacks', 'Sweets & Drinks'],
-    'Regional Journeys::Northeast': ['Rice, Stews & Mains', 'Smoked & Fermented', 'Greens & Sides', 'Snacks', 'Sweets'],
+    'Regional Journeys::Karnataka': ['Breakfast', 'Rice & Main Meals', 'Curries & Saaru', 'Snacks & Evening Bites'],
+    'Regional Journeys::Andhra & Telangana': ['Breakfast', 'Rice & Main Meals', 'Pappu, Pulusu & Curries', 'Snacks & Evening Bites'],
+    'Regional Journeys::Tamil Nadu': ['Breakfast', 'Rice & Main Meals', 'Kuzhambu, Kootu & Curries', 'Snacks & Evening Bites'],
+    'Regional Journeys::Kerala': ['Breakfast', 'Rice & Main Meals', 'Curries & Seafood'],
+    'Regional Journeys::Bengal': ['Breakfast & Everyday Classics', 'Rice, Fish & Main Meals', 'Curries & Traditional Dishes', 'Snacks & Street Food'],
+    'Regional Journeys::Maharashtra': ['Breakfast', 'Amti, Curries & Sabzis', 'Snacks & Street Food'],
+    'Regional Journeys::Northeast': ['Regional Classics', 'Smoked & Fermented', 'Soups, Stews & Broths'],
     'Regional Journeys::North & West India': ['Comfort Mains', 'Breads & Rice Plates', 'Street Food & Snacks', 'Sweets', 'Drinks'],
     'Regional Journeys::Jammu & Kashmir': ['Wazwan & Mains', 'Rice & Breads', 'Drinks', 'Sweets'],
     'Everyday Cooking::Daily Comforts': ['Quick Comforts', 'Rice & Dal Meals', 'Breakfast Staples', 'Simple Dinner Ideas'],
     'Everyday Cooking::Tea Time Favourites': ['Hot Drinks', 'Bakery Bites', 'Chai Snacks', 'Street Bites'],
     'Everyday Cooking::Home Staples': ['Simple Mains', 'Quick Staples', 'Pantry Friendly'],
     'Healthy Living::Healthy Plates': ['Protein Breakfasts', 'Protein Mains', 'Light Bowls', 'Quick Healthy'],
-    'Healthy Living::Warm & Light Bowls': ['Soups', 'Rasam & Saaru', 'Light Stews', 'Sick-Day Comfort'],
-    'Family Favorites::Tiny Tummy Favorites': ['First Foods', 'Purees & Mashes', 'Growing Bites', 'Little Plates'],
-    'Family Favorites::Lunch Box & Tiffin': ['Quick Morning Wins', 'Tiffin Box Favorites', 'Protein Packed', 'After School Snacks'],
+    'Healthy Living::Warm & Light Bowls': ['Soups', 'Rasam', 'Stews', 'Light Meals', 'Sick Day Comfort'],
+    'Family Favorites::Tiny Tummy Favorites': ['Baby’s First Foods', 'Purees & Mashes', 'Growing Bites', 'Little Plates'],
+    'Family Favorites::Lunch Box & Tiffin': ['Quick Morning Wins', 'Tiffin Favorites', 'Protein Packed', 'After School Snacks'],
     'Global Bites::Global Breakfasts': ['Egg Breakfasts', 'Toast & Bakery', 'Sweet Breakfasts', 'Healthy Breakfasts'],
     'Global Bites::Global Bowls': ['Rice Bowls', 'Noodle Bowls', 'Protein Bowls', 'Vegetarian Bowls'],
     'Global Bites::Global Mains': ['Fried Rice & Indo-Chinese', 'Asian Comforts', 'Mediterranean Plates', 'Continental Classics'],
@@ -124,12 +163,11 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     'Global Bites::Global Soups': ['Clear Soups', 'Indo-Chinese Soups', 'Veg Soups', 'Noodle Soups'],
     'Global Bites::Global Street Food': ['Street Wraps', 'Tacos & Quesadillas', 'Loaded Snacks', 'Handheld Bites'],
     'Kitchen Essentials::Sides, Salads & Add-ons': ['Palyas, Poriyals & Thorans', 'Raitas & Cooling Sides', 'Salads & Fresh Sides', 'Sundals & Add-ons'],
-    'Kitchen Essentials::Chutneys, Podis & Condiments': ['Chutneys', 'Podis', 'Pickles', 'Raitas', 'Condiments'],
+    'Kitchen Essentials::Chutneys, Salads & Add-ons': ['Chutneys', 'Raitas', 'Salads', 'Podis'],
     'Seasonal Specials::Summer Cooling': ['Coolers', 'Light Meals', 'Cooling Sides', 'Summer Sweets'],
     'Seasonal Specials::Rainy Day Cravings': ['Hot Snacks', 'Warm Bowls', 'Chai Companions'],
-    'Celebrations & Traditions::Festival Sweets': ['Classic Sweets', 'Festival Specials', 'Payasam & Kheer', 'Fried Sweets'],
+    'Celebrations & Traditions::Festival Sweets': ['Traditional Mithai', 'Milk Desserts', 'Payasam & Kheer', 'Festival Breads & Dumplings', 'Regional Festival Classics', 'Halwas', 'Traditional Treats'],
     'Celebrations & Traditions::Regional Sweets': ['Karnataka Sweets', 'Bengali Sweets', 'North Indian Sweets', 'South Indian Sweets'],
-    'Celebrations & Traditions::Everyday Desserts': ['Quick Sweets', 'Milk Sweets', 'Fruit Desserts'],
     'Celebrations & Traditions::Prasadam & Temple Foods': ['Prasadam', 'Temple Foods', 'Festival Offerings'],
   };
   const allowedRecipeRoles = ['main', 'side', 'condiment', 'snack', 'drink', 'dessert', 'soup'];
@@ -144,28 +182,44 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     'North & West India': [],
     'Jammu & Kashmir': ['jammu', 'kashmir', 'kashmiri'],
   };
-  const baseCollections = window.COOKBUDDY_LOCAL_COLLECTIONS?.collections || [];
+  const baseCollections = MOBILE_COLLECTIONS_ENABLED ? window.COOKBUDDY_LOCAL_COLLECTIONS?.collections || [] : [];
   const mobileCollectionsBase = baseCollections.some((collection) => collection.key === 'gym-foods')
     ? baseCollections
-    : [...baseCollections, buildGymFoodsCollection()];
-  const mobileCollections = [
-    ...mobileCollectionsBase.map(mobileCollectionOverride),
-    buildSidesAddOnsCollection(),
-    buildGlobalBitesCollection()
-  ];
+    : MOBILE_COLLECTIONS_ENABLED ? [...baseCollections, buildGymFoodsCollection()] : [];
+  const mobileCollections = MOBILE_COLLECTIONS_ENABLED
+    ? [
+        ...mobileCollectionsBase.map(mobileCollectionOverride),
+        buildSidesAddOnsCollection(),
+        buildGlobalBitesCollection()
+      ]
+    : [];
   const collectionOrder = ['baby', 'lunchbox', 'drinks', 'soups', 'salads', 'sides-addons', 'desserts', 'festival', 'gym-foods', 'global-bites'];
   const manualCollections = collectionOrder
     .map((key) => mobileCollections.find((collection) => collection.key === key))
     .filter(Boolean)
     .map((collection) => collection.key === 'festival' ? { ...collection, title: 'Celebrations' } : collection);
-  const generatedCollectionSystem = buildGeneratedCollectionSystem();
+  const generatedCollectionSystem = MOBILE_COLLECTIONS_ENABLED
+    ? buildGeneratedCollectionSystem()
+    : { hubs: [], collections: [] };
   const collections = USE_GENERATED_COLLECTIONS && generatedCollectionSystem.hubs.length ? generatedCollectionSystem.hubs : manualCollections;
   const collectionRoutes = USE_GENERATED_COLLECTIONS && generatedCollectionSystem.hubs.length
     ? [...generatedCollectionSystem.hubs, ...generatedCollectionSystem.collections]
     : manualCollections;
+  const featuredCollectionCache = new Map();
   const pantryCatalog = window.COOKBUDDY_PANTRY_CATALOG || [];
   const ingredientAvailability = window.TomoIngredientAvailability?.ingredientAvailability;
   const availabilityIngredientMatches = window.TomoIngredientAvailability?.ingredientMatches;
+  const spotlightEntries = window.TomoIngredientSpotlightEntries || [];
+  const getTodaysSpotlight = window.TomoSpotlightEngine?.getTodaysSpotlight || window.getTodaysSpotlight;
+  const TOMO_MASCOT_IMAGES = {
+    wave: '/assets/images/tomo-mascot/tomo-wave.png.card.webp',
+    thinking: '/assets/images/tomo-mascot/tomo-thinking.png.card.webp',
+    happy: '/assets/images/tomo-mascot/tomo-happy.png.card.webp',
+    heart: '/assets/images/tomo-mascot/tomo-heart.png.card.webp',
+    cooking: '/assets/images/tomo-mascot/tomo-cooking.png.card.webp',
+    shopping: '/assets/images/tomo-mascot/tomo-shopping.png.card.webp',
+    empty: '/assets/images/tomo-mascot/tomo-empty.png.card.webp'
+  };
 
   const state = {
     screen: 'discover',
@@ -188,12 +242,42 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     tabScroll: { discover: 0, kitchen: 0, journal: 0 },
     searchOpen: false,
     searchQuery: '',
+    spotlightRecipeIds: [],
+    todayPickPage: 0,
+    todaysSheetOpen: false,
+    cookDashboardSkippedIds: [],
+    discoverSheetOpen: false,
+    discoverSheetCardId: '',
+    discoverSheetQuery: '',
+    discoverSheetRecipeIds: [],
+    discoverDeckPage: 0,
+    discoverIntroDismissed: Boolean(readJson('tomo_mobile_v2_discover_intro_seen', false)),
+    discoverSeenCards: new Set(readJson('tomo_mobile_v2_discover_seen_cards', [])),
+    onboardingOpen: !Boolean(readJson('tomo_mobile_v2_onboarding_seen', false)),
     feedbackOpen: false,
     feedbackType: 'Incorrect dish',
     feedbackDish: '',
     feedbackMessage: '',
     feedbackError: '',
     feedbackThanks: false,
+    preferences: window.TOMO_USER_PREFERENCES,
+    preferencesOpen: false,
+    preferencesDraft: window.TOMO_USER_PREFERENCES,
+    managePantryOpen: false,
+    managePantrySearch: '',
+    planSheetOpen: false,
+    planSelectedDay: '',
+    planSelectedMeal: '',
+    planReplaceConfirm: false,
+    planResetConfirm: false,
+    planAcceptedWeek: readJson('tomo_mobile_v1_plan_accepted_week', ''),
+    planShoppingOpen: false,
+    planModifyMode: false,
+    planMealActionSlot: '',
+    planViewDay: currentPlanDay(),
+    savedPantryIngredients: new Set(readJson('tomo_mobile_v2_saved_pantry', [])),
+    savedPantryDraft: new Set(readJson('tomo_mobile_v2_saved_pantry', [])),
+    savedPantryUpdatedAt: readJson('tomo_mobile_v2_saved_pantry_updated_at', ''),
     journalSavedExpanded: false,
     journalRecentExpanded: false,
     journalActivityExpanded: false,
@@ -209,8 +293,11 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     todaysPickScores: {},
     microMealsExpanded: false,
     pantrySearch: '',
+    pantryCategory: 'Everyday Essentials',
+    savedPantrySearch: '',
+    savedPantryCategory: 'Everyday Essentials',
     pantryScrollY: 0,
-    pantrySections: new Set(['Staples']),
+    pantrySections: new Set(['Everyday Essentials']),
     selectedIngredients: new Set(),
     groceries: readJson('tomo_mobile_v2_groceries', []).map((item) => {
       if (typeof item === 'string') return { name: item, complete: false, neededFor: [] };
@@ -236,6 +323,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     ['dinner', 'Dinner'],
     ['snack', 'Snacks']
   ];
+
+  const microMealCatalogue = (window.TOMO_MICRO_MEALS || []).map((item, index) => ({ ...item, index }));
 
   const moodTerms = {
     comfort: ['comfort', 'comfort-food', 'home-style', 'homestyle'],
@@ -338,7 +427,15 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     festival: '/assets/images/collections/festival-food.webp',
     'gym-foods': '/assets/images/collections/power-plates-collection-card.png?v=collection-card-images-68',
     'sides-addons': '/assets/images/collections/sides-addons-collection-card.png?v=collection-card-images-68',
-    'global-bites': '/assets/images/dishes/noodles.png'
+    'global-bites': '/assets/images/dishes/batch5-chicken-fried-rice.png',
+    'generated-hub-family-favorites': '/assets/images/collections/lunch-box-heroes.webp',
+    'generated-hub-healthy-living': '/assets/images/collections/power-plates-collection-card.png?v=collection-card-images-68',
+    'generated-hub-everyday-cooking': '/assets/images/dishes/dal-rice.png',
+    'generated-hub-regional-journeys': '/assets/images/dishes/biryani.png',
+    'generated-hub-kitchen-essentials': '/assets/images/collections/sides-addons-collection-card.png?v=collection-card-images-68',
+    'generated-hub-seasonal-specials': '/assets/images/drinks/watermelon-juice-homestyle.png',
+    'generated-hub-celebrations-and-traditions': '/assets/images/desserts/gulab-jamun.png',
+    'generated-hub-global-bites': '/assets/images/dishes/batch5-chicken-fried-rice.png'
   };
 
   const pairingTypes = ['sides', 'chutneys', 'pickles', 'drinks', 'rice', 'roti', 'toppings'];
@@ -390,6 +487,158 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       return fallback;
     }
   }
+
+  function cleanupTomoLocalStorage() {
+    try {
+      const removablePrefixes = [
+        'tomo_mobile_v2_tmp_',
+        'tomo_mobile_v2_temp_',
+        'tomo_mobile_v2_cache_',
+        'tomo_mobile_v2_debug_',
+        'tomo_mobile_v2_audit_',
+        'tomo_mobile_v2_perf_'
+      ];
+      const removableKeys = [
+        'tomo_mobile_v2_recommendation_cache',
+        'tomo_mobile_v2_discover_cache',
+        'tomo_mobile_v2_kitchen_cache',
+        'tomo_mobile_v2_collection_image_audit',
+        'tomo_mobile_v2_performance_audit'
+      ];
+      for (let index = localStorage.length - 1; index >= 0; index -= 1) {
+        const key = localStorage.key(index);
+        if (!key) continue;
+        if (removableKeys.includes(key) || removablePrefixes.some((prefix) => key.startsWith(prefix))) {
+          localStorage.removeItem(key);
+        }
+      }
+    } catch {
+      // Storage cleanup is opportunistic; never block app startup.
+    }
+  }
+
+  cleanupTomoLocalStorage();
+
+  const PREFERENCES_KEY = 'tomo_mobile_v2_preferences';
+  const dietOptions = [
+    ['veg', '🥬 Vegetarian'],
+    ['egg', '🥚 Eggetarian'],
+    ['nonveg', '🍗 Non-Vegetarian']
+  ];
+  const proteinOptions = [
+    ['chicken', 'Chicken'],
+    ['mutton', 'Mutton'],
+    ['fish', 'Fish'],
+    ['seafood', 'Seafood'],
+    ['pork', 'Pork'],
+    ['beef', 'Beef']
+  ];
+
+  function normalizePreferences(value) {
+    const source = value && typeof value === 'object' ? value : {};
+    const diet = ['veg', 'egg', 'nonveg'].includes(source.diet) ? source.diet : '';
+    const proteins = [...new Set((Array.isArray(source.proteins) ? source.proteins : [])
+      .map(norm)
+      .filter((item) => proteinOptions.some(([key]) => key === item)))];
+    return {
+      diet,
+      proteins: diet === 'nonveg' ? (proteins.length ? proteins : ['chicken']) : []
+    };
+  }
+
+  function readPreferences() {
+    return normalizePreferences(readJson(PREFERENCES_KEY, {}));
+  }
+
+  function savePreferences(preferences) {
+    const normalized = normalizePreferences(preferences);
+    localStorage.setItem(PREFERENCES_KEY, JSON.stringify(normalized));
+    state.preferences = normalized;
+    pantryMatchCache.clear();
+    preferenceFilterCache.clear();
+    todayPickRecommendationCache.clear();
+    window.TOMO_USER_PREFERENCES = normalized;
+    return normalized;
+  }
+
+  function preferencesConfigured(preferences = state.preferences) {
+    return Boolean(preferences?.diet);
+  }
+
+  function preferenceSignature(preferences = state.preferences) {
+    const normalized = normalizePreferences(preferences);
+    return normalized.diet ? `${normalized.diet}:${normalized.proteins.slice().sort().join(',')}` : 'none';
+  }
+
+  function recipePreferenceText(recipe) {
+    return [
+      recipe?.title,
+      recipe?.canonicalTitle,
+      recipe?.name,
+      recipe?.description,
+      recipe?.dietType,
+      recipe?.diet_type,
+      recipe?.cuisine,
+      recipe?.category,
+      recipe?.dishFamily,
+      recipe?.dish_family,
+      ...(Array.isArray(recipe?.aliases) ? recipe.aliases : []),
+      ...(Array.isArray(recipe?.tags) ? recipe.tags : []),
+      ...(Array.isArray(recipe?.mealTags) ? recipe.mealTags : []),
+      ...(Array.isArray(recipe?.moodTags) ? recipe.moodTags : []),
+      ...(Array.isArray(recipe?.dietaryTags) ? recipe.dietaryTags : []),
+      ...recipeIngredients(recipe).map((item) => item.name)
+    ].map(norm).join(' ');
+  }
+
+  function recipeProteinKinds(recipe) {
+    if (recipe && recipeProteinKindsCache.has(recipe)) return recipeProteinKindsCache.get(recipe);
+    const text = recipePreferenceText(recipe);
+    const kinds = new Set();
+    if (/\b(egg|eggs|omelette|anda)\b/.test(text) || isEggDish(recipe)) kinds.add('egg');
+    if (/\b(chicken|kodi|country chicken)\b/.test(text)) kinds.add('chicken');
+    if (/\b(mutton|goat|lamb|keema|kheema|laal maas|talawa gosht)\b/.test(text)) kinds.add('mutton');
+    if (/\b(fish|mach|maach|meen|bhetki|bombil|kane|vanjaram|nethili|chepala|machha)\b/.test(text)) kinds.add('fish');
+    if (/\b(seafood|prawn|prawns|shrimp|crab|kolambi|royyala|chingri)\b/.test(text)) kinds.add('seafood');
+    if (/\b(pork|smoked pork|sorpotel|vindaloo)\b/.test(text)) kinds.add('pork');
+    if (/\b(beef)\b/.test(text)) kinds.add('beef');
+    if ((isNonVegetarianDish(recipe) || /\b(non vegetarian|non veg|nonveg|meat)\b/.test(text)) && ![...kinds].some((kind) => kind !== 'egg')) kinds.add('unknown_nonveg');
+    const result = [...kinds];
+    if (recipe) recipeProteinKindsCache.set(recipe, result);
+    return result;
+  }
+
+  function recipeAllowedByPreferences(recipe, preferences = state.preferences) {
+    const prefs = normalizePreferences(preferences);
+    if (!prefs.diet || !recipe) return true;
+    const kinds = recipeProteinKinds(recipe);
+    const animalKinds = kinds.filter((kind) => kind !== 'egg');
+    if (prefs.diet === 'veg') return kinds.length === 0 && !isNonVegetarianDish(recipe) && !isEggDish(recipe);
+    if (prefs.diet === 'egg') return animalKinds.length === 0;
+    if (prefs.diet === 'nonveg') {
+      if (!animalKinds.length) return true;
+      return animalKinds.every((kind) => prefs.proteins.includes(kind));
+    }
+    return true;
+  }
+
+  function preferenceFilteredRecipes(items = recipes) {
+    const list = items || [];
+    const signature = `${recipeDataVersion}:${preferenceSignature()}`;
+    const cacheKey = list === recipes ? `all:${signature}` : '';
+    if (cacheKey && preferenceFilterCache.has(cacheKey)) return preferenceFilterCache.get(cacheKey);
+    const filtered = list.filter((recipe) => recipeAllowedByPreferences(recipe));
+    if (cacheKey) preferenceFilterCache.set(cacheKey, filtered);
+    return filtered;
+  }
+
+  function clearRecommendationRuntimeCaches() {
+    pantryMatchCache.clear();
+    todayPickRecommendationCache.clear();
+  }
+
+  window.TOMO_USER_PREFERENCES = readPreferences();
+  window.TOMO_RECIPE_ALLOWED_BY_PREFERENCES = (recipe) => recipeAllowedByPreferences(recipe, window.TOMO_USER_PREFERENCES);
 
   function normalizeDishRecords(items) {
     return (Array.isArray(items) ? items : []).map((item) => {
@@ -799,18 +1048,23 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return false;
   }
 
+  function todaysPickSupportDish(recipe) {
+    const role = recommendationRecipeRole(recipe);
+    if (['soup', 'side', 'condiment', 'drink', 'dessert'].includes(role)) return true;
+    const text = recommendationRoleText(recipe);
+    const title = norm(recipe?.title || '');
+    if (/\b(chutney|raita|pickle|soup|drink|beverage|juice|smoothie|lassi|chaas|buttermilk)\b/.test(title)) return true;
+    if (/\b(mash|mashed|puree|purée)\b/.test(`${title} ${text}`)) return true;
+    if (/\bquick bite|quick bites|micro meal|micro meals\b/.test(text)) return true;
+    return false;
+  }
+
   function todaysPickRoleEligible(recipe, meal = state.meal, context = {}) {
     const role = recommendationRecipeRole(recipe);
-    if (role === 'condiment') return false;
-    if (role === 'side') return /\b(side|sides|add on|add ons|addon|addons|accompaniment)\b/.test(roleContextText(context));
-    if (meal === 'snack') {
-      if (role === 'snack') return true;
-      if (role === 'drink') return roleContextAllowsDrink({ ...context, meal });
-      if (role === 'dessert') return roleContextAllowsDessert({ ...context, meal });
-      return false;
-    }
+    if (todaysPickSupportDish(recipe)) return false;
+    if (meal === 'snack') return role === 'snack';
     if (meal === 'breakfast') return breakfastRecommendationEligible(recipe);
-    if (['lunch', 'dinner'].includes(meal)) return role === 'main' || role === 'soup';
+    if (['lunch', 'dinner'].includes(meal)) return role === 'main' && !hasBreakfastSignal(recipe);
     return role === 'main';
   }
 
@@ -1043,6 +1297,21 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return regions[0] || 'Pan-Indian';
   }
 
+  function specificRegionalKey(recipe) {
+    const labels = normalizePairingList([
+      ...recipeRegions(recipe),
+      ...recipeSubRegions(recipe),
+      ...recipeCuisines(recipe),
+      recipe?.region,
+      recipe?.origin,
+      recipe?.cuisine
+    ]);
+    const specific = labels.find((label) => {
+      return !/^(indian|pan[- ]?indian|global|homestyle|home style|south indian|north indian|east indian|west indian)$/i.test(label);
+    });
+    return norm(specific || '');
+  }
+
   function recommendationEventWeight(action) {
     return { cooked: 5, saved: 3, helpful: 2, 'not helpful': -2, dismissed: -3 }[action] || 0;
   }
@@ -1119,6 +1388,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const reasons = [];
     const surface = normalizeRecommendationSurface(context.surface);
     if (!recipe || typeof recipe !== 'object') reasons.push('missing_recipe');
+    if (recipe && !recipeAllowedByPreferences(recipe)) reasons.push('user_diet_preference');
     if (['tomo_pick', 'todays_picks'].includes(surface) && recipe && !recipeInActivePool(recipe)) reasons.push('inactive_recipe');
     if (['tomo_pick', 'todays_picks'].includes(surface) && recipeFeedHidden(recipe)) reasons.push('pantry_search_only');
     if (surface === 'pantry' && recipe && !pantryCompatibleRecipe(recipe)) reasons.push('not_pantry_compatible');
@@ -1395,29 +1665,61 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       return values.map((item) => ({ item, type }));
     });
     const quickGuideItems = (guide.bestWith || []).map((item) => ({ item, type: pairingTypeForItem(item) }));
+    const orderedItems = uniquePairingItems([...quickGuideItems, ...typedItems]);
+    const best = orderedItems.filter(pairingBestWithEligible).slice(0, 3);
+    const bestKeys = new Set(best.map(({ item }) => pairingConceptKey(item)));
+    const also = orderedItems
+      .filter(({ item }) => !bestKeys.has(pairingConceptKey(item)))
+      .slice(0, 4);
+    return { best, also };
+  }
+
+  function pairingBestWithEligible({ item, type }) {
+    const value = norm(item);
+    if (!value) return false;
+    if (type === 'drinks') return false;
+    return !pairingSofterEnjoyment(value);
+  }
+
+  function pairingSofterEnjoyment(value) {
+    return /(^|\b)(tea|chai|coffee|filter coffee|buttermilk|chaas|mor|lassi|milk|juice|sharbat|soda|drink|soup|fruit|banana|apple|orange|dessert|sweet|kheer|payasam|halwa|laddu|ladoo|barfi|gulab jamun|jalebi|snack|chips|biscuit|cookie)(\b|$)/.test(value);
+  }
+
+  function uniquePairingItems(items) {
     const seen = new Set();
-    return [...typedItems, ...quickGuideItems]
+    return items
       .map(({ item, type }) => ({ item: String(item || '').trim(), type }))
       .filter(({ item }) => {
-        const key = norm(item);
+        const key = pairingConceptKey(item);
         if (!key || seen.has(key)) return false;
         seen.add(key);
         return true;
-      })
-      .slice(0, 10);
+      });
   }
 
-  function dishPairingsView(items) {
-    if (!items.length) return '';
-    const expanded = state.expandedPairingsRecipeId === state.activeRecipeId;
-    const visibleItems = expanded ? items : items.slice(0, 3);
-    const hiddenCount = Math.max(0, items.length - 3);
-    const pairingChip = ({ item, type }) => `<span class="mv2-pairing-${esc(pairingVisualType(type))}"><b>${esc(pairingIcon(type, item))}</b>${esc(item)}</span>`;
+  function pairingConceptKey(item) {
+    const value = norm(item)
+      .replace(/\bplain\s+/g, '')
+      .replace(/\bsteamed\s+rice\b/g, 'rice')
+      .replace(/\bchapathi\b/g, 'chapati')
+      .replace(/\bfilter\s+coffee\b/g, 'filter coffee');
+    if (/^(rice|white rice)$/.test(value)) return 'rice';
+    if (/^(curd|plain curd|yogurt|plain yogurt)$/.test(value)) return 'curd';
+    if (/^(chapati|chapathi|roti)$/.test(value)) return 'chapati';
+    if (/^(pickle|achar|achaar)$/.test(value)) return 'pickle';
+    return value;
+  }
+
+  function dishPairingsView(pairings) {
+    const best = pairings?.best || [];
+    const also = pairings?.also || [];
+    if (!best.length && !also.length) return '';
+    const pairingChip = ({ item, type }, tone = 'best') => `<span class="mv2-pairing-${esc(tone)} mv2-pairing-${esc(pairingVisualType(type))}"><b>${esc(pairingIcon(type, item))}</b>${esc(item)}</span>`;
     return `
       <section class="mv2-detail-pairings">
-        <p>Pairs Well With</p>
-        <div>${visibleItems.map(pairingChip).join('')}</div>
-        ${hiddenCount ? `<button class="mv2-pairing-toggle" type="button" data-pairings-toggle="${esc(state.activeRecipeId)}">${expanded ? 'Show less' : `+${hiddenCount} more`}</button>` : ''}
+        <p>Perfect Pairings</p>
+        ${best.length ? `<div class="mv2-pairing-group mv2-pairing-group-best"><h3>Best With</h3><div>${best.map((item) => pairingChip(item, 'best')).join('')}</div></div>` : ''}
+        ${also.length ? `<div class="mv2-pairing-group mv2-pairing-group-also"><h3>Also Enjoy With</h3><div>${also.map((item) => pairingChip(item, 'also')).join('')}</div></div>` : ''}
       </section>
     `;
   }
@@ -1465,6 +1767,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     localStorage.setItem('tomo_mobile_v2_saved', JSON.stringify(state.savedDishes));
     localStorage.setItem('tomo_mobile_v2_cooked', JSON.stringify(state.cookedDishes));
     localStorage.setItem('tomo_mobile_v2_dish_memory', JSON.stringify(state.dishMemory));
+    todayPickRecommendationCache.clear();
   }
 
   function saveAnalytics() {
@@ -1483,6 +1786,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     'shopping_list_copied',
     'shopping_list_shared',
     'collection_opened',
+    'discover_card_opened',
+    'discover_intro_dismissed',
     'recommendation_feedback'
   ]);
 
@@ -1562,24 +1867,48 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function showToast(message) {
-    state.toast = message;
+    state.toast = String(message || '').trim().replace(/[.!]+$/, '');
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => {
       state.toast = '';
       render();
-    }, 2200);
+    }, 2600);
+  }
+
+  function showMascotToast(variant, message) {
+    state.toast = { mascotVariant: variant, message };
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      state.toast = '';
+      render();
+    }, 2600);
+  }
+
+  function TomoMascot({ variant = 'wave', size = 'md', message = '', compact = false } = {}) {
+    const safeVariant = TOMO_MASCOT_IMAGES[variant] ? variant : 'wave';
+    const safeSize = ['sm', 'md', 'lg'].includes(size) ? size : 'md';
+    const className = `mv2-tomo-mascot mv2-tomo-mascot-${safeSize}${compact ? ' is-compact' : ''}`;
+    return `
+      <div class="${className}" data-tomo-mascot="${esc(safeVariant)}">
+        <span class="mv2-tomo-mascot-visual">
+          <img src="${esc(TOMO_MASCOT_IMAGES[safeVariant])}" alt="" aria-hidden="true" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentElement.classList.add('is-fallback')" />
+          <span class="mv2-tomo-mascot-fallback" aria-hidden="true">🌱</span>
+        </span>
+        ${message ? `<p>${esc(message)}</p>` : ''}
+      </div>
+    `;
   }
 
   function showShoppingListConfirmation() {
     state.toast = {
-      title: 'Added to Shopping List',
+      title: 'Added to Grocery List',
       copy: 'You can review, copy, or share your list anytime.'
     };
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => {
       state.toast = '';
       render();
-    }, 3200);
+    }, 2600);
   }
 
   function toastView() {
@@ -1587,7 +1916,22 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (typeof state.toast === 'string') {
       return `<div class="mv2-toast" role="status" aria-live="polite">${esc(state.toast)}</div>`;
     }
+    if (state.toast.mascotVariant) {
+      return `<div class="mv2-toast mv2-tomo-toast" role="status" aria-live="polite">${TomoMascot({ variant: state.toast.mascotVariant, size: 'sm', message: state.toast.message, compact: true })}</div>`;
+    }
     return `<div class="mv2-toast mv2-toast-detailed" role="status" aria-live="polite"><strong>${esc(state.toast.title)}</strong><span>${esc(state.toast.copy)}</span></div>`;
+  }
+
+  function onboardingView() {
+    return `
+      <div class="mv2-tomo-onboarding-backdrop">
+        <section class="mv2-tomo-onboarding" role="dialog" aria-modal="true" aria-labelledby="mv2TomoOnboardingTitle">
+          ${TomoMascot({ variant: 'wave', size: 'lg', message: "Hi, I'm Tomo. I'll help you find food for every mood.", compact: true })}
+          <h2 id="mv2TomoOnboardingTitle">Food for every mood</h2>
+          <button type="button" data-tomo-onboarding-continue>Continue</button>
+        </section>
+      </div>
+    `;
   }
 
   function saveGroceries() {
@@ -1623,12 +1967,25 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function matchesMeal(recipe, meal, context = {}) {
+    if (!recipeAllowedByPreferences(recipe)) return false;
     const role = recommendationRecipeRole(recipe);
     const haystack = tags(recipe);
     const baseMatch = haystack.includes(meal) || (meal === 'snack' && haystack.includes('snacks'));
     if (role === 'side' || role === 'condiment') return false;
     if (meal === 'breakfast') return breakfastRecommendationEligible(recipe);
-    if (role === 'main') return ['lunch', 'dinner'].includes(meal);
+    if (role === 'main') {
+      if (!['lunch', 'dinner'].includes(meal)) return false;
+      const explicitMealText = [
+        recipe?.mealType,
+        recipe?.meal_type,
+        ...(recipe?.mealTags || []),
+        ...(recipe?.meal_tags || []),
+        ...(recipe?.tags || [])
+      ].map(norm).join(' ');
+      const explicitMeals = ['breakfast', 'lunch', 'dinner', 'snack'].filter((candidate) => explicitMealText.includes(candidate));
+      if (explicitMeals.length) return explicitMeals.includes(meal);
+      return !hasBreakfastSignal(recipe);
+    }
     if (role === 'soup') return ['lunch', 'dinner'].includes(meal) || (baseMatch && roleContextAllowsSoup({ ...context, meal }));
     if (role === 'snack') return meal === 'snack' && baseMatch;
     if (role === 'drink') return meal === 'snack' && roleContextAllowsDrink({ ...context, meal }) && (baseMatch || isWarmDrinkRecipe(recipe));
@@ -1654,10 +2011,98 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return score + dishMemoryRecommendationAdjustment(recipe);
   }
 
+  function proteinRelevanceScore(recipe) {
+    if (!recipe) return 0;
+    const haystack = tags(recipe).join(' ');
+    const proteinScore = Number(recipe?.proteinScore || 0);
+    let score = proteinScore * 12;
+    if (/high protein|high-protein|protein food|protein rich|protein-rich/.test(haystack)) score += 80;
+    if (/\b(chicken|fish|egg|mutton|prawn|paneer|tofu|soy|soya|dal|lentil|chana|chole|rajma|peanut|sundal|besan)\b/.test(haystack)) score += 45;
+    if (proteinScore >= 7) score += 55;
+    if (proteinScore >= 6) score += 25;
+    if (['side', 'condiment', 'drink', 'dessert'].includes(recommendationRecipeRole(recipe))) score -= 80;
+    return score;
+  }
+
+  function selectedMoodPriorityScore(recipe, mood = state.mood) {
+    if (!recipe || !mood) return 0;
+    if (mood === 'protein') return proteinRelevanceScore(recipe);
+    return recommendationMoodScore(recipe, { mood, surface: 'todays_picks' });
+  }
+
+  function selectedMoodPriorityCompare(a, b, mood = state.mood) {
+    const diff = selectedMoodPriorityScore(b?.recipe, mood) - selectedMoodPriorityScore(a?.recipe, mood);
+    return Math.abs(diff) > 0.01 ? diff : 0;
+  }
+
+  function activePantryRecommendationIngredients() {
+    return state.selectedIngredients.size
+      ? [...state.selectedIngredients]
+      : [...state.savedPantryIngredients];
+  }
+
+  function todayPickContextKey(meal = state.meal, mood = state.mood, lane = '') {
+    const pantryKey = activePantryRecommendationIngredients().map(norm).sort().join(',');
+    return `${norm(meal) || 'meal'}|${norm(mood) || 'default'}|${pantryKey || 'no-pantry'}|${norm(lane) || 'all-lanes'}`;
+  }
+
+  function recommendationMemorySignature() {
+    const newest = (items) => (items || [])[0]?.timestamp || '';
+    return [
+      state.dismissedToday.join(','),
+      `${state.savedDishes.length}:${newest(state.savedDishes)}`,
+      `${state.cookedDishes.length}:${newest(state.cookedDishes)}`,
+      `${state.dishMemory.length}:${newest(state.dishMemory)}`
+    ].join('|');
+  }
+
+  function todayPickCacheKey(meal = state.meal, mood = state.mood, limit = 8) {
+    return [
+      recipeDataVersion,
+      preferenceSignature(),
+      todayPickContextKey(meal, mood),
+      recommendationMemorySignature(),
+      limit
+    ].join('::');
+  }
+
+  function publishTodayPickScores(contextKey, cards) {
+    state.todaysPickScores = { [contextKey]: cards.map((card) => ({
+      recipeId: card.recipe.id,
+      title: card.recipe.title,
+      card: card.key,
+      label: card.label,
+      confidence: card.score?.confidence || 'medium',
+      finalScore: card.score?.finalScore || 0,
+      scores: card.score?.scores || {},
+      explanation: card.score?.explanation || []
+    })) };
+    window.__TOMO_TODAYS_PICK_SCORES__ = state.todaysPickScores;
+  }
+
+  function stableTodayPickHash(value) {
+    return [...String(value || '')].reduce((hash, char) => ((hash * 31) + char.charCodeAt(0)) >>> 0, 0);
+  }
+
+  function rotateTodayPickLane(items, lane, meal = state.meal, mood = state.mood) {
+    if (!Array.isArray(items) || items.length < 2) return items;
+    const topCount = Math.min(items.length, 8);
+    const mealOffset = Math.max(0, ['breakfast', 'lunch', 'dinner', 'snack'].indexOf(meal));
+    const moodOffset = Math.max(0, moods.findIndex(([key]) => key === mood));
+    const pantryKey = activePantryRecommendationIngredients().map(norm).sort().join(',') || 'no-pantry';
+    const offset = (stableTodayPickHash(`${lane}|${pantryKey}`) + mealOffset + (moodOffset * 4)) % topCount;
+    if (!offset) return items;
+    return [
+      ...items.slice(offset, topCount),
+      ...items.slice(0, offset),
+      ...items.slice(topCount)
+    ];
+  }
+
   function mealRecipes(meal = state.meal, limit = 2, options = {}) {
     const dismissed = options.excludeDismissed ? new Set(state.dismissedToday) : new Set();
-    const pool = todaysPickCandidatePool(meal);
-    const scored = scoreTodaysPickCandidates(pool, meal, dismissed);
+    const pool = todaysPickCandidatePool(meal, state.mood);
+    const scored = scoreTodaysPickCandidates(pool, meal, dismissed, state.mood);
     let selected = fillTodaysPickRow(scored, limit);
     if (selected.length < limit) {
       const selectedIds = new Set(selected.map((item) => item.recipe.id));
@@ -1665,29 +2110,31 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         .filter((recipe) => matchesMeal(recipe, meal, { mood: state.mood, surface: 'todays_picks' }))
         .filter((recipe) => !dismissed.has(recipe.id) && !selectedIds.has(recipe.id))
         .filter(uniqueByTitle());
-      selected = fillTodaysPickRow([...selected, ...scoreTodaysPickCandidates(fallbackPool, meal, dismissed)], limit);
+      selected = fillTodaysPickRow([...selected, ...scoreTodaysPickCandidates(fallbackPool, meal, dismissed, state.mood)], limit);
     }
-    state.todaysPickScores[meal] = selected.map((item) => ({
+    const contextKey = todayPickContextKey(meal, state.mood);
+    state.todaysPickScores = { [contextKey]: selected.map((item) => ({
       recipeId: item.recipe.id,
       title: item.recipe.title,
       confidence: item.score.confidence,
       finalScore: item.score.finalScore,
       scores: item.score.scores,
       explanation: item.score.explanation
-    }));
+    })) };
     window.__TOMO_TODAYS_PICK_SCORES__ = state.todaysPickScores;
     return selected.map((item) => item.recipe);
   }
 
   function fourCardRecommendationPool(meal = state.meal, mood = state.mood, dismissed = new Set()) {
-    const curated = todaysPickCandidatePool(meal);
+    const curated = todaysPickCandidatePool(meal, mood);
     const fallback = recipes
       .filter((recipe) => matchesMeal(recipe, meal, { mood, surface: 'todays_picks' }))
       .filter(uniqueByTitle());
     const pool = mergeRecipeLists(curated, fallback)
       .filter((recipe) => !dismissed.has(recipe.id))
+      .filter((recipe) => matchesMeal(recipe, meal, { mood, surface: 'todays_picks' }))
       .filter((recipe) => todaysPickRoleEligible(recipe, meal, { mood, meal, surface: 'todays_picks' }));
-    return scoreTodaysPickCandidates(pool, meal, dismissed);
+    return scoreTodaysPickCandidates(pool, meal, dismissed, mood);
   }
 
   function pickFirstUnused(scoredItems, usedIds, test = () => true) {
@@ -1707,7 +2154,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return score;
   }
 
-  function quickEasyScore(item) {
+  function quickEasyScore(item, meal = state.meal, mood = state.mood) {
     const recipe = item?.recipe;
     if (!recipe) return 0;
     let score = todayPickRankScore(item);
@@ -1717,12 +2164,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (recipe?.lowEffort) score += 18;
     if (recipe?.minimalCleanup) score += 12;
     score += moodScore(recipe, 'quick') * 0.3;
-    if (state.meal === 'snack' && isWarmDrinkRecipe(recipe) && /\b(rainy|comfort)\b/.test(norm(state.mood))) score += 38;
+    if (meal === 'snack' && isWarmDrinkRecipe(recipe) && /\b(rainy|comfort)\b/.test(norm(mood))) score += 38;
     if (['side', 'condiment'].includes(recommendationRecipeRole(recipe))) score -= 140;
     return score;
   }
 
-  function explorePickScore(item, usedIds = new Set()) {
+  function explorePickScore(item, usedIds = new Set(), meal = state.meal, mood = state.mood) {
     const recipe = item?.recipe;
     if (!recipe) return 0;
     const usedRecipes = [...usedIds].map((id) => recipes.find((candidate) => candidate.id === id)).filter(Boolean);
@@ -1732,18 +2179,22 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const labels = recipeRegionalLabels(recipe).map(norm);
     let score = todayPickRankScore(item) * 0.55;
     if (family && !usedFamilies.has(family)) score += 50;
-    if (labels.some((label) => /karnataka|mangalorean|udupi|coastal|northeast|assam|bengal|malnad|kodagu|north karnataka|regional/.test(label))) score += 34;
+    if (specificRegionalKey(recipe)) score += 34;
     if (!labels.some((label) => usedRegions.has(label))) score += 28;
-    if (state.meal === 'snack' && isWarmDrinkRecipe(recipe) && /\b(rainy|comfort)\b/.test(norm(state.mood))) score += 95;
+    if (meal === 'snack' && isWarmDrinkRecipe(recipe) && /\b(rainy|comfort)\b/.test(norm(mood))) score += 95;
     score += todayPickDiversityScore(recipe) * 0.4;
+    const historyScore = todayPickHistoryScore(recipe);
+    if (historyScore <= 0) score += 24;
+    else score -= historyScore * 1.5;
     if (['side', 'condiment'].includes(recommendationRecipeRole(recipe))) score -= 180;
-    if (['drink', 'dessert'].includes(recommendationRecipeRole(recipe)) && state.meal !== 'snack') score -= 120;
+    if (['drink', 'dessert'].includes(recommendationRecipeRole(recipe)) && meal !== 'snack') score -= 120;
     return score;
   }
 
   function pantryPickScoredItems(meal = state.meal, mood = state.mood, dismissed = new Set()) {
-    if (!state.selectedIngredients.size) return [];
-    return pantryMatches()
+    const pantryIngredients = activePantryRecommendationIngredients();
+    if (!pantryIngredients.length) return [];
+    return pantryMatches(pantryIngredients)
       .filter((match) => match?.recipe && !dismissed.has(match.recipe.id))
       .filter((match) => matchesMeal(match.recipe, meal, { mood, surface: 'todays_picks', intent: 'pantry' }))
       .filter((match) => todaysPickRoleEligible(match.recipe, meal, { mood, meal, surface: 'todays_picks', intent: 'pantry' }))
@@ -1754,7 +2205,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
           surface: 'pantry',
           mood,
           meal,
-          selectedIngredients: [...state.selectedIngredients],
+          selectedIngredients: pantryIngredients,
           pantryScore: Math.max(0, Math.min(100, Number(match.score || 0) / 55))
         }),
         pantryMatch: match
@@ -1763,6 +2214,17 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function fourCardRecommendations(meal = state.meal, mood = state.mood) {
+    return todayPickRecommendations(meal, mood, 4);
+  }
+
+  function todayPickRecommendations(meal = state.meal, mood = state.mood, limit = 8) {
+    const contextKey = todayPickContextKey(meal, mood);
+    const cacheKey = todayPickCacheKey(meal, mood, limit);
+    const cached = todayPickRecommendationCache.get(cacheKey);
+    if (cached) {
+      publishTodayPickScores(contextKey, cached);
+      return cached;
+    }
     const dismissed = new Set(state.dismissedToday);
     const scored = fourCardRecommendationPool(meal, mood, dismissed);
     const used = new Set();
@@ -1774,6 +2236,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         ...slot,
         recipe: item.recipe,
         score: item.score,
+        contextKey: todayPickContextKey(meal, mood, slot.key),
         subtitle: slot.subtitle || fallbackSubtitle
       });
       return true;
@@ -1783,89 +2246,78 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       key: 'bestPick',
       icon: '🌟',
       label: "Tomo's Best Pick",
-      subtitle: 'Strongest fit for this meal and mood.'
+      subtitle: 'Best fit for your meal and mood.'
     }, best);
 
-    const familiar = [...scored]
+    const quick = rotateTodayPickLane([...scored]
       .filter((item) => !used.has(item.recipe.id))
-      .sort((a, b) => familiarFavoriteScore(b) - familiarFavoriteScore(a));
+      .sort((a, b) => quickEasyScore(b, meal, mood) - quickEasyScore(a, meal, mood)), 'quickEasy', meal, mood);
+    addCard({
+      key: 'quickEasy',
+      icon: '⚡',
+      label: 'Quick & Easy',
+      subtitle: 'Fast, low-fuss and weeknight-ready.'
+    }, pickFirstUnused(quick, used));
+
+    const familiar = rotateTodayPickLane([...scored]
+      .filter((item) => !used.has(item.recipe.id))
+      .sort((a, b) => selectedMoodPriorityCompare(a, b, mood) || familiarFavoriteScore(b) - familiarFavoriteScore(a)), 'familiarFavorite', meal, mood);
     addCard({
       key: 'familiarFavorite',
       icon: '🍲',
       label: 'Familiar Favorite',
-      subtitle: 'Safe, comforting and familiar.'
+      subtitle: 'A known comfort you already like.'
     }, pickFirstUnused(familiar, used));
 
-    const pantryItems = pantryPickScoredItems(meal, mood, dismissed);
-    if (state.selectedIngredients.size && pantryItems.length) {
-      addCard({
-        key: 'fromYourKitchen',
-        icon: '🥗',
-        label: 'From Your Kitchen',
-        subtitle: 'Uses what you have selected.'
-      }, pickFirstUnused(pantryItems, used));
-    } else {
-      const quick = [...scored]
-        .filter((item) => !used.has(item.recipe.id))
-        .sort((a, b) => quickEasyScore(b) - quickEasyScore(a));
-      addCard({
-        key: 'quickEasy',
-        icon: '⚡',
-        label: 'Quick & Easy',
-        subtitle: 'Low-fuss backup when pantry is empty.'
-      }, pickFirstUnused(quick, used));
-    }
-
-    const explore = [...scored]
+    const tryNew = rotateTodayPickLane([...scored]
       .filter((item) => !used.has(item.recipe.id))
-      .sort((a, b) => explorePickScore(b, used) - explorePickScore(a, used));
+      .sort((a, b) => explorePickScore(b, used, meal, mood) - explorePickScore(a, used, meal, mood)), 'tryNew', meal, mood);
     addCard({
-      key: 'explorePick',
-      icon: '🧭',
-      label: 'Explore Something Different',
-      subtitle: 'A different family, region, or flavor lane.'
-    }, pickFirstUnused(explore, used));
+      key: 'tryNew',
+      icon: '✨',
+      label: 'Try New',
+      subtitle: 'A less familiar regional pick for this mood.'
+    }, pickFirstUnused(tryNew, used));
 
-    if (cards.length < 4) {
+    if (cards.length < limit) {
       scored.forEach((item) => {
-        if (cards.length < 4) addCard({
+        if (cards.length < limit) addCard({
           key: `backup-${cards.length}`,
           icon: '✨',
           label: 'Another Good Pick',
-          subtitle: 'Still inside your meal boundary.'
+          subtitle: 'Still fits this meal nicely.'
         }, item);
       });
     }
-    state.todaysPickScores[meal] = cards.map((card) => ({
-      recipeId: card.recipe.id,
-      title: card.recipe.title,
-      card: card.key,
-      label: card.label,
-      confidence: card.score?.confidence || 'medium',
-      finalScore: card.score?.finalScore || 0,
-      scores: card.score?.scores || {},
-      explanation: card.score?.explanation || []
-    }));
-    window.__TOMO_TODAYS_PICK_SCORES__ = state.todaysPickScores;
-    return cards.slice(0, 4);
+    const currentMealCards = cards.filter((card) => {
+      return matchesMeal(card.recipe, meal, { mood, surface: 'todays_picks' })
+        && todaysPickRoleEligible(card.recipe, meal, { mood, meal, surface: 'todays_picks' });
+    });
+    const result = currentMealCards.slice(0, limit);
+    todayPickRecommendationCache.set(cacheKey, result);
+    if (todayPickRecommendationCache.size > 24) {
+      todayPickRecommendationCache.delete(todayPickRecommendationCache.keys().next().value);
+    }
+    publishTodayPickScores(contextKey, result);
+    return result;
   }
 
-  function todaysPickCandidatePool(meal = state.meal) {
-    if (state.mood === 'rainy') return rainyMealCandidateRecipes(meal);
-    if (state.mood === 'soul' && meal === 'dinner') return curatedTitleRecipes(moodCuration.soulDinner, []);
-    if (state.mood === 'protein' && moodCuration.proteinMeals[meal]) return curatedTitleRecipes(moodCuration.proteinMeals[meal], []);
-    if (state.mood === 'spicy' && moodCuration.spicyMeals[meal]) return curatedTitleRecipes(moodCuration.spicyMeals[meal], []);
-    return moodEligibleRecipes(state.mood)
-      .filter((recipe) => matchesMeal(recipe, meal, { mood: state.mood, surface: 'todays_picks' }))
+  function todaysPickCandidatePool(meal = state.meal, mood = state.mood) {
+    if (mood === 'rainy') return rainyMealCandidateRecipes(meal);
+    if (mood === 'soul' && meal === 'dinner') return curatedTitleRecipes(moodCuration.soulDinner, []);
+    if (mood === 'protein' && moodCuration.proteinMeals[meal]) return curatedTitleRecipes(moodCuration.proteinMeals[meal], []).filter(isProteinForward);
+    if (mood === 'spicy' && moodCuration.spicyMeals[meal]) return curatedTitleRecipes(moodCuration.spicyMeals[meal], []);
+    return moodEligibleRecipes(mood)
+      .filter((recipe) => matchesMeal(recipe, meal, { mood, surface: 'todays_picks' }))
       .filter(uniqueByTitle());
   }
 
-  function scoreTodaysPickCandidates(candidates, meal, dismissed = new Set()) {
+  function scoreTodaysPickCandidates(candidates, meal, dismissed = new Set(), mood = state.mood) {
     return candidates
       .map((recipe) => {
         const context = {
           surface: 'todays_picks',
-          mood: state.mood || '',
+          mood: mood || '',
           meal,
           dismissedIds: [...dismissed],
           recentRecipeIds: [...dismissed],
@@ -1875,11 +2327,13 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         };
         return { recipe, score: scoreRecipeForSurface(recipe, context), meal };
       })
-      .filter((item) => item.recipe && item.score.eligible && todaysPickRoleEligible(item.recipe, meal, item.score.context || { mood: state.mood, surface: 'todays_picks' }))
-      .sort(todayPickCandidateCompare);
+      .filter((item) => item.recipe && item.score.eligible && todaysPickRoleEligible(item.recipe, meal, item.score.context || { mood, surface: 'todays_picks' }))
+      .sort((a, b) => todayPickCandidateCompare(a, b, mood));
   }
 
-  function todayPickCandidateCompare(a, b) {
+  function todayPickCandidateCompare(a, b, mood = state.mood) {
+    const selectedMoodDiff = selectedMoodPriorityCompare(a, b, mood);
+    if (selectedMoodDiff) return selectedMoodDiff;
     const rankDiff = todayPickRankScore(b) - todayPickRankScore(a);
     if (Math.abs(rankDiff) > 0.01) return rankDiff;
     const meal = a.meal || b.meal || state.meal;
@@ -1893,7 +2347,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (diversityDiff) return diversityDiff;
     const historyDiff = todayPickHistoryScore(b.recipe) - todayPickHistoryScore(a.recipe);
     if (historyDiff) return historyDiff;
-    const moodDiff = moodRecipeCompare(a.recipe, b.recipe, state.mood);
+    const moodDiff = moodRecipeCompare(a.recipe, b.recipe, mood);
     if (moodDiff) return moodDiff;
     return recipeSourceIndex(a.recipe) - recipeSourceIndex(b.recipe);
   }
@@ -1966,6 +2420,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (recent.slice(0, 4).some((item) => item.id === recipe.id)) score -= 45;
     if (family && recent.slice(0, 4).some((item) => item.family === family)) score -= 18;
     if (region && recent.slice(0, 4).some((item) => item.region === region)) score -= 8;
+    const regionalKey = specificRegionalKey(recipe);
+    if (regionalKey && !recent.slice(0, 4).some((item) => norm(item.regionalKey || item.cuisine) === regionalKey)) score += 12;
     return score;
   }
 
@@ -2076,7 +2532,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (mood === 'soul') return curatedTitleRecipes(moodCuration.soulAllow, moodCuration.soulExclude);
     if (mood === 'comfort') {
       const preferred = curatedTitleRecipes(moodCuration.comfortPreferred, []);
-      const extras = recipes.filter((recipe) => {
+      const extras = preferenceFilteredRecipes(recipes).filter((recipe) => {
         const title = recipe.title || '';
         if (titleInList(title, moodCuration.comfortDemote)) return false;
         const haystack = tags(recipe).join(' ');
@@ -2086,7 +2542,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     }
     if (mood === 'spicy') {
       const identity = curatedTitleRecipes(moodCuration.spicyIdentity, moodCuration.spicyDemote);
-      const extras = recipes.filter((recipe) => {
+      const extras = preferenceFilteredRecipes(recipes).filter((recipe) => {
         if (titleInList(recipe.title, moodCuration.spicyDemote)) return false;
         const title = norm(recipe.title);
         return /(chilli|mirchi|guntur|schezwan|kolhapuri|kaaram|gunpowder)/.test(title);
@@ -2094,7 +2550,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       return mergeRecipeLists(identity, extras);
     }
     if (mood === 'protein') {
-      return recipes
+      return preferenceFilteredRecipes(recipes)
         .filter((recipe) => !isProteinExcluded(recipe.title))
         .filter(isProteinForward)
         .sort((a, b) => moodRecipeCompare(a, b, 'protein'))
@@ -2102,12 +2558,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     }
     if (mood === 'rainy') return curatedTitleRecipes(moodCuration.rainyEligible, []);
     if (mood === 'quick') {
-      return recipes
+      return preferenceFilteredRecipes(recipes)
         .filter(isQuickEligible)
         .sort((a, b) => moodRecipeCompare(a, b, 'quick'))
         .filter(uniqueByTitle());
     }
-    return [...recipes];
+    return preferenceFilteredRecipes(recipes);
   }
 
   function moodRecipeCompare(a, b, mood) {
@@ -2145,23 +2601,41 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function isProteinExcluded(title) {
-    return titleInList(title, moodCuration.proteinExclude) || /ladoo|bonda|pakora|bajji|sweet|kheer|payasam|dosa|idli|poha|avalakki|upma|lemon rice|puliyogare|plain chapati|tomato rice|coconut rice/.test(norm(title));
+    const key = norm(title);
+    return titleInList(title, moodCuration.proteinExclude)
+      || /ladoo|bonda|pakora|bajji|sweet|kheer|payasam|chutney|raita|mash|puree|porridge/.test(key)
+      || /^(pakhala|pakhala bhata|plain rice|plain poha|lemon rice|puliyogare|plain chapati|tomato rice|coconut rice|curd rice)$/.test(key);
   }
 
-  function isProteinForward(recipe) {
-    const title = norm(recipe?.title);
-    const identity = [
+  function proteinIdentityText(recipe) {
+    return [
       recipe?.title,
       recipe?.primaryIngredient1,
       recipe?.primaryIngredient2,
       recipe?.primary_ingredient_1,
       recipe?.primary_ingredient_2,
       recipe?.baseIngredient,
-      recipe?.base_ingredient
+      recipe?.base_ingredient,
+      recipe?.dishFamily,
+      recipe?.dish_family,
+      ...(recipe?.primaryIngredients || []),
+      ...(recipe?.coreIngredients || []),
+      ...(recipe?.requiredIngredients || [])
     ].map(norm).join(' ');
-    if (/egg|chicken|paneer|fish|mutton|prawn|pork|keema|minced meat/.test(identity)) return true;
-    if (/rajma|chana|chole|dal makhani|besan chilla|sundal|peanut sundal/.test(title)) return true;
-    if (/\\b(dal|rajma|chana|chole|peanut)\\b/.test(identity) && !/rice|dosa|idli|poha|upma|chapati/.test(title)) return true;
+  }
+
+  function isProteinForward(recipe) {
+    const title = norm(recipe?.title);
+    if (!recipe || isProteinExcluded(title)) return false;
+    const role = recommendationRecipeRole(recipe);
+    if (['condiment', 'drink', 'dessert'].includes(role) || recipe?.mealRole === 'baby_food') return false;
+    const identity = proteinIdentityText(recipe);
+    const combined = `${title} ${identity}`;
+    if (/\b(egg|chicken|duck|paneer|fish|mach|maach|mutton|prawn|prawns|shrimp|crab|pork|beef|keema|minced meat|tofu|soya|soy|chhana|chhena)\b/.test(identity)) return true;
+    if (/\b(rajma|chana|chole|chickpea|kadala|dal makhani|sundal|sprout|sprouts|usal|matki|cowpea|lobia|yellow peas|green gram|horse gram|huruli|tungrymbai|besan chilla|moong dal chilla|moong dal cheela|adai|pesarattu)\b/.test(combined)) return true;
+    if (/\b(dal|pappu|parippu|sambar|lentil|moong)\b/.test(identity) && !/\b(lemon rice|tomato rice|coconut rice|curd rice|plain rice|poha|upma|chapati|roti|dosa|idli|pulao|pakhala)\b/.test(title)) return true;
+    if (/\b(huruli|horse gram|bassaru|ulavacharu)\b/.test(combined)) return true;
+    if (/\b(peanut|groundnut|makhana)\b/.test(identity) && /\b(sundal|chaat|salad|bowl|snack)\b/.test(title)) return true;
     return false;
   }
 
@@ -2231,7 +2705,16 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     }, new Map());
     const dominantCuisines = new Set([...recentCuisineCounts].filter(([, count]) => count >= 2).map(([cuisine]) => cuisine));
     const dominantRegions = new Set([...recentRegionCounts].filter(([, count]) => count >= 2).map(([region]) => region));
-    return scoredCandidates.find((item) => {
+    const topScore = Number(scoredCandidates[0]?.score?.finalScore || 0);
+    const competitiveRegional = scoredCandidates.find((item) => {
+      return specificRegionalKey(item.recipe)
+        && Number(item.score?.finalScore || 0) >= topScore - 8
+        && !recentIds.has(item.recipe.id)
+        && !recentFamilies.has(dishFamily(item.recipe))
+        && !dominantRegions.has(norm(primaryBrowseRegion(item.recipe)))
+        && !dominantCuisines.has(norm(item.recipe.cuisine));
+    });
+    return competitiveRegional || scoredCandidates.find((item) => {
       return !recentIds.has(item.recipe.id)
         && !recentFamilies.has(dishFamily(item.recipe))
         && !dominantRegions.has(norm(primaryBrowseRegion(item.recipe)))
@@ -2255,7 +2738,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   function moodTomoCandidates(mood, meal) {
     if (mood === 'rainy') return heroFoodFirstCandidates(rainyMealRecipes(meal, 20, new Set()));
     if (mood === 'soul' && meal === 'dinner') return heroFoodFirstCandidates(curatedMealRecipes(moodCuration.soulDinner, 20, new Set()));
-    if (mood === 'protein' && moodCuration.proteinMeals[meal]) return heroFoodFirstCandidates(curatedMealRecipes(moodCuration.proteinMeals[meal], 20, new Set()));
+    if (mood === 'protein' && moodCuration.proteinMeals[meal]) return heroFoodFirstCandidates(curatedMealRecipes(moodCuration.proteinMeals[meal], 20, new Set()).filter(isProteinForward));
     if (mood === 'spicy' && moodCuration.spicyMeals[meal]) return heroFoodFirstCandidates(curatedMealRecipes(moodCuration.spicyMeals[meal], 20, new Set()));
     return heroFoodFirstCandidates(moodEligibleRecipes(mood)
       .filter((recipe) => matchesMeal(recipe, meal, { mood, surface: 'tomo_pick' }))
@@ -2374,6 +2857,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       meal,
       family: dishFamily(recipe),
       region: primaryBrowseRegion(recipe),
+      regionalKey: specificRegionalKey(recipe),
       cuisine: recipe?.cuisine || '',
       confidence: score?.confidence || 'medium',
       finalScore: Number(score?.finalScore || 0),
@@ -2704,7 +3188,9 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function collectionByKey(key) {
-    return collectionRoutes.find((item) => item.key === key) || collections.find((item) => item.key === key);
+    return collectionRoutes.find((item) => item.key === key)
+      || collections.find((item) => item.key === key)
+      || featuredCollectionCache.get(key);
   }
 
   function collectionDishImageOverride(title) {
@@ -2953,6 +3439,79 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return aliases.some((alias) => generatedCoverageHasAlias(text, alias));
   }
 
+  function generatedSecondaryCoverageMatches(recipe, hubName, collectionName) {
+    const signal = generatedRecipeSignals(recipe);
+    const title = signal.title;
+    const text = signal.text;
+    const role = signal.role;
+    const mood = signal.mood;
+    const home = recipe?.collectionHome;
+    if (home?.hub === hubName && home.collection === collectionName) return true;
+
+    if (hubName === 'Everyday Cooking' && collectionName === 'Home Staples') {
+      if (role === 'dessert' || role === 'drink' || role === 'snack') return false;
+      const stapleTitles = [
+        'dal rice',
+        'dal roti',
+        'khichdi',
+        'moong dal vegetable khichdi',
+        'curd rice',
+        'thayir sadam',
+        'lemon rice',
+        'coconut rice',
+        'tomato rice',
+        'onion rice',
+        'jeera rice',
+        'rasam rice',
+        'sambar rice',
+        'varan bhaat',
+        'veg pulao',
+        'peas pulao',
+        'soft veg pulao',
+        'idli',
+        'dosa',
+        'upma',
+        'poha',
+        'chilla',
+      ];
+      const weakRegional = signal.region && !/pan indian|indian/.test(signal.region);
+      if (weakRegional && !stapleTitles.some((name) => title === name)) return false;
+      return stapleTitles.some((name) => title === name || title.includes(name));
+    }
+
+    if (hubName === 'Regional Journeys' && collectionName === 'Jammu & Kashmir') {
+      return [
+        'rajma chawal',
+        'dal makhani',
+        'mutton pulao',
+        'veg pulao',
+        'peas pulao',
+        'mushroom pulao',
+        'paneer pulao',
+        'thukpa',
+        'arunachal thukpa',
+        'chhurpi soup',
+        'chhurpi chutney',
+      ].some((name) => title === name || title.includes(name));
+    }
+
+    if (hubName === 'Seasonal Specials' && collectionName === 'Rainy Day Cravings') {
+      const rainySnack = role === 'snack' && /pakora|pakoda|bajji|bonda|vada|pazham pori|telebhaja|jhalmuri|girmit|mandakki/.test(title);
+      const rainyBowl = /rasam|saaru|thukpa|corn soup|vegetable soup|chicken soup|lentil soup|tomato soup|hot and sour soup|manchow soup/.test(title);
+      const rainyDrink = role === 'drink' && /chai|tea|kashaya|turmeric milk/.test(title);
+      if (rainySnack || rainyBowl || rainyDrink) return true;
+      return false;
+    }
+
+    if (hubName === 'Healthy Living' && collectionName === 'Healthy Plates') {
+      if (!['main', 'soup'].includes(role)) return false;
+      return Number(recipe?.proteinScore || 0) >= 9
+        || signalHas(signal, ['high protein', 'high-protein', 'protein rich', 'protein-rich', 'millet', 'sprout', 'steamed', 'low oil', 'low-oil', 'balanced meal']);
+    }
+
+    return false;
+  }
+
   function generatedRecipeSignals(recipe) {
     const values = [
       recipe?.title,
@@ -3028,46 +3587,59 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     switch (generatedCollectionDisplayKey(collection)) {
       case 'Regional Journeys::Karnataka':
-        if (isBreakfast) return 'Breakfast & Tiffin';
-        if (isSoup) return 'Saaru, Rasam & Soups';
-        if (isSnack) return 'Snacks & Street Bites';
-        if (isSweet || isDrink) return 'Sweets & Drinks';
-        return 'Mains & Meals';
+        if (sections.includes(recipe?.collectionSubcategory || recipe?.collection_subcategory)) {
+          return recipe.collectionSubcategory || recipe.collection_subcategory;
+        }
+        if (isBreakfast) return 'Breakfast';
+        if (isSoup || signalHas(signal, ['saaru', 'sambar', 'tambuli', 'curry', 'sukka', 'ghee roast'])) return 'Curries & Saaru';
+        if (isSnack) return 'Snacks & Evening Bites';
+        return 'Rice & Main Meals';
       case 'Regional Journeys::Andhra & Telangana':
-        if (isBreakfast) return 'Breakfast & Tiffin';
-        if (isSoup || signalHas(signal, ['pappu', 'pulusu', 'charu'])) return 'Pappu, Pulusu & Rasam';
-        if (isSnack) return 'Snacks';
-        if (isSweet) return 'Sweets';
-        return 'Spicy Mains';
+        if (sections.includes(recipe?.collectionSubcategory || recipe?.collection_subcategory)) {
+          return recipe.collectionSubcategory || recipe.collection_subcategory;
+        }
+        if (isBreakfast) return 'Breakfast';
+        if (isSnack) return 'Snacks & Evening Bites';
+        if (signalHas(signal, ['biryani', 'haleem', 'rice', 'sangati'])) return 'Rice & Main Meals';
+        return 'Pappu, Pulusu & Curries';
       case 'Regional Journeys::Tamil Nadu':
-        if (isBreakfast) return 'Breakfast & Tiffin';
-        if (isSoup || signalHas(signal, ['kuzhambu', 'kootu'])) return 'Rasam, Kuzhambu & Kootu';
-        if (isSnack) return 'Snacks';
-        if (isSweet || isDrink) return 'Sweets & Drinks';
-        return 'Meals & Mains';
+        if (sections.includes(recipe?.collectionSubcategory || recipe?.collection_subcategory)) {
+          return recipe.collectionSubcategory || recipe.collection_subcategory;
+        }
+        if (isBreakfast) return 'Breakfast';
+        if (isSnack) return 'Snacks & Evening Bites';
+        if (isSoup || signalHas(signal, ['kuzhambu', 'kootu', 'rasam', 'kurma', 'curry', 'poriyal', 'chukka'])) return 'Kuzhambu, Kootu & Curries';
+        return 'Rice & Main Meals';
       case 'Regional Journeys::Kerala':
-        if (isBreakfast) return 'Breakfast Staples';
-        if (isSeafood) return 'Seafood';
-        if (isSnack) return 'Snacks';
-        if (isSweet || isDrink) return 'Sweets & Drinks';
-        return 'Curries & Mains';
+        if (sections.includes(recipe?.collectionSubcategory || recipe?.collection_subcategory)) {
+          return recipe.collectionSubcategory || recipe.collection_subcategory;
+        }
+        if (isBreakfast) return 'Breakfast';
+        if (signalHas(signal, ['kappa', 'parotta', 'parippu', 'cherupayar'])) return 'Rice & Main Meals';
+        return 'Curries & Seafood';
       case 'Regional Journeys::Bengal':
-        if (isSweet) return 'Sweets';
-        if (isSnack) return 'Street Snacks';
-        if (isSeafood || signalHas(signal, ['fish', 'mach'])) return 'Fish & Mains';
-        return 'Comfort Plates';
+        if (sections.includes(recipe?.collectionSubcategory || recipe?.collection_subcategory)) {
+          return recipe.collectionSubcategory || recipe.collection_subcategory;
+        }
+        if (isSnack || signalHas(signal, ['roll', 'ghugni', 'jhalmuri', 'telebhaja'])) return 'Snacks & Street Food';
+        if (signalHas(signal, ['luchi', 'kochuri', 'chirer', 'cholar dal'])) return 'Breakfast & Everyday Classics';
+        if (isSeafood || signalHas(signal, ['fish', 'mach', 'paturi', 'jhol', 'ilish', 'pulao'])) return 'Rice, Fish & Main Meals';
+        return 'Curries & Traditional Dishes';
       case 'Regional Journeys::Maharashtra':
-        if (isBreakfast || signalHas(signal, ['pav', 'misal', 'poha'])) return 'Breakfast & Street Food';
-        if (isSeafood) return 'Seafood & Konkan';
-        if (isSnack) return 'Snacks';
-        if (isSweet || isDrink) return 'Sweets & Drinks';
-        return 'Mains & Bhakri Plates';
+        if (sections.includes(recipe?.collectionSubcategory || recipe?.collection_subcategory)) {
+          return recipe.collectionSubcategory || recipe.collection_subcategory;
+        }
+        if (isBreakfast || signalHas(signal, ['misal', 'poha', 'thalipeeth', 'sabudana khichdi'])) return 'Breakfast';
+        if (isSnack || signalHas(signal, ['vada', 'vadi', 'pav', 'fry'])) return 'Snacks & Street Food';
+        return 'Amti, Curries & Sabzis';
       case 'Regional Journeys::Northeast':
-        if (isSnack) return 'Snacks';
-        if (isSweet) return 'Sweets';
-        if (isSide || signalHas(signal, ['greens', 'xaak'])) return 'Greens & Sides';
-        if (signalHas(signal, ['smoked', 'fermented', 'bamboo', 'axone'])) return 'Smoked & Fermented';
-        return 'Rice, Stews & Mains';
+        if ((recipe?.collectionSubcategory || recipe?.collection_subcategory) === 'Everyday Meals') return 'Regional Classics';
+        if (sections.includes(recipe?.collectionSubcategory || recipe?.collection_subcategory)) {
+          return recipe.collectionSubcategory || recipe.collection_subcategory;
+        }
+        if (signalHas(signal, ['smoked', 'fermented', 'bamboo', 'axone', 'ngari', 'berma', 'tungrymbai'])) return 'Smoked & Fermented';
+        if (signalHas(signal, ['thukpa', 'soup', 'stew', 'broth', 'chhurpi'])) return 'Soups, Stews & Broths';
+        return 'Regional Classics';
       case 'Regional Journeys::North & West India':
         if (isDrink) return 'Drinks';
         if (isSweet) return 'Sweets';
@@ -3095,33 +3667,46 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         return 'Simple Mains';
       case 'Healthy Living::Healthy Plates':
         if (isBreakfast && isProtein) return 'Protein Breakfasts';
-        if (isLight) return 'Light Bowls';
-        if (isQuick) return 'Quick Healthy';
+        if (isLight || title.includes('bowl')) return 'Light Bowls';
+        if (isQuick || title.includes('stir fry')) return 'Quick Healthy';
         return isProtein ? 'Protein Mains' : 'Quick Healthy';
-      case 'Healthy Living::Warm & Light Bowls':
-        if (signalHas(signal, ['rasam', 'saaru', 'charu'])) return 'Rasam & Saaru';
-        if (signal.mood.includes('sick') || signalHas(signal, ['sick', 'kanji', 'porridge'])) return 'Sick-Day Comfort';
-        if (signalHas(signal, ['stew', 'tambuli', 'bowl'])) return 'Light Stews';
+      case 'Healthy Living::Warm & Light Bowls': {
+        const explicitGroup = recipe?.collectionSubcategory || recipe?.collection_subcategory;
+        if (sections.includes(explicitGroup)) return explicitGroup;
+        if (signalHas(signal, ['rasam'])) return 'Rasam';
+        if (signal.mood.includes('sick') || signalHas(signal, ['sick', 'kanji'])) return 'Sick Day Comfort';
+        if (signalHas(signal, ['stew', 'tambuli'])) return 'Stews';
+        if (signalHas(signal, ['khichdi', 'porridge', 'light meal'])) return 'Light Meals';
         return 'Soups';
-      case 'Family Favorites::Tiny Tummy Favorites':
+      }
+      case 'Family Favorites::Tiny Tummy Favorites': {
+        const explicitGroup = recipe?.collectionSubcategory || recipe?.collection_subcategory;
+        if (sections.includes(explicitGroup)) return explicitGroup;
+        if (signalHas(signal, ['purees & mashes'])) return 'Purees & Mashes';
+        if (signalHas(signal, ['growing bites'])) return 'Growing Bites';
+        if (signalHas(signal, ['little plates'])) return 'Little Plates';
+        if (signalHas(signal, ['baby’s first foods', 'babys first foods', 'first foods'])) return 'Baby’s First Foods';
         if (signalHas(signal, ['mash', 'mashed', 'puree', 'purée'])) return 'Purees & Mashes';
-        if (signalHas(signal, ['baby', 'first food', 'first foods'])) return 'First Foods';
         if (isSnack) return 'Growing Bites';
         return 'Little Plates';
-      case 'Family Favorites::Lunch Box & Tiffin':
-        if (isBreakfast || isQuick) return 'Quick Morning Wins';
-        if (isProtein) return 'Protein Packed';
+      }
+      case 'Family Favorites::Lunch Box & Tiffin': {
+        const explicitGroup = recipe?.collectionSubcategory || recipe?.collection_subcategory;
+        if (sections.includes(explicitGroup)) return explicitGroup;
         if (isSnack) return 'After School Snacks';
-        return 'Tiffin Box Favorites';
+        if (isProtein) return 'Protein Packed';
+        if (isBreakfast || isQuick) return 'Quick Morning Wins';
+        return 'Tiffin Favorites';
+      }
       case 'Global Bites::Global Breakfasts':
-        if (signalHas(signal, ['toast', 'bakery', 'bread'])) return 'Toast & Bakery';
         if (isSweet) return 'Sweet Breakfasts';
-        if (signalHas(signal, ['healthy', 'oats', 'porridge', 'fruit'])) return 'Healthy Breakfasts';
+        if (signalHas(signal, ['healthy', 'oats', 'porridge', 'fruit', 'avocado', 'chia'])) return 'Healthy Breakfasts';
+        if (signalHas(signal, ['toast', 'bakery', 'bread'])) return 'Toast & Bakery';
         return 'Egg Breakfasts';
       case 'Global Bites::Global Bowls':
         if (signalHas(signal, ['noodle', 'ramen'])) return 'Noodle Bowls';
+        if (signal.diet.includes('vegetarian') || signalHas(signal, ['veg', 'paneer', 'tofu', 'chickpea', 'falafel', 'hummus'])) return 'Vegetarian Bowls';
         if (isProtein) return 'Protein Bowls';
-        if (signal.diet.includes('vegetarian') || signalHas(signal, ['veg', 'paneer', 'tofu'])) return 'Vegetarian Bowls';
         return 'Rice Bowls';
       case 'Global Bites::Global Mains':
         if (signalHas(signal, ['fried rice', 'schezwan', 'indo chinese', 'chinese'])) return 'Fried Rice & Indo-Chinese';
@@ -3145,15 +3730,18 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         return 'Handheld Bites';
       case 'Kitchen Essentials::Sides, Salads & Add-ons':
         if (signalHas(signal, ['raita', 'curd', 'yogurt'])) return 'Raitas & Cooling Sides';
+        if (signalHas(signal, ['sundal', 'corn', 'chaat', 'add on', 'addon'])) return 'Sundals & Add-ons';
         if (signalHas(signal, ['salad', 'kosambari', 'fresh'])) return 'Salads & Fresh Sides';
-        if (signalHas(signal, ['sundal', 'corn', 'add on', 'addon'])) return 'Sundals & Add-ons';
         return 'Palyas, Poriyals & Thorans';
-      case 'Kitchen Essentials::Chutneys, Podis & Condiments':
+      case 'Kitchen Essentials::Chutneys, Salads & Add-ons': {
+        const explicitGroup = recipe?.collectionSubcategory || recipe?.collection_subcategory;
+        if (sections.includes(explicitGroup)) return explicitGroup;
         if (signalHas(signal, ['podi', 'powder'])) return 'Podis';
-        if (signalHas(signal, ['pickle', 'achaar'])) return 'Pickles';
         if (signalHas(signal, ['raita', 'curd', 'yogurt'])) return 'Raitas';
+        if (signalHas(signal, ['salad', 'kosambari', 'singju'])) return 'Salads';
         if (signalHas(signal, ['chutney'])) return 'Chutneys';
-        return 'Condiments';
+        return 'Chutneys';
+      }
       case 'Seasonal Specials::Summer Cooling':
         if (isDrink) return 'Coolers';
         if (isSide) return 'Cooling Sides';
@@ -3164,19 +3752,21 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         if (isSoup) return 'Warm Bowls';
         return 'Hot Snacks';
       case 'Celebrations & Traditions::Festival Sweets':
-        if (signalHas(signal, ['payasam', 'kheer'])) return 'Payasam & Kheer';
-        if (signalHas(signal, ['fried', 'jalebi', 'jamun', 'boondi', 'imarti'])) return 'Fried Sweets';
-        if (signalHas(signal, ['festival', 'modak', 'poli', 'obbattu', 'holige', 'prasadam'])) return 'Festival Specials';
-        return 'Classic Sweets';
+        if (sections.includes(recipe?.collectionSubcategory || recipe?.collection_subcategory)) {
+          return recipe.collectionSubcategory || recipe.collection_subcategory;
+        }
+        if (signalHas(signal, ['payasam', 'kheer', 'payesh', 'seviyan', 'sheer khurma', 'phirni'])) return 'Payasam & Kheer';
+        if (signalHas(signal, ['halwa', 'sheera', 'kesari'])) return 'Halwas';
+        if (signalHas(signal, ['rasmalai', 'roshogolla', 'sandesh', 'kalakand', 'kulfi', 'basundi', 'mishti doi', 'shrikhand'])) return 'Milk Desserts';
+        if (signalHas(signal, ['modak', 'poli', 'obbattu', 'holige', 'pitha', 'gujiya', 'kadubu', 'kozhukattai', 'ada'])) return 'Festival Breads & Dumplings';
+        if (signalHas(signal, ['anarsa', 'ariselu', 'pongal', 'marzipan', 'plum cake', 'pootharekulu', 'karadantu', 'ellu bella'])) return 'Regional Festival Classics';
+        if (signalHas(signal, ['jalebi', 'malpua', 'cookie', 'macaroon', 'kalkal', 'shankarpali', 'unniyappam', 'falooda'])) return 'Traditional Treats';
+        return 'Traditional Mithai';
       case 'Celebrations & Traditions::Regional Sweets':
         if (signal.region.includes('karnataka') || signalHas(signal, ['peda', 'mysore', 'dharwad'])) return 'Karnataka Sweets';
         if (signal.region.includes('bengal') || signalHas(signal, ['rasgulla', 'sandesh'])) return 'Bengali Sweets';
         if (signal.region.includes('tamil') || signal.region.includes('kerala') || signal.region.includes('south')) return 'South Indian Sweets';
         return 'North Indian Sweets';
-      case 'Celebrations & Traditions::Everyday Desserts':
-        if (signalHas(signal, ['milk', 'kheer', 'payasam', 'peda'])) return 'Milk Sweets';
-        if (signalHas(signal, ['fruit', 'banana', 'mango', 'apple'])) return 'Fruit Desserts';
-        return 'Quick Sweets';
       case 'Celebrations & Traditions::Prasadam & Temple Foods':
         if (signalHas(signal, ['temple'])) return 'Temple Foods';
         if (signalHas(signal, ['festival', 'offering'])) return 'Festival Offerings';
@@ -3244,6 +3834,19 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       recipes.forEach((recipe, index) => {
         if (generatedRegionalCoverageMatches(recipe, collectionName)) {
           addRecipeToGeneratedCollection('Regional Journeys', collectionName, recipe, index);
+        }
+      });
+    });
+
+    [
+      ['Everyday Cooking', 'Home Staples'],
+      ['Healthy Living', 'Healthy Plates'],
+      ['Regional Journeys', 'Jammu & Kashmir'],
+      ['Seasonal Specials', 'Rainy Day Cravings'],
+    ].forEach(([hubName, collectionName]) => {
+      recipes.forEach((recipe, index) => {
+        if (generatedSecondaryCoverageMatches(recipe, hubName, collectionName)) {
+          addRecipeToGeneratedCollection(hubName, collectionName, recipe, index);
         }
       });
     });
@@ -3605,11 +4208,13 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const now = new Date();
     const hour = now.getHours();
     const rainy = state.mood === 'rainy';
-    const condition = rainy ? 'Light Rain 🌧️' : hour >= 18 || hour < 6 ? 'Soft Evening 🌙' : 'Warm Daylight ☀️';
+    const condition = rainy ? 'Rainy' : hour >= 18 || hour < 6 ? 'Evening' : 'Warm';
     const hint = rainy ? 'Perfect weather for comfort food.' : state.mood === 'quick' ? 'Keep it easy and kind.' : 'A good day for something comforting.';
     return {
       time: now.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }),
       datetime: now.toISOString(),
+      temperature: '24°C',
+      condition,
       weather: `24°C • ${condition}`,
       hint
     };
@@ -3628,35 +4233,60 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function render() {
+    if (!MOBILE_COLLECTIONS_ENABLED && state.screen === 'collections') {
+      state.screen = 'discover';
+      state.discoverView = 'moods';
+    }
+    if (!FEATURED_COLLECTION_ENABLED && state.screen === 'collection') {
+      state.screen = 'discover';
+      state.discoverView = 'moods';
+    }
     const motionClass = pendingMotion ? ` mv2-motion-${pendingMotion}` : '';
     pendingMotion = '';
     root.innerHTML = `
       <div class="mv2-app${motionClass}">
       <header class="mv2-header ${state.screen === 'discover' ? 'mv2-discover-header' : ''} ${state.screen === 'journal' ? 'mv2-journal-header' : ''}">
-        <div class="mv2-brand"><span class="mv2-logo"><img src="tomo.png" alt="" /></span><div><h1>${state.screen === 'kitchen' ? '🍅 Kitchen' : state.screen === 'collections' || state.screen === 'collection' ? '🧭 Collections' : state.screen === 'journal' ? '📖 My Journal' : 'Tomo'}</h1><p>${state.screen === 'kitchen' ? 'Pantry to plate' : state.screen === 'collections' || state.screen === 'collection' ? 'Explore by region, lifestyle and kitchen intent.' : state.screen === 'journal' ? 'Your cooking journey,<br>favorites and memories.' : 'Food for Every Mood'}</p></div></div>
-        <div class="mv2-header-actions">${headerWeather()}</div>
+        <div class="mv2-brand"><span class="mv2-logo"><img src="${esc(TOMO_MASCOT_IMAGES.wave)}" alt="" aria-hidden="true" decoding="async" /></span><div><h1>${state.screen === 'kitchen' ? 'Kitchen' : state.screen === 'plan' ? 'My Plan' : state.screen === 'collections' || state.screen === 'collection' ? '🧭 Collections' : state.screen === 'journal' ? '📖 My Journal' : 'Tomo'}</h1><p>${state.screen === 'kitchen' ? 'Pantry to plate' : state.screen === 'plan' ? 'Meals and groceries' : state.screen === 'collections' || state.screen === 'collection' ? 'Explore by region, lifestyle and kitchen intent.' : state.screen === 'journal' ? 'Your food story' : 'Food for Every Mood'}</p></div></div>
+        <div class="mv2-header-actions"><button class="mv2-preferences-trigger" type="button" data-open-preferences aria-label="Open preferences">⚙</button>${headerWeather()}</div>
       </header>
-      ${state.screen === 'kitchen' || state.screen === 'journal' ? '' : globalSearchBar(state.screen === 'discover')}
+      ${state.screen === 'kitchen' || state.screen === 'journal' || state.screen === 'plan' ? '' : globalSearchBar(state.screen === 'discover')}
       <main>
-        <section class="mv2-screen ${state.screen === 'discover' ? 'active' : ''}">${discoverView()}</section>
-        <section class="mv2-screen ${state.screen === 'collections' ? 'active' : ''}">${collectionsView()}</section>
-        <section class="mv2-screen ${state.screen === 'kitchen' ? 'active' : ''}">${kitchenView()}</section>
-        <section class="mv2-screen ${state.screen === 'journal' ? 'active' : ''}">${journalView()}</section>
-        <section class="mv2-screen ${state.screen === 'collection' ? 'active' : ''}">${collectionDetailView()}</section>
-        <section class="mv2-screen ${state.screen === 'dish' ? 'active' : ''}">${dishDetailView()}</section>
+        <section class="mv2-screen active${activeScreenClass()}">${activeScreenView()}</section>
       </main>
       <nav class="mv2-bottom-nav" aria-label="Primary">
         ${[
           ['discover', '⌂', 'Discover'],
-          ['collections', '🧭', 'Collections'],
           ['kitchen', '▣', 'Kitchen'],
+          ['plan', '▦', 'My Plan'],
           ['journal', '♡', 'My Journal'],
-        ].map(([screen, icon, label]) => `<button class="${state.screen === screen || (state.screen === 'collection' && screen === 'collections') || (state.screen === 'dish' && state.dishOrigin === 'collection' && screen === 'collections') || (state.screen === 'dish' && (state.dishOrigin === 'pantry' || state.dishOrigin === 'cart') && screen === 'kitchen') || (state.screen === 'dish' && state.dishOrigin === 'journal' && screen === 'journal') ? 'active' : ''}" type="button" data-nav="${screen}">${icon}<span>${label}</span></button>`).join('')}
+        ].map(([screen, icon, label]) => `<button class="${state.screen === screen || ((state.screen === 'collections' || state.screen === 'collection') && screen === 'discover') || (state.screen === 'dish' && state.dishOrigin === 'collection' && screen === 'discover') || (state.screen === 'dish' && state.dishOrigin === 'pantry' && screen === 'kitchen') || (state.screen === 'dish' && state.dishOrigin === 'cart' && screen === 'plan') || (state.screen === 'dish' && state.dishOrigin === 'journal' && screen === 'journal') ? 'active' : ''}" type="button" data-nav="${screen}">${icon}<span>${label}</span></button>`).join('')}
       </nav>
       ${toastView()}
       ${state.feedbackOpen ? feedbackModal() : ''}
+      ${state.todaysSheetOpen ? todaysPicksSheet() : ''}
+      ${state.discoverSheetOpen ? discoverExploreSheet() : ''}
+      ${state.managePantryOpen ? managePantrySheet() : ''}
+      ${state.planSheetOpen ? planSheet() : ''}
+      ${state.preferencesOpen ? preferencesSheet() : ''}
+      ${state.onboardingOpen ? onboardingView() : ''}
       </div>
     `;
+  }
+
+  function activeScreenClass() {
+    if (state.screen === 'journal') return ' mv2-journal-screen';
+    if (state.screen === 'plan') return ' mv2-plan-screen';
+    return '';
+  }
+
+  function activeScreenView() {
+    if (state.screen === 'kitchen') return kitchenView();
+    if (state.screen === 'journal') return journalView();
+    if (state.screen === 'plan') return myPlanView();
+    if (state.screen === 'dish') return dishDetailView();
+    if (MOBILE_COLLECTIONS_ENABLED && state.screen === 'collections') return collectionsView();
+    if (FEATURED_COLLECTION_ENABLED && state.screen === 'collection') return collectionDetailView();
+    return discoverView();
   }
 
   function renderWithMotion(motion) {
@@ -3664,11 +4294,45 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     render();
   }
 
+  function refreshDiscoverRecommendations() {
+    const discoverScreen = root.querySelector('.mv2-screen.active .mv2-discover-control-card');
+    const todayPager = discoverScreen?.querySelector('.mv2-today-pager');
+    if (state.screen !== 'discover' || !discoverScreen || !todayPager) {
+      renderWithMotion('recommendation');
+      return;
+    }
+
+    discoverScreen.querySelectorAll('[data-mood]').forEach((button) => {
+      button.classList.toggle('active', button.dataset.mood === state.mood);
+    });
+    discoverScreen.querySelectorAll('[data-meal]').forEach((button) => {
+      button.classList.toggle('active', button.dataset.meal === state.meal);
+    });
+
+    const pickCards = todayPickRecommendations(state.meal, state.mood, 4);
+    if (pickCards[0]?.recipe) {
+      trackTomoPickViewed(pickCards[0].recipe, { mood: state.mood || 'default', meal: state.meal });
+    }
+    todayPager.outerHTML = todaysPicksPager(pickCards);
+    const featuredCollection = root.querySelector('.mv2-featured-collection');
+    const featuredMarkup = discoverFeaturedCollection(pickCards);
+    if (featuredCollection) {
+      if (featuredMarkup) featuredCollection.outerHTML = featuredMarkup;
+      else featuredCollection.remove();
+    } else if (featuredMarkup) {
+      root.querySelector('.mv2-discover-deck')?.insertAdjacentHTML('afterend', featuredMarkup);
+    }
+
+    const weather = root.querySelector('.mv2-discover-header .mv2-header-actions');
+    if (weather) weather.innerHTML = `<button class="mv2-preferences-trigger" type="button" data-open-preferences aria-label="Open preferences">⚙</button>${headerWeather()}`;
+  }
+
   function primaryScreen() {
-    if (state.screen === 'collection') return 'collections';
+    if (state.screen === 'collections' || state.screen === 'collection') return 'discover';
     if (state.screen === 'dish') {
-      if (state.dishOrigin === 'pantry' || state.dishOrigin === 'cart') return 'kitchen';
-      if (state.dishOrigin === 'collection') return 'collections';
+      if (state.dishOrigin === 'pantry') return 'kitchen';
+      if (state.dishOrigin === 'cart') return 'plan';
+      if (state.dishOrigin === 'collection') return 'discover';
       if (state.dishOrigin === 'journal') return 'journal';
       return 'discover';
     }
@@ -3676,49 +4340,1145 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function discoverView() {
-    if (state.discoverView === 'collections') {
-      return `<section class="mv2-discover-view active">${collectionsView()}</section>`;
-    }
     state.discoverView = 'moods';
     return `<section class="mv2-discover-view active">${moodsView()}</section>`;
   }
 
+  function weeklyPlanData() {
+    try {
+      return window.TOMO_PLAN_ENGINE?.getWeeklyPlan() || null;
+    } catch {
+      return null;
+    }
+  }
+
+  function planWeekLabel(weekStart) {
+    if (!weekStart) return 'This week';
+    const start = new Date(`${weekStart}T00:00:00`);
+    if (Number.isNaN(start.getTime())) return 'This week';
+    const end = new Date(start);
+    end.setDate(start.getDate() + 6);
+    const startLabel = start.toLocaleDateString([], { month: 'short', day: 'numeric' });
+    const endLabel = end.toLocaleDateString([], { month: 'short', day: 'numeric' });
+    return `${startLabel} – ${endLabel}`;
+  }
+
+  function plannedRecipeForRef(ref) {
+    if (!ref) return null;
+    const recipe = recipes.find((item) => item.id === ref.recipeId || item.sourceId === ref.recipeId)
+      || recipes.find((item) => norm(item.title) === norm(ref.recipeName));
+    return recipe && recipeAllowedByPreferences(recipe) ? recipe : null;
+  }
+
+  function plannedRecipeForSlot(slot) {
+    if (!slot) return null;
+    return plannedRecipeForRef(slot.mealBundle?.primaryRecipe || { recipeId: slot.recipeId, recipeName: slot.recipeName });
+  }
+
+  function plannedRecipeLabel(ref) {
+    return ref?.recipeName || ref?.title || ref?.name || '';
+  }
+
+  function planMealIcon(mealType) {
+    return {
+      breakfast: '🍳',
+      lunch: '🍛',
+      dinner: '🍲',
+      snack: '🍎'
+    }[mealType] || '🍽️';
+  }
+
+  function planMealSlot(slot, mealType) {
+    if (!slot) {
+      const label = titleCase(mealType);
+      return `<button class="mv2-plan-empty-slot is-inactive" type="button" data-plan-add-meal><span><i aria-hidden="true">${esc(planMealIcon(mealType))}</i><strong>${esc(label)}</strong><small>Plan will fill this slot</small></span><b>+ Add Meal</b></button>`;
+    }
+    const primaryRef = slot.mealBundle?.primaryRecipe || { recipeId: slot.recipeId, recipeName: slot.recipeName };
+    const secondaryRef = slot.mealBundle?.secondaryRecipe || null;
+    const recipe = plannedRecipeForRef(primaryRef);
+    const actionKey = `${slot.day}:${mealType}`;
+    const menuOpen = state.planMealActionSlot === actionKey;
+    return `
+      <article class="mv2-plan-meal-slot">
+        <span class="mv2-plan-meal-image">${imageTag(recipeImage(recipe || { title: plannedRecipeLabel(primaryRef) }))}</span>
+        <span class="mv2-plan-meal-copy">
+          <small>${esc(titleCase(mealType))}</small>
+          <strong>${esc(plannedRecipeLabel(primaryRef))}</strong>
+          ${secondaryRef ? `<em>+ ${esc(plannedRecipeLabel(secondaryRef))}</em>` : ''}
+        </span>
+        <span class="mv2-plan-meal-actions">
+          <button type="button" aria-label="Meal actions" aria-expanded="${menuOpen}" aria-haspopup="menu" data-plan-meal-actions="${esc(actionKey)}">⋯</button>
+          ${menuOpen ? `<span class="mv2-plan-meal-menu" role="menu"><button type="button" role="menuitem" data-plan-replace-meal="${esc(actionKey)}">Replace</button><button type="button" role="menuitem" data-plan-remove-meal="${esc(actionKey)}">Remove</button></span>` : ''}
+        </span>
+      </article>
+    `;
+  }
+
+  function planHasMeals(plan) {
+    const planDays = window.TOMO_PLAN_ENGINE?.DAYS || ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    const mealTypes = window.TOMO_PLAN_ENGINE?.MEAL_TYPES || ['breakfast', 'lunch', 'dinner', 'snack'];
+    return planDays.some((day) => mealTypes.some((mealType) => Boolean(plan?.days?.[day]?.[mealType])));
+  }
+
+  function regeneratePlanAfterPreferenceChange() {
+    const planEngine = window.TOMO_PLAN_ENGINE;
+    if (!planEngine?.clearWeek || !planEngine?.generateSuggestedWeeklyPlan || !planEngine?.saveWeeklyPlan) return false;
+    const plan = weeklyPlanData();
+    if (!planHasMeals(plan)) return false;
+    if (!window.confirm('Replace your weekly plan using these preferences?')) return false;
+    planEngine.clearWeek();
+    const nextPlan = planEngine.generateSuggestedWeeklyPlan();
+    planEngine.saveWeeklyPlan(nextPlan);
+    state.planAcceptedWeek = '';
+    localStorage.removeItem('tomo_mobile_v1_plan_accepted_week');
+    return true;
+  }
+
+  function plannedMealCount(plan) {
+    const planDays = window.TOMO_PLAN_ENGINE?.DAYS || ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    const mealTypes = window.TOMO_PLAN_ENGINE?.MEAL_TYPES || ['breakfast', 'lunch', 'dinner', 'snack'];
+    return planDays.reduce((sum, day) => {
+      return sum + mealTypes.filter((mealType) => Boolean(plan?.days?.[day]?.[mealType])).length;
+    }, 0);
+  }
+
+  function isPlanAccepted(plan) {
+    return Boolean(plan?.weekStart && state.planAcceptedWeek === plan.weekStart);
+  }
+
+  function addAcceptedPlanToShoppingList(plan) {
+    if (!isPlanAccepted(plan)) return false;
+    const planDays = window.TOMO_PLAN_ENGINE?.DAYS || ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    const mealTypes = window.TOMO_PLAN_ENGINE?.MEAL_TYPES || ['breakfast', 'lunch', 'dinner', 'snack'];
+    const seenRecipes = new Set();
+    planDays.forEach((day) => {
+      mealTypes.forEach((mealType) => {
+        const slot = plan?.days?.[day]?.[mealType];
+        if (!slot) return;
+        const refs = [
+          slot.mealBundle?.primaryRecipe || { recipeId: slot.recipeId, recipeName: slot.recipeName },
+          slot.mealBundle?.secondaryRecipe
+        ].filter(Boolean);
+        refs.forEach((ref) => {
+          const recipe = plannedRecipeForRef(ref);
+          const key = String(recipe?.id || recipe?.sourceId || ref.recipeId || norm(ref.recipeName));
+          if (!recipe || seenRecipes.has(key)) return;
+          seenRecipes.add(key);
+          addGroceries(recipeIngredients(recipe).map((ingredient) => ingredient.name), recipe);
+        });
+      });
+    });
+    return true;
+  }
+
+  function myPlanView() {
+    const plan = weeklyPlanData();
+    const planDays = window.TOMO_PLAN_ENGINE?.DAYS || ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    const mealTypes = window.TOMO_PLAN_ENGINE?.MEAL_TYPES || ['breakfast', 'lunch', 'dinner', 'snack'];
+    const selectedDay = planDays.includes(state.planViewDay) ? state.planViewDay : planDays[0];
+    const dayPlan = plan?.days?.[selectedDay] || {};
+    const hasMeals = planHasMeals(plan);
+    const accepted = isPlanAccepted(plan);
+    const activePlanTab = state.planShoppingOpen ? 'grocery' : 'weekly';
+    const mealCount = plannedMealCount(plan);
+    const groceryCount = state.groceries.length;
+    return `
+      <div class="mv2-plan-page${state.planModifyMode ? ' is-modifying' : ''}">
+        <nav class="mv2-segmented mv2-plan-tabs" aria-label="My Plan mode">
+          <button class="${activePlanTab === 'weekly' ? 'active' : ''}" type="button" data-plan-tab="weekly" aria-pressed="${activePlanTab === 'weekly'}">Weekly Plan</button>
+          <button class="${activePlanTab === 'grocery' ? 'active' : ''}" type="button" data-plan-tab="grocery" aria-pressed="${activePlanTab === 'grocery'}">Grocery List</button>
+        </nav>
+        ${activePlanTab === 'weekly' ? `<section class="mv2-plan-hero ${hasMeals ? 'has-plan' : 'is-empty'}">
+          <span class="mv2-plan-hero-mascot-slot ${hasMeals ? 'is-complete' : 'is-planning'}"><img class="mv2-plan-hero-mascot" src="${esc(hasMeals ? TOMO_MASCOT_IMAGES.happy : TOMO_MASCOT_IMAGES.thinking)}" alt="" aria-hidden="true" loading="lazy" decoding="async" /></span>
+          <span>${esc(planWeekLabel(plan?.weekStart))}</span>
+          <h2>${hasMeals ? 'Your week is ready' : "Tomo's Weekly Plan"}</h2>
+          <p>${hasMeals ? 'Review, accept and make it yours.' : 'Tomo is ready to plan your week.'}</p>
+          <div class="mv2-plan-hero-stats">
+            ${hasMeals
+              ? `<span><strong>${esc(String(mealCount || 28))}</strong><small>${mealCount === 1 ? 'meal planned' : 'meals planned'}</small></span><span><strong>${esc(String(groceryCount))}</strong><small>${groceryCount === 1 ? 'grocery item' : 'grocery items'}</small></span>`
+              : '<span><strong>7</strong><small>Days</small></span><span><strong>28</strong><small>Meals</small></span>'}
+          </div>
+          <div class="mv2-plan-hero-actions">
+            ${hasMeals
+              ? `<button type="button" data-accept-plan>${accepted ? 'Accepted ✓' : 'Accept Plan'}</button><button type="button" data-modify-plan aria-pressed="${state.planModifyMode}">${state.planModifyMode ? 'Modifying ✓' : 'Modify Plan'}</button>`
+              : '<button class="mv2-plan-generate" type="button" data-generate-weekly-plan>Generate Weekly Plan</button>'}
+          </div>
+          ${accepted ? '<button class="mv2-plan-shopping-entry" type="button" data-generate-plan-groceries>Generate Grocery List</button>' : ''}
+          ${hasMeals ? `<button class="mv2-plan-shopping-entry" type="button" data-plan-tab="grocery">View Grocery List (${state.groceries.length})</button>` : ''}
+          ${hasMeals ? `<div class="mv2-plan-reset-row">
+            ${state.planResetConfirm
+              ? '<span>Clear this week&apos;s plan?</span><button type="button" data-cancel-plan-reset>Cancel</button><button type="button" data-confirm-plan-reset>Clear</button>'
+              : '<button type="button" data-reset-week>Reset Week</button>'}
+          </div>` : ''}
+        </section>` : ''}
+        ${activePlanTab === 'grocery'
+          ? groceriesView()
+          : `<nav class="mv2-plan-days" aria-label="Plan days">
+              ${planDays.map((day) => `<button class="${selectedDay === day ? 'active' : ''}" type="button" data-plan-view-day="${esc(day)}" aria-pressed="${selectedDay === day}">${esc(titleCase(day))}</button>`).join('')}
+            </nav>
+            <section class="mv2-plan-day-panel">
+              <header><h2>${esc(titleCase(selectedDay))}</h2><span>4 meal slots</span></header>
+              <div class="mv2-plan-slot-list">
+                ${mealTypes.map((mealType) => planMealSlot(dayPlan[mealType], mealType)).join('')}
+              </div>
+            </section>`}
+      </div>
+    `;
+  }
+
   function moodsView() {
-    const pickCards = fourCardRecommendations(state.meal, state.mood);
+    if (!recipes.length) {
+      return `<section class="mv2-discover-loading">${TomoMascot({ variant: 'thinking', size: 'md', message: 'Tomo is thinking...' })}</section>`;
+    }
+    const pickCards = todayPickRecommendations(state.meal, state.mood, 4);
     if (state.screen === 'discover' && state.discoverView === 'moods' && pickCards[0]?.recipe) {
       trackTomoPickViewed(pickCards[0].recipe, { mood: state.mood || 'default', meal: state.meal });
     }
     return `
-      <div class="mv2-mood-dashboard">
-        <div class="mv2-mood-heading">
-          <h2>✨ Choose Your Mood</h2>
-          <p>Tomo will adapt today's recommendations.</p>
+      <section class="mv2-discover-control-card">
+        <div class="mv2-mood-dashboard">
+          <div class="mv2-mood-heading">
+            <h2>Choose Your Mood</h2>
+            <p>Tomo will adapt today's recommendations.</p>
+          </div>
+          <div class="mv2-moods">${moods.map(([key, icon, label]) => `<button class="mv2-mood ${state.mood === key ? 'active' : ''}" type="button" data-mood="${key}"><span>${icon}</span><span>${label}</span></button>`).join('')}</div>
         </div>
-        <div class="mv2-moods">${moods.map(([key, icon, label]) => `<button class="mv2-mood ${state.mood === key ? 'active' : ''}" type="button" data-mood="${key}"><span>${icon}</span><span>${label}</span></button>`).join('')}</div>
-      </div>
-      <section class="mv2-recommendation-panel">
         <div class="mv2-meal-tabs">${meals.map(([key, label]) => `<button class="${state.meal === key ? 'active' : ''}" type="button" data-meal="${key}">${label}</button>`).join('')}</div>
-        <section class="mv2-todays-picks mv2-four-picks"><div class="mv2-section-title"><div><h2>Today's Picks</h2></div></div><div class="mv2-four-pick-grid">${pickCards.map(todayPickCard).join('') || '<p class="mv2-empty">No dishes found for this meal yet.</p>'}</div></section>
+        ${todaysPicksPager(pickCards)}
       </section>
-      ${microMealsAccordion()}
+      ${microMealsAccordion(pickCards)}
+      ${discoverDeck()}
+      ${FEATURED_COLLECTION_ENABLED ? discoverFeaturedCollection(pickCards) : ''}
     `;
   }
 
-  function todayPickCard(card) {
+  const featuredCollectionRotation = [
+    { title: 'Lunch Box Heroes', sources: ['Lunch Box & Tiffin'], icon: '🍱', copy: 'Packable favourites for busy mornings and happy lunches.' },
+    { title: 'Warm Bowls', sources: ['Warm & Light Bowls'], icon: '🍲', copy: 'Gentle soups, rasam and comforting warm bowls.' },
+    { title: 'Fresh Plates', sources: ['Sides, Salads & Add-ons', 'Chutneys, Salads & Add-ons'], icon: '🥗', copy: 'Fresh salads, bright sides and lighter plates.' },
+    { title: 'Tiny Tummy Favorites', sources: ['Tiny Tummy Favorites'], icon: '🥣', copy: 'Gentle first foods, growing bites and little plates.' },
+    { title: 'Sides & Add-ons', sources: ['Sides, Salads & Add-ons', 'Chutneys, Salads & Add-ons'], icon: '🥣', copy: 'Chutneys, salads and small sides that complete a plate.' },
+    { title: 'Power Plates', sources: ['Healthy Plates'], icon: '💪', copy: 'Balanced, protein-forward plates for energetic days.' },
+  ];
+  const tinyTummyFeaturedCollection = {
+    title: 'Tiny Tummy Favorites',
+    sources: ['Tiny Tummy Favorites'],
+    icon: '🥣',
+    copy: 'Gentle first foods, growing bites and little plates.',
+  };
+
+  function discoverFeaturedCollection(todayCards = []) {
+    const rotation = featuredCollectionForToday();
+    const collection = featuredCollectionFor(rotation);
+    if (!collection) return '';
+    const visibleToday = new Set(todayCards.flatMap((card) => [String(card?.recipe?.id || ''), norm(card?.recipe?.title)]).filter(Boolean));
+    const items = featuredCollectionItems(collection)
+      .filter((item) => !visibleToday.has(String(item?.id || item?.sourceId || '')) && !visibleToday.has(norm(item?.title)))
+      .slice(0, 8);
+    if (!items.length) return '';
+    return `
+      <section class="mv2-featured-collection" aria-label="Explore: ${esc(rotation.title)}">
+        <div class="mv2-section-title mv2-section-title-row">
+          <div><h2>🌍 Explore</h2><p>${esc(rotation.icon)} ${esc(rotation.title)}</p><small>${esc(collection.copy || collection.subtitle || 'A curated collection from Tomo.')}</small></div>
+          <button type="button" data-collection="${esc(collection.key)}">View All</button>
+        </div>
+        <div class="mv2-featured-collection-track">
+          ${items.map(collectionCard).join('')}
+        </div>
+      </section>
+    `;
+  }
+
+  function featuredCollectionForToday(date = new Date()) {
+    const dayIndex = Math.floor(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / (24 * 60 * 60 * 1000));
+    return featuredCollectionRotation[dayIndex % featuredCollectionRotation.length] || tinyTummyFeaturedCollection;
+  }
+
+  function featuredCollectionItems(collection) {
+    return browseDiverseRecipes(collectionDetail(collection).flatMap((group) => group.recipes || []), 12);
+  }
+
+  function featuredCollectionFor(rotation) {
+    const key = `featured-${slugify(rotation.title)}-${preferenceSignature()}`;
+    if (featuredCollectionCache.has(key)) return featuredCollectionCache.get(key);
+    const sourceNames = new Set(rotation.sources.map(norm));
+    const items = preferenceFilteredRecipes(recipes).filter((recipe) => {
+      const home = recipe.collectionHome || {};
+      return sourceNames.has(norm(home.collection)) || sourceNames.has(norm(home.hub));
+    });
+    if (!items.length) return null;
+    const collection = {
+      key,
+      title: rotation.title,
+      icon: rotation.icon,
+      copy: rotation.copy,
+      subtitle: rotation.copy,
+      imagePath: recipeImage(items[0]),
+      items,
+    };
+    featuredCollectionCache.set(key, collection);
+    return collection;
+  }
+
+  function discoverCollectionsPreview() {
+    const featured = preferredCollection(['Power Plates', 'Warm Bowls', 'Healthy Living', 'Warm & Light Bowls', 'Healthy Plates']) || collections[0];
+    const supporting = preferredCollections(['Lunch Box Heroes', 'Lunch Box & Tiffin', 'Tiny Tummy Favorites', 'Family Favorites'], featured?.key, 2);
+    const cards = [featured, ...supporting].filter(Boolean);
+    if (!cards.length) return '';
+    const featuredCard = cards[0];
+    const supportCards = cards.slice(1, 3);
+    return `
+      <section class="mv2-discover-collections" aria-label="Explore Collections">
+        <div class="mv2-section-title mv2-section-title-row">
+          <div><h2>Explore Collections</h2></div>
+          <button type="button" data-nav="collections">View all</button>
+        </div>
+        <div class="mv2-discover-collections-grid">
+          ${discoverCollectionPreviewCard(featuredCard, true)}
+          ${supportCards.map((collection) => discoverCollectionPreviewCard(collection, false)).join('')}
+        </div>
+      </section>
+    `;
+  }
+
+  function preferredCollection(titles, excludeKey = '') {
+    return titles
+      .map((title) => collections.find((collection) => norm(collection.title) === norm(title) && collection.key !== excludeKey))
+      .find(Boolean) || titles
+      .map((title) => collectionRoutes.find((collection) => norm(collection.title) === norm(title) && collection.key !== excludeKey))
+      .find(Boolean) || null;
+  }
+
+  function preferredCollections(titles, excludeKey = '', limit = 2) {
+    const seen = new Set([excludeKey].filter(Boolean));
+    return titles
+      .map((title) => preferredCollection([title]))
+      .filter((collection) => collection && !seen.has(collection.key) && seen.add(collection.key))
+      .slice(0, limit);
+  }
+
+  function discoverCollectionPreviewCard(collection, featured = false) {
+    const count = Number(collection.count || collection.items?.length || 0);
+    return `
+      <button class="mv2-discover-collection-card ${featured ? 'is-featured' : ''}" type="button" data-collection="${esc(collection.key)}">
+        ${featured ? `<span class="mv2-discover-collection-thumb">${imageTag(collectionImage(collection))}</span>` : ''}
+        <span>
+          <strong>${esc(collection.title)}</strong>
+          <small>${esc(collection.copy || collection.subtitle || 'Tomo collection')}</small>
+          <b>${count ? `${count} recipes` : 'Explore'} →</b>
+        </span>
+      </button>
+    `;
+  }
+
+  function todaysPicksPager(cards) {
+    const orderedCards = ['bestPick', 'quickEasy', 'familiarFavorite', 'tryNew']
+      .map((key) => cards.find((card) => card.key === key))
+      .filter(Boolean);
+    const pages = chunkList(orderedCards, 2);
+    state.todayPickPage = Math.min(state.todayPickPage || 0, Math.max(0, pages.length - 1));
+    return `
+      <section class="mv2-todays-picks mv2-today-pager">
+        <div class="mv2-section-title mv2-section-title-row">
+          <div><h2>Today's Picks</h2></div>
+          ${cards.length ? '<span class="mv2-today-header-actions"><button type="button" data-todays-view-all>View all →</button><small>Swipe for more →</small></span>' : ''}
+        </div>
+        <div class="mv2-today-pager-track" data-today-pager style="--today-page: ${state.todayPickPage || 0}">
+          ${pages.map((page, index) => `<div class="mv2-today-page" aria-label="Today's Picks page ${index + 1}">${page.map((card) => todayPickCard(card, { priority: index === 0 })).join('')}</div>`).join('') || '<p class="mv2-empty">No picks available for this meal.</p>'}
+        </div>
+      </section>
+    `;
+  }
+
+  function todaysPicksSheet() {
+    const sections = todaysPicksSheetSections(todayPickRecommendations(state.meal, state.mood, 4));
+    return `
+      <div class="mv2-modal-backdrop mv2-todays-sheet-backdrop" data-close-todays-sheet role="presentation">
+        <section class="mv2-todays-sheet" role="dialog" aria-modal="true" aria-labelledby="mv2TodaysSheetTitle">
+          <button class="mv2-modal-close" type="button" data-close-todays-sheet aria-label="Close View all">×</button>
+          <h2 id="mv2TodaysSheetTitle">View all</h2>
+          <p>Recommended for today.</p>
+          <div class="mv2-todays-sheet-grid">
+            ${sections.map(todaysPicksSheetSection).join('') || '<p class="mv2-empty">No picks available for this meal.</p>'}
+          </div>
+        </section>
+      </div>
+    `;
+  }
+
+  function todaysPicksSheetSections(cards) {
+    const reasons = [
+      { key: 'bestPick', title: "✨ Tomo's Pick", subtitle: 'Best match for today.' },
+      { key: 'quickEasy', title: '⚡ Quick', subtitle: 'Ready when you want something fast.' },
+      { key: 'familiarFavorite', title: '😊 Familiar', subtitle: 'Similar to what you already like.' },
+      { key: 'tryNew', title: '✨ Try New', subtitle: 'A less familiar regional pick for this mood.' }
+    ];
+    const seenRecipeIds = new Set();
+    return reasons
+      .map((reason) => {
+        const card = cards.find((candidate) => candidate.key === reason.key && candidate.recipe && !seenRecipeIds.has(candidate.recipe.id));
+        if (!card) return null;
+        seenRecipeIds.add(card.recipe.id);
+        return { ...reason, card };
+      })
+      .filter(Boolean);
+  }
+
+  function todaysPicksSheetSection(section) {
+    return `
+      <section class="mv2-todays-sheet-section">
+        <div class="mv2-todays-sheet-section-copy">
+          <h3>${esc(section.title)}</h3>
+          <p>${esc(section.subtitle)}</p>
+        </div>
+        ${todaysPicksSheetItem(section.card)}
+      </section>
+    `;
+  }
+
+  function todaysPicksSheetItem(card) {
+    const recipe = card.recipe;
+    const saved = isSaved(recipe.id, recipe.title);
+    return `
+      <article class="mv2-todays-sheet-item">
+        <button class="mv2-todays-sheet-main" type="button" data-recipe="${esc(recipe.id)}">
+          <span class="mv2-todays-sheet-image">${imageTag(recipeImage(recipe))}</span>
+          <span class="mv2-todays-sheet-copy">
+            <strong>${esc(recipe.title)}</strong>
+            <small>${totalTime(recipe)} min • ${esc(mealForRecipe(recipe))}</small>
+          </span>
+        </button>
+        <button class="mv2-todays-sheet-save ${saved ? 'active' : ''}" type="button" data-save="${esc(recipe.id)}" data-dish-name="${esc(recipe.title)}" data-source="todays-picks" aria-label="${saved ? 'Saved' : 'Save'}">${saved ? '♥' : '♡'}</button>
+      </article>
+    `;
+  }
+
+  function chunkList(items, size) {
+    const chunks = [];
+    for (let index = 0; index < items.length; index += size) chunks.push(items.slice(index, index + size));
+    return chunks;
+  }
+
+  function ingredientSpotlightCard() {
+    let entry = spotlightEntries[0];
+    try {
+      entry = typeof getTodaysSpotlight === 'function' ? getTodaysSpotlight(spotlightEntries) : spotlightEntries[0];
+    } catch (error) {
+      entry = spotlightEntries[0];
+    }
+    const spotlight = resolveSpotlightEntry(entry);
+    if (!spotlight || !spotlight.recipes.length) return '';
+    const [firstRecipe] = spotlight.recipes;
+    const image = spotlight.recipes.map((recipe) => recipeImage(recipe)).find(Boolean) || '/assets/images/dishes/homestyle-kitchen-placeholder.png';
+    return `
+      <section class="mv2-ingredient-spotlight">
+        <button class="mv2-spotlight-card" type="button" data-spotlight-recipes="${esc(spotlight.recipes.map((recipe) => recipe.id).join(','))}" data-spotlight-ingredient="${esc(spotlight.ingredient)}" data-spotlight-slugs="${esc(spotlight.slugs.join(','))}" aria-label="Explore ${esc(spotlight.ingredient)} recipes">
+          <span class="mv2-spotlight-image">${imageTag(image)}</span>
+          <span class="mv2-spotlight-copy">
+            <small><b>${esc(spotlight.emoji || '🍅')}</b>${esc(spotlight.title || 'Ingredient Spotlight')}</small>
+            <strong>${esc(spotlight.ingredient)}</strong>
+            <span>${esc(spotlight.subtitle)}:</span>
+            <em>${esc(spotlight.recipes.map((recipe) => recipe.title).join(' • '))}</em>
+            <i>Explore Regional Recipes →</i>
+          </span>
+        </button>
+      </section>
+    `;
+  }
+
+  function resolveSpotlightEntry(entry) {
+    if (!entry) return null;
+    const slugs = Array.isArray(entry.recipeSlugs) ? entry.recipeSlugs : [];
+    const titles = Array.isArray(entry.dishTitles) ? entry.dishTitles : [];
+    const resolved = slugs.map((slug, index) => resolveRecipeSlug(slug) || findRecipe(titles[index])).filter(Boolean);
+    const unique = resolved.filter((recipe, index, list) => list.findIndex((item) => item.id === recipe.id) === index);
+    return {
+      ...entry,
+      recipes: unique,
+      slugs: unique.map((recipe) => recipeSlug(recipe))
+    };
+  }
+
+  function resolveRecipeSlug(slug) {
+    const key = slugify(slug);
+    if (!key) return null;
+    const match = recipes.find((recipe) => {
+      const source = slugify(recipe.sourceId || recipe.source_id || '');
+      return recipeSlug(recipe) === key || source === key || source.endsWith(`-${key}`);
+    });
+    return match && recipeAllowedByPreferences(match) ? match : null;
+  }
+
+  function recipeSlug(recipe) {
+    return slugify(recipe?.slug || recipe?.title || recipe?.name || recipe?.sourceId || '');
+  }
+
+  function slugify(value) {
+    return norm(value).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+
+  function discoverDeck() {
+    const cards = discoverDeckCards();
+    state.discoverDeckPage = Math.min(state.discoverDeckPage || 0, Math.max(0, cards.length - 1));
+    if (!cards.length) return '';
+    const activeCategory = cards[state.discoverDeckPage]?.type || 'ingredient';
+    const categoryIndicators = [
+      { type: 'ingredient', label: 'Ingredient Spotlight' },
+      { type: 'region', label: 'Regional Discovery' },
+      { type: 'tip', label: 'Cooking Tip' }
+    ].map((category) => ({ ...category, page: cards.findIndex((card) => card.type === category.type) }));
+    return `
+      <section class="mv2-discover-deck">
+        <div class="mv2-section-title mv2-section-title-row"><div><h2>✨ Discover with Tomo</h2><p>Little discoveries that make every meal more interesting.</p></div><small class="mv2-discover-swipe-hint">Swipe →</small></div>
+        <div class="mv2-pager-dots" aria-label="Discover with Tomo categories">${categoryIndicators.map((category) => `<button class="${category.type === activeCategory ? 'active' : ''}" type="button" data-discover-category-page="${category.page}" data-discover-category="${category.type}" aria-label="Show ${category.label}"></button>`).join('')}</div>
+        <div class="mv2-discover-deck-track" data-discover-deck-track style="--discover-page: ${state.discoverDeckPage || 0}">
+          ${cards.map(discoverDeckCard).join('')}
+        </div>
+      </section>
+    `;
+  }
+
+  let beta3VisibleDiscoverCards = null;
+
+  function discoverDeckCardPool() {
+    return [
+      ...beta3IngredientLessons.map(ingredientLessonCard),
+      ...beta3DiscoverRegions.map(regionalDiscoverCardFor),
+      ...beta3CookingTips.map(cookingTipCard)
+    ];
+  }
+
+  function discoverDeckCards() {
+    if (beta3VisibleDiscoverCards) return beta3VisibleDiscoverCards;
+    const pool = discoverDeckCardPool();
+    beta3VisibleDiscoverCards = ['ingredient', 'region', 'tip'].map((type) => {
+      const categoryCards = pool.filter((card) => card.type === type);
+      return categoryCards[Math.floor(Math.random() * categoryCards.length)];
+    }).filter(Boolean);
+    return beta3VisibleDiscoverCards;
+  }
+
+  const beta3IngredientLessons = [
+    { name: 'Coconut', subtitle: 'Adds creaminess, body, and coastal comfort to dishes.', body: 'Coconut softens spice, adds gentle sweetness, and gives coastal dishes their rounded comfort.', dishes: ['Avial', 'Coconut Rice', 'Coconut Chutney'], tryWhen: 'You want creaminess, mild sweetness, or coastal flavor.' },
+    { name: 'Curd', subtitle: 'Brings cooling tang and gentle richness.', body: 'Curd cools spice, softens texture and adds a clean tang to rice dishes, gravies and sides.', dishes: ['Curd Rice', 'Dahi Puri', 'Cucumber Raita'], tryWhen: 'You want cooling balance, soft texture, or gentle tang.' },
+    { name: 'Tomato', subtitle: 'Adds brightness, body, and everyday tang.', body: 'Tomato builds a juicy base, rounds out spice and gives everyday dishes their familiar savory depth.', dishes: ['Tomato Rice', 'Tomato Chutney', 'Tomato Bath'], tryWhen: 'You want bright acidity, color, or a quick gravy base.' },
+    { name: 'Curry Leaves', subtitle: 'Brings a warm, unmistakable tempering aroma.', body: 'Curry leaves release their deepest aroma in hot oil and give simple dishes a distinctly southern character.', dishes: ['Lemon Rice', 'Coconut Rice', 'Rasam Rice'], tryWhen: 'You want a fragrant tempering or a familiar southern finish.' },
+    { name: 'Green Chilli', subtitle: 'Adds fresh heat without heavy spice.', body: 'Green chilli brings a bright, grassy heat that can lift snacks, curries and quick stir-fries.', dishes: ['Mirchi Bajji', 'Mirchi Ka Salan', 'Chilli Paneer'], tryWhen: 'You want lively heat with a fresh flavor.' },
+    { name: 'Ginger', subtitle: 'Adds warmth, freshness, and gentle bite.', body: 'Ginger brings aromatic warmth and a clean bite that balances rich, sweet and savory dishes.', dishes: ['Ginger Tea', 'Puli Inji', 'Ginger Chutney'], tryWhen: 'You want warming aroma or a fresh counterpoint to richness.' },
+    { name: 'Garlic', subtitle: 'Builds deep savory aroma and warmth.', body: 'Garlic becomes sweet and mellow when cooked slowly, or bold and sharp when added later.', dishes: ['Garlic Chicken', 'Garlic Naan', 'Garlic Rasam'], tryWhen: 'You want a strong savory base or a bold aromatic finish.' },
+    { name: 'Turmeric', subtitle: 'Brings earthiness, warmth, and golden color.', body: 'Turmeric adds gentle earthiness and a warm golden tone while supporting layers of spice.', dishes: ['Turmeric Milk', 'Lemon Rice', 'Khichdi'], tryWhen: 'You want earthy warmth, color, or a comforting spice base.' }
+  ];
+
+  const beta3DiscoverRegions = ['Karnataka', 'Kerala', 'Tamil Nadu', 'Andhra & Telangana', 'Maharashtra', 'Bengal', 'Northeast'];
+
+  const beta3CookingTips = [
+    { id: 'taste-as-you-cook', title: 'Taste As You Cook', subtitle: 'Small adjustments create big flavour.', body: 'Season gradually and taste before serving. Salt, sourness and spice become easier to balance one step at a time.', chips: ['Curries', 'Dal', 'Soups'], image: '/assets/images/tomo-learns/tomo-tip-taste-as-you-cook.jpg' },
+    { id: 'prep-before-you-start', title: 'Prep Before You Start', subtitle: 'Cooking becomes calmer.', body: 'Wash, chop and measure everything first. A few minutes of prep makes cooking smoother and reduces mistakes.', chips: ['Stir-fries', 'Upma', 'Fried Rice'], image: '/assets/images/tomo-learns/tomo-tip-prep-before-you-start.jpg' },
+    { id: 'build-flavour-in-layers', title: 'Build Flavour in Layers', subtitle: 'Great dishes are built, not rushed.', body: 'Cook aromatics first, then spices, then the main ingredients. Layering flavour gives better depth than adding everything together.', chips: ['Sabzis', 'Curries', 'Pulao'], image: '/assets/images/tomo-learns/tomo-tip-build-flavour-in-layers.jpg' },
+    { id: 'rest-before-serving', title: 'Rest Before Serving', subtitle: 'Let flavours settle.', body: 'Many rice dishes, curries and gravies taste better after resting for a few minutes before serving.', chips: ['Biryani', 'Pulao', 'Curry'], image: '/assets/images/tomo-learns/tomo-tip-rest-before-serving.jpg' },
+    { id: 'smart-kitchen-habits', title: 'Smart Kitchen Habits', subtitle: 'Tiny habits make cooking easier.', body: 'Keep your knife, board and ingredients organised. A tidy workspace saves time and helps you enjoy cooking.', chips: ['Every recipe'], image: '/assets/images/tomo-learns/tomo-tip-smart-kitchen-habits.jpg' }
+  ];
+
+  function ingredientLessonCard(lesson) {
+    const lessonRecipes = lesson.dishes.map(findRecipe).filter(Boolean);
+    return {
+      id: `ingredient-${slugify(lesson.name)}`,
+      type: 'ingredient', accent: 'ingredient', image: discoverIngredientImage(lesson.name), label: 'Ingredient Spotlight',
+      title: lesson.name, subtitle: lesson.subtitle, insightBody: lesson.body, chips: lesson.dishes,
+      cta: `Explore ${lesson.name} →`, recipeIds: lessonRecipes.map((recipe) => recipe.id), searchLabel: lesson.name, tryWhen: lesson.tryWhen
+    };
+  }
+
+  function regionalDiscoverCardFor(region) {
+    const regionRecipes = preferenceFilteredRecipes(recipes).filter((recipe) => recipeMatchesDiscoverRegion(recipe, region)).filter((recipe) => recommendationRecipeRole(recipe) !== 'condiment').slice(0, 3);
+    return {
+      id: `region-${slugify(region)}`, type: 'region', accent: 'region', image: discoverRegionImage(region), label: 'Regional Discovery',
+      title: region, subtitle: discoverRegionTagline(region), insightBody: discoverRegionBody(region), chips: regionRecipes.map((recipe) => recipe.title),
+      signatureIngredients: discoverRegionIngredients(region).slice(0, 3), cta: `Learn ${region} →`, recipeIds: regionRecipes.map((recipe) => recipe.id), searchLabel: region
+    };
+  }
+
+  function cookingTipCard(tip) {
+    return {
+      id: `tip-${tip.id}`, type: 'tip', accent: 'wisdom', image: tip.image, label: 'Cooking Tip', title: tip.title,
+      subtitle: tip.subtitle, insightBody: tip.body, chips: tip.chips, cta: 'Learn this tip', searchLabel: tip.title
+    };
+  }
+
+  function discoverIntroCard() {
+    return {
+      id: 'intro',
+      type: 'intro',
+      accent: 'wisdom',
+      title: 'Discover something new with Tomo.',
+      subtitle: 'Little discoveries can make every meal more interesting.',
+      chips: ['✓ Ingredient Spotlight', '✓ Regional Discovery', '✓ Kitchen Wisdom', 'Learns as you cook', '○ It’s Been A While', '○ Kitchen Variety', '○ Kitchen Rhythm', '○ Seasonal Picks'],
+      cta: 'Swipe to begin →'
+    };
+  }
+
+  function ingredientDiscoverCard() {
+    let entry = spotlightEntries[0];
+    try {
+      entry = typeof getTodaysSpotlight === 'function' ? getTodaysSpotlight(spotlightEntries) : spotlightEntries[0];
+    } catch {
+      entry = spotlightEntries[0];
+    }
+    const spotlight = resolveSpotlightEntry(entry);
+    if (!spotlight?.recipes?.length) return null;
+    const ingredientName = spotlight.ingredient || 'Ingredient';
+    const isCoconut = norm(ingredientName) === 'coconut';
+    const spotlightRecipes = ingredientSpotlightRecipes(spotlight);
+    const ingredientCopy = isCoconut
+      ? 'Adds creaminess, body, and coastal comfort to dishes.'
+      : spotlight.subtitle;
+    return {
+      id: 'ingredient',
+      type: 'ingredient',
+      accent: 'ingredient',
+      emoji: isCoconut ? '🥥' : spotlight.emoji || '🌿',
+      image: discoverIngredientImage(ingredientName),
+      label: 'Ingredient Spotlight',
+      title: ingredientName,
+      subtitle: ingredientCopy,
+      insightBody: isCoconut
+        ? 'Coconut softens spice, adds gentle sweetness, and gives coastal dishes their rounded comfort.'
+        : `${ingredientName} can change the body, aroma and comfort of a dish without making it feel unfamiliar.`,
+      chips: spotlightRecipes.map((recipe) => recipe.title).slice(0, 3),
+      cta: `Explore ${ingredientName} →`,
+      recipeIds: spotlightRecipes.map((recipe) => recipe.id),
+      searchLabel: ingredientName,
+      tryWhen: isCoconut
+        ? 'You want creaminess, mild sweetness, or coastal flavor.'
+        : 'You want a familiar dish to carry a little more texture, body, or regional character.',
+      slugs: spotlight.slugs
+    };
+  }
+
+  function ingredientSpotlightRecipes(spotlight) {
+    const prioritized = norm(spotlight?.ingredient) === 'coconut'
+      ? ['Avial', 'Coconut Rice', 'Coconut Chutney'].map(findRecipe).filter(Boolean)
+      : [];
+    return uniqueRecipes([...prioritized, ...(spotlight?.recipes || [])]).filter((recipe) => recipeAllowedByPreferences(recipe));
+  }
+
+  function uniqueRecipes(items) {
+    const seen = new Set();
+    return items.filter((recipe) => {
+      if (!recipe?.id || seen.has(recipe.id)) return false;
+      seen.add(recipe.id);
+      return true;
+    });
+  }
+
+  function regionalDiscoverCard() {
+    const recent = latestKnownRecipe();
+    const region = discoverSpecificRegion(recent);
+    const regionRecipes = preferenceFilteredRecipes(recipes)
+      .filter((recipe) => recipeMatchesDiscoverRegion(recipe, region))
+      .filter((recipe) => recommendationRecipeRole(recipe) !== 'condiment')
+      .slice(0, 3);
+    const signatureIngredients = discoverRegionIngredients(region).slice(0, 3);
+    return {
+      id: 'region',
+      type: 'region',
+      accent: 'region',
+      image: discoverRegionImage(region),
+      label: 'Regional Discovery',
+      title: region,
+      subtitle: discoverRegionTagline(region),
+      insightBody: discoverRegionBody(region),
+      chips: regionRecipes.map((recipe) => recipe.title).slice(0, 3),
+      signatureIngredients,
+      cta: `Learn ${region} →`,
+      recipeIds: regionRecipes.map((recipe) => recipe.id),
+      searchLabel: region
+    };
+  }
+
+  function discoverSpecificRegion(recipe) {
+    const supported = ['Karnataka', 'Kerala', 'Tamil Nadu', 'Andhra & Telangana', 'Maharashtra', 'Bengal', 'Northeast'];
+    const aliases = [
+      ...recipeRegions(recipe),
+      ...recipeSubRegions(recipe),
+      ...recipeCuisines(recipe),
+      recipe?.region,
+      recipe?.cuisine,
+      recipe?.state,
+      recipe?.collectionHome?.collection,
+      recipe?.collectionHome?.hub,
+      recipe?.title,
+      recipe?.description
+    ].filter(Boolean);
+    const haystack = norm(aliases.join(' '));
+    const exact = supported.find((region) => haystack.includes(norm(region)));
+    if (exact) return exact;
+    if (/andhra|telangana|hyderabad|telugu/.test(haystack)) return 'Andhra & Telangana';
+    if (/tamil|chettinad|kongu|madurai/.test(haystack)) return 'Tamil Nadu';
+    if (/kerala|malabar|sadya|onam/.test(haystack)) return 'Kerala';
+    if (/karnataka|udupi|mangalorean|mysore|bengaluru/.test(haystack)) return 'Karnataka';
+    if (/maharashtra|maharashtrian|konkan|malvani|kolhapuri/.test(haystack)) return 'Maharashtra';
+    if (/bengal|bengali|kolkata/.test(haystack)) return 'Bengal';
+    if (/northeast|north east|assam|manipur|meghalaya|nagaland|mizoram|tripura|arunachal|sikkim/.test(haystack)) return 'Northeast';
+    return preferenceFilteredRecipes(recipes).find((item) => recipeMatchesDiscoverRegion(item, 'Karnataka')) ? 'Karnataka' : supported[0];
+  }
+
+  function recipeMatchesDiscoverRegion(recipe, region) {
+    const haystack = norm([
+      ...recipeRegions(recipe),
+      ...recipeSubRegions(recipe),
+      ...recipeCuisines(recipe),
+      recipe?.region,
+      recipe?.cuisine,
+      recipe?.state,
+      recipe?.collectionHome?.collection,
+      recipe?.collectionHome?.hub,
+      recipe?.title,
+      recipe?.description
+    ].filter(Boolean).join(' '));
+    if (region === 'Andhra & Telangana') return /andhra|telangana|hyderabad|telugu/.test(haystack);
+    if (region === 'Tamil Nadu') return /tamil|chettinad|kongu|madurai/.test(haystack);
+    if (region === 'Kerala') return /kerala|malabar|sadya|onam/.test(haystack);
+    if (region === 'Karnataka') return /karnataka|udupi|mangalorean|mysore|bengaluru/.test(haystack);
+    if (region === 'Maharashtra') return /maharashtra|maharashtrian|konkan|malvani|kolhapuri/.test(haystack);
+    if (region === 'Bengal') return /bengal|bengali|kolkata/.test(haystack);
+    if (region === 'Northeast') return /northeast|north east|assam|manipur|meghalaya|nagaland|mizoram|tripura|arunachal|sikkim/.test(haystack);
+    return haystack.includes(norm(region));
+  }
+
+  function discoverRegionBody(region) {
+    const copy = {
+      Karnataka: 'Karnataka cooking often balances rice, lentils, coconut, jaggery and sharp tempering for steady home comfort.',
+      Kerala: 'Kerala dishes lean on coconut, curry leaves, pepper, rice and gentle sourness for soft coastal depth.',
+      'Tamil Nadu': 'Tamil Nadu cooking layers rice, dal, tamarind, spice and crisp tempering into bright everyday meals.',
+      'Andhra & Telangana': 'Andhra and Telangana cooking often brings chilli heat, tang, dal comfort and bold pantry rhythm.',
+      Maharashtra: 'Maharashtra dishes move between peanuts, coconut, goda masala, bhakri, poha and coastal heat.',
+      Bengal: 'Bengal cooking uses mustard, fish, rice, vegetables and gentle sweetness with a very distinct comfort signature.',
+      Northeast: 'Northeast cooking often centers rice, greens, broths, smoked notes and fermented depth.'
+    };
+    return copy[region] || `${region} dishes often share pantry patterns, so one familiar ingredient can unlock several meals.`;
+  }
+
+  function discoverRegionTagline(region) {
+    const copy = {
+      Karnataka: 'Coconut, lentils and gentle sweetness shape everyday comfort.',
+      Kerala: 'Coconut, pepper and curry leaves build soft coastal depth.',
+      'Tamil Nadu': 'Rice, tamarind and crisp tempering bring bright balance.',
+      'Andhra & Telangana': 'Chilli, tang and dal create a bold pantry rhythm.',
+      Maharashtra: 'Peanuts, coconut and warming masala meet grain-led comfort.',
+      Bengal: 'Mustard, rice and seasonal produce shape a gentle cuisine.',
+      Northeast: 'Rice, greens and fermented notes create clean, deep flavor.'
+    };
+    return copy[region] || `${region} cooking is shaped by its pantry, produce and home techniques.`;
+  }
+
+  function kitchenWisdomCard() {
+    const pantryCount = state.selectedIngredients.size;
+    const cookedCount = state.cookedDishes.length;
+    return {
+      id: 'wisdom',
+      type: 'wisdom',
+      accent: 'wisdom',
+      image: '/assets/images/dishes/bassaru.png',
+      label: 'Kitchen Wisdom',
+      title: pantryCount ? `${pantryCount} ingredients selected` : 'Small patterns matter',
+      subtitle: pantryCount ? 'Tomo can turn pantry signals into better picks.' : 'Cook, save and search to sharpen recommendations.',
+      insightBody: pantryCount
+        ? 'When you select pantry ingredients, Tomo learns what is actually available before suggesting what to cook.'
+        : 'Small repeated actions help Tomo understand your real kitchen rhythm, not just a single craving.',
+      chips: ['Pantry', 'Mood', 'Memory'],
+      cta: pantryCount ? 'See why it helps →' : 'Learn the pattern →',
+      searchLabel: pantryCount ? [...state.selectedIngredients].slice(0, 2).join(', ') : state.mood || 'comfort'
+    };
+  }
+
+  function beenAWhileCard() {
+    const candidate = state.cookedDishes
+      .map((record) => ({ record, recipe: recipeForRecord(record) }))
+      .filter((item) => item.recipe)
+      .sort((a, b) => new Date(a.record.timestamp || 0) - new Date(b.record.timestamp || 0))[0];
+    if (!candidate) return null;
+    return {
+      id: 'been-a-while',
+      type: 'been-a-while',
+      accent: 'been-a-while',
+      personalized: true,
+      image: recipeImage(candidate.recipe),
+      label: "It's Been A While",
+      title: candidate.recipe.title,
+      subtitle: 'A dish from your cooking trail is ready for a revisit.',
+      chips: [journalCookedTimeLabel(candidate.record.timestamp), mealForRecipe(candidate.recipe)],
+      cta: 'Cook again →',
+      recipeIds: [candidate.recipe.id],
+      searchLabel: candidate.recipe.title
+    };
+  }
+
+  function kitchenVarietyCard() {
+    const recentFamilies = dishMemoryEvents().slice(0, 10).map((event) => dishFamily(recipeForRecord(event))).filter(Boolean);
+    const family = mostCommon(recentFamilies) || dishFamily(latestKnownRecipe());
+    const candidate = preferenceFilteredRecipes(recipes).find((recipe) => dishFamily(recipe) && dishFamily(recipe) !== family && todaysPickRoleEligible(recipe, state.meal));
+    if (!candidate) return null;
+    return {
+      id: 'variety',
+      type: 'variety',
+      accent: 'variety',
+      personalized: true,
+      image: recipeImage(candidate),
+      label: 'Kitchen Variety',
+      title: 'Try a different lane',
+      subtitle: family ? `You’ve had a few ${family} picks lately.` : 'A little variety keeps discovery fresh.',
+      chips: [candidate.title, mealForRecipe(candidate)],
+      cta: 'Show variety →',
+      recipeIds: [candidate.id],
+      searchLabel: candidate.title
+    };
+  }
+
+  function seasonalPicksCard() {
+    const seasonal = preferenceFilteredRecipes(recipes).filter((recipe) => tags(recipe).some((tag) => /rainy|summer|seasonal|cooling/.test(norm(tag)))).slice(0, 3);
+    if (!seasonal.length) return null;
+    return {
+      id: 'seasonal',
+      type: 'seasonal',
+      accent: 'seasonal',
+      personalized: true,
+      image: recipeImage(seasonal[0]),
+      label: 'Seasonal Picks',
+      title: weatherContext().condition || 'Today’s weather',
+      subtitle: 'Seasonal ideas that fit the moment.',
+      chips: seasonal.map((recipe) => recipe.title).slice(0, 3),
+      cta: 'Browse seasonal picks →',
+      recipeIds: seasonal.map((recipe) => recipe.id),
+      searchLabel: 'seasonal'
+    };
+  }
+
+  function kitchenRhythmCard() {
+    const cookedMeals = state.cookedDishes.map((record) => mealForRecipe(recipeForRecord(record))).filter(Boolean);
+    const meal = mostCommon(cookedMeals) || mealLabel(state.meal);
+    return {
+      id: 'rhythm',
+      type: 'rhythm',
+      accent: 'rhythm',
+      personalized: true,
+      image: '/assets/images/dishes/dal-rice.png',
+      label: 'Kitchen Rhythm',
+      title: `${meal} has a pattern`,
+      subtitle: 'Tomo is learning when your kitchen repeats.',
+      chips: [`${state.cookedDishes.length} cooked`, 'Memory', 'Routine'],
+      cta: 'Tune today’s picks →',
+      searchLabel: meal
+    };
+  }
+
+  function discoverDeckCard(card) {
+    const isNew = card.personalized && !state.discoverSeenCards.has(card.id);
+    const image = discoverDeckSubjectImage(card);
+    const fact = discoverDeckFact(card);
+    const label = discoverDeckLabel(card);
+    const subjectLabel = discoverOverlayLabel(card);
+    const examplesLabel = discoverDeckExamplesLabel(card);
+    const attrs = card.recipeIds?.length
+      ? `data-discover-card="${esc(card.id)}" data-discover-recipes="${esc(card.recipeIds.join(','))}" data-discover-search="${esc(card.searchLabel || card.title)}"`
+      : card.id === 'intro'
+        ? 'data-discover-intro'
+        : `data-discover-card="${esc(card.id)}" data-discover-search="${esc(card.searchLabel || card.title)}"`;
+    return `
+      <button class="mv2-discover-card mv2-discover-card-${esc(card.accent || 'ingredient')} ${card.type === 'intro' ? 'is-intro' : ''}" type="button" data-discover-category="${esc(card.type)}" ${attrs}>
+        ${card.type === 'intro' ? '' : discoverDeckVisual(card, image)}
+        <span class="mv2-discover-card-copy">
+          <small>${esc(label)}${isNew ? '<b>NEW</b>' : ''}</small>
+          <span class="mv2-discover-card-subject"><strong>${esc(card.title)}</strong>${subjectLabel ? `<i>· ${esc(subjectLabel)}</i>` : ''}</span>
+          <em>${esc(card.subtitle)}</em>
+          ${fact ? `<span class="mv2-discover-card-fact">${esc(fact)}</span>` : ''}
+          <span class="mv2-discover-card-divider" aria-hidden="true"></span>
+          ${discoverDeckSupportSections(card, examplesLabel)}
+          <u>${esc(card.cta || 'Explore →')}</u>
+        </span>
+      </button>
+    `;
+  }
+
+  const missingIngredientPhotoWarnings = new Set();
+
+  function discoverOverlayLabel(card) {
+    if (!card) return '';
+    const title = card.title || card.name || '';
+    const explicit = card.overlayLabel || card.broaderRegion || card.cuisineGroup || card.ingredientCategory || card.ingredientType || '';
+    let label = explicit;
+    if (card.type === 'ingredient') label = discoverIngredientBenefitLabel(title) || (!label ? discoverIngredientCategoryLabel(title) : label);
+    if (!label && card.type === 'region') label = discoverBroaderRegionLabel(title, card);
+    return label && norm(label) !== norm(title) ? label : '';
+  }
+
+  function discoverIngredientBenefitLabel(name) {
+    const key = norm(name);
+    return {
+      garlic: 'Flavor Booster',
+      turmeric: 'Ayurvedic Favourite',
+      curd: 'Gut Friendly',
+      ginger: 'Warming Ingredient',
+      tomato: 'Rich in Lycopene',
+      peanuts: 'Protein Rich',
+      peanut: 'Protein Rich',
+      'pumpkin seeds': 'Magnesium Rich',
+      'pumpkin seed': 'Magnesium Rich',
+      coconut: 'Creamy Texture',
+      'curry leaves': 'Aroma Booster',
+      'green chilli': 'Heat Builder',
+      'green chili': 'Heat Builder',
+      tamarind: 'Tangy Depth',
+      ragi: 'Calcium Rich',
+      'horse gram': 'Protein Rich',
+      dal: 'Protein Rich',
+      paneer: 'Protein Rich',
+      fish: 'Omega Rich',
+      'coastal fish': 'Omega Rich'
+    }[key] || '';
+  }
+
+  function discoverIngredientCategoryLabel(name) {
+    const key = norm(name);
+    const overrides = {
+      coconut: 'Pantry Staple',
+      curd: 'Dairy',
+      tomato: 'Vegetable',
+      'curry leaves': 'Herb',
+      'green chilli': 'Spice',
+      'green chili': 'Spice',
+      ginger: 'Everyday Essential',
+      garlic: 'Everyday Essential',
+      turmeric: 'Spice',
+      tamarind: 'Spice',
+      'horse gram': 'Lentil',
+      ragi: 'Grain',
+      millets: 'Grain',
+      rice: 'Grain',
+      dal: 'Lentil',
+      paneer: 'Protein',
+      fish: 'Protein',
+      'coastal fish': 'Protein'
+    };
+    if (overrides[key]) return overrides[key];
+    const catalogItem = pantryCatalog.find((item) => norm(item.ingredient_name || item.name || item.ingredient_key) === key);
+    const category = norm(catalogItem?.category || '');
+    if (/vegetable/.test(category)) return 'Vegetable';
+    if (/fruit/.test(category)) return 'Fruit';
+    if (/dairy/.test(category)) return 'Dairy';
+    if (/protein|meat|seafood/.test(category)) return 'Protein';
+    if (/herb|aromatic/.test(category)) return 'Herb';
+    if (/spice|seasoning|chilli|chili/.test(category)) return 'Spice';
+    if (/grain|millet|dal|pulse|lentil/.test(category)) {
+      return /dal|lentil|pulse|gram|bean|chana|rajma/.test(key) ? 'Lentil' : 'Grain';
+    }
+    return '';
+  }
+
+  function discoverBroaderRegionLabel(region, card = {}) {
+    const metadata = norm([
+      card.broaderRegion,
+      card.cuisineGroup,
+      card.cuisine,
+      card.regionalNotes,
+      region
+    ].filter(Boolean).join(' '));
+    if (/northeast|north east|assam|manipur|meghalaya|nagaland|mizoram|tripura|arunachal|sikkim/.test(metadata)) return 'Northeast India';
+    if (/kerala|karnataka|tamil|andhra|telangana|south india|udupi|chettinad/.test(metadata)) return 'South India';
+    if (/bengal|odisha|bihar|jharkhand|east india/.test(metadata)) return 'East India';
+    if (/maharashtra|goa|gujarat|konkan|west india/.test(metadata)) return /coastal|konkan|goa/.test(metadata) ? 'Coastal Cuisine' : 'West India';
+    if (/punjab|haryana|rajasthan|uttar pradesh|delhi|north india/.test(metadata)) return 'North India';
+    if (/kashmir|ladakh|himachal|uttarakhand|mountain|himalaya/.test(metadata)) return 'Mountain Cuisine';
+    if (/coastal|malabar|mangalorean/.test(metadata)) return 'Coastal Cuisine';
+    return '';
+  }
+
+  function discoverDeckVisual(card, image) {
+    if (card.type === 'ingredient') {
+      if (image) return `<span class="mv2-discover-card-image mv2-discover-card-ingredient-photo">${imageTag(image)}</span>`;
+      if (mobileDebugRequested && !missingIngredientPhotoWarnings.has(card.title)) {
+        missingIngredientPhotoWarnings.add(card.title);
+        console.warn(`[Discover with Tomo] Missing ingredient photo: ${card.title}`);
+      }
+      return `<span class="mv2-discover-card-image mv2-discover-card-ingredient-photo is-missing-photo" data-missing-ingredient-photo="${esc(card.title)}"></span>`;
+    }
+    if (card.type === 'region') {
+      if (image) {
+        return `<span class="mv2-discover-card-image mv2-discover-card-region-visual">${imageTag(image)}</span>`;
+      }
+      const images = discoverRegionVisualIngredients(card.title).map(discoverIngredientImage).filter(Boolean).slice(0, 3);
+      return `
+        <span class="mv2-discover-card-image mv2-discover-card-region-visual">
+          <span class="mv2-discover-region-photo-grid">${images.map((path) => `<span>${imageTag(path)}</span>`).join('')}</span>
+        </span>
+      `;
+    }
+    return `<span class="mv2-discover-card-image">${imageTag(image)}</span>`;
+  }
+
+  function discoverIngredientImage(name) {
+    const images = {
+      coconut: '/assets/images/tomo-learns/tomo-ingredient-coconut.jpg',
+      curd: '/assets/images/tomo-learns/tomo-ingredient-curd.jpg',
+      tomato: '/assets/images/tomo-learns/tomo-ingredient-tomato.jpg',
+      'curry leaves': '/assets/images/tomo-learns/tomo-ingredient-curry-leaves.jpg',
+      'green chilli': '/assets/images/tomo-learns/tomo-ingredient-green-chilli.jpg',
+      'green chili': '/assets/images/tomo-learns/tomo-ingredient-green-chilli.jpg',
+      ginger: '/assets/images/tomo-learns/tomo-ingredient-ginger.jpg',
+      garlic: '/assets/images/tomo-learns/tomo-ingredient-garlic.jpg',
+      turmeric: '/assets/images/tomo-learns/tomo-ingredient-turmeric.jpg',
+      tamarind: '/assets/images/tomo-learns/tomo-ingredient-tamarind.jpg',
+      'horse gram': '/assets/images/learns/horse-gram-ingredient-postcard.png',
+      'coastal fish': '/assets/images/ingredients/fish.png',
+      fish: '/assets/images/ingredients/fish.png',
+      ragi: '/assets/images/ingredients/millet.png',
+      millets: '/assets/images/ingredients/millet.png',
+      palak: '/assets/images/ingredients/spinach.png',
+      greens: '/assets/images/ingredients/spinach.png',
+      paneer: '/assets/images/ingredients/paneer.png',
+      pepper: '/assets/images/ingredients/pepper.png',
+      'black pepper': '/assets/images/ingredients/pepper.png',
+      rice: '/assets/images/ingredients/rice.png',
+      dal: '/assets/images/ingredients/dal.png',
+      'red chilli': '/assets/images/ingredients/chilli.png'
+    };
+    return images[norm(name)] || '';
+  }
+
+  function discoverRegionImage(region) {
+    const images = {
+      Karnataka: '/assets/images/tomo-learns/tomo-region-karnataka.jpg',
+      Kerala: '/assets/images/tomo-learns/tomo-region-kerala.jpg',
+      'Tamil Nadu': '/assets/images/tomo-learns/tomo-region-tamil-nadu.jpg',
+      'Andhra & Telangana': '/assets/images/tomo-learns/tomo-region-andhra-telangana.jpg',
+      Maharashtra: '/assets/images/tomo-learns/tomo-region-maharashtra.jpg',
+      Bengal: '/assets/images/tomo-learns/tomo-region-bengal.jpg',
+      Northeast: '/assets/images/tomo-learns/tomo-region-northeast.jpg'
+    };
+    return images[region] || '';
+  }
+
+  function discoverRegionVisualIngredients(region) {
+    const map = {
+      Karnataka: ['Coconut', 'Curry leaves', 'Rice'],
+      Kerala: ['Coconut', 'Curry leaves', 'Pepper'],
+      'Tamil Nadu': ['Rice', 'Curry leaves', 'Dal'],
+      'Andhra & Telangana': ['Red chilli', 'Dal', 'Rice'],
+      Maharashtra: ['Coconut', 'Rice', 'Red chilli'],
+      Bengal: ['Rice', 'Fish', 'Greens'],
+      Northeast: ['Rice', 'Greens', 'Red chilli']
+    };
+    return map[region] || ['Rice', 'Dal', 'Red chilli'];
+  }
+
+  function discoverDeckSupportSections(card, examplesLabel) {
+    const section = (label, chips) => `
+      <span class="mv2-discover-card-used">
+        <b>${esc(label)}</b>
+        <span class="mv2-discover-card-chips">${chips.map((chip) => `<i>${esc(chip)}</i>`).join('')}</span>
+      </span>
+    `;
+    if (card.type === 'region') {
+      return [
+        section('Signature ingredients', (card.signatureIngredients || []).slice(0, 3)),
+        section('Try these', (card.chips || []).slice(0, 3))
+      ].join('');
+    }
+    const limit = card.type === 'intro' ? 8 : ['ingredient', 'tip'].includes(card.type) ? 3 : 2;
+    return section(examplesLabel, (card.chips || []).slice(0, limit));
+  }
+
+  function discoverDeckSubjectImage(card) {
+    if (card.type === 'ingredient' && norm(card.title).includes('horse gram')) {
+      return '/assets/images/learns/horse-gram-ingredient-postcard.png';
+    }
+    if (card.type === 'wisdom') {
+      return '/assets/images/learns/cooking-tip-tempering-postcard.png';
+    }
+    if (card.type === 'ingredient' || card.type === 'region') return card.image || '';
+    return card.image || '/assets/images/dishes/homestyle-kitchen-placeholder.png';
+  }
+
+  function discoverDeckExamplesLabel(card) {
+    if (card.type === 'ingredient') return 'Commonly used in';
+    if (card.type === 'region') return 'Featured dishes';
+    return 'Try with';
+  }
+
+  function discoverDeckLabel(card) {
+    if (card.type === 'wisdom') return 'Cooking Tip';
+    if (card.type === 'seasonal') return 'Seasonal Pick';
+    return card.label || 'Discover';
+  }
+
+  function discoverDeckFact(card) {
+    if (card.type === 'intro') return '';
+    const title = card.title || 'This pick';
+    if (card.type === 'ingredient' || card.type === 'region' || card.type === 'tip') return '';
+    if (card.type === 'wisdom') {
+      return 'Small signals help Tomo learn what repeats.';
+    }
+    if (card.type === 'seasonal') {
+      return 'Seasonal picks work best when weather, appetite and pantry rhythm line up.';
+    }
+    if (card.type === 'variety') {
+      return 'Trying a nearby flavor lane helps Tomo learn your real comfort zone.';
+    }
+    if (card.type === 'rhythm') {
+      return 'Repeated meal moments can reveal when you want comfort, speed or variety.';
+    }
+    if (card.type === 'been-a-while') {
+      return 'Revisiting cooked dishes helps Tomo separate favorites from one-time cravings.';
+    }
+    return 'Every save, cook and search teaches Tomo a little more about your kitchen.';
+  }
+
+  function currentDiscoverInsightCard() {
+    const cards = discoverDeckCards();
+    return cards.find((card) => card.id === state.discoverSheetCardId) || cards.find((card) => card.id === 'ingredient') || cards[0];
+  }
+
+  function hasMinimumCookingHistory() {
+    return state.cookedDishes.length >= 2 || dishMemoryEvents().filter((event) => ['cooked', 'saved', 'helpful'].includes(event.action)).length >= 3;
+  }
+
+  function latestKnownRecipe() {
+    const records = [...state.cookedDishes, ...state.savedDishes, ...dishMemoryEvents()];
+    const visible = preferenceFilteredRecipes(recipes);
+    return records.map(recipeForRecord).find(Boolean) || visible.find((recipe) => primaryBrowseRegion(recipe) === 'Karnataka') || visible[0] || recipes[0];
+  }
+
+  function recipeForRecord(record) {
+    if (!record) return null;
+    const recipe = recipes.find((item) => item.id === (record.id || record.dishId || record.recipeId));
+    return recipe && recipeAllowedByPreferences(recipe) ? recipe : findRecipe(record.dishName || record.title || '');
+  }
+
+  function mostCommon(items) {
+    const counts = items.filter(Boolean).reduce((map, item) => map.set(item, (map.get(item) || 0) + 1), new Map());
+    return [...counts.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] || '';
+  }
+
+  function saveDiscoverDeckState() {
+    localStorage.setItem('tomo_mobile_v2_discover_intro_seen', JSON.stringify(Boolean(state.discoverIntroDismissed)));
+    localStorage.setItem('tomo_mobile_v2_discover_seen_cards', JSON.stringify([...state.discoverSeenCards]));
+  }
+
+  function todayPickCard(card, { priority = false } = {}) {
     const recipe = card.recipe;
     const role = titleCase(recommendationRecipeRole(recipe));
     const saved = isSaved(recipe.id, recipe.title);
     const shortLabel = {
       bestPick: "Tomo's Pick",
       familiarFavorite: 'Familiar',
-      fromYourKitchen: 'From Kitchen',
+      fromYourKitchen: 'Pantry Recommended',
       quickEasy: 'Quick',
-      explorePick: 'Explore'
+      tryNew: 'Try New'
     }[card.key] || card.label;
     return `
       <article class="mv2-today-card mv2-today-card-${esc(card.key)}">
         <button class="mv2-today-main" type="button" data-recipe="${esc(recipe.id)}">
-          <span class="mv2-today-image">${imageTag(recipeImage(recipe))}</span>
+          <span class="mv2-today-image">${imageTag(recipeImage(recipe), { priority })}</span>
           <span class="mv2-today-copy">
             <span class="mv2-today-label"><b>${esc(card.icon)}</b>${esc(shortLabel)}</span>
             <strong>${esc(recipe.title)}</strong>
@@ -3729,36 +5489,273 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         <div class="mv2-today-actions">
           <button class="mv2-today-cook" type="button" data-cook-recipe="${esc(recipe.id)}" data-dish-name="${esc(recipe.title)}" data-source="todays-picks">Cook This</button>
           <button class="mv2-today-save ${saved ? 'active' : ''}" type="button" data-save="${esc(recipe.id)}" data-dish-name="${esc(recipe.title)}" data-source="todays-picks" aria-label="${saved ? 'Saved' : 'Save'}">${saved ? '♥' : '♡'}</button>
-          <button class="mv2-today-skip" type="button" data-dismiss-today="${esc(recipe.id)}" data-dish-name="${esc(recipe.title)}" aria-label="Skip">×</button>
+          <button class="mv2-today-skip" type="button" data-dismiss-today="${esc(recipe.id)}" data-dish-name="${esc(recipe.title)}" aria-label="Not For Me">×</button>
         </div>
       </article>
     `;
   }
 
-  function microMealsAccordion() {
-    const expanded = state.microMealsExpanded;
+  function continueCookingRow() {
+    const items = [...state.cookedDishes, ...state.savedDishes]
+      .map((record) => ({ record, recipe: recipeForRecord(record) }))
+      .filter((item) => item.recipe)
+      .filter((item, index, list) => list.findIndex((candidate) => candidate.recipe.id === item.recipe.id) === index)
+      .slice(0, 3);
+    if (!items.length) return '';
     return `
-      <section class="mv2-micro-meals ${expanded ? 'expanded' : ''}">
-        <button class="mv2-micro-toggle" type="button" data-toggle-micro-meals aria-expanded="${expanded ? 'true' : 'false'}">
-          <span><strong>⚡ Micro Meals</strong><small>Quick ideas to fuel your day</small></span>
-          <b>${expanded ? '▴' : '▾'}</b>
-        </button>
-        ${expanded ? `<div class="mv2-micro-list">${microMealSuggestions().map(microMealCard).join('') || '<p class="mv2-empty">No micro ideas right now.</p>'}</div>` : ''}
+      <section class="mv2-continue-cooking">
+        <div class="mv2-section-title mv2-section-title-row">
+          <div><h2>Continue Cooking</h2></div>
+        </div>
+        <div class="mv2-continue-row">
+          ${items.map(({ record, recipe }) => `
+            <button class="mv2-continue-card" type="button" data-recipe="${esc(recipe.id)}">
+              <span>${imageTag(recipeImage(recipe))}</span>
+              <strong>${esc(recipe.title)}</strong>
+              <small>${esc(journalCookedTimeLabel(record.timestamp) || mealForRecipe(recipe))}</small>
+            </button>
+          `).join('')}
+        </div>
       </section>
     `;
   }
 
-  function microMealSuggestions() {
-    const dismissed = new Set(state.dismissedToday);
-    return fourCardRecommendationPool('snack', 'quick', dismissed)
-      .filter((item) => totalTime(item.recipe) <= 25)
-      .filter((item) => !['side', 'condiment'].includes(recommendationRecipeRole(item.recipe)))
-      .slice(0, 3)
-      .map((item) => item.recipe);
+  function microMealsAccordion(todayCards = []) {
+    return `
+      <section class="mv2-micro-meals">
+        <div class="mv2-section-title mv2-section-title-row">
+          <div><h2>⚡ Quick Bites</h2><p>Simple, interesting bites in 10 minutes or less.</p></div>
+        </div>
+        <div class="mv2-micro-list">${microMealSuggestions(todayCards).map(microMealCard).join('') || '<p class="mv2-empty">No Quick Bites available right now.</p>'}</div>
+      </section>
+    `;
   }
 
-  function microMealCard(recipe) {
-    return `<button class="mv2-micro-card" type="button" data-recipe="${esc(recipe.id)}"><span>${imageTag(recipeImage(recipe))}</span><strong>${esc(recipe.title)}</strong><small>${totalTime(recipe)} min</small></button>`;
+  function microMealSuggestions(todayCards = []) {
+    const visibleTodayIds = new Set(todayCards.map((card) => String(card?.recipe?.id || '')).filter(Boolean));
+    const pantry = new Set([...state.savedPantryIngredients, ...state.selectedIngredients].map(norm));
+    const seen = new Set();
+    const candidates = microMealCatalogue
+      .filter((item) => Number(item.prepTime || 99) <= 10)
+      .filter((item) => microMealAllowedByPreferences(item))
+      .filter((item) => Array.isArray(item.ingredients) && item.ingredients.length >= 2)
+      .filter((item) => !item.tags?.some((tag) => /^(drink|beverage|juice|hydrating)$/i.test(String(tag))))
+      .filter((item) => !visibleTodayIds.has(String(item.recipeId || '')))
+      .filter((item) => {
+        const key = norm(item.title);
+        if (!key || seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      })
+      .map((item) => {
+        const ingredientKeys = item.ingredients.map(norm).filter(Boolean);
+        const pantryMatches = ingredientKeys.filter((ingredient) => [...pantry].some((saved) => ingredient.includes(saved) || saved.includes(ingredient))).length;
+        const noCook = item.tags?.some((tag) => /no[ -]?cook/i.test(String(tag)));
+        const score = (Number(item.prepTime) <= 5 ? 5 : 3)
+          + (noCook ? 4 : 0)
+          + Math.min(3, pantryMatches)
+          + (item.image ? 2 : 0)
+          + (norm(item.cuisine) === 'indian' ? 1 : 0);
+        return { ...item, quickBiteScore: score };
+      });
+
+    const categoryOrder = ['Chaat', 'Fruit Pairing', 'Protein Bite', 'Makhana', 'Yogurt Bowl', 'Nuts & Seeds', 'Fresh Combo', 'Light Snack', 'Indian Snack'];
+    const groups = [...candidates.reduce((map, item) => {
+      const category = item.quickBiteCategory || 'Light Snack';
+      if (!map.has(category)) map.set(category, []);
+      map.get(category).push(item);
+      return map;
+    }, new Map()).entries()].map(([category, items]) => ({
+      category,
+      items: items.sort((a, b) => b.quickBiteScore - a.quickBiteScore || a.index - b.index)
+    })).sort((a, b) => categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category));
+
+    const ordered = [];
+    let previousCategory = '';
+    while (groups.some((group) => group.items.length)) {
+      let addedThisPass = false;
+      groups.forEach((group) => {
+        if (!group.items.length || group.category === previousCategory) return;
+        ordered.push(group.items.shift());
+        previousCategory = group.category;
+        addedThisPass = true;
+      });
+      if (!addedThisPass) break;
+    }
+    groups.forEach((group) => {
+      while (group.items.length) {
+        const insertionIndex = Array.from({ length: ordered.length + 1 }, (_, index) => ordered.length - index)
+          .find((index) => ordered[index - 1]?.quickBiteCategory !== group.category && ordered[index]?.quickBiteCategory !== group.category);
+        if (insertionIndex === undefined) break;
+        ordered.splice(insertionIndex, 0, group.items.shift());
+      }
+    });
+    return ordered;
+  }
+
+  function microMealCard(item) {
+    const meta = item.quickBiteCategory || item.meta || item.tags?.[0] || 'Quick Bite';
+    const diet = item.dietaryType ? titleCase(item.dietaryType) : 'Quick Bite';
+    const recipeId = microMealRecipeId(item);
+    return `<button class="mv2-micro-card" type="button" data-recipe="${esc(recipeId)}" aria-label="${esc(item.title)}"><span>${imageTag(item.image || '/assets/images/dishes/home-bowl.png')}</span><strong>${esc(item.title)}</strong><small>${Number(item.prepTime || 10)} min • ${esc(diet)}</small>${meta ? `<em>${esc(meta)}</em>` : ''}</button>`;
+  }
+
+  function microMealRecipeId(item) {
+    return item?.recipeId || `micro-meal-${slugify(item?.id || item?.title || item?.index || 'item')}`;
+  }
+
+  function microMealRecipeById(id) {
+    const item = microMealCatalogue.find((candidate) => microMealRecipeId(candidate) === id);
+    if (!item) return null;
+    if (!microMealAllowedByPreferences(item)) return null;
+    const minutes = Number(item.prepTime || item.prepTimeMinutes || 10);
+    return {
+      id,
+      title: item.title,
+      description: item.quickGuide || item.meta || 'A quick bite from Tomo.',
+      difficulty: item.difficulty || 'Easy',
+      cuisine: item.cuisine || item.origin || 'Indian',
+      dietType: item.dietaryType || '',
+      mealType: item.mealType || 'Quick Bite',
+      timeMinutes: Number.isFinite(minutes) ? minutes : 10,
+      prepTimeMinutes: Number.isFinite(minutes) ? minutes : 10,
+      cookTimeMinutes: 0,
+      imageUrl: item.image || '/assets/images/dishes/home-bowl.png',
+      quickBiteCategory: item.quickBiteCategory,
+      tags: ['quick bite', ...(item.tags || []), item.meta, item.quickBiteCategory, item.category].filter(Boolean),
+      ingredients: (item.ingredients || []).map((name, index) => ({
+        name,
+        role: index === 0 ? 'main' : 'required',
+        isMain: index === 0
+      })),
+      quickGuide: {
+        serves: 1,
+        prepTime: `${Number.isFinite(minutes) ? minutes : 10} min`,
+        cookTime: item.tags?.some((tag) => /no-cook|no cook/i.test(tag)) ? 'No cook' : '',
+        ingredients: item.ingredients || [],
+        steps: item.quickGuide ? [item.quickGuide] : [],
+        tip: item.meta || '',
+        bestWith: item.bestWith || []
+      }
+    };
+  }
+
+  function microMealAllowedByPreferences(item) {
+    const recipeId = item?.recipeId;
+    const recipe = recipeId ? recipes.find((candidate) => String(candidate.id || candidate.sourceId) === String(recipeId)) : null;
+    if (recipe) return recipeAllowedByPreferences(recipe);
+    if (!preferencesConfigured()) return true;
+    const synthetic = {
+      title: item?.title,
+      description: item?.quickGuide || item?.meta,
+      dietType: item?.dietaryType,
+      dietaryTags: item?.dietaryTags || [],
+      tags: [item?.category, item?.quickBiteCategory, ...(item?.tags || [])].filter(Boolean),
+      ingredients: (item?.ingredients || []).map((name) => ({ name }))
+    };
+    return recipeAllowedByPreferences(synthetic);
+  }
+
+  function microMealEligible(recipe) {
+    if (!recipe) return false;
+    if (!recipeAllowedByPreferences(recipe)) return false;
+    const minutes = totalTime(recipe);
+    if (!minutes || minutes > 20) return false;
+    const role = recommendationRecipeRole(recipe);
+    if (['main', 'soup', 'side', 'condiment', 'drink', 'dessert'].includes(role)) return false;
+    const haystack = tags(recipe).join(' ');
+    if (/baby food|festival|quick sweet/.test(haystack)) return false;
+    return /quick bite|quick bites|snack|chaat|protein bite|fruit pairing|yogurt bowl|makhana|snack bowl|light snack|indian snack|no cook|no-cook/.test(haystack);
+  }
+
+  function microMealMeta(recipe) {
+    const haystack = tags(recipe).join(' ');
+    const minutes = totalTime(recipe);
+    if (Number(recipe?.proteinScore || 0) >= 7 || /high protein|high-protein|protein/.test(haystack)) return 'High Protein';
+    if (/no cook|no-cook|salad|kachumber|fruit chaat|juice|lassi|buttermilk|chaas|sharbat|coconut water/.test(haystack)) return 'No Cook';
+    if (/leftover|bread upma|podi idli|gunpowder idli|dosa roll|chapati.*roll/.test(haystack)) return 'Leftovers';
+    if (/chai|tea|coffee|makhana|corn|girmit|mandakki/.test(haystack)) return 'Tea Time';
+    if (/salad|sprout|kosambari|ragi|sattu|healthy|light/.test(haystack)) return 'Healthy';
+    if (recipeIngredients(recipe).filter((item) => !isPantryStaple(item.normalized || item.name)).length <= 5) return '5 Ingredients';
+    if (/breakfast|toast|dosa|idli|pancake/.test(haystack) || minutes <= 15) return 'Quick Breakfast';
+    return '';
+  }
+
+  function microMealCategory(recipe, meta = microMealMeta(recipe)) {
+    const key = norm(meta);
+    if (/protein/.test(key)) return 'protein';
+    if (/no cook|healthy/.test(key)) return 'healthy';
+    if (/leftover/.test(key)) return 'leftover';
+    if (/tea/.test(key)) return 'tea';
+    if (/breakfast/.test(key)) return 'breakfast';
+    if (/drink/.test(key)) return 'drink';
+    return recommendationRecipeRole(recipe) === 'drink' ? 'drink' : 'snack';
+  }
+
+  function microMealFamily(recipe) {
+    const haystack = tags(recipe).join(' ');
+    if (/sandwich|toast/.test(haystack)) return 'sandwich';
+    if (/chaat/.test(haystack)) return 'chaat';
+    if (/salad|kosambari|kachumber/.test(haystack)) return 'salad';
+    if (/chai|tea|coffee/.test(haystack)) return 'tea';
+    if (/lassi|shake|juice|sharbat|chaas|buttermilk|drink|water/.test(haystack)) return 'drink';
+    if (/idli/.test(haystack)) return 'idli';
+    if (/dosa/.test(haystack)) return 'dosa';
+    if (/omelette|egg|bhurji/.test(haystack)) return 'egg';
+    if (/sundal/.test(haystack)) return 'sundal';
+    if (/corn/.test(haystack)) return 'corn';
+    if (/makhana|roasted/.test(haystack)) return 'roasted';
+    return dishFamily(recipe) || norm(recipe?.title).split(' ')[0] || 'micro';
+  }
+
+  function microMealScore(item) {
+    const recipe = item.recipe;
+    const minutes = totalTime(recipe);
+    let score = item.curated ? 220 - item.index : 90 - item.index * 0.1;
+    if (minutes <= 5) score += 48;
+    else if (minutes <= 10) score += 40;
+    else if (minutes <= 15) score += 30;
+    else score -= (minutes - 15) * 6;
+    if (recipe?.lowEffort) score += 12;
+    if (recipe?.minimalCleanup) score += 8;
+    const ingredientCount = recipeIngredients(recipe).filter((item) => !isPantryStaple(item.normalized || item.name)).length;
+    if (ingredientCount && ingredientCount <= 5) score += 12;
+    if (item.category === 'protein') score += 8;
+    if (item.category === 'healthy') score += 6;
+    return score;
+  }
+
+  function diversifyMicroMeals(candidates, limit = 44) {
+    const order = ['protein', 'healthy', 'tea', 'leftover', 'drink', 'breakfast', 'snack'];
+    const buckets = new Map(order.map((category) => [category, []]));
+    candidates.forEach((item) => {
+      const category = buckets.has(item.category) ? item.category : 'snack';
+      buckets.get(category).push(item);
+    });
+    const selected = [];
+    const usedIds = new Set();
+    const recentFamilies = [];
+    while (selected.length < limit && buckets.size) {
+      let addedThisPass = false;
+      for (const category of order) {
+        const bucket = buckets.get(category) || [];
+        const nextIndex = bucket.findIndex((item) => {
+          return !usedIds.has(item.recipe.id)
+            && !recentFamilies.slice(-2).includes(item.family)
+            && selected.filter((selectedItem) => selectedItem.family === item.family).length < 3;
+        });
+        const fallbackIndex = nextIndex >= 0 ? nextIndex : bucket.findIndex((item) => !usedIds.has(item.recipe.id));
+        if (fallbackIndex < 0) continue;
+        const [item] = bucket.splice(fallbackIndex, 1);
+        selected.push(item);
+        usedIds.add(item.recipe.id);
+        recentFamilies.push(item.family);
+        addedThisPass = true;
+        if (selected.length >= limit) break;
+      }
+      if (!addedThisPass) break;
+    }
+    return selected;
   }
 
   function heroRecommendationReason(context = state.activeTomoPick, recipe = context?.recipe) {
@@ -3862,14 +5859,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
   function headerWeather() {
     const context = weatherContext();
-    const [temperature, ...parts] = String(context.weather || '').split('•').map((part) => part.trim());
-    const phrase = parts.join(' • ');
-    const statement = phrase.replace(/\s*(?:☀️|🌙|🌧️|⛅)\s*/gu, '').trim() || 'Warm daylight';
-    return `<div class="mv2-header-weather"><time datetime="${esc(context.datetime)}">${esc(context.time)}</time><strong>${esc(temperature || '24°C')}</strong><span>${esc(`${statement} ${weatherIcon(phrase)}`.trim())}</span></div>`;
-  }
-
-  function weatherIcon(phrase) {
-    return String(phrase || '').match(/(?:☀️|🌙|🌧️|⛅)/u)?.[0] || '';
+    return `<div class="mv2-header-weather"><time datetime="${esc(context.datetime)}">${esc(context.time)}</time><strong>${esc(context.temperature || '24°C')}</strong><span>${esc(context.condition || 'Warm')}</span></div>`;
   }
 
   function globalSearchBar(isDiscover = false) {
@@ -3878,18 +5868,24 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function searchModal() {
-    return `<div class="mv2-modal-backdrop" data-search-backdrop><section class="mv2-search-modal mv2-search-results-modal" role="dialog" aria-modal="true" aria-labelledby="mv2SearchTitle"><button class="mv2-modal-close" type="button" data-close-search aria-label="Close search">×</button><span>🔎</span><h2 id="mv2SearchTitle">Search Tomo</h2><p>${state.searchQuery ? `Results for “${esc(state.searchQuery)}”` : 'Search dishes, collections, ingredients and moods.'}</p>${searchResultsView()}</section></div>`;
+    return `<div class="mv2-modal-backdrop" data-search-backdrop><section class="mv2-search-modal mv2-search-results-modal" role="dialog" aria-modal="true" aria-labelledby="mv2SearchTitle"><button class="mv2-modal-close" type="button" data-close-search aria-label="Close search">×</button><span>🔎</span><h2 id="mv2SearchTitle">Search Tomo</h2><p>${state.searchQuery ? `Results for “${esc(state.searchQuery)}”` : 'Search dishes, ingredients and moods.'}</p>${searchResultsView()}</section></div>`;
   }
 
   function searchResultsView() {
     const query = norm(state.searchQuery);
     if (!query) return '<div class="mv2-search-hint">Try “rice”, “comfort”, “baby” or “paneer”.</div>';
-    const dishResults = recipes
-      .filter((recipe) => [recipe.title, recipe.description, ...(recipe.tags || [])].some((value) => norm(value).includes(query)))
-      .slice(0, 4);
-    const collectionResults = collectionRoutes
-      .filter((collection) => [collection.title, collection.copy, collection.subtitle, collection.key].some((value) => norm(value).includes(query)))
-      .slice(0, 3);
+    const spotlightIds = Array.isArray(state.spotlightRecipeIds) ? new Set(state.spotlightRecipeIds) : new Set();
+    const dishResults = spotlightIds.size
+      ? recipes.filter((recipe) => spotlightIds.has(recipe.id)).filter((recipe) => recipeAllowedByPreferences(recipe))
+      : recipes
+        .filter((recipe) => recipeAllowedByPreferences(recipe))
+        .filter((recipe) => [recipe.title, recipe.description, ...(recipe.tags || [])].some((value) => norm(value).includes(query)))
+        .slice(0, 4);
+    const collectionResults = MOBILE_COLLECTIONS_ENABLED
+      ? collectionRoutes
+        .filter((collection) => [collection.title, collection.copy, collection.subtitle, collection.key].some((value) => norm(value).includes(query)))
+        .slice(0, 3)
+      : [];
     const ingredientResults = pantryCatalog
       .filter((item) => item.display_status !== 'hidden')
       .map((item) => item.ingredient_name || item.name)
@@ -3907,13 +5903,147 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return sections || '<div class="mv2-search-hint">No matches yet. Try another word.</div>';
   }
 
+  function discoverExploreSheet() {
+    const card = currentDiscoverInsightCard();
+    const title = card?.title || state.discoverSheetQuery || 'Discover with Tomo';
+    const subtitle = discoverInsightSubtitle(card);
+    return `
+      <div class="mv2-modal-backdrop mv2-discover-sheet-backdrop" role="presentation">
+        <section class="mv2-discover-sheet" role="dialog" aria-modal="true" aria-labelledby="mv2DiscoverSheetTitle">
+          <button class="mv2-modal-close" type="button" data-close-discover-sheet aria-label="Close ${esc(title)}">×</button>
+          <h2 id="mv2DiscoverSheetTitle">${esc(title)}</h2>
+          <p>${esc(subtitle)}</p>
+          <div class="mv2-discover-sheet-body">${esc(discoverInsightBody(card))}</div>
+          <div class="mv2-discover-sheet-results">
+            ${discoverInsightSections(card)}
+          </div>
+        </section>
+      </div>
+    `;
+  }
+
+  function discoverInsightSubtitle(card) {
+    if (card?.type === 'ingredient') return norm(card.title) === 'coconut' ? 'Coastal comfort' : 'Ingredient spotlight';
+    if (card?.type === 'region') return 'Regional discovery';
+    if (card?.type === 'tip') return card.subtitle || 'Cooking tip';
+    if (card?.type === 'wisdom') return 'Cooking tip';
+    return 'Discover with Tomo';
+  }
+
+  function discoverInsightBody(card) {
+    return card?.insightBody || card?.subtitle || 'A small learning signal Tomo can use to understand your kitchen better.';
+  }
+
+  function discoverInsightSections(card) {
+    if (!card) return '<div class="mv2-search-hint">No insight available yet.</div>';
+    if (card.type === 'ingredient') return ingredientInsightSections(card);
+    if (card.type === 'region') return regionalInsightSections(card);
+    if (card.type === 'tip') return cookingTipInsightSections(card);
+    if (card.type === 'wisdom') return wisdomInsightSections(card);
+    return discoverExploreResultsView(card.searchLabel || card.title);
+  }
+
+  function ingredientInsightSections(card) {
+    const dishes = recipesForIds(card.recipeIds).slice(0, 4);
+    const ingredientRows = [card.title]
+      .filter(Boolean)
+      .map((name) => `<button type="button" data-search-ingredient="${esc(name)}"><strong>${esc(name)}</strong><small>Open in Kitchen</small></button>`);
+    return [
+      searchSection('Used in', dishes.map(discoverDishRow)),
+      searchSection('Try this when', [`<span class="mv2-discover-note">${esc(card.tryWhen || 'You want a familiar dish with a new texture or flavor cue.')}</span>`]),
+      searchSection('Ingredient', ingredientRows)
+    ].filter(Boolean).join('');
+  }
+
+  function regionalInsightSections(card) {
+    const dishes = recipesForIds(card.recipeIds).slice(0, 4);
+    const commonIngredients = discoverRegionIngredients(card.title);
+    const collectionResults = MOBILE_COLLECTIONS_ENABLED
+      ? collectionRoutes
+        .filter((collection) => [collection.title, collection.copy, collection.subtitle, collection.key].some((value) => norm(value).includes(norm(card.title))))
+        .slice(0, 2)
+      : [];
+    return [
+      searchSection('Featured dishes', dishes.map(discoverDishRow)),
+      searchSection('Common ingredients', commonIngredients.map((name) => `<button type="button" data-search-ingredient="${esc(name)}"><strong>${esc(name)}</strong><small>Open in Kitchen</small></button>`)),
+      searchSection('Explore dishes', collectionResults.map((collection) => `<button type="button" data-search-collection="${esc(collection.key)}"><strong>${esc(collection.title)}</strong><small>${esc(collection.copy || collection.subtitle || 'Tomo collection')}</small></button>`))
+    ].filter(Boolean).join('');
+  }
+
+  function wisdomInsightSections(card) {
+    const query = state.mood || 'comfort';
+    const dishes = preferenceFilteredRecipes(recipes)
+      .filter((recipe) => todaysPickRoleEligible(recipe, state.meal))
+      .filter((recipe) => !query || [recipe.title, recipe.description, ...(recipe.tags || [])].some((value) => norm(value).includes(norm(query))))
+      .slice(0, 3);
+    const pantryRows = [...state.selectedIngredients].slice(0, 3).map((name) => `<button type="button" data-search-ingredient="${esc(name)}"><strong>${esc(name)}</strong><small>Open in Kitchen</small></button>`);
+    return [
+      searchSection('Try with', dishes.map(discoverDishRow)),
+      searchSection('Why it helps Tomo', [`<span class="mv2-discover-note">Cooking, saving and pantry choices teach Tomo which patterns are worth repeating.</span>`]),
+      searchSection('Pantry signals', pantryRows)
+    ].filter(Boolean).join('');
+  }
+
+  function cookingTipInsightSections(card) {
+    return searchSection('Try with', (card.chips || []).map((name) => `<span class="mv2-discover-note">${esc(name)}</span>`));
+  }
+
+  function discoverDishRow(recipe) {
+    return `<button type="button" data-search-recipe="${esc(recipe.id)}"><strong>${esc(recipe.title)}</strong><small>${totalTime(recipe)} min • ${esc(mealForRecipe(recipe))}</small></button>`;
+  }
+
+  function recipesForIds(ids = []) {
+    return ids.map((id) => recipes.find((recipe) => recipe.id === id)).filter(Boolean).filter((recipe) => recipeAllowedByPreferences(recipe));
+  }
+
+  function discoverRegionIngredients(region) {
+    const map = {
+      Karnataka: ['Coconut', 'Curry leaves', 'Jaggery'],
+      Kerala: ['Coconut', 'Curry leaves', 'Pepper'],
+      'Tamil Nadu': ['Tamarind', 'Curry leaves', 'Rice'],
+      'Andhra & Telangana': ['Red chilli', 'Tamarind', 'Dal'],
+      Maharashtra: ['Peanut', 'Coconut', 'Goda masala'],
+      Bengal: ['Mustard', 'Rice', 'Fish'],
+      Northeast: ['Rice', 'Greens', 'Fermented bamboo shoot']
+    };
+    return (map[region] || ['Rice', 'Dal', 'Spices']).filter((name) => pantryCatalog.some((item) => norm(item.ingredient_name || item.name) === norm(name)) || name);
+  }
+
+  function discoverExploreResultsView(queryLabel) {
+    const query = norm(queryLabel);
+    if (!query) return '<div class="mv2-search-hint">No matches yet.</div>';
+    const spotlightIds = Array.isArray(state.discoverSheetRecipeIds) ? new Set(state.discoverSheetRecipeIds) : new Set();
+    const dishResults = spotlightIds.size
+      ? recipes.filter((recipe) => spotlightIds.has(recipe.id)).filter((recipe) => recipeAllowedByPreferences(recipe))
+      : recipes
+        .filter((recipe) => recipeAllowedByPreferences(recipe))
+        .filter((recipe) => [recipe.title, recipe.description, ...(recipe.tags || [])].some((value) => norm(value).includes(query)))
+        .slice(0, 4);
+    const collectionResults = MOBILE_COLLECTIONS_ENABLED
+      ? collectionRoutes
+        .filter((collection) => [collection.title, collection.copy, collection.subtitle, collection.key].some((value) => norm(value).includes(query)))
+        .slice(0, 3)
+      : [];
+    const ingredientResults = pantryCatalog
+      .filter((item) => item.display_status !== 'hidden')
+      .map((item) => item.ingredient_name || item.name)
+      .filter((name, index, list) => name && norm(name).includes(query) && list.findIndex((item) => norm(item) === norm(name)) === index)
+      .slice(0, 5);
+    const sections = [
+      searchSection('Dishes', dishResults.map((recipe) => `<button type="button" data-search-recipe="${esc(recipe.id)}"><strong>${esc(recipe.title)}</strong><small>${totalTime(recipe)} min • ${esc(mealForRecipe(recipe))}</small></button>`)),
+      searchSection('Collections', collectionResults.map((collection) => `<button type="button" data-search-collection="${esc(collection.key)}"><strong>${esc(collection.title)}</strong><small>${esc(collection.copy || collection.subtitle || 'Tomo collection')}</small></button>`)),
+      searchSection('Ingredients', ingredientResults.map((name) => `<button type="button" data-search-ingredient="${esc(name)}"><strong>${esc(name)}</strong><small>Open in Kitchen</small></button>`))
+    ].filter(Boolean).join('');
+    return sections || '<div class="mv2-search-hint">No matches yet. Try another word.</div>';
+  }
+
   function searchSection(title, rows) {
     if (!rows.length) return '';
     return `<div class="mv2-search-section"><p>${esc(title)}</p>${rows.join('')}</div>`;
   }
 
   function collectionsView() {
-    return `<div class="mv2-section-title"><div><p>Collections</p><h2>${USE_GENERATED_COLLECTIONS ? 'Browse by hub' : 'Curated for every kitchen'}</h2></div></div><div class="mv2-collections">${collections.map((collection) => {
+    return `<div class="mv2-section-title mv2-collections-title"><div><h2>Browse Collections</h2><p>Find ideas by family, health, region and occasion.</p></div></div><div class="mv2-collections">${collections.map((collection) => {
       const image = collectionImage(collection);
       const count = Number(collection.count || collection.items?.length || 0);
       return `<button class="mv2-collection ${collection.status === 'coming-soon' ? 'is-coming-soon' : ''}" type="button" data-collection="${esc(collection.key)}"><span class="mv2-collection-image" style="--collection-image: url('${esc(image)}'); background-image: url('${esc(image)}')">${collection.status === 'coming-soon' ? '<em>Coming Soon</em>' : ''}</span><span class="mv2-collection-copy"><strong>${esc(collection.title)}</strong><span>${esc(collection.copy || collection.subtitle || 'Tomo collection')}</span><b>${collection.status === 'coming-soon' ? 'Coming Soon' : `${count} recipes →`}</b></span></button>`;
@@ -3924,97 +6054,602 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return `
       <div class="mv2-segmented" role="tablist" aria-label="Kitchen mode">
         <button class="${state.kitchenTab === 'pantry' ? 'active' : ''}" type="button" data-kitchen-tab="pantry">Pantry</button>
-        <button class="${state.kitchenTab === 'groceries' ? 'active' : ''}" type="button" data-kitchen-tab="groceries">Shopping List</button>
+        <button class="${state.kitchenTab === 'cook' ? 'active' : ''}" type="button" data-kitchen-tab="cook">Cook</button>
       </div>
-      ${state.kitchenTab === 'pantry' ? pantryView() : groceriesView()}
+      ${state.kitchenTab === 'pantry' ? pantryView() : cookTodayView()}
     `;
   }
 
   function pantryView() {
-    const sections = pantryIngredientSections();
+    const sections = savedPantryIngredientSections();
     return `
-      <div class="mv2-pantry-search">
-        <input id="mv2PantrySearch" type="search" aria-label="Search ingredients" placeholder="Search ingredients..." value="${esc(state.pantrySearch)}" autocomplete="off" />
-        <span class="mv2-pantry-search-actions">
-          <button type="button" data-pantry-action="voice" aria-label="Search ingredients by voice">🎤</button>
-          <button type="button" data-pantry-action="scan" aria-label="Scan ingredients">📷</button>
-        </span>
-      </div>
-      ${pantrySuggestionPanel()}
-      ${groceryMiniSummary()}
-      <section class="mv2-pantry-ingredients">
-        <div class="mv2-section-title">
-          <div><p>Your ingredients</p><h2>Tap what you have</h2></div>
-          <div class="mv2-pantry-selection-summary">
-            <span>${state.selectedIngredients.size} selected</span>
-            ${state.selectedIngredients.size ? '<button type="button" data-clear-pantry>Clear</button>' : ''}
+      ${myPantryCard()}
+      ${state.savedPantryIngredients.size ? '' : `
+        <section class="mv2-pantry-empty-info" role="status">
+          <span aria-hidden="true">+</span>
+          <div>
+            <strong>No ingredients saved yet</strong>
+            <p>Add ingredients you usually keep at home.</p>
           </div>
+        </section>
+      `}
+      <section class="mv2-pantry-ingredients mv2-saved-pantry-ingredients">
+        <div class="mv2-section-title">
+          <div><h2>Ingredients</h2></div>
         </div>
-        <div class="mv2-pantry-sections">${sections.map((section) => pantrySection(section)).join('') || '<p class="mv2-empty">No ingredients found.</p>'}</div>
+        <div class="mv2-pantry-search mv2-cook-search">
+          <input id="mv2SavedPantrySearch" type="search" aria-label="Search all pantry ingredients" placeholder="Search ingredients..." value="${esc(state.savedPantrySearch)}" autocomplete="off" />
+          <span class="mv2-pantry-search-actions">
+            <button type="button" data-pantry-action="voice" aria-label="Voice input" title="Voice input"><span aria-hidden="true">🎤</span><span class="mv2-sr-only">Voice</span></button>
+            <button type="button" data-pantry-action="scan" aria-label="Ingredient scanner" title="Ingredient scanner"><span aria-hidden="true">📷</span><span class="mv2-sr-only">Scanner</span></button>
+          </span>
+        </div>
+        ${pantryIngredientBrowser(sections, { mode: 'saved' })}
       </section>
     `;
   }
 
-  function groceryMiniSummary() {
-    if (!state.groceries.length) return '';
-    const preview = state.groceries.slice(0, 3);
+  function cookTodayView() {
+    const sections = pantryIngredientSections();
     return `
-      <button class="mv2-grocery-mini" type="button" data-kitchen-tab="groceries">
-        <span><strong>🛒 Shopping List (${state.groceries.length})</strong><i>${esc(preview.map((item) => item.name).join(', '))}</i></span>
-        <b>View List →</b>
-      </button>
+      <section class="mv2-pantry-ingredients mv2-cook-ingredients">
+        <div class="mv2-pantry-search mv2-cook-search">
+          <input id="mv2PantrySearch" type="search" aria-label="Search ingredients" placeholder="Search ingredients..." value="${esc(state.pantrySearch)}" autocomplete="off" />
+          <span class="mv2-pantry-search-actions">
+            <button type="button" data-pantry-action="voice" aria-label="Voice input" title="Voice input"><span aria-hidden="true">🎤</span><span class="mv2-sr-only">Voice</span></button>
+            <button type="button" data-pantry-action="scan" aria-label="Ingredient scanner" title="Ingredient scanner"><span aria-hidden="true">📷</span><span class="mv2-sr-only">Scanner</span></button>
+          </span>
+        </div>
+        ${cookDashboard()}
+        ${pantryIngredientBrowser(sections, { mode: 'today' })}
+      </section>
     `;
+  }
+
+  function cookDashboard() {
+    const hasSelectedIngredients = state.selectedIngredients.size > 0;
+    const skippedIds = new Set(state.cookDashboardSkippedIds || []);
+    const matches = hasSelectedIngredients
+      ? cookDashboardCoverageRankedMatches(pantryOrderedMatches()
+        .filter((match) => !skippedIds.has(match.recipe?.id))
+        .filter(cookDashboardRecommendationEligible))
+      : [];
+    const baseIngredients = cookDashboardBaseIngredients();
+    const focusIngredientsPool = [...new Map([...baseIngredients, ...state.selectedIngredients].map((name) => [norm(name), name])).values()];
+    const totalSelected = state.selectedIngredients.size;
+    const useCoverageMode = baseIngredients.length >= 5 || totalSelected >= 6;
+    const usedRecipeIds = new Set();
+    const takeMatch = (predicate) => {
+      const match = matches.find((item) => predicate(item) && !usedRecipeIds.has(item.recipe?.id));
+      if (match?.recipe?.id) usedRecipeIds.add(match.recipe.id);
+      return match;
+    };
+    const takeRankedIngredientIdeaMatch = (ingredient, predicate, avoidFamilies = new Set()) => {
+      const ranked = cookDashboardRankedIngredientMatches(matches, ingredient, predicate)
+        .filter((item) => !usedRecipeIds.has(item.recipe?.id));
+      const diverse = ranked.find((item) => !avoidFamilies.has(cookDashboardRecipeFamily(item.recipe)));
+      const match = diverse || ranked[0];
+      if (match?.recipe?.id) usedRecipeIds.add(match.recipe.id);
+      return match;
+    };
+    const bestMatch = useCoverageMode
+      ? cookDashboardBestCoverageMatch(matches)
+      : takeMatch(cookDashboardBestMatchRepresentsSelection);
+    if (bestMatch?.recipe?.id) usedRecipeIds.add(bestMatch.recipe.id);
+    const combinationMatch = takeMatch(cookDashboardCombinationRepresentsSelection);
+    const dashboardFamilies = cookDashboardUsedFamilies([bestMatch, combinationMatch]);
+    const selectedFamilies = cookDashboardSelectedFamilies();
+    const ideaAvoidFamilies = cookDashboardDiversityAvoidFamilies(dashboardFamilies, selectedFamilies);
+    const focusIngredients = cookDashboardFocusIngredients(bestMatch || combinationMatch || matches[0], focusIngredientsPool);
+    const firstFocus = cookDashboardNextFocusIngredient(focusIngredients, focusIngredientsPool, []);
+    const secondFocus = cookDashboardNextFocusIngredient(focusIngredients, focusIngredientsPool, [firstFocus]);
+    const firstFocusMatch = firstFocus
+      ? takeRankedIngredientIdeaMatch(firstFocus, cookDashboardMatchMeaningfullyUsesIngredient, ideaAvoidFamilies)
+        || takeRankedIngredientIdeaMatch(firstFocus, cookDashboardMatchUsesIngredient, ideaAvoidFamilies)
+        || cookDashboardIngredientFallbackMatch(firstFocus, usedRecipeIds, ideaAvoidFamilies)
+      : null;
+    if (firstFocusMatch?.recipe) dashboardFamilies.add(cookDashboardRecipeFamily(firstFocusMatch.recipe));
+    const secondIdeaAvoidFamilies = cookDashboardDiversityAvoidFamilies(dashboardFamilies, selectedFamilies);
+    const secondFocusMatch = secondFocus
+      ? takeRankedIngredientIdeaMatch(secondFocus, cookDashboardMatchMeaningfullyUsesIngredient, secondIdeaAvoidFamilies)
+        || takeRankedIngredientIdeaMatch(secondFocus, cookDashboardMatchUsesIngredient, secondIdeaAvoidFamilies)
+        || cookDashboardIngredientFallbackMatch(secondFocus, usedRecipeIds, secondIdeaAvoidFamilies)
+      : takeMatch(() => true);
+    const bestCoverageHelper = useCoverageMode && bestMatch
+      ? `Uses ${cookDashboardMatchedSelectedCount(bestMatch)} of ${totalSelected} selected ingredients.`
+      : '';
+    const combinationUses = combinationMatch ? cookDashboardMeaningfulSelectedLabels(combinationMatch).slice(0, 3) : [];
+    const bestFocus = firstFocus || focusIngredientsPool[0] || '';
+    const unmatchedFocus = focusIngredientsPool.find((ingredient) => bestFocus && !ingredientMatchesSelection(norm(ingredient), norm(bestFocus))) || '';
+    const tiles = [
+      {
+        label: useCoverageMode ? 'Best Coverage' : 'Best Match',
+        match: bestMatch,
+        copy: bestMatch?.recipe?.title || (bestFocus ? `Try ${bestFocus} Ideas` : 'Explore ingredient ideas'),
+        helper: bestCoverageHelper || (bestMatch ? 'Best overall choice' : unmatchedFocus ? `${unmatchedFocus} not matched yet` : 'Try one ingredient focus')
+      },
+      { label: 'Combination', match: combinationMatch, copy: combinationMatch?.recipe?.title || 'No direct combo', helper: combinationUses.length ? `Uses: ${combinationUses.join(' + ')}` : 'Try one ingredient focus' },
+      { label: firstFocus ? `${firstFocus} Ideas` : 'Ingredient Ideas', match: firstFocusMatch, copy: firstFocusMatch?.recipe?.title || 'More ideas soon', helper: cookDashboardIngredientIdeaHelper(firstFocusMatch, firstFocus) },
+      { label: secondFocus ? `${secondFocus} Ideas` : 'Explore', match: secondFocusMatch, copy: secondFocusMatch?.recipe?.title || 'More ideas soon', helper: cookDashboardIngredientIdeaHelper(secondFocusMatch, secondFocus) }
+    ];
+    return `
+      <section class="mv2-cook-dashboard" aria-label="What You Can Make">
+        <div class="mv2-cook-dashboard-head">
+          <h3>What You Can Make</h3>
+          <button type="button" data-cook-dashboard-view-all>View all</button>
+        </div>
+        ${hasSelectedIngredients
+          ? `<div class="mv2-cook-dashboard-grid">${tiles.map(cookDashboardTile).join('')}</div>`
+          : '<p class="mv2-cook-dashboard-empty">Select 2–3 ingredients and Tomo will recommend dishes.</p>'}
+      </section>
+    `;
+  }
+
+  function cookDashboardTile(tile) {
+    const recipe = tile.match?.recipe;
+    const recipeId = recipe?.id || '';
+    const saved = recipeId ? isSaved(recipeId, recipe.title) : false;
+    if (!recipeId) {
+      return `<article class="mv2-cook-dashboard-tile is-empty"><span>${esc(tile.label)}</span><strong>${esc(tile.copy)}</strong>${tile.helper ? `<small>${esc(tile.helper)}</small>` : ''}</article>`;
+    }
+    return `
+      <article class="mv2-cook-dashboard-tile has-recipe">
+        <button class="mv2-cook-dashboard-main" type="button" data-cook-dashboard-recipe="${esc(recipeId)}">
+          <span class="mv2-cook-dashboard-thumb">${imageTag(recipeImage(recipe))}</span>
+          <span class="mv2-cook-dashboard-copy">
+            <em>${esc(tile.label)}</em>
+            <strong>${esc(recipe.title)}</strong>
+            ${tile.helper ? `<small>${esc(tile.helper)}</small>` : ''}
+          </span>
+        </button>
+        <span class="mv2-cook-dashboard-actions">
+          <button type="button" data-cook-recipe="${esc(recipeId)}" data-dish-name="${esc(recipe.title)}" data-source="pantry">Cook This</button>
+          <button class="${saved ? 'active' : ''}" type="button" data-save="${esc(recipeId)}" data-dish-name="${esc(recipe.title)}" data-source="pantry" aria-label="${saved ? 'Saved' : 'Save'}">${saved ? 'Saved' : 'Save'}</button>
+          <button type="button" data-cook-dashboard-skip="${esc(recipeId)}" aria-label="Skip ${esc(recipe.title)}">Skip</button>
+        </span>
+      </article>
+    `;
+  }
+
+  function cookDashboardBaseIngredients() {
+    return [...state.selectedIngredients].filter(cookDashboardIsBaseIngredient);
+  }
+
+  function cookDashboardIsBaseIngredient(name) {
+    const key = norm(name);
+    if (!key || isPantryStaple(key)) return false;
+    if (/^(salt|sugar|water|oil|cooking oil|ghee|butter|cream|vinegar|jaggery|pepper|black pepper|cumin|turmeric|ajwain|sesame|mustard seeds|poppy seeds|goda masala|saffron|cocoa powder|chilli powder|red chilli|dry red chilli|green chilli|curry leaves|coriander|mint|basil|parsley|lemongrass|tulsi leaves|ginger|garlic|kasuri methi|mustard oil|sesame oil|schezwan sauce)$/.test(key)) return false;
+    if (/^(chicken|egg|eggs|paneer|rice|bread|fish|mushroom|potato|dal|curd|pumpkin|brinjal|okra|bottle gourd|ragi|tofu|prawns?|mutton|pork|smoked pork|crab|duck|bhetki fish|bombil fish|chana|chana dal|moong dal|toor dal|urad dal|black urad dal|rajma|matki|cowpeas|masoor dal|yellow peas|soya chunks|beans|green peas|peas|sweet corn|capsicum|cabbage|cauliflower|broccoli|beetroot|radish|sweet potato|bitter gourd|ridge gourd|snake gourd|ash gourd|raw banana|raw mango|jackfruit|tapioca|lotus stem|avarekalu|gongura|bamboo shoot|horse gram|banana flower|banana blossom|banana stem|drumstick|drumstick leaves|moringa|moringa leaves|greens|palak|methi|amaranth|colocasia leaves|mustard greens|keerai|lai xaak|rava|poha|sabudana|vermicelli|idli batter|dosa batter|ragi flour|millet|millet flour|basmati rice|gobindobhog rice|puffed rice|broken wheat|dalia|rice rava|wheat flour|coconut|coconut milk|mixed vegetables|vegetables)$/.test(key)) return true;
+    const category = pantryUiCategoryForName(name);
+    return /Grains|Vegetables|Leafy Greens|Proteins/.test(category);
+  }
+
+  function cookDashboardBestMatchQualifies(match, baseIngredients) {
+    if (!match) return false;
+    if (!baseIngredients.length) return true;
+    const matchedCount = cookDashboardMatchedBaseCount(match, baseIngredients);
+    if (baseIngredients.length === 1) return matchedCount >= 1;
+    if (baseIngredients.length <= 4) return matchedCount === baseIngredients.length;
+    return matchedCount >= Math.ceil(baseIngredients.length * 0.6);
+  }
+
+  function cookDashboardBestCoverageMatch(matches) {
+    if (!matches.length) return null;
+    const maxCoverage = Math.max(...matches.map(cookDashboardMatchedSelectedCount));
+    return matches.find((match) => cookDashboardMatchedSelectedCount(match) === maxCoverage) || matches[0];
+  }
+
+  function cookDashboardCoverageRankedMatches(matches) {
+    const selectedCount = Math.max(1, state.selectedIngredients.size);
+    return matches
+      .map((match, index) => ({ match, index }))
+      .sort((a, b) => {
+        const aCount = cookDashboardMatchedSelectedCount(a.match);
+        const bCount = cookDashboardMatchedSelectedCount(b.match);
+        if (aCount !== bCount) return bCount - aCount;
+        const aRatio = aCount / selectedCount;
+        const bRatio = bCount / selectedCount;
+        if (aRatio !== bRatio) return bRatio - aRatio;
+        const aPrimary = cookDashboardImportanceLevelCount(a.match, 'PRIMARY');
+        const bPrimary = cookDashboardImportanceLevelCount(b.match, 'PRIMARY');
+        if (aPrimary !== bPrimary) return bPrimary - aPrimary;
+        const aPrimaryRatio = aPrimary / selectedCount;
+        const bPrimaryRatio = bPrimary / selectedCount;
+        if (aPrimaryRatio !== bPrimaryRatio) return bPrimaryRatio - aPrimaryRatio;
+        const aSecondary = cookDashboardImportanceLevelCount(a.match, 'SECONDARY');
+        const bSecondary = cookDashboardImportanceLevelCount(b.match, 'SECONDARY');
+        if (aSecondary !== bSecondary) return bSecondary - aSecondary;
+        const aImportance = cookDashboardImportanceScore(a.match);
+        const bImportance = cookDashboardImportanceScore(b.match);
+        if (aImportance !== bImportance) return bImportance - aImportance;
+        const aTitle = cookDashboardTitleSignalScore(a.match);
+        const bTitle = cookDashboardTitleSignalScore(b.match);
+        if (aTitle !== bTitle) return bTitle - aTitle;
+        const aRole = cookDashboardRecipeRoleScore(a.match);
+        const bRole = cookDashboardRecipeRoleScore(b.match);
+        if (aRole !== bRole) return bRole - aRole;
+        const scoreDiff = Number(b.match?.score || 0) - Number(a.match?.score || 0);
+        return scoreDiff || a.index - b.index;
+      })
+      .map(({ match }) => match);
+  }
+
+  function cookDashboardRankedIngredientMatches(matches, ingredient, predicate) {
+    return matches
+      .filter((match) => predicate(match, ingredient))
+      .sort((a, b) => {
+        const aLevel = cookDashboardImportanceWeight(cookDashboardIngredientImportanceLevel(a, ingredient));
+        const bLevel = cookDashboardImportanceWeight(cookDashboardIngredientImportanceLevel(b, ingredient));
+        if (aLevel !== bLevel) return bLevel - aLevel;
+        const aTitle = cookDashboardIngredientTitleSignal(a, ingredient);
+        const bTitle = cookDashboardIngredientTitleSignal(b, ingredient);
+        if (aTitle !== bTitle) return bTitle - aTitle;
+        const aRole = cookDashboardRecipeRoleScore(a);
+        const bRole = cookDashboardRecipeRoleScore(b);
+        if (aRole !== bRole) return bRole - aRole;
+        return Number(b.score || 0) - Number(a.score || 0);
+      });
+  }
+
+  function cookDashboardRecommendationEligible(match) {
+    const recipe = match?.recipe;
+    if (!recipe) return false;
+    const role = norm(recipe.recipeRole || recipe.recipe_role || '');
+    const mealRole = norm(recipe.mealRole || recipe.meal_role || '');
+    if (/^(soup|drink|beverage|dessert|baby_food)$/.test(role)) return false;
+    if (/^(soup|drink|beverage|dessert|baby_food)$/.test(mealRole)) return false;
+    if (cookDashboardBabyFoodStyleRecipe(recipe)) return false;
+    return true;
+  }
+
+  function cookDashboardBabyFoodStyleRecipe(recipe) {
+    if (!recipe) return false;
+    const collectionHome = recipe.collectionHome || recipe.collection_home || {};
+    const regionTags = recipe.regionTags && typeof recipe.regionTags === 'object'
+      ? Object.values(recipe.regionTags).flat()
+      : recipe.regionTags;
+    const text = [
+      recipe.title,
+      recipe.canonicalTitle,
+      recipe.englishSubtitle,
+      recipe.description,
+      recipe.recipeRole,
+      recipe.recipe_role,
+      recipe.mealRole,
+      recipe.meal_role,
+      recipe.dishFamily,
+      recipe.dish_family,
+      recipe.collectionSubcategory,
+      recipe.collection_subcategory,
+      collectionHome.hub,
+      collectionHome.collection,
+      ...(Array.isArray(recipe.aliases) ? recipe.aliases : []),
+      ...(Array.isArray(recipe.tags) ? recipe.tags : []),
+      ...(Array.isArray(recipe.mealTags) ? recipe.mealTags : []),
+      ...(Array.isArray(recipe.meal_tags) ? recipe.meal_tags : []),
+      ...(Array.isArray(recipe.moodTags) ? recipe.moodTags : []),
+      ...(Array.isArray(recipe.mood_tags) ? recipe.mood_tags : []),
+      ...(Array.isArray(regionTags) ? regionTags : [regionTags])
+    ].map(norm).join(' ');
+    return /\b(mash|mashed|puree|purée|baby food|weaning|infant|first foods?|tiny tummy|toddler|little plates|growing bites)\b/.test(text);
+  }
+
+  function cookDashboardBestMatchRepresentsSelection(match) {
+    const selectedCount = state.selectedIngredients.size;
+    if (selectedCount <= 1) return cookDashboardMatchedSelectedCount(match) > 0;
+    return cookDashboardMeaningfulSelectedLabels(match).length === selectedCount;
+  }
+
+  function cookDashboardCombinationRepresentsSelection(match) {
+    const selectedCount = state.selectedIngredients.size;
+    if (selectedCount < 2) return false;
+    return cookDashboardMeaningfulSelectedLabels(match).length === selectedCount;
+  }
+
+  function cookDashboardTitleSignalScore(match) {
+    return cookDashboardMatchedSelectedLabels(match)
+      .reduce((sum, ingredient) => sum + cookDashboardIngredientTitleSignal(match, ingredient), 0);
+  }
+
+  function cookDashboardIngredientTitleSignal(match, ingredient) {
+    const recipe = match?.recipe;
+    if (!recipe || !ingredient) return 0;
+    const haystack = [
+      recipe.title,
+      recipe.canonicalTitle,
+      recipe.englishSubtitle,
+      ...(Array.isArray(recipe.aliases) ? recipe.aliases : [])
+    ].map(norm).filter(Boolean).join(' ');
+    const key = norm(ingredient);
+    if (!key || !haystack) return 0;
+    if (cookDashboardIngredientTitleAliases(key).some((alias) => cookDashboardTextMentionsIngredient(haystack, alias))) return 2;
+    return recipeIngredients(recipe).some((item) => {
+      return item.main
+        && ingredientMatchesSelection(item.normalized, key)
+        && cookDashboardIngredientTitleAliases(item.normalized).some((alias) => cookDashboardTextMentionsIngredient(haystack, alias));
+    }) ? 1 : 0;
+  }
+
+  function cookDashboardIngredientTitleAliases(ingredient) {
+    const key = norm(ingredient);
+    const aliases = {
+      bread: ['bread', 'toast', 'sandwich'],
+      toast: ['bread', 'toast', 'sandwich'],
+      rice: ['rice', 'chawal', 'bhaat', 'sadam', 'pulao', 'biryani', 'khichdi'],
+      egg: ['egg', 'eggs', 'omelette', 'anda'],
+      eggs: ['egg', 'eggs', 'omelette', 'anda'],
+      paneer: ['paneer'],
+      chicken: ['chicken', 'kodi'],
+      potato: ['potato', 'aloo', 'batata'],
+      'wheat flour': ['wheat flour', 'atta', 'paratha', 'roti', 'chapati'],
+      wheat: ['wheat', 'wheat flour', 'atta', 'paratha', 'roti', 'chapati'],
+      atta: ['wheat', 'wheat flour', 'atta', 'paratha', 'roti', 'chapati'],
+      lemon: ['lemon', 'lime', 'chitranna'],
+      peanut: ['peanut', 'peanuts'],
+      peanuts: ['peanut', 'peanuts'],
+      coconut: ['coconut', 'thengai']
+    };
+    return aliases[key] || [key];
+  }
+
+  function cookDashboardTextMentionsIngredient(text, ingredientKey) {
+    if (!text || !ingredientKey) return false;
+    const escaped = ingredientKey.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp(`(^| )${escaped}( |$)`).test(text);
+  }
+
+  function cookDashboardRecipeRoleScore(match) {
+    const recipe = match?.recipe;
+    const role = norm(recipe?.recipeRole || recipe?.recipe_role || '');
+    const mealRole = norm(recipe?.mealRole || recipe?.meal_role || '');
+    if (/^(complete_meal|main_curry|breakfast_main)$/.test(mealRole)) return 4;
+    if (role === 'main') return 3;
+    if (mealRole === 'base') return 2;
+    if (/^(snack|quick_bite)$/.test(mealRole) || role === 'snack') return 1;
+    return 0;
+  }
+
+  function cookDashboardNextFocusIngredient(focusIngredients, baseIngredients, used) {
+    const usedKeys = new Set(used.filter(Boolean).map(norm));
+    return [...focusIngredients, ...baseIngredients].find((name) => name && !usedKeys.has(norm(name))) || '';
+  }
+
+  function cookDashboardFocusIngredients(bestMatch, baseIngredients) {
+    const labelsByKey = new Map(baseIngredients.map((name) => [norm(name), name]));
+    const orderedKeys = [
+      ...(bestMatch?.matchedSelectedMain || []),
+      ...(bestMatch?.matchedSelected || []),
+      ...baseIngredients.map(norm)
+    ];
+    return [...new Set(orderedKeys)]
+      .map((key) => labelsByKey.get(norm(key)))
+      .filter(Boolean);
+  }
+
+  function cookDashboardMatchUsesIngredient(match, ingredient) {
+    return (match?.matchedSelected || []).some((name) => ingredientMatchesSelection(norm(name), norm(ingredient)));
+  }
+
+  function cookDashboardMatchMeaningfullyUsesIngredient(match, ingredient) {
+    if (!cookDashboardMatchUsesIngredient(match, ingredient)) return false;
+    return ['PRIMARY', 'SECONDARY'].includes(cookDashboardIngredientImportanceLevel(match, ingredient));
+  }
+
+  function cookDashboardMatchedBaseCount(match, baseIngredients) {
+    return baseIngredients.filter((ingredient) => cookDashboardMatchUsesIngredient(match, ingredient)).length;
+  }
+
+  function cookDashboardMatchedBaseLabels(match, baseIngredients) {
+    return baseIngredients.filter((ingredient) => cookDashboardMatchUsesIngredient(match, ingredient));
+  }
+
+  function cookDashboardMatchedSelectedLabels(match) {
+    return [...state.selectedIngredients].filter((ingredient) => cookDashboardMatchUsesIngredient(match, ingredient));
+  }
+
+  function cookDashboardMeaningfulSelectedLabels(match) {
+    return cookDashboardMatchedSelectedLabels(match).filter((ingredient) => {
+      return ['PRIMARY', 'SECONDARY'].includes(cookDashboardIngredientImportanceLevel(match, ingredient));
+    });
+  }
+
+  function cookDashboardIngredientImportanceLevel(match, ingredient) {
+    const selectedBreakdown = match?.ingredientStrength?.selectedBreakdown || [];
+    const selected = selectedBreakdown.find((item) => ingredientMatchesSelection(norm(item.ingredient), norm(ingredient)));
+    return cookDashboardImportanceLevelForStrength(selected?.strength);
+  }
+
+  function cookDashboardImportanceLevelForStrength(strength) {
+    if (strength === 'core') return 'PRIMARY';
+    if (strength === 'support') return 'SECONDARY';
+    if (strength === 'optional' || strength === 'garnish' || strength === 'pantryStaple') return 'OPTIONAL';
+    return 'PAIRING_ONLY';
+  }
+
+  function cookDashboardImportanceWeight(level) {
+    return {
+      PRIMARY: 100,
+      SECONDARY: 45,
+      OPTIONAL: 8,
+      PAIRING_ONLY: 0
+    }[level] || 0;
+  }
+
+  function cookDashboardImportanceScore(match) {
+    return (match?.ingredientStrength?.selectedBreakdown || [])
+      .reduce((sum, item) => sum + cookDashboardImportanceWeight(cookDashboardImportanceLevelForStrength(item.strength)), 0);
+  }
+
+  function cookDashboardImportanceLevelCount(match, level) {
+    return (match?.ingredientStrength?.selectedBreakdown || [])
+      .filter((item) => cookDashboardImportanceLevelForStrength(item.strength) === level).length;
+  }
+
+  function cookDashboardUsedFamilies(matches = []) {
+    return new Set(matches
+      .map((match) => cookDashboardRecipeFamily(match?.recipe))
+      .filter(Boolean));
+  }
+
+  function cookDashboardSelectedFamilies() {
+    return new Set([...state.selectedIngredients]
+      .map(cookDashboardIngredientFamily)
+      .filter(Boolean));
+  }
+
+  function cookDashboardDiversityAvoidFamilies(usedFamilies = new Set(), selectedFamilies = new Set()) {
+    return new Set([...usedFamilies].filter((family) => family && !selectedFamilies.has(family)));
+  }
+
+  function cookDashboardIngredientFamily(ingredient) {
+    const key = norm(ingredient);
+    if (!key) return '';
+    if (/^(rice|basmati rice|gobindobhog rice|puffed rice|rice rava)$/.test(key)) return 'rice';
+    if (key === 'dosa batter') return 'dosa';
+    if (key === 'idli batter') return 'idli';
+    if (/^(wheat flour|atta|roti|chapati|paratha)$/.test(key)) return 'roti';
+    if (/^(bread|sandwich bread|toast)$/.test(key)) return 'sandwich';
+    if (/^(chutney|raita)$/.test(key)) return 'side';
+    if (/^(soup|rasam)$/.test(key)) return 'soup';
+    return '';
+  }
+
+  function cookDashboardRecipeFamily(recipe) {
+    const text = [
+      recipe?.title,
+      recipe?.canonicalTitle,
+      recipe?.englishSubtitle,
+      recipe?.category,
+      recipe?.dishFamily,
+      recipe?.dish_family,
+      recipe?.recipeRole,
+      recipe?.recipe_role,
+      recipe?.mealRole,
+      recipe?.meal_role,
+      ...(Array.isArray(recipe?.tags) ? recipe.tags : []),
+      ...(Array.isArray(recipe?.mealTags) ? recipe.mealTags : []),
+      ...(Array.isArray(recipe?.moodTags) ? recipe.moodTags : [])
+    ].map(norm).filter(Boolean).join(' ');
+    const title = norm(recipe?.title || '');
+    if (/\b(chutney|raita|pickle|podi|thecha|pachadi|side|condiment)\b/.test(text)) return 'side';
+    if (/\b(soup|rasam|saaru|thukpa)\b/.test(text)) return 'soup';
+    if (/\b(chai|tea|coffee|lassi|juice|drink|beverage|sharbat|sherbet|chaas|water)\b/.test(text)) return 'drink';
+    if (/\b(kheer|payasam|halwa|ladoo|laddu|barfi|dessert|sweet|jamun|sandesh|malpua|modak)\b/.test(text)) return 'dessert';
+    if (/\b(salad|kosambari)\b/.test(text)) return 'salad';
+    if (/\b(sandwich|toast|bread omelette|bread upma|bruschetta|garlic bread)\b/.test(text)) return 'sandwich';
+    if (/\b(paratha|roti|chapati|thepla|bhakri|kulcha|naan|wrap|roll|flatbread)\b/.test(text)) return 'roti';
+    if (/\b(dosa|dosai|uttapam|adai)\b/.test(text)) return 'dosa';
+    if (/\b(idli|kadubu)\b/.test(text)) return 'idli';
+    if (/\b(biryani|pulao|rice|chawal|bhaat|bhata|sadam|annam|khichdi|fried rice|rice bowl|puliyogare|pulihora|chitranna|bisibele|bisi bele|pongal)\b/.test(text)) return 'rice';
+    if (/\b(curry|gravy|kura|rassa|kuzhambu|pulusu|pappu|dal|sambar|kurma|korma|stew|xacuti|cafreal|vindaloo)\b/.test(text)) return 'curry';
+    if (/\b(sabzi|palya|poriyal|thoran|bhaji|fry|stir fry|stir-fry|roast|sukka|bhurji|omelette|omelet)\b/.test(text)) return 'stir-fry';
+    if (/\b(chaat|vada|bajji|pakora|samosa|cutlet|dhokla|khandvi|murukku|thattai|snack|sundal|makhana)\b/.test(text)) return 'snack';
+    return title.split(' ')[0] || 'other';
+  }
+
+  function cookDashboardIngredientIdeaHelper(match, ingredient) {
+    if (!match || !ingredient) return 'Ingredient noted';
+    const label = titleCase(ingredient);
+    const level = cookDashboardIngredientImportanceLevel(match, ingredient);
+    const key = norm(ingredient);
+    if (level === 'PRIMARY') {
+      if (/^(rice|basmati rice|gobindobhog rice|puffed rice|poha|rava|wheat flour|bread|noodles?)$/.test(key)) return `${label} Classic`;
+      if (/^(chicken|egg|eggs|paneer|fish|prawn|prawns|mutton|pork|tofu|dal|chana|rajma|curd)$/.test(key)) return `${label} Favourite`;
+      return `Built around ${label}`;
+    }
+    if (level === 'SECONDARY') return `${label} Special`;
+    return `${label} noted`;
+  }
+
+  function cookDashboardIngredientFallbackMatch(ingredient, usedRecipeIds = new Set(), avoidFamilies = new Set()) {
+    const ingredientKey = norm(ingredient);
+    const candidates = pantryRecipesUsingIngredient(ingredient)
+      .filter((recipe) => recipe?.id && !usedRecipeIds.has(recipe.id))
+      .filter((recipe) => cookDashboardRecommendationEligible({ recipe }));
+    const titleMatches = candidates.filter((item) => norm(item.title).includes(ingredientKey));
+    const recipe = titleMatches.find((item) => !avoidFamilies.has(cookDashboardRecipeFamily(item)))
+      || candidates.find((item) => !avoidFamilies.has(cookDashboardRecipeFamily(item)))
+      || titleMatches[0]
+      || candidates[0];
+    if (!recipe) return null;
+    usedRecipeIds.add(recipe.id);
+    return { recipe, matchedSelected: [ingredient], matchedSelectedMain: [ingredient] };
+  }
+
+  function cookDashboardMatchedSelectedCount(match) {
+    return new Set((match?.matchedSelected || []).map(norm)).size;
+  }
+
+  function myPantryCard() {
+    const savedCount = state.savedPantryIngredients.size;
+    return `
+      <section class="mv2-my-pantry-card" aria-label="My Pantry">
+        <div class="mv2-my-pantry-copy">
+          <p>🏠 My Pantry</p>
+          <h2>Save ingredients you usually have at home.</h2>
+        </div>
+        <div class="mv2-my-pantry-meta">
+          <span><strong>${savedCount}</strong><small>Ingredients</small></span>
+          <span><strong>Updated</strong><small>${esc(pantryLastUpdatedLabel())}</small></span>
+        </div>
+        <button type="button" data-manage-pantry>Manage Pantry</button>
+      </section>
+    `;
+  }
+
+  function pantryLastUpdatedLabel() {
+    if (!state.savedPantryIngredients.size || !state.savedPantryUpdatedAt) return 'Not started';
+    const timestamp = Date.parse(state.savedPantryUpdatedAt);
+    if (!Number.isFinite(timestamp)) return 'Saved';
+    const days = Math.floor((Date.now() - timestamp) / 86400000);
+    if (days <= 0) return 'Today';
+    if (days === 1) return 'Yesterday';
+    return `${days} days ago`;
   }
 
   function groceriesView() {
-    const unlocks = groceryUnlocks();
     const itemCount = state.groceries.length;
     const dishNames = cartDishNames();
     const grouped = groupedGroceries();
+    const completedCount = state.groceries.filter((item) => item.complete).length;
     return `
       <section class="mv2-grocery-section">
-        <div class="mv2-cart-heading">
-          <div><h2>🛒 Shopping List</h2>${itemCount ? `<strong>${itemCount} ${itemCount === 1 ? 'item' : 'items'} added</strong>` : ''}</div>
-          <p>Use this list while shopping, copy it, or share it with family.</p>
+        <div class="mv2-cart-heading mv2-grocery-summary-card">
+          <div class="mv2-grocery-summary-title"><span class="mv2-grocery-mascot-slot is-shopping"><img src="${esc(TOMO_MASCOT_IMAGES.shopping)}" alt="" aria-hidden="true" loading="lazy" decoding="async" /></span><span><h2>🛒 Grocery Summary</h2>${itemCount ? `<strong>${itemCount} ${itemCount === 1 ? 'item' : 'items'}</strong>` : ''}</span></div>
+          <p>Everything you need to buy from recipes, pantry and weekly plans.</p>
+          ${itemCount ? `<div class="mv2-grocery-summary-stats"><span><b>${esc(String(itemCount))}</b><small>${itemCount === 1 ? 'item' : 'items'}</small></span><span><b>${esc(String(completedCount))}</b><small>checked</small></span><span><b>${esc(String(dishNames.length))}</b><small>${dishNames.length === 1 ? 'dish' : 'dishes'}</small></span></div>` : ''}
+          ${itemCount ? `<div class="mv2-grocery-tools"><button type="button" data-copy-shopping-list>Copy List</button><button type="button" data-share-shopping-list>Share</button>${completedCount ? '<button type="button" data-clear-checked-groceries>Clear Checked</button>' : ''}</div>` : ''}
         </div>
-        <form class="mv2-grocery-form" data-grocery-form>
-          <input name="groceryItem" type="text" placeholder="Add an item..." autocomplete="off" required />
-          <button type="submit">Add</button>
-        </form>
-        ${state.groceries.length ? '<div class="mv2-grocery-tools"><button type="button" data-clear-groceries>Clear List</button></div>' : ''}
         ${state.groceries.length ? '<h3 class="mv2-cart-items-title">Items To Buy</h3>' : ''}
         <div class="mv2-grocery-list">
-          ${state.groceries.length ? grouped.map(cartGroupView).join('') : '<div class="mv2-shopping-empty"><strong>No items yet.</strong><p>Add missing ingredients from recipes and Tomo will build your shopping list.</p></div>'}
+          ${state.groceries.length ? grouped.map(cartGroupView).join('') : `<div class="mv2-shopping-empty"><img class="mv2-empty-mascot" src="${esc(TOMO_MASCOT_IMAGES.shopping)}" alt="" aria-hidden="true" loading="lazy" decoding="async" /><strong>🛒 Nothing to buy yet</strong><p>Missing ingredients from recipes, pantry and weekly plans will appear here.</p><button type="button" data-plan-tab="weekly">Go to Weekly Plan</button></div>`}
         </div>
-        ${itemCount ? readyToShopView(itemCount, dishNames) : ''}
+        ${itemCount ? shoppingListGuidance() : ''}
       </section>
-      ${itemCount ? cartUnlocksView(unlocks) : ''}
-      ${shoppingListGuidance()}
     `;
   }
 
   function shoppingListGuidance() {
     return `
       <section class="mv2-shopping-guidance">
-        <h3>Need these ingredients?</h3>
-        <p>🏪 Use this list at your local grocery store</p>
-        <p>📋 Copy and share with others</p>
+        <h3>Need help shopping?</h3>
+        <p>Copy or share this list before you go.</p>
         <small>Online grocery integrations coming soon.</small>
       </section>
     `;
   }
 
   function cartGroupView(group) {
-    return `<section class="mv2-grocery-group"><h3>${esc(group.name)}</h3>${group.items.map(cartItemView).join('')}</section>`;
+    return `<section class="mv2-grocery-group"><h3>${esc(group.name)} <span>(${esc(String(group.items.length))})</span></h3>${group.items.map(cartItemView).join('')}</section>`;
   }
 
   function cartItemView(item) {
     const neededFor = normalizePairingList(item.neededFor || []);
-    return `<div class="mv2-grocery-item"><div class="mv2-grocery-item-copy"><strong>${esc(item.name)}</strong>${neededFor.length ? `<small>${esc(item.name)} · ${esc(neededFor.join(', '))}</small>` : ''}</div><button type="button" data-grocery-remove="${esc(item.name)}" aria-label="Remove ${esc(item.name)}">×</button></div>`;
+    return `<div class="mv2-grocery-item ${item.complete ? 'is-complete' : ''}"><button class="mv2-grocery-check" type="button" data-grocery-toggle="${esc(item.name)}" aria-label="${item.complete ? 'Mark not purchased' : 'Mark purchased'} ${esc(item.name)}" aria-pressed="${Boolean(item.complete)}">${item.complete ? '✓' : ''}</button><div class="mv2-grocery-item-copy"><strong>${esc(item.name)}</strong>${item.quantity ? `<small>${esc(item.quantity)}</small>` : neededFor.length ? `<small>Needed for: ${esc(neededFor.join(', '))}</small>` : ''}</div><button class="mv2-grocery-remove" type="button" data-grocery-remove="${esc(item.name)}" aria-label="Remove ${esc(item.name)}">×</button></div>`;
   }
 
   function groupedGroceries() {
-    const order = ['Vegetables', 'Proteins', 'Spices', 'Staples', 'Other'];
+    const order = ['🥬 Produce', '🥛 Dairy', '🥚 Protein', '🌾 Pantry Staples', '🌶️ Spices', '🥜 Nuts & Seeds', '🍞 Bakery', '🥫 Packaged', '🧂 Other'];
     const groups = new Map(order.map((name) => [name, []]));
     state.groceries.forEach((item) => {
       groups.get(groceryCategory(item.name)).push(item);
@@ -4028,11 +6663,15 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       return norm(item.name || item.ingredient || item.title || item.ingredient_name || item.ingredient_key) === key;
     });
     const catalogSection = catalogItem?.section || catalogItem?.category || '';
-    if (/vegetable|fruit/i.test(catalogSection) || /onion|tomato|potato|carrot|capsicum|cabbage|cauliflower|beans|peas|spinach|mushroom|okra|brinjal|beet|cucumber|garlic|ginger|chilli|corn|spring onion/.test(key)) return 'Vegetables';
-    if (/protein|dairy/i.test(catalogSection) || /egg|chicken|fish|prawn|mutton|pork|paneer|tofu|soy|soya|keema|chana|chole|rajma|dal|lentil|peanut|sundal|milk|curd|yogurt|cheese/.test(key)) return 'Proteins';
-    if (/spice/i.test(catalogSection) || /masala|turmeric|chilli|pepper|cumin|mustard|coriander|curry leaves|podi|garam|chaat|tamarind|lemon|mint|salt/.test(key)) return 'Spices';
-    if (/staple|grain|dal/i.test(catalogSection) || /rice|wheat|atta|flour|bread|poha|rava|suji|oats|millet|ragi|dosa batter|idli batter|noodle|pasta|sabudana|jaggery|sugar|oil|ghee|butter/.test(key)) return 'Staples';
-    return 'Other';
+    if (/dairy/i.test(catalogSection) || /milk|curd|yogurt|yoghurt|paneer|cheese|cream|butter|ghee|buttermilk|chhana|mozzarella|cheddar/.test(key)) return '🥛 Dairy';
+    if (/protein/i.test(catalogSection) || /egg|chicken|fish|prawn|mutton|pork|beef|tofu|soy|soya|keema|chana|chole|rajma|dal|lentil|sundal|crab|duck/.test(key)) return '🥚 Protein';
+    if (/nut|seed/i.test(catalogSection) || /peanut|almond|cashew|pistachio|walnut|sesame|pumpkin seed|flax|chia|makhana|poppy seed/.test(key)) return '🥜 Nuts & Seeds';
+    if (/spice|herb/i.test(catalogSection) || /masala|turmeric|chilli|pepper|cumin|mustard|coriander|curry leaves|podi|garam|chaat|tamarind|mint|salt|saffron|ajwain|kasuri/.test(key)) return '🌶️ Spices';
+    if (/bread|bakery/i.test(catalogSection) || /bread|bun|pav|toast|kulcha|parotta|paratha|roti|chapati/.test(key)) return '🍞 Bakery';
+    if (/staple|grain|millet/i.test(catalogSection) || /rice|wheat|atta|flour|poha|rava|suji|oats|millet|ragi|dosa batter|idli batter|noodle|pasta|sabudana|vermicelli|jaggery|sugar|oil/.test(key)) return '🌾 Pantry Staples';
+    if (/packaged|sauce/i.test(catalogSection) || /sauce|ketchup|vinegar|noodle|pasta|chocolate|cocoa/.test(key)) return '🥫 Packaged';
+    if (/vegetable|fruit|produce/i.test(catalogSection) || /onion|tomato|potato|carrot|capsicum|cabbage|cauliflower|beans|peas|spinach|mushroom|okra|brinjal|beet|cucumber|garlic|ginger|lemon|corn|spring onion|banana|apple|mango|watermelon|pineapple|pomegranate|avocado|pumpkin|gourd|greens|palak|methi/.test(key)) return '🥬 Produce';
+    return '🧂 Other';
   }
 
   function cartUnlocksView(unlocks) {
@@ -4075,11 +6714,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
           <strong>Cooking Journey</strong>
           <span>✓ Dish selected</span>
           <span>✓ Missing ingredients found</span>
-          <span>✓ Shopping list ready</span>
-        </div>
-        <div class="mv2-cart-export-actions">
-          <button type="button" data-copy-shopping-list>Copy Shopping List</button>
-          <button type="button" data-share-shopping-list>Share List</button>
+          <span>✓ Grocery list ready</span>
         </div>
       </section>
     `;
@@ -4123,19 +6758,24 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const hasKitchenStats = cookedItems.length > 0;
     const summary = journeySummary(cookedItems);
     const visibleSavedItems = state.journalSavedExpanded ? savedItems : savedItems.slice(0, 3);
-    const visibleCookedItems = state.journalRecentExpanded ? cookedItems : cookedItems.slice(0, 3);
+    const recentActivities = realJourneyActivities().slice(0, 8);
+    const hasRealActivity = hasRealJourneyActivity();
     return `
       <section class="mv2-journey-section">
-        <div class="mv2-section-title"><div><h2>📖 Your Kitchen Story</h2></div></div>
-        ${kitchenStoryCard(summary, hasKitchenStats)}
+        <div class="mv2-section-title"><div><h2>📖 Your Story</h2></div></div>
+        ${kitchenStoryCard(summary, hasKitchenStats, savedItems.length, state.groceries.length)}
       </section>
       <section class="mv2-journey-section">
         <div class="mv2-section-title mv2-section-title-row"><div><h2>❤️ Saved for Later <span class="mv2-section-count">(${esc(String(savedItems.length))})</span></h2></div>${savedItems.length > 3 ? journalViewAllButton('saved', state.journalSavedExpanded ? 'Show fewer' : 'View all ›') : ''}</div>
         ${savedItems.length ? `<div class="mv2-journal-list">${visibleSavedItems.map((item) => journalCard(item, journalDishMetadata(item, 'Saved dish'))).join('')}</div>` : journalEmptyState('❤️', 'Start building your saved dishes.', 'Save dishes you want to revisit.', 'saved')}
       </section>
       <section class="mv2-journey-section">
-        <div class="mv2-section-title mv2-section-title-row"><div><h2>🍳 Recently Cooked</h2></div>${cookedItems.length > 3 ? journalViewAllButton('recent', state.journalRecentExpanded ? 'Show fewer' : 'View all ›') : ''}</div>
-        ${cookedItems.length ? `<div class="mv2-journal-scroll-row">${visibleCookedItems.map((item) => journalCard(item, journalCookedTimeLabel(item.record.timestamp), 'compact')).join('')}</div>` : journalEmptyState('🍳', 'Nothing cooked yet', 'Cook a dish and Tomo will remember it.')}
+        <div class="mv2-section-title"><div><h2>📝 Recent Activity</h2></div></div>
+        ${recentActivities.length ? journeyActivityCarousel(recentActivities) : journalEmptyState('📝', 'No activity yet', 'Cook, save, or add ingredients and Tomo will keep the trail here.', 'activity')}
+      </section>
+      <section class="mv2-journey-section">
+        <div class="mv2-section-title"><div><h2>💡 Tomo Insights</h2></div></div>
+        ${tomoInsightCard(summary, hasRealActivity)}
       </section>
       <section class="mv2-journey-section">
         <div class="mv2-section-title"><div><h2>💬 Help Tomo Improve</h2></div></div>
@@ -4144,15 +6784,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     `;
   }
 
-  function kitchenStoryCard(summary, hasKitchenStats) {
+  function kitchenStoryCard(summary, hasKitchenStats, savedCount = 0, groceryCount = 0) {
     const meals = Number(summary.mealsCooked || 0);
-    const mood = summary.favoriteMood && summary.favoriteMood !== 'Still learning' ? summary.favoriteMood : 'Still learning';
-    const dish = summary.mostCooked && summary.mostCooked !== 'Still learning' ? summary.mostCooked : 'Still learning';
-    const moodCopy = mood === 'Still learning' ? 'new' : titleCase(mood);
     if (!hasKitchenStats || meals <= 0) {
       return `
         <article class="mv2-kitchen-story-card mv2-journal-standard-card is-empty">
-          <img class="mv2-kitchen-story-mascot" src="/assets/mascots/tomo-peek-card-edge.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+          <img class="mv2-kitchen-story-mascot" src="${esc(TOMO_MASCOT_IMAGES.happy)}" alt="" aria-hidden="true" loading="lazy" decoding="async" />
           <div class="mv2-kitchen-story-empty">
             <strong>Your food story starts here.</strong>
             <p>Cook a few dishes and Tomo will start remembering your favorites.</p>
@@ -4162,12 +6799,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     }
     return `
       <article class="mv2-kitchen-story-card mv2-journal-standard-card is-populated">
-        <img class="mv2-kitchen-story-mascot" src="/assets/mascots/tomo-peek-card-edge.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+        <img class="mv2-kitchen-story-mascot" src="${esc(TOMO_MASCOT_IMAGES.happy)}" alt="" aria-hidden="true" loading="lazy" decoding="async" />
         <div class="mv2-kitchen-story-lines">
           <p><span>🍽️</span>You've cooked ${esc(String(meals))} ${meals === 1 ? 'dish' : 'dishes'} with Tomo.</p>
-          <p><span>⭐</span>Your favorite so far is ${esc(dish)}.</p>
-          <p><span>💛</span>You're enjoying ${esc(moodCopy)} meals.</p>
-          <p class="mv2-kitchen-story-footer"><span>❤️</span>Keep cooking and I'll learn more about your taste.</p>
+          <p><span>❤️</span>You've saved ${esc(String(savedCount))} ${savedCount === 1 ? 'dish' : 'dishes'} for later.</p>
+          <p><span>🛒</span>Your Grocery List has ${esc(String(groceryCount))} ${groceryCount === 1 ? 'item' : 'items'}.</p>
+          <p class="mv2-kitchen-story-footer"><span>✨</span>Every dish helps Tomo understand your taste.</p>
         </div>
       </article>
     `;
@@ -4195,7 +6832,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
   function realJourneyActivities() {
     const memory = dishMemoryEvents().map((event) => {
-      const name = event.dishName || dishMemoryRecipe(event)?.title || 'a dish';
+      const recipe = dishMemoryRecipe(event);
+      const name = event.dishName || recipe?.title || 'a dish';
       const labels = {
         saved: `Saved ${name}`,
         cooked: `Cooked ${name}`,
@@ -4205,12 +6843,17 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       };
       return {
         text: labels[event.action] || `${event.action} ${name}`,
-        timestamp: event.timestamp || ''
+        timestamp: event.timestamp || '',
+        action: event.action || '',
+        title: name,
+        recipe
       };
     });
     const cart = state.groceries.map((item) => ({
-      text: `Added ${item.name} to Shopping Cart`,
-      timestamp: ''
+      text: `Added ${item.name} to Grocery List`,
+      timestamp: item.timestamp || item.addedAt || '',
+      action: 'grocery',
+      title: item.name || 'Grocery List updated'
     }));
     const cookedItems = journalItems(state.cookedDishes);
     const streak = cookingStreak(cookedItems);
@@ -4224,11 +6867,44 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         seen.add(key);
         return true;
       })
-      .map((item) => item.text);
+      .map((item) => item);
   }
 
   function journeyTextActivity(items, prototype = false) {
-    return `<article class="mv2-journey-text-activity ${prototype ? 'prototype' : ''}"><ul>${items.map((item) => `<li><span>${esc(activityIcon(item))}</span>${esc(item)}</li>`).join('')}</ul></article>`;
+    return `<article class="mv2-journey-text-activity ${prototype ? 'prototype' : ''}"><ul>${items.map((item) => {
+      const activity = typeof item === 'string' ? { text: item, timestamp: '' } : item;
+      const time = journalRelativeActivityLabel(activity.timestamp);
+      return `<li><span>${esc(activityIcon(activity.text))}</span><b>${esc(activity.text)}</b>${time ? `<small>${esc(time)}</small>` : ''}</li>`;
+    }).join('')}</ul></article>`;
+  }
+
+  function journeyActivityCarousel(items) {
+    return `<div class="mv2-journey-activity-carousel">${items.map(journalActivityTile).join('')}</div>`;
+  }
+
+  function journalActivityTile(item) {
+    const activity = typeof item === 'string' ? { text: item, timestamp: '' } : item;
+    const recipe = activity.recipe || (activity.action === 'grocery' ? null : findRecipe(activity.title || activity.text));
+    const title = activity.title || recipe?.title || activity.text || 'Activity';
+    const action = journalActivityActionLabel(activity);
+    const time = journalRelativeActivityLabel(activity.timestamp);
+    const image = recipe ? recipeImage(recipe) : '';
+    const content = image
+      ? imageTag(image)
+      : `<span class="mv2-activity-icon-fallback" aria-hidden="true">${esc(activityIcon(activity.text || action))}</span>`;
+    return `<button class="mv2-activity-card" type="button" ${recipe ? `data-journal-recipe="${esc(recipe.id)}"` : ''}>${content}<span><small>${esc(action)}</small><strong>${esc(title)}</strong>${time ? `<em>${esc(time)}</em>` : ''}</span></button>`;
+  }
+
+  function journalActivityActionLabel(activity) {
+    const action = norm(activity.action || '');
+    const text = norm(activity.text || '');
+    if (action === 'cooked' || text.includes('cooked')) return 'Cooked';
+    if (action === 'saved' || text.includes('saved')) return 'Saved';
+    if (action === 'grocery' || text.includes('grocery list') || text.includes('shopping list') || text.startsWith('added ')) return 'Grocery List';
+    if (text.includes('streak')) return 'Streak';
+    if (text.includes('liked') || text.includes('helpful')) return 'Liked';
+    if (text.includes('not for me') || text.includes('dismissed') || text.includes('not helpful')) return 'Feedback';
+    return 'Activity';
   }
 
   function activityIcon(text) {
@@ -4236,7 +6912,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (value.includes('cooked')) return '🍳';
     if (value.includes('streak')) return '🔥';
     if (value.includes('saved')) return '❤️';
-    if (value.includes('shopping list') || value.includes('shopping cart') || value.includes('cart') || value.startsWith('added ')) return '🛒';
+    if (value.includes('grocery list') || value.includes('shopping list') || value.includes('shopping cart') || value.includes('cart') || value.startsWith('added ')) return '🛒';
     if (value.includes('liked') || value.includes('helpful')) return '👍';
     if (value.includes('not for me') || value.includes('dismissed') || value.includes('not helpful')) return '👎';
     if (value.includes('pongal') || value.includes('khichdi') || value.includes('soup')) return '🥣';
@@ -4369,7 +7045,11 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function journalEmptyState(icon, title, copy, variant = '') {
-    return `<article class="mv2-empty-state ${variant ? `mv2-empty-state-${esc(variant)}` : ''}"><span>${icon}</span><h2>${esc(title)}</h2><p>${esc(copy)}</p><button type="button" data-journal-explore>Explore dishes</button></article>`;
+    if (variant === 'saved') {
+      return `<article class="mv2-empty-state mv2-empty-state-saved">${TomoMascot({ variant: 'heart', size: 'md', message: 'No saved dishes yet. Tomo will keep your favorites here.', compact: true })}<button type="button" data-journal-explore>Explore dishes</button></article>`;
+    }
+    const mascotVariant = variant === 'cooked' ? 'cooking' : 'empty';
+    return `<article class="mv2-empty-state ${variant ? `mv2-empty-state-${esc(variant)}` : ''}"><img class="mv2-empty-mascot" src="${esc(TOMO_MASCOT_IMAGES[mascotVariant])}" alt="" aria-hidden="true" loading="lazy" decoding="async" /><h2>${esc(title)}</h2><p>${esc(copy)}</p><button type="button" data-journal-explore>Explore dishes</button></article>`;
   }
 
   function journalCard(item, metadata, variant = '') {
@@ -4454,6 +7134,44 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return `mailto:rajeshgowda767@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 
+  function preferencesSheet() {
+    const draft = normalizePreferences(state.preferencesDraft || state.preferences);
+    const selectedProteins = new Set(draft.proteins);
+    const proteinError = draft.diet === 'nonveg' && !selectedProteins.size;
+    return `
+      <div class="mv2-modal-backdrop" role="presentation">
+        <section class="mv2-feedback-modal mv2-preferences-modal" role="dialog" aria-modal="true" aria-labelledby="mv2PreferencesTitle">
+          <button class="mv2-modal-close" type="button" data-close-preferences aria-label="Close preferences">×</button>
+          <h2 id="mv2PreferencesTitle">Food Preferences</h2>
+          <p>Choose what Tomo should recommend across the app.</p>
+          <div class="mv2-preferences-group" role="radiogroup" aria-label="Diet preference">
+            <span>Diet preference</span>
+            ${dietOptions.map(([value, label]) => `
+              <button class="${draft.diet === value ? 'active' : ''}" type="button" data-pref-diet="${esc(value)}" aria-pressed="${draft.diet === value}">
+                ${esc(label)}
+              </button>
+            `).join('')}
+          </div>
+          ${draft.diet === 'nonveg' ? `
+            <div class="mv2-preferences-group mv2-preferences-proteins" aria-label="Protein preference">
+              <span>Which proteins do you eat?</span>
+              ${proteinOptions.map(([value, label]) => `
+                <button class="${selectedProteins.has(value) ? 'active' : ''}" type="button" data-pref-protein="${esc(value)}" aria-pressed="${selectedProteins.has(value)}">
+                  ${selectedProteins.has(value) ? '✓ ' : ''}${esc(label)}
+                </button>
+              `).join('')}
+              ${proteinError ? '<small class="mv2-preferences-error">Select at least one protein.</small>' : ''}
+            </div>
+          ` : ''}
+          <div class="mv2-feedback-actions">
+            <button type="button" data-save-preferences ${!draft.diet || proteinError ? 'disabled' : ''}>Save Preferences</button>
+            <button type="button" data-close-preferences>Cancel</button>
+          </div>
+        </section>
+      </div>
+    `;
+  }
+
   function sourceLabel(source) {
     const labels = {
       'tomo-pick': 'Tomo Pick',
@@ -4529,9 +7247,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   function collectionVisibleRecipes(group) {
-    if (collectionByKey(group?.collectionKey)?.generatedType === 'collection') return group?.recipes || [];
+    if (collectionByKey(group?.collectionKey)?.generatedType === 'collection') return preferenceFilteredRecipes(group?.recipes || []);
     const curatedFullCollections = new Set(['sides-addons', 'lunchbox', 'gym-foods', 'drinks', 'soups', 'salads']);
-    return curatedFullCollections.has(group?.collectionKey) ? (group?.recipes || []) : browseDiverseRecipes(group?.recipes || []);
+    const visible = preferenceFilteredRecipes(group?.recipes || []);
+    return curatedFullCollections.has(group?.collectionKey) ? visible : browseDiverseRecipes(visible);
   }
 
   function dishDetailView() {
@@ -4552,7 +7271,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return `
       <article class="mv2-dish-decision-head">
         <div class="mv2-detail-image">
-          ${imageTag(recipeImage(recipe))}
+          ${imageTag(recipeImage(recipe), { priority: true, hero: true })}
           <button class="mv2-back" type="button" data-back="${backTarget}" aria-label="${backLabel}">←</button>
         </div>
         <div class="mv2-dish-info">
@@ -4564,6 +7283,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
               <span class="mv2-dish-chip">${esc(mood)}</span>
               <span class="mv2-dish-chip">${esc(meal)}</span>
             </div>
+          </div>
+          <div class="mv2-detail-primary-actions">
+            <button class="mv2-detail-cook" type="button" data-cook-recipe="${esc(recipe.id)}" data-dish-name="${esc(recipe.title)}" data-source="dish-detail">Cook This</button>
+            <button class="mv2-detail-plan" type="button" data-open-plan-sheet="${esc(recipe.id)}">📅 Add to Plan</button>
           </div>
         </div>
       </article>
@@ -4584,23 +7307,107 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       </section>`}
       <section class="mv2-related">
         <div class="mv2-section-title"><div><h2>You May Also Like</h2></div></div>
-        <div class="mv2-related-scroll">${related.map(relatedDishCard).join('') || '<p class="mv2-empty">More related dishes are coming soon.</p>'}</div>
+        <div class="mv2-related-scroll">${related.map(relatedDishCard).join('') || '<p class="mv2-empty">No related dishes yet.</p>'}</div>
       </section>
     `;
   }
 
+  function quickGuideSeasoningItem(item) {
+    const text = norm(item).replace(/^[\d./\s]+(?:g|kg|ml|l|cup|cups|tsp|tbsp|pinch|cloves?|small|large|medium|pcs?|pieces?|portion)?\s+/, '');
+    const seasoningTerms = [
+      'oil', 'ghee', 'salt', 'turmeric', 'red chilli', 'red chili', 'chilli powder', 'chili powder',
+      'coriander powder', 'cumin', 'cumin powder', 'garam masala', 'soy sauce', 'black pepper',
+      'pepper', 'mustard seeds', 'mustard seed', 'sesame', 'ajwain', 'vinegar', 'chaat masala',
+      'sambar powder', 'rasam powder', 'goda masala', 'poppy seeds', 'saffron'
+    ];
+    return seasoningTerms.some((term) => text === term || text.includes(term));
+  }
+
+  function currentPlanDay() {
+    const index = (new Date().getDay() + 6) % 7;
+    return window.TOMO_PLAN_ENGINE?.DAYS?.[index] || 'monday';
+  }
+
+  function defaultPlanMeal(recipe) {
+    return ['breakfast', 'lunch', 'dinner', 'snack'].find((mealType) => matchesMeal(recipe, mealType)) || 'dinner';
+  }
+
+  function plannedSlot(day = state.planSelectedDay, mealType = state.planSelectedMeal) {
+    try {
+      return window.TOMO_PLAN_ENGINE?.getWeeklyPlan()?.days?.[day]?.[mealType] || null;
+    } catch {
+      return null;
+    }
+  }
+
+  function planSheet() {
+    const recipe = activeRecipe();
+    if (!recipe) return '';
+    const planDays = window.TOMO_PLAN_ENGINE?.DAYS || ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    const planMeals = window.TOMO_PLAN_ENGINE?.MEAL_TYPES || ['breakfast', 'lunch', 'dinner', 'snack'];
+    const existing = plannedSlot();
+    return `
+      <div class="mv2-modal-backdrop mv2-plan-backdrop" data-close-plan-sheet role="presentation">
+        <section class="mv2-plan-sheet" role="dialog" aria-modal="true" aria-labelledby="mv2PlanSheetTitle">
+          <button class="mv2-modal-close" type="button" data-close-plan-sheet aria-label="Close Add to Plan">×</button>
+          <header class="mv2-plan-sheet-head">
+            <h2 id="mv2PlanSheetTitle">Add to My Plan</h2>
+            <p>${esc(recipe.title)}</p>
+          </header>
+          <fieldset class="mv2-plan-fieldset">
+            <legend>Day</legend>
+            <div class="mv2-plan-day-grid">
+              ${planDays.map((day) => `<button class="${state.planSelectedDay === day ? 'active' : ''}" type="button" data-plan-day="${esc(day)}" aria-pressed="${state.planSelectedDay === day}">${esc(titleCase(day))}</button>`).join('')}
+            </div>
+          </fieldset>
+          <fieldset class="mv2-plan-fieldset">
+            <legend>Meal</legend>
+            <div class="mv2-plan-meal-grid">
+              ${planMeals.map((mealType) => `<button class="${state.planSelectedMeal === mealType ? 'active' : ''}" type="button" data-plan-meal="${esc(mealType)}" aria-pressed="${state.planSelectedMeal === mealType}">${esc(titleCase(mealType))}</button>`).join('')}
+            </div>
+          </fieldset>
+          ${state.planReplaceConfirm && existing ? `
+            <div class="mv2-plan-replace" role="alert">
+              <strong>Replace existing meal?</strong>
+              <p>${esc(existing.recipeName)} is already planned for ${esc(titleCase(state.planSelectedDay))} ${esc(titleCase(state.planSelectedMeal))}.</p>
+              <div>
+                <button type="button" data-cancel-plan-replace>Cancel</button>
+                <button type="button" data-confirm-plan-replace>Replace</button>
+              </div>
+            </div>
+          ` : `<button class="mv2-plan-submit" type="button" data-add-to-plan>Add to My Plan</button>`}
+        </section>
+      </div>
+    `;
+  }
+
+  function splitQuickGuideItems(items) {
+    return normalizePairingList(items).reduce((groups, item) => {
+      const group = quickGuideSeasoningItem(item) ? 'seasonings' : 'ingredients';
+      groups[group].push(item);
+      return groups;
+    }, { ingredients: [], seasonings: [] });
+  }
+
   function quickGuideView(guide, recipe) {
-    const ingredientCount = guide.ingredients.length;
-    const stepCount = guide.steps.length;
+    const splitItems = splitQuickGuideItems(guide.ingredients);
+    const steps = guide.steps.slice(0, 7);
+    const ingredientCount = splitItems.ingredients.length;
+    const seasoningCount = splitItems.seasonings.length;
+    const stepCount = steps.length;
     const tip = quickTip(recipe, guide);
     return `
       <section class="mv2-quick-guide">
         <div class="mv2-quick-guide-head">
-          <p>💡 Tomo Tip</p>
+          <p>Quick Guide</p>
+        </div>
+        <div class="mv2-quick-guide-meta">
+          <span>🍽 Serves 2</span>
         </div>
         ${tip ? `<p class="mv2-quick-tip">${esc(tip)}</p>` : ''}
-        ${guide.ingredients.length ? `<details class="mv2-detail-collapse"><summary><span><b>🥕 Ingredients (${ingredientCount})</b></span></summary><ul>${guide.ingredients.map((item) => `<li>${esc(item)}</li>`).join('')}</ul></details>` : ''}
-        ${guide.steps.length ? `<details class="mv2-detail-collapse"><summary><span><b>👨‍🍳 Steps (${stepCount})</b></span></summary><ol>${guide.steps.map((step) => `<li>${esc(step)}</li>`).join('')}</ol></details>` : ''}
+        ${splitItems.ingredients.length ? `<details class="mv2-detail-collapse"><summary><span><b>🥕 Ingredients (${ingredientCount})</b></span></summary><ul>${splitItems.ingredients.map((item) => `<li>${esc(item)}</li>`).join('')}</ul></details>` : ''}
+        ${splitItems.seasonings.length ? `<details class="mv2-detail-collapse"><summary><span><b>🧂 Seasoning (${seasoningCount})</b></span></summary><ul>${splitItems.seasonings.map((item) => `<li>${esc(item)}</li>`).join('')}</ul></details>` : ''}
+        ${steps.length ? `<details class="mv2-detail-collapse"><summary><span><b>🍳 Quick Steps (${stepCount})</b></span></summary><ol>${steps.map((step) => `<li>${esc(step)}</li>`).join('')}</ol></details>` : ''}
       </section>
     `;
   }
@@ -4664,7 +7471,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         <div class="mv2-need-group">
           <strong>Need</strong>
           <span>${availability.need.length ? availability.need.map((name) => `<i>+ ${esc(name)}</i>`).join('') : '<em>Nothing missing</em>'}</span>
-          ${availability.need.length ? `<button class="mv2-add-missing-primary" type="button" data-detail-add-missing="${esc(recipe?.id || '')}">Add to Shopping List</button>` : '<em class="mv2-ready-note">✓ You have everything listed for this dish.</em>'}
+          ${availability.need.length ? `<button class="mv2-add-missing-primary" type="button" data-detail-add-missing="${esc(recipe?.id || '')}">Add to Grocery List</button>` : '<em class="mv2-ready-note">✓ You have everything listed for this dish.</em>'}
         </div>
         ${availability.nice?.length ? `<div class="mv2-nice-group"><strong>Nice To Have</strong><span>${availability.nice.map((name) => `<i>• ${esc(name)}</i>`).join('')}</span></div>` : ''}
       </section>
@@ -4766,18 +7573,253 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return `<button class="mv2-related-card" type="button" data-related-recipe="${esc(recipe.id)}">${imageTag(recipeImage(recipe))}<span><strong>${esc(recipe.title)}</strong><small>${totalTime(recipe)} min • ${esc(mealForRecipe(recipe))}</small></span></button>`;
   }
 
+  const pantryEverydayEssentials = [
+    'Onion',
+    'Tomato',
+    'Potato',
+    'Rice',
+    'Egg',
+    'Paneer',
+    'Bread',
+    'Garlic',
+    'Ginger',
+    'Green Chilli',
+    'Wheat Flour',
+    'Rava',
+    'Poha',
+    'Chicken',
+    'Milk',
+    'Curd',
+    'Lemon',
+    'Coconut',
+    'Cucumber',
+    'Water',
+    'Sugar',
+    'Ghee',
+    'Oil',
+    'Cheese',
+    'Peanuts'
+  ];
+
+  const managePantryStarterIngredients = [
+    'Rice',
+    'Wheat Flour',
+    'Onion',
+    'Tomato',
+    'Potato',
+    'Garlic',
+    'Ginger',
+    'Green Chilli',
+    'Oil',
+    'Ghee',
+    'Sugar',
+    'Salt',
+    'Milk',
+    'Curd',
+    'Egg',
+    'Paneer',
+    'Bread',
+    'Rava',
+    'Poha',
+    'Coconut',
+    'Peanuts',
+    'Cumin',
+    'Turmeric',
+    'Mustard Seeds',
+    'Curry Leaves',
+    'Coriander'
+  ];
+
+  const pantryCoverageCandidates = [
+    'Idli Batter',
+    'Ragi Flour',
+    'Basmati Rice',
+    'Gobindobhog Rice',
+    'Puffed Rice',
+    'Broken Wheat',
+    'Dalia',
+    'Rice Rava',
+    'Millet',
+    'Millet Flour',
+    'Horse Gram',
+    'Foxtail Millet',
+    'Jowar',
+    'Bamboo Shoot',
+    'Beans',
+    'Beetroot',
+    'Brinjal',
+    'Bottle Gourd',
+    'Ash Gourd',
+    'Ridge Gourd',
+    'Raw Banana',
+    'Green Peas',
+    'Sweet Corn',
+    'Raw Mango',
+    'Cauliflower',
+    'Okra',
+    'Radish',
+    'Pumpkin',
+    'Mixed Vegetables',
+    'Broccoli',
+    'Pointed Gourd',
+    'Sweet Potato',
+    'Bitter Gourd',
+    'Chow Chow',
+    'Dosakaya',
+    'Raw Papaya',
+    'Greens',
+    'Amaranth',
+    'Moringa Leaves',
+    'Colocasia Leaves',
+    'Mustard Greens',
+    'Banana Blossom',
+    'Banana Flower',
+    'Banana Stem',
+    'Drumstick Leaves',
+    'Smoked Pork',
+    'Snake Gourd',
+    'Moringa',
+    'Yam',
+    'Keerai',
+    'Lai Xaak',
+    'Tofu',
+    'Prawns',
+    'Chana Dal',
+    'Cowpeas',
+    'Masoor Dal',
+    'Yellow Peas',
+    'Soya Chunks',
+    'Crab',
+    'Duck',
+    'Bhetki Fish',
+    'Bombil Fish',
+    'Jackfruit',
+    'Lotus Stem',
+    'Tapioca',
+    'Butter',
+    'Cream',
+    'Buttermilk',
+    'Chhana',
+    'Cheddar',
+    'Mozzarella',
+    'Jaggery',
+    'Cumin',
+    'Turmeric',
+    'Ajwain',
+    'Mustard Seeds',
+    'Poppy Seeds',
+    'Black Pepper',
+    'Black Sesame',
+    'Goda Masala',
+    'Saffron',
+    'Vinegar',
+    'Cocoa Powder',
+    'Basil',
+    'Parsley',
+    'Lemongrass',
+    'Tulsi Leaves',
+    'Avocado',
+    'Dates',
+    'Mango',
+    'Watermelon',
+    'Pineapple',
+    'Pomegranate',
+    'Pear',
+    'Mustard Oil',
+    'Sesame Oil',
+    'Schezwan Sauce',
+    'Avarekalu',
+    'Nannari Syrup',
+    'Kachampuli',
+    'Sundakkai Vathal',
+    'Vathal',
+    'Makhana',
+    'Banana Leaf',
+    'Tender Coconut',
+    'Tender Coconut Water',
+    'Kasuri Methi'
+  ];
+
+  const pantrySpecialtyPreviewDefs = [
+    {
+      ingredient: 'Horse Gram',
+      region: 'Karnataka',
+      dishes: ['Bassaru', 'Huruli Saaru', 'Horse Gram Chutney', 'Kollu Rasam', 'Ulavacharu']
+    },
+    {
+      ingredient: 'Gongura',
+      region: 'Andhra',
+      dishes: ['Gongura Mutton', 'Gongura Pachadi', 'Gongura Pappu']
+    },
+    {
+      ingredient: 'Bamboo Shoot',
+      region: 'Northeast India',
+      dishes: ['Bamboo Shoot Pork', 'Smoked Bamboo Curry', 'Bamboo Shoot Curry']
+    },
+    {
+      ingredient: 'Ragi',
+      region: 'Karnataka',
+      dishes: ['Ragi Mudde', 'Ragi Dosa', 'Ragi Malt']
+    }
+  ];
+
+  const pantryRegionalFinds = [
+    'Horse Gram', 'Gongura', 'Bamboo Shoot', 'Avarekalu', 'Ragi', 'Tapioca',
+    'Lotus Stem', 'Jackfruit', 'Banana Flower', 'Banana Stem', 'Raw Mango',
+    'Drumstick Leaves', 'Colocasia Leaves', 'Smoked Pork', 'Pumpkin',
+    'Bottle Gourd', 'Okra', 'Brinjal', 'Potato', 'Greens', 'Yam',
+    'Ridge Gourd', 'Snake Gourd', 'Ash Gourd', 'Moringa'
+  ];
+
   function pantryIngredientSections() {
     const query = norm(state.pantrySearch);
+    return pantrySectionsFromNames(allPantryIngredientNames(), query);
+  }
+
+  function savedPantryIngredientSections() {
+    const query = norm(state.savedPantrySearch);
+    return pantrySectionsFromNames(allPantryIngredientNames(), query);
+  }
+
+  function pantrySectionsFromNames(names, query = '') {
     const groups = new Map(sectionNames().map((name) => [name, []]));
+    names.forEach((name) => {
+      if (!name) return;
+      if (query && !norm(name).includes(query)) return;
+      const isEveryday = pantryEverydayEssentials.some((item) => norm(item) === norm(name));
+      addIngredientToSection(groups, isEveryday ? 'Everyday Essentials' : pantryUiCategoryForName(name), name);
+      if (norm(name) === 'chicken') addIngredientToSection(groups, '🥩 Proteins', name);
+      if (pantryRegionalFinds.some((item) => norm(item) === norm(name))) {
+        addIngredientToSection(groups, '✨ Regional Finds', name);
+      }
+    });
+    return [...groups].map(([name, ingredients]) => ({ name, ingredients })).filter((section) => section.ingredients.length);
+  }
+
+  function pantryVisibleIngredientRecords() {
+    const records = [];
+    const seen = new Set();
+    const addRecord = (item) => {
+      const name = item?.ingredient_name || item?.name;
+      const key = norm(name);
+      if (!key || seen.has(key)) return;
+      seen.add(key);
+      records.push(item);
+    };
     pantryCatalog
       .filter((item) => item.display_status !== 'hidden')
-      .forEach((item) => {
-        const name = item.ingredient_name || item.name;
-        if (!name || (query && !norm(name).includes(query))) return;
-        addIngredientToSection(groups, sectionForIngredient(item), name);
-        if (isStapleBrowserIngredient(name)) addIngredientToSection(groups, 'Staples', name);
+      .forEach(addRecord);
+    pantryCoverageCandidates.forEach((name) => {
+      const catalogItem = pantryCatalog.find((item) => norm(item.ingredient_name || item.name) === norm(name));
+      if (catalogItem && catalogItem.display_status !== 'hidden') return;
+      addRecord({
+        ingredient_name: name,
+        category: pantryUiCategoryForName(name),
+        display_status: 'visible',
+        used_by_recipe_count: pantryRecipeIngredientCount(name)
       });
-    return [...groups].map(([name, ingredients]) => ({ name, ingredients })).filter((section) => section.ingredients.length);
+    });
+    return records;
   }
 
   function addIngredientToSection(groups, section, name) {
@@ -4785,32 +7827,213 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (list && !list.some((item) => norm(item) === norm(name))) list.push(name);
   }
 
+  function pantryIngredientBrowser(sections, options = {}) {
+    const mode = options.mode || 'today';
+    const query = mode === 'saved' ? norm(state.savedPantrySearch) : norm(state.pantrySearch);
+    const selectedCategory = mode === 'saved' ? state.savedPantryCategory : state.pantryCategory;
+    const sectionMap = new Map(sections.map((section) => [section.name, section]));
+    const activeName = sectionNames().includes(selectedCategory) ? selectedCategory : 'Everyday Essentials';
+    const activeSection = sectionMap.get(activeName) || sections[0] || { name: activeName, ingredients: [] };
+    const ingredients = query ? sections.flatMap((section) => section.ingredients) : activeSection.ingredients;
+    const uniqueIngredients = [...new Map(ingredients.map((name) => [norm(name), name])).values()];
+    const emptyCopy = 'No ingredients found.';
+    return `
+      <div class="mv2-pantry-browser ${query ? 'is-searching' : ''}" data-pantry-browser="${esc(mode)}">
+        <div class="mv2-pantry-category-rail" role="tablist" aria-label="Ingredient categories">
+          ${sectionNames().map((name) => pantryCategoryButton(name, sectionMap.get(name)?.ingredients.length || 0, !query && name === activeName, mode)).join('')}
+        </div>
+        <div class="mv2-pantry-ingredient-panel">
+          <div class="mv2-pantry-panel-head">
+            <span>${query ? 'Search results' : esc(pantryCategoryLabel(activeSection.name))}</span>
+            ${mode === 'today' && state.selectedIngredients.size
+              ? `<button class="mv2-pantry-clear-inline" type="button" data-clear-pantry>✓ ${state.selectedIngredients.size} selected · Clear All</button>`
+              : `<small>${uniqueIngredients.length} ingredients</small>`}
+          </div>
+          ${!query && activeSection.name === '✨ Regional Finds' ? '<p class="mv2-pantry-regional-helper">Select one to reveal regional dishes.</p>' : ''}
+          <div class="mv2-ingredient-grid">${uniqueIngredients.map((name) => mode === 'saved' ? savedPantryDisplayChip(name) : ingredientChip(name)).join('') || `<p class="mv2-empty">${esc(emptyCopy)}</p>`}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  function pantryCategoryButton(name, count, active, mode = 'today') {
+    return `<button class="${active ? 'active' : ''}" type="button" role="tab" aria-selected="${active ? 'true' : 'false'}" data-pantry-category="${esc(name)}" data-pantry-category-mode="${esc(mode)}"><span>${esc(pantryCategoryLabel(name))}</span><small>${count}</small></button>`;
+  }
+
+  function pantryCategoryLabel(name) {
+    const labels = {
+      'Everyday Essentials': 'Staples',
+      '🌾 Grains & Millets': 'Grains',
+      '🥕 Vegetables': 'Veg',
+      '🥬 Leafy Greens': 'Greens',
+      '🥩 Proteins': 'Protein',
+      '🥛 Dairy': 'Dairy',
+      '🌶️ Spices': 'Spices',
+      '🌿 Herbs & Aromatics': 'Herbs',
+      '🍎 Fruits': 'Fruits',
+      '✨ Regional Finds': 'Regional Finds'
+    };
+    return labels[name] || name;
+  }
+
   function pantrySection(section) {
-    const expanded = state.pantrySections.has(section.name) || Boolean(state.pantrySearch);
-    return `<article class="mv2-pantry-section"><button class="mv2-pantry-section-toggle" type="button" data-pantry-section="${esc(section.name)}"><span>${esc(section.name)}</span><small>${section.ingredients.length}</small><b>${expanded ? '−' : '+'}</b></button>${expanded ? `<div class="mv2-ingredient-grid">${section.ingredients.map((name) => ingredientChip(name)).join('')}</div>` : ''}</article>`;
+    const isEssential = section.name === 'Everyday Essentials';
+    const expanded = isEssential || state.pantrySections.has(section.name) || Boolean(state.pantrySearch);
+    return `<article class="mv2-pantry-section ${isEssential ? 'mv2-pantry-section-essential' : ''}"><button class="mv2-pantry-section-toggle" type="button" data-pantry-section="${esc(section.name)}"><span>${esc(section.name)}</span><small>${section.ingredients.length}</small><b>${isEssential ? '' : expanded ? '−' : '+'}</b></button>${expanded ? `<div class="mv2-ingredient-grid">${section.ingredients.map((name) => ingredientChip(name)).join('')}</div>` : ''}</article>`;
   }
 
   function ingredientChip(name) {
     return `<button class="mv2-ingredient-chip ${state.selectedIngredients.has(name) ? 'active' : ''}" type="button" data-ingredient="${esc(name)}">${esc(name)}</button>`;
   }
 
+  function savedPantryDisplayChip(name) {
+    const active = savedPantryHas(name);
+    return `<button class="mv2-ingredient-chip mv2-saved-pantry-chip ${active ? 'active' : ''}" type="button" role="checkbox" aria-checked="${active ? 'true' : 'false'}" data-saved-pantry-view="${esc(name)}"><span aria-hidden="true">${active ? '✓' : ''}</span>${esc(name)}</button>`;
+  }
+
+  function savedPantryHas(name) {
+    return [...state.savedPantryIngredients].some((item) => norm(item) === norm(name));
+  }
+
+  function toggleSavedPantryIngredient(name) {
+    const existing = [...state.savedPantryIngredients].find((item) => norm(item) === norm(name));
+    existing ? state.savedPantryIngredients.delete(existing) : state.savedPantryIngredients.add(name);
+    state.savedPantryUpdatedAt = new Date().toISOString();
+    localStorage.setItem('tomo_mobile_v2_saved_pantry', JSON.stringify([...state.savedPantryIngredients]));
+    localStorage.setItem('tomo_mobile_v2_saved_pantry_updated_at', JSON.stringify(state.savedPantryUpdatedAt));
+  }
+
+  function managePantrySheet() {
+    const query = norm(state.managePantrySearch);
+    const extraMatches = query ? allPantryIngredientNames()
+      .filter((name) => norm(name).includes(query))
+      .filter((name) => !managePantryStarterIngredients.some((starter) => norm(starter) === norm(name)))
+      .slice(0, 36) : [];
+    return `
+      <div class="mv2-modal-backdrop mv2-manage-pantry-backdrop" data-close-manage-pantry role="presentation">
+        <section class="mv2-manage-pantry-sheet" role="dialog" aria-modal="true" aria-labelledby="mv2ManagePantryTitle">
+          <button class="mv2-modal-close" type="button" data-close-manage-pantry aria-label="Close Manage Pantry">×</button>
+          <div class="mv2-manage-pantry-head">
+            <h2 id="mv2ManagePantryTitle">Manage Pantry</h2>
+            <p>Add ingredients you usually have at home.</p>
+          </div>
+          <section class="mv2-manage-pantry-group">
+            <h3>Everyday Pantry</h3>
+            <div class="mv2-manage-pantry-grid">
+              ${managePantryStarterIngredients.map((name) => managePantryToggle(name)).join('')}
+            </div>
+          </section>
+          <section class="mv2-manage-pantry-group">
+            <h3>Add More</h3>
+            <div class="mv2-manage-pantry-search">
+              <input id="mv2ManagePantrySearch" type="search" aria-label="Search ingredients to save" placeholder="Search ingredients..." value="${esc(state.managePantrySearch)}" autocomplete="off" />
+            </div>
+            <div class="mv2-manage-pantry-results">
+              ${query
+                ? extraMatches.map((name) => managePantryToggle(name)).join('') || '<p class="mv2-empty">No ingredients found.</p>'
+                : '<p class="mv2-manage-pantry-hint">Search to add more saved pantry ingredients.</p>'}
+            </div>
+          </section>
+          <div class="mv2-manage-pantry-actions">
+            <button type="button" data-cancel-manage-pantry>Cancel</button>
+            <button type="button" data-save-manage-pantry>Save Pantry</button>
+          </div>
+        </section>
+      </div>
+    `;
+  }
+
+  function managePantryToggle(name) {
+    const active = savedPantryDraftHas(name);
+    return `<button class="mv2-manage-pantry-toggle ${active ? 'active' : ''}" type="button" role="checkbox" aria-checked="${active ? 'true' : 'false'}" data-saved-pantry-ingredient="${esc(name)}"><span>${active ? '✓' : ''}</span>${esc(name)}</button>`;
+  }
+
+  function savedPantryDraftHas(name) {
+    return [...state.savedPantryDraft].some((item) => norm(item) === norm(name));
+  }
+
+  function allPantryIngredientNames() {
+    const names = new Map();
+    const add = (name) => {
+      const key = norm(name);
+      if (key && !names.has(key)) names.set(key, name);
+    };
+    pantryEverydayEssentials.forEach(add);
+    managePantryStarterIngredients.forEach(add);
+    pantryVisibleIngredientRecords().forEach((item) => add(item.ingredient_name || item.name));
+    return [...names.values()].sort((a, b) => a.localeCompare(b));
+  }
+
+  function saveSavedPantry() {
+    state.savedPantryIngredients = new Set([...state.savedPantryDraft]);
+    state.savedPantryUpdatedAt = new Date().toISOString();
+    localStorage.setItem('tomo_mobile_v2_saved_pantry', JSON.stringify([...state.savedPantryIngredients]));
+    localStorage.setItem('tomo_mobile_v2_saved_pantry_updated_at', JSON.stringify(state.savedPantryUpdatedAt));
+    clearRecommendationRuntimeCaches();
+  }
+
   function sectionNames() {
-    return ['Staples', 'Grains & Dals', 'Vegetables', 'Proteins', 'Dairy', 'Spices', 'Fruits'];
+    return ['Everyday Essentials', '🌾 Grains & Millets', '🥕 Vegetables', '🥬 Leafy Greens', '🥩 Proteins', '🥛 Dairy', '🌶️ Spices', '🌿 Herbs & Aromatics', '🍎 Fruits', '✨ Regional Finds'];
   }
 
   function sectionForIngredient(item) {
     const category = item.category || '';
-    if (category === 'Vegetables') return 'Vegetables';
-    if (category === 'Proteins') return 'Proteins';
-    if (category === 'Dairy') return 'Dairy';
-    if (category === 'Fruits') return 'Fruits';
-    if (category === 'Grains & Dals') return 'Grains & Dals';
-    if (['Spices & Seasonings', 'Chillies'].includes(category)) return 'Spices';
-    return 'Staples';
+    const name = item.ingredient_name || item.name || '';
+    return pantryUiCategoryForName(name, category);
   }
 
-  function isStapleBrowserIngredient(name) {
-    return /^(rice|onion|tomato|potato|garlic|bread|wheat flour|atta|flour|poha|sooji|rava|egg|paneer|chicken)$/i.test(norm(name));
+  function pantryUiCategoryForName(name, category = '') {
+    const key = norm(name);
+    if (/^(makhana)$/.test(key)) return '🌾 Grains & Millets';
+    if (/^(ragi|ragi flour|foxtail millet|jowar|rice|basmati rice|gobindobhog rice|puffed rice|broken wheat|dalia|rice rava|millet|millet flour|dosa rice|idli rice|idli batter|wheat|wheat flour|atta|whole wheat|rava|sooji|poha|oats|sabudana|sevai|vermicelli|rice flour|maida|besan)$/.test(key)) return '🌾 Grains & Millets';
+    if (/^(palak|spinach|methi|amaranth|moringa|moringa leaves|drumstick leaves|keerai|lai xaak|colocasia leaves|mustard greens|banana blossom|banana flower|leafy greens?|greens)$/.test(key)) return '🥬 Leafy Greens';
+    if (/^(egg|eggs|paneer|chicken|country chicken|fish|mutton|pork|smoked pork|prawn|prawns|tofu|cowpeas|masoor dal|yellow peas|soya chunks|crab|duck|bhetki fish|bombil fish|keema|chana|chana dal|chole|rajma|moong dal|toor dal|urad dal|black urad dal|matki|dal)$/.test(key)) return '🥩 Proteins';
+    if (/^(milk|curd|yogurt|dahi|butter|ghee|khoya|coconut milk|cheese|cream|buttermilk|chhana|cheddar|mozzarella)$/.test(key)) return '🥛 Dairy';
+    if (/^(curry leaves|kasuri methi|garlic|ginger|green chilli|mint|coriander|shallots|spring onion|onion|basil|parsley|lemongrass|tulsi leaves|banana leaf)$/.test(key)) return '🌿 Herbs & Aromatics';
+    if (/^(turmeric|pepper|black pepper|black sesame|red chilli|chilli|guntur chilli|byadgi chilli|mathania chilli|garam masala|chaat masala|podi|misal masala|goda masala|kolhapuri masala|madras curry powder|ajwain|cumin|mustard seeds|poppy seeds|sesame|saffron|vinegar|cocoa powder|tamarind|dry fruits|jaggery|mustard oil|sesame oil|schezwan sauce|dry coconut|nannari syrup|kachampuli|kokum)$/.test(key) || ['Spices & Seasonings', 'Chillies'].includes(category)) return '🌶️ Spices';
+    if (/^(banana|apple|lemon|mango|papaya|orange|guava|pomegranate|avocado|dates|watermelon|pineapple|pear|tender coconut|tender coconut water)$/.test(key) || category === 'Fruits') return '🍎 Fruits';
+    if (category === 'Vegetables' || /^(tomato|potato|carrot|vegetables|mixed vegetables|capsicum|corn|beans|beetroot|brinjal|green peas|sweet corn|raw mango|cabbage|cauliflower|okra|radish|pumpkin|broccoli|pointed gourd|sweet potato|bitter gourd|chow chow|dosakaya|raw papaya|mushroom|drumstick|bottle gourd|ash gourd|ridge gourd|snake gourd|yam|banana stem|raw banana|coconut|jackfruit|lotus stem|tapioca|sundakkai vathal|vathal)$/.test(key)) return '🥕 Vegetables';
+    if (category === 'Proteins') return '🥩 Proteins';
+    if (category === 'Dairy') return '🥛 Dairy';
+    if (category === 'Grains & Dals') return '🌾 Grains & Millets';
+    return '🥕 Vegetables';
+  }
+
+  function pantryRecipeUsesIngredient(name) {
+    return pantryRecipesUsingIngredient(name).length > 0;
+  }
+
+  function pantryRecipeIngredientCount(name) {
+    return pantryRecipesUsingIngredient(name).length;
+  }
+
+  function pantryRecipesUsingIngredient(name) {
+    const key = norm(name);
+    if (!key) return [];
+    return preferenceFilteredRecipes(recipes).filter((recipe) => recipeIngredients(recipe).some((item) => {
+      return item.normalized === key || ingredientMatchesSelection(item.normalized, key) || ingredientMatchesSelection(key, item.normalized);
+    }));
+  }
+
+  function pantryIngredientStrength(item, mainFallback = false) {
+    const role = norm(item?.role || '');
+    const name = norm(item?.name || item?.ingredient || item);
+    if (['pantry staple', 'pantry-staple', 'staple'].includes(role) || isPantryStaple(name)) return 'pantryStaple';
+    if (['garnish', 'topping'].includes(role)) return 'garnish';
+    if (['optional', 'nice to have', 'nice-to-have'].includes(role)) return 'optional';
+    if (['support', 'supporting', 'secondary', 'flavor-base', 'flavour-base', 'seasoning', 'cooking-fat', 'texture', 'binding', 'filling'].includes(role)) return 'support';
+    if (mainFallback || item?.isMain || ['required', 'main', 'core', 'primary'].includes(role)) return 'core';
+    return 'support';
+  }
+
+  function pantryIngredientStrengthWeight(strength) {
+    return {
+      core: 520,
+      support: 220,
+      optional: 55,
+      pantryStaple: 20,
+      garnish: 12
+    }[strength] || 80;
   }
 
   function recipeIngredients(recipe) {
@@ -4820,6 +8043,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       required: !item.role || item.role === 'required' || item.role === 'main',
       main: Boolean(item.isMain) || item.role === 'main',
       role: item.role || '',
+      strength: pantryIngredientStrength(item),
       source: 'ingredients'
     })).filter((item) => item.normalized);
     [
@@ -4847,15 +8071,15 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const label = String(name || '').trim();
     const normalized = norm(label);
     if (!normalized || ingredients.some((item) => item.normalized === normalized)) return;
-    ingredients.push({ name: label, normalized, required: true, main, role: main ? 'primary' : 'secondary', source: main ? 'primary-field' : 'secondary-field' });
+    ingredients.push({ name: label, normalized, required: main, main, role: main ? 'primary' : 'secondary', strength: main ? 'core' : 'support', source: main ? 'primary-field' : 'secondary-field' });
   }
 
-  function ingredientSelected(name) {
+  function ingredientSelected(name, selectedIngredients = state.selectedIngredients) {
     const key = norm(name);
-    const selectedKeys = [...state.selectedIngredients].map(norm);
+    const selectedKeys = [...selectedIngredients].map(norm);
     if (key === 'dosa batter') return selectedKeys.includes('dosa rice') && selectedKeys.includes('urad dal');
     if (key === 'idli batter') return selectedKeys.includes('idli rice') && selectedKeys.includes('urad dal');
-    return [...state.selectedIngredients].some((selected) => {
+    return [...selectedIngredients].some((selected) => {
       return ingredientMatchesSelection(key, norm(selected));
     });
   }
@@ -4864,10 +8088,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (ingredientKey === selectedKey) return true;
     const aliases = {
       rice: /^(rice|cooked rice|steamed rice)$/,
-      wheat: /^(wheat|wheat flour|atta|whole wheat)$/,
-      atta: /^(wheat|wheat flour|atta|whole wheat)$/,
-      'wheat flour': /^(wheat|wheat flour|atta|whole wheat)$/,
-      'whole wheat': /^(wheat|wheat flour|atta|whole wheat)$/,
+      wheat: /^(wheat|wheat flour|atta|whole wheat|roti|chapati|paratha|wrap|roll|flatbread|tortilla)$/,
+      atta: /^(wheat|wheat flour|atta|whole wheat|roti|chapati|paratha|wrap|roll|flatbread|tortilla)$/,
+      'wheat flour': /^(wheat|wheat flour|atta|whole wheat|roti|chapati|paratha|wrap|roll|flatbread|tortilla)$/,
+      'whole wheat': /^(wheat|wheat flour|atta|whole wheat|roti|chapati|paratha|wrap|roll|flatbread|tortilla)$/,
       egg: /^eggs?$/,
       chicken: /^(chicken|country chicken)$/,
       paneer: /^paneer$/,
@@ -4883,8 +8107,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       peanuts: /^(peanut|peanuts)$/,
       'moong dal': /^(moong dal|mung dal|moong)$/,
       'mung dal': /^(moong dal|mung dal|moong)$/,
-      bread: /^(bread|toast)$/,
-      toast: /^(bread|toast)$/,
+      bread: /^(bread|sandwich bread|toast)$/,
+      toast: /^(bread|sandwich bread|toast)$/,
       'dosa rice': /^(dosa rice|dosa batter)$/,
       'idli rice': /^(idli rice|idli batter)$/,
       'urad dal': /^(urad dal|black urad dal)$/
@@ -4894,14 +8118,172 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return ingredientKey === selectedKey || ingredientKey.startsWith(`${selectedKey} `);
   }
 
-  function pantryMatches() {
-    const selected = [...state.selectedIngredients].map(norm);
+  function pantryIngredientStrengthScore(ingredients, selected) {
+    const matched = [];
+    const selectedBreakdown = selected.map((selectedKey) => {
+      const matching = ingredients.filter((item) => ingredientMatchesSelection(item.normalized, selectedKey));
+      const best = matching
+        .slice()
+        .sort((a, b) => pantryIngredientStrengthWeight(b.strength) - pantryIngredientStrengthWeight(a.strength))[0];
+      if (best) matched.push(best);
+      return {
+        ingredient: selectedKey,
+        strength: best?.strength || 'unused',
+        score: best ? pantryIngredientStrengthWeight(best.strength) : 0
+      };
+    });
+    const score = selectedBreakdown.reduce((sum, item) => sum + item.score, 0);
+    return {
+      score,
+      matched,
+      selectedBreakdown,
+      coreMatches: selectedBreakdown.filter((item) => item.strength === 'core').length,
+      supportMatches: selectedBreakdown.filter((item) => item.strength === 'support').length
+    };
+  }
+
+  function pantryKnowledgeRecordNames(record) {
+    return [
+      record?.canonicalName,
+      ...(Array.isArray(record?.aliases) ? record.aliases : []),
+      ...Object.values(record?.regionalNames || {}).flat()
+    ].map(norm).filter(Boolean);
+  }
+
+  function pantryKnowledgeRecordsForSelection(selected) {
+    const knowledge = window.TOMO_INGREDIENT_KNOWLEDGE || [];
+    return selected
+      .map((selectedKey) => {
+        const exact = knowledge.find((record) => pantryKnowledgeRecordNames(record).includes(selectedKey));
+        if (exact) return exact;
+        return knowledge.find((record) => pantryKnowledgeRecordNames(record).some((name) => {
+        return name === selectedKey || ingredientMatchesSelection(name, selectedKey) || ingredientMatchesSelection(selectedKey, name);
+      }));
+      })
+      .filter(Boolean);
+  }
+
+  function pantryKnowledgeFamilies(record) {
+    return [
+      ...(Array.isArray(record?.recipeFamilies) ? record.recipeFamilies : []),
+      ...(Array.isArray(record?.recommendedRecipeFamilies) ? record.recommendedRecipeFamilies : [])
+    ].map(norm).filter(Boolean);
+  }
+
+  function pantryRecipeFamilySignal(recipe) {
+    return [
+      recipe?.title,
+      recipe?.dishFamily,
+      recipe?.dish_family,
+      recipe?.baseIngredient,
+      recipe?.base_ingredient,
+      recipe?.recipeRole
+    ].map(norm).join(' ');
+  }
+
+  function pantryRecipeMatchesKnowledgeFamily(recipe, family, recipeFamilies, haystack) {
+    const signal = pantryRecipeFamilySignal(recipe);
+    const checks = {
+      rice: /\b(rice|pulao|biryani|khichdi|pongal|bath|chawal|puliyogare)\b/,
+      chutney: /\b(chutney|thecha|pachadi)\b/,
+      rasam: /\b(rasam|saaru)\b/,
+      saaru: /\b(saaru|rasam)\b/,
+      soup: /\b(soup|shorba|thukpa)\b/,
+      'curry base': /\b(curry|gravy|masala|bhaji|sabzi|palya|poriyal|thoran|stew)\b/,
+      curry: /\b(curry|gravy|masala|kurma|korma|stew|jhol|theeyal|sukka)\b/,
+      bhaji: /\b(bhaji|sabzi|palya|poriyal|thoran|posto|bharta)\b/,
+      pakoda: /\b(pakoda|pakora|bajji|bonda|vada)\b/,
+      pakora: /\b(pakoda|pakora|bajji|bonda|vada)\b/,
+      egg: /\b(egg|omelette|bhurji)\b/,
+      sambar: /\bsambar\b/,
+      pulusu: /\bpulusu\b/,
+      avial: /\bavial\b/,
+      thoran: /\bthoran\b/,
+      dal: /\b(dal|pappu)\b/,
+      paratha: /\bparatha\b/,
+      fry: /\bfry\b/
+    };
+    const pattern = checks[family] || new RegExp(`\\b${family.replace(/\s+/g, '\\s+')}\\b`);
+    if (pattern.test(signal)) return true;
+    return recipeFamilies.includes(family) && pattern.test(haystack);
+  }
+
+  function pantryKnowledgeFamilyScore(recipe, selected, ingredients = recipeIngredients(recipe)) {
+    const records = pantryKnowledgeRecordsForSelection(selected);
+    if (!records.length) return { score: 0, usedFamilies: [], records: [] };
+    const recipeFamilies = pantryRecipeDishFamilies(recipe).map(norm);
+    const haystack = pantryRecipeIntentHaystack(recipe, ingredients);
+    const selectedUsed = selected.filter((name) => ingredients.some((item) => ingredientMatchesSelection(item.normalized, name)));
+    const familyOwners = new Map();
+    records.forEach((record) => {
+      pantryKnowledgeFamilies(record).forEach((family) => {
+        if (!familyOwners.has(family)) familyOwners.set(family, new Set());
+        familyOwners.get(family).add(norm(record.canonicalName));
+      });
+    });
+    let score = 0;
+    const usedFamilies = [];
+    familyOwners.forEach((owners, family) => {
+      if (!pantryRecipeMatchesKnowledgeFamily(recipe, family, recipeFamilies, haystack)) return;
+      const usedOwners = [...owners].filter((owner) => ingredients.some((item) => {
+        return ingredientMatchesSelection(item.normalized, owner)
+          || selected.some((selectedKey) => ingredientMatchesSelection(item.normalized, selectedKey) && ingredientMatchesSelection(owner, selectedKey));
+      }));
+      if (!usedOwners.length) return;
+      const familyScore = usedOwners.length > 1 ? 18000 : 9000;
+      score += familyScore;
+      if (selectedUsed.length >= Math.min(2, selected.length)) score += 4500;
+      const titleWords = norm(recipe?.title || '').split(' ').filter(Boolean);
+      if (selected.some((name) => pantryTitleHasIngredient(titleWords, name)) && titleWords.length <= 4) score += 6000;
+      usedFamilies.push({ family, ingredients: usedOwners, score: familyScore });
+    });
+    if (familyOwners.has('curry base')) {
+      ['rice', 'rasam', 'saaru', 'soup', 'chutney'].forEach((family) => {
+        if (!pantryRecipeMatchesKnowledgeFamily(recipe, family, recipeFamilies, haystack)) return;
+        score += 8000;
+        if (!usedFamilies.some((item) => item.family === family)) usedFamilies.push({ family, ingredients: ['curry base'], score: 8000 });
+      });
+    }
+    return {
+      score: Math.min(score, 42000),
+      usedFamilies,
+      records: records.map((record) => record.canonicalName)
+    };
+  }
+
+  function pantryRegionalRelevanceScore(recipe, selected) {
+    const records = pantryKnowledgeRecordsForSelection(selected);
+    if (!records.length) return 0;
+    const regionTags = recipe?.regionTags;
+    const normalizedRegionTags = Array.isArray(regionTags)
+      ? regionTags
+      : regionTags && typeof regionTags === 'object'
+        ? Object.values(regionTags).flat()
+        : [];
+    const regionText = [
+      recipe?.cuisine,
+      recipe?.region,
+      ...normalizedRegionTags,
+      ...(recipe?.tags || [])
+    ].map(norm).join(' ');
+    return records.reduce((sum, record) => {
+      const regions = Array.isArray(record?.regionalRelevance) ? record.regionalRelevance : [];
+      return sum + (regions.some((region) => regionText.includes(norm(region))) ? 1200 : 0);
+    }, 0);
+  }
+
+  function pantryMatches(selectedIngredients = state.selectedIngredients) {
+    const selected = [...selectedIngredients].map(norm);
     if (!selected.length) return [];
+    const activeSelectionKey = [...state.selectedIngredients].map(norm).sort().join('|');
+    const cacheKey = `${recipeDataVersion}:${preferenceSignature()}:${[...new Set(selected)].sort().join('|')}:${activeSelectionKey}`;
+    if (pantryMatchCache.has(cacheKey)) return pantryMatchCache.get(cacheKey);
     const matches = recipes
+      .filter((recipe) => recipeAllowedByPreferences(recipe))
       .filter((recipe) => norm(recipe?.recipeType || recipe?.recipe_type || 'core') === 'core' || pantryInactiveExactComboCandidate(recipe, selected))
       .map((recipe) => {
         const ingredients = recipeIngredients(recipe);
-        const matched = ingredients.filter((item) => ingredientSelected(item.name));
+        const matched = ingredients.filter((item) => ingredientSelected(item.name, selectedIngredients));
         const matchedSelected = selected.filter((name) => ingredients.some((item) => ingredientMatchesSelection(item.normalized, name)));
         const matchedSelectedMain = selected.filter((name) => ingredients.some((item) => item.main && ingredientMatchesSelection(item.normalized, name)));
         const ignoredSelected = selected.filter((name) => !matchedSelected.includes(name));
@@ -4923,8 +8305,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         ].map(norm).filter(Boolean);
         const selectedPrimaryFieldCount = selected.filter((name) => primaryIdentityKeys.some((key) => ingredientMatchesSelection(key, name))).length;
         const titleCombination = pantryTitleCombinationMatch(recipe, selected);
+        const ingredientStrength = pantryIngredientStrengthScore(ingredients, selected);
+        const knowledgeFamily = pantryKnowledgeFamilyScore(recipe, selected, ingredients);
+        const regionalRelevance = pantryRegionalRelevanceScore(recipe, selected);
         const ingredientFitBonus = pantrySimpleSingleIngredientScore(recipe, selected, ingredients)
           + pantrySpecificCombinationBonus(recipe, selected)
+          + knowledgeFamily.score
           + pantryMilkIntentScore(recipe, selected, ingredients)
           + pantryIntentProtectionScore(recipe, selected, ingredients)
           - pantryUnrelatedProteinPenalty(recipe, selected, ingredients);
@@ -4940,25 +8326,86 @@ window.renderMobileV2App = function renderMobileV2App(root) {
           ignoredSelected,
           ignoredMajorProtein,
           titleCombination,
+          ingredientStrength,
+          knowledgeFamily,
+          regionalRelevance,
           tier,
           missing,
           score: (nonVegBlocked ? 0 : tier.rank) * 1000
             + titleCombination.bonus
             + ingredientFitBonus
+            + ingredientStrength.score
+            + regionalRelevance
             + matchedSelected.length * 100
             + matched.filter((item) => item.main).length * 20
             + selectedPrimaryFieldCount * 220
+            + (matchedSelected.length === selected.length ? 9000 : 0)
             + Math.min(ingredients.length, 8) * 2
             - missingPrecisionPenalty
             - missingMajorProteinCount * 600
             - (nonVegBlocked ? 5000 : 0)
-            - ignoredSelected.length * 80
+            - ignoredSelected.length * 6500
             - (ignoredMajorProtein ? 140 : 0)
         };
       })
       .filter((item) => item.matchedSelected.length > 0)
       .sort((a, b) => b.score - a.score || norm(a.recipe.title).localeCompare(norm(b.recipe.title)));
-    return pantryApplyRecommendationConfidenceGate(pantryApplyDishFamilyGuard(matches, selected), selected);
+    const result = pantryApplyRecommendationDiversity(pantryApplyRecommendationConfidenceGate(pantryApplyDishFamilyGuard(matches, selected), selected));
+    pantryMatchCache.set(cacheKey, result);
+    if (pantryMatchCache.size > 24) pantryMatchCache.delete(pantryMatchCache.keys().next().value);
+    return result;
+  }
+
+  function kitchenIngredientsWithInferredTitleMatches(recipe, ingredients, selected) {
+    if (!recipe || !selected?.length) return ingredients;
+    const inferred = selected
+      .filter((selectedKey) => {
+        return !ingredients.some((item) => ingredientMatchesSelection(item.normalized, selectedKey))
+          && kitchenRecipeTitleRepresentsSelectedIngredient(recipe, selectedKey);
+      })
+      .map((selectedKey) => ({
+        name: titleCase(selectedKey),
+        normalized: selectedKey,
+        required: true,
+        main: true,
+        role: 'title-match',
+        strength: 'core',
+        source: 'title-alias'
+      }));
+    return inferred.length ? ingredients.concat(inferred) : ingredients;
+  }
+
+  function kitchenRecipeTitleRepresentsSelectedIngredient(recipe, selectedKey) {
+    const key = norm(selectedKey);
+    if (!key) return false;
+    const haystack = [
+      recipe?.title,
+      recipe?.canonicalTitle,
+      recipe?.englishSubtitle,
+      recipe?.dishFamily,
+      recipe?.dish_family,
+      ...(Array.isArray(recipe?.aliases) ? recipe.aliases : [])
+    ].map(norm).filter(Boolean).join(' ');
+    if (!haystack) return false;
+    return cookDashboardIngredientTitleAliases(key).some((alias) => cookDashboardTextMentionsIngredient(haystack, alias));
+  }
+
+  function pantryApplyRecommendationDiversity(matches) {
+    const familyCounts = new Map();
+    const regionCounts = new Map();
+    const primaryFamily = (match) => pantryRecipeDishFamilies(match.recipe)[0] || 'other';
+    const preferred = [];
+    const overflow = [];
+    matches.forEach((match) => {
+      const family = primaryFamily(match);
+      const familyCount = familyCounts.get(family) || 0;
+      const region = specificRegionalKey(match.recipe);
+      const regionCount = region ? regionCounts.get(region) || 0 : 0;
+      familyCounts.set(family, familyCount + 1);
+      if (region) regionCounts.set(region, regionCount + 1);
+      (familyCount < 2 && regionCount < 2 ? preferred : overflow).push(match);
+    });
+    return [...preferred, ...overflow];
   }
 
   function pantryApplyRecommendationConfidenceGate(matches, selected) {
@@ -5080,7 +8527,17 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (/\b(dosa|idli|uttapam)\b/.test(haystack)) add('dosa-idli');
     if (/\b(rava|suji|sooji|semolina|upma|kesari|sheera|halwa|porridge)\b/.test(haystack)) add('rava');
     if (/\b(curry|gravy|masala)\b/.test(haystack)) add('curry');
-    if (/\b(soup|rasam)\b/.test(haystack)) add('soup');
+    if (/\b(chutney|thecha|pachadi)\b/.test(haystack)) add('chutney');
+    if (/\b(rasam|saaru)\b/.test(haystack)) add('rasam');
+    if (/\bsambar\b/.test(haystack)) add('sambar');
+    if (/\bpulusu\b/.test(haystack)) add('pulusu');
+    if (/\btheeyal\b/.test(haystack)) add('theeyal');
+    if (/\b(xaak|saag|greens?)\b/.test(haystack)) add('greens');
+    if (/\b(soup|rasam|saaru|thukpa)\b/.test(haystack)) add('soup');
+    if (/\b(bhaji|sabzi|palya|poriyal|thoran|posto|bharta)\b/.test(haystack)) add('bhaji');
+    if (/\b(pakoda|pakora|bajji|bonda|vada)\b/.test(haystack)) add('pakoda');
+    if (/\b(egg|omelette|bhurji)\b/.test(haystack)) add('egg');
+    if (/\b(avial)\b/.test(haystack)) add('avial');
     if (/\b(salad|chaat)\b/.test(haystack)) add('salad-chaat');
     return families;
   }
@@ -5458,7 +8915,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
   function pantryIngredientStatus(available, missing, recipe) {
     const missingContent = missing.length
-      ? `<span>${missing.map((name) => `<button type="button" data-add-grocery-name="${esc(name)}" data-needed-recipe="${esc(recipe?.id || '')}">+ ${esc(name)}</button>`).join('')}</span><button class="mv2-secondary-wide" type="button" data-add-missing="${esc(recipe?.id || '')}">Add to Shopping List</button>`
+      ? `<span>${missing.map((name) => `<button type="button" data-add-grocery-name="${esc(name)}" data-needed-recipe="${esc(recipe?.id || '')}">+ ${esc(name)}</button>`).join('')}</span><button class="mv2-secondary-wide" type="button" data-add-missing="${esc(recipe?.id || '')}">Add to Grocery List</button>`
       : '<span><em>Nothing essential</em></span>';
     return `<section class="mv2-pantry-status"><div><strong>You Have</strong><span>${available.length ? available.map((name) => `<i>✓ ${esc(name)}</i>`).join('') : '<em>None selected</em>'}</span></div><div><strong>Missing</strong>${missingContent}</div></section>`;
   }
@@ -5491,46 +8948,10 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return [...scores].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 3).map(([name]) => name);
   }
 
-  function pantrySuggestionPanel() {
-    const cards = pantryTopRecommendationCards();
-    const hasSelectedIngredients = state.selectedIngredients.size > 0;
-    return `
-      <section class="mv2-pantry-suggestions" aria-label="Tomo pantry suggestions">
-        <div class="mv2-pantry-suggestions-head">
-          <div><p>TOMO SUGGESTIONS</p><h2>Top matches for you</h2></div>
-        </div>
-        ${hasSelectedIngredients
-          ? `<div class="mv2-pantry-carousel">${cards.length ? cards.map(pantryRecommendationCard).join('') : '<div class="mv2-pantry-carousel-empty">No strong matches yet. Try adding one more ingredient.</div>'}</div>`
-          : pantrySuggestionsEmptyState()}
-      </section>
-    `;
-  }
-
-  function pantrySuggestionsEmptyState() {
-    return `
-      <div class="mv2-pantry-suggestions-empty">
-        <span aria-hidden="true">🥫</span>
-        <div>
-          <strong>Start with what you have</strong>
-          <p>Tap ingredients below and Tomo will suggest dishes you can make.</p>
-          <small>Try Rice, Egg, Paneer or Tomato.</small>
-        </div>
-      </div>
-    `;
-  }
-
-  function pantryTopRecommendationCards() {
-    const selected = [...state.selectedIngredients];
+  function pantryOrderedMatches() {
+    const selected = [...state.selectedIngredients].map(norm);
     if (!selected.length) return [];
-    const matches = pantryMatches();
-    const ranked = pantryApplyCardDisplayOrdering(matches.filter(uniqueByRecipeTitle), selected.map(norm));
-    return ranked.slice(0, 2).map((match, index) => {
-      return {
-        match,
-        availability: recipeIngredientAvailability(match.recipe),
-        label: index === 0 ? 'Strong Match' : 'Similar Match'
-      };
-    });
+    return pantryApplyCardDisplayOrdering(pantryMatches().filter(uniqueByRecipeTitle), selected);
   }
 
   function pantryApplyCardDisplayOrdering(matches, selected) {
@@ -5551,31 +8972,6 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   function uniqueByRecipeTitle(item, index, list) {
     const title = norm(item?.recipe?.title || '');
     return title && list.findIndex((candidate) => norm(candidate?.recipe?.title || '') === title) === index;
-  }
-
-  function pantryRecommendationCard({ match, availability, label }) {
-    const recipe = match.recipe;
-    assertPantryDetailAvailabilityAgreement(recipe, availability);
-    const needed = availability.missingRequired.length;
-    const strength = label || 'Strong Match';
-    const actions = needed
-      ? `<button type="button" data-add-missing="${esc(recipe.id)}">Add Needed</button><button type="button" data-pantry-recipe="${esc(recipe.id)}">View Dish</button>`
-      : `<button type="button" data-pantry-recipe="${esc(recipe.id)}">View Dish</button>`;
-    return `
-      <article class="mv2-pantry-rec-card">
-        ${imageTag(recipeImage(recipe))}
-        <div class="mv2-pantry-rec-copy">
-          <strong>${esc(recipe.title)}</strong>
-          <span>${esc(strength)}</span>
-        </div>
-        <div class="mv2-pantry-rec-stats">
-          <small><span>Have <b>${availability.matchedRequired.length}</b> required</span><span>Needed <b>${needed}</b></span></small>
-        </div>
-        <div class="mv2-pantry-actions">
-          ${actions}
-        </div>
-      </article>
-    `;
   }
 
   function addGroceries(names, recipe = null) {
@@ -5616,7 +9012,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   function assertPantryDetailAvailabilityAgreement(recipe, cardAvailability) {
     if (!recipe || !cardAvailability) return;
     const detailAvailability = recipeIngredientAvailability(recipe);
-    if (detailAvailability.missingRequired.length > 0 && cardAvailability.missingRequired.length === 0) {
+    if (mobileDebugRequested && detailAvailability.missingRequired.length > 0 && cardAvailability.missingRequired.length === 0) {
       console.warn('[Tomo Pantry] availability mismatch: card says Needed 0 but detail has missing required items', {
         recipe: recipe.title,
         selectedIngredients: [...state.selectedIngredients],
@@ -5689,11 +9085,21 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
   function findRecipe(title) {
     const key = norm(title);
-    return recipes.find((recipe) => norm(recipe.title) === key) || recipes.find((recipe) => norm(recipe.title).includes(key) || key.includes(norm(recipe.title)));
+    const recipeNameMatches = (recipe) => {
+      const names = [recipe.title, recipe.name, ...(Array.isArray(recipe.aliases) ? recipe.aliases : [])].map(norm).filter(Boolean);
+      return names.some((name) => name === key);
+    };
+    const recipeNameIncludes = (recipe) => {
+      const names = [recipe.title, recipe.name, ...(Array.isArray(recipe.aliases) ? recipe.aliases : [])].map(norm).filter(Boolean);
+      return names.some((name) => name.includes(key) || key.includes(name));
+    };
+    const visible = preferenceFilteredRecipes(recipes);
+    return visible.find(recipeNameMatches) || visible.find(recipeNameIncludes);
   }
 
   function activeRecipe() {
-    return recipes.find((item) => item.id === state.activeRecipeId) || collectionRecipeById(state.activeRecipeId);
+    const recipe = recipes.find((item) => item.id === state.activeRecipeId);
+    return (recipe && recipeAllowedByPreferences(recipe) ? recipe : null) || collectionRecipeById(state.activeRecipeId) || microMealRecipeById(state.activeRecipeId);
   }
 
   function collectionDishId(item) {
@@ -5704,6 +9110,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const collectionItem = collectionRoutes.flatMap((collection) => collection.items || []).find((item) => collectionDishId(item) === id);
     if (!collectionItem) return null;
     const recipe = findRecipe(collectionItem.title);
+    if (preferencesConfigured() && !recipe) return null;
     const image = collectionDishImageOverride(collectionItem.title) || (recipe ? recipeImage(recipe) : '') || collectionItem.imagePath || collectionItem.image_url || collectionDishImage(collectionItem);
     return {
       ...collectionItem,
@@ -5727,8 +9134,19 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     return '/assets/images/dishes/homestyle-kitchen-placeholder.png';
   }
 
-  function imageTag(src) {
-    return `<img class="food-image" src="${esc(src)}" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/images/dishes/homestyle-kitchen-placeholder.png'" />`;
+  function optimizedImageSource(src, variant) {
+    const original = String(src || '/assets/images/dishes/homestyle-kitchen-placeholder.png');
+    const sourcePath = original.split('?')[0];
+    return window.TOMO_OPTIMIZED_IMAGES?.[sourcePath]?.[variant] || original;
+  }
+
+  function imageTag(src, { priority = false, hero = false } = {}) {
+    const original = String(src || '/assets/images/dishes/homestyle-kitchen-placeholder.png');
+    const optimized = optimizedImageSource(original, hero ? 'hero' : 'card');
+    const loading = priority ? 'eager' : 'lazy';
+    const fetchPriority = priority ? ' fetchpriority="high"' : '';
+    const originalFallback = optimized !== original ? ` data-original-src="${esc(original)}"` : '';
+    return `<img class="food-image" src="${esc(optimized)}" alt="" loading="${loading}" decoding="async"${fetchPriority}${originalFallback} onerror="if(this.dataset.originalSrc){this.src=this.dataset.originalSrc;this.dataset.originalSrc='';}else{this.onerror=null;this.src='/assets/images/dishes/homestyle-kitchen-placeholder.png';}" />`;
   }
 
   function moodLabel(recipe) {
@@ -5988,6 +9406,24 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       : date.toLocaleDateString([], { month: 'short', day: 'numeric' });
   }
 
+  function journalRelativeDayLabel(timestamp) {
+    if (!timestamp) return 'Recently';
+    const date = new Date(timestamp);
+    if (Number.isNaN(date.getTime())) return 'Recently';
+    const today = new Date();
+    const diffMs = new Date(today.toDateString()) - new Date(date.toDateString());
+    const diffDays = Math.round(diffMs / 86400000);
+    if (diffDays <= 0) return 'Today';
+    if (diffDays === 1) return 'Yesterday';
+    if (diffDays <= 6) return `${diffDays} days ago`;
+    return date.toLocaleDateString([], { month: 'short', day: 'numeric' });
+  }
+
+  function journalRelativeActivityLabel(timestamp) {
+    const label = journalRelativeDayLabel(timestamp);
+    return label === 'Recently' ? '' : label;
+  }
+
   function journalCookedTimeLabel(timestamp) {
     if (!timestamp) return 'Recently';
     const date = new Date(timestamp);
@@ -6001,6 +9437,129 @@ window.renderMobileV2App = function renderMobileV2App(root) {
   }
 
   root.addEventListener('click', async (event) => {
+    if (state.planMealActionSlot && !event.target.closest('.mv2-plan-meal-actions')) {
+      state.planMealActionSlot = '';
+      if (!event.target.closest('button, a, input, select, textarea, [role="button"]')) {
+        render();
+        return;
+      }
+    }
+
+    const onboardingContinue = event.target.closest('[data-tomo-onboarding-continue]');
+    if (onboardingContinue) {
+      state.onboardingOpen = false;
+      localStorage.setItem('tomo_mobile_v2_onboarding_seen', JSON.stringify(true));
+      render();
+      return;
+    }
+
+    const closeTodaysSheet = event.target.closest('[data-close-todays-sheet]');
+    if (closeTodaysSheet && (event.target === closeTodaysSheet || closeTodaysSheet.tagName === 'BUTTON')) {
+      state.todaysSheetOpen = false;
+      render();
+      return;
+    }
+
+    const closeManagePantry = event.target.closest('[data-close-manage-pantry]');
+    const cancelManagePantry = event.target.closest('[data-cancel-manage-pantry]');
+    if ((closeManagePantry && (event.target === closeManagePantry || closeManagePantry.tagName === 'BUTTON')) || cancelManagePantry) {
+      state.managePantryOpen = false;
+      state.managePantrySearch = '';
+      state.savedPantryDraft = new Set([...state.savedPantryIngredients]);
+      render();
+      return;
+    }
+
+    const closePlanSheet = event.target.closest('[data-close-plan-sheet]');
+    if (closePlanSheet && (event.target === closePlanSheet || closePlanSheet.tagName === 'BUTTON')) {
+      state.planSheetOpen = false;
+      state.planReplaceConfirm = false;
+      render();
+      return;
+    }
+
+    const openPlanSheet = event.target.closest('[data-open-plan-sheet]');
+    if (openPlanSheet) {
+      await ensurePlanEngine();
+      const recipe = activeRecipe();
+      state.planSelectedDay = currentPlanDay();
+      state.planSelectedMeal = defaultPlanMeal(recipe);
+      state.planReplaceConfirm = false;
+      state.planSheetOpen = true;
+      render();
+      return;
+    }
+
+    const planDay = event.target.closest('[data-plan-day]');
+    if (planDay) {
+      state.planSelectedDay = planDay.dataset.planDay;
+      state.planReplaceConfirm = false;
+      render();
+      return;
+    }
+
+    const planMeal = event.target.closest('[data-plan-meal]');
+    if (planMeal) {
+      state.planSelectedMeal = planMeal.dataset.planMeal;
+      state.planReplaceConfirm = false;
+      render();
+      return;
+    }
+
+    const cancelPlanReplace = event.target.closest('[data-cancel-plan-replace]');
+    if (cancelPlanReplace) {
+      state.planReplaceConfirm = false;
+      render();
+      return;
+    }
+
+    const addToPlan = event.target.closest('[data-add-to-plan]');
+    const confirmPlanReplace = event.target.closest('[data-confirm-plan-replace]');
+    if (addToPlan || confirmPlanReplace) {
+      const recipe = activeRecipe();
+      const planEngine = window.TOMO_PLAN_ENGINE;
+      if (!recipe || !planEngine) {
+        showToast('My Plan is unavailable right now.');
+        render();
+        return;
+      }
+      if (addToPlan && plannedSlot()) {
+        state.planReplaceConfirm = true;
+        render();
+        return;
+      }
+      try {
+        planEngine.addRecipeToPlan(recipe.id, state.planSelectedDay, state.planSelectedMeal);
+        state.planSheetOpen = false;
+        state.planReplaceConfirm = false;
+        showToast('Added to My Plan');
+      } catch {
+        showToast('Could not add this dish to My Plan.');
+      }
+      render();
+      return;
+    }
+
+    const saveManagePantry = event.target.closest('[data-save-manage-pantry]');
+    if (saveManagePantry) {
+      saveSavedPantry();
+      state.managePantryOpen = false;
+      state.managePantrySearch = '';
+      showToast('Pantry saved.');
+      render();
+      return;
+    }
+
+    const savedPantryIngredient = event.target.closest('[data-saved-pantry-ingredient]');
+    if (savedPantryIngredient) {
+      const name = savedPantryIngredient.dataset.savedPantryIngredient;
+      const existing = [...state.savedPantryDraft].find((item) => norm(item) === norm(name));
+      existing ? state.savedPantryDraft.delete(existing) : state.savedPantryDraft.add(name);
+      render();
+      if (state.managePantrySearch) requestAnimationFrame(() => root.querySelector('#mv2ManagePantrySearch')?.focus());
+      return;
+    }
+
     const journalToggle = event.target.closest('[data-journal-toggle]');
     if (journalToggle) {
       if (journalToggle.dataset.journalToggle === 'saved') state.journalSavedExpanded = !state.journalSavedExpanded;
@@ -6061,12 +9620,111 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       return;
     }
 
+    const closeDiscoverSheet = event.target.closest('[data-close-discover-sheet]');
+    if (closeDiscoverSheet) {
+      state.discoverSheetOpen = false;
+      state.discoverSheetCardId = '';
+      state.discoverSheetRecipeIds = [];
+      render();
+      return;
+    }
+
     const clearSearch = event.target.closest('[data-clear-search]');
     if (clearSearch) {
       state.searchQuery = '';
       state.searchOpen = false;
+      state.spotlightRecipeIds = [];
       render();
       requestAnimationFrame(() => root.querySelector('#mv2GlobalSearch')?.focus());
+      return;
+    }
+
+    const todayPage = event.target.closest('[data-today-page]');
+    if (todayPage) {
+      state.todayPickPage = Number(todayPage.dataset.todayPage || 0);
+      renderWithMotion('recommendation');
+      requestAnimationFrame(() => {
+        const track = root.querySelector('[data-today-pager]');
+        track?.scrollTo({ left: track.clientWidth * state.todayPickPage, behavior: 'smooth' });
+      });
+      return;
+    }
+
+    const todaysViewAll = event.target.closest('[data-todays-view-all]');
+    if (todaysViewAll) {
+      state.todaysSheetOpen = true;
+      state.searchOpen = false;
+      render();
+      return;
+    }
+
+    const discoverCategoryPage = event.target.closest('[data-discover-category-page]');
+    if (discoverCategoryPage) {
+      state.discoverDeckPage = Number(discoverCategoryPage.dataset.discoverCategoryPage || 0);
+      renderWithMotion('recommendation');
+      requestAnimationFrame(() => {
+        const track = root.querySelector('[data-discover-deck-track]');
+        track?.scrollTo({ left: track.clientWidth * state.discoverDeckPage, behavior: 'smooth' });
+      });
+      return;
+    }
+
+    const discoverPage = event.target.closest('[data-discover-page]');
+    if (discoverPage) {
+      const selectedPage = Number(discoverPage.dataset.discoverPage || 0);
+      state.discoverDeckPage = selectedPage;
+      if (!state.discoverIntroDismissed) {
+        state.discoverIntroDismissed = true;
+        state.discoverDeckPage = Math.max(0, selectedPage - 1);
+        saveDiscoverDeckState();
+        trackAnalyticsEvent('discover_intro_dismissed', 'discover');
+      }
+      renderWithMotion('recommendation');
+      requestAnimationFrame(() => {
+        const track = root.querySelector('[data-discover-deck-track]');
+        track?.scrollTo({ left: track.clientWidth * state.discoverDeckPage, behavior: 'smooth' });
+      });
+      return;
+    }
+
+    const discoverIntro = event.target.closest('[data-discover-intro]');
+    if (discoverIntro) {
+      state.discoverIntroDismissed = true;
+      state.discoverDeckPage = 0;
+      saveDiscoverDeckState();
+      trackAnalyticsEvent('discover_intro_dismissed', 'discover');
+      renderWithMotion('recommendation');
+      return;
+    }
+
+    const discoverCard = event.target.closest('[data-discover-card]');
+    if (discoverCard) {
+      const cardId = discoverCard.dataset.discoverCard || '';
+      if (cardId) state.discoverSeenCards.add(cardId);
+      saveDiscoverDeckState();
+      const ids = String(discoverCard.dataset.discoverRecipes || '').split(',').filter(Boolean);
+      state.discoverSheetCardId = cardId;
+      state.discoverSheetRecipeIds = ids;
+      state.discoverSheetQuery = discoverCard.dataset.discoverSearch || 'Discover';
+      state.discoverSheetOpen = true;
+      state.searchOpen = false;
+      trackAnalyticsEvent('discover_card_opened', 'discover', { cardId, query: state.discoverSheetQuery });
+      render();
+      return;
+    }
+
+    const spotlightCard = event.target.closest('[data-spotlight-recipes]');
+    if (spotlightCard) {
+      const ids = String(spotlightCard.dataset.spotlightRecipes || '').split(',').filter(Boolean);
+      if (ids.length) {
+        state.discoverScrollY = window.scrollY;
+        state.spotlightRecipeIds = ids;
+        state.searchQuery = spotlightCard.dataset.spotlightIngredient || 'Ingredient Spotlight';
+        state.searchOpen = true;
+        trackAnalyticsEvent('ingredient_spotlight_opened', 'discover', { ingredient: state.searchQuery, slugs: spotlightCard.dataset.spotlightSlugs || '' });
+        render();
+        requestAnimationFrame(() => root.querySelector('#mv2GlobalSearch')?.focus());
+      }
       return;
     }
 
@@ -6079,12 +9737,15 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     const searchRecipe = event.target.closest('[data-search-recipe]');
     if (searchRecipe) {
+      await ensureFullRecipeData();
       state.discoverScrollY = window.scrollY;
       if (state.activeRecipeId !== searchRecipe.dataset.searchRecipe) state.expandedPairingsRecipeId = '';
       state.activeRecipeId = searchRecipe.dataset.searchRecipe;
       state.quickGuideExpanded = false;
       state.dishOrigin = 'discover';
       state.searchOpen = false;
+      state.discoverSheetOpen = false;
+      state.discoverSheetCardId = '';
       state.screen = 'dish';
       trackDishViewed(state.activeRecipeId, 'search');
       renderWithMotion('detail-forward');
@@ -6094,6 +9755,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     const searchCollection = event.target.closest('[data-search-collection]');
     if (searchCollection) {
+      if (!MOBILE_COLLECTIONS_ENABLED) return;
       const selectedCollection = collectionByKey(searchCollection.dataset.searchCollection);
       if (selectedCollection?.status === 'coming-soon') {
         state.searchOpen = false;
@@ -6106,6 +9768,8 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       state.collectionHubKey = selectedCollection?.generatedType === 'collection' ? selectedCollection.hubKey || '' : selectedCollection?.key || '';
       state.subcategory = '';
       state.searchOpen = false;
+      state.discoverSheetOpen = false;
+      state.discoverSheetCardId = '';
       state.screen = 'collection';
       trackAnalyticsEvent('collection_opened', 'search', { collectionKey: state.collectionKey });
       renderWithMotion('collection-forward');
@@ -6115,9 +9779,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     const searchIngredient = event.target.closest('[data-search-ingredient]');
     if (searchIngredient) {
+      await ensureFullRecipeData();
       state.searchOpen = false;
+      state.discoverSheetOpen = false;
+      state.discoverSheetCardId = '';
       state.screen = 'kitchen';
-      state.kitchenTab = 'pantry';
+      state.kitchenTab = 'cook';
       state.pantrySearch = searchIngredient.dataset.searchIngredient;
       render();
       window.scrollTo(0, 0);
@@ -6143,14 +9810,248 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       return;
     }
 
+    const openPreferences = event.target.closest('[data-open-preferences]');
+    if (openPreferences) {
+      state.preferencesDraft = normalizePreferences(state.preferences);
+      state.preferencesOpen = true;
+      render();
+      return;
+    }
+
+    const closePreferences = event.target.closest('[data-close-preferences]');
+    if (closePreferences) {
+      state.preferencesOpen = false;
+      state.preferencesDraft = normalizePreferences(state.preferences);
+      render();
+      return;
+    }
+
+    const prefDiet = event.target.closest('[data-pref-diet]');
+    if (prefDiet) {
+      const diet = prefDiet.dataset.prefDiet;
+      const current = normalizePreferences(state.preferencesDraft);
+      state.preferencesDraft = normalizePreferences({
+        diet,
+        proteins: diet === 'nonveg' ? (current.proteins.length ? current.proteins : ['chicken']) : []
+      });
+      render();
+      return;
+    }
+
+    const prefProtein = event.target.closest('[data-pref-protein]');
+    if (prefProtein) {
+      const protein = norm(prefProtein.dataset.prefProtein);
+      const current = normalizePreferences(state.preferencesDraft);
+      const proteins = new Set(current.proteins.length ? current.proteins : ['chicken']);
+      if (proteins.has(protein)) proteins.delete(protein);
+      else proteins.add(protein);
+      state.preferencesDraft = normalizePreferences({ diet: 'nonveg', proteins: [...proteins] });
+      render();
+      return;
+    }
+
+    const savePreferenceButton = event.target.closest('[data-save-preferences]');
+    if (savePreferenceButton) {
+      const draft = normalizePreferences(state.preferencesDraft);
+      if (!draft.diet || (draft.diet === 'nonveg' && !draft.proteins.length)) {
+        showToast('Choose your food preference');
+        render();
+        return;
+      }
+      savePreferences(draft);
+      beta3VisibleDiscoverCards = null;
+      featuredCollectionCache.clear();
+      state.preferencesOpen = false;
+      state.discoverDeckPage = 0;
+      await ensurePlanEngine();
+      const regenerated = regeneratePlanAfterPreferenceChange();
+      showToast(regenerated ? 'Preferences saved and plan refreshed' : 'Preferences saved');
+      renderWithMotion('recommendation');
+      return;
+    }
+
     const nav = event.target.closest('[data-nav]');
     if (nav) {
       const currentTab = primaryScreen();
       state.tabScroll[currentTab] = window.scrollY;
-      state.screen = nav.dataset.nav;
-      if (state.screen === 'kitchen') state.kitchenTab = 'pantry';
+      const nextScreen = !MOBILE_COLLECTIONS_ENABLED && nav.dataset.nav === 'collections' ? 'discover' : nav.dataset.nav;
+      if (nextScreen === 'kitchen') await ensureFullRecipeData();
+      if (nextScreen === 'plan') await Promise.all([ensureFullRecipeData(), ensurePlanEngine()]);
+      state.screen = nextScreen;
+      if (state.screen === 'kitchen' && currentTab !== 'kitchen') state.kitchenTab = 'pantry';
+      if (state.screen === 'plan') state.planShoppingOpen = false;
       renderWithMotion('tab');
       requestAnimationFrame(() => window.scrollTo(0, state.tabScroll[state.screen] || 0));
+      return;
+    }
+
+    const planTab = event.target.closest('[data-plan-tab]');
+    if (planTab) {
+      state.planShoppingOpen = planTab.dataset.planTab === 'grocery';
+      state.planModifyMode = false;
+      state.planMealActionSlot = '';
+      renderWithMotion('segment');
+      return;
+    }
+
+    const planViewDay = event.target.closest('[data-plan-view-day]');
+    if (planViewDay) {
+      state.planViewDay = planViewDay.dataset.planViewDay;
+      renderWithMotion('segment');
+      return;
+    }
+
+    const generateWeeklyPlan = event.target.closest('[data-generate-weekly-plan]');
+    if (generateWeeklyPlan) {
+      const planEngine = window.TOMO_PLAN_ENGINE;
+      if (!planEngine?.generateSuggestedWeeklyPlan) {
+        showToast('My Plan is unavailable right now.');
+        render();
+        return;
+      }
+      try {
+        const plan = planEngine.generateSuggestedWeeklyPlan();
+        planEngine.saveWeeklyPlan(plan);
+        state.planShoppingOpen = false;
+        state.planModifyMode = false;
+        state.planMealActionSlot = '';
+        state.planAcceptedWeek = '';
+        localStorage.removeItem('tomo_mobile_v1_plan_accepted_week');
+        showToast('Weekly plan created');
+      } catch {
+        showToast('Could not create a weekly plan.');
+      }
+      render();
+      return;
+    }
+
+    const acceptPlan = event.target.closest('[data-accept-plan]');
+    if (acceptPlan) {
+      const plan = weeklyPlanData();
+      if (plan?.weekStart) {
+        state.planAcceptedWeek = plan.weekStart;
+        localStorage.setItem('tomo_mobile_v1_plan_accepted_week', JSON.stringify(state.planAcceptedWeek));
+      }
+      showToast('Plan accepted');
+      render();
+      return;
+    }
+
+    const modifyPlan = event.target.closest('[data-modify-plan]');
+    if (modifyPlan) {
+      state.planModifyMode = true;
+      state.planShoppingOpen = false;
+      showToast('Tap ⋯ on a meal to replace or remove');
+      render();
+      return;
+    }
+
+    const planShoppingList = event.target.closest('[data-plan-shopping-list]');
+    if (planShoppingList) {
+      state.planShoppingOpen = !state.planShoppingOpen;
+      state.planModifyMode = false;
+      state.planMealActionSlot = '';
+      renderWithMotion('segment');
+      return;
+    }
+
+    const generatePlanGroceries = event.target.closest('[data-generate-plan-groceries]');
+    if (generatePlanGroceries) {
+      const plan = weeklyPlanData();
+      if (!addAcceptedPlanToShoppingList(plan)) {
+        showToast('Accept your plan first');
+        render();
+        return;
+      }
+      state.planShoppingOpen = true;
+      state.planModifyMode = false;
+      state.planMealActionSlot = '';
+      showToast('Grocery list created');
+      render();
+      return;
+    }
+
+    const planAddMeal = event.target.closest('[data-plan-add-meal]');
+    if (planAddMeal) {
+      showToast('Meal selection coming soon');
+      render();
+      return;
+    }
+
+    const planMealActions = event.target.closest('[data-plan-meal-actions]');
+    if (planMealActions) {
+      const actionKey = planMealActions.dataset.planMealActions;
+      state.planModifyMode = true;
+      state.planMealActionSlot = state.planMealActionSlot === actionKey ? '' : actionKey;
+      render();
+      return;
+    }
+
+    const planReplaceMeal = event.target.closest('[data-plan-replace-meal]');
+    if (planReplaceMeal) {
+      state.planMealActionSlot = '';
+      showToast('Meal replacement coming soon');
+      render();
+      return;
+    }
+
+    const planRemoveMeal = event.target.closest('[data-plan-remove-meal]');
+    if (planRemoveMeal) {
+      const [day, mealType] = String(planRemoveMeal.dataset.planRemoveMeal || '').split(':');
+      const planEngine = window.TOMO_PLAN_ENGINE;
+      if (!day || !mealType || !planEngine?.removeRecipeFromPlan) {
+        showToast('Could not remove this meal.');
+        render();
+        return;
+      }
+      try {
+        planEngine.removeRecipeFromPlan(day, mealType);
+        state.planMealActionSlot = '';
+        state.planAcceptedWeek = '';
+        localStorage.removeItem('tomo_mobile_v1_plan_accepted_week');
+        showToast('Meal removed');
+      } catch {
+        showToast('Could not remove this meal.');
+      }
+      render();
+      return;
+    }
+
+    const resetWeek = event.target.closest('[data-reset-week]');
+    if (resetWeek) {
+      state.planResetConfirm = true;
+      render();
+      return;
+    }
+
+    const cancelPlanReset = event.target.closest('[data-cancel-plan-reset]');
+    if (cancelPlanReset) {
+      state.planResetConfirm = false;
+      render();
+      return;
+    }
+
+    const confirmPlanReset = event.target.closest('[data-confirm-plan-reset]');
+    if (confirmPlanReset) {
+      const planEngine = window.TOMO_PLAN_ENGINE;
+      if (!planEngine?.clearWeek) {
+        showToast('My Plan is unavailable right now.');
+        render();
+        return;
+      }
+      try {
+        planEngine.clearWeek();
+        state.planResetConfirm = false;
+        state.planMealActionSlot = '';
+        state.planShoppingOpen = false;
+        state.planModifyMode = false;
+        state.planAcceptedWeek = '';
+        localStorage.removeItem('tomo_mobile_v1_plan_accepted_week');
+        showToast('Weekly plan cleared');
+      } catch {
+        showToast('Could not clear this week.');
+      }
+      render();
       return;
     }
 
@@ -6175,6 +10076,17 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       return;
     }
 
+    const pantryCategory = event.target.closest('[data-pantry-category]');
+    if (pantryCategory) {
+      if (pantryCategory.dataset.pantryCategoryMode === 'saved') {
+        state.savedPantryCategory = pantryCategory.dataset.pantryCategory;
+      } else {
+        state.pantryCategory = pantryCategory.dataset.pantryCategory;
+      }
+      renderWithMotion('pantry-update');
+      return;
+    }
+
     const journalExplore = event.target.closest('[data-journal-explore]');
     if (journalExplore) {
       state.screen = 'discover';
@@ -6186,9 +10098,19 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     const pantrySection = event.target.closest('[data-pantry-section]');
     if (pantrySection) {
+      if (pantrySection.dataset.pantrySection === 'Everyday Essentials') return;
       state.pantrySections.has(pantrySection.dataset.pantrySection)
         ? state.pantrySections.delete(pantrySection.dataset.pantrySection)
         : state.pantrySections.add(pantrySection.dataset.pantrySection);
+      render();
+      return;
+    }
+
+    const managePantry = event.target.closest('[data-manage-pantry]');
+    if (managePantry) {
+      state.savedPantryDraft = new Set([...state.savedPantryIngredients]);
+      state.managePantrySearch = '';
+      state.managePantryOpen = true;
       render();
       return;
     }
@@ -6199,8 +10121,9 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       state.mood = nextMood;
       state.activeTomoPick = null;
       state.dismissedToday = [];
+      state.todayPickPage = 0;
       if (nextMood) trackAnalyticsEvent('mood_selected', 'discover', { mood: nextMood, label: selectedMoodLabel(nextMood) });
-      renderWithMotion('mood');
+      refreshDiscoverRecommendations();
       return;
     }
 
@@ -6208,12 +10131,15 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (meal) {
       state.meal = meal.dataset.meal;
       state.activeTomoPick = null;
-      renderWithMotion('recommendation');
+      state.dismissedToday = [];
+      state.todayPickPage = 0;
+      refreshDiscoverRecommendations();
       return;
     }
 
     const collection = event.target.closest('[data-collection]');
     if (collection) {
+      if (!FEATURED_COLLECTION_ENABLED) return;
       const selectedCollection = collectionByKey(collection.dataset.collection);
       if (selectedCollection?.status === 'coming-soon') {
         showToast('Global Bites is coming soon.');
@@ -6252,7 +10178,54 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const clearPantry = event.target.closest('[data-clear-pantry]');
     if (clearPantry) {
       state.selectedIngredients.clear();
+      state.cookDashboardSkippedIds = [];
       renderWithMotion('pantry-update');
+      return;
+    }
+
+    const pantryAction = event.target.closest('[data-pantry-action]');
+    if (pantryAction) {
+      showToast(pantryAction.dataset.pantryAction === 'voice'
+        ? 'Voice input coming soon'
+        : 'Ingredient scanner coming soon');
+      render();
+      return;
+    }
+
+    const cookDashboardViewAll = event.target.closest('[data-cook-dashboard-view-all]');
+    if (cookDashboardViewAll) {
+      root.querySelector('.mv2-pantry-browser')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      return;
+    }
+
+    const cookDashboardRecipe = event.target.closest('[data-cook-dashboard-recipe]');
+    if (cookDashboardRecipe?.dataset.cookDashboardRecipe) {
+      if (state.activeRecipeId !== cookDashboardRecipe.dataset.cookDashboardRecipe) state.expandedPairingsRecipeId = '';
+      state.activeRecipeId = cookDashboardRecipe.dataset.cookDashboardRecipe;
+      state.quickGuideExpanded = false;
+      state.dishOrigin = 'pantry';
+      state.pantryScrollY = window.scrollY;
+      state.screen = 'dish';
+      trackDishViewed(state.activeRecipeId, 'pantry');
+      renderWithMotion('detail-forward');
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    const cookDashboardSkip = event.target.closest('[data-cook-dashboard-skip]');
+    if (cookDashboardSkip?.dataset.cookDashboardSkip) {
+      if (!state.cookDashboardSkippedIds.includes(cookDashboardSkip.dataset.cookDashboardSkip)) {
+        state.cookDashboardSkippedIds.push(cookDashboardSkip.dataset.cookDashboardSkip);
+      }
+      renderWithMotion('pantry-update');
+      return;
+    }
+
+    const savedPantryView = event.target.closest('[data-saved-pantry-view]');
+    if (savedPantryView) {
+      toggleSavedPantryIngredient(savedPantryView.dataset.savedPantryView);
+      renderWithMotion('pantry-update');
+      if (state.savedPantrySearch) requestAnimationFrame(() => root.querySelector('#mv2SavedPantrySearch')?.focus());
       return;
     }
 
@@ -6262,6 +10235,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       wasSelected
         ? state.selectedIngredients.delete(ingredient.dataset.ingredient)
         : state.selectedIngredients.add(ingredient.dataset.ingredient);
+      state.cookDashboardSkippedIds = [];
       if (!wasSelected) {
         trackAnalyticsEvent('pantry_ingredient_selected', 'pantry', {
           ingredient: ingredient.dataset.ingredient,
@@ -6274,6 +10248,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     const pantryRecipe = event.target.closest('[data-pantry-recipe]');
     if (pantryRecipe) {
+      await ensureFullRecipeData();
       if (state.activeRecipeId !== pantryRecipe.dataset.pantryRecipe) state.expandedPairingsRecipeId = '';
       state.activeRecipeId = pantryRecipe.dataset.pantryRecipe;
       state.quickGuideExpanded = false;
@@ -6288,6 +10263,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     const journalRecipe = event.target.closest('[data-journal-recipe]');
     if (journalRecipe) {
+      await ensureFullRecipeData();
       if (state.activeRecipeId !== journalRecipe.dataset.journalRecipe) state.expandedPairingsRecipeId = '';
       state.activeRecipeId = journalRecipe.dataset.journalRecipe;
       state.quickGuideExpanded = false;
@@ -6309,7 +10285,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         ...recipeAnalyticsMetadata(recipe?.id || '', recipe?.title || ''),
         addedCount: added
       });
-      if (recipe) added ? showShoppingListConfirmation() : showToast('Items already in Shopping List');
+      if (recipe) added ? showShoppingListConfirmation() : showToast('Items already in Grocery List');
       renderWithMotion('pantry-update');
       return;
     }
@@ -6328,7 +10304,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         ingredient: name,
         addedCount: added
       });
-      exists ? showToast(`${name} removed from Shopping List`) : showShoppingListConfirmation();
+      exists ? showToast(`${name} removed from Grocery List`) : showShoppingListConfirmation();
       render();
       return;
     }
@@ -6336,14 +10312,21 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     const detailAddMissing = event.target.closest('[data-detail-add-missing]');
     if (detailAddMissing) {
       const recipe = recipes.find((item) => item.id === detailAddMissing.dataset.detailAddMissing);
-      const remaining = recipe ? recipeIngredientAvailability(recipe).remainingToAdd : [];
+      const availability = recipe ? recipeIngredientAvailability(recipe) : null;
+      const remaining = availability?.remainingToAdd?.length
+        ? availability.remainingToAdd
+        : availability?.missingRequired || [];
       const added = recipe ? addGroceries(remaining, recipe) : 0;
       trackAnalyticsEvent('add_missing_items_clicked', 'dish-detail', {
         ...recipeAnalyticsMetadata(recipe?.id || '', recipe?.title || ''),
         addedCount: added
       });
-      added ? showShoppingListConfirmation() : showToast('Items already in Shopping List');
-      render();
+      added ? showShoppingListConfirmation() : showToast('Items already in Grocery List');
+      state.screen = 'plan';
+      state.planShoppingOpen = true;
+      state.planMealActionSlot = '';
+      renderWithMotion('detail-forward');
+      window.scrollTo(0, 0);
       return;
     }
 
@@ -6351,7 +10334,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (addGroceryName) {
       const recipe = recipes.find((item) => item.id === addGroceryName.dataset.neededRecipe);
       const added = addGroceries([addGroceryName.dataset.addGroceryName], recipe);
-      added ? showShoppingListConfirmation() : showToast('Items already in Shopping List');
+      added ? showShoppingListConfirmation() : showToast('Items already in Grocery List');
       render();
       return;
     }
@@ -6360,7 +10343,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (addGrocery) {
       const recipe = recipes.find((item) => item.id === addGrocery.dataset.neededRecipe);
       const added = addGroceries([addGrocery.dataset.addGrocery], recipe);
-      added ? showShoppingListConfirmation() : showToast('Items already in Shopping List');
+      added ? showShoppingListConfirmation() : showToast('Items already in Grocery List');
       render();
       return;
     }
@@ -6392,7 +10375,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         success: copied,
         itemCount: state.groceries.length
       });
-      showToast(copied ? 'Shopping list copied.' : 'Could not copy shopping list.');
+      showToast(copied ? 'Grocery list copied.' : 'Could not copy grocery list.');
       render();
       return;
     }
@@ -6402,13 +10385,13 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       const text = shoppingListText();
       if (typeof window.navigator?.share === 'function') {
         try {
-          await window.navigator.share({ title: 'Tomo Shopping List', text });
+          await window.navigator.share({ title: 'Tomo Grocery List', text });
           trackAnalyticsEvent('shopping_list_shared', 'shopping-cart', {
             method: 'native-share',
             success: true,
             itemCount: state.groceries.length
           });
-          showToast('Shopping list shared.');
+          showToast('Grocery list shared.');
         } catch (error) {
           if (error?.name === 'AbortError') return;
           const copied = await copyShoppingList();
@@ -6417,7 +10400,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
             success: copied,
             itemCount: state.groceries.length
           });
-          showToast(copied ? 'Shopping list copied.' : 'Could not share shopping list.');
+          showToast(copied ? 'Grocery list copied.' : 'Could not share grocery list.');
         }
       } else {
         const copied = await copyShoppingList();
@@ -6426,7 +10409,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
           success: copied,
           itemCount: state.groceries.length
         });
-        showToast(copied ? 'Shopping list copied.' : 'Could not share shopping list.');
+        showToast(copied ? 'Grocery list copied.' : 'Could not share grocery list.');
       }
       render();
       return;
@@ -6437,8 +10420,9 @@ window.renderMobileV2App = function renderMobileV2App(root) {
       const recipeId = cookRecipe.dataset.cookRecipe;
       trackAnalyticsEvent('cook_this_clicked', cookRecipe.dataset.source || dishSource(), recipeAnalyticsMetadata(recipeId, cookRecipe.dataset.dishName));
       recordCooked(recipeId, cookRecipe.dataset.source, cookRecipe.dataset.dishName);
-      showToast('Added to your cooking journey');
+      showMascotToast('happy', 'Nice! Another meal cooked.');
       if (recipeId && state.screen !== 'dish') {
+        await ensureFullRecipeData();
         if (state.activeRecipeId !== recipeId) state.expandedPairingsRecipeId = '';
         state.activeRecipeId = recipeId;
         state.quickGuideExpanded = false;
@@ -6470,6 +10454,26 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (removeGrocery) {
       state.groceries = state.groceries.filter((item) => norm(item.name) !== norm(removeGrocery.dataset.groceryRemove));
       saveGroceries();
+      render();
+      return;
+    }
+
+    const toggleGrocery = event.target.closest('[data-grocery-toggle]');
+    if (toggleGrocery) {
+      const grocery = state.groceries.find((item) => norm(item.name) === norm(toggleGrocery.dataset.groceryToggle));
+      if (grocery) {
+        grocery.complete = !grocery.complete;
+        saveGroceries();
+      }
+      render();
+      return;
+    }
+
+    const clearCheckedGroceries = event.target.closest('[data-clear-checked-groceries]');
+    if (clearCheckedGroceries) {
+      state.groceries = state.groceries.filter((item) => !item.complete);
+      saveGroceries();
+      showToast('Checked items cleared');
       render();
       return;
     }
@@ -6513,7 +10517,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
         showToast('Removed from Saved');
       } else {
         saveDish(save.dataset.save, save.dataset.source, save.dataset.dishName);
-        showToast('Saved to Tomo');
+        showMascotToast('heart', 'Saved for later.');
       }
       render();
       return;
@@ -6530,12 +10534,14 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     const recipe = event.target.closest('[data-recipe]');
     if (recipe?.dataset.recipe) {
+      await ensureFullRecipeData();
       const fromCollection = state.screen === 'collection';
       if (fromCollection) state.collectionScrollY = window.scrollY;
       else state.discoverScrollY = window.scrollY;
       if (state.activeRecipeId !== recipe.dataset.recipe) state.expandedPairingsRecipeId = '';
       state.activeRecipeId = recipe.dataset.recipe;
       state.quickGuideExpanded = false;
+      state.todaysSheetOpen = false;
       state.dishOrigin = fromCollection ? 'collection' : 'discover';
       state.screen = 'dish';
       trackDishViewed(state.activeRecipeId, state.dishOrigin);
@@ -6546,6 +10552,7 @@ window.renderMobileV2App = function renderMobileV2App(root) {
 
     const relatedRecipe = event.target.closest('[data-related-recipe]');
     if (relatedRecipe) {
+      await ensureFullRecipeData();
       if (state.activeRecipeId !== relatedRecipe.dataset.relatedRecipe) state.expandedPairingsRecipeId = '';
       state.activeRecipeId = relatedRecipe.dataset.relatedRecipe;
       state.quickGuideExpanded = false;
@@ -6559,14 +10566,14 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (back) {
       if (back.dataset.back === 'pantry') {
         state.screen = 'kitchen';
-        state.kitchenTab = 'pantry';
+        state.kitchenTab = 'cook';
         renderWithMotion('back');
         requestAnimationFrame(() => window.scrollTo(0, state.pantryScrollY));
         return;
       }
       if (back.dataset.back === 'cart') {
-        state.screen = 'kitchen';
-        state.kitchenTab = 'groceries';
+        state.screen = 'plan';
+        state.planShoppingOpen = true;
         renderWithMotion('back');
         window.scrollTo(0, 0);
         return;
@@ -6598,6 +10605,43 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     }
   });
 
+  root.addEventListener('scroll', (event) => {
+    const target = event.target;
+    if (!target?.dataset) return;
+    if (target.dataset.todayPager !== undefined) {
+      const page = Math.round(target.scrollLeft / Math.max(1, target.clientWidth));
+      state.todayPickPage = page;
+      root.querySelectorAll('[data-today-page]').forEach((dot) => {
+        dot.classList.toggle('active', Number(dot.dataset.todayPage || 0) === page);
+      });
+      return;
+    }
+    if (target.dataset.discoverDeckTrack !== undefined) {
+      const page = Math.round(target.scrollLeft / Math.max(1, target.clientWidth));
+      state.discoverDeckPage = page;
+      const category = target.children[page]?.dataset.discoverCategory || 'ingredient';
+      root.querySelectorAll('[data-discover-category-page]').forEach((dot) => {
+        dot.classList.toggle('active', dot.dataset.discoverCategory === category);
+      });
+      if (!state.discoverIntroDismissed && target.scrollLeft > 24) {
+        state.discoverIntroDismissed = true;
+        state.discoverDeckPage = Math.max(0, page - 1);
+        saveDiscoverDeckState();
+        trackAnalyticsEvent('discover_intro_dismissed', 'discover');
+      }
+    }
+  }, true);
+
+  root.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || !state.planMealActionSlot) return;
+    state.planMealActionSlot = '';
+    render();
+  });
+
+  root.addEventListener('focusin', (event) => {
+    if (event.target.id === 'mv2GlobalSearch') ensureFullRecipeData();
+  });
+
   root.addEventListener('input', (event) => {
     if (event.target.matches('[data-feedback-dish]')) {
       state.feedbackDish = event.target.value;
@@ -6611,9 +10655,28 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     if (event.target.id === 'mv2GlobalSearch') {
       const cursor = event.target.selectionStart;
       state.searchQuery = event.target.value;
+      state.spotlightRecipeIds = [];
       state.searchOpen = Boolean(state.searchQuery.trim());
       render();
       const input = root.querySelector('#mv2GlobalSearch');
+      input?.focus();
+      input?.setSelectionRange(cursor, cursor);
+      return;
+    }
+    if (event.target.id === 'mv2ManagePantrySearch') {
+      const cursor = event.target.selectionStart;
+      state.managePantrySearch = event.target.value;
+      render();
+      const input = root.querySelector('#mv2ManagePantrySearch');
+      input?.focus();
+      input?.setSelectionRange(cursor, cursor);
+      return;
+    }
+    if (event.target.id === 'mv2SavedPantrySearch') {
+      const cursor = event.target.selectionStart;
+      state.savedPantrySearch = event.target.value;
+      render();
+      const input = root.querySelector('#mv2SavedPantrySearch');
       input?.focus();
       input?.setSelectionRange(cursor, cursor);
       return;
@@ -6632,10 +10695,12 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     state.feedbackType = event.target.value;
   });
 
-  root.addEventListener('submit', (event) => {
+  root.addEventListener('submit', async (event) => {
     const searchForm = event.target.closest('[data-search-form]');
     if (searchForm) {
       event.preventDefault();
+      await ensureFullRecipeData();
+      state.spotlightRecipeIds = [];
       state.searchOpen = Boolean(state.searchQuery.trim());
       render();
       requestAnimationFrame(() => root.querySelector('#mv2GlobalSearch')?.focus());
@@ -6647,92 +10712,107 @@ window.renderMobileV2App = function renderMobileV2App(root) {
     event.preventDefault();
     const data = new FormData(form);
     const added = addGroceries([data.get('groceryItem')]);
-    if (!added) showToast('Already in your cart');
+    if (!added) showToast('Already in Grocery List');
     render();
   });
 
   installAnalyticsHelpers();
-  window.__tomoMobileRoleAudit = {
-    allowedRecipeRoles: [...allowedRecipeRoles],
-    recommendationRecipeRole,
-    recommendationRolePenalty,
-    matchesMeal,
-    hasBreakfastSignal,
-    breakfastRecommendationEligible,
-    isWarmDrinkRecipe,
-    moodRoleAdjustment,
-    moodScore,
-    heroSoupContextBonus,
-    heroRoleEligible,
-    todaysPickRoleEligible,
-    fourCardRecommendations,
-    relatedRoleScore,
-    relatedDishes
+  let deferredAuditCollectionSystem = null;
+  const collectionSystemForAudit = () => {
+    if (generatedCollectionSystem.hubs.length) return generatedCollectionSystem;
+    deferredAuditCollectionSystem ||= buildGeneratedCollectionSystem();
+    return deferredAuditCollectionSystem;
   };
-  window.__tomoMobileDiscoverAudit = {
-    fourCards(mood = state.mood, meal = state.meal, selectedIngredients = [...state.selectedIngredients]) {
-      const previousMood = state.mood;
-      const previousMeal = state.meal;
-      const previousIngredients = new Set(state.selectedIngredients);
-      state.mood = mood;
-      state.meal = meal;
-      state.selectedIngredients = new Set(selectedIngredients);
-      const cards = fourCardRecommendations(meal, mood).map((card) => ({
-        key: card.key,
-        label: card.label,
-        title: card.recipe.title,
-        role: recommendationRecipeRole(card.recipe),
-        dishFamily: dishFamily(card.recipe)
-      }));
-      state.mood = previousMood;
-      state.meal = previousMeal;
-      state.selectedIngredients = previousIngredients;
-      return cards;
-    }
-  };
-  window.__tomoMobileCollectionsAudit = {
-    enabled: USE_GENERATED_COLLECTIONS,
-    hubs() {
-      return generatedCollectionSystem.hubs.map((hub) => ({
-        key: hub.key,
-        title: hub.title,
-        count: hub.count,
-        childCollections: hub.generatedCollections.length,
-      }));
-    },
-    collections() {
-      return generatedCollectionSystem.collections.map((collection) => ({
-        key: collection.key,
-        hub: collection.hubName,
-        title: collection.title,
-        count: collection.count,
-        groups: generatedCollectionDisplayGroups(collection).map((group) => ({
-          name: group.name,
-          count: group.recipes.length
-        })),
-        duplicateRecipes: collection.items.length - new Set(collection.items.map((item) => item.recipeId || item.id)).size,
-        groupedRecipes: generatedCollectionDisplayGroups(collection).reduce((sum, group) => sum + group.recipes.length, 0),
-      }));
-    },
-    summary() {
-      const hubs = this.hubs();
-      const collections = this.collections();
-      return {
-        enabled: USE_GENERATED_COLLECTIONS,
-        hubCount: hubs.length,
-        collectionCount: collections.length,
-        totalRecipes: recipes.length,
-        hubRecipes: hubs.reduce((sum, hub) => sum + hub.count, 0),
-        collectionRecipes: collections.reduce((sum, collection) => sum + collection.count, 0),
-        emptyCollections: collections.filter((collection) => collection.count === 0).map((collection) => collection.title),
-        duplicateCollections: collections.filter((collection) => collection.duplicateRecipes > 0).map((collection) => collection.title),
-        groupingMismatches: collections.filter((collection) => collection.groupedRecipes !== collection.count).map((collection) => collection.title),
-      };
-    }
-  };
-  window.runTomoCollectionImageAudit = runCollectionImageAudit;
+  function installMobileAuditHelpers() {
+    window.__tomoMobileRoleAudit = {
+      allowedRecipeRoles: [...allowedRecipeRoles],
+      recommendationRecipeRole,
+      recommendationRolePenalty,
+      matchesMeal,
+      hasBreakfastSignal,
+      breakfastRecommendationEligible,
+      isWarmDrinkRecipe,
+      moodRoleAdjustment,
+      moodScore,
+      heroSoupContextBonus,
+      heroRoleEligible,
+      todaysPickRoleEligible,
+      fourCardRecommendations,
+      relatedRoleScore,
+      relatedDishes
+    };
+    window.__tomoMobileDiscoverAudit = {
+      fourCards(mood = state.mood, meal = state.meal, selectedIngredients = [...state.selectedIngredients]) {
+        const previousMood = state.mood;
+        const previousMeal = state.meal;
+        const previousIngredients = new Set(state.selectedIngredients);
+        state.mood = mood;
+        state.meal = meal;
+        state.selectedIngredients = new Set(selectedIngredients);
+        const cards = fourCardRecommendations(meal, mood).map((card) => ({
+          key: card.key,
+          label: card.label,
+          title: card.recipe.title,
+          role: recommendationRecipeRole(card.recipe),
+          dishFamily: dishFamily(card.recipe)
+        }));
+        state.mood = previousMood;
+        state.meal = previousMeal;
+        state.selectedIngredients = previousIngredients;
+        return cards;
+      }
+    };
+    window.__tomoMobileCollectionsAudit = {
+      enabled: USE_GENERATED_COLLECTIONS,
+      hubs() {
+        return collectionSystemForAudit().hubs.map((hub) => ({
+          key: hub.key,
+          title: hub.title,
+          count: hub.count,
+          childCollections: hub.generatedCollections.length,
+        }));
+      },
+      collections() {
+        return collectionSystemForAudit().collections.map((collection) => ({
+          key: collection.key,
+          hub: collection.hubName,
+          title: collection.title,
+          count: collection.count,
+          groups: generatedCollectionDisplayGroups(collection).map((group) => ({
+            name: group.name,
+            count: group.recipes.length
+          })),
+          duplicateRecipes: collection.items.length - new Set(collection.items.map((item) => item.recipeId || item.id)).size,
+          groupedRecipes: generatedCollectionDisplayGroups(collection).reduce((sum, group) => sum + group.recipes.length, 0),
+        }));
+      },
+      summary() {
+        const hubs = this.hubs();
+        const collections = this.collections();
+        return {
+          enabled: USE_GENERATED_COLLECTIONS,
+          hubCount: hubs.length,
+          collectionCount: collections.length,
+          totalRecipes: recipes.length,
+          hubRecipes: hubs.reduce((sum, hub) => sum + hub.count, 0),
+          collectionRecipes: collections.reduce((sum, collection) => sum + collection.count, 0),
+          emptyCollections: collections.filter((collection) => collection.count === 0).map((collection) => collection.title),
+          duplicateCollections: collections.filter((collection) => collection.duplicateRecipes > 0).map((collection) => collection.title),
+          groupingMismatches: collections.filter((collection) => collection.groupedRecipes !== collection.count).map((collection) => collection.title),
+        };
+      }
+    };
+    window.runTomoCollectionImageAudit = runCollectionImageAudit;
+  }
   const collectionAuditRequested = new URLSearchParams(window.location.search).get('collectionImageAudit') === '1'
     || window.location.hash.includes('collection-image-audit');
-  if (collectionAuditRequested) window.setTimeout(() => runCollectionImageAudit(), 0);
   render();
+  if (collectionAuditRequested) {
+    installMobileAuditHelpers();
+    window.setTimeout(() => runCollectionImageAudit(), 0);
+  } else if (mobileDebugRequested && 'requestIdleCallback' in window) {
+    window.requestIdleCallback(installMobileAuditHelpers, { timeout: 2000 });
+  } else if (mobileDebugRequested) {
+    window.setTimeout(installMobileAuditHelpers, 0);
+  }
 };
