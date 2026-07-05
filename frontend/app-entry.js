@@ -16,6 +16,15 @@ function loadScript(src) {
   });
 }
 
+const appEntryScript = document.currentScript;
+const appBasePath = appEntryScript
+  ? new URL('./', appEntryScript.src).pathname
+  : '/frontend/';
+
+function appPath(path) {
+  return `${appBasePath}${path}`.replace(/\/{2,}/g, '/');
+}
+
 let fullRecipeDataPromise = null;
 let planEnginePromise = null;
 
@@ -24,7 +33,7 @@ function loadFullRecipeData() {
     return Promise.resolve(window.COOKBUDDY_LOCAL_RECIPES || []);
   }
   if (!fullRecipeDataPromise) {
-    fullRecipeDataPromise = loadScript('local-recipes.js?v=mobile-mushroom-pulao-image-104').then(() => {
+    fullRecipeDataPromise = loadScript(appPath('local-recipes.js?v=mobile-mushroom-pulao-image-104')).then(() => {
       window.__TOMO_FULL_RECIPE_DATA_LOADED__ = true;
       return window.COOKBUDDY_LOCAL_RECIPES || [];
     });
@@ -37,7 +46,7 @@ window.TomoLoadFullRecipeData = loadFullRecipeData;
 function loadPlanEngine() {
   if (window.TOMO_PLAN_ENGINE) return Promise.resolve(window.TOMO_PLAN_ENGINE);
   if (!planEnginePromise) {
-    planEnginePromise = loadScript('mobile/plan-engine.js?v=beta4-plan-foundation-1')
+    planEnginePromise = loadScript(appPath('mobile/plan-engine.js?v=beta4-plan-foundation-1'))
       .then(() => window.TOMO_PLAN_ENGINE);
   }
   return planEnginePromise;
@@ -45,53 +54,11 @@ function loadPlanEngine() {
 
 window.TomoLoadPlanEngine = loadPlanEngine;
 
-async function renderDesktopApp(root) {
-  loadStylesheet('styles.css?v=hero-content-groups-8');
-  loadStylesheet('final-overrides.css?v=hero-content-groups-8');
-
-  await Promise.all([
-    loadFullRecipeData(),
-    window.COOKBUDDY_LOCAL_COLLECTIONS
-      ? Promise.resolve()
-      : loadScript('local-collections.js?v=recommendation-image-pack-1')
-  ]);
-
-  const response = await fetch('desktop-reference.html');
-  if (!response.ok) throw new Error(`Desktop shell failed to load: ${response.status}`);
-
-  const page = new DOMParser().parseFromString(await response.text(), 'text/html');
-  page.querySelectorAll('script').forEach((script) => script.remove());
-  root.replaceChildren(...page.body.children);
-  await loadScript('app.js?v=hero-content-groups-8');
-}
-
-let currentAppMode = '';
-let resizeTimer = null;
-
 function startApp() {
   const root = document.querySelector('#appRoot');
-  const isMobile = window.innerWidth <= 768;
-  const forceMobileV2 = window.location.hash.includes('#mobile-v2');
-  const nextMode = isMobile || forceMobileV2 ? 'mobile' : 'desktop';
-
-  if (currentAppMode === nextMode) return;
-  currentAppMode = nextMode;
-
-  if (nextMode === 'mobile') {
-    root.innerHTML = '';
-    loadStylesheet('mobile/mobile-v2.css?v=beta4-mascot-polish-1');
-    window.renderMobileV2App(root);
-    return;
-  }
-
-  renderDesktopApp(root);
+  root.innerHTML = '';
+  loadStylesheet(appPath('mobile/mobile-v2.css?v=beta4-mascot-polish-1'));
+  window.renderMobileV2App(root);
 }
 
 startApp();
-
-window.addEventListener('resize', () => {
-  window.clearTimeout(resizeTimer);
-  resizeTimer = window.setTimeout(startApp, 120);
-});
-
-window.addEventListener('hashchange', startApp);
